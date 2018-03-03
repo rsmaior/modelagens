@@ -44,13 +44,13 @@ class MasterGen():
             sql.append(u"INSERT INTO {0}.{1} (code,code_name) VALUES ({2},'{3}');".format(master["schema_dominios"], \
                   dominio["nome"], valor["code"], valor["value"]))
 
-        if master['a_ser_preenchido']:
+        if 'a_ser_preenchido' in master:
           if "filtro" in dominio and dominio["filtro"]:
             sql.append(u"INSERT INTO {0}.{1} (code,code_name, filter) VALUES ({2},'{3}','{3}');".format(master["schema_dominios"], \
-                  dominio["nome"], master["mapa_valor_a_ser_preenchido"], master["texto_a_ser_preenchido"]))
+                  dominio["nome"], master["a_ser_preenchido"]["code"], master["a_ser_preenchido"]["value"]))
           else:
             sql.append(u"INSERT INTO {0}.{1} (code,code_name) VALUES ({2},'{3}');".format(master["schema_dominios"], \
-                  dominio["nome"], master["mapa_valor_a_ser_preenchido"], master["texto_a_ser_preenchido"]))
+                  dominio["nome"], master["a_ser_preenchido"]["code"], master["a_ser_preenchido"]["value"]))
 
         sql.append(u"")
 
@@ -109,7 +109,7 @@ class MasterGen():
                 if master['a_ser_preenchido']:
                   sql.append(u"ALTER TABLE {1}.{4}_{0}_{2} ALTER COLUMN {3} SET DEFAULT {5};".format(classe["nome"], \
                             master["schema_edgv"], master["geom_suffix"][primitiva], atributo["nome"], \
-                            classe["categoria"], master["mapa_valor_a_ser_preenchido"]))
+                            classe["categoria"], master["a_ser_preenchido"]["code"]))
                   sql.append(u"")
 
               elif atributo["cardinalidade"] == "0..*" or atributo["cardinalidade"] == "1..*" :
@@ -125,7 +125,7 @@ class MasterGen():
                 if master['a_ser_preenchido']:
                   sql.append(u"ALTER TABLE {1}.{4}_{0}_{2} ALTER COLUMN {3} SET DEFAULT ARRAY[{5} :: SMALLINT];".format(atributo["nome"], \
                             master["schema_edgv"], master["geom_suffix"][primitiva], atributo["nome"], \
-                            classe["categoria"], master["mapa_valor_a_ser_preenchido"]))
+                            classe["categoria"], master["a_ser_preenchido"]["code"]))
                   sql.append(u"")
 
       try:

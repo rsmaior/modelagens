@@ -3,9 +3,10 @@
     "versao": "4.99",
     "schema_edgv": "edgv",
     "schema_dominios": "dominios",
-    "a_ser_preenchido": true,
-    "mapa_valor_a_ser_preenchido": -1,
-    "texto_a_ser_preenchido": "A SER PREENCHIDO",
+    "a_ser_preenchido": {
+      "code": -1,
+      "value": "A SER PREENCHIDO"   
+    },
     "coord_sys": 31982,
     "fill_factor": 80,
     "nome_geom": "geom",
