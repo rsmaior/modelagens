@@ -1,7 +1,7 @@
 
 
-{   "modelo": "EDGV 2.1.3 Pro",
-  "versao": "4.99",
+{ "modelo": "EDGV 2.1.3 Pro",
+  "versao": "4.99 - falta limpar as classes, retirar codes que não são usados na classe",
   "schema_edgv": "edgv",
   "schema_dominios": "dominios",
   "a_ser_preenchido": {
@@ -18,30 +18,30 @@
      "MultiPolygon": "a"
   },
   "categoria_regra": [
-      {  "categoryName": "Atributo não preenchido",
-         "color": "255,127,0",
-         "rank": 1
-      },
-      {  "categoryName": "Atributo incorreto",
-         "color": "255,0,0",
-         "rank": 1
-      },
-      {  "categoryName": "Atributo incomum",
-         "color": "255,255,0",
-         "rank": 3
-      }
+    { "categoryName": "Atributo não preenchido",
+      "color": "255,127,0",
+      "rank": 1
+    },
+    { "categoryName": "Atributo incorreto",
+      "color": "255,0,0",
+      "rank": 1
+    },
+    { "categoryName": "Atributo incomum",
+      "color": "255,255,0",
+      "rank": 3
+    }
   ],
   "regras_gerais": [
   ],
   "regras_especificas": [
       {
-          "layerName": "area_edificada",
-          "categoria": "cobter",
-          "primitivas": ["MultiPolygon"],            
-          "attributeName": "nome",
-          "attributeRule": "\"nome\" NOT NULL",
-          "description": "Area edificada deve ter nome",
-          "category": "Atributo incorreto"
+        "layerName": "area_edificada",
+        "categoria": "cobter",
+        "primitivas": ["MultiPolygon"],            
+        "attributeName": "nome",
+        "attributeRule": "\"nome\" NOT NULL",
+        "description": "Area edificada deve ter nome",
+        "category": "Atributo incorreto"
 
       }
   ],
@@ -139,7 +139,7 @@
             "value": "Desconhecida",
             "descricao": "-"
           },
-    {
+          {
             "code": 2,
             "value": "Tratamento",
             "descricao": "-"
@@ -492,7 +492,7 @@
             "value": "Desconhecido",
             "descricao": "-"
           },
-    {
+          {
             "code": 1,
             "value": "Leito natural",
             "descricao": "-"
@@ -2576,7 +2576,7 @@
             "value": "Desconhecido",
             "descricao": "-"
           },
-    {
+          {
             "code": 1,
             "value": "Poço",
             "descricao": "-"
@@ -3098,7 +3098,7 @@
             "descricao": "-",
             "valor_filtro": "Ruina"
           },
-    {
+          {
             "code": 801,
             "value": "Area de energia",
             "descricao": "-",
@@ -4609,51 +4609,51 @@
               },
               {
                 "code": 1601,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1602,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1603,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1604,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1605,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1606,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1607,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1608,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1609,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1610,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1611,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1612,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1712
@@ -4797,8 +4797,8 @@
                 "code": 2701
               }
             ]
-          }
-    { "nome": "material_construcao",
+          },
+          { "nome": "material_construcao",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -4841,8 +4841,8 @@
                 "code": 98
               }
             ]
-          },
-    ]
+          }
+        ]
       },
       { "nome": "extracao_mineral",
         "categoria": "constr",
@@ -4877,7 +4877,7 @@
               },
               {
                 "code": 8,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               }
             ]
           },
@@ -4895,7 +4895,7 @@
               }
             ]
           },
-    { "nome": "situacao_fisica",
+          { "nome": "situacao_fisica",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -5066,123 +5066,123 @@
             "valores": [
               {
                 "code": 101,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 102,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 103,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 104,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 105,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 201,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 202,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 203,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 204,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 205,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 206,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 207,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 298,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 301,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 302,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 303,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 304,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 305,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 398,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 404,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 405,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 406,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 409,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 414,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 495,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 501,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 601,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 701,
-        "primitivas": ["MultiPolygon","MultiPoint"]
-              }
-      {
+               "primitivas": ["MultiPolygon","MultiPoint"]
+              },
+              {
                 "code": 801,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               }
             ]
           },
-    { "nome": "situacao_fisica",
+          { "nome": "situacao_fisica",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -5205,7 +5205,7 @@
               }
             ]
           }
-          ]
+        ]
       },
       { "nome": "curva_nivel",
         "categoria": "elemnat",
@@ -5234,7 +5234,7 @@
               }
             ]
           },
-    { "nome": "depressao",
+          { "nome": "depressao",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -5248,7 +5248,7 @@
               }
             ]
           }
-          ]
+        ]
       },
       { "nome": "elemento_fisiografico",
         "categoria": "elemnat",
@@ -5268,130 +5268,130 @@
             "valores": [
               {
                 "code": 1,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 2,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 3,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 4,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 5,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 6,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 7,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 8,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 9,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 10,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 11,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 12
               },
               {
                 "code": 13,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 14,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 15,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 16,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 17,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 19,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 20,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 21,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 22,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 23,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 24,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 25,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 26,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 27,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 28,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 29,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 30,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 31,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 32,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 33,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               }
             ]
           }
@@ -5415,69 +5415,69 @@
             "valores": [
               {
                 "code": 1,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 2,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 3,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 4,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 5,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 6,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 7,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 8
               },
               {
                 "code": 9,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 10,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 11,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 12
               },
               {
                 "code": 13,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 14,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 15,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 16,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 17,
-        "primitivas": ["MultiPolygon"]
+                "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 18
@@ -5544,8 +5544,8 @@
                 "code": 11
               }
             ]
-          }
-    { "nome": "regime",
+          },
+          { "nome": "regime",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -5561,7 +5561,7 @@
                 "code": 5
               }
             ]
-          },
+          }
           ]
       },
       { "nome": "elemento_infraestrutura",
@@ -5582,19 +5582,19 @@
             "valores": [
               {
                 "code": 201,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 202,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 302,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 303,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 405
@@ -5628,118 +5628,118 @@
               },
               {
                 "code": 601,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 701,
-        "primitivas": ["MultiPolygon","MultiLinestring"]
+                "primitivas": ["MultiPolygon","MultiLinestring"]
               },
               {
                 "code": 801,
-        "primitivas": ["MultiPolygon","MultiLinestring"]
+                "primitivas": ["MultiPolygon","MultiLinestring"]
               },
               {
                 "code": 901,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 1001
               },
               {
                 "code": 1101,
-        "primitivas": ["MultiPolygon","MultiLinestring"]
+                "primitivas": ["MultiPolygon","MultiLinestring"]
               },
               {
                 "code": 1201,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1301,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1401,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1501,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 1601,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1698,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 1700,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1701,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1702,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1703,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1704,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1705,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1706,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1707,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1708,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1709,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1710,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1798,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1801,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1901,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1902,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 1998,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               }
             ]
-          }
-    { "nome": "situacao_fisica",
+          },
+          { "nome": "situacao_fisica",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -5840,8 +5840,8 @@
                 "code": 97
               }
             ]
-          },
-    ]
+          }
+        ]
       },
       { "nome": "elemento_transportes",
         "categoria": "infra",
@@ -5861,7 +5861,7 @@
             "valores": [
               {
                 "code": 101,
-        "primitivas": ["MultiPoint"]
+            "primitivas": ["MultiPoint"]
               },
               {
                 "code": 238
@@ -5886,86 +5886,86 @@
               },
               {
                 "code": 302,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 303,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 304,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 404,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 501,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 607,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 608,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 609,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 701,
-        "primitivas": ["MultiPoint"]
+                "primitivas": ["MultiPoint"]
               },
               {
                 "code": 801,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 898,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 901,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 1001,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 1101,
-        "primitivas": ["MultiLinestring","MultiPoint"]
+                "primitivas": ["MultiLinestring","MultiPoint"]
               },
               {
                 "code": 1201
               },
               {
                 "code": 1300,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 1301,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 1302,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 1395,
-        "primitivas": ["MultiPolygon","MultiPoint"]
+                "primitivas": ["MultiPolygon","MultiPoint"]
               },
               {
                 "code": 1401,
-        "primitivas": ["MultiLinestring"]
+                "primitivas": ["MultiLinestring"]
               }
             ]
-          }
-    { "nome": "situacao_fisica",
+          },
+          { "nome": "situacao_fisica",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -5987,7 +5987,7 @@
                 "code": 4
               }
             ]
-          },
+          }
           ]
       },
       { "nome": "elemento_viario",
@@ -6040,8 +6040,8 @@
                 "code": 404
               }
             ]
-          },
-    { "nome": "material_construcao",
+           },
+           { "nome": "material_construcao",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -6084,8 +6084,8 @@
                 "code": 98
               }
             ]
-          },
-          { "nome": "modal_uso",
+            },
+            { "nome": "modal_uso",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -6107,8 +6107,8 @@
                 "code": 9
               }
             ]
-          },
-          { "nome": "nr_faixas",
+            },
+            { "nome": "nr_faixas",
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "0..1"
@@ -6158,7 +6158,7 @@
               }
             ]
           }
-          ]
+        ]
       },
       { "nome": "ferrovia",
         "categoria": "infra",
@@ -6190,7 +6190,7 @@
               }
             ]
           },
-    { "nome": "situacao_fisica",
+          { "nome": "situacao_fisica",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -6341,14 +6341,13 @@
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "0..1"
-          },
-          ]
+          }
+        ]
       },
       { "nome": "pista_pouso",
         "categoria": "infra",
         "descricao": "-",
-        "primitivas": ["MultiPolygon","MultiLinestring",
-"MultiPoint"],
+        "primitivas": ["MultiPolygon","MultiLinestring","MultiPoint"],
         "atributos": [
           { "nome": "nome",
             "tipo": "varchar(255)",
@@ -6414,8 +6413,8 @@
                 "code": 13
               }
             ]
-          }
-    { "nome": "situacao_fisica",
+          },
+          { "nome": "situacao_fisica",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -6464,8 +6463,8 @@
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "0..1"
-          },
-          ]
+          }
+        ]
       },
       { "nome": "via_deslocamento",
         "categoria": "infra",
@@ -6477,7 +6476,6 @@
             "descricao": "-",
             "cardinalidade": "0..1"
           },
-            "tipo": "smallint",
           { "nome": "tipo",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -6539,8 +6537,8 @@
                 "code": 2
               }
             ]
-          }
-    { "nome": "nr_faixas",
+          },
+          { "nome": "nr_faixas",
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "0..1"
@@ -6651,8 +6649,8 @@
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "0..1"
-          },
-          ]
+          }
+        ]
       },
       { "nome": "delimitacao_fisica",
         "categoria": "llp",
@@ -6672,8 +6670,8 @@
                 "code": 2
               }
             ]
-          }
-    { "nome": "material_construcao",
+          },
+          { "nome": "material_construcao",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -6716,8 +6714,8 @@
                 "code": 98
               }
             ]
-          },
-          ]
+          }
+        ]
       },
       { "nome": "limite_especial",
         "categoria": "llp",
@@ -6852,8 +6850,8 @@
                 "code": 97
               }
             ]
-          }
-    { "nome": "geometria_aproximada",
+          },
+          { "nome": "geometria_aproximada",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -6866,7 +6864,7 @@
                 "code": 2
               }
             ]
-          },
+          }
         ]
       },
       { "nome": "limite_legal",
@@ -6887,43 +6885,43 @@
             "valores": [
               {
                 "code": 1,
-        "primitivas": ["MultiLinestring"]
+            "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 2,
-        "primitivas": ["MultiLinestring"]
+            "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 3,
-        "primitivas": ["MultiLinestring"]
+            "primitivas": ["MultiLinestring"]
               },
               {
                 "code": 4,
-        "primitivas": ["MultiPolygon"]
+            "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 5,
-        "primitivas": ["MultiPolygon"]
+            "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 6,
-        "primitivas": ["MultiPolygon"]
+            "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 7,
-        "primitivas": ["MultiPolygon"]
+            "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 8,
-        "primitivas": ["MultiPolygon"]
+            "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 9,
-        "primitivas": ["MultiPolygon"]
+            "primitivas": ["MultiPolygon"]
               },
               {
                 "code": 10,
-        "primitivas": ["MultiPolygon"]
+            "primitivas": ["MultiPolygon"]
               }
             ]
           },
@@ -6964,8 +6962,8 @@
                 "code": 97
               }
             ]
-          }
-    { "nome": "geometria_aproximada",
+          },
+          { "nome": "geometria_aproximada",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -6978,8 +6976,8 @@
                 "code": 2
               }
             ]
-          },
-    ]
+          }
+        ]
       },
       { "nome": "localidade",
         "categoria": "llp",
@@ -7023,13 +7021,13 @@
               },
               {
                 "code": 9
-              }
+              },
               {
                 "code": 10
               }
             ]
-          }
-    { "nome": "latitude",
+          },
+          { "nome": "latitude",
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "0..1"
@@ -7038,8 +7036,8 @@
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "0..1"
-          },
-    ]
+          }
+        ]
       },
       { "nome": "ponto_controle",
         "categoria": "llp",
@@ -7120,8 +7118,8 @@
                 "code": 4
               }
             ]
-          }
-    {"nome": "altitude_ortometrica",
+          },
+          {"nome": "altitude_ortometrica",
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "1..1"
@@ -7235,8 +7233,8 @@
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "1..1"
-          },
-    ]
+          }
+        ]
       }      
   ]
 }
