@@ -575,6 +575,11 @@
       { "nome": "situacao_marco",
         "valores": [
           {
+            "code": 0,
+            "value": "Desconhecido",
+            "descricao": "-"
+          },
+          {
             "code": 1,
             "value": "Bom",
             "descricao": "-"
@@ -5913,8 +5918,8 @@
                 "code": 404
               }
             ]
-           },
-           { "nome": "material_construcao",
+          },
+          { "nome": "material_construcao",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -5957,8 +5962,8 @@
                 "code": 98
               }
             ]
-            },
-            { "nome": "modal_uso",
+          },
+          { "nome": "modal_uso",
             "tipo": "smallint",
             "descricao": "-",
             "cardinalidade": "1..1",
@@ -5980,8 +5985,8 @@
                 "code": 9
               }
             ]
-            },
-            { "nome": "nr_faixas",
+          },
+          { "nome": "nr_faixas",
             "tipo": "varchar(255)",
             "descricao": "-",
             "cardinalidade": "0..1"
@@ -7010,6 +7015,9 @@
             "cardinalidade": "1..1",
             "mapa_valor": "situacao_marco",
             "valores": [
+              {
+                "code": 0
+              },
               {
                 "code": 1
               },
