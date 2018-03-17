@@ -7,8 +7,19 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 class MasterGen():
     def __init__(self, master_path):
-      with open(master_path) as master_file:
-        self.master = json.load(master_file)
+      try:
+        with open(master_path) as master_file:
+          self.master = json.load(master_file)
+      except EOFError as e:
+          print("Caught the EOF error.")
+          raise e
+      except IOError as e:
+          print("Caught the I/O error.")
+          raise e
+      else:
+        #Validate JSON file against JsonSchema
+        pass
+
     
     def buildSQL(self, dest, extension = None):
       master = self.master
