@@ -309,6 +309,7 @@ $BODY$
             END IF;
 
 		    RETURN NEW;
+        END IF;
 	END IF;
 
     END;
@@ -519,21 +520,6 @@ GRANT EXECUTE ON FUNCTION cg_delete_all() TO public;
 GRANT EXECUTE ON FUNCTION cg_delete_all() TO postgres;
 
 --########################################################
---Cria função que atualiza o nome do banco na tabela de estilos
-
-CREATE OR REPLACE FUNCTION public.estilo()
-  RETURNS integer AS
-$BODY$
-    UPDATE public.layer_styles
-        SET f_table_catalog = (select current_catalog);
-    SELECT 1;
-$BODY$
-  LANGUAGE sql VOLATILE
-  COST 100;
-ALTER FUNCTION public.estilo()
-  OWNER TO postgres;
-
---########################################################
 --Cria tabela de estilos
 
 CREATE TABLE public.layer_styles
@@ -561,6 +547,20 @@ ALTER TABLE public.layer_styles
 GRANT ALL ON TABLE public.layer_styles TO postgres;
 GRANT ALL ON TABLE public.layer_styles TO public;
 
+--########################################################
+--Cria função que atualiza o nome do banco na tabela de estilos
+
+CREATE OR REPLACE FUNCTION public.estilo()
+  RETURNS integer AS
+$BODY$
+    UPDATE public.layer_styles
+        SET f_table_catalog = (select current_catalog);
+    SELECT 1;
+$BODY$
+  LANGUAGE sql VOLATILE
+  COST 100;
+ALTER FUNCTION public.estilo()
+  OWNER TO postgres;
 
 --########################################################
 --Cria tabela do Layer Filter
@@ -579,3 +579,5 @@ WITH (
 ALTER TABLE public.layer_filter
   OWNER TO postgres;
 
+GRANT ALL ON TABLE public.layer_styles TO postgres;
+GRANT ALL ON TABLE public.layer_styles TO public;
