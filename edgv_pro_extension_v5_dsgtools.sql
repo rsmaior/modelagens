@@ -1,4 +1,34 @@
+CREATE TABLE edgv.aquisicao_veg_d(
+	id serial NOT NULL,
+	geom geometry(MULTILINESTRING, 31982),
+	CONSTRAINT aquisicao_veg_d_pk PRIMARY KEY (id)
+	 WITH (FILLFACTOR = 80)
+);
 
+CREATE INDEX aquisicao_veg_d_geom ON edgv.aquisicao_veg_d USING gist (geom);
+
+CREATE TABLE edgv.aquisicao_vegetacao_c(
+	id serial NOT NULL,
+	tipo smallint NOT NULL,
+	geom geometry(MULTIPOINT, 31982),
+	CONSTRAINT aquisicao_vegetacao_c_pk PRIMARY KEY (id)
+	 WITH (FILLFACTOR = 80)
+);
+ALTER TABLE edgv.aquisicao_vegetacao_c
+    ADD CONSTRAINT aquisicao_vegetacao_c_tipo_fk FOREIGN KEY (tipo)
+    REFERENCES dominios.tipo_veg (code) MATCH FULL
+    ON UPDATE NO ACTION ON DELETE NO ACTION;
+CREATE INDEX aquisicao_vegetacao_c_geom ON edgv.aquisicao_vegetacao_c USING gist (geom);
+ALTER TABLE ONLY edgv.aquisicao_vegetacao_c ALTER COLUMN tipo SET DEFAULT -1;
+
+CREATE TABLE edgv.aquisicao_area_construida_c(
+	id serial NOT NULL,
+	geom geometry(MULTIPOINT, 31982),
+	CONSTRAINT aquisicao_area_construida_c_pk PRIMARY KEY (id)
+	 WITH (FILLFACTOR = 80)
+);
+
+CREATE INDEX aquisicao_area_construida_c_geom ON edgv.aquisicao_area_construida_c USING gist (geom);
 
 --########################################################
 
