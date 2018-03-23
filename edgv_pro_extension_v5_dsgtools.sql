@@ -438,3 +438,26 @@ ALTER TABLE public.layer_filter
 
 GRANT ALL ON TABLE public.layer_styles TO postgres;
 GRANT ALL ON TABLE public.layer_styles TO public;
+
+--########################################################
+--Cria tabela menu profile
+
+CREATE TABLE public.menu_profile
+(
+    id serial NOT NULL,
+    nome_do_perfil text NOT NULL,
+    descricao text,
+    perfil json NOT NULL,
+    ordem_menu json NOT NULL,
+    CONSTRAINT menu_profile_pkey PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.menu_profile
+    OWNER to postgres;
+
+GRANT ALL ON TABLE public.menu_profile TO postgres;
+GRANT ALL ON TABLE public.menu_profile TO PUBLIC;
