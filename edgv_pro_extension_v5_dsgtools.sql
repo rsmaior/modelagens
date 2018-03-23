@@ -119,7 +119,7 @@ CREATE TABLE dominios.tipo_comprovacao (
  CONSTRAINT tipo_comprovacao_pk PRIMARY KEY (code)
 );
 
-INSERT INTO dominios.tipo_comprovacao (code,code_name) VALUES (999,'A SER PREENCHIDO');
+INSERT INTO dominios.tipo_comprovacao (code,code_name) VALUES (-1,'A SER PREENCHIDO');
 INSERT INTO dominios.tipo_comprovacao (code,code_name) VALUES (1,'Confirmado em campo');
 INSERT INTO dominios.tipo_comprovacao (code,code_name) VALUES (2,'Não possível de confirmar em campo');
 
@@ -128,7 +128,7 @@ CREATE TABLE dominios.tipo_insumo (
  code_name text NOT NULL,
  CONSTRAINT tipo_insumo_pk PRIMARY KEY (code)
 );
-INSERT INTO dominios.tipo_insumo (code,code_name) VALUES (999,'A SER PREENCHIDO');
+INSERT INTO dominios.tipo_insumo (code,code_name) VALUES (-1,'A SER PREENCHIDO');
 INSERT INTO dominios.tipo_insumo (code,code_name) VALUES (1,'Fotointerpretado');
 INSERT INTO dominios.tipo_insumo (code,code_name) VALUES (2,'Insumo externo');
 INSERT INTO dominios.tipo_insumo (code,code_name) VALUES (3,'Processo automático');
