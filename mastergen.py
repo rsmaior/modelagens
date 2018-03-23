@@ -113,9 +113,16 @@ class MasterGen():
                             master["geom_suffix"][primitiva]))
                   sql.append(u"\t ADD CONSTRAINT {0}_{1}_{2}_{3}_check ".format(classe["categoria"], classe["nome"], \
                             master["geom_suffix"][primitiva], atributo["nome"]))
-                  sql.append(u"\t CHECK ({0} = ANY(ARRAY[{1}])); ".format(atributo["nome"], \
-                            ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
-                  sql.append(u"")
+
+                  if 'a_ser_preenchido' in master:
+                    valores_att.append(master["a_ser_preenchido"]["code"])
+                    sql.append(u"\t CHECK ({0} = ANY(ARRAY[{1}])); ".format(atributo["nome"], \
+                              ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
+                  else:
+                    sql.append(u"\t CHECK ({0} = ANY(ARRAY[{1}])); ".format(atributo["nome"], \
+                              ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
+
+                    sql.append(u"")
                 
                 if master['a_ser_preenchido']:
                   sql.append(u"ALTER TABLE {1}.{4}_{0}_{2} ALTER COLUMN {3} SET DEFAULT {5};".format(classe["nome"], \
@@ -129,8 +136,15 @@ class MasterGen():
                           master["geom_suffix"][primitiva]))
                 sql.append(u"\t ADD CONSTRAINT {0}_{1}_{2}_{3}_check ".format(classe["categoria"], classe["nome"], \
                           master["geom_suffix"][primitiva], atributo["nome"]))
-                sql.append(u"\t CHECK ({0} <@ ANY(ARRAY[{1}])); ".format(atributo["nome"], \
-                          ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
+
+                if 'a_ser_preenchido' in master:
+                  valores_att.append(master["a_ser_preenchido"]["code"])
+                  sql.append(u"\t CHECK ({0} <@ ANY(ARRAY[{1}])); ".format(atributo["nome"], \
+                            ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
+                else:
+                  sql.append(u"\t CHECK ({0} <@ ANY(ARRAY[{1}])); ".format(atributo["nome"], \
+                            ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
+
                 sql.append(u"")
 
                 if master['a_ser_preenchido']:
