@@ -21,7 +21,7 @@ class MasterGen():
             # TODO Validate JSON file against JsonSchema
             pass
 
-    def buildSQL(self, dest, extension=None):
+    def buildSQL(self, dest, atributos_padrao=False, extension_classes=False):
         master = self.master
         sql = []
         sql.append(u"CREATE SCHEMA {0};".format(master["schema_edgv"]))
@@ -73,7 +73,7 @@ class MasterGen():
 
             sql.append(u"")
 
-        if "extension_classes" in master:
+        if extension_classes and "extension_classes" in master:
             master["classes"].extend(master["extension_classes"])
 
         for classe in master["classes"]:
@@ -83,7 +83,7 @@ class MasterGen():
                 sql.append(u"\t {0} serial NOT NULL,".format(
                     master["nome_id"]))
 
-                if "atributos_padrao" in master:
+                if atributos_padrao and "atributos_padrao" in master:
                     classe["atributos"].extend(master["atributos_padrao"])
 
                 for atributo in classe["atributos"]:
@@ -186,10 +186,6 @@ class MasterGen():
         try:
             with open(dest, 'w') as sql_file:
                 sql_text = "\r".join(sql).encode('utf-8')
-                if extension:
-                    with open(extension) as extension_file:
-                        extension = extension_file.read()
-                        sql_text += extension
                 sql_file.write(sql_text)
                 return "Arquivo de modelagem SQL gerado com sucesso em {0}".format(dest)
         except Exception as e:
