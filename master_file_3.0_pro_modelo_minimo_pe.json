@@ -172,6 +172,21 @@
             "Curva traçada com o valor adicional de meia equidistância, com o intuito de melhor representar o relevo."
         }
       ]
+    },
+    {
+      "nome": "tipo_trecho_drenagem",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Curso d'água",
+          "descricao": "Trecho de drenagem formado naturalmente."
+        },
+        {
+          "code": 3,
+          "value": "Pluvial",
+          "descricao": "Trecho de drenagem formado somente por águas pluviais."
+        }
+      ]
     }
   ],
   "classes": [
@@ -338,6 +353,85 @@
             },
             {
               "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "ponto_cotado",
+      "categoria": "elemnat",
+      "descricao": "Ponto cotado é um ponto com cota de altitude conhecida.",
+      "primitivas": ["MultiPoint"],
+      "atributos": [
+        {
+          "nome": "cota",
+          "tipo": "varchar(255)",
+          "descricao": "Indica o valor da altitude do ponto, em metros (m).",
+          "cardinalidade": "1..1"
+        },
+        {
+          "nome": "cota_comprovada",
+          "tipo": "smallint",
+          "descricao": "Indica se a cota no ponto é comprovada, em metros (m).",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "trecho_drenagem",
+      "categoria": "elemnat",
+      "descricao":
+        "Trecho de drenagem é a representação aproximada dos fluxos de corrente presentes em um trecho de curso d'água.",
+      "primitivas": ["MultiLinestring"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "Indica o nome completo da instância",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao":
+            "Indica o tipo de trecho de drenagem, ou seja se é um curso formado naturalmente ou por águas pluviais.",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_trecho_drenagem",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 3
+            }
+          ]
+        },
+        {
+          "nome": "regime",
+          "tipo": "smallint",
+          "descricao":
+            "Indica o regime da ocorrência da água, para o trecho de drenagem.",
+          "cardinalidade": "1..1",
+          "mapa_valor": "regime",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 5
             }
           ]
         }
