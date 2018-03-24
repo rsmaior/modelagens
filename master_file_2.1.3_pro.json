@@ -7,6 +7,74 @@
     "code": -1,
     "value": "A SER PREENCHIDO"
   },
+  "atributos_padrao": [
+    {
+      "nome": "tipo_comprovacao",
+      "tipo": "smallint",
+      "mapa_valor": "tipo_comprovacao",
+      "descricao": "-",
+      "cardinalidade": "1..1",
+      "valores": [
+        {
+          "code": 1
+        },
+        {
+          "code": 2
+        },
+        {
+          "code": 3
+        }
+      ]
+    },
+    {
+      "nome": "tipo_insumo",
+      "tipo": "smallint",
+      "mapa_valor": "tipo_insumo",
+      "descricao": "-",
+      "cardinalidade": "1..1",
+      "valores": [
+        {
+          "code": 1
+        },
+        {
+          "code": 2
+        },
+        {
+          "code": 3
+        },
+        {
+          "code": 4
+        },
+        {
+          "code": 5
+        }
+      ]
+    },
+    {
+      "nome": "observacao",
+      "tipo": "VARCHAR(255)",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    },
+    {
+      "nome": "data_modificacao",
+      "tipo": "timestamp with time zone",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    },
+    {
+      "nome": "controle_id",
+      "tipo": "uuid",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    },
+    {
+      "nome": "ultimo_usuario",
+      "tipo": "VARCHAR(255)",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    }
+  ],
   "coord_sys": 31982,
   "fill_factor": 80,
   "nome_geom": "geom",
@@ -46,6 +114,56 @@
     }
   ],
   "dominios": [
+    {
+      "nome": "tipo_comprovacao",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Confirmado em campo",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Não possível de confirmar em campo",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Feição não necessita de confirmação",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_insumo",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Fotointerpretado",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Insumo externo",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Processo automático",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Aquisição em campo",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Mapeamento anterior",
+          "descricao": "-"
+        }
+      ]
+    },
     {
       "nome": "administracao",
       "valores": [
@@ -7252,6 +7370,256 @@
           "cardinalidade": "1..1"
         }
       ]
+    }
+  ],
+  "extension_classes": [
+    {
+      "nome": "objeto_desconhecido",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "valida",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "revisao",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "categoria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "corrigido",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "moldura",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        }
+      ]
+    },
+    {
+      "nome": "limite_area_continua",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        }
+      ]
+    },
+    {
+      "nome": "limite_vegetacao",
+      "categoria": "aquisicao",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": []
+    },
+    {
+      "nome": "centroide_vegetacao",
+      "categoria": "aquisicao",
+      "descricao": "-",
+      "primitivas": ["MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "Nome completo da instância",
+          "cardinalidade": "0..1",
+          "restricao_atributo_incomum": []
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "Indica o tipo de vegetação",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_veg",
+          "valores": [
+            {
+              "code": 301
+            },
+            {
+              "code": 302
+            },
+            {
+              "code": 201,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 202,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 801,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 501,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 701,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 702,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 401,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 1101,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 901
+            },
+            {
+              "code": 601
+            },
+            {
+              "code": 196
+            },
+            {
+              "code": 150
+            },
+            {
+              "code": 118,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 102,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 115,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 114,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 116,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 103,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 151,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 117,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 153,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 152,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 119,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 142,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 107,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 124
+            },
+            {
+              "code": 198,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 195,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 1296
+            },
+            {
+              "code": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "centroide_area_construida",
+      "categoria": "aquisicao",
+      "descricao": "-",
+      "primitivas": ["MultiPoint"],
+      "atributos": []
     }
   ]
 }
