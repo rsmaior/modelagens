@@ -77,14 +77,14 @@ class MasterGen():
             master["classes"].extend(master["extension_classes"])
 
         for classe in master["classes"]:
+            if atributos_padrao and "atributos_padrao" in master:
+                classe["atributos"].extend(master["atributos_padrao"])
+                
             for primitiva in classe["primitivas"]:
                 sql.append(u"CREATE TABLE {0}.{3}_{1}_{2}(".format(
                     master["schema_edgv"], classe["nome"], master["geom_suffix"][primitiva], classe["categoria"]))
                 sql.append(u"\t {0} serial NOT NULL,".format(
                     master["nome_id"]))
-
-                if atributos_padrao and "atributos_padrao" in master:
-                    classe["atributos"].extend(master["atributos_padrao"])
 
                 for atributo in classe["atributos"]:
                     if atributo["cardinalidade"] == "0..1":
