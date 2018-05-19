@@ -4,7 +4,7 @@
   "schema_edgv": "edgv",
   "schema_dominios": "dominios",
   "a_ser_preenchido": {
-    "code": -1,
+    "code": 999,
     "value": "A SER PREENCHIDO"
   },
   "atributos_padrao": [
