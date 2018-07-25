@@ -12,6 +12,6 @@ featureProcessor = TestFeatureProcessor(jsonMapeamentoPath)
 
 destino = []
 for feat in origem:
-    destino += featureProcessor.input(feat)
+    destino.append(featureProcessor.input(feat))
 print origem
 print destino
