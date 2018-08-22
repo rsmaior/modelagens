@@ -20114,6 +20114,10 @@
             "attr_origem": "orgao_responsavel",
             "attr_destino": "orgResp"
         },
+        {"__comment":"tipo_delimitacao <-> coincideComDentroDe",
+            "attr_origem": "tipo_delimitacao",
+            "attr_destino": "coincideComDentroDe"
+        },
         {"__comment":"controle_id <-> controleId",
             "attr_origem": "controle_id",
             "attr_destino": "controleId"
