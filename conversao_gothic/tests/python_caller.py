@@ -90,14 +90,14 @@ class FeatureFactory(object):
                 tupleDict[optionalItem['nome_atributo']] = optionalItem['valor']
         keys = tupleDict.keys()
         keys.sort()
-        keyString = '{'+','.join(['"{0}":"{1}"'.format(i,tupleDict[i]) for i in keys])+'}'
+        keyString = '{'+','.join([u'"{0}":"{1}"'.format(i,tupleDict[i]) for i in keys])+'}'
         return classKey, keyString
     
     def buildAttrMapDict(self, fileDict):
         """
         Este método recebe o dicionário de entrada e cria um dicionário de atributos
         """
-        inputList = fileDict["mapeamento_geral"]
+        inputList = fileDict["mapeamento_atributos"]
         outputDict = dict()
         for item in inputList:
             mapItem = {} if 'mapeamento' not in item.keys() else item['mapeamento']
