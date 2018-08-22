@@ -119,70 +119,6 @@
 		"tipo" : 302
 	},
 	{
-		"fme_feature_type" : "edgv.aquisicao_veg_d"
-	},
-	{
-		"fme_feature_type" : "edgv.aquisicao_vegetacao_c",
-		"tipo" : 601
-	},
-	{
-		"fme_feature_type" : "edgv.aquisicao_vegetacao_c",
-		"tipo" : 901
-	},
-	{
-		"fme_feature_type" : "edgv.aquisicao_vegetacao_c",
-		"tipo" : 196
-	},
-	{
-		"fme_feature_type" : "edgv.aquisicao_vegetacao_c",
-		"tipo" : 1296
-	},
-	{
-		"fme_feature_type" : "edgv.aquisicao_vegetacao_c",
-		"tipo" : 301
-	},
-	{
-		"fme_feature_type" : "edgv.aquisicao_vegetacao_c",
-		"tipo" : 1220
-	},
-	{
-		"fme_feature_type" : "edgv.aquisicao_vegetacao_c",
-		"tipo" : 150
-	},
-	{
-		"fme_feature_type" : "edgv.aquisicao_vegetacao_c",
-		"tipo" : 1015
-	},
-	{
-		"fme_feature_type" : "edgv.aquisicao_vegetacao_c",
-		"tipo" : 1018
-	},
-	{
-		"fme_feature_type" : "edgv.aux_moldura_a",
-		"mi" : "Geraldo_Almeida",
-		"descricao" : "novo"
-	},
-	{
-		"fme_feature_type" : "edgv.aux_objeto_desconhecido_p",
-		"obs" : null
-	},
-	{
-		"fme_feature_type" : "edgv.aux_revisao_l",
-		"obs" : "TRA_Ponte_L"
-	},
-	{
-		"fme_feature_type" : "edgv.aux_revisao_p",
-		"obs" : "retirar o ponto que foi criado de via de deslocamento"
-	},
-	{
-		"fme_feature_type" : "edgv.aux_valida_a",
-		"obs" : "Ponta livre de aquisicao_veg_d"
-	},
-	{
-		"fme_feature_type" : "edgv.aux_valida_p",
-		"obs" : "Garagem"
-	},
-	{
 		"fme_feature_type" : "edgv.constr_deposito_a",
 		"nome" : null,
 		"tipo" : 301,
@@ -224,6 +160,16 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_deposito_a",
+		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 4,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 6
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_a",
 		"nome" : "Galpão de Máquinas",
 		"tipo" : 108,
 		"tipo_exposicao" : 3,
@@ -234,9 +180,59 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_deposito_a",
+		"nome" : "Galpão de Máquinas",
+		"tipo" : 108,
+		"tipo_exposicao" : 4,
+		"situacao_fisica" : 3,
+		"material_construcao" : 3,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 98
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_a",
 		"nome" : null,
 		"tipo" : 201,
 		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 2,
+		"finalidade" : 2,
+		"tipo_produto_residuo" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_a",
+		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 4,
+		"situacao_fisica" : 3,
+		"material_construcao" : 5,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 0
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_a",
+		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 21
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_a",
+		"nome" : "Galpão de Máquinas",
+		"tipo" : 108,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 98
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_a",
+		"nome" : null,
+		"tipo" : 201,
+		"tipo_exposicao" : 5,
 		"situacao_fisica" : 3,
 		"material_construcao" : 2,
 		"finalidade" : 2,
@@ -255,12 +251,32 @@
 	{
 		"fme_feature_type" : "edgv.constr_deposito_a",
 		"nome" : "Galpão de Máquinas",
+		"tipo" : 108,
+		"tipo_exposicao" : 4,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 98
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_a",
+		"nome" : "Galpão de Máquinas",
 		"tipo" : 132,
 		"tipo_exposicao" : 3,
 		"situacao_fisica" : 3,
 		"material_construcao" : 1,
 		"finalidade" : 8,
 		"tipo_produto_residuo" : 98
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_a",
+		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 0
 	},
 	{
 		"fme_feature_type" : "edgv.constr_deposito_a",
@@ -325,6 +341,26 @@
 	{
 		"fme_feature_type" : "edgv.constr_deposito_p",
 		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 4,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 0
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_p",
+		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 6
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_p",
+		"nome" : null,
 		"tipo" : 202,
 		"tipo_exposicao" : 3,
 		"situacao_fisica" : 3,
@@ -341,6 +377,26 @@
 		"material_construcao" : 1,
 		"finalidade" : 4,
 		"tipo_produto_residuo" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_p",
+		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 5,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 0
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_p",
+		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 0
 	},
 	{
 		"fme_feature_type" : "edgv.constr_deposito_p",
@@ -364,6 +420,36 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_deposito_p",
+		"nome" : null,
+		"tipo" : 109,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 6
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_p",
+		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 98
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_p",
+		"nome" : null,
+		"tipo" : 202,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"finalidade" : 4,
+		"tipo_produto_residuo" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_p",
 		"nome" : "Fazenda Pedacinho do Céu",
 		"tipo" : 108,
 		"tipo_exposicao" : 3,
@@ -371,6 +457,26 @@
 		"material_construcao" : 1,
 		"finalidade" : 8,
 		"tipo_produto_residuo" : 0
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_p",
+		"nome" : null,
+		"tipo" : 108,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 3,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 0
+	},
+	{
+		"fme_feature_type" : "edgv.constr_deposito_p",
+		"nome" : "Máquinario",
+		"tipo" : 108,
+		"tipo_exposicao" : 3,
+		"situacao_fisica" : 3,
+		"material_construcao" : 5,
+		"finalidade" : 8,
+		"tipo_produto_residuo" : 98
 	},
 	{
 		"fme_feature_type" : "edgv.constr_deposito_p",
@@ -525,6 +631,12 @@
 		"nome" : null,
 		"tipo" : 802,
 		"material_construcao" : 2
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_a",
+		"nome" : null,
+		"tipo" : 802,
+		"material_construcao" : 1
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_a",
@@ -864,6 +976,12 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_a",
+		"nome" : null,
+		"tipo" : 1712,
+		"material_construcao" : 999
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_a",
 		"nome" : "2º Batalhão Rodoviário da Brigada Militar",
 		"tipo" : 1301,
 		"material_construcao" : 1
@@ -1200,6 +1318,12 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_a",
+		"nome" : "SR Engenharia Industrial",
+		"tipo" : 1028,
+		"material_construcao" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_a",
 		"nome" : "SENAC",
 		"tipo" : 2133,
 		"material_construcao" : 1
@@ -1335,6 +1459,12 @@
 		"nome" : "Agrimec",
 		"tipo" : 1029,
 		"material_construcao" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_a",
+		"nome" : null,
+		"tipo" : 0,
+		"material_construcao" : 0
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_a",
@@ -2658,6 +2788,12 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_a",
+		"nome" : "Olaria",
+		"tipo" : 1026,
+		"material_construcao" : 5
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_a",
 		"nome" : "Escola Antônio Francisco Lisboa",
 		"tipo" : 518,
 		"material_construcao" : 1
@@ -2847,6 +2983,12 @@
 		"nome" : "Hospital da Guarnicao de Santa Maria (HGuSM)",
 		"tipo" : 601,
 		"material_construcao" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_a",
+		"nome" : null,
+		"tipo" : 0,
+		"material_construcao" : 999
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_a",
@@ -3057,6 +3199,12 @@
 		"nome" : "Chácara Alvarino",
 		"tipo" : 1212,
 		"material_construcao" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_a",
+		"nome" : "Corpo de Bombeiros",
+		"tipo" : 1712,
+		"material_construcao" : 3
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_a",
@@ -3294,6 +3442,18 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : null,
+		"tipo" : 0,
+		"material_construcao" : 999
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : null,
+		"tipo" : 0,
+		"material_construcao" : 0
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
 		"nome" : "Subprefeitura de São Valentim",
 		"tipo" : 1322,
 		"material_construcao" : 1
@@ -3441,6 +3601,18 @@
 		"nome" : "Sicredi",
 		"tipo" : 998,
 		"material_construcao" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : "",
+		"tipo" : 1712,
+		"material_construcao" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : null,
+		"tipo" : 0,
+		"material_construcao" : 5
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
@@ -3936,6 +4108,12 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : null,
+		"tipo" : 1712,
+		"material_construcao" : 2
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
 		"nome" : "Fazenda Sarandi",
 		"tipo" : 1212,
 		"material_construcao" : 1
@@ -4398,6 +4576,12 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : "Capela São Pedro",
+		"tipo" : 601,
+		"material_construcao" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
 		"nome" : "Escola Municipal de Ensino Infantil Montanha Russa",
 		"tipo" : 518,
 		"material_construcao" : 1
@@ -4842,6 +5026,12 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : null,
+		"tipo" : 1712,
+		"material_construcao" : 5
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
 		"nome" : "6º Esq Cav Mec",
 		"tipo" : 1712,
 		"material_construcao" : 1
@@ -5061,6 +5251,12 @@
 		"nome" : "Departamento de Diagnóstico e Pesquisa em Agricultura (FEPAGRO)",
 		"tipo" : 1398,
 		"material_construcao" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : null,
+		"tipo" : 999,
+		"material_construcao" : 0
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
@@ -5334,6 +5530,18 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : "CISM - Centro de Instrução de Santa Maria",
+		"tipo" : 1712,
+		"material_construcao" : 999
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : null,
+		"tipo" : 1218,
+		"material_construcao" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
 		"nome" : "Cavajuretã Centro Equestre",
 		"tipo" : 1212,
 		"material_construcao" : 1
@@ -5460,6 +5668,12 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : "Companhia Riograndese de Valorização de Resíduos - Unidade Santa Maria",
+		"tipo" : 498,
+		"material_construcao" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
 		"nome" : "Fazenda Bassani",
 		"tipo" : 1212,
 		"material_construcao" : 1
@@ -5580,6 +5794,12 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : "Cocheira",
+		"tipo" : 1212,
+		"material_construcao" : 5
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
 		"nome" : "Sítio do Gavião",
 		"tipo" : 1212,
 		"material_construcao" : 1
@@ -5640,8 +5860,20 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : "CISM - Centro de Instrução de Santa Maria",
+		"tipo" : 1712,
+		"material_construcao" : 0
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
 		"nome" : "Sítio Recanto Dourado",
 		"tipo" : 1212,
+		"material_construcao" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_edificacao_p",
+		"nome" : null,
+		"tipo" : 1,
 		"material_construcao" : 1
 	},
 	{
@@ -5959,6 +6191,12 @@
 	{
 		"fme_feature_type" : "edgv.constr_ocupacao_solo_a",
 		"nome" : null,
+		"tipo" : 201,
+		"situacao_fisica" : 999
+	},
+	{
+		"fme_feature_type" : "edgv.constr_ocupacao_solo_a",
+		"nome" : null,
 		"tipo" : 405,
 		"situacao_fisica" : 3
 	},
@@ -5973,6 +6211,12 @@
 		"nome" : "Campo Imenbuí",
 		"tipo" : 201,
 		"situacao_fisica" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.constr_ocupacao_solo_a",
+		"nome" : null,
+		"tipo" : 201,
+		"situacao_fisica" : 1
 	},
 	{
 		"fme_feature_type" : "edgv.constr_ocupacao_solo_a",
@@ -6144,6 +6388,12 @@
 	},
 	{
 		"fme_feature_type" : "edgv.constr_ocupacao_solo_l",
+		"nome" : null,
+		"tipo" : 301,
+		"situacao_fisica" : 999
+	},
+	{
+		"fme_feature_type" : "edgv.constr_ocupacao_solo_l",
 		"nome" : "Autódromo Santa Maria",
 		"tipo" : 304,
 		"situacao_fisica" : 3
@@ -6199,6 +6449,12 @@
 	{
 		"fme_feature_type" : "edgv.constr_ocupacao_solo_p",
 		"nome" : null,
+		"tipo" : 201,
+		"situacao_fisica" : 4
+	},
+	{
+		"fme_feature_type" : "edgv.constr_ocupacao_solo_p",
+		"nome" : null,
 		"tipo" : 104,
 		"situacao_fisica" : 3
 	},
@@ -6223,8 +6479,26 @@
 	{
 		"fme_feature_type" : "edgv.constr_ocupacao_solo_p",
 		"nome" : null,
+		"tipo" : 201,
+		"situacao_fisica" : 1
+	},
+	{
+		"fme_feature_type" : "edgv.constr_ocupacao_solo_p",
+		"nome" : null,
 		"tipo" : 501,
 		"situacao_fisica" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.constr_ocupacao_solo_p",
+		"nome" : null,
+		"tipo" : 206,
+		"situacao_fisica" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.constr_ocupacao_solo_p",
+		"nome" : null,
+		"tipo" : 298,
+		"situacao_fisica" : 999
 	},
 	{
 		"fme_feature_type" : "edgv.constr_ocupacao_solo_p",
@@ -6485,9 +6759,73 @@
 	{
 		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_l",
 		"nome" : null,
+		"tipo" : 1101,
+		"situacao_fisica" : 2,
+		"material_construcao" : 23,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_l",
+		"nome" : null,
 		"tipo" : 303,
 		"situacao_fisica" : 3,
 		"material_construcao" : 97,
+		"posicao_relativa" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_l",
+		"nome" : null,
+		"tipo" : 1101,
+		"situacao_fisica" : 3,
+		"material_construcao" : 2,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_l",
+		"nome" : null,
+		"tipo" : 303,
+		"situacao_fisica" : 999,
+		"material_construcao" : 999,
+		"posicao_relativa" : 999
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_l",
+		"nome" : null,
+		"tipo" : 1101,
+		"situacao_fisica" : 3,
+		"material_construcao" : 4,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_l",
+		"nome" : null,
+		"tipo" : 1101,
+		"situacao_fisica" : 1,
+		"material_construcao" : 23,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_l",
+		"nome" : null,
+		"tipo" : 1101,
+		"situacao_fisica" : 999,
+		"material_construcao" : 999,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_l",
+		"nome" : null,
+		"tipo" : 1101,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_l",
+		"nome" : null,
+		"tipo" : 303,
+		"situacao_fisica" : 3,
+		"material_construcao" : 3,
 		"posicao_relativa" : 3
 	},
 	{
@@ -6517,6 +6855,30 @@
 	{
 		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
 		"nome" : null,
+		"tipo" : 1401,
+		"situacao_fisica" : 3,
+		"material_construcao" : 97,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1501,
+		"situacao_fisica" : 3,
+		"material_construcao" : 3,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1401,
+		"situacao_fisica" : 3,
+		"material_construcao" : 3,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
 		"tipo" : 1301,
 		"situacao_fisica" : 0,
 		"material_construcao" : 97,
@@ -6532,9 +6894,73 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1401,
+		"situacao_fisica" : 3,
+		"material_construcao" : 0,
+		"posicao_relativa" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1201,
+		"situacao_fisica" : 3,
+		"material_construcao" : 0,
+		"posicao_relativa" : 17
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1301,
+		"situacao_fisica" : 0,
+		"material_construcao" : 97,
+		"posicao_relativa" : 14
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1401,
+		"situacao_fisica" : 3,
+		"material_construcao" : 0,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
 		"nome" : "PVC",
 		"tipo" : 1501,
 		"situacao_fisica" : 3,
+		"material_construcao" : 2,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1401,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"posicao_relativa" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1401,
+		"situacao_fisica" : 3,
+		"material_construcao" : 97,
+		"posicao_relativa" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1201,
+		"situacao_fisica" : 3,
+		"material_construcao" : 97,
+		"posicao_relativa" : 17
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1501,
+		"situacao_fisica" : 2,
 		"material_construcao" : 2,
 		"posicao_relativa" : 97
 	},
@@ -6548,6 +6974,38 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1501,
+		"situacao_fisica" : 3,
+		"material_construcao" : 1,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1501,
+		"situacao_fisica" : 3,
+		"material_construcao" : 5,
+		"posicao_relativa" : 97
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1301,
+		"situacao_fisica" : 3,
+		"material_construcao" : 0,
+		"posicao_relativa" : 3
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1201,
+		"situacao_fisica" : 3,
+		"material_construcao" : 97,
+		"posicao_relativa" : 14
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
 		"nome" : "Radio Santa Mariense",
 		"tipo" : 1301,
 		"situacao_fisica" : 3,
@@ -6555,10 +7013,32 @@
 		"posicao_relativa" : 17
 	},
 	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1301,
+		"situacao_fisica" : 0,
+		"material_construcao" : 97,
+		"posicao_relativa" : 18
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_infraestrutura_p",
+		"nome" : null,
+		"tipo" : 1501,
+		"situacao_fisica" : 3,
+		"material_construcao" : 4,
+		"posicao_relativa" : 97
+	},
+	{
 		"fme_feature_type" : "edgv.infra_elemento_transportes_p",
 		"nome" : null,
 		"tipo" : 101,
 		"situacao_fisica" : 0
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_transportes_p",
+		"nome" : null,
+		"tipo" : 101,
+		"situacao_fisica" : 3
 	},
 	{
 		"fme_feature_type" : "edgv.infra_elemento_transportes_p",
@@ -6581,11 +7061,47 @@
 	{
 		"fme_feature_type" : "edgv.infra_elemento_viario_l",
 		"nome" : null,
+		"tipo" : 302,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 2,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 4,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_l",
+		"nome" : null,
 		"tipo" : 101,
 		"material_construcao" : 0,
 		"modal_uso" : 5,
 		"nr_faixas" : 0,
 		"nr_pistas" : 0,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_l",
+		"nome" : null,
+		"tipo" : 302,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 4,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_l",
+		"nome" : null,
+		"tipo" : 302,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 2,
 		"posicao_pista" : 97,
 		"situacao_fisica" : 3,
 		"largura" : null
@@ -6603,6 +7119,42 @@
 		"largura" : null
 	},
 	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_l",
+		"nome" : null,
+		"tipo" : 302,
+		"material_construcao" : 3,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_l",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 2,
+		"modal_uso" : 5,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"posicao_pista" : 13,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_l",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 3,
+		"modal_uso" : 5,
+		"nr_faixas" : 0,
+		"nr_pistas" : 0,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
 		"fme_feature_type" : "edgv.infra_elemento_viario_p",
 		"nome" : null,
 		"tipo" : 203,
@@ -6611,6 +7163,78 @@
 		"nr_faixas" : 2,
 		"nr_pistas" : 1,
 		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 5,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"posicao_pista" : 12,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 0,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"posicao_pista" : 12,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"posicao_pista" : 12,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"posicao_pista" : 12,
 		"situacao_fisica" : 3,
 		"largura" : null
 	},
@@ -6641,10 +7265,118 @@
 	{
 		"fme_feature_type" : "edgv.infra_elemento_viario_p",
 		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 5,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
 		"tipo" : 302,
 		"material_construcao" : 2,
 		"modal_uso" : 4,
 		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"posicao_pista" : 12,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 1,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"posicao_pista" : 12,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 1,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 302,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 2,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : null,
+		"nr_pistas" : null,
+		"posicao_pista" : 12,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"posicao_pista" : 999,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 2,
+		"modal_uso" : 5,
+		"nr_faixas" : 0,
+		"nr_pistas" : 0,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : null,
+		"nr_pistas" : null,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 3,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
 		"nr_pistas" : 1,
 		"posicao_pista" : 12,
 		"situacao_fisica" : 3,
@@ -6665,6 +7397,54 @@
 	{
 		"fme_feature_type" : "edgv.infra_elemento_viario_p",
 		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 5,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 5,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"posicao_pista" : 12,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 999,
+		"modal_uso" : 4,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"posicao_pista" : 999,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 302,
+		"material_construcao" : 2,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 2,
+		"posicao_pista" : 12,
+		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
 		"tipo" : 101,
 		"material_construcao" : 2,
 		"modal_uso" : 5,
@@ -6672,6 +7452,18 @@
 		"nr_pistas" : 0,
 		"posicao_pista" : 97,
 		"situacao_fisica" : 3,
+		"largura" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_elemento_viario_p",
+		"nome" : null,
+		"tipo" : 203,
+		"material_construcao" : 5,
+		"modal_uso" : 4,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"posicao_pista" : 97,
+		"situacao_fisica" : 2,
 		"largura" : null
 	},
 	{
@@ -6711,6 +7503,54 @@
 		"concessionaria" : null
 	},
 	{
+		"fme_feature_type" : "edgv.infra_ferrovia_l",
+		"nome" : null,
+		"tipo" : 7,
+		"situacao_fisica" : 3,
+		"posicao_relativa" : 2,
+		"nr_linhas" : 1,
+		"em_arruamento" : 2,
+		"jurisdicao" : 1,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_ferrovia_l",
+		"nome" : null,
+		"tipo" : 7,
+		"situacao_fisica" : 3,
+		"posicao_relativa" : 2,
+		"nr_linhas" : 1,
+		"em_arruamento" : 2,
+		"jurisdicao" : 1,
+		"administracao" : 7,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_ferrovia_l",
+		"nome" : "Rumo",
+		"tipo" : 7,
+		"situacao_fisica" : 3,
+		"posicao_relativa" : 2,
+		"nr_linhas" : 1,
+		"em_arruamento" : 2,
+		"jurisdicao" : 1,
+		"administracao" : 6,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_ferrovia_l",
+		"nome" : null,
+		"tipo" : 7,
+		"situacao_fisica" : 3,
+		"posicao_relativa" : 2,
+		"nr_linhas" : 1,
+		"em_arruamento" : 2,
+		"jurisdicao" : 1,
+		"administracao" : 6,
+		"concessionaria" : null
+	},
+	{
 		"fme_feature_type" : "edgv.infra_pista_pouso_l",
 		"nome" : null,
 		"tipo" : 9,
@@ -6731,6 +7571,21 @@
 		"nome" : null,
 		"tipo" : 5,
 		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 2,
 		"trafego" : 1,
 		"nr_faixas" : 2,
 		"nr_pistas" : 1,
@@ -6788,6 +7643,21 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Avenida Paulo Laudo",
 		"tipo" : 5,
 		"revestimento" : 3,
@@ -6795,6 +7665,66 @@
 		"nr_faixas" : 2,
 		"nr_pistas" : 2,
 		"canteiro_divisorio" : 1,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 1,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
 		"situacao_fisica" : 3,
 		"jurisdicao" : 0,
 		"sigla" : null,
@@ -6819,6 +7749,51 @@
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 1,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 999,
+		"trafego" : 999,
+		"nr_faixas" : null,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 999,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
 		"tipo" : 3,
 		"revestimento" : 1,
 		"trafego" : 2,
@@ -6829,6 +7804,111 @@
 		"jurisdicao" : 0,
 		"sigla" : null,
 		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : "BR-287",
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 2,
+		"sigla" : null,
+		"administracao" : 2,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 999,
+		"trafego" : 999,
+		"nr_faixas" : null,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 999,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : null,
+		"administracao" : 1,
 		"concessionaria" : null
 	},
 	{
@@ -6844,6 +7924,66 @@
 		"jurisdicao" : 0,
 		"sigla" : null,
 		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 1,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 1,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 2,
+		"sigla" : "RS-516",
+		"administracao" : 2,
 		"concessionaria" : null
 	},
 	{
@@ -6879,10 +8019,100 @@
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 1,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 2,
+		"sigla" : null,
+		"administracao" : 2,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : "BR-392",
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : "BR-392",
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
 		"tipo" : 6,
 		"revestimento" : 1,
 		"trafego" : 2,
 		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : null,
 		"nr_pistas" : 1,
 		"canteiro_divisorio" : 2,
 		"situacao_fisica" : 3,
@@ -6908,12 +8138,57 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : "BR-392",
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : null,
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "BR-158",
 		"tipo" : 2,
 		"revestimento" : 3,
 		"trafego" : 1,
 		"nr_faixas" : 2,
 		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : null,
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : 999,
 		"canteiro_divisorio" : 2,
 		"situacao_fisica" : 3,
 		"jurisdicao" : 1,
@@ -6938,6 +8213,66 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : "BR-287",
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Estrada Municipal Fiorino Stefanon",
 		"tipo" : 2,
 		"revestimento" : 2,
@@ -6946,6 +8281,21 @@
 		"nr_pistas" : 1,
 		"canteiro_divisorio" : 2,
 		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 999,
+		"trafego" : 999,
+		"nr_faixas" : null,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 999,
 		"jurisdicao" : 0,
 		"sigla" : null,
 		"administracao" : 0,
@@ -6968,6 +8318,21 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 2,
+		"sigla" : "",
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Estrada do Carangueijo",
 		"tipo" : 2,
 		"revestimento" : 2,
@@ -6983,6 +8348,21 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Estrada Capitão Vasco da Cunha",
 		"tipo" : 2,
 		"revestimento" : 3,
@@ -6990,6 +8370,36 @@
 		"nr_faixas" : 2,
 		"nr_pistas" : 1,
 		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 1,
+		"trafego" : 2,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 1,
 		"situacao_fisica" : 3,
 		"jurisdicao" : 0,
 		"sigla" : null,
@@ -7043,6 +8453,36 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Estrada Cyrineu da Rocha",
 		"tipo" : 2,
 		"revestimento" : 2,
@@ -7054,6 +8494,36 @@
 		"jurisdicao" : 0,
 		"sigla" : null,
 		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : "BR-287",
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : null,
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : null,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
 		"concessionaria" : null
 	},
 	{
@@ -7073,6 +8543,36 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 1,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Avenida  João Luiz Pozzobom",
 		"tipo" : 2,
 		"revestimento" : 3,
@@ -7081,6 +8581,66 @@
 		"nr_pistas" : 2,
 		"canteiro_divisorio" : 1,
 		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 1,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 6,
+		"revestimento" : 999,
+		"trafego" : 999,
+		"nr_faixas" : null,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 999,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 3,
+		"revestimento" : 1,
+		"trafego" : 2,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 2,
 		"jurisdicao" : 0,
 		"sigla" : null,
 		"administracao" : 0,
@@ -7133,6 +8693,21 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 2,
+		"sigla" : null,
+		"administracao" : 2,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Estrada Municipal Amaro L Dávila",
 		"tipo" : 2,
 		"revestimento" : 2,
@@ -7155,6 +8730,21 @@
 		"nr_faixas" : 2,
 		"nr_pistas" : 2,
 		"canteiro_divisorio" : 1,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : "Estrada Municipal Amaro L Dávila",
+		"tipo" : 2,
+		"revestimento" : 1,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
 		"situacao_fisica" : 3,
 		"jurisdicao" : 0,
 		"sigla" : null,
@@ -7189,6 +8779,36 @@
 		"jurisdicao" : 0,
 		"sigla" : null,
 		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 12,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 1,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : null,
+		"administracao" : 1,
 		"concessionaria" : null
 	},
 	{
@@ -7268,6 +8888,21 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 2,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "rs-509",
 		"tipo" : 2,
 		"revestimento" : 3,
@@ -7279,6 +8914,21 @@
 		"jurisdicao" : 2,
 		"sigla" : null,
 		"administracao" : 2,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : null,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
 		"concessionaria" : null
 	},
 	{
@@ -7298,6 +8948,81 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : null,
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : "BR-158",
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : "BR-287",
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Estrada do Pinheiro",
 		"tipo" : 2,
 		"revestimento" : 2,
@@ -7309,6 +9034,36 @@
 		"jurisdicao" : 0,
 		"sigla" : null,
 		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 999,
+		"trafego" : 999,
+		"nr_faixas" : null,
+		"nr_pistas" : 999,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 999,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
 		"concessionaria" : null
 	},
 	{
@@ -7343,6 +9098,36 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : "",
+		"tipo" : 5,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 1,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Estrada Franzin",
 		"tipo" : 2,
 		"revestimento" : 2,
@@ -7363,6 +9148,36 @@
 		"revestimento" : 2,
 		"trafego" : 1,
 		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 1,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 1,
 		"nr_pistas" : 1,
 		"canteiro_divisorio" : 2,
 		"situacao_fisica" : 3,
@@ -7433,6 +9248,36 @@
 	},
 	{
 		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : "287",
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : null,
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 1,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
 		"nome" : "Estrada Gaspar R. Veleda",
 		"tipo" : 2,
 		"revestimento" : 2,
@@ -7443,6 +9288,21 @@
 		"situacao_fisica" : 3,
 		"jurisdicao" : 0,
 		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 4,
+		"trafego" : 1,
+		"nr_faixas" : null,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : "2",
 		"administracao" : 0,
 		"concessionaria" : null
 	},
@@ -7507,9 +9367,179 @@
 		"concessionaria" : null
 	},
 	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 5,
+		"revestimento" : 1,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 3,
+		"revestimento" : 1,
+		"trafego" : 2,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 1,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 1,
+		"trafego" : 2,
+		"nr_faixas" : 1,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 2,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 999,
+		"revestimento" : 999,
+		"trafego" : 999,
+		"nr_faixas" : null,
+		"nr_pistas" : null,
+		"canteiro_divisorio" : 999,
+		"situacao_fisica" : 999,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : "BR-158",
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 2,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : "BR-158",
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 1,
+		"sigla" : null,
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 1,
+		"trafego" : 1,
+		"nr_faixas" : 1,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 999,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 2,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 2,
+		"jurisdicao" : 0,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 999,
+		"sigla" : null,
+		"administracao" : 0,
+		"concessionaria" : null
+	},
+	{
+		"fme_feature_type" : "edgv.infra_via_deslocamento_l",
+		"nome" : null,
+		"tipo" : 2,
+		"revestimento" : 3,
+		"trafego" : 1,
+		"nr_faixas" : 2,
+		"nr_pistas" : 1,
+		"canteiro_divisorio" : 2,
+		"situacao_fisica" : 3,
+		"jurisdicao" : 2,
+		"sigla" : null,
+		"administracao" : 1,
+		"concessionaria" : null
+	},
+	{
 		"fme_feature_type" : "edgv.llp_delimitacao_fisica_l",
 		"tipo" : 1,
 		"material_construcao" : 6
+	},
+	{
+		"fme_feature_type" : "edgv.llp_delimitacao_fisica_l",
+		"tipo" : 1,
+		"material_construcao" : 999
 	},
 	{
 		"fme_feature_type" : "edgv.llp_limite_especial_l",
@@ -8588,5 +10618,33 @@
 		"orgao_responsavel" : "Prefeitura de Santa ",
 		"latitude" : "228.714,791",
 		"longitude" : "6.712.816,961"
+	},
+	{
+		"fme_feature_type" : "edgv.llp_ponto_controle_p",
+		"cod_ponto" : null,
+		"tipo" : 16,
+		"tipo_ref" : 3,
+		"altitude_ortometrica" : 1357,
+		"sistema_geodesico" : 4,
+		"referencial_altim" : 2,
+		"referencial_grav" : 97,
+		"situacao_marco" : 97,
+		"orgao_responsavel" : "PMPS",
+		"latitude" : "0000",
+		"longitude" : "00000"
+	},
+	{
+		"fme_feature_type" : "edgv.llp_ponto_controle_p",
+		"cod_ponto" : null,
+		"tipo" : 16,
+		"tipo_ref" : 3,
+		"altitude_ortometrica" : 1309,
+		"sistema_geodesico" : 4,
+		"referencial_altim" : 2,
+		"referencial_grav" : 97,
+		"situacao_marco" : 97,
+		"orgao_responsavel" : "PMPS",
+		"latitude" : "0000",
+		"longitude" : "0000"
 	}
 ]
