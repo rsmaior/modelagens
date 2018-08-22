@@ -3674,7 +3674,7 @@
                 }		
             ]
         },
-        {"__comment":"constr_edificacao | Energia <- Edif_Energia | Chaminé - so volta",
+        {"__comment":"constr_edificacao | Energia <- Edif_Energia | chamine - so volta",
             "tipo_tupla":"volta",
             "tupla_origem": [
                 {
@@ -3699,7 +3699,7 @@
             "atributos_default_volta":[
                 {
                     "nome_atributo":"nome",
-                    "valor":"edificação de energia - chaminé",
+                    "valor":"edificação de energia - chamine",
                     "concatenar":"True"
                 }		
             ]
@@ -5191,7 +5191,7 @@
                 }		
             ]
         },
-        {"__comment":"constr_edificacao | 999 <- Edif_Const_Lazer | Chaminé - so volta",
+        {"__comment":"constr_edificacao | 999 <- Edif_Const_Lazer | chamine - so volta",
             "tipo_tupla":"volta",
             "tupla_origem": [
                 {
@@ -5216,7 +5216,7 @@
             "atributos_default_volta":[
                 {
                     "nome_atributo":"nome",
-                    "valor":"edificação lazer - chaminé",
+                    "valor":"edificação lazer - chamine",
                     "concatenar":"True"
                 }
             ]
@@ -5558,7 +5558,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5590,7 +5590,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5622,7 +5622,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5654,7 +5654,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5686,7 +5686,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5718,7 +5718,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5750,7 +5750,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5782,7 +5782,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5814,7 +5814,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5846,7 +5846,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5878,7 +5878,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5910,7 +5910,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5942,7 +5942,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -5974,7 +5974,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6006,7 +6006,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6038,7 +6038,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6070,7 +6070,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6102,7 +6102,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6134,7 +6134,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6166,7 +6166,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6198,7 +6198,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6230,7 +6230,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6262,7 +6262,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6294,7 +6294,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
@@ -6326,7 +6326,7 @@
                     "valor":"2"
                 },
                 {
-                    "nome_atributo":"chaminé",
+                    "nome_atributo":"chamine",
                     "valor":"2"
                 }
             ]
