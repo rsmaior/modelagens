@@ -1,0 +1,251 @@
+{"__comment":"UTF-8",
+    "versao": "bleeding edge v2",
+    "mapeamento_classes": [
+        {"__comment":"loc_area_edificada_a <-> Area_Edificada",
+            "classe_origem": "cb.loc_area_edificada_a",
+            "classe_destino": "Area_Edificada"
+        },
+        {"__comment":"hid_massa_dagua_a <-> Massa_Dagua",
+            "classe_origem": "cb.hid_massa_dagua_a",
+            "classe_destino": "Massa_Dagua",
+            "traducao_atributos": [
+                {
+                    "attr_origem": "referencial_grav",
+                    "attr_destino": "referencialGrav",
+                    "traducao":[
+                        {
+                            "origem": 0,
+                            "destino": 9999
+                        },
+                        {
+                            "origem": 0,
+                            "destino": 9999
+                        },
+                        {
+                            "sentido": "volta",
+                            "origem": 5
+                        },
+                        {
+                            "sentido": "ida",
+                            "destino": 4
+                        }
+                    ]
+                },
+                {
+                    "attr_origem": "referencial_grav",
+                    "attr_destino": "referencialGrav"
+                }
+            ],
+            "mapeamento_atributos": [
+                {
+
+                }
+
+
+
+
+
+
+
+
+                {
+                    "tupla_origem": [
+                        {
+                            "nome_atributo": "tipomassadagua",
+                            "valores": [1 ,2 ,3 ,4]
+                        }
+                    ],
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "tipoMassaDagua",
+                            "valores": [1, 2, 3, 4]
+                        }
+                    ]
+                }
+            ]
+        },
+
+
+
+        {"__comment":"hid_trecho_massa_dagua_a <-> Trecho_Massa_Dagua",
+            "classe_origem": "cb.hid_trecho_massa_dagua_a",
+            "classe_destino": "Trecho_Massa_Dagua"
+        },
+        {"__comment":"veg_veg_cultivada_a <-> Veg_Cultivada",
+            "classe_origem": "cb.veg_veg_cultivada_a",
+            "classe_destino": "Veg_Cultivada"
+        },
+        {"__comment":"veg_mangue_a <-> Mangue",
+            "classe_origem": "cb.veg_mangue_a",
+            "classe_destino": "Mangue"
+        },
+        {"__comment":"veg_brejo_pantano_a <-> Brejo_Pantano",
+            "classe_origem": "cb.veg_brejo_pantano_a",
+            "classe_destino": "Brejo_Pantano"
+        },
+        {"__comment":"veg_veg_restinga_a <-> Veg_Restinga",
+            "classe_origem": "cb.veg_veg_restinga_a",
+            "classe_destino": "Veg_Restinga"
+        },
+        {"__comment":"veg_campinarana_a <-> Campinarana",
+            "classe_origem": "cb.veg_campinarana_a",
+            "classe_destino": "Campinarana"
+        },
+        {"__comment":"veg_floresta_a <-> Floresta",
+            "classe_origem": "cb.veg_floresta_a",
+            "classe_destino": "Floresta"
+        },
+        {"__comment":"veg_cerrado_cerradao_a <-> Cerrado_Cerradao",
+            "classe_origem": "cb.veg_cerrado_cerradao_a",
+            "classe_destino": "Cerrado_Cerradao"
+        },
+        {"__comment":"veg_caatinga_a <-> Caatinga",
+            "classe_origem": "cb.veg_caatinga_a",
+            "classe_destino": "Caatinga"
+        },                
+        {"__comment":"veg_campo_a <-> Campo",
+            "classe_origem": "cb.veg_campo_a",
+            "classe_destino": "Campo"
+        }, 
+        {"__comment":"veg_veg_area_contato_a <-> Veg_Area_Contato",
+            "classe_origem": "cb.veg_veg_area_contato_a",
+            "classe_destino": "Veg_Area_Contato"
+        },   
+        //veg_estepe_a
+        //veg_macega_chavascal_a
+        {"__comment":"rel_terreno_exposto_a <-> Terreno_Exposto",
+            "classe_origem": "cb.rel_terreno_exposto_a",
+            "classe_destino": "Terreno_Exposto"
+        }, 
+
+
+        {"__comment":"llp_delimitacao_fisica <-> Delimitacao_Fisica",
+            "classe_origem": "edgv.llp_delimitacao_fisica",
+            "classe_destino": "Delimitacao_Fisica",
+            "mapeamento_atributos": [
+                {
+                    "tupla_origem": [
+                        {
+                            "nome_atributo": "tipo",
+                            "valor": 1
+                        }
+                    ],
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "tipoDelimFis",
+                            "valor": 1
+                        }
+                    ]
+                },
+                {
+                    "tupla_origem": [
+                        {
+                            "nome_atributo": "tipo",
+                            "valor": 2
+                        }
+                    ],
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "tipoDelimFis",
+                            "valor": 2
+                        }
+                    ]
+                },
+                {
+                    "sentido": "volta",
+                    "tupla_origem": [
+                        {
+                            "nome_atributo": "tipo",
+                            "valor": 999
+                        },
+                        {
+                            "nome_atributo": "observacao",
+                            "valor": "tipo inválido",
+                            "concatenar": true
+                        }
+                    ]
+                },
+                {
+                    "sentido": "ida",
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "tipoDelimFis",
+                            "valor": 0
+                        },
+                        {
+                            "nome_atributo": "observacao",
+                            "valor": "tipo inválido",
+                            "concatenar": true
+                        }
+                    ]
+                }
+            ],
+            "mapeamento_default": [
+                {
+                    "sentido": "ida",
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "geometriaAproximada",
+                            "valor": 2
+                        }
+                    ]
+                },
+                {
+                    "sentido": "ida",
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "eletrificada",
+                            "valor": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "mapeamento_atributos": [
+        {"__comment":"nomeabrev <-> nomeAbrev",
+            "attr_origem": "nomeabrev",
+            "attr_destino": "nomeAbrev"
+        },
+        {"__comment":"geometriaaproximada <-> geometriaAproximada",
+            "attr_origem": "geometriaaproximada",
+            "attr_destino": "geometriaAproximada"
+        }
+
+
+        //tipomassadagua
+
+        //tipotrechomassa
+
+
+        //regime
+        //salinidade
+
+
+
+
+
+        //denso
+        //atropizada
+        //alturamediaindividuo
+        //classificacaoporte
+        //tipolavoura
+        //finalidade
+        //terreno
+        //espacamentoindividuos
+        //espessuradap
+        //cultivopredominante
+        //tipomacchav
+        //caracteristicafloresta
+        //tipocerr
+        //tipocampo
+        //ocorrenciaem
+        //tipobrejopantano
+        //tipoterrexp
+        //causaexposicao
+
+    ],
+    "atributos_default": [
+
+    ]
+}
