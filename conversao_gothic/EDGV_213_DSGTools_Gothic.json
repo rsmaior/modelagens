@@ -38,17 +38,6 @@
             ],
             "mapeamento_atributos": [
                 {
-
-                }
-
-
-
-
-
-
-
-
-                {
                     "tupla_origem": [
                         {
                             "nome_atributo": "tipomassadagua",
@@ -62,11 +51,20 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "mapeamento_default_ida": [
+                        {
+                            "nome_atributo": "geometriaAproximada",
+                            "valor": 2
+                        }
+                    ],
+            "mapeamento_default_volta": [
+                        {
+                            "nome_atributo": "eletrificada",
+                            "valor": 0
+                        }
+                    ]
         },
-
-
-
         {"__comment":"hid_trecho_massa_dagua_a <-> Trecho_Massa_Dagua",
             "classe_origem": "cb.hid_trecho_massa_dagua_a",
             "classe_destino": "Trecho_Massa_Dagua"
@@ -116,91 +114,8 @@
         {"__comment":"rel_terreno_exposto_a <-> Terreno_Exposto",
             "classe_origem": "cb.rel_terreno_exposto_a",
             "classe_destino": "Terreno_Exposto"
-        }, 
-
-
-        {"__comment":"llp_delimitacao_fisica <-> Delimitacao_Fisica",
-            "classe_origem": "edgv.llp_delimitacao_fisica",
-            "classe_destino": "Delimitacao_Fisica",
-            "mapeamento_atributos": [
-                {
-                    "tupla_origem": [
-                        {
-                            "nome_atributo": "tipo",
-                            "valor": 1
-                        }
-                    ],
-                    "tupla_destino": [
-                        {
-                            "nome_atributo": "tipoDelimFis",
-                            "valor": 1
-                        }
-                    ]
-                },
-                {
-                    "tupla_origem": [
-                        {
-                            "nome_atributo": "tipo",
-                            "valor": 2
-                        }
-                    ],
-                    "tupla_destino": [
-                        {
-                            "nome_atributo": "tipoDelimFis",
-                            "valor": 2
-                        }
-                    ]
-                },
-                {
-                    "sentido": "volta",
-                    "tupla_origem": [
-                        {
-                            "nome_atributo": "tipo",
-                            "valor": 999
-                        },
-                        {
-                            "nome_atributo": "observacao",
-                            "valor": "tipo inválido",
-                            "concatenar": true
-                        }
-                    ]
-                },
-                {
-                    "sentido": "ida",
-                    "tupla_destino": [
-                        {
-                            "nome_atributo": "tipoDelimFis",
-                            "valor": 0
-                        },
-                        {
-                            "nome_atributo": "observacao",
-                            "valor": "tipo inválido",
-                            "concatenar": true
-                        }
-                    ]
-                }
-            ],
-            "mapeamento_default": [
-                {
-                    "sentido": "ida",
-                    "tupla_destino": [
-                        {
-                            "nome_atributo": "geometriaAproximada",
-                            "valor": 2
-                        }
-                    ]
-                },
-                {
-                    "sentido": "ida",
-                    "tupla_destino": [
-                        {
-                            "nome_atributo": "eletrificada",
-                            "valor": 0
-                        }
-                    ]
-                }
-            ]
         }
+
     ],
     "mapeamento_atributos": [
         {"__comment":"nomeabrev <-> nomeAbrev",
@@ -245,7 +160,8 @@
         //causaexposicao
 
     ],
-    "atributos_default": [
-
+    "mapeamento_default_ida": [
+    ],
+    "mapeamento_default_volta": [
     ]
 }
