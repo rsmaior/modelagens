@@ -24,12 +24,12 @@ class MasterGen():
     def buildSQL(self, dest, atributos_padrao=False, extension_classes=False):
         master = self.master
         sql = []
-        sql.append(u"CREATE SCHEMA {0};".format(master["schema_edgv"]))
+        sql.append(u"CREATE SCHEMA {0};".format(master["schema_dados"]))
         sql.append(u"CREATE SCHEMA {0};".format(master["schema_dominios"]))
         sql.append(u"")
         sql.append(u"CREATE EXTENSION postgis;")
         sql.append(u"SET search_path TO pg_catalog,public,{0},{1};".format(
-            master["schema_edgv"], master["schema_dominios"]))
+            master["schema_dados"], master["schema_dominios"]))
         sql.append(u"")
         sql.append(u"CREATE TABLE public.db_metadata(")
         sql.append(u"\t edgvversion varchar(50) NOT NULL DEFAULT '{0}',".format(
@@ -82,7 +82,7 @@ class MasterGen():
                 
             for primitiva in classe["primitivas"]:
                 sql.append(u"CREATE TABLE {0}.{3}_{1}_{2}(".format(
-                    master["schema_edgv"], classe["nome"], master["geom_suffix"][primitiva], classe["categoria"]))
+                    master["schema_dados"], classe["nome"], master["geom_suffix"][primitiva], classe["categoria"]))
                 sql.append(u"\t {0} serial NOT NULL,".format(
                     master["nome_id"]))
 
@@ -108,7 +108,7 @@ class MasterGen():
                     master["fill_factor"]))
                 sql.append(u");")
                 sql.append(u"CREATE INDEX {4}_{0}_{3}_geom ON {1}.{4}_{0}_{3} USING gist ({2});".format(classe["nome"],
-                                                                                                        master["schema_edgv"], master["nome_geom"], master["geom_suffix"][primitiva], classe["categoria"]))
+                                                                                                        master["schema_dados"], master["nome_geom"], master["geom_suffix"][primitiva], classe["categoria"]))
 
                 sql.append(u"")
 
@@ -120,7 +120,7 @@ class MasterGen():
 
                         if atributo["cardinalidade"] == "0..1" or atributo["cardinalidade"] == "1..1":
                             sql.append(u"ALTER TABLE {2}.{0}_{1}_{3}".format(classe["categoria"], classe["nome"],
-                                                                             master["schema_edgv"], master["geom_suffix"][primitiva]))
+                                                                             master["schema_dados"], master["geom_suffix"][primitiva]))
                             sql.append(u"\t ADD CONSTRAINT {0}_{1}_{2}_{3}_fk FOREIGN KEY ({3})".format(classe["categoria"], classe["nome"],
                                                                                                         master["geom_suffix"][primitiva], atributo["nome"]))
                             sql.append(u"\t REFERENCES {1}.{0} (code) MATCH FULL".format(
@@ -135,7 +135,7 @@ class MasterGen():
                                            for valor in dominio["valores"]]
 
                             if len(set(dominio_att).difference(valores_att)) > 0:
-                                sql.append(u"ALTER TABLE {0}.{1}_{2}_{3}".format(master["schema_edgv"], classe["categoria"], classe["nome"],
+                                sql.append(u"ALTER TABLE {0}.{1}_{2}_{3}".format(master["schema_dados"], classe["categoria"], classe["nome"],
                                                                                  master["geom_suffix"][primitiva]))
                                 sql.append(u"\t ADD CONSTRAINT {0}_{1}_{2}_{3}_check ".format(classe["categoria"], classe["nome"],
                                                                                               master["geom_suffix"][primitiva], atributo["nome"]))
@@ -153,14 +153,14 @@ class MasterGen():
 
                             if master['a_ser_preenchido']:
                                 sql.append(u"ALTER TABLE {1}.{4}_{0}_{2} ALTER COLUMN {3} SET DEFAULT {5};".format(classe["nome"],
-                                                                                                                   master["schema_edgv"], master["geom_suffix"][
+                                                                                                                   master["schema_dados"], master["geom_suffix"][
                                                                                                                        primitiva], atributo["nome"],
                                                                                                                    classe["categoria"], master["a_ser_preenchido"]["code"]))
                                 sql.append(u"")
 
                         elif atributo["cardinalidade"] == "0..*" or atributo["cardinalidade"] == "1..*":
 
-                            sql.append(u"ALTER TABLE {0}.{1}_{2}_{3}".format(master["schema_edgv"], classe["categoria"], classe["nome"],
+                            sql.append(u"ALTER TABLE {0}.{1}_{2}_{3}".format(master["schema_dados"], classe["categoria"], classe["nome"],
                                                                              master["geom_suffix"][primitiva]))
                             sql.append(u"\t ADD CONSTRAINT {0}_{1}_{2}_{3}_check ".format(classe["categoria"], classe["nome"],
                                                                                           master["geom_suffix"][primitiva], atributo["nome"]))
@@ -178,7 +178,7 @@ class MasterGen():
 
                             if master['a_ser_preenchido']:
                                 sql.append(u"ALTER TABLE {1}.{4}_{0}_{2} ALTER COLUMN {3} SET DEFAULT ARRAY[{5} :: SMALLINT];".format(atributo["nome"],
-                                                                                                                                      master["schema_edgv"], master["geom_suffix"][
+                                                                                                                                      master["schema_dados"], master["geom_suffix"][
                                                                                                                                           primitiva], atributo["nome"],
                                                                                                                                       classe["categoria"], master["a_ser_preenchido"]["code"]))
                                 sql.append(u"")

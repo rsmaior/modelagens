@@ -1,0 +1,2862 @@
+﻿classe,atributo,code,value,dominio
+adm_area_pub_civil,geometriaaproximada,1,Sim,geometriaaproximada
+adm_area_pub_civil,geometriaaproximada,2,Não,geometriaaproximada
+adm_area_pub_militar,geometriaaproximada,1,Sim,geometriaaproximada
+adm_area_pub_militar,geometriaaproximada,2,Não,geometriaaproximada
+adm_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+adm_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+adm_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+adm_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+adm_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+adm_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+adm_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+adm_edif_pub_civil,geometriaaproximada,1,Sim,geometriaaproximada
+adm_edif_pub_civil,geometriaaproximada,2,Não,geometriaaproximada
+adm_edif_pub_civil,operacional,0,Desconhecido,operacional
+adm_edif_pub_civil,operacional,1,Sim,operacional
+adm_edif_pub_civil,operacional,2,Não,operacional
+adm_edif_pub_civil,tipoedifcivil,0,Desconhecido,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,1,Policial,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,2,Prisional,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,3,Cartorial,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,4,Gestão,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,5,Eleitoral,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,6,Produção e/ou pesquisa,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,7,Seguridade Social,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,8,Câmara Municipal,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,9,Assembléia Legislativa,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,22,Prefeitura,tipoedifcivil
+adm_edif_pub_civil,tipoedifcivil,99,Outros,tipoedifcivil
+adm_edif_pub_civil,tipousoedif,0,Desconhecido,tipousoedif
+adm_edif_pub_civil,tipousoedif,1,Próprio nacional,tipousoedif
+adm_edif_pub_civil,tipousoedif,2,Uso especial da União,tipousoedif
+adm_edif_pub_militar,geometriaaproximada,1,Sim,geometriaaproximada
+adm_edif_pub_militar,geometriaaproximada,2,Não,geometriaaproximada
+asb_edif_saneamento,situacaofisica,0,Desconhecida,situacaofisica
+asb_edif_saneamento,situacaofisica,1,Abandonada,situacaofisica
+asb_edif_saneamento,situacaofisica,2,Destruída,situacaofisica
+asb_edif_saneamento,situacaofisica,3,Em Construção,situacaofisica
+asb_edif_saneamento,situacaofisica,4,Planejada,situacaofisica
+asb_edif_saneamento,situacaofisica,5,Construída,situacaofisica
+adm_edif_pub_militar,operacional,0,Desconhecido,operacional
+adm_edif_pub_militar,operacional,1,Sim,operacional
+adm_edif_pub_militar,operacional,2,Não,operacional
+adm_edif_pub_militar,tipoedifmil,0,Desconhecido,tipoedifmil
+adm_edif_pub_militar,tipoedifmil,12,Aquartelamento,tipoedifmil
+adm_edif_pub_militar,tipoedifmil,13,Campo de instrução,tipoedifmil
+adm_edif_pub_militar,tipoedifmil,14,Campo de tiro,tipoedifmil
+adm_edif_pub_militar,tipoedifmil,15,Base aérea,tipoedifmil
+adm_edif_pub_militar,tipoedifmil,16,Distrito naval,tipoedifmil
+adm_edif_pub_militar,tipoedifmil,17,Hotel de trânsito,tipoedifmil
+adm_edif_pub_militar,tipoedifmil,18,Delegacia serviço militar,tipoedifmil
+adm_edif_pub_militar,tipoedifmil,19,Posto,tipoedifmil
+adm_edif_pub_militar,tipoedifmil,99,Outros,tipoedifmil
+adm_edif_pub_militar,tipousoedif,0,Desconhecido,tipousoedif
+adm_edif_pub_militar,tipousoedif,1,Próprio nacional,tipousoedif
+adm_edif_pub_militar,tipousoedif,2,Uso especial da União,tipousoedif
+adm_posto_fiscal,geometriaaproximada,1,Sim,geometriaaproximada
+adm_posto_fiscal,geometriaaproximada,2,Não,geometriaaproximada
+adm_posto_fiscal,operacional,0,Desconhecido,operacional
+adm_posto_fiscal,operacional,1,Sim,operacional
+adm_posto_fiscal,operacional,2,Não,operacional
+adm_posto_fiscal,tipopostofisc,0,Desconhecido,tipopostofisc
+adm_posto_fiscal,tipopostofisc,10,Tributação,tipopostofisc
+adm_posto_fiscal,tipopostofisc,11,Fiscalização,tipopostofisc
+adm_posto_fiscal,tipopostofisc,98,Mista,tipopostofisc
+adm_posto_fiscal,tipopostofisc,99,Outros,tipopostofisc
+asb_edif_abast_agua,geometriaaproximada,1,Sim,geometriaaproximada
+asb_edif_abast_agua,geometriaaproximada,2,Não,geometriaaproximada
+adm_posto_pol_rod,geometriaaproximada,1,Sim,geometriaaproximada
+adm_posto_pol_rod,geometriaaproximada,2,Não,geometriaaproximada
+adm_posto_pol_rod,operacional,0,Desconhecido,operacional
+adm_posto_pol_rod,operacional,1,Sim,operacional
+adm_posto_pol_rod,operacional,2,Não,operacional
+adm_posto_pol_rod,tipopostopol,0,Desconhecido,tipopostopol
+adm_posto_pol_rod,tipopostopol,20,Posto PM,tipopostopol
+adm_posto_pol_rod,tipopostopol,21,Posto PRF,tipopostopol
+asb_area_abast_agua,geometriaaproximada,1,Sim,geometriaaproximada
+asb_area_abast_agua,geometriaaproximada,2,Não,geometriaaproximada
+asb_area_saneamento,geometriaaproximada,1,Sim,geometriaaproximada
+asb_area_saneamento,geometriaaproximada,2,Não,geometriaaproximada
+asb_cemiterio,denominacaoassociada,5,Cristã,denominacaoassociada
+asb_cemiterio,denominacaoassociada,6,Israelita,denominacaoassociada
+asb_cemiterio,denominacaoassociada,7,Muçulmana,denominacaoassociada
+asb_cemiterio,denominacaoassociada,99,Outras,denominacaoassociada
+asb_cemiterio,geometriaaproximada,1,Sim,geometriaaproximada
+asb_cemiterio,geometriaaproximada,2,Não,geometriaaproximada
+asb_cemiterio,tipocemiterio,0,Desconhecido,tipocemiterio
+asb_cemiterio,tipocemiterio,1,Crematório,tipocemiterio
+asb_cemiterio,tipocemiterio,2,Parque,tipocemiterio
+asb_cemiterio,tipocemiterio,3,Vertical,tipocemiterio
+asb_cemiterio,tipocemiterio,4,Comum,tipocemiterio
+asb_cemiterio,tipocemiterio,5,Túmulo Isolado,tipocemiterio
+asb_cemiterio,tipocemiterio,98,Misto,tipocemiterio
+asb_cemiterio,tipocemiterio,99,Outros,tipocemiterio
+asb_dep_abast_agua,geometriaaproximada,1,Sim,geometriaaproximada
+asb_dep_abast_agua,geometriaaproximada,2,Não,geometriaaproximada
+asb_dep_abast_agua,operacional,0,Desconhecido,operacional
+asb_dep_abast_agua,operacional,1,Sim,operacional
+asb_dep_abast_agua,operacional,2,Não,operacional
+asb_dep_abast_agua,situacaoagua,0,Desconhecida,situacaoagua
+asb_dep_abast_agua,situacaoagua,6,Tratada,situacaoagua
+asb_dep_abast_agua,situacaoagua,7,Não tratada,situacaoagua
+asb_dep_abast_agua,tipodepabast,0,Desconhecido,tipodepabast
+asb_dep_abast_agua,tipodepabast,1,Tanque,tipodepabast
+asb_dep_abast_agua,tipodepabast,2,Caixa d`água,tipodepabast
+asb_dep_abast_agua,tipodepabast,3,Cisterna,tipodepabast
+asb_dep_abast_agua,tipodepabast,99,Outros,tipodepabast
+asb_dep_saneamento,construcao,1,Fechada,construcao
+asb_dep_saneamento,construcao,2,Aberta,construcao
+asb_dep_saneamento,construcao,97,Não aplicável,construcao
+asb_dep_saneamento,geometriaaproximada,1,Sim,geometriaaproximada
+asb_dep_saneamento,geometriaaproximada,2,Não,geometriaaproximada
+asb_dep_saneamento,operacional,0,Desconhecido,operacional
+asb_dep_saneamento,operacional,1,Sim,operacional
+asb_dep_saneamento,operacional,2,Não,operacional
+asb_dep_saneamento,residuo,0,Desconhecido,residuo
+asb_dep_saneamento,residuo,1,Líquido,residuo
+asb_dep_saneamento,residuo,2,Sólido,residuo
+asb_dep_saneamento,tipodepsaneam,0,Desconhecido,tipodepsaneam
+asb_dep_saneamento,tipodepsaneam,1,Tanque,tipodepsaneam
+asb_dep_saneamento,tipodepsaneam,4,Depósito de lixo,tipodepsaneam
+asb_dep_saneamento,tipodepsaneam,5,Aterro sanitário,tipodepsaneam
+asb_dep_saneamento,tipodepsaneam,6,Aterro controlado,tipodepsaneam
+asb_dep_saneamento,tipodepsaneam,99,Outros,tipodepsaneam
+asb_dep_saneamento,tiporesiduo,0,Desconhecido,tiporesiduo
+asb_dep_saneamento,tiporesiduo,9,Esgoto,tiporesiduo
+asb_dep_saneamento,tiporesiduo,12,Lixo domiciliar e comercial,tiporesiduo
+asb_dep_saneamento,tiporesiduo,13,Lixo tóxico,tiporesiduo
+asb_dep_saneamento,tiporesiduo,14,Lixo séptico,tiporesiduo
+asb_dep_saneamento,tiporesiduo,15,Chorume,tiporesiduo
+asb_dep_saneamento,tiporesiduo,16,Vinhoto,tiporesiduo
+asb_dep_saneamento,tiporesiduo,98,Misto,tiporesiduo
+asb_dep_saneamento,tiporesiduo,99,Outros,tiporesiduo
+asb_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+asb_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+asb_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+asb_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+asb_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+asb_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+asb_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+asb_edif_abast_agua,operacional,0,Desconhecido,operacional
+asb_edif_abast_agua,operacional,1,Sim,operacional
+asb_edif_abast_agua,operacional,2,Não,operacional
+asb_edif_abast_agua,situacaofisica,0,Desconhecida,situacaofisica
+asb_edif_abast_agua,situacaofisica,1,Abandonada,situacaofisica
+asb_edif_abast_agua,situacaofisica,2,Destruída,situacaofisica
+asb_edif_abast_agua,situacaofisica,3,Em Construção,situacaofisica
+asb_edif_abast_agua,situacaofisica,4,Planejada,situacaofisica
+asb_edif_abast_agua,situacaofisica,5,Construída,situacaofisica
+asb_edif_abast_agua,tipoedifabast,0,Desconhecido,tipoedifabast
+asb_edif_abast_agua,tipoedifabast,1,Captação,tipoedifabast
+asb_edif_abast_agua,tipoedifabast,2,Tratamento,tipoedifabast
+asb_edif_abast_agua,tipoedifabast,3,Recalque,tipoedifabast
+asb_edif_abast_agua,tipoedifabast,98,Misto,tipoedifabast
+asb_edif_abast_agua,tipoedifabast,99,Outros,tipoedifabast
+asb_edif_saneamento,geometriaaproximada,1,Sim,geometriaaproximada
+asb_edif_saneamento,geometriaaproximada,2,Não,geometriaaproximada
+asb_edif_saneamento,operacional,0,Desconhecido,operacional
+asb_edif_saneamento,operacional,1,Sim,operacional
+asb_edif_saneamento,operacional,2,Não,operacional
+asb_edif_saneamento,tipoedifsaneam,0,Desconhecido,tipoedifsaneam
+asb_edif_saneamento,tipoedifsaneam,3,Recalque,tipoedifsaneam
+asb_edif_saneamento,tipoedifsaneam,5,Tratamento de esgoto,tipoedifsaneam
+asb_edif_saneamento,tipoedifsaneam,6,Usina de reciclagem,tipoedifsaneam
+asb_edif_saneamento,tipoedifsaneam,7,Incinerador,tipoedifsaneam
+asb_edif_saneamento,tipoedifsaneam,99,Outros,tipoedifsaneam
+eco_area_agrop_ext_veg_pesca,destinadoa,0,Desconhecido,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,5,Madeira,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,18,Açaí,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,34,Turfa,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,35,Látex,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,36,Castanha,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,37,Carnaúba,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,38,Coco,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,39,Jaborandi,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,40,Palmito,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,41,Babaçu,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,43,Pecuária,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,44,Pesca,destinadoa
+eco_area_agrop_ext_veg_pesca,destinadoa,99,Outros,destinadoa
+eco_area_agrop_ext_veg_pesca,geometriaaproximada,1,Sim,geometriaaproximada
+eco_area_agrop_ext_veg_pesca,geometriaaproximada,2,Não,geometriaaproximada
+eco_area_comerc_serv,geometriaaproximada,1,Sim,geometriaaproximada
+eco_area_comerc_serv,geometriaaproximada,2,Não,geometriaaproximada
+eco_area_ext_mineral,geometriaaproximada,1,Sim,geometriaaproximada
+eco_area_ext_mineral,geometriaaproximada,2,Não,geometriaaproximada
+eco_area_industrial,geometriaaproximada,1,Sim,geometriaaproximada
+eco_area_industrial,geometriaaproximada,2,Não,geometriaaproximada
+eco_deposito_geral,geometriaaproximada,1,Sim,geometriaaproximada
+eco_deposito_geral,geometriaaproximada,2,Não,geometriaaproximada
+eco_deposito_geral,operacional,0,Desconhecido,operacional
+eco_deposito_geral,operacional,1,Sim,operacional
+eco_deposito_geral,operacional,2,Não,operacional
+eco_deposito_geral,tipoconteudo,0,Desconhecido,tipoconteudo
+eco_deposito_geral,tipoconteudo,1,Insumo,tipoconteudo
+eco_deposito_geral,tipoconteudo,2,Produto,tipoconteudo
+eco_deposito_geral,tipoconteudo,3,Resíduo,tipoconteudo
+eco_deposito_geral,tipodepgeral,0,Desconhecido,tipodepgeral
+eco_deposito_geral,tipodepgeral,8,Galpão,tipodepgeral
+eco_deposito_geral,tipodepgeral,9,Silo,tipodepgeral
+eco_deposito_geral,tipodepgeral,10,Composteira,tipodepgeral
+eco_deposito_geral,tipodepgeral,11,Depósito frigorífico,tipodepgeral
+eco_deposito_geral,tipodepgeral,32,Armazém,tipodepgeral
+eco_deposito_geral,tipodepgeral,99,Outros,tipodepgeral
+eco_deposito_geral,tipoexposicao,0,Desconhecido,tipoexposicao
+eco_deposito_geral,tipoexposicao,3,Fechado,tipoexposicao
+eco_deposito_geral,tipoexposicao,4,Coberto,tipoexposicao
+eco_deposito_geral,tipoexposicao,5,Céu aberto,tipoexposicao
+eco_deposito_geral,tipoexposicao,99,Outros,tipoexposicao
+eco_deposito_geral,tratamento,0,Desconhecido,tratamento
+eco_deposito_geral,tratamento,1,Sim,tratamento
+eco_deposito_geral,tratamento,2,Não,tratamento
+eco_deposito_geral,tratamento,97,Não aplicável,tratamento
+eco_deposito_geral,unidadevolume,0,Desconhecido,unidadevolume
+eco_deposito_geral,unidadevolume,1,Litro,unidadevolume
+eco_deposito_geral,unidadevolume,2,Metro cúbico,unidadevolume
+eco_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+eco_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+eco_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+eco_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+eco_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+eco_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+eco_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+eco_edif_ext_mineral,geometriaaproximada,1,Sim,geometriaaproximada
+eco_edif_ext_mineral,geometriaaproximada,2,Não,geometriaaproximada
+eco_edif_agrop_ext_veg_pesca,geometriaaproximada,1,Sim,geometriaaproximada
+eco_edif_agrop_ext_veg_pesca,geometriaaproximada,2,Não,geometriaaproximada
+eco_edif_agrop_ext_veg_pesca,operacional,0,Desconhecido,operacional
+eco_edif_agrop_ext_veg_pesca,operacional,1,Sim,operacional
+eco_edif_agrop_ext_veg_pesca,operacional,2,Não,operacional
+eco_edif_agrop_ext_veg_pesca,tipoedifagropec,0,Desconhecido,tipoedifagropec
+eco_edif_agrop_ext_veg_pesca,tipoedifagropec,12,Sede operacional de fazenda,tipoedifagropec
+eco_edif_agrop_ext_veg_pesca,tipoedifagropec,13,Aviário,tipoedifagropec
+eco_edif_agrop_ext_veg_pesca,tipoedifagropec,14,Apiário,tipoedifagropec
+eco_edif_agrop_ext_veg_pesca,tipoedifagropec,15,Viveiro de plantas,tipoedifagropec
+eco_edif_agrop_ext_veg_pesca,tipoedifagropec,16,Viveiro para acquicultura,tipoedifagropec
+eco_edif_agrop_ext_veg_pesca,tipoedifagropec,17,Pocilga,tipoedifagropec
+eco_edif_agrop_ext_veg_pesca,tipoedifagropec,18,Curral,tipoedifagropec
+eco_edif_agrop_ext_veg_pesca,tipoedifagropec,99,Outros,tipoedifagropec
+eco_edif_comerc_serv,finalidade,0,Desconhecido,finalidade_eco
+eco_edif_comerc_serv,finalidade,1,Comercial,finalidade_eco
+eco_edif_comerc_serv,finalidade,2,Serviço,finalidade_eco
+eco_edif_comerc_serv,finalidade,98,Mista,finalidade_eco
+eco_edif_comerc_serv,geometriaaproximada,1,Sim,geometriaaproximada
+eco_edif_comerc_serv,geometriaaproximada,2,Não,geometriaaproximada
+eco_edif_comerc_serv,operacional,0,Desconhecido,operacional
+eco_edif_comerc_serv,operacional,1,Sim,operacional
+eco_edif_comerc_serv,operacional,2,Não,operacional
+eco_edif_comerc_serv,tipoedifcomercserv,0,Desconhecido,tipoedifcomercserv
+eco_edif_comerc_serv,tipoedifcomercserv,3,Centro comercial,tipoedifcomercserv
+eco_edif_comerc_serv,tipoedifcomercserv,4,Mercado,tipoedifcomercserv
+eco_edif_comerc_serv,tipoedifcomercserv,5,Centro de convenções,tipoedifcomercserv
+eco_edif_comerc_serv,tipoedifcomercserv,6,Feira,tipoedifcomercserv
+eco_edif_comerc_serv,tipoedifcomercserv,7,Hotel/motel/pousada,tipoedifcomercserv
+eco_edif_comerc_serv,tipoedifcomercserv,8,Restaurante,tipoedifcomercserv
+eco_edif_comerc_serv,tipoedifcomercserv,99,Outros,tipoedifcomercserv
+eco_edif_ext_mineral,operacional,0,Desconhecido,operacional
+eco_edif_ext_mineral,operacional,1,Sim,operacional
+eco_edif_ext_mineral,operacional,2,Não,operacional
+eco_edif_industrial,chamine,1,Sim,chamine
+eco_edif_industrial,chamine,2,Não,chamine
+eco_edif_industrial,geometriaaproximada,1,Sim,geometriaaproximada
+eco_edif_industrial,geometriaaproximada,2,Não,geometriaaproximada
+eco_edif_industrial,operacional,0,Desconhecido,operacional
+eco_edif_industrial,operacional,1,Sim,operacional
+eco_edif_industrial,operacional,2,Não,operacional
+eco_equip_agropec,geometriaaproximada,1,Sim,geometriaaproximada
+eco_equip_agropec,geometriaaproximada,2,Não,geometriaaproximada
+eco_equip_agropec,operacional,0,Desconhecido,operacional
+eco_equip_agropec,operacional,1,Sim,operacional
+eco_equip_agropec,operacional,2,Não,operacional
+eco_equip_agropec,tipoequipagropec,0,Desconhecido,tipoequipagropec
+eco_equip_agropec,tipoequipagropec,1,Pivô central,tipoequipagropec
+eco_equip_agropec,tipoequipagropec,99,Outros,tipoequipagropec
+eco_ext_mineral,atividade,0,Desconhecido,atividade
+eco_ext_mineral,atividade,9,Prospecção,atividade
+eco_ext_mineral,atividade,10,Produção,atividade
+eco_ext_mineral,formaextracao,0,Desconhecida,formaextracao
+eco_ext_mineral,formaextracao,5,Céu aberto,formaextracao
+eco_ext_mineral,formaextracao,6,Subterrâneo,formaextracao
+eco_ext_mineral,geometriaaproximada,1,Sim,geometriaaproximada
+eco_ext_mineral,geometriaaproximada,2,Não,geometriaaproximada
+eco_ext_mineral,operacional,0,Desconhecido,operacional
+eco_ext_mineral,operacional,1,Sim,operacional
+eco_ext_mineral,operacional,2,Não,operacional
+eco_ext_mineral,procextracao,0,Desconhecido,procextracao
+eco_ext_mineral,procextracao,1,Mecanizado,procextracao
+eco_ext_mineral,procextracao,2,Manual,procextracao
+eco_ext_mineral,tipoextmin,0,Desconhecido,tipoextmin
+eco_ext_mineral,tipoextmin,1,Poço,tipoextmin
+eco_ext_mineral,tipoextmin,4,Mina,tipoextmin
+eco_ext_mineral,tipoextmin,5,Garimpo,tipoextmin
+eco_ext_mineral,tipoextmin,6,Salina,tipoextmin
+eco_ext_mineral,tipoextmin,7,Pedreira,tipoextmin
+eco_ext_mineral,tipoextmin,8,Ponto de Prospecção,tipoextmin
+eco_ext_mineral,tipoextmin,99,Outros,tipoextmin
+eco_ext_mineral,tipopocomina,0,Desconhecido,tipopocomina
+eco_ext_mineral,tipopocomina,2,Horizontal,tipopocomina
+eco_ext_mineral,tipopocomina,3,Vertical,tipopocomina
+eco_ext_mineral,tipopocomina,97,Não aplicável,tipopocomina
+eco_plataforma,geometriaaproximada,1,Sim,geometriaaproximada
+eco_plataforma,geometriaaproximada,2,Não,geometriaaproximada
+eco_plataforma,tipoplataforma,0,Desconhecido,tipoplataforma
+eco_plataforma,tipoplataforma,3,Petróleo,tipoplataforma
+eco_plataforma,tipoplataforma,5,Gás,tipoplataforma
+eco_plataforma,tipoplataforma,98,Misto,tipoplataforma
+edu_area_ensino,geometriaaproximada,1,Sim,geometriaaproximada
+edu_area_ensino,geometriaaproximada,2,Não,geometriaaproximada
+edu_area_lazer,geometriaaproximada,1,Sim,geometriaaproximada
+edu_area_lazer,geometriaaproximada,2,Não,geometriaaproximada
+edu_area_religiosa,geometriaaproximada,1,Sim,geometriaaproximada
+edu_area_religiosa,geometriaaproximada,2,Não,geometriaaproximada
+edu_area_ruinas,geometriaaproximada,1,Sim,geometriaaproximada
+edu_area_ruinas,geometriaaproximada,2,Não,geometriaaproximada
+edu_arquibancada,geometriaaproximada,1,Sim,geometriaaproximada
+edu_arquibancada,geometriaaproximada,2,Não,geometriaaproximada
+edu_arquibancada,operacional,0,Desconhecido,operacional
+edu_arquibancada,operacional,1,Sim,operacional
+edu_arquibancada,operacional,2,Não,operacional
+edu_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+edu_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+edu_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+edu_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+edu_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+edu_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+edu_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+edu_campo_quadra,geometriaaproximada,1,Sim,geometriaaproximada
+edu_campo_quadra,geometriaaproximada,2,Não,geometriaaproximada
+edu_campo_quadra,operacional,0,Desconhecido,operacional
+edu_campo_quadra,operacional,1,Sim,operacional
+edu_campo_quadra,operacional,2,Não,operacional
+edu_campo_quadra,tipocampoquadra,0,Desconhecido,tipocampoquadra
+edu_campo_quadra,tipocampoquadra,1,Futebol,tipocampoquadra
+edu_campo_quadra,tipocampoquadra,2,Basquete,tipocampoquadra
+edu_campo_quadra,tipocampoquadra,3,Vôlei,tipocampoquadra
+edu_campo_quadra,tipocampoquadra,4,Pólo,tipocampoquadra
+edu_campo_quadra,tipocampoquadra,5,Hipismo,tipocampoquadra
+edu_campo_quadra,tipocampoquadra,6,Poliesportiva,tipocampoquadra
+edu_campo_quadra,tipocampoquadra,7,Tênis,tipocampoquadra
+edu_campo_quadra,tipocampoquadra,99,Outros,tipocampoquadra
+edu_coreto_tribuna,geometriaaproximada,1,Sim,geometriaaproximada
+edu_coreto_tribuna,geometriaaproximada,2,Não,geometriaaproximada
+edu_coreto_tribuna,operacional,0,Desconhecido,operacional
+edu_coreto_tribuna,operacional,1,Sim,operacional
+edu_coreto_tribuna,operacional,2,Não,operacional
+edu_edif_const_lazer,geometriaaproximada,1,Sim,geometriaaproximada
+edu_edif_const_lazer,geometriaaproximada,2,Não,geometriaaproximada
+edu_edif_const_lazer,operacional,0,Desconhecido,operacional
+edu_edif_const_lazer,operacional,1,Sim,operacional
+edu_edif_const_lazer,operacional,2,Não,operacional
+edu_edif_const_lazer,tipoediflazer,0,Desconhecido,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,1,Estádio,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,2,Ginásio,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,3,Museu,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,4,Teatro,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,5,Anfiteatro,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,6,Cinema,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,7,Centro cultural,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,8,Plataforma de pesca,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,9,Chaminé,tipoediflazer
+edu_edif_const_lazer,tipoediflazer,99,Outros,tipoediflazer
+edu_edif_const_turistica,geometriaaproximada,1,Sim,geometriaaproximada
+edu_edif_const_turistica,geometriaaproximada,2,Não,geometriaaproximada
+edu_edif_const_turistica,operacional,0,Desconhecido,operacional
+edu_edif_const_turistica,operacional,1,Sim,operacional
+edu_edif_const_turistica,operacional,2,Não,operacional
+edu_edif_const_turistica,ovgd,0,Desconhecido,ovgd
+edu_edif_const_turistica,ovgd,1,Sim,ovgd
+edu_edif_const_turistica,ovgd,2,Não,ovgd
+edu_edif_const_turistica,tipoedifturist,0,Desconhecido,tipoedifturist
+edu_edif_const_turistica,tipoedifturist,9,Cruzeiro,tipoedifturist
+edu_edif_const_turistica,tipoedifturist,10,Estátua,tipoedifturist
+edu_edif_const_turistica,tipoedifturist,11,Mirante,tipoedifturist
+edu_edif_const_turistica,tipoedifturist,12,Monumento,tipoedifturist
+edu_edif_const_turistica,tipoedifturist,13,Panteão,tipoedifturist
+edu_edif_const_turistica,tipoedifturist,99,Outros,tipoedifturist
+edu_edif_ensino,geometriaaproximada,1,Sim,geometriaaproximada
+edu_edif_ensino,geometriaaproximada,2,Não,geometriaaproximada
+edu_edif_ensino,operacional,0,Desconhecido,operacional
+edu_edif_ensino,operacional,1,Sim,operacional
+edu_edif_ensino,operacional,2,Não,operacional
+edu_edif_religiosa,tipoedifrelig,0,Desconhecido,tipoedifrelig
+edu_edif_religiosa,tipoedifrelig,1,Igreja,tipoedifrelig
+edu_edif_religiosa,tipoedifrelig,2,Templo,tipoedifrelig
+edu_edif_religiosa,tipoedifrelig,3,Centro,tipoedifrelig
+edu_edif_religiosa,tipoedifrelig,4,Mosteiro,tipoedifrelig
+edu_edif_religiosa,tipoedifrelig,5,Convento,tipoedifrelig
+edu_edif_religiosa,tipoedifrelig,6,Mesquita,tipoedifrelig
+edu_edif_religiosa,tipoedifrelig,7,Sinagoga,tipoedifrelig
+edu_edif_religiosa,tipoedifrelig,99,Outros,tipoedifrelig
+edu_edif_religiosa,ensino,0,Desconhecido,ensino
+edu_edif_religiosa,ensino,1,Sim,ensino
+edu_edif_religiosa,ensino,2,Não,ensino
+edu_edif_religiosa,geometriaaproximada,1,Sim,geometriaaproximada
+edu_edif_religiosa,geometriaaproximada,2,Não,geometriaaproximada
+edu_edif_religiosa,operacional,0,Desconhecido,operacional
+edu_edif_religiosa,operacional,1,Sim,operacional
+edu_edif_religiosa,operacional,2,Não,operacional
+edu_piscina,geometriaaproximada,1,Sim,geometriaaproximada
+edu_piscina,geometriaaproximada,2,Não,geometriaaproximada
+edu_piscina,operacional,0,Desconhecido,operacional
+edu_piscina,operacional,1,Sim,operacional
+edu_piscina,operacional,2,Não,operacional
+edu_pista_competicao,geometriaaproximada,1,Sim,geometriaaproximada
+edu_pista_competicao,geometriaaproximada,2,Não,geometriaaproximada
+edu_pista_competicao,operacional,0,Desconhecido,operacional
+edu_pista_competicao,operacional,1,Sim,operacional
+edu_pista_competicao,operacional,2,Não,operacional
+edu_ruina,geometriaaproximada,1,Sim,geometriaaproximada
+edu_ruina,geometriaaproximada,2,Não,geometriaaproximada
+enc_antena_comunic,geometriaaproximada,1,Sim,geometriaaproximada
+enc_antena_comunic,geometriaaproximada,2,Não,geometriaaproximada
+enc_antena_comunic,posicaoreledific,14,Isolado,posicaoreledific
+enc_antena_comunic,posicaoreledific,17,Adjacente a edificação,posicaoreledific
+enc_antena_comunic,posicaoreledific,18,Sobre edificação,posicaoreledific
+enc_area_comunicacao,geometriaaproximada,1,Sim,geometriaaproximada
+enc_area_comunicacao,geometriaaproximada,2,Não,geometriaaproximada
+enc_area_energia_eletrica,geometriaaproximada,1,Sim,geometriaaproximada
+enc_area_energia_eletrica,geometriaaproximada,2,Não,geometriaaproximada
+enc_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+enc_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+enc_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+enc_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+enc_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+enc_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+enc_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+enc_edif_comunic,geometriaaproximada,1,Sim,geometriaaproximada
+enc_edif_comunic,geometriaaproximada,2,Não,geometriaaproximada
+enc_edif_comunic,modalidade,0,Desconhecido,modalidade
+enc_edif_comunic,modalidade,1,Radiocomunicação,modalidade
+enc_edif_comunic,modalidade,2,Radiodifusão/som e imagem,modalidade
+enc_edif_comunic,modalidade,3,Telefonia,modalidade
+enc_edif_comunic,modalidade,4,Dados,modalidade
+enc_edif_comunic,modalidade,5,Radiodifusão/som,modalidade
+enc_edif_comunic,modalidade,99,Outras,modalidade
+enc_edif_comunic,operacional,0,Desconhecido,operacional
+enc_edif_comunic,operacional,1,Sim,operacional
+enc_edif_comunic,operacional,2,Não,operacional
+enc_edif_comunic,tipoedifcomunic,0,Desconhecido,tipoedifcomunic
+enc_edif_comunic,tipoedifcomunic,1,Centro de operações,tipoedifcomunic
+enc_edif_comunic,tipoedifcomunic,2,Central comutação e transmissão,tipoedifcomunic
+enc_edif_comunic,tipoedifcomunic,3,Estação radio-base,tipoedifcomunic
+enc_edif_comunic,tipoedifcomunic,4,Estação repetidora,tipoedifcomunic
+enc_edif_energia,geometriaaproximada,1,Sim,geometriaaproximada
+enc_edif_energia,geometriaaproximada,2,Não,geometriaaproximada
+enc_edif_energia,operacional,0,Desconhecido,operacional
+enc_edif_energia,operacional,1,Sim,operacional
+enc_edif_energia,operacional,2,Não,operacional
+enc_edif_energia,tipoedifenergia,0,Desconhecido,tipoedifenergia
+enc_edif_energia,tipoedifenergia,1,Administração,tipoedifenergia
+enc_edif_energia,tipoedifenergia,2,Oficinas,tipoedifenergia
+enc_edif_energia,tipoedifenergia,3,Segurança,tipoedifenergia
+enc_edif_energia,tipoedifenergia,4,Depósito,tipoedifenergia
+enc_edif_energia,tipoedifenergia,5,Chaminé,tipoedifenergia
+enc_edif_energia,tipoedifenergia,99,Outros,tipoedifenergia
+enc_est_gerad_energia_eletr,destenergelet,0,Desconhecido,destenergelet
+enc_est_gerad_energia_eletr,destenergelet,1,Auto-Produção de Energia (APE),destenergelet
+enc_est_gerad_energia_eletr,destenergelet,2,Auto-Produção com Comercialização de Excedente (APE-COM),destenergelet
+enc_est_gerad_energia_eletr,destenergelet,3,Comercialização de Energia (COM),destenergelet
+enc_est_gerad_energia_eletr,destenergelet,4,Produção Independente de Energia (PIE),destenergelet
+enc_est_gerad_energia_eletr,destenergelet,5,Serviço Público (SP),destenergelet
+enc_est_gerad_energia_eletr,geometriaaproximada,1,Sim,geometriaaproximada
+enc_est_gerad_energia_eletr,geometriaaproximada,2,Não,geometriaaproximada
+enc_est_gerad_energia_eletr,operacional,0,Desconhecido,operacional
+enc_est_gerad_energia_eletr,operacional,1,Sim,operacional
+enc_est_gerad_energia_eletr,operacional,2,Não,operacional
+enc_est_gerad_energia_eletr,tipoestgerad,0,Desconhecido,tipoestgerad
+enc_est_gerad_energia_eletr,tipoestgerad,5,Eólica,tipoestgerad
+enc_est_gerad_energia_eletr,tipoestgerad,6,Solar,tipoestgerad
+enc_est_gerad_energia_eletr,tipoestgerad,7,Maré-motriz,tipoestgerad
+enc_est_gerad_energia_eletr,tipoestgerad,99,Outros,tipoestgerad
+enc_grupo_transformadores,geometriaaproximada,1,Sim,geometriaaproximada
+enc_grupo_transformadores,geometriaaproximada,2,Não,geometriaaproximada
+enc_hidreletrica,destenergelet,0,Desconhecido,destenergelet
+enc_hidreletrica,destenergelet,1,Auto-Produção de Energia (APE),destenergelet
+enc_hidreletrica,destenergelet,2,Auto-Produção com Comercialização de Excedente (APE-COM),destenergelet
+enc_hidreletrica,destenergelet,3,Comercialização de Energia (COM),destenergelet
+enc_hidreletrica,destenergelet,4,Produção Independente de Energia (PIE),destenergelet
+enc_hidreletrica,destenergelet,5,Serviço Público (SP),destenergelet
+enc_hidreletrica,geometriaaproximada,1,Sim,geometriaaproximada
+enc_hidreletrica,geometriaaproximada,2,Não,geometriaaproximada
+enc_hidreletrica,operacional,0,Desconhecido,operacional
+enc_hidreletrica,operacional,1,Sim,operacional
+enc_hidreletrica,operacional,2,Não,operacional
+enc_ponto_trecho_energia,geometriaaproximada,1,Sim,geometriaaproximada
+enc_ponto_trecho_energia,geometriaaproximada,2,Não,geometriaaproximada
+enc_ponto_trecho_energia,tipoptoenergia,0,Desconhecido,tipoptoenergia
+enc_ponto_trecho_energia,tipoptoenergia,1,Estação geradora de energia,tipoptoenergia
+enc_ponto_trecho_energia,tipoptoenergia,2,Subestação de transmissão,tipoptoenergia
+enc_ponto_trecho_energia,tipoptoenergia,3,Subestação de  distribuição,tipoptoenergia
+enc_ponto_trecho_energia,tipoptoenergia,4,Ponto de ramificação,tipoptoenergia
+enc_termeletrica,combrenovavel,0,Desconhecido,combrenovavel
+enc_termeletrica,combrenovavel,1,Sim,combrenovavel
+enc_termeletrica,combrenovavel,2,Não,combrenovavel
+enc_termeletrica,destenergelet,0,Desconhecido,destenergelet
+enc_termeletrica,destenergelet,1,Auto-Produção de Energia (APE),destenergelet
+enc_termeletrica,destenergelet,2,Auto-Produção com Comercialização de Excedente (APE-COM),destenergelet
+enc_termeletrica,destenergelet,3,Comercialização de Energia (COM),destenergelet
+enc_termeletrica,destenergelet,4,Produção Independente de Energia (PIE),destenergelet
+enc_termeletrica,destenergelet,5,Serviço Público (SP),destenergelet
+enc_termeletrica,geometriaaproximada,1,Sim,geometriaaproximada
+enc_termeletrica,geometriaaproximada,2,Não,geometriaaproximada
+enc_termeletrica,geracao,0,Desconhecido,geracao
+enc_termeletrica,geracao,1,Eletricidade - GER 0,geracao
+enc_termeletrica,geracao,2,CoGeração,geracao
+enc_termeletrica,operacional,0,Desconhecido,operacional
+enc_termeletrica,operacional,1,Sim,operacional
+enc_termeletrica,operacional,2,Não,operacional
+enc_termeletrica,tipocombustivel,0,Desconhecido,tipocombustivel
+enc_termeletrica,tipocombustivel,1,Nuclear,tipocombustivel
+enc_termeletrica,tipocombustivel,3,Diesel,tipocombustivel
+enc_termeletrica,tipocombustivel,5,Gás,tipocombustivel
+enc_termeletrica,tipocombustivel,33,Carvão,tipocombustivel
+enc_termeletrica,tipocombustivel,98,Misto,tipocombustivel
+enc_termeletrica,tipocombustivel,99,Outros,tipocombustivel
+enc_termeletrica,tipomaqtermica,0,Desconhecido,tipomaqtermica
+enc_termeletrica,tipomaqtermica,1,Turbina à gás (TBGS),tipomaqtermica
+enc_termeletrica,tipomaqtermica,2,Turbina à vapor (TBVP),tipomaqtermica
+enc_termeletrica,tipomaqtermica,3,Ciclo combinado (CLCB),tipomaqtermica
+enc_termeletrica,tipomaqtermica,4,Motor de Combustão Interna (NCIA),tipomaqtermica
+enc_torre_comunic,geometriaaproximada,1,Sim,geometriaaproximada
+enc_torre_comunic,geometriaaproximada,2,Não,geometriaaproximada
+enc_torre_comunic,operacional,0,Desconhecido,operacional
+enc_torre_comunic,operacional,1,Sim,operacional
+enc_torre_comunic,operacional,2,Não,operacional
+enc_torre_comunic,ovgd,0,Desconhecido,ovgd
+enc_torre_comunic,ovgd,1,Sim,ovgd
+enc_torre_comunic,ovgd,2,Não,ovgd
+enc_torre_comunic,posicaoreledific,14,Isolado,posicaoreledific
+enc_torre_comunic,posicaoreledific,17,Adjacente a edificação,posicaoreledific
+enc_torre_comunic,posicaoreledific,18,Sobre edificação,posicaoreledific
+enc_torre_energia,geometriaaproximada,1,Sim,geometriaaproximada
+enc_torre_energia,geometriaaproximada,2,Não,geometriaaproximada
+enc_torre_energia,operacional,0,Desconhecido,operacional
+enc_torre_energia,operacional,1,Sim,operacional
+enc_torre_energia,operacional,2,Não,operacional
+enc_torre_energia,ovgd,0,Desconhecido,ovgd
+enc_torre_energia,ovgd,1,Sim,ovgd
+enc_torre_energia,ovgd,2,Não,ovgd
+enc_torre_energia,tipotorre,0,Desconhecido,tipotorre
+enc_torre_energia,tipotorre,1,Autoportante,tipotorre
+enc_torre_energia,tipotorre,2,Estaiada,tipotorre
+enc_trecho_comunic,emduto,1,Sim,emduto
+enc_trecho_comunic,emduto,2,Não,emduto
+enc_trecho_comunic,geometriaaproximada,1,Sim,geometriaaproximada
+enc_trecho_comunic,geometriaaproximada,2,Não,geometriaaproximada
+enc_trecho_comunic,operacional,0,Desconhecido,operacional
+enc_trecho_comunic,operacional,1,Sim,operacional
+enc_trecho_comunic,operacional,2,Não,operacional
+enc_trecho_comunic,tipotrechocomunic,0,Desconhecido,tipotrechocomunic
+enc_trecho_comunic,tipotrechocomunic,4,Dados,tipotrechocomunic
+enc_trecho_comunic,tipotrechocomunic,6,Telegráfica,tipotrechocomunic
+enc_trecho_comunic,tipotrechocomunic,7,Telefônica,tipotrechocomunic
+enc_trecho_comunic,tipotrechocomunic,99,Outros,tipotrechocomunic
+enc_trecho_energia,emduto,1,Sim,emduto
+enc_trecho_energia,emduto,2,Não,emduto
+enc_trecho_energia,especie,0,Desconhecido,especie
+enc_trecho_energia,especie,2,Transmissão,especie
+enc_trecho_energia,especie,3,Distribuição,especie
+enc_trecho_energia,geometriaaproximada,1,Sim,geometriaaproximada
+enc_trecho_energia,geometriaaproximada,2,Não,geometriaaproximada
+enc_trecho_energia,operacional,0,Desconhecido,operacional
+enc_trecho_energia,operacional,1,Sim,operacional
+enc_trecho_energia,operacional,2,Não,operacional
+enc_zona_linhas_energia_com,geometriaaproximada,1,Sim,geometriaaproximada
+enc_zona_linhas_energia_com,geometriaaproximada,2,Não,geometriaaproximada
+hid_area_umida,geometriaaproximada,1,Sim,geometriaaproximada
+hid_area_umida,geometriaaproximada,2,Não,geometriaaproximada
+hid_area_umida,tipoareaumida,0,Desconhecido,tipoareaumida
+hid_area_umida,tipoareaumida,3,Lamacento,tipoareaumida
+hid_area_umida,tipoareaumida,4,Arenoso,tipoareaumida
+hid_bacia_hidrografica,geometriaaproximada,1,Sim,geometriaaproximada
+hid_bacia_hidrografica,geometriaaproximada,2,Não,geometriaaproximada
+hid_banco_areia,geometriaaproximada,1,Sim,geometriaaproximada
+hid_banco_areia,geometriaaproximada,2,Não,geometriaaproximada
+hid_banco_areia,situacaoemagua,0,Desconhecido,situacaoemagua
+hid_banco_areia,situacaoemagua,4,Emerso,situacaoemagua
+hid_banco_areia,situacaoemagua,5,Submerso,situacaoemagua
+hid_banco_areia,situacaoemagua,7,Cobre e Descobre,situacaoemagua
+hid_banco_areia,tipobanco,1,Fluvial,tipobanco
+hid_banco_areia,tipobanco,2,Marítimo,tipobanco
+hid_banco_areia,tipobanco,3,Lacustre,tipobanco
+hid_banco_areia,tipobanco,4,Cordão Arenoso,tipobanco
+hid_barragem,geometriaaproximada,1,Sim,geometriaaproximada
+hid_barragem,geometriaaproximada,2,Não,geometriaaproximada
+hid_barragem,operacional,0,Desconhecido,operacional
+hid_barragem,operacional,1,Sim,operacional
+hid_barragem,operacional,2,Não,operacional
+hid_barragem,situacaofisica,0,Desconhecida,situacaofisica
+hid_barragem,situacaofisica,1,Abandonada,situacaofisica
+hid_barragem,situacaofisica,2,Destruída,situacaofisica
+hid_barragem,situacaofisica,3,Em Construção,situacaofisica
+hid_barragem,situacaofisica,4,Planejada,situacaofisica
+hid_barragem,situacaofisica,5,Construída,situacaofisica
+hid_barragem,usoprincipal,0,Desconhecido,usoprincipal
+hid_barragem,usoprincipal,1,Irrigação,usoprincipal
+hid_barragem,usoprincipal,2,Abastecimento,usoprincipal
+hid_barragem,usoprincipal,3,Energia,usoprincipal
+hid_barragem,usoprincipal,97,Não aplicável,usoprincipal
+hid_barragem,usoprincipal,99,Outros,usoprincipal
+hid_comporta,geometriaaproximada,1,Sim,geometriaaproximada
+hid_comporta,geometriaaproximada,2,Não,geometriaaproximada
+hid_comporta,operacional,0,Desconhecido,operacional
+hid_comporta,operacional,1,Sim,operacional
+hid_comporta,operacional,2,Não,operacional
+hid_comporta,situacaofisica,0,Desconhecida,situacaofisica
+hid_comporta,situacaofisica,1,Abandonada,situacaofisica
+hid_comporta,situacaofisica,2,Destruída,situacaofisica
+hid_comporta,situacaofisica,3,Em Construção,situacaofisica
+hid_comporta,situacaofisica,4,Planejada,situacaofisica
+hid_comporta,situacaofisica,5,Construída,situacaofisica
+hid_confluencia,geometriaaproximada,1,Sim,geometriaaproximada
+hid_confluencia,geometriaaproximada,2,Não,geometriaaproximada
+hid_corredeira,geometriaaproximada,1,Sim,geometriaaproximada
+hid_corredeira,geometriaaproximada,2,Não,geometriaaproximada
+hid_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+hid_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+hid_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+hid_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+hid_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+hid_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+hid_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+hid_fonte_dagua,geometriaaproximada,1,Sim,geometriaaproximada
+hid_fonte_dagua,geometriaaproximada,2,Não,geometriaaproximada
+hid_fonte_dagua,qualidagua,0,Desconhecida,qualidagua
+hid_fonte_dagua,qualidagua,1,Potável,qualidagua
+hid_fonte_dagua,qualidagua,2,Não potável,qualidagua
+hid_fonte_dagua,qualidagua,3,Mineral,qualidagua
+hid_fonte_dagua,qualidagua,4,Salobra,qualidagua
+hid_fonte_dagua,tipofontedagua,0,Desconhecido,tipofontedagua
+hid_fonte_dagua,tipofontedagua,1,Poço,tipofontedagua
+hid_fonte_dagua,tipofontedagua,2,Poço Artesiano,tipofontedagua
+hid_fonte_dagua,tipofontedagua,3,Olho d`água,tipofontedagua
+hid_foz_maritima,geometriaaproximada,1,Sim,geometriaaproximada
+hid_foz_maritima,geometriaaproximada,2,Não,geometriaaproximada
+hid_ilha,geometriaaproximada,1,Sim,geometriaaproximada
+hid_ilha,geometriaaproximada,2,Não,geometriaaproximada
+hid_ilha,tipoilha,1,Fluvial,tipoilha
+hid_ilha,tipoilha,2,Marítima,tipoilha
+hid_ilha,tipoilha,3,Lacustre,tipoilha
+hid_ilha,tipoilha,98,Mista,tipoilha
+hid_limite_massa_dagua,geometriaaproximada,1,Sim,geometriaaproximada
+hid_limite_massa_dagua,geometriaaproximada,2,Não,geometriaaproximada
+hid_limite_massa_dagua,tipolimmassa,1,Costa visível da carta,tipolimmassa
+hid_limite_massa_dagua,tipolimmassa,2,Margem de massa d`água,tipolimmassa
+hid_limite_massa_dagua,tipolimmassa,3,Margem esquerda de trechos de massa d`água,tipolimmassa
+hid_limite_massa_dagua,tipolimmassa,4,Margem direita de trechos de massa d`água,tipolimmassa
+hid_limite_massa_dagua,tipolimmassa,5,Limite interno entre massas e/ou trechos,tipolimmassa
+hid_limite_massa_dagua,tipolimmassa,6,Limite com elemento artificial,tipolimmassa
+hid_limite_massa_dagua,tipolimmassa,7,Limite interno com foz marítima,tipolimmassa
+hid_massa_dagua,geometriaaproximada,1,Sim,geometriaaproximada
+hid_massa_dagua,geometriaaproximada,2,Não,geometriaaproximada
+hid_massa_dagua,salinidade,0,Desconhecida,salinidade
+hid_massa_dagua,salinidade,1,Doce,salinidade
+hid_massa_dagua,salinidade,2,Salgada,salinidade
+hid_massa_dagua,tipomassadagua,0,Desconhecida,tipomassadagua
+hid_massa_dagua,tipomassadagua,3,Oceano,tipomassadagua
+hid_massa_dagua,tipomassadagua,4,Baía,tipomassadagua
+hid_massa_dagua,tipomassadagua,5,Enseada,tipomassadagua
+hid_massa_dagua,tipomassadagua,6,Meandro Abandonado,tipomassadagua
+hid_massa_dagua,tipomassadagua,7,Lago,tipomassadagua
+hid_massa_dagua,tipomassadagua,8,Lagoa,tipomassadagua
+hid_massa_dagua,tipomassadagua,10,Represa/Açude,tipomassadagua
+hid_natureza_fundo,espessalgas,1,Finas,espessalgas
+hid_natureza_fundo,espessalgas,2,Médias,espessalgas
+hid_natureza_fundo,espessalgas,3,Grossas,espessalgas
+hid_natureza_fundo,geometriaaproximada,1,Sim,geometriaaproximada
+hid_natureza_fundo,geometriaaproximada,2,Não,geometriaaproximada
+hid_ponto_drenagem,geometriaaproximada,1,Sim,geometriaaproximada
+hid_ponto_drenagem,geometriaaproximada,2,Não,geometriaaproximada
+hid_ponto_drenagem,relacionado,1,Eclusa,relacionado_hid
+hid_ponto_drenagem,relacionado,2,Barragem,relacionado_hid
+hid_ponto_drenagem,relacionado,3,Comporta,relacionado_hid
+hid_ponto_drenagem,relacionado,4,Queda d’água,relacionado_hid
+hid_ponto_drenagem,relacionado,5,Corredeira,relacionado_hid
+hid_ponto_drenagem,relacionado,6,Foz marítima,relacionado_hid
+hid_ponto_drenagem,relacionado,7,Sumidouro,relacionado_hid
+hid_ponto_drenagem,relacionado,8,Meandro abandonado,relacionado_hid
+hid_ponto_drenagem,relacionado,9,Lago,relacionado_hid
+hid_ponto_drenagem,relacionado,10,Lagoa,relacionado_hid
+hid_ponto_drenagem,relacionado,11,Laguna,relacionado_hid
+hid_ponto_drenagem,relacionado,12,Represa/ açude,relacionado_hid
+hid_ponto_drenagem,relacionado,13,Entre trechos de drenagem,relacionado_hid
+hid_ponto_drenagem,relacionado,14,Ponto início de drenagem,relacionado_hid
+hid_ponto_drenagem,relacionado,15,Confluência,relacionado_hid
+hid_ponto_drenagem,relacionado,16,Vertedouro,relacionado_hid
+hid_ponto_drenagem,relacionado,17,Interrupção à Jusante,relacionado_hid
+hid_ponto_drenagem,relacionado,18,Interrupção à Montante,relacionado_hid
+hid_ponto_drenagem,relacionado,19,Ramificação,relacionado_hid
+hid_ponto_inicio_drenagem,geometriaaproximada,1,Sim,geometriaaproximada
+hid_ponto_inicio_drenagem,geometriaaproximada,2,Não,geometriaaproximada
+hid_ponto_inicio_drenagem,nascente,0,Desconhecido,nascente
+hid_ponto_inicio_drenagem,nascente,1,Sim,nascente
+hid_ponto_inicio_drenagem,nascente,2,Não,nascente
+hid_quebramar_molhe,geometriaaproximada,1,Sim,geometriaaproximada
+hid_quebramar_molhe,geometriaaproximada,2,Não,geometriaaproximada
+hid_quebramar_molhe,operacional,0,Desconhecido,operacional
+hid_quebramar_molhe,operacional,1,Sim,operacional
+hid_quebramar_molhe,operacional,2,Não,operacional
+hid_quebramar_molhe,situacaofisica,0,Desconhecida,situacaofisica
+hid_quebramar_molhe,situacaofisica,1,Abandonada,situacaofisica
+hid_quebramar_molhe,situacaofisica,2,Destruída,situacaofisica
+hid_quebramar_molhe,situacaofisica,3,Em Construção,situacaofisica
+hid_quebramar_molhe,situacaofisica,4,Planejada,situacaofisica
+hid_quebramar_molhe,situacaofisica,5,Construída,situacaofisica
+hid_quebramar_molhe,tipoquebramolhe,0,Desconhecido,tipoquebramolhe
+hid_quebramar_molhe,tipoquebramolhe,1,Quebramar,tipoquebramolhe
+hid_quebramar_molhe,tipoquebramolhe,2,Molhe,tipoquebramolhe
+hid_queda_dagua,geometriaaproximada,1,Sim,geometriaaproximada
+hid_queda_dagua,geometriaaproximada,2,Não,geometriaaproximada
+hid_queda_dagua,tipoqueda,0,Desconhecido,tipoqueda
+hid_queda_dagua,tipoqueda,1,Cachoeira,tipoqueda
+hid_queda_dagua,tipoqueda,2,Salto,tipoqueda
+hid_queda_dagua,tipoqueda,3,Catarata,tipoqueda
+hid_recife,geometriaaproximada,1,Sim,geometriaaproximada
+hid_recife,geometriaaproximada,2,Não,geometriaaproximada
+hid_recife,situacaocosta,10,Contíguo,situacaocosta
+hid_recife,situacaocosta,11,Afastado,situacaocosta
+hid_recife,situamare,0,Desconhecido,situamare
+hid_recife,situamare,7,Cobre e descobre,situamare
+hid_recife,situamare,8,Sempre fora d´água,situamare
+hid_recife,situamare,9,Sempre submerso,situamare
+hid_recife,tiporecife,0,Desconhecido,tiporecife
+hid_recife,tiporecife,1,Arenito,tiporecife
+hid_recife,tiporecife,2,Rochoso,tiporecife
+hid_recife,tiporecife,20,Coral,tiporecife
+hid_reservatorio_hidrico,geometriaaproximada,1,Sim,geometriaaproximada
+hid_reservatorio_hidrico,geometriaaproximada,2,Não,geometriaaproximada
+hid_reservatorio_hidrico,usoprincipal,0,Desconhecido,usoprincipal
+hid_reservatorio_hidrico,usoprincipal,1,Irrigação,usoprincipal
+hid_reservatorio_hidrico,usoprincipal,2,Abastecimento,usoprincipal
+hid_reservatorio_hidrico,usoprincipal,3,Energia,usoprincipal
+hid_reservatorio_hidrico,usoprincipal,97,Não aplicável,usoprincipal
+hid_reservatorio_hidrico,usoprincipal,99,Outros,usoprincipal
+hid_rocha_em_agua,geometriaaproximada,1,Sim,geometriaaproximada
+hid_rocha_em_agua,geometriaaproximada,2,Não,geometriaaproximada
+hid_rocha_em_agua,situacaoemagua,0,Desconhecido,situacaoemagua
+hid_rocha_em_agua,situacaoemagua,4,Emerso,situacaoemagua
+hid_rocha_em_agua,situacaoemagua,5,Submerso,situacaoemagua
+hid_rocha_em_agua,situacaoemagua,7,Cobre e Descobre,situacaoemagua
+hid_sumidouro_vertedouro,causa,0,Desconhecida,causa
+hid_sumidouro_vertedouro,causa,1,Canalização,causa
+hid_sumidouro_vertedouro,causa,2,Gruta ou Fenda,causa
+hid_sumidouro_vertedouro,causa,3,Absorção,causa
+hid_sumidouro_vertedouro,geometriaaproximada,1,Sim,geometriaaproximada
+hid_sumidouro_vertedouro,geometriaaproximada,2,Não,geometriaaproximada
+hid_sumidouro_vertedouro,tiposumvert,1,Sumidouro,tiposumvert
+hid_sumidouro_vertedouro,tiposumvert,2,Vertedouro,tiposumvert
+hid_terreno_suj_inundacao,geometriaaproximada,1,Sim,geometriaaproximada
+hid_terreno_suj_inundacao,geometriaaproximada,2,Não,geometriaaproximada
+hid_trecho_drenagem,coincidecomdentrode,1,Rio,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,2,Canal,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,9,Laguna,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,10,Represa/açude,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,11,Vala,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,12,Queda d´água,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,13,Corredeira,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,14,Eclusa,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,15,Terreno sujeito a inundação,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,16,Foz marítima,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,19,Barragem,coincidecomdentrode_hid
+hid_trecho_drenagem,coincidecomdentrode,97,Não aplicável,coincidecomdentrode_hid
+hid_trecho_drenagem,compartilhado,1,Sim,compartilhado
+hid_trecho_drenagem,compartilhado,2,Não,compartilhado
+hid_trecho_drenagem,dentrodepoligono,1,Sim,dentrodepoligono
+hid_trecho_drenagem,dentrodepoligono,2,Não,dentrodepoligono
+hid_trecho_drenagem,eixoprincipal,1,Sim,eixoprincipal
+hid_trecho_drenagem,eixoprincipal,2,Não,eixoprincipal
+hid_trecho_drenagem,geometriaaproximada,1,Sim,geometriaaproximada
+hid_trecho_drenagem,geometriaaproximada,2,Não,geometriaaproximada
+hid_trecho_drenagem,navegabilidade,0,Desconhecida,navegabilidade
+hid_trecho_drenagem,navegabilidade,1,Navegável,navegabilidade
+hid_trecho_drenagem,navegabilidade,2,Não navegável,navegabilidade
+hid_trecho_massa_dagua,geometriaaproximada,1,Sim,geometriaaproximada
+hid_trecho_massa_dagua,geometriaaproximada,2,Não,geometriaaproximada
+hid_trecho_massa_dagua,salinidade,0,Desconhecida,salinidade
+hid_trecho_massa_dagua,salinidade,1,Doce,salinidade
+hid_trecho_massa_dagua,salinidade,2,Salgada,salinidade
+hid_trecho_massa_dagua,tipotrechomassa,1,Rio,tipotrechomassa
+hid_trecho_massa_dagua,tipotrechomassa,2,Canal,tipotrechomassa
+hid_trecho_massa_dagua,tipotrechomassa,9,Laguna,tipotrechomassa
+hid_trecho_massa_dagua,tipotrechomassa,10,Represa/açude,tipotrechomassa
+hid_trecho_massa_dagua,tipotrechomassa,99,Outros,tipotrechomassa
+lim_area_de_litigio,geometriaaproximada,1,Sim,geometriaaproximada
+lim_area_de_litigio,geometriaaproximada,2,Não,geometriaaproximada
+lim_area_desenv_controle,geometriaaproximada,1,Sim,geometriaaproximada
+lim_area_desenv_controle,geometriaaproximada,2,Não,geometriaaproximada
+lim_area_particular,geometriaaproximada,1,Sim,geometriaaproximada
+lim_area_particular,geometriaaproximada,2,Não,geometriaaproximada
+lim_area_uso_comunitario,geometriaaproximada,1,Sim,geometriaaproximada
+lim_area_uso_comunitario,geometriaaproximada,2,Não,geometriaaproximada
+lim_area_uso_comunitario,tipoareausocomun,1,Quilombo,tipoareausocomun
+lim_area_uso_comunitario,tipoareausocomun,2,Assentamento rural,tipoareausocomun
+lim_bairro,geometriaaproximada,1,Sim,geometriaaproximada
+lim_bairro,geometriaaproximada,2,Não,geometriaaproximada
+lim_delimitacao_fisica,eletrificada,0,Desconhecido,eletrificada
+lim_delimitacao_fisica,eletrificada,1,Sim,eletrificada
+lim_delimitacao_fisica,eletrificada,2,Não,eletrificada
+lim_delimitacao_fisica,geometriaaproximada,1,Sim,geometriaaproximada
+lim_delimitacao_fisica,geometriaaproximada,2,Não,geometriaaproximada
+lim_delimitacao_fisica,tipodelimfis,0,Desconhecido,tipodelimfis
+lim_delimitacao_fisica,tipodelimfis,1,Cerca,tipodelimfis
+lim_delimitacao_fisica,tipodelimfis,2,Muro,tipodelimfis
+lim_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+lim_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+lim_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+lim_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+lim_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+lim_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+lim_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+lim_distrito,geometriaaproximada,1,Sim,geometriaaproximada
+lim_distrito,geometriaaproximada,2,Não,geometriaaproximada
+lim_limite_area_especial,coincidecomdentrode,2,Contorno Massa D`Água,coincidecomdentrode_lim
+lim_limite_area_especial,coincidecomdentrode,3,Cumeada,coincidecomdentrode_lim
+lim_limite_area_especial,coincidecomdentrode,4,Linha Seca,coincidecomdentrode_lim
+lim_limite_area_especial,coincidecomdentrode,5,Costa Visível da Carta,coincidecomdentrode_lim
+lim_limite_area_especial,coincidecomdentrode,6,Rodovia,coincidecomdentrode_lim
+lim_limite_area_especial,coincidecomdentrode,7,Ferrovia,coincidecomdentrode_lim
+lim_limite_area_especial,coincidecomdentrode,8,Trecho de Drenagem,coincidecomdentrode_lim
+lim_limite_area_especial,coincidecomdentrode,9,Massa D`Água,coincidecomdentrode_lim
+lim_limite_area_especial,coincidecomdentrode,96,Não Identificado,coincidecomdentrode_lim
+lim_limite_area_especial,geometriaaproximada,1,Sim,geometriaaproximada
+lim_limite_area_especial,geometriaaproximada,2,Não,geometriaaproximada
+lim_limite_area_especial,tipolimareaesp,1,Terra pública,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,2,Terra indígena,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,3,Quilombo,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,4,Assentamento rural,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,5,Amazônia legal,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,6,Faixa de fronteira,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,7,Polígono das secas,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,8,Área de preservação permanente,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,9,Reserva legal,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,10,Mosaico,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,11,Distrito florestal,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,12,Corredor ecológico,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,13,Floresta pública,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,14,Sítios RAMSAR,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,15,Sítios do patrimônio,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,16,Reserva da biosfera,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,17,Reserva florestal,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,18,Reserva ecológica,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,19,Estação biológica,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,20,Horto florestal,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,21,Estrada parque,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,22,Floresta de rendimento sustentável,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,23,Floresta Extrativista,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,24,Área de proteção ambiental - APA,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,25,Área de Relevante Interesse Ecológico - ARIE,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,26,Floresta - FLO,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,27,Reserva de Desenvolvimento Sustentável - RDS,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,28,Reserva Extrativista - RESEX,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,29,Reserva de Fauna - REFAU,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,30,Reserva Particular do Patrimônio Natural - RPPN,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,31,Estação Ecológica - ESEC,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,32,Parque - PAR,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,33,Monumento Natural - MONA,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,34,Reserva Biológica - REBIO,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,35,Refúgio de Vida Silvestre - RVS,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,36,Area Militar,tipolimareaesp
+lim_limite_area_especial,tipolimareaesp,99,Outros,tipolimareaesp
+lim_limite_intra_munic_adm,coincidecomdentrode,2,Contorno Massa D`Água,coincidecomdentrode_lim
+lim_limite_intra_munic_adm,coincidecomdentrode,3,Cumeada,coincidecomdentrode_lim
+lim_limite_intra_munic_adm,coincidecomdentrode,4,Linha Seca,coincidecomdentrode_lim
+lim_limite_intra_munic_adm,coincidecomdentrode,5,Costa Visível da Carta,coincidecomdentrode_lim
+lim_limite_intra_munic_adm,coincidecomdentrode,6,Rodovia,coincidecomdentrode_lim
+lim_limite_intra_munic_adm,coincidecomdentrode,7,Ferrovia,coincidecomdentrode_lim
+lim_limite_intra_munic_adm,coincidecomdentrode,8,Trecho de Drenagem,coincidecomdentrode_lim
+lim_limite_intra_munic_adm,coincidecomdentrode,9,Massa D`Água,coincidecomdentrode_lim
+lim_limite_intra_munic_adm,coincidecomdentrode,96,Não Identificado,coincidecomdentrode_lim
+lim_limite_intra_munic_adm,geometriaaproximada,1,Sim,geometriaaproximada
+lim_limite_intra_munic_adm,geometriaaproximada,2,Não,geometriaaproximada
+lim_limite_intra_munic_adm,tipolimintramun,1,Distrital,tipolimintramun
+lim_limite_intra_munic_adm,tipolimintramun,2,Sub-distrital,tipolimintramun
+lim_limite_intra_munic_adm,tipolimintramun,3,Perímetro urbano legal,tipolimintramun
+lim_limite_intra_munic_adm,tipolimintramun,4,Região administrativa,tipolimintramun
+lim_limite_intra_munic_adm,tipolimintramun,5,Bairro,tipolimintramun
+lim_limite_operacional,coincidecomdentrode,2,Contorno Massa D`Água,coincidecomdentrode_lim
+lim_limite_operacional,coincidecomdentrode,3,Cumeada,coincidecomdentrode_lim
+lim_limite_operacional,coincidecomdentrode,4,Linha Seca,coincidecomdentrode_lim
+lim_limite_operacional,coincidecomdentrode,5,Costa Visível da Carta,coincidecomdentrode_lim
+lim_limite_operacional,coincidecomdentrode,6,Rodovia,coincidecomdentrode_lim
+lim_limite_operacional,coincidecomdentrode,7,Ferrovia,coincidecomdentrode_lim
+lim_limite_operacional,coincidecomdentrode,8,Trecho de Drenagem,coincidecomdentrode_lim
+lim_limite_operacional,coincidecomdentrode,9,Massa D`Água,coincidecomdentrode_lim
+lim_limite_operacional,coincidecomdentrode,96,Não Identificado,coincidecomdentrode_lim
+lim_limite_operacional,geometriaaproximada,1,Sim,geometriaaproximada
+lim_limite_operacional,geometriaaproximada,2,Não,geometriaaproximada
+lim_limite_operacional,tipolimoper,0,Desconhecido,tipolimoper
+lim_limite_operacional,tipolimoper,1,Setor censitário,tipolimoper
+lim_limite_operacional,tipolimoper,2,Linha de base normal,tipolimoper
+lim_limite_operacional,tipolimoper,3,Linha de base reta,tipolimoper
+lim_limite_operacional,tipolimoper,4,Costa visível da carta(interpretada),tipolimoper
+lim_limite_operacional,tipolimoper,5,Linha preamar média - 1831,tipolimoper
+lim_limite_operacional,tipolimoper,6,Linha média de enchente-ORD,tipolimoper
+lim_limite_particular,coincidecomdentrode,2,Contorno Massa D`Água,coincidecomdentrode_lim
+lim_limite_particular,coincidecomdentrode,3,Cumeada,coincidecomdentrode_lim
+lim_limite_particular,coincidecomdentrode,4,Linha Seca,coincidecomdentrode_lim
+lim_limite_particular,coincidecomdentrode,5,Costa Visível da Carta,coincidecomdentrode_lim
+lim_limite_particular,coincidecomdentrode,6,Rodovia,coincidecomdentrode_lim
+lim_limite_particular,coincidecomdentrode,7,Ferrovia,coincidecomdentrode_lim
+lim_limite_particular,coincidecomdentrode,8,Trecho de Drenagem,coincidecomdentrode_lim
+lim_limite_particular,coincidecomdentrode,9,Massa D`Água,coincidecomdentrode_lim
+lim_limite_particular,coincidecomdentrode,96,Não Identificado,coincidecomdentrode_lim
+lim_limite_particular,geometriaaproximada,1,Sim,geometriaaproximada
+lim_limite_particular,geometriaaproximada,2,Não,geometriaaproximada
+lim_limite_politico_adm,coincidecomdentrode,2,Contorno Massa D`Água,coincidecomdentrode_lim
+lim_limite_politico_adm,coincidecomdentrode,3,Cumeada,coincidecomdentrode_lim
+lim_limite_politico_adm,coincidecomdentrode,4,Linha Seca,coincidecomdentrode_lim
+lim_limite_politico_adm,coincidecomdentrode,5,Costa Visível da Carta,coincidecomdentrode_lim
+lim_limite_politico_adm,coincidecomdentrode,6,Rodovia,coincidecomdentrode_lim
+lim_limite_politico_adm,coincidecomdentrode,7,Ferrovia,coincidecomdentrode_lim
+lim_limite_politico_adm,coincidecomdentrode,8,Trecho de Drenagem,coincidecomdentrode_lim
+lim_limite_politico_adm,coincidecomdentrode,9,Massa D`Água,coincidecomdentrode_lim
+lim_limite_politico_adm,coincidecomdentrode,96,Não Identificado,coincidecomdentrode_lim
+lim_limite_politico_adm,geometriaaproximada,1,Sim,geometriaaproximada
+lim_limite_politico_adm,geometriaaproximada,2,Não,geometriaaproximada
+lim_limite_politico_adm,tipolimpol,1,Internacional,tipolimpol
+lim_limite_politico_adm,tipolimpol,2,Estadual,tipolimpol
+lim_limite_politico_adm,tipolimpol,3,Municipal,tipolimpol
+lim_linha_de_limite,coincidecomdentrode,2,Contorno Massa D`Água,coincidecomdentrode_lim
+lim_linha_de_limite,coincidecomdentrode,3,Cumeada,coincidecomdentrode_lim
+lim_linha_de_limite,coincidecomdentrode,4,Linha Seca,coincidecomdentrode_lim
+lim_linha_de_limite,coincidecomdentrode,5,Costa Visível da Carta,coincidecomdentrode_lim
+lim_linha_de_limite,coincidecomdentrode,6,Rodovia,coincidecomdentrode_lim
+lim_linha_de_limite,coincidecomdentrode,7,Ferrovia,coincidecomdentrode_lim
+lim_linha_de_limite,coincidecomdentrode,8,Trecho de Drenagem,coincidecomdentrode_lim
+lim_linha_de_limite,coincidecomdentrode,9,Massa D`Água,coincidecomdentrode_lim
+lim_linha_de_limite,coincidecomdentrode,96,Não Identificado,coincidecomdentrode_lim
+lim_linha_de_limite,geometriaaproximada,1,Sim,geometriaaproximada
+lim_linha_de_limite,geometriaaproximada,2,Não,geometriaaproximada
+lim_marco_de_limite,geometriaaproximada,1,Sim,geometriaaproximada
+lim_marco_de_limite,geometriaaproximada,2,Não,geometriaaproximada
+lim_marco_de_limite,referencialaltim,1,Torres,referencialaltim
+lim_marco_de_limite,referencialaltim,2,Imbituba,referencialaltim
+lim_marco_de_limite,referencialaltim,3,Santana,referencialaltim
+lim_marco_de_limite,referencialaltim,4,Local,referencialaltim
+lim_marco_de_limite,referencialaltim,5,Outra referência,referencialaltim
+lim_marco_de_limite,sistemageodesico,1,SAD-69,sistemageodesico
+lim_marco_de_limite,sistemageodesico,2,SIRGAS,sistemageodesico
+lim_marco_de_limite,sistemageodesico,3,WGS-84,sistemageodesico
+lim_marco_de_limite,sistemageodesico,4,Córrego Alegre,sistemageodesico
+lim_marco_de_limite,sistemageodesico,5,Astro Chuá,sistemageodesico
+lim_marco_de_limite,sistemageodesico,6,Outra referência,sistemageodesico
+lim_marco_de_limite,tipomarcolim,1,Internacional,tipomarcolim
+lim_marco_de_limite,tipomarcolim,2,Estadual,tipomarcolim
+lim_marco_de_limite,tipomarcolim,3,Municipal,tipomarcolim
+lim_marco_de_limite,tipomarcolim,99,Outros,tipomarcolim
+lim_municipio,geometriaaproximada,1,Sim,geometriaaproximada
+lim_municipio,geometriaaproximada,2,Não,geometriaaproximada
+lim_outras_unid_protegidas,geometriaaproximada,1,Sim,geometriaaproximada
+lim_outras_unid_protegidas,geometriaaproximada,2,Não,geometriaaproximada
+lim_outras_unid_protegidas,tipooutunidprot,1,Área de preservação permanente,tipooutunidprot
+lim_outras_unid_protegidas,tipooutunidprot,2,Reserva legal,tipooutunidprot
+lim_outras_unid_protegidas,tipooutunidprot,3,Mosaico,tipooutunidprot
+lim_outras_unid_protegidas,tipooutunidprot,4,Distrito florestal,tipooutunidprot
+lim_outras_unid_protegidas,tipooutunidprot,5,Corredor ecológico,tipooutunidprot
+lim_outras_unid_protegidas,tipooutunidprot,6,Floresta pública,tipooutunidprot
+lim_outras_unid_protegidas,tipooutunidprot,7,Sítios RAMSAR,tipooutunidprot
+lim_outras_unid_protegidas,tipooutunidprot,8,Sítios do patrimônio,tipooutunidprot
+lim_outras_unid_protegidas,tipooutunidprot,9,Reserva da biosfera,tipooutunidprot
+lim_outros_limites_oficiais,coincidecomdentrode,2,Contorno Massa D`Água,coincidecomdentrode_lim
+lim_outros_limites_oficiais,coincidecomdentrode,3,Cumeada,coincidecomdentrode_lim
+lim_outros_limites_oficiais,coincidecomdentrode,4,Linha Seca,coincidecomdentrode_lim
+lim_outros_limites_oficiais,coincidecomdentrode,5,Costa Visível da Carta,coincidecomdentrode_lim
+lim_outros_limites_oficiais,coincidecomdentrode,6,Rodovia,coincidecomdentrode_lim
+lim_outros_limites_oficiais,coincidecomdentrode,7,Ferrovia,coincidecomdentrode_lim
+lim_outros_limites_oficiais,coincidecomdentrode,8,Trecho de Drenagem,coincidecomdentrode_lim
+lim_outros_limites_oficiais,coincidecomdentrode,9,Massa D`Água,coincidecomdentrode_lim
+lim_outros_limites_oficiais,coincidecomdentrode,96,Não Identificado,coincidecomdentrode_lim
+lim_outros_limites_oficiais,geometriaaproximada,1,Sim,geometriaaproximada
+lim_outros_limites_oficiais,geometriaaproximada,2,Não,geometriaaproximada
+lim_outros_limites_oficiais,tipooutlimofic,0,Desconhecido,tipooutlimofic
+lim_outros_limites_oficiais,tipooutlimofic,1,Mar territorial,tipooutlimofic
+lim_outros_limites_oficiais,tipooutlimofic,2,Zona contígua,tipooutlimofic
+lim_outros_limites_oficiais,tipooutlimofic,3,Zona econômica exclusiva,tipooutlimofic
+lim_outros_limites_oficiais,tipooutlimofic,4,Lateral marítima,tipooutlimofic
+lim_outros_limites_oficiais,tipooutlimofic,5,Faixa de fronteira,tipooutlimofic
+lim_outros_limites_oficiais,tipooutlimofic,6,Plataforma continental jurídica,tipooutlimofic
+lim_outros_limites_oficiais,tipooutlimofic,99,Outros,tipooutlimofic
+lim_pais,geometriaaproximada,1,Sim,geometriaaproximada
+lim_pais,geometriaaproximada,2,Não,geometriaaproximada
+lim_regiao_administrativa,geometriaaproximada,1,Sim,geometriaaproximada
+lim_regiao_administrativa,geometriaaproximada,2,Não,geometriaaproximada
+lim_sub_distrito,geometriaaproximada,1,Sim,geometriaaproximada
+lim_sub_distrito,geometriaaproximada,2,Não,geometriaaproximada
+lim_terra_indigena,geometriaaproximada,1,Sim,geometriaaproximada
+lim_terra_indigena,geometriaaproximada,2,Não,geometriaaproximada
+lim_terra_indigena,situacaojuridica,0,Desconhecida,situacaojuridica
+lim_terra_indigena,situacaojuridica,1,Delimitada,situacaojuridica
+lim_terra_indigena,situacaojuridica,2,Declarada,situacaojuridica
+lim_terra_indigena,situacaojuridica,3,Homologada ou demarcada,situacaojuridica
+lim_terra_indigena,situacaojuridica,4,Regularizada,situacaojuridica
+lim_terra_publica,geometriaaproximada,1,Sim,geometriaaproximada
+lim_terra_publica,geometriaaproximada,2,Não,geometriaaproximada
+lim_unidade_conserv_nao_snuc,geometriaaproximada,1,Sim,geometriaaproximada
+lim_unidade_conserv_nao_snuc,geometriaaproximada,2,Não,geometriaaproximada
+lim_unidade_federacao,geometriaaproximada,1,Sim,geometriaaproximada
+lim_unidade_federacao,geometriaaproximada,2,Não,geometriaaproximada
+lim_unidade_protecao_integral,geometriaaproximada,1,Sim,geometriaaproximada
+lim_unidade_protecao_integral,geometriaaproximada,2,Não,geometriaaproximada
+lim_unidade_protecao_integral,tipounidprotinteg,1,Estação Ecológica - ESEC,tipounidprotinteg
+lim_unidade_protecao_integral,tipounidprotinteg,2,Parque - PAR,tipounidprotinteg
+lim_unidade_protecao_integral,tipounidprotinteg,3,Monumento batural - MONA,tipounidprotinteg
+lim_unidade_protecao_integral,tipounidprotinteg,4,Reserva Biológica - REBIO,tipounidprotinteg
+lim_unidade_protecao_integral,tipounidprotinteg,5,Refúgio de Vida Silvestre - RVS,tipounidprotinteg
+lim_unidade_uso_sustentavel,geometriaaproximada,1,Sim,geometriaaproximada
+lim_unidade_uso_sustentavel,geometriaaproximada,2,Não,geometriaaproximada
+lim_unidade_uso_sustentavel,tipounidusosust,1,Área de Proteção Ambiental - APA,tipounidusosust
+lim_unidade_uso_sustentavel,tipounidusosust,2,Área de Relevante Interesse Ecológico - ARIE,tipounidusosust
+lim_unidade_uso_sustentavel,tipounidusosust,3,Floresta - FLO,tipounidusosust
+lim_unidade_uso_sustentavel,tipounidusosust,4,Reserva de Desenvolvimento Sustentável - RDS,tipounidusosust
+lim_unidade_uso_sustentavel,tipounidusosust,5,Reserva Extrativista - RESEX,tipounidusosust
+lim_unidade_uso_sustentavel,tipounidusosust,6,Reserva de Fauna - REFAU,tipounidusosust
+lim_unidade_uso_sustentavel,tipounidusosust,7,Reserva Particular do Patrimônio Natural - RPPN,tipounidusosust
+loc_aglom_rural_de_ext_urbana,geometriaaproximada,1,Sim,geometriaaproximada
+loc_aglom_rural_de_ext_urbana,geometriaaproximada,2,Não,geometriaaproximada
+loc_aglomerado_rural_isolado,geometriaaproximada,1,Sim,geometriaaproximada
+loc_aglomerado_rural_isolado,geometriaaproximada,2,Não,geometriaaproximada
+loc_aglomerado_rural_isolado,tipoaglomrurisol,5,Aglomerado Rural Isolado - Povoado,tipoaglomrurisol
+loc_aglomerado_rural_isolado,tipoaglomrurisol,6,Aglomerado Rural Isolado - Núcleo,tipoaglomrurisol
+loc_aglomerado_rural_isolado,tipoaglomrurisol,7,Outros Aglomerados Rurais Isolados,tipoaglomrurisol
+loc_area_edificada,geometriaaproximada,1,Sim,geometriaaproximada
+loc_area_edificada,geometriaaproximada,2,Não,geometriaaproximada
+loc_area_habitacional,geometriaaproximada,1,Sim,geometriaaproximada
+loc_area_habitacional,geometriaaproximada,2,Não,geometriaaproximada
+loc_area_urbana_isolada,geometriaaproximada,1,Sim,geometriaaproximada
+loc_area_urbana_isolada,geometriaaproximada,2,Não,geometriaaproximada
+loc_area_urbana_isolada,tipoassociado,1,Cidade,tipoassociado
+loc_area_urbana_isolada,tipoassociado,4,Vila,tipoassociado
+loc_capital,geometriaaproximada,1,Sim,geometriaaproximada
+loc_capital,geometriaaproximada,2,Não,geometriaaproximada
+loc_capital,tipocapital,2,Capital Federal,tipocapital
+loc_capital,tipocapital,3,Capital Estadual,tipocapital
+loc_cidade,geometriaaproximada,1,Sim,geometriaaproximada
+loc_cidade,geometriaaproximada,2,Não,geometriaaproximada
+loc_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+loc_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+loc_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+loc_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+loc_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+loc_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+loc_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+loc_edif_habitacional,geometriaaproximada,1,Sim,geometriaaproximada
+loc_edif_habitacional,geometriaaproximada,2,Não,geometriaaproximada
+loc_edif_habitacional,operacional,0,Desconhecido,operacional
+loc_edif_habitacional,operacional,1,Sim,operacional
+loc_edif_habitacional,operacional,2,Não,operacional
+loc_edificacao,geometriaaproximada,1,Sim,geometriaaproximada
+loc_edificacao,geometriaaproximada,2,Não,geometriaaproximada
+loc_edificacao,operacional,0,Desconhecido,operacional
+loc_edificacao,operacional,1,Sim,operacional
+loc_edificacao,operacional,2,Não,operacional
+loc_hab_indigena,coletiva,0,Desconhecido,coletiva
+loc_hab_indigena,coletiva,1,Sim,coletiva
+loc_hab_indigena,coletiva,2,Não,coletiva
+loc_hab_indigena,geometriaaproximada,1,Sim,geometriaaproximada
+loc_hab_indigena,geometriaaproximada,2,Não,geometriaaproximada
+loc_hab_indigena,isolada,0,Desconhecido,isolada
+loc_hab_indigena,isolada,1,Sim,isolada
+loc_hab_indigena,isolada,2,Não,isolada
+loc_nome_local,geometriaaproximada,1,Sim,geometriaaproximada
+loc_nome_local,geometriaaproximada,2,Não,geometriaaproximada
+loc_vila,geometriaaproximada,1,Sim,geometriaaproximada
+loc_vila,geometriaaproximada,2,Não,geometriaaproximada
+pto_area_est_med_fenom,geometriaaproximada,1,Sim,geometriaaproximada
+pto_area_est_med_fenom,geometriaaproximada,2,Não,geometriaaproximada
+pto_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+pto_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+pto_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+pto_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+pto_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+pto_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+pto_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+pto_edif_constr_est_med_fen,geometriaaproximada,1,Sim,geometriaaproximada
+pto_edif_constr_est_med_fen,geometriaaproximada,2,Não,geometriaaproximada
+pto_edif_constr_est_med_fen,operacional,0,Desconhecido,operacional
+pto_edif_constr_est_med_fen,operacional,1,Sim,operacional
+pto_edif_constr_est_med_fen,operacional,2,Não,operacional
+pto_pto_controle,geometriaaproximada,1,Sim,geometriaaproximada
+pto_pto_controle,geometriaaproximada,2,Não,geometriaaproximada
+pto_pto_controle,materializado,0,Desconhecido,materializado
+pto_pto_controle,materializado,1,Sim,materializado
+pto_pto_controle,materializado,2,Não,materializado
+pto_pto_controle,referencialaltim,1,Torres,referencialaltim
+pto_pto_controle,referencialaltim,2,Imbituba,referencialaltim
+pto_pto_controle,referencialaltim,3,Santana,referencialaltim
+pto_pto_controle,referencialaltim,4,Local,referencialaltim
+pto_pto_controle,referencialaltim,5,Outra referência,referencialaltim
+pto_pto_controle,sistemageodesico,1,SAD-69,sistemageodesico
+pto_pto_controle,sistemageodesico,2,SIRGAS,sistemageodesico
+pto_pto_controle,sistemageodesico,3,WGS-84,sistemageodesico
+pto_pto_controle,sistemageodesico,4,Córrego Alegre,sistemageodesico
+pto_pto_controle,sistemageodesico,5,Astro Chuá,sistemageodesico
+pto_pto_controle,sistemageodesico,6,Outra referência,sistemageodesico
+pto_pto_controle,tipoptocontrole,9,Ponto de Controle,tipoptocontrole
+pto_pto_controle,tipoptocontrole,12,Ponto Perspectivo,tipoptocontrole
+pto_pto_controle,tipoptocontrole,13,Ponto Fotogramétrico,tipoptocontrole
+pto_pto_controle,tipoptocontrole,99,Outros,tipoptocontrole
+pto_pto_est_med_fenomenos,geometriaaproximada,1,Sim,geometriaaproximada
+pto_pto_est_med_fenomenos,geometriaaproximada,2,Não,geometriaaproximada
+pto_pto_est_med_fenomenos,tipoptoestmed,0,Desconhecido,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,1,Estação Climatológica Principal - CP,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,2,Estação Climatológica Auxiliar - CA,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,3,Estação Agroclimatológica - AC,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,4,Estação Pluviométrica - PL,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,5,Estação Eólica - EO,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,6,Estação Evaporimétrica - EV,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,7,Estação Solarimétrica - SL,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,8,Estação de Radar Meteorológico - RD,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,9,Estação de Radiossonda - RS,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,10,Estação Fluviométrica - FL,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,11,Estação Maregráfica - MA,tipoptoestmed
+pto_pto_est_med_fenomenos,tipoptoestmed,12,Estação de Marés Terrestres - Crosta,tipoptoestmed
+pto_pto_ref_geod_topo,geometriaaproximada,1,Sim,geometriaaproximada
+pto_pto_ref_geod_topo,geometriaaproximada,2,Não,geometriaaproximada
+pto_pto_ref_geod_topo,proximidade,0,Desconhecida,proximidade
+pto_pto_ref_geod_topo,proximidade,14,Isolado,proximidade
+pto_pto_ref_geod_topo,proximidade,15,Adjacente,proximidade
+pto_pto_ref_geod_topo,proximidade,16,Coincidente,proximidade
+pto_pto_ref_geod_topo,rede,0,Desconhecida,rede
+pto_pto_ref_geod_topo,rede,2,Estadual,rede
+pto_pto_ref_geod_topo,rede,3,Municipal,rede
+pto_pto_ref_geod_topo,rede,14,Nacional,rede
+pto_pto_ref_geod_topo,rede,15,Privada,rede
+pto_pto_ref_geod_topo,referencialaltim,1,Torres,referencialaltim
+pto_pto_ref_geod_topo,referencialaltim,2,Imbituba,referencialaltim
+pto_pto_ref_geod_topo,referencialaltim,3,Santana,referencialaltim
+pto_pto_ref_geod_topo,referencialaltim,4,Local,referencialaltim
+pto_pto_ref_geod_topo,referencialaltim,5,Outra referência,referencialaltim
+pto_pto_ref_geod_topo,referencialgrav,0,Desconhecido,referencialgrav
+pto_pto_ref_geod_topo,referencialgrav,1,Postdam 1930,referencialgrav
+pto_pto_ref_geod_topo,referencialgrav,2,IGSN71,referencialgrav
+pto_pto_ref_geod_topo,referencialgrav,3,Absoluto,referencialgrav
+pto_pto_ref_geod_topo,referencialgrav,4,Local,referencialgrav
+pto_pto_ref_geod_topo,referencialgrav,97,Não Aplicável,referencialgrav
+pto_pto_ref_geod_topo,sistemageodesico,1,SAD-69,sistemageodesico
+pto_pto_ref_geod_topo,sistemageodesico,2,SIRGAS,sistemageodesico
+pto_pto_ref_geod_topo,sistemageodesico,3,WGS-84,sistemageodesico
+pto_pto_ref_geod_topo,sistemageodesico,4,Córrego Alegre,sistemageodesico
+pto_pto_ref_geod_topo,sistemageodesico,5,Astro Chuá,sistemageodesico
+pto_pto_ref_geod_topo,sistemageodesico,6,Outra referência,sistemageodesico
+pto_pto_ref_geod_topo,situacaomarco,0,Desconhecido,situacaomarco
+pto_pto_ref_geod_topo,situacaomarco,1,Bom,situacaomarco
+pto_pto_ref_geod_topo,situacaomarco,2,Destruído,situacaomarco
+pto_pto_ref_geod_topo,situacaomarco,3,Destruído sem chapa,situacaomarco
+pto_pto_ref_geod_topo,situacaomarco,4,Destruído com chapa danificada,situacaomarco
+pto_pto_ref_geod_topo,situacaomarco,5,Não encontrado,situacaomarco
+pto_pto_ref_geod_topo,situacaomarco,6,Não visitado,situacaomarco
+pto_pto_ref_geod_topo,situacaomarco,7,Não construído,situacaomarco
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,0,Desconhecido,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,1,Vértice de Triangulação - VT,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,2,Referência de Nível - RN,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,3,Estação Gravimétrica - EG,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,4,Estação de Poligonal - EP,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,5,Ponto Astronômico - PA,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,6,Ponto barométrico - B,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,7,Ponto Trigonométrico - RV,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,8,Ponto de Satélite - SAT,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tipoptorefgeodtopo,99,Outros,tipoptorefgeodtopo
+pto_pto_ref_geod_topo,tiporef,1,Altimétrico,tiporef
+pto_pto_ref_geod_topo,tiporef,2,Planimétrico,tiporef
+pto_pto_ref_geod_topo,tiporef,3,Planialtimétrico,tiporef
+pto_pto_ref_geod_topo,tiporef,4,Gravimétrico,tiporef
+rel_alter_fisiog_antropica,geometriaaproximada,1,Sim,geometriaaproximada
+rel_alter_fisiog_antropica,geometriaaproximada,2,Não,geometriaaproximada
+rel_alter_fisiog_antropica,tipoalterantrop,0,Desconhecido,tipoalterantrop
+rel_alter_fisiog_antropica,tipoalterantrop,24,Caixa de empréstimo,tipoalterantrop
+rel_alter_fisiog_antropica,tipoalterantrop,25,Área aterrada,tipoalterantrop
+rel_alter_fisiog_antropica,tipoalterantrop,26,Corte,tipoalterantrop
+rel_alter_fisiog_antropica,tipoalterantrop,27,Aterro,tipoalterantrop
+rel_alter_fisiog_antropica,tipoalterantrop,28,Resíduo de bota-fora,tipoalterantrop
+rel_alter_fisiog_antropica,tipoalterantrop,29,Resíduo sólido em geral,tipoalterantrop
+rel_curva_nivel,depressao,1,Sim,depressao
+rel_curva_nivel,depressao,2,Não,depressao
+rel_curva_nivel,geometriaaproximada,1,Sim,geometriaaproximada
+rel_curva_nivel,geometriaaproximada,2,Não,geometriaaproximada
+rel_curva_nivel,indice,1,Mestra,indice
+rel_curva_nivel,indice,2,Normal,indice
+rel_curva_nivel,indice,3,Auxiliar,indice
+rel_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+rel_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+rel_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+rel_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+rel_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+rel_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+rel_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+rel_dolina,geometriaaproximada,1,Sim,geometriaaproximada
+rel_dolina,geometriaaproximada,2,Não,geometriaaproximada
+rel_duna,fixa,1,Sim,fixa
+rel_duna,fixa,2,Não,fixa
+rel_duna,geometriaaproximada,1,Sim,geometriaaproximada
+rel_duna,geometriaaproximada,2,Não,geometriaaproximada
+rel_elemento_fisiog_natural,geometriaaproximada,1,Sim,geometriaaproximada
+rel_elemento_fisiog_natural,geometriaaproximada,2,Não,geometriaaproximada
+rel_elemento_fisiog_natural,tipoelemnat,0,Desconhecido,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,1,Serra,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,2,Morro,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,3,Montanha,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,4,Chapada,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,5,Maciço,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,6,Planalto,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,7,Planície,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,8,Escarpa,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,9,Península,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,10,Ponta,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,11,Cabo,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,12,Praia,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,13,Falésia,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,14,Talude,tipoelemnat
+rel_elemento_fisiog_natural,tipoelemnat,99,Outros,tipoelemnat
+rel_gruta_caverna,geometriaaproximada,1,Sim,geometriaaproximada
+rel_gruta_caverna,geometriaaproximada,2,Não,geometriaaproximada
+rel_gruta_caverna,tipogrutacaverna,19,Gruta,tipogrutacaverna
+rel_gruta_caverna,tipogrutacaverna,20,Caverna,tipogrutacaverna
+rel_pico,geometriaaproximada,1,Sim,geometriaaproximada
+rel_pico,geometriaaproximada,2,Não,geometriaaproximada
+rel_ponto_cotado_altimetrico,cotacomprovada,1,Sim,cotacomprovada
+rel_ponto_cotado_altimetrico,cotacomprovada,2,Não,cotacomprovada
+rel_ponto_cotado_altimetrico,geometriaaproximada,1,Sim,geometriaaproximada
+rel_ponto_cotado_altimetrico,geometriaaproximada,2,Não,geometriaaproximada
+rel_rocha,geometriaaproximada,1,Sim,geometriaaproximada
+rel_rocha,geometriaaproximada,2,Não,geometriaaproximada
+rel_rocha,tiporocha,21,Matacão - pedra,tiporocha
+rel_rocha,tiporocha,22,Penedo - isolado,tiporocha
+rel_rocha,tiporocha,23,Área Rochosa - lajedo,tiporocha
+rel_terreno_exposto,causaexposicao,0,Desconhecido,causaexposicao
+rel_terreno_exposto,causaexposicao,4,Natural,causaexposicao
+rel_terreno_exposto,causaexposicao,5,Artificial,causaexposicao
+rel_terreno_exposto,geometriaaproximada,1,Sim,geometriaaproximada
+rel_terreno_exposto,geometriaaproximada,2,Não,geometriaaproximada
+rel_terreno_exposto,tipoterrexp,0,Desconhecido,tipoterrexp
+rel_terreno_exposto,tipoterrexp,4,Pedregoso,tipoterrexp
+rel_terreno_exposto,tipoterrexp,12,Areia,tipoterrexp
+rel_terreno_exposto,tipoterrexp,18,Cascalho,tipoterrexp
+rel_terreno_exposto,tipoterrexp,23,Terra,tipoterrexp
+rel_terreno_exposto,tipoterrexp,24,Saibro,tipoterrexp
+sau_area_saude,geometriaaproximada,1,Sim,geometriaaproximada
+sau_area_saude,geometriaaproximada,2,Não,geometriaaproximada
+sau_area_servico_social,geometriaaproximada,1,Sim,geometriaaproximada
+sau_area_servico_social,geometriaaproximada,2,Não,geometriaaproximada
+sau_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+sau_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+sau_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+sau_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+sau_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+sau_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+sau_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+sau_edif_saude,geometriaaproximada,1,Sim,geometriaaproximada
+sau_edif_saude,geometriaaproximada,2,Não,geometriaaproximada
+sau_edif_saude,nivelatencao,5,Primário,nivelatencao
+sau_edif_saude,nivelatencao,6,Secundário,nivelatencao
+sau_edif_saude,nivelatencao,7,Terciário,nivelatencao
+sau_edif_saude,operacional,0,Desconhecido,operacional
+sau_edif_saude,operacional,1,Sim,operacional
+sau_edif_saude,operacional,2,Não,operacional
+sau_edif_servico_social,geometriaaproximada,1,Sim,geometriaaproximada
+sau_edif_servico_social,geometriaaproximada,2,Não,geometriaaproximada
+sau_edif_servico_social,operacional,0,Desconhecido,operacional
+sau_edif_servico_social,operacional,1,Sim,operacional
+sau_edif_servico_social,operacional,2,Não,operacional
+tra_area_duto,geometriaaproximada,1,Sim,geometriaaproximada
+tra_area_duto,geometriaaproximada,2,Não,geometriaaproximada
+tra_area_estrut_transporte,geometriaaproximada,1,Sim,geometriaaproximada
+tra_area_estrut_transporte,geometriaaproximada,2,Não,geometriaaproximada
+tra_arruamento,canteirodivisorio,1,Sim,canteirodivisorio
+tra_arruamento,canteirodivisorio,2,Não,canteirodivisorio
+tra_arruamento,geometriaaproximada,1,Sim,geometriaaproximada
+tra_arruamento,geometriaaproximada,2,Não,geometriaaproximada
+tra_arruamento,operacional,0,Desconhecido,operacional
+tra_arruamento,operacional,1,Sim,operacional
+tra_arruamento,operacional,2,Não,operacional
+tra_arruamento,revestimento,0,Desconhecido,revestimento
+tra_arruamento,revestimento,1,Leito natural,revestimento
+tra_arruamento,revestimento,2,Revestimento primário,revestimento
+tra_arruamento,revestimento,3,Pavimentado,revestimento
+tra_arruamento,revestimento,4,Calçado,revestimento
+tra_arruamento,situacaofisica,0,Desconhecida,situacaofisica
+tra_arruamento,situacaofisica,1,Abandonada,situacaofisica
+tra_arruamento,situacaofisica,2,Destruída,situacaofisica
+tra_arruamento,situacaofisica,3,Em Construção,situacaofisica
+tra_arruamento,situacaofisica,4,Planejada,situacaofisica
+tra_arruamento,situacaofisica,5,Construída,situacaofisica
+tra_arruamento,trafego,0,Desconhecido,trafego
+tra_arruamento,trafego,1,Permanente,trafego
+tra_arruamento,trafego,2,Periódico,trafego
+tra_atracadouro,geometriaaproximada,1,Sim,geometriaaproximada
+tra_atracadouro,geometriaaproximada,2,Não,geometriaaproximada
+tra_atracadouro,operacional,0,Desconhecido,operacional
+tra_atracadouro,operacional,1,Sim,operacional
+tra_atracadouro,operacional,2,Não,operacional
+tra_atracadouro,situacaofisica,0,Desconhecida,situacaofisica
+tra_atracadouro,situacaofisica,1,Abandonada,situacaofisica
+tra_atracadouro,situacaofisica,2,Destruída,situacaofisica
+tra_atracadouro,situacaofisica,3,Em Construção,situacaofisica
+tra_atracadouro,situacaofisica,4,Planejada,situacaofisica
+tra_atracadouro,situacaofisica,5,Construída,situacaofisica
+tra_atracadouro,tipoatracad,0,Desconhecido,tipoatracad
+tra_atracadouro,tipoatracad,38,Cais,tipoatracad
+tra_atracadouro,tipoatracad,39,Cais flutuante,tipoatracad
+tra_atracadouro,tipoatracad,40,Trapiche,tipoatracad
+tra_atracadouro,tipoatracad,41,Molhe de atracação,tipoatracad
+tra_atracadouro,tipoatracad,42,Pier,tipoatracad
+tra_atracadouro,tipoatracad,43,Dolfim,tipoatracad
+tra_atracadouro,tipoatracad,44,Desembarcadouro,tipoatracad
+tra_caminho_aereo,geometriaaproximada,1,Sim,geometriaaproximada
+tra_caminho_aereo,geometriaaproximada,2,Não,geometriaaproximada
+tra_caminho_aereo,operacional,0,Desconhecido,operacional
+tra_caminho_aereo,operacional,1,Sim,operacional
+tra_caminho_aereo,operacional,2,Não,operacional
+tra_caminho_aereo,tipocaminhoaereo,12,Teleférico,tipocaminhoaereo
+tra_caminho_aereo,tipocaminhoaereo,99,Outros,tipocaminhoaereo
+tra_caminho_aereo,tipousocaminhoaer,0,Desconhecido,tipousocaminhoaer
+tra_caminho_aereo,tipousocaminhoaer,21,Passageiros,tipousocaminhoaer
+tra_caminho_aereo,tipousocaminhoaer,22,Cargas,tipousocaminhoaer
+tra_caminho_aereo,tipousocaminhoaer,98,Misto,tipousocaminhoaer
+tra_ciclovia,geometriaaproximada,1,Sim,geometriaaproximada
+tra_ciclovia,geometriaaproximada,2,Não,geometriaaproximada
+tra_ciclovia,operacional,0,Desconhecido,operacional
+tra_ciclovia,operacional,1,Sim,operacional
+tra_ciclovia,operacional,2,Não,operacional
+tra_ciclovia,revestimento,0,Desconhecido,revestimento
+tra_ciclovia,revestimento,1,Leito natural,revestimento
+tra_ciclovia,revestimento,2,Revestimento primário,revestimento
+tra_ciclovia,revestimento,3,Pavimentado,revestimento
+tra_ciclovia,revestimento,4,Calçado,revestimento
+tra_ciclovia,situacaofisica,0,Desconhecida,situacaofisica
+tra_ciclovia,situacaofisica,1,Abandonada,situacaofisica
+tra_ciclovia,situacaofisica,2,Destruída,situacaofisica
+tra_ciclovia,situacaofisica,3,Em Construção,situacaofisica
+tra_ciclovia,situacaofisica,4,Planejada,situacaofisica
+tra_ciclovia,situacaofisica,5,Construída,situacaofisica
+tra_ciclovia,trafego,0,Desconhecido,trafego
+tra_ciclovia,trafego,1,Permanente,trafego
+tra_ciclovia,trafego,2,Periódico,trafego
+tra_condutor_hidrico,geometriaaproximada,1,Sim,geometriaaproximada
+tra_condutor_hidrico,geometriaaproximada,2,Não,geometriaaproximada
+tra_condutor_hidrico,operacional,0,Desconhecido,operacional
+tra_condutor_hidrico,operacional,1,Sim,operacional
+tra_condutor_hidrico,operacional,2,Não,operacional
+tra_condutor_hidrico,posicaorelativa,0,Desconhecida,posicaorelativa
+tra_condutor_hidrico,posicaorelativa,2,Superfície,posicaorelativa
+tra_condutor_hidrico,posicaorelativa,3,Elevado,posicaorelativa
+tra_condutor_hidrico,posicaorelativa,4,Emerso,posicaorelativa
+tra_condutor_hidrico,posicaorelativa,5,Submerso,posicaorelativa
+tra_condutor_hidrico,posicaorelativa,6,Subterrâneo,posicaorelativa
+tra_condutor_hidrico,situacaoespacial,12,Adjacentes,situacaoespacial
+tra_condutor_hidrico,situacaoespacial,13,Superpostos,situacaoespacial
+tra_condutor_hidrico,situacaoespacial,99,Outros,situacaoespacial
+tra_condutor_hidrico,tipocondutor,0,Desconhecido,tipocondutor
+tra_condutor_hidrico,tipocondutor,2,Calha,tipocondutor
+tra_condutor_hidrico,tipocondutor,4,Tubulação,tipocondutor
+tra_cremalheira,geometriaaproximada,1,Sim,geometriaaproximada
+tra_cremalheira,geometriaaproximada,2,Não,geometriaaproximada
+tra_cremalheira,operacional,0,Desconhecido,operacional
+tra_cremalheira,operacional,1,Sim,operacional
+tra_cremalheira,operacional,2,Não,operacional
+tra_cremalheira,situacaofisica,0,Desconhecida,situacaofisica
+tra_cremalheira,situacaofisica,1,Abandonada,situacaofisica
+tra_cremalheira,situacaofisica,2,Destruída,situacaofisica
+tra_cremalheira,situacaofisica,3,Em Construção,situacaofisica
+tra_cremalheira,situacaofisica,4,Planejada,situacaofisica
+tra_cremalheira,situacaofisica,5,Construída,situacaofisica
+tra_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+tra_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+tra_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+tra_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+tra_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+tra_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+tra_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+tra_eclusa,geometriaaproximada,1,Sim,geometriaaproximada
+tra_eclusa,geometriaaproximada,2,Não,geometriaaproximada
+tra_eclusa,operacional,0,Desconhecido,operacional
+tra_eclusa,operacional,1,Sim,operacional
+tra_eclusa,operacional,2,Não,operacional
+tra_edif_constr_aeroportuaria,geometriaaproximada,1,Sim,geometriaaproximada
+tra_edif_constr_aeroportuaria,geometriaaproximada,2,Não,geometriaaproximada
+tra_edif_constr_aeroportuaria,operacional,0,Desconhecido,operacional
+tra_edif_constr_aeroportuaria,operacional,1,Sim,operacional
+tra_edif_constr_aeroportuaria,operacional,2,Não,operacional
+tra_edif_constr_aeroportuaria,situacaofisica,0,Desconhecida,situacaofisica
+tra_edif_constr_aeroportuaria,situacaofisica,1,Abandonada,situacaofisica
+tra_edif_constr_aeroportuaria,situacaofisica,2,Destruída,situacaofisica
+tra_edif_constr_aeroportuaria,situacaofisica,3,Em Construção,situacaofisica
+tra_edif_constr_aeroportuaria,situacaofisica,4,Planejada,situacaofisica
+tra_edif_constr_aeroportuaria,situacaofisica,5,Construída,situacaofisica
+tra_edif_constr_aeroportuaria,tipoedifaero,0,Desconhecido,tipoedifaero
+tra_edif_constr_aeroportuaria,tipoedifaero,15,Administrativa,tipoedifaero
+tra_edif_constr_aeroportuaria,tipoedifaero,26,Terminal de passageiros,tipoedifaero
+tra_edif_constr_aeroportuaria,tipoedifaero,27,Terminal de cargas,tipoedifaero
+tra_edif_constr_aeroportuaria,tipoedifaero,28,Torre de controle,tipoedifaero
+tra_edif_constr_aeroportuaria,tipoedifaero,29,Hangar,tipoedifaero
+tra_edif_constr_aeroportuaria,tipoedifaero,99,Outros,tipoedifaero
+tra_edif_constr_portuaria,geometriaaproximada,1,Sim,geometriaaproximada
+tra_edif_constr_portuaria,geometriaaproximada,2,Não,geometriaaproximada
+tra_edif_constr_portuaria,operacional,0,Desconhecido,operacional
+tra_edif_constr_portuaria,operacional,1,Sim,operacional
+tra_edif_constr_portuaria,operacional,2,Não,operacional
+tra_edif_constr_portuaria,situacaofisica,0,Desconhecida,situacaofisica
+tra_edif_constr_portuaria,situacaofisica,1,Abandonada,situacaofisica
+tra_edif_constr_portuaria,situacaofisica,2,Destruída,situacaofisica
+tra_edif_constr_portuaria,situacaofisica,3,Em Construção,situacaofisica
+tra_edif_constr_portuaria,situacaofisica,4,Planejada,situacaofisica
+tra_edif_constr_portuaria,situacaofisica,5,Construída,situacaofisica
+tra_edif_constr_portuaria,tipoedifport,0,Desconhecido,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,15,Administrativa,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,26,Terminal de passageiros,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,27,Terminal de cargas,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,32,Armazém,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,33,Estaleiro,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,34,Dique de estaleiro,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,35,Rampa,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,36,Carreira,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,37,Terminal privativo,tipoedifport
+tra_edif_constr_portuaria,tipoedifport,99,Outros,tipoedifport
+tra_edif_metro_ferroviaria,funcaoedifmetroferrov,0,Desconhecido,funcaoedifmetroferrov
+tra_edif_metro_ferroviaria,funcaoedifmetroferrov,15,Administrativa,funcaoedifmetroferrov
+tra_edif_metro_ferroviaria,funcaoedifmetroferrov,16,Estação ferroviária de passageiros,funcaoedifmetroferrov
+tra_edif_metro_ferroviaria,funcaoedifmetroferrov,17,Estação metroviária,funcaoedifmetroferrov
+tra_edif_metro_ferroviaria,funcaoedifmetroferrov,18,Terminal ferroviário de cargas,funcaoedifmetroferrov
+tra_edif_metro_ferroviaria,funcaoedifmetroferrov,19,Terminal ferroviário de passageiros e cargas,funcaoedifmetroferrov
+tra_edif_metro_ferroviaria,funcaoedifmetroferrov,20,Oficina de manutenção,funcaoedifmetroferrov
+tra_edif_metro_ferroviaria,funcaoedifmetroferrov,99,Outros,funcaoedifmetroferrov
+tra_edif_metro_ferroviaria,geometriaaproximada,1,Sim,geometriaaproximada
+tra_edif_metro_ferroviaria,geometriaaproximada,2,Não,geometriaaproximada
+tra_edif_metro_ferroviaria,multimodal,0,Desconhecido,multimodal
+tra_edif_metro_ferroviaria,multimodal,1,Sim,multimodal
+tra_edif_metro_ferroviaria,multimodal,2,Não,multimodal
+tra_edif_metro_ferroviaria,operacional,0,Desconhecido,operacional
+tra_edif_metro_ferroviaria,operacional,1,Sim,operacional
+tra_edif_metro_ferroviaria,operacional,2,Não,operacional
+tra_edif_metro_ferroviaria,situacaofisica,0,Desconhecida,situacaofisica
+tra_edif_metro_ferroviaria,situacaofisica,1,Abandonada,situacaofisica
+tra_edif_metro_ferroviaria,situacaofisica,2,Destruída,situacaofisica
+tra_edif_metro_ferroviaria,situacaofisica,3,Em Construção,situacaofisica
+tra_edif_metro_ferroviaria,situacaofisica,4,Planejada,situacaofisica
+tra_edif_metro_ferroviaria,situacaofisica,5,Construída,situacaofisica
+tra_edif_rodoviaria,geometriaaproximada,1,Sim,geometriaaproximada
+tra_edif_rodoviaria,geometriaaproximada,2,Não,geometriaaproximada
+tra_galeria_bueiro,operacional,0,Desconhecido,operacional
+tra_galeria_bueiro,operacional,1,Sim,operacional
+tra_galeria_bueiro,operacional,2,Não,operacional
+tra_edif_rodoviaria,operacional,0,Desconhecido,operacional
+tra_edif_rodoviaria,operacional,1,Sim,operacional
+tra_edif_rodoviaria,operacional,2,Não,operacional
+tra_edif_rodoviaria,tipoedifrod,0,Desconhecido,tipoedifrod
+tra_edif_rodoviaria,tipoedifrod,8,Terminal interestadual,tipoedifrod
+tra_edif_rodoviaria,tipoedifrod,9,Terminal urbano,tipoedifrod
+tra_edif_rodoviaria,tipoedifrod,10,Parada interestadual,tipoedifrod
+tra_edif_rodoviaria,tipoedifrod,12,Posto de pesagem,tipoedifrod
+tra_edif_rodoviaria,tipoedifrod,13,Posto de pedágio,tipoedifrod
+tra_edif_rodoviaria,tipoedifrod,14,Posto de fiscalização,tipoedifrod
+tra_edif_rodoviaria,tipoedifrod,15,Administrativa,tipoedifrod
+tra_edif_rodoviaria,tipoedifrod,99,Outros,tipoedifrod
+tra_entroncamento,geometriaaproximada,1,Sim,geometriaaproximada
+tra_entroncamento,geometriaaproximada,2,Não,geometriaaproximada
+tra_entroncamento,tipoentroncamento,1,Cruzamento rodoviário,tipoentroncamento
+tra_entroncamento,tipoentroncamento,2,Círculo rodoviário,tipoentroncamento
+tra_entroncamento,tipoentroncamento,3,Trevo rodoviário,tipoentroncamento
+tra_entroncamento,tipoentroncamento,4,Rótula,tipoentroncamento
+tra_entroncamento,tipoentroncamento,5,Entroncamento ferroviário,tipoentroncamento
+tra_entroncamento,tipoentroncamento,99,Outros,tipoentroncamento
+tra_faixa_seguranca,geometriaaproximada,1,Sim,geometriaaproximada
+tra_faixa_seguranca,geometriaaproximada,2,Não,geometriaaproximada
+tra_fundeadouro,destinacaofundeadouro,0,Desconhecido,destinacaofundeadouro
+tra_fundeadouro,destinacaofundeadouro,10,Fundeadouro recomendado sem limite definido,destinacaofundeadouro
+tra_fundeadouro,destinacaofundeadouro,11,Fundeadouro com designação alfanumérica,destinacaofundeadouro
+tra_fundeadouro,destinacaofundeadouro,12,Áreas de fundeio com limite definido,destinacaofundeadouro
+tra_fundeadouro,destinacaofundeadouro,13,Áreas de fundeio proibido,destinacaofundeadouro
+tra_fundeadouro,destinacaofundeadouro,99,Outros,destinacaofundeadouro
+tra_fundeadouro,geometriaaproximada,1,Sim,geometriaaproximada
+tra_fundeadouro,geometriaaproximada,2,Não,geometriaaproximada
+tra_funicular,geometriaaproximada,1,Sim,geometriaaproximada
+tra_funicular,geometriaaproximada,2,Não,geometriaaproximada
+tra_funicular,operacional,0,Desconhecido,operacional
+tra_funicular,operacional,1,Sim,operacional
+tra_funicular,operacional,2,Não,operacional
+tra_funicular,situacaofisica,0,Desconhecida,situacaofisica
+tra_funicular,situacaofisica,1,Abandonada,situacaofisica
+tra_funicular,situacaofisica,2,Destruída,situacaofisica
+tra_funicular,situacaofisica,3,Em Construção,situacaofisica
+tra_funicular,situacaofisica,4,Planejada,situacaofisica
+tra_funicular,situacaofisica,5,Construída,situacaofisica
+tra_galeria_bueiro,geometriaaproximada,1,Sim,geometriaaproximada
+tra_galeria_bueiro,geometriaaproximada,2,Não,geometriaaproximada
+tra_girador_ferroviario,geometriaaproximada,1,Sim,geometriaaproximada
+tra_girador_ferroviario,geometriaaproximada,2,Não,geometriaaproximada
+tra_girador_ferroviario,operacional,0,Desconhecido,operacional
+tra_girador_ferroviario,operacional,1,Sim,operacional
+tra_girador_ferroviario,operacional,2,Não,operacional
+tra_girador_ferroviario,situacaofisica,0,Desconhecida,situacaofisica
+tra_girador_ferroviario,situacaofisica,1,Abandonada,situacaofisica
+tra_girador_ferroviario,situacaofisica,2,Destruída,situacaofisica
+tra_girador_ferroviario,situacaofisica,3,Em Construção,situacaofisica
+tra_girador_ferroviario,situacaofisica,4,Planejada,situacaofisica
+tra_girador_ferroviario,situacaofisica,5,Construída,situacaofisica
+tra_local_critico,geometriaaproximada,1,Sim,geometriaaproximada
+tra_local_critico,geometriaaproximada,2,Não,geometriaaproximada
+tra_local_critico,tipolocalcrit,0,Desconhecido,tipolocalcrit
+tra_local_critico,tipolocalcrit,1,Subestação de válvulas e/ou bombas,tipolocalcrit
+tra_local_critico,tipolocalcrit,2,Risco geotécnico,tipolocalcrit
+tra_local_critico,tipolocalcrit,3,Interferência com localidades,tipolocalcrit
+tra_local_critico,tipolocalcrit,4,Interferência com hidrografia,tipolocalcrit
+tra_local_critico,tipolocalcrit,5,Interferência com áreas especiais,tipolocalcrit
+tra_local_critico,tipolocalcrit,6,Interferência com vias,tipolocalcrit
+tra_local_critico,tipolocalcrit,7,Outras interferências,tipolocalcrit
+tra_obstaculo_navegacao,geometriaaproximada,1,Sim,geometriaaproximada
+tra_obstaculo_navegacao,geometriaaproximada,2,Não,geometriaaproximada
+tra_obstaculo_navegacao,situacaoemagua,0,Desconhecido,situacaoemagua
+tra_obstaculo_navegacao,situacaoemagua,4,Emerso,situacaoemagua
+tra_obstaculo_navegacao,situacaoemagua,5,Submerso,situacaoemagua
+tra_obstaculo_navegacao,situacaoemagua,7,Cobre e Descobre,situacaoemagua
+tra_obstaculo_navegacao,tipoobst,4,Natural,tipoobst
+tra_obstaculo_navegacao,tipoobst,5,Artificial,tipoobst
+tra_passag_elevada_viaduto,geometriaaproximada,1,Sim,geometriaaproximada
+tra_passag_elevada_viaduto,geometriaaproximada,2,Não,geometriaaproximada
+tra_passag_elevada_viaduto,operacional,0,Desconhecido,operacional
+tra_passag_elevada_viaduto,operacional,1,Sim,operacional
+tra_passag_elevada_viaduto,operacional,2,Não,operacional
+tra_passag_elevada_viaduto,posicaopista,0,Desconhecida,posicaopista
+tra_passag_elevada_viaduto,posicaopista,12,Adjacentes,posicaopista
+tra_passag_elevada_viaduto,posicaopista,13,Superpostas,posicaopista
+tra_passag_elevada_viaduto,posicaopista,97,Não Aplicável,posicaopista
+tra_passag_elevada_viaduto,situacaofisica,0,Desconhecida,situacaofisica
+tra_passag_elevada_viaduto,situacaofisica,1,Abandonada,situacaofisica
+tra_passag_elevada_viaduto,situacaofisica,2,Destruída,situacaofisica
+tra_passag_elevada_viaduto,situacaofisica,3,Em Construção,situacaofisica
+tra_passag_elevada_viaduto,situacaofisica,4,Planejada,situacaofisica
+tra_passag_elevada_viaduto,situacaofisica,5,Construída,situacaofisica
+tra_passag_elevada_viaduto,tipopassagviad,5,Passagem elevada,tipopassagviad
+tra_passag_elevada_viaduto,tipopassagviad,6,Viaduto,tipopassagviad
+tra_passagem_nivel,geometriaaproximada,1,Sim,geometriaaproximada
+tra_passagem_nivel,geometriaaproximada,2,Não,geometriaaproximada
+tra_patio,geometriaaproximada,1,Sim,geometriaaproximada
+tra_patio,geometriaaproximada,2,Não,geometriaaproximada
+tra_patio,operacional,0,Desconhecido,operacional
+tra_patio,operacional,1,Sim,operacional
+tra_patio,operacional,2,Não,operacional
+tra_patio,situacaofisica,0,Desconhecida,situacaofisica
+tra_patio,situacaofisica,1,Abandonada,situacaofisica
+tra_patio,situacaofisica,2,Destruída,situacaofisica
+tra_patio,situacaofisica,3,Em Construção,situacaofisica
+tra_patio,situacaofisica,4,Planejada,situacaofisica
+tra_patio,situacaofisica,5,Construída,situacaofisica
+tra_pista_ponto_pouso,geometriaaproximada,1,Sim,geometriaaproximada
+tra_pista_ponto_pouso,geometriaaproximada,2,Não,geometriaaproximada
+tra_pista_ponto_pouso,homologacao,0,Desconhecido,homologacao
+tra_pista_ponto_pouso,homologacao,1,Sim,homologacao
+tra_pista_ponto_pouso,homologacao,2,Não,homologacao
+tra_pista_ponto_pouso,operacional,0,Desconhecido,operacional
+tra_pista_ponto_pouso,operacional,1,Sim,operacional
+tra_pista_ponto_pouso,operacional,2,Não,operacional
+tra_pista_ponto_pouso,revestimento,0,Desconhecido,revestimento
+tra_pista_ponto_pouso,revestimento,1,Leito natural,revestimento
+tra_pista_ponto_pouso,revestimento,2,Revestimento primário,revestimento
+tra_pista_ponto_pouso,revestimento,3,Pavimentado,revestimento
+tra_pista_ponto_pouso,revestimento,4,Calçado,revestimento
+tra_pista_ponto_pouso,situacaofisica,0,Desconhecida,situacaofisica
+tra_pista_ponto_pouso,situacaofisica,1,Abandonada,situacaofisica
+tra_pista_ponto_pouso,situacaofisica,2,Destruída,situacaofisica
+tra_pista_ponto_pouso,situacaofisica,3,Em Construção,situacaofisica
+tra_pista_ponto_pouso,situacaofisica,4,Planejada,situacaofisica
+tra_pista_ponto_pouso,situacaofisica,5,Construída,situacaofisica
+tra_pista_ponto_pouso,usopista,0,Desconhecido,usopista
+tra_pista_ponto_pouso,usopista,6,Particular,usopista
+tra_pista_ponto_pouso,usopista,11,Público,usopista
+tra_pista_ponto_pouso,usopista,12,Militar,usopista
+tra_pista_ponto_pouso,usopista,13,Público/Militar,usopista
+tra_ponte,geometriaaproximada,1,Sim,geometriaaproximada
+tra_ponte,geometriaaproximada,2,Não,geometriaaproximada
+tra_ponte,operacional,0,Desconhecido,operacional
+tra_ponte,operacional,1,Sim,operacional
+tra_ponte,operacional,2,Não,operacional
+tra_ponte,posicaopista,0,Desconhecida,posicaopista
+tra_ponte,posicaopista,12,Adjacentes,posicaopista
+tra_ponte,posicaopista,13,Superpostas,posicaopista
+tra_ponte,posicaopista,97,Não Aplicável,posicaopista
+tra_ponte,situacaofisica,0,Desconhecida,situacaofisica
+tra_ponte,situacaofisica,1,Abandonada,situacaofisica
+tra_ponte,situacaofisica,2,Destruída,situacaofisica
+tra_ponte,situacaofisica,3,Em Construção,situacaofisica
+tra_ponte,situacaofisica,4,Planejada,situacaofisica
+tra_ponte,situacaofisica,5,Construída,situacaofisica
+tra_ponte,tipoponte,0,Desconhecido,tipoponte
+tra_ponte,tipoponte,1,Móvel,tipoponte
+tra_ponte,tipoponte,2,Pênsil,tipoponte
+tra_ponte,tipoponte,3,Fixa,tipoponte
+tra_ponto_duto,geometriaaproximada,1,Sim,geometriaaproximada
+tra_ponto_duto,geometriaaproximada,2,Não,geometriaaproximada
+tra_ponto_duto,relacionado,1,Ponto inicial,relacionado_dut
+tra_ponto_duto,relacionado,2,Ponto final,relacionado_dut
+tra_ponto_duto,relacionado,3,Local crítico,relacionado_dut
+tra_ponto_duto,relacionado,4,Depósito geral,relacionado_dut
+tra_ponto_duto,relacionado,5,Ponto de ramificação,relacionado_dut
+tra_ponto_duto,relacionado,17,Interrupção com a Moldura,relacionado_dut
+tra_ponto_ferroviario,geometriaaproximada,1,Sim,geometriaaproximada
+tra_ponto_ferroviario,geometriaaproximada,2,Não,geometriaaproximada
+tra_ponto_ferroviario,relacionado,1,Túnel,relacionado_fer
+tra_ponto_ferroviario,relacionado,2,Passagem elevada ou viaduto,relacionado_fer
+tra_ponto_ferroviario,relacionado,3,Ponte,relacionado_fer
+tra_ponto_ferroviario,relacionado,4,Travessia,relacionado_fer
+tra_ponto_ferroviario,relacionado,5,Edificação rodoviária,relacionado_fer
+tra_ponto_ferroviario,relacionado,6,Galeria ou bueiro,relacionado_fer
+tra_ponto_ferroviario,relacionado,7,Mudança de atributo,relacionado_fer
+tra_ponto_ferroviario,relacionado,8,Entroncamento,relacionado_fer
+tra_ponto_ferroviario,relacionado,9,Início ou fim de trecho,relacionado_fer
+tra_ponto_ferroviario,relacionado,10,Edificação Metro Ferroviária,relacionado_fer
+tra_ponto_ferroviario,relacionado,11,Localidade,relacionado_fer
+tra_ponto_ferroviario,relacionado,12,Patio,relacionado_fer
+tra_ponto_ferroviario,relacionado,13,Passagem de nível,relacionado_fer
+tra_ponto_ferroviario,relacionado,17,Interrupção com a Moldura,relacionado_fer
+tra_ponto_ferroviario,relacionado,19,Barragem,relacionado_fer
+tra_ponto_hidroviario,geometriaaproximada,1,Sim,geometriaaproximada
+tra_ponto_hidroviario,geometriaaproximada,2,Não,geometriaaproximada
+tra_ponto_hidroviario,relacionado,12,Queda dágua,relacionado_hdr
+tra_ponto_hidroviario,relacionado,13,Corredeira,relacionado_hdr
+tra_ponto_hidroviario,relacionado,14,Eclusa,relacionado_hdr
+tra_ponto_hidroviario,relacionado,16,Foz marítima,relacionado_hdr
+tra_ponto_hidroviario,relacionado,17,Interrupção com a Moldura,relacionado_hdr
+tra_ponto_hidroviario,relacionado,19,Barragem,relacionado_hdr
+tra_ponto_hidroviario,relacionado,21,Confluência,relacionado_hdr
+tra_ponto_hidroviario,relacionado,22,Complexo portuário,relacionado_hdr
+tra_ponto_hidroviario,relacionado,23,Entre trechos hidroviários,relacionado_hdr
+tra_ponto_hidroviario,relacionado,24,Atracadouro,relacionado_hdr
+tra_ponto_rodoviario,geometriaaproximada,1,Sim,geometriaaproximada
+tra_ponto_rodoviario,geometriaaproximada,2,Não,geometriaaproximada
+tra_ponto_rodoviario,relacionado,1,Túnel,relacionado_rod
+tra_ponto_rodoviario,relacionado,2,Passagem elevada ou viaduto,relacionado_rod
+tra_ponto_rodoviario,relacionado,3,Ponte,relacionado_rod
+tra_ponto_rodoviario,relacionado,4,Travessia,relacionado_rod
+tra_ponto_rodoviario,relacionado,5,Edificação rodoviária,relacionado_rod
+tra_ponto_rodoviario,relacionado,6,Galeria ou bueiro,relacionado_rod
+tra_ponto_rodoviario,relacionado,7,Mudança de atributo,relacionado_rod
+tra_ponto_rodoviario,relacionado,8,Entroncamento,relacionado_rod
+tra_ponto_rodoviario,relacionado,9,Início ou fim de trecho,relacionado_rod
+tra_ponto_rodoviario,relacionado,10,Edificação Metro Ferroviária,relacionado_rod
+tra_ponto_rodoviario,relacionado,11,Localidade,relacionado_rod
+tra_ponto_rodoviario,relacionado,12,Patio,relacionado_rod
+tra_ponto_rodoviario,relacionado,13,Passagem de nível,relacionado_rod
+tra_ponto_rodoviario,relacionado,17,Interrupção com a Moldura,relacionado_rod
+tra_ponto_rodoviario,relacionado,19,Barragem,relacionado_rod
+tra_posto_combustivel,geometriaaproximada,1,Sim,geometriaaproximada
+tra_posto_combustivel,geometriaaproximada,2,Não,geometriaaproximada
+tra_posto_combustivel,operacional,0,Desconhecido,operacional
+tra_posto_combustivel,operacional,1,Sim,operacional
+tra_posto_combustivel,operacional,2,Não,operacional
+tra_sinalizacao,geometriaaproximada,1,Sim,geometriaaproximada
+tra_sinalizacao,geometriaaproximada,2,Não,geometriaaproximada
+tra_sinalizacao,operacional,0,Desconhecido,operacional
+tra_sinalizacao,operacional,1,Sim,operacional
+tra_sinalizacao,operacional,2,Não,operacional
+tra_sinalizacao,situacaofisica,0,Desconhecida,situacaofisica
+tra_sinalizacao,situacaofisica,1,Abandonada,situacaofisica
+tra_sinalizacao,situacaofisica,2,Destruída,situacaofisica
+tra_sinalizacao,situacaofisica,3,Em Construção,situacaofisica
+tra_sinalizacao,situacaofisica,4,Planejada,situacaofisica
+tra_sinalizacao,situacaofisica,5,Construída,situacaofisica
+tra_sinalizacao,tiposinal,0,Desconhecido,tiposinal
+tra_sinalizacao,tiposinal,1,Bóia luminosa,tiposinal
+tra_sinalizacao,tiposinal,2,Bóia cega,tiposinal
+tra_sinalizacao,tiposinal,3,Bóia de amarração,tiposinal
+tra_sinalizacao,tiposinal,4,Farol ou farolete,tiposinal
+tra_sinalizacao,tiposinal,5,Barca farol,tiposinal
+tra_sinalizacao,tiposinal,6,Sinalização de margem,tiposinal
+tra_travessia,geometriaaproximada,1,Sim,geometriaaproximada
+tra_travessia,geometriaaproximada,2,Não,geometriaaproximada
+tra_travessia,tipotravessia,0,Desconhecida,tipotravessia
+tra_travessia,tipotravessia,1,Vau natural,tipotravessia
+tra_travessia,tipotravessia,2,Vau construída,tipotravessia
+tra_travessia,tipotravessia,3,Bote transportador,tipotravessia
+tra_travessia,tipotravessia,4,Balsa,tipotravessia
+tra_travessia_pedestre,geometriaaproximada,1,Sim,geometriaaproximada
+tra_travessia_pedestre,geometriaaproximada,2,Não,geometriaaproximada
+tra_travessia_pedestre,operacional,0,Desconhecido,operacional
+tra_travessia_pedestre,operacional,1,Sim,operacional
+tra_travessia_pedestre,operacional,2,Não,operacional
+tra_travessia_pedestre,tipotravessiaped,0,Desconhecida,tipotravessiaped
+tra_travessia_pedestre,tipotravessiaped,7,Passagem subterrânea,tipotravessiaped
+tra_travessia_pedestre,tipotravessiaped,8,Passarela,tipotravessiaped
+tra_travessia_pedestre,tipotravessiaped,9,Pinguela,tipotravessiaped
+tra_trecho_duto,geometriaaproximada,1,Sim,geometriaaproximada
+tra_trecho_duto,geometriaaproximada,2,Não,geometriaaproximada
+tra_trecho_duto,mattransp,0,Desconhecido,mattransp
+tra_trecho_duto,mattransp,1,Água,mattransp
+tra_trecho_duto,mattransp,2,Óleo,mattransp
+tra_trecho_duto,mattransp,3,Petróleo,mattransp
+tra_trecho_duto,mattransp,4,Nafta,mattransp
+tra_trecho_duto,mattransp,5,Gás,mattransp
+tra_trecho_duto,mattransp,6,Grãos,mattransp
+tra_trecho_duto,mattransp,7,Minério,mattransp
+tra_trecho_duto,mattransp,8,Efluentes,mattransp
+tra_trecho_duto,mattransp,9,Esgoto,mattransp
+tra_trecho_duto,mattransp,29,Gasolina,mattransp
+tra_trecho_duto,mattransp,30,Álcool,mattransp
+tra_trecho_duto,mattransp,31,Querosene,mattransp
+tra_trecho_duto,mattransp,99,Outros,mattransp
+tra_trecho_duto,operacional,0,Desconhecido,operacional
+tra_trecho_duto,operacional,1,Sim,operacional
+tra_trecho_duto,operacional,2,Não,operacional
+tra_trecho_duto,posicaorelativa,0,Desconhecida,posicaorelativa
+tra_trecho_duto,posicaorelativa,2,Superfície,posicaorelativa
+tra_trecho_duto,posicaorelativa,3,Elevado,posicaorelativa
+tra_trecho_duto,posicaorelativa,4,Emerso,posicaorelativa
+tra_trecho_duto,posicaorelativa,5,Submerso,posicaorelativa
+tra_trecho_duto,posicaorelativa,6,Subterrâneo,posicaorelativa
+tra_trecho_duto,setor,0,Desconhecido,setor
+tra_trecho_duto,setor,1,Energético,setor
+tra_trecho_duto,setor,2,Econômico,setor
+tra_trecho_duto,setor,3,Abastecimento de água,setor
+tra_trecho_duto,setor,4,Saneamento básico,setor
+tra_trecho_duto,situacaoespacial,12,Adjacentes,situacaoespacial
+tra_trecho_duto,situacaoespacial,13,Superpostos,situacaoespacial
+tra_trecho_duto,situacaoespacial,99,Outros,situacaoespacial
+tra_trecho_duto,tipotrechoduto,0,Desconhecido,tipotrechoduto
+tra_trecho_duto,tipotrechoduto,1,Duto,tipotrechoduto
+tra_trecho_duto,tipotrechoduto,2,Calha,tipotrechoduto
+tra_trecho_duto,tipotrechoduto,3,Correia transportadora,tipotrechoduto
+tra_trecho_ferroviario,bitola,0,Desconhecido,bitola
+tra_trecho_ferroviario,bitola,1,Métrica,bitola
+tra_trecho_ferroviario,bitola,2,Internacional,bitola
+tra_trecho_ferroviario,bitola,3,Larga,bitola
+tra_trecho_ferroviario,bitola,4,Mista Métrica Internacional,bitola
+tra_trecho_ferroviario,bitola,5,Mista Métrica Larga,bitola
+tra_trecho_ferroviario,bitola,6,Mista Internacional Larga,bitola
+tra_trecho_ferroviario,eletrificada,0,Desconhecido,eletrificada
+tra_trecho_ferroviario,eletrificada,1,Sim,eletrificada
+tra_trecho_ferroviario,eletrificada,2,Não,eletrificada
+tra_trecho_ferroviario,emarruamento,0,Desconhecido,emarruamento
+tra_trecho_ferroviario,emarruamento,1,Sim,emarruamento
+tra_trecho_ferroviario,emarruamento,2,Não,emarruamento
+tra_trecho_ferroviario,geometriaaproximada,1,Sim,geometriaaproximada
+tra_trecho_ferroviario,geometriaaproximada,2,Não,geometriaaproximada
+tra_trecho_ferroviario,nrlinhas,0,Desconhecido,nrlinhas
+tra_trecho_ferroviario,nrlinhas,1,Simples,nrlinhas
+tra_trecho_ferroviario,nrlinhas,2,Dupla,nrlinhas
+tra_trecho_ferroviario,nrlinhas,3,Múltipla,nrlinhas
+tra_trecho_ferroviario,operacional,0,Desconhecido,operacional
+tra_trecho_ferroviario,operacional,1,Sim,operacional
+tra_trecho_ferroviario,operacional,2,Não,operacional
+tra_trecho_ferroviario,situacaofisica,0,Desconhecida,situacaofisica
+tra_trecho_ferroviario,situacaofisica,1,Abandonada,situacaofisica
+tra_trecho_ferroviario,situacaofisica,2,Destruída,situacaofisica
+tra_trecho_ferroviario,situacaofisica,3,Em Construção,situacaofisica
+tra_trecho_ferroviario,situacaofisica,4,Planejada,situacaofisica
+tra_trecho_ferroviario,situacaofisica,5,Construída,situacaofisica
+tra_trecho_ferroviario,tipotrechoferrov,0,Desconhecido,tipotrechoferrov
+tra_trecho_ferroviario,tipotrechoferrov,5,Bonde,tipotrechoferrov
+tra_trecho_ferroviario,tipotrechoferrov,6,Aeromóvel,tipotrechoferrov
+tra_trecho_ferroviario,tipotrechoferrov,7,Ferrovia,tipotrechoferrov
+tra_trecho_ferroviario,tipotrechoferrov,8,Metrovia,tipotrechoferrov
+tra_trecho_hidroviario,geometriaaproximada,1,Sim,geometriaaproximada
+tra_trecho_hidroviario,geometriaaproximada,2,Não,geometriaaproximada
+tra_trecho_hidroviario,operacional,0,Desconhecido,operacional
+tra_trecho_hidroviario,operacional,1,Sim,operacional
+tra_trecho_hidroviario,operacional,2,Não,operacional
+tra_trecho_hidroviario,situacaofisica,0,Desconhecida,situacaofisica
+tra_trecho_hidroviario,situacaofisica,1,Abandonada,situacaofisica
+tra_trecho_hidroviario,situacaofisica,2,Destruída,situacaofisica
+tra_trecho_hidroviario,situacaofisica,3,Em Construção,situacaofisica
+tra_trecho_hidroviario,situacaofisica,4,Planejada,situacaofisica
+tra_trecho_hidroviario,situacaofisica,5,Construída,situacaofisica
+tra_trecho_rodoviario,canteirodivisorio,1,Sim,canteirodivisorio
+tra_trecho_rodoviario,canteirodivisorio,2,Não,canteirodivisorio
+tra_trecho_rodoviario,geometriaaproximada,1,Sim,geometriaaproximada
+tra_trecho_rodoviario,geometriaaproximada,2,Não,geometriaaproximada
+tra_trecho_rodoviario,operacional,0,Desconhecido,operacional
+tra_trecho_rodoviario,operacional,1,Sim,operacional
+tra_trecho_rodoviario,operacional,2,Não,operacional
+tra_trecho_rodoviario,revestimento,0,Desconhecido,revestimento
+tra_trecho_rodoviario,revestimento,1,Leito natural,revestimento
+tra_trecho_rodoviario,revestimento,2,Revestimento primário,revestimento
+tra_trecho_rodoviario,revestimento,3,Pavimentado,revestimento
+tra_trecho_rodoviario,revestimento,4,Calçado,revestimento
+tra_trecho_rodoviario,situacaofisica,0,Desconhecida,situacaofisica
+tra_trecho_rodoviario,situacaofisica,1,Abandonada,situacaofisica
+tra_trecho_rodoviario,situacaofisica,2,Destruída,situacaofisica
+tra_trecho_rodoviario,situacaofisica,3,Em Construção,situacaofisica
+tra_trecho_rodoviario,situacaofisica,4,Planejada,situacaofisica
+tra_trecho_rodoviario,situacaofisica,5,Construída,situacaofisica
+tra_trecho_rodoviario,tipotrechorod,1,Acesso,tipotrechorod
+tra_trecho_rodoviario,tipotrechorod,2,Rodovia,tipotrechorod
+tra_trecho_rodoviario,tipotrechorod,3,Caminho carroçável,tipotrechorod
+tra_trecho_rodoviario,tipotrechorod,4,Auto-estrada,tipotrechorod
+tra_trecho_rodoviario,trafego,0,Desconhecido,trafego
+tra_trecho_rodoviario,trafego,1,Permanente,trafego
+tra_trecho_rodoviario,trafego,2,Periódico,trafego
+tra_trilha_picada,geometriaaproximada,1,Sim,geometriaaproximada
+tra_trilha_picada,geometriaaproximada,2,Não,geometriaaproximada
+tra_tunel,geometriaaproximada,1,Sim,geometriaaproximada
+tra_tunel,geometriaaproximada,2,Não,geometriaaproximada
+tra_tunel,operacional,0,Desconhecido,operacional
+tra_tunel,operacional,1,Sim,operacional
+tra_tunel,operacional,2,Não,operacional
+tra_tunel,posicaopista,0,Desconhecida,posicaopista
+tra_tunel,posicaopista,12,Adjacentes,posicaopista
+tra_tunel,posicaopista,13,Superpostas,posicaopista
+tra_tunel,posicaopista,97,Não Aplicável,posicaopista
+tra_tunel,situacaofisica,0,Desconhecida,situacaofisica
+tra_tunel,situacaofisica,1,Abandonada,situacaofisica
+tra_tunel,situacaofisica,2,Destruída,situacaofisica
+tra_tunel,situacaofisica,3,Em Construção,situacaofisica
+tra_tunel,situacaofisica,4,Planejada,situacaofisica
+tra_tunel,situacaofisica,5,Construída,situacaofisica
+tra_tunel,tipotunel,1,Túnel,tipotunel
+tra_tunel,tipotunel,2,Passagem subterrânea sob via,tipotunel
+veg_brejo_pantano,antropizada,0,Desconhecido,antropizada
+veg_brejo_pantano,antropizada,1,Sim,antropizada
+veg_brejo_pantano,antropizada,2,Não,antropizada
+veg_brejo_pantano,denso,0,Desconhecido,denso
+veg_brejo_pantano,denso,1,Sim,denso
+veg_brejo_pantano,denso,2,Não,denso
+veg_brejo_pantano,geometriaaproximada,1,Sim,geometriaaproximada
+veg_brejo_pantano,geometriaaproximada,2,Não,geometriaaproximada
+veg_brejo_pantano,tipobrejopantano,0,Desconhecido,tipobrejopantano
+veg_brejo_pantano,tipobrejopantano,1,Brejo,tipobrejopantano
+veg_brejo_pantano,tipobrejopantano,2,Pântano,tipobrejopantano
+veg_caatinga,antropizada,0,Desconhecido,antropizada
+veg_caatinga,antropizada,1,Sim,antropizada
+veg_caatinga,antropizada,2,Não,antropizada
+veg_caatinga,denso,0,Desconhecido,denso
+veg_caatinga,denso,1,Sim,denso
+veg_caatinga,denso,2,Não,denso
+veg_caatinga,geometriaaproximada,1,Sim,geometriaaproximada
+veg_caatinga,geometriaaproximada,2,Não,geometriaaproximada
+veg_campinarana,antropizada,0,Desconhecido,antropizada
+veg_campinarana,antropizada,1,Sim,antropizada
+veg_campinarana,antropizada,2,Não,antropizada
+veg_campinarana,denso,0,Desconhecido,denso
+veg_campinarana,denso,1,Sim,denso
+veg_campinarana,denso,2,Não,denso
+veg_campinarana,geometriaaproximada,1,Sim,geometriaaproximada
+veg_campinarana,geometriaaproximada,2,Não,geometriaaproximada
+veg_campo,geometriaaproximada,1,Sim,geometriaaproximada
+veg_campo,geometriaaproximada,2,Não,geometriaaproximada
+veg_campo,ocorrenciaem,5,Brejo ou Pântano,ocorrenciaem
+veg_campo,ocorrenciaem,6,Caatinga,ocorrenciaem
+veg_campo,ocorrenciaem,7,Estepe,ocorrenciaem
+veg_campo,ocorrenciaem,8,Pastagem,ocorrenciaem
+veg_campo,ocorrenciaem,13,Cerrado ou cerradão,ocorrenciaem
+veg_campo,ocorrenciaem,14,Macega ou chavascal,ocorrenciaem
+veg_campo,ocorrenciaem,15,Floresta,ocorrenciaem
+veg_campo,ocorrenciaem,19,Campinarana,ocorrenciaem
+veg_campo,ocorrenciaem,96,Não Identificado,ocorrenciaem
+veg_campo,tipocampo,0,Desconhecido,tipocampo
+veg_campo,tipocampo,1,Sujo,tipocampo
+veg_campo,tipocampo,2,Limpo,tipocampo
+veg_cerrado_cerradao,antropizada,0,Desconhecido,antropizada
+veg_cerrado_cerradao,antropizada,1,Sim,antropizada
+veg_cerrado_cerradao,antropizada,2,Não,antropizada
+veg_cerrado_cerradao,denso,0,Desconhecido,denso
+veg_cerrado_cerradao,denso,1,Sim,denso
+veg_cerrado_cerradao,denso,2,Não,denso
+veg_cerrado_cerradao,geometriaaproximada,1,Sim,geometriaaproximada
+veg_cerrado_cerradao,geometriaaproximada,2,Não,geometriaaproximada
+veg_cerrado_cerradao,tipocerr,0,Desconhecido,tipocerr
+veg_cerrado_cerradao,tipocerr,1,Cerrado,tipocerr
+veg_cerrado_cerradao,tipocerr,2,Cerradão,tipocerr
+veg_descontinuidade_geometrica,motivodescontinuidade,1,Descontinuidade Temporal,motivodescontinuidade
+veg_descontinuidade_geometrica,motivodescontinuidade,2,Descontinuidade devido a transformação,motivodescontinuidade
+veg_descontinuidade_geometrica,motivodescontinuidade,3,Descontinuidade por escala de insumo,motivodescontinuidade
+veg_descontinuidade_geometrica,motivodescontinuidade,4,Descontinuidade por falta de acurácia,motivodescontinuidade
+veg_descontinuidade_geometrica,motivodescontinuidade,5,Descontinuidade por diferente interpretação das classes,motivodescontinuidade
+veg_descontinuidade_geometrica,motivodescontinuidade,6,Descontinuidade por omissão,motivodescontinuidade
+veg_descontinuidade_geometrica,motivodescontinuidade,7,Descontinuidade por excesso,motivodescontinuidade
+veg_estepe,antropizada,0,Desconhecido,antropizada
+veg_estepe,antropizada,1,Sim,antropizada
+veg_estepe,antropizada,2,Não,antropizada
+veg_estepe,denso,0,Desconhecido,denso
+veg_estepe,denso,1,Sim,denso
+veg_estepe,denso,2,Não,denso
+veg_estepe,geometriaaproximada,1,Sim,geometriaaproximada
+veg_estepe,geometriaaproximada,2,Não,geometriaaproximada
+veg_floresta,antropizada,0,Desconhecido,antropizada
+veg_floresta,antropizada,1,Sim,antropizada
+veg_floresta,antropizada,2,Não,antropizada
+veg_floresta,caracteristicafloresta,0,Desconhecido,caracteristicafloresta
+veg_floresta,caracteristicafloresta,1,Floresta,caracteristicafloresta
+veg_floresta,caracteristicafloresta,2,Mata,caracteristicafloresta
+veg_floresta,caracteristicafloresta,3,Bosque,caracteristicafloresta
+veg_floresta,denso,0,Desconhecido,denso
+veg_floresta,denso,1,Sim,denso
+veg_floresta,denso,2,Não,denso
+veg_floresta,especiepredominante,10,Cipó,especiepredominante
+veg_floresta,especiepredominante,11,Bambu,especiepredominante
+veg_floresta,especiepredominante,12,Sororoca,especiepredominante
+veg_floresta,especiepredominante,17,Palmeira,especiepredominante
+veg_floresta,especiepredominante,27,Araucária,especiepredominante
+veg_floresta,especiepredominante,41,Babaçu,especiepredominante
+veg_floresta,especiepredominante,96,Não identificado,especiepredominante
+veg_floresta,especiepredominante,98,Misto,especiepredominante
+veg_floresta,geometriaaproximada,1,Sim,geometriaaproximada
+veg_floresta,geometriaaproximada,2,Não,geometriaaproximada
+veg_macega_chavascal,antropizada,0,Desconhecido,antropizada
+veg_macega_chavascal,antropizada,1,Sim,antropizada
+veg_macega_chavascal,antropizada,2,Não,antropizada
+veg_macega_chavascal,denso,0,Desconhecido,denso
+veg_macega_chavascal,denso,1,Sim,denso
+veg_macega_chavascal,denso,2,Não,denso
+veg_macega_chavascal,geometriaaproximada,1,Sim,geometriaaproximada
+veg_macega_chavascal,geometriaaproximada,2,Não,geometriaaproximada
+veg_macega_chavascal,tipomacchav,0,Desconhecido,tipomacchav
+veg_macega_chavascal,tipomacchav,1,Macega,tipomacchav
+veg_macega_chavascal,tipomacchav,2,Chavascal,tipomacchav
+veg_mangue,antropizada,0,Desconhecido,antropizada
+veg_mangue,antropizada,1,Sim,antropizada
+veg_mangue,antropizada,2,Não,antropizada
+veg_mangue,denso,0,Desconhecido,denso
+veg_mangue,denso,1,Sim,denso
+veg_mangue,denso,2,Não,denso
+veg_mangue,geometriaaproximada,1,Sim,geometriaaproximada
+veg_mangue,geometriaaproximada,2,Não,geometriaaproximada
+veg_veg_area_contato,antropizada,0,Desconhecido,antropizada
+veg_veg_area_contato,antropizada,1,Sim,antropizada
+veg_veg_area_contato,antropizada,2,Não,antropizada
+veg_veg_area_contato,denso,0,Desconhecido,denso
+veg_veg_area_contato,denso,1,Sim,denso
+veg_veg_area_contato,denso,2,Não,denso
+veg_veg_area_contato,geometriaaproximada,1,Sim,geometriaaproximada
+veg_veg_area_contato,geometriaaproximada,2,Não,geometriaaproximada
+veg_veg_cultivada,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_veg_cultivada,classificacaoporte,1,Arbórea,classificacaoporte
+veg_veg_cultivada,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_veg_cultivada,classificacaoporte,3,Herbácea,classificacaoporte
+veg_veg_cultivada,classificacaoporte,4,Rasteira,classificacaoporte
+veg_veg_cultivada,classificacaoporte,98,Misto,classificacaoporte
+veg_veg_cultivada,cultivopredominante,1,Milho,cultivopredominante
+veg_veg_cultivada,cultivopredominante,2,Banana,cultivopredominante
+veg_veg_cultivada,cultivopredominante,3,Laranja,cultivopredominante
+veg_veg_cultivada,cultivopredominante,4,Trigo,cultivopredominante
+veg_veg_cultivada,cultivopredominante,6,Algodão herbáceo,cultivopredominante
+veg_veg_cultivada,cultivopredominante,7,Cana-de-Açúcar,cultivopredominante
+veg_veg_cultivada,cultivopredominante,8,Fumo,cultivopredominante
+veg_veg_cultivada,cultivopredominante,9,Soja,cultivopredominante
+veg_veg_cultivada,cultivopredominante,10,Batata inglesa,cultivopredominante
+veg_veg_cultivada,cultivopredominante,11,Mandioca,cultivopredominante
+veg_veg_cultivada,cultivopredominante,12,Feijão,cultivopredominante
+veg_veg_cultivada,cultivopredominante,13,Arroz,cultivopredominante
+veg_veg_cultivada,cultivopredominante,14,Café,cultivopredominante
+veg_veg_cultivada,cultivopredominante,15,Cacau,cultivopredominante
+veg_veg_cultivada,cultivopredominante,16,Erva-mate,cultivopredominante
+veg_veg_cultivada,cultivopredominante,17,Palmeira,cultivopredominante
+veg_veg_cultivada,cultivopredominante,18,Açaí,cultivopredominante
+veg_veg_cultivada,cultivopredominante,19,Seringueira,cultivopredominante
+veg_veg_cultivada,cultivopredominante,20,Eucalipto,cultivopredominante
+veg_veg_cultivada,cultivopredominante,21,Acácia,cultivopredominante
+veg_veg_cultivada,cultivopredominante,22,Algaroba,cultivopredominante
+veg_veg_cultivada,cultivopredominante,23,Pinus,cultivopredominante
+veg_veg_cultivada,cultivopredominante,24,Pastagem cultivada,cultivopredominante
+veg_veg_cultivada,cultivopredominante,25,Hortaliças,cultivopredominante
+veg_veg_cultivada,cultivopredominante,26,Bracatinga,cultivopredominante
+veg_veg_cultivada,cultivopredominante,27,Araucária,cultivopredominante
+veg_veg_cultivada,cultivopredominante,28,Carnauba,cultivopredominante
+veg_veg_cultivada,cultivopredominante,29,Pera,cultivopredominante
+veg_veg_cultivada,cultivopredominante,30,Maçã,cultivopredominante
+veg_veg_cultivada,cultivopredominante,31,Pêssego,cultivopredominante
+veg_veg_cultivada,cultivopredominante,32,Juta,cultivopredominante
+veg_veg_cultivada,cultivopredominante,33,Cebola,cultivopredominante
+veg_veg_cultivada,cultivopredominante,42,Videira,cultivopredominante
+veg_veg_cultivada,cultivopredominante,96,Não identificado,cultivopredominante
+veg_veg_cultivada,cultivopredominante,98,Misto,cultivopredominante
+veg_veg_cultivada,cultivopredominante,99,Outros,cultivopredominante
+veg_veg_cultivada,denso,0,Desconhecido,denso
+veg_veg_cultivada,denso,1,Sim,denso
+veg_veg_cultivada,denso,2,Não,denso
+veg_veg_cultivada,finalidade,0,Desconhecido,finalidade_veg
+veg_veg_cultivada,finalidade,1,Exploração econômica,finalidade_veg
+veg_veg_cultivada,finalidade,2,Subistência,finalidade_veg
+veg_veg_cultivada,finalidade,3,Conservação ambiental,finalidade_veg
+veg_veg_cultivada,finalidade,99,Outros,finalidade_veg
+veg_veg_cultivada,geometriaaproximada,1,Sim,geometriaaproximada
+veg_veg_cultivada,geometriaaproximada,2,Não,geometriaaproximada
+veg_veg_cultivada,terreno,1,Seco,terreno
+veg_veg_cultivada,terreno,2,Irrigado,terreno
+veg_veg_cultivada,terreno,3,Inundado,terreno
+veg_veg_cultivada,tipolavoura,0,Desconhecido,tipolavoura
+veg_veg_cultivada,tipolavoura,1,Perene,tipolavoura
+veg_veg_cultivada,tipolavoura,2,Semi-perene,tipolavoura
+veg_veg_cultivada,tipolavoura,3,Anual,tipolavoura
+veg_veg_restinga,antropizada,0,Desconhecido,antropizada
+veg_veg_restinga,antropizada,1,Sim,antropizada
+veg_veg_restinga,antropizada,2,Não,antropizada
+veg_veg_restinga,denso,0,Desconhecido,denso
+veg_veg_restinga,denso,1,Sim,denso
+veg_veg_restinga,denso,2,Não,denso
+veg_veg_restinga,geometriaaproximada,1,Sim,geometriaaproximada
+veg_veg_restinga,geometriaaproximada,2,Não,geometriaaproximada
+adm_edif_pub_civil,matconstr,0,Desconhecido,matconstr
+adm_edif_pub_civil,matconstr,1,Alvenaria,matconstr
+adm_edif_pub_civil,matconstr,2,Concreto,matconstr
+adm_edif_pub_civil,matconstr,3,Metal,matconstr
+adm_edif_pub_civil,matconstr,4,Rocha,matconstr
+adm_edif_pub_civil,matconstr,5,Madeira,matconstr
+adm_edif_pub_civil,matconstr,97,Não Aplicável,matconstr
+adm_edif_pub_civil,matconstr,99,Outros,matconstr
+adm_edif_pub_civil,situacaofisica,0,Desconhecida,situacaofisica
+adm_edif_pub_civil,situacaofisica,1,Abandonada,situacaofisica
+adm_edif_pub_civil,situacaofisica,2,Destruída,situacaofisica
+adm_edif_pub_civil,situacaofisica,3,Em Construção,situacaofisica
+adm_edif_pub_civil,situacaofisica,5,Construída,situacaofisica
+adm_edif_pub_militar,matconstr,0,Desconhecido,matconstr
+adm_edif_pub_militar,matconstr,1,Alvenaria,matconstr
+adm_edif_pub_militar,matconstr,2,Concreto,matconstr
+adm_edif_pub_militar,matconstr,3,Metal,matconstr
+adm_edif_pub_militar,matconstr,4,Rocha,matconstr
+adm_edif_pub_militar,matconstr,5,Madeira,matconstr
+adm_edif_pub_militar,matconstr,97,Não Aplicável,matconstr
+adm_edif_pub_militar,matconstr,99,Outros,matconstr
+adm_edif_pub_militar,situacaofisica,0,Desconhecida,situacaofisica
+adm_edif_pub_militar,situacaofisica,1,Abandonada,situacaofisica
+adm_edif_pub_militar,situacaofisica,2,Destruída,situacaofisica
+adm_edif_pub_militar,situacaofisica,3,Em Construção,situacaofisica
+adm_edif_pub_militar,situacaofisica,5,Construída,situacaofisica
+adm_posto_fiscal,situacaofisica,0,Desconhecida,situacaofisica
+adm_posto_fiscal,situacaofisica,1,Abandonada,situacaofisica
+adm_posto_fiscal,situacaofisica,2,Destruída,situacaofisica
+adm_posto_fiscal,situacaofisica,3,Em Construção,situacaofisica
+adm_posto_fiscal,situacaofisica,5,Construída,situacaofisica
+adm_posto_pol_rod,situacaofisica,0,Desconhecida,situacaofisica
+adm_posto_pol_rod,situacaofisica,1,Abandonada,situacaofisica
+adm_posto_pol_rod,situacaofisica,2,Destruída,situacaofisica
+adm_posto_pol_rod,situacaofisica,3,Em Construção,situacaofisica
+adm_posto_pol_rod,situacaofisica,5,Construída,situacaofisica
+asb_dep_abast_agua,construcao,1,Fechada,construcao
+asb_dep_abast_agua,construcao,2,Aberta,construcao
+asb_dep_abast_agua,finalidade,2,Tratamento,finalidade_asb
+asb_dep_abast_agua,finalidade,3,Recalque,finalidade_asb
+asb_dep_abast_agua,finalidade,4,Distribuição,finalidade_asb
+asb_edif_abast_agua,matconstr,0,Desconhecido,matconstr
+asb_edif_abast_agua,matconstr,1,Alvenaria,matconstr
+asb_edif_abast_agua,matconstr,2,Concreto,matconstr
+asb_edif_abast_agua,matconstr,3,Metal,matconstr
+asb_edif_abast_agua,matconstr,4,Rocha,matconstr
+asb_edif_abast_agua,matconstr,5,Madeira,matconstr
+asb_edif_abast_agua,matconstr,97,Não Aplicável,matconstr
+asb_edif_abast_agua,matconstr,99,Outros,matconstr
+asb_dep_abast_agua,matconstr,0,Desconhecido,matconstr
+asb_dep_abast_agua,matconstr,1,Alvenaria,matconstr
+asb_dep_abast_agua,matconstr,2,Concreto,matconstr
+asb_dep_abast_agua,matconstr,3,Metal,matconstr
+asb_dep_abast_agua,matconstr,4,Rocha,matconstr
+asb_dep_abast_agua,matconstr,97,Não Aplicável,matconstr
+asb_dep_abast_agua,matconstr,99,Outros,matconstr
+asb_dep_abast_agua,situacaofisica,0,Desconhecida,situacaofisica
+asb_dep_abast_agua,situacaofisica,1,Abandonada,situacaofisica
+asb_dep_abast_agua,situacaofisica,2,Destruída,situacaofisica
+asb_dep_abast_agua,situacaofisica,3,Em Construção,situacaofisica
+asb_dep_abast_agua,situacaofisica,5,Construída,situacaofisica
+asb_dep_saneamento,finalidade,0,Desconhecido,finalidade_asb
+asb_dep_saneamento,finalidade,2,Tratamento,finalidade_asb
+asb_dep_saneamento,finalidade,8,Armazenamento,finalidade_asb
+asb_dep_saneamento,matconstr,0,Desconhecido,matconstr
+asb_dep_saneamento,matconstr,1,Alvenaria,matconstr
+asb_dep_saneamento,matconstr,2,Concreto,matconstr
+asb_dep_saneamento,matconstr,3,Metal,matconstr
+asb_dep_saneamento,matconstr,4,Rocha,matconstr
+asb_dep_saneamento,matconstr,97,Não Aplicável,matconstr
+asb_dep_saneamento,matconstr,99,Outros,matconstr
+asb_dep_saneamento,situacaofisica,0,Desconhecida,situacaofisica
+asb_dep_saneamento,situacaofisica,1,Abandonada,situacaofisica
+asb_dep_saneamento,situacaofisica,2,Destruída,situacaofisica
+asb_dep_saneamento,situacaofisica,3,Em Construção,situacaofisica
+asb_dep_saneamento,situacaofisica,5,Construída,situacaofisica
+asb_edif_saneamento,matconstr,0,Desconhecido,matconstr
+asb_edif_saneamento,matconstr,1,Alvenaria,matconstr
+asb_edif_saneamento,matconstr,2,Concreto,matconstr
+asb_edif_saneamento,matconstr,3,Metal,matconstr
+asb_edif_saneamento,matconstr,4,Rocha,matconstr
+asb_edif_saneamento,matconstr,5,Madeira,matconstr
+asb_edif_saneamento,matconstr,97,Não Aplicável,matconstr
+asb_edif_saneamento,matconstr,99,Outros,matconstr
+eco_deposito_geral,matconstr,0,Desconhecido,matconstr
+eco_deposito_geral,matconstr,1,Alvenaria,matconstr
+eco_deposito_geral,matconstr,2,Concreto,matconstr
+eco_deposito_geral,matconstr,3,Metal,matconstr
+eco_deposito_geral,matconstr,4,Rocha,matconstr
+eco_deposito_geral,matconstr,5,Madeira,matconstr
+eco_deposito_geral,matconstr,97,Não Aplicável,matconstr
+eco_deposito_geral,matconstr,99,Outros,matconstr
+eco_deposito_geral,situacaofisica,0,Desconhecida,situacaofisica
+eco_deposito_geral,situacaofisica,1,Abandonada,situacaofisica
+eco_deposito_geral,situacaofisica,2,Destruída,situacaofisica
+eco_deposito_geral,situacaofisica,3,Em Construção,situacaofisica
+eco_deposito_geral,situacaofisica,5,Construída,situacaofisica
+eco_deposito_geral,tipoprodutoresiduo,0,Desconhecido,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,3,Petróleo,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,5,Gás,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,6,Grãos,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,16,Vinhoto,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,17,Estrume,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,18,Cascalho,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,19,Semente,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,20,Inseticida,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,21,Folhagens,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,22,Pedra,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,23,Granito,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,24,Mármore,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,25,Bauxita,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,26,Manganês,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,27,Talco,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,28,Óleo diesel,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,29,Gasolina,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,30,Álcool,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,31,Querosene,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,32,Cobre,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,33,Carvão,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,34,Sal,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,35,Ferro,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,36,Escória,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,41,Forragem,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,98,Misto,tipoprodutoresiduo
+eco_deposito_geral,tipoprodutoresiduo,99,Outros,tipoprodutoresiduo
+eco_edif_ext_mineral,matconstr,0,Desconhecido,matconstr
+eco_edif_ext_mineral,matconstr,1,Alvenaria,matconstr
+eco_edif_ext_mineral,matconstr,2,Concreto,matconstr
+eco_edif_ext_mineral,matconstr,3,Metal,matconstr
+eco_edif_ext_mineral,matconstr,4,Rocha,matconstr
+eco_edif_ext_mineral,matconstr,5,Madeira,matconstr
+eco_edif_ext_mineral,matconstr,97,Não Aplicável,matconstr
+eco_edif_ext_mineral,matconstr,99,Outros,matconstr
+eco_edif_agrop_ext_veg_pesca,matconstr,0,Desconhecido,matconstr
+eco_edif_agrop_ext_veg_pesca,matconstr,1,Alvenaria,matconstr
+eco_edif_agrop_ext_veg_pesca,matconstr,3,Metal,matconstr
+eco_edif_agrop_ext_veg_pesca,matconstr,4,Rocha,matconstr
+eco_edif_agrop_ext_veg_pesca,matconstr,5,Madeira,matconstr
+eco_edif_agrop_ext_veg_pesca,matconstr,99,Outros,matconstr
+eco_edif_agrop_ext_veg_pesca,situacaofisica,0,Desconhecida,situacaofisica
+eco_edif_agrop_ext_veg_pesca,situacaofisica,1,Abandonada,situacaofisica
+eco_edif_agrop_ext_veg_pesca,situacaofisica,2,Destruída,situacaofisica
+eco_edif_agrop_ext_veg_pesca,situacaofisica,3,Em Construção,situacaofisica
+eco_edif_agrop_ext_veg_pesca,situacaofisica,5,Construída,situacaofisica
+eco_edif_comerc_serv,matconstr,0,Desconhecido,matconstr
+eco_edif_comerc_serv,matconstr,1,Alvenaria,matconstr
+eco_edif_comerc_serv,matconstr,2,Concreto,matconstr
+eco_edif_comerc_serv,matconstr,3,Metal,matconstr
+eco_edif_comerc_serv,matconstr,4,Rocha,matconstr
+eco_edif_comerc_serv,matconstr,5,Madeira,matconstr
+eco_edif_comerc_serv,matconstr,97,Não Aplicável,matconstr
+eco_edif_comerc_serv,matconstr,99,Outros,matconstr
+eco_edif_comerc_serv,situacaofisica,0,Desconhecida,situacaofisica
+eco_edif_comerc_serv,situacaofisica,1,Abandonada,situacaofisica
+eco_edif_comerc_serv,situacaofisica,2,Destruída,situacaofisica
+eco_edif_comerc_serv,situacaofisica,3,Em Construção,situacaofisica
+eco_edif_comerc_serv,situacaofisica,5,Construída,situacaofisica
+eco_edif_ext_mineral,situacaofisica,0,Desconhecida,situacaofisica
+eco_edif_ext_mineral,situacaofisica,1,Abandonada,situacaofisica
+eco_edif_ext_mineral,situacaofisica,2,Destruída,situacaofisica
+eco_edif_ext_mineral,situacaofisica,3,Em Construção,situacaofisica
+eco_edif_ext_mineral,situacaofisica,5,Construída,situacaofisica
+eco_edif_ext_mineral,tipodivisaocnae,0,Desconhecido,tipodivisaocnae
+eco_edif_ext_mineral,tipodivisaocnae,10,Extração de Carvão Mineral,tipodivisaocnae
+eco_edif_ext_mineral,tipodivisaocnae,11,Extração de Petróleo e Serviços Relacionados,tipodivisaocnae
+eco_edif_ext_mineral,tipodivisaocnae,13,Extração de Minerais Metálicos,tipodivisaocnae
+eco_edif_ext_mineral,tipodivisaocnae,14,Extração de Minerais Não-Metálicos,tipodivisaocnae
+eco_edif_ext_mineral,tipodivisaocnae,99,Outros,tipodivisaocnae
+eco_edif_industrial,matconstr,0,Desconhecido,matconstr
+eco_edif_industrial,matconstr,1,Alvenaria,matconstr
+eco_edif_industrial,matconstr,2,Concreto,matconstr
+eco_edif_industrial,matconstr,3,Metal,matconstr
+eco_edif_industrial,matconstr,4,Rocha,matconstr
+eco_edif_industrial,matconstr,5,Madeira,matconstr
+eco_edif_industrial,matconstr,97,Não Aplicável,matconstr
+eco_edif_industrial,matconstr,99,Outros,matconstr
+eco_edif_industrial,situacaofisica,0,Desconhecida,situacaofisica
+eco_edif_industrial,situacaofisica,1,Abandonada,situacaofisica
+eco_edif_industrial,situacaofisica,2,Destruída,situacaofisica
+eco_edif_industrial,situacaofisica,3,Em Construção,situacaofisica
+eco_edif_industrial,situacaofisica,5,Construída,situacaofisica
+eco_edif_industrial,tipodivisaocnae,0,Desconhecido,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,15,Fabricação Alimentícia e Bebidas,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,16,Fabricação de Produtos do Fumo,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,17,Fabricação de Produtos Têxteis,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,18,Confecção de Artigos do Vestuário e Acessórios,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,19,Preparação de couros e Fabricação de Artefatos de Couro Artigos de Viagem e Calçados,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,20,Fabricação de produtos de Madeira e Celulose,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,21,Fabricação de Celulose Papel e Produtos de Papel,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,22,Edição Impressão e Reprodução de Gravações,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,23,Fabricação de Coque Refino de Petróleo Elaboração de Combustíveis Nucleares e Produção de Álcool,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,24,Fabricação de Produtos Químicos,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,25,Fabricação de Artigos de Borracha e Material Plástico,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,26,Fabricação de Produtos de Minerais Não-Metálicos,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,27,Metalurgia Básica,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,28,Fabricação de Produtos de Metal Exclusive Máquinas e Equipamentos,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,29,Fabricação de Máquinas e Equipamentos,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,30,Fabricação de Máquinas de Escritório e Equipamentos de Informática,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,31,Fabricação de Máquinas Aparelhos e Materiais Elétricos,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,32,Fabricação de Material Eletrônicode Aparelhos e Equipamentos de Comunicações,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,33,Fabricação de Equipamentos de Instrumentação Médico-Hospitalares Instumentos de Precisão e Ópticos Equipamentos para Automação Industrial Cronômetros e Relógios,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,34,Fabricação e Montagem de Veículos Automotores Reboques e Carrocerias,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,35,Fabricação de Outros Equipamentos de Transporte,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,36,Fabricação de Móveis e Industrias Diversas,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,37,Reciclagem,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,45,Construção,tipodivisaocnae
+eco_edif_industrial,tipodivisaocnae,99,Outros,tipodivisaocnae
+eco_equip_agropec,matconstr,0,Desconhecido,matconstr
+eco_equip_agropec,matconstr,3,Metal,matconstr
+eco_equip_agropec,matconstr,5,Madeira,matconstr
+eco_equip_agropec,matconstr,99,Outros,matconstr
+eco_equip_agropec,situacaofisica,0,Desconhecida,situacaofisica
+eco_equip_agropec,situacaofisica,1,Abandonada,situacaofisica
+eco_equip_agropec,situacaofisica,2,Destruída,situacaofisica
+eco_equip_agropec,situacaofisica,3,Em Construção,situacaofisica
+eco_equip_agropec,situacaofisica,5,Construída,situacaofisica
+eco_ext_mineral,situacaofisica,0,Desconhecida,situacaofisica
+eco_ext_mineral,situacaofisica,1,Abandonada,situacaofisica
+eco_ext_mineral,situacaofisica,2,Destruída,situacaofisica
+eco_ext_mineral,situacaofisica,3,Em Construção,situacaofisica
+eco_ext_mineral,situacaofisica,5,Construída,situacaofisica
+eco_ext_mineral,tipoprodutoresiduo,0,Desconhecido,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,3,Petróleo,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,5,Gás,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,18,Cascalho,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,22,Pedra,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,23,Granito,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,24,Mármore,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,25,Bauxita,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,26,Manganês,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,27,Talco,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,32,Cobre,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,33,Carvão,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,34,Sal,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,35,Ferro,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,37,Ouro,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,38,Diamante,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,39,Prata,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,40,Pedras preciosas,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,42,Areia,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,43,Saibro/Piçarra,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,98,Misto,tipoprodutoresiduo
+eco_ext_mineral,tipoprodutoresiduo,99,Outros,tipoprodutoresiduo
+eco_ext_mineral,tiposecaocnae,0,Desconhecido,tiposecaocnae
+eco_ext_mineral,tiposecaocnae,1,C - Indústrias Extrativas,tiposecaocnae
+eco_ext_mineral,tiposecaocnae,99,Outros,tiposecaocnae
+edu_arquibancada,situacaofisica,0,Desconhecida,situacaofisica
+edu_arquibancada,situacaofisica,1,Abandonada,situacaofisica
+edu_arquibancada,situacaofisica,2,Destruída,situacaofisica
+edu_arquibancada,situacaofisica,3,Em Construção,situacaofisica
+edu_arquibancada,situacaofisica,5,Construída,situacaofisica
+edu_campo_quadra,situacaofisica,0,Desconhecida,situacaofisica
+edu_campo_quadra,situacaofisica,1,Abandonada,situacaofisica
+edu_campo_quadra,situacaofisica,2,Destruída,situacaofisica
+edu_campo_quadra,situacaofisica,3,Em Construção,situacaofisica
+edu_campo_quadra,situacaofisica,5,Construída,situacaofisica
+edu_coreto_tribuna,situacaofisica,0,Desconhecida,situacaofisica
+edu_coreto_tribuna,situacaofisica,1,Abandonada,situacaofisica
+edu_coreto_tribuna,situacaofisica,2,Destruída,situacaofisica
+edu_coreto_tribuna,situacaofisica,3,Em Construção,situacaofisica
+edu_coreto_tribuna,situacaofisica,5,Construída,situacaofisica
+edu_edif_const_lazer,matconstr,0,Desconhecido,matconstr
+edu_edif_const_lazer,matconstr,1,Alvenaria,matconstr
+edu_edif_const_lazer,matconstr,2,Concreto,matconstr
+edu_edif_const_lazer,matconstr,3,Metal,matconstr
+edu_edif_const_lazer,matconstr,4,Rocha,matconstr
+edu_edif_const_lazer,matconstr,5,Madeira,matconstr
+edu_edif_const_lazer,matconstr,97,Não Aplicável,matconstr
+edu_edif_const_lazer,matconstr,99,Outros,matconstr
+edu_edif_const_lazer,situacaofisica,0,Desconhecida,situacaofisica
+edu_edif_const_lazer,situacaofisica,1,Abandonada,situacaofisica
+edu_edif_const_lazer,situacaofisica,2,Destruída,situacaofisica
+edu_edif_const_lazer,situacaofisica,3,Em Construção,situacaofisica
+edu_edif_const_lazer,situacaofisica,5,Construída,situacaofisica
+edu_edif_const_turistica,matconstr,0,Desconhecido,matconstr
+edu_edif_const_turistica,matconstr,1,Alvenaria,matconstr
+edu_edif_const_turistica,matconstr,2,Concreto,matconstr
+edu_edif_const_turistica,matconstr,3,Metal,matconstr
+edu_edif_const_turistica,matconstr,4,Rocha,matconstr
+edu_edif_const_turistica,matconstr,5,Madeira,matconstr
+edu_edif_const_turistica,matconstr,97,Não Aplicável,matconstr
+edu_edif_const_turistica,matconstr,99,Outros,matconstr
+edu_edif_const_turistica,situacaofisica,0,Desconhecida,situacaofisica
+edu_edif_const_turistica,situacaofisica,1,Abandonada,situacaofisica
+edu_edif_const_turistica,situacaofisica,2,Destruída,situacaofisica
+edu_edif_const_turistica,situacaofisica,3,Em Construção,situacaofisica
+edu_edif_const_turistica,situacaofisica,5,Construída,situacaofisica
+edu_edif_ensino,matconstr,0,Desconhecido,matconstr
+edu_edif_ensino,matconstr,1,Alvenaria,matconstr
+edu_edif_ensino,matconstr,2,Concreto,matconstr
+edu_edif_ensino,matconstr,3,Metal,matconstr
+edu_edif_ensino,matconstr,4,Rocha,matconstr
+edu_edif_ensino,matconstr,5,Madeira,matconstr
+edu_edif_ensino,matconstr,97,Não Aplicável,matconstr
+edu_edif_ensino,matconstr,99,Outros,matconstr
+edu_edif_ensino,situacaofisica,0,Desconhecida,situacaofisica
+edu_edif_ensino,situacaofisica,1,Abandonada,situacaofisica
+edu_edif_ensino,situacaofisica,2,Destruída,situacaofisica
+edu_edif_ensino,situacaofisica,3,Em Construção,situacaofisica
+edu_edif_ensino,situacaofisica,5,Construída,situacaofisica
+edu_edif_ensino,tipoclassecnae,0,Desconhecido,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,16,80.13-6 - Educação Infantil - Creche,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,17,80.14-4 - Educação Infantil - Pré-Escola,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,18,80.15-2 - Ensino Fundamental,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,19,80.20-9 - Ensino Médio,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,20,80.31-4 - Educação Superior - Graduação,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,21,80.32-2 - Educação Superior - Graduação e Pós-Graduação,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,22,80.33-0 - Educação Superior - Pós-Graduação e Extensão,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,23,80.96-9 - Educação Profissional de Nível Técnico,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,24,80.97-7 - Educação Profissional de Nível Tecnológico,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,25,80.99-3 - Outras Atividades de Ensino,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,98,Misto,tipoclassecnae
+edu_edif_ensino,tipoclassecnae,99,Outros,tipoclassecnae
+edu_edif_religiosa,matconstr,0,Desconhecido,matconstr
+edu_edif_religiosa,matconstr,1,Alvenaria,matconstr
+edu_edif_religiosa,matconstr,2,Concreto,matconstr
+edu_edif_religiosa,matconstr,3,Metal,matconstr
+edu_edif_religiosa,matconstr,4,Rocha,matconstr
+edu_edif_religiosa,matconstr,5,Madeira,matconstr
+edu_edif_religiosa,matconstr,97,Não Aplicável,matconstr
+edu_edif_religiosa,matconstr,99,Outros,matconstr
+edu_edif_religiosa,situacaofisica,0,Desconhecida,situacaofisica
+edu_edif_religiosa,situacaofisica,1,Abandonada,situacaofisica
+edu_edif_religiosa,situacaofisica,2,Destruída,situacaofisica
+edu_edif_religiosa,situacaofisica,3,Em Construção,situacaofisica
+edu_edif_religiosa,situacaofisica,5,Construída,situacaofisica
+edu_piscina,situacaofisica,0,Desconhecida,situacaofisica
+edu_piscina,situacaofisica,1,Abandonada,situacaofisica
+edu_piscina,situacaofisica,2,Destruída,situacaofisica
+edu_piscina,situacaofisica,3,Em Construção,situacaofisica
+edu_piscina,situacaofisica,5,Construída,situacaofisica
+edu_pista_competicao,situacaofisica,0,Desconhecida,situacaofisica
+edu_pista_competicao,situacaofisica,1,Abandonada,situacaofisica
+edu_pista_competicao,situacaofisica,2,Destruída,situacaofisica
+edu_pista_competicao,situacaofisica,3,Em Construção,situacaofisica
+edu_pista_competicao,situacaofisica,5,Construída,situacaofisica
+edu_pista_competicao,tipopista,0,Desconhecido,tipopista
+edu_pista_competicao,tipopista,1,Atletismo,tipopista
+edu_pista_competicao,tipopista,2,Ciclismo,tipopista
+edu_pista_competicao,tipopista,3,Motociclismo,tipopista
+edu_pista_competicao,tipopista,4,Automobilismo,tipopista
+edu_pista_competicao,tipopista,5,Corrida de cavalos,tipopista
+edu_pista_competicao,tipopista,98,Misto,tipopista
+edu_pista_competicao,tipopista,99,Outros,tipopista
+enc_edif_comunic,matconstr,0,Desconhecido,matconstr
+enc_edif_comunic,matconstr,1,Alvenaria,matconstr
+enc_edif_comunic,matconstr,2,Concreto,matconstr
+enc_edif_comunic,matconstr,3,Metal,matconstr
+enc_edif_comunic,matconstr,4,Rocha,matconstr
+enc_edif_comunic,matconstr,5,Madeira,matconstr
+enc_edif_comunic,matconstr,97,Não Aplicável,matconstr
+enc_edif_comunic,matconstr,99,Outros,matconstr
+enc_edif_comunic,situacaofisica,0,Desconhecida,situacaofisica
+enc_edif_comunic,situacaofisica,1,Abandonada,situacaofisica
+enc_edif_comunic,situacaofisica,2,Destruída,situacaofisica
+enc_edif_comunic,situacaofisica,3,Em Construção,situacaofisica
+enc_edif_comunic,situacaofisica,5,Construída,situacaofisica
+enc_edif_energia,matconstr,0,Desconhecido,matconstr
+enc_edif_energia,matconstr,1,Alvenaria,matconstr
+enc_edif_energia,matconstr,2,Concreto,matconstr
+enc_edif_energia,matconstr,3,Metal,matconstr
+enc_edif_energia,matconstr,4,Rocha,matconstr
+enc_edif_energia,matconstr,5,Madeira,matconstr
+enc_edif_energia,matconstr,99,Outros,matconstr
+enc_edif_energia,situacaofisica,0,Desconhecida,situacaofisica
+enc_edif_energia,situacaofisica,1,Abandonada,situacaofisica
+enc_edif_energia,situacaofisica,2,Destruída,situacaofisica
+enc_edif_energia,situacaofisica,3,Em Construção,situacaofisica
+enc_edif_energia,situacaofisica,5,Construída,situacaofisica
+enc_est_gerad_energia_eletr,situacaofisica,0,Desconhecida,situacaofisica
+enc_est_gerad_energia_eletr,situacaofisica,1,Abandonada,situacaofisica
+enc_est_gerad_energia_eletr,situacaofisica,2,Destruída,situacaofisica
+enc_est_gerad_energia_eletr,situacaofisica,3,Em Construção,situacaofisica
+enc_est_gerad_energia_eletr,situacaofisica,5,Construída,situacaofisica
+enc_hidreletrica,situacaofisica,0,Desconhecida,situacaofisica
+enc_hidreletrica,situacaofisica,1,Abandonada,situacaofisica
+enc_hidreletrica,situacaofisica,2,Destruída,situacaofisica
+enc_hidreletrica,situacaofisica,3,Em Construção,situacaofisica
+enc_hidreletrica,situacaofisica,5,Construída,situacaofisica
+enc_hidreletrica,tipoestgerad,99,Outros,tipoestgerad
+enc_termeletrica,situacaofisica,0,Desconhecida,situacaofisica
+enc_termeletrica,situacaofisica,1,Abandonada,situacaofisica
+enc_termeletrica,situacaofisica,2,Destruída,situacaofisica
+enc_termeletrica,situacaofisica,3,Em Construção,situacaofisica
+enc_termeletrica,situacaofisica,5,Construída,situacaofisica
+enc_termeletrica,tipoestgerad,99,Outros,tipoestgerad
+enc_torre_comunic,situacaofisica,0,Desconhecida,situacaofisica
+enc_torre_comunic,situacaofisica,1,Abandonada,situacaofisica
+enc_torre_comunic,situacaofisica,2,Destruída,situacaofisica
+enc_torre_comunic,situacaofisica,3,Em Construção,situacaofisica
+enc_torre_comunic,situacaofisica,5,Construída,situacaofisica
+enc_torre_energia,situacaofisica,0,Desconhecida,situacaofisica
+enc_torre_energia,situacaofisica,1,Abandonada,situacaofisica
+enc_torre_energia,situacaofisica,2,Destruída,situacaofisica
+enc_torre_energia,situacaofisica,3,Em Construção,situacaofisica
+enc_torre_energia,situacaofisica,5,Construída,situacaofisica
+enc_trecho_comunic,matconstr,0,Desconhecido,matconstr
+enc_trecho_comunic,matconstr,25,Fibra ótica,matconstr
+enc_trecho_comunic,matconstr,26,Fio Metálico,matconstr
+enc_trecho_comunic,matconstr,99,Outros,matconstr
+enc_trecho_comunic,posicaorelativa,2,Superfície,posicaorelativa
+enc_trecho_comunic,posicaorelativa,3,Elevado,posicaorelativa
+enc_trecho_comunic,posicaorelativa,4,Emerso,posicaorelativa
+enc_trecho_comunic,posicaorelativa,5,Submerso,posicaorelativa
+enc_trecho_comunic,posicaorelativa,6,Subterrâneo,posicaorelativa
+enc_trecho_comunic,situacaofisica,0,Desconhecida,situacaofisica
+enc_trecho_comunic,situacaofisica,1,Abandonada,situacaofisica
+enc_trecho_comunic,situacaofisica,2,Destruída,situacaofisica
+enc_trecho_comunic,situacaofisica,3,Em Construção,situacaofisica
+enc_trecho_comunic,situacaofisica,5,Construída,situacaofisica
+enc_trecho_energia,posicaorelativa,2,Superfície,posicaorelativa
+enc_trecho_energia,posicaorelativa,3,Elevado,posicaorelativa
+enc_trecho_energia,posicaorelativa,4,Emerso,posicaorelativa
+enc_trecho_energia,posicaorelativa,5,Submerso,posicaorelativa
+enc_trecho_energia,posicaorelativa,6,Subterrâneo,posicaorelativa
+enc_trecho_energia,situacaofisica,0,Desconhecida,situacaofisica
+enc_trecho_energia,situacaofisica,1,Abandonada,situacaofisica
+enc_trecho_energia,situacaofisica,2,Destruída,situacaofisica
+enc_trecho_energia,situacaofisica,3,Em Construção,situacaofisica
+enc_trecho_energia,situacaofisica,5,Construída,situacaofisica
+hid_banco_areia,materialpredominante,0,Desconhecido,materialpredominante
+hid_banco_areia,materialpredominante,12,Areia,materialpredominante
+hid_banco_areia,materialpredominante,18,Cascalho,materialpredominante
+hid_banco_areia,materialpredominante,19,Seixo,materialpredominante
+hid_banco_areia,materialpredominante,24,Saibro,materialpredominante
+hid_banco_areia,materialpredominante,98,Misto,materialpredominante
+hid_barragem,matconstr,0,Desconhecido,matconstr
+hid_barragem,matconstr,1,Alvenaria,matconstr
+hid_barragem,matconstr,2,Concreto,matconstr
+hid_barragem,matconstr,4,Rocha,matconstr
+hid_barragem,matconstr,23,Terra,matconstr
+hid_barragem,matconstr,99,Outros,matconstr
+hid_confluencia,relacionado,15,Confluência,relacionado_hid
+hid_fonte_dagua,regime,0,Desconhecido,regime
+hid_fonte_dagua,regime,1,Permanente,regime
+hid_fonte_dagua,regime,3,Temporário,regime
+hid_ilha,tipoelemnat,99,Outros,tipoelemnat
+hid_limite_massa_dagua,materialpredominante,0,Desconhecido,materialpredominante
+hid_limite_massa_dagua,materialpredominante,4,Rocha,materialpredominante
+hid_limite_massa_dagua,materialpredominante,12,Areia,materialpredominante
+hid_limite_massa_dagua,materialpredominante,13,Areia Fina,materialpredominante
+hid_limite_massa_dagua,materialpredominante,14,Lama,materialpredominante
+hid_limite_massa_dagua,materialpredominante,15,Argila,materialpredominante
+hid_limite_massa_dagua,materialpredominante,16,Lodo,materialpredominante
+hid_limite_massa_dagua,materialpredominante,18,Cascalho,materialpredominante
+hid_limite_massa_dagua,materialpredominante,19,Seixo,materialpredominante
+hid_limite_massa_dagua,materialpredominante,20,Coral,materialpredominante
+hid_limite_massa_dagua,materialpredominante,21,Concha,materialpredominante
+hid_limite_massa_dagua,materialpredominante,50,Pedra,materialpredominante
+hid_limite_massa_dagua,materialpredominante,97,Não Aplicável,materialpredominante
+hid_limite_massa_dagua,materialpredominante,98,Misto,materialpredominante
+hid_massa_dagua,regime,1,Permanente,regime
+hid_massa_dagua,regime,2,Permanente com grande variação,regime
+hid_massa_dagua,regime,3,Temporário,regime
+hid_massa_dagua,regime,4,Temporário com leito permanente,regime
+hid_massa_dagua,regime,5,Seco,regime
+hid_natureza_fundo,materialpredominante,0,Desconhecido,materialpredominante
+hid_natureza_fundo,materialpredominante,4,Rocha,materialpredominante
+hid_natureza_fundo,materialpredominante,12,Areia,materialpredominante
+hid_natureza_fundo,materialpredominante,13,Areia Fina,materialpredominante
+hid_natureza_fundo,materialpredominante,14,Lama,materialpredominante
+hid_natureza_fundo,materialpredominante,15,Argila,materialpredominante
+hid_natureza_fundo,materialpredominante,16,Lodo,materialpredominante
+hid_natureza_fundo,materialpredominante,18,Cascalho,materialpredominante
+hid_natureza_fundo,materialpredominante,19,Seixo,materialpredominante
+hid_natureza_fundo,materialpredominante,20,Coral,materialpredominante
+hid_natureza_fundo,materialpredominante,21,Concha,materialpredominante
+hid_natureza_fundo,materialpredominante,22,Ervas Marinhas,materialpredominante
+hid_natureza_fundo,materialpredominante,50,Pedra,materialpredominante
+hid_natureza_fundo,materialpredominante,98,Misto,materialpredominante
+hid_ponto_inicio_drenagem,relacionado,14,Ponto início de drenagem,relacionado_hid
+hid_quebramar_molhe,matconstr,0,Desconhecido,matconstr
+hid_quebramar_molhe,matconstr,1,Alvenaria,matconstr
+hid_quebramar_molhe,matconstr,2,Concreto,matconstr
+hid_quebramar_molhe,matconstr,4,Rocha,matconstr
+hid_quebramar_molhe,matconstr,99,Outros,matconstr
+hid_quebramar_molhe,situamare,7,Cobre e descobre,situamare
+hid_quebramar_molhe,situamare,8,Sempre fora d´água,situamare
+hid_quebramar_molhe,situamare,9,Sempre submerso,situamare
+hid_trecho_drenagem,regime,1,Permanente,regime
+hid_trecho_drenagem,regime,2,Permanente com grande variação,regime
+hid_trecho_drenagem,regime,3,Temporário,regime
+hid_trecho_drenagem,regime,4,Temporário com leito permanente,regime
+hid_trecho_drenagem,regime,5,Seco,regime
+hid_trecho_massa_dagua,regime,1,Permanente,regime
+hid_trecho_massa_dagua,regime,2,Permanente com grande variação,regime
+hid_trecho_massa_dagua,regime,3,Temporário,regime
+hid_trecho_massa_dagua,regime,4,Temporário com leito permanente,regime
+hid_trecho_massa_dagua,regime,5,Seco,regime
+lim_delimitacao_fisica,matconstr,0,Desconhecido,matconstr
+lim_delimitacao_fisica,matconstr,1,Alvenaria,matconstr
+lim_delimitacao_fisica,matconstr,4,Rocha,matconstr
+lim_delimitacao_fisica,matconstr,5,Madeira,matconstr
+lim_delimitacao_fisica,matconstr,6,Arame,matconstr
+lim_delimitacao_fisica,matconstr,7,Tela ou Alambrado,matconstr
+lim_delimitacao_fisica,matconstr,8,Cerca viva,matconstr
+lim_delimitacao_fisica,matconstr,99,Outros,matconstr
+lim_outras_unid_protegidas,administracao,0,Desconhecida,administracao
+lim_outras_unid_protegidas,administracao,1,Federal,administracao
+lim_outras_unid_protegidas,administracao,2,Estadual,administracao
+lim_outras_unid_protegidas,administracao,3,Municipal,administracao
+lim_outras_unid_protegidas,administracao,5,Distrital,administracao
+lim_unidade_conserv_nao_snuc,administracao,0,Desconhecida,administracao
+lim_unidade_conserv_nao_snuc,administracao,1,Federal,administracao
+lim_unidade_conserv_nao_snuc,administracao,2,Estadual,administracao
+lim_unidade_conserv_nao_snuc,administracao,3,Municipal,administracao
+lim_unidade_conserv_nao_snuc,administracao,5,Distrital,administracao
+lim_unidade_protecao_integral,administracao,0,Desconhecida,administracao
+lim_unidade_protecao_integral,administracao,1,Federal,administracao
+lim_unidade_protecao_integral,administracao,2,Estadual,administracao
+lim_unidade_protecao_integral,administracao,3,Municipal,administracao
+lim_unidade_protecao_integral,administracao,5,Distrital,administracao
+lim_unidade_uso_sustentavel,administracao,0,Desconhecida,administracao
+lim_unidade_uso_sustentavel,administracao,1,Federal,administracao
+lim_unidade_uso_sustentavel,administracao,2,Estadual,administracao
+lim_unidade_uso_sustentavel,administracao,3,Municipal,administracao
+lim_unidade_uso_sustentavel,administracao,5,Distrital,administracao
+loc_edif_habitacional,matconstr,0,Desconhecido,matconstr
+loc_edif_habitacional,matconstr,1,Alvenaria,matconstr
+loc_edif_habitacional,matconstr,2,Concreto,matconstr
+loc_edif_habitacional,matconstr,3,Metal,matconstr
+loc_edif_habitacional,matconstr,4,Rocha,matconstr
+loc_edif_habitacional,matconstr,5,Madeira,matconstr
+loc_edif_habitacional,matconstr,97,Não Aplicável,matconstr
+loc_edif_habitacional,matconstr,99,Outros,matconstr
+loc_edif_habitacional,situacaofisica,0,Desconhecida,situacaofisica
+loc_edif_habitacional,situacaofisica,1,Abandonada,situacaofisica
+loc_edif_habitacional,situacaofisica,2,Destruída,situacaofisica
+loc_edif_habitacional,situacaofisica,3,Em Construção,situacaofisica
+loc_edif_habitacional,situacaofisica,5,Construída,situacaofisica
+loc_edificacao,matconstr,0,Desconhecido,matconstr
+loc_edificacao,matconstr,1,Alvenaria,matconstr
+loc_edificacao,matconstr,2,Concreto,matconstr
+loc_edificacao,matconstr,3,Metal,matconstr
+loc_edificacao,matconstr,4,Rocha,matconstr
+loc_edificacao,matconstr,5,Madeira,matconstr
+loc_edificacao,matconstr,97,Não Aplicável,matconstr
+loc_edificacao,matconstr,99,Outros,matconstr
+loc_edificacao,situacaofisica,0,Desconhecida,situacaofisica
+loc_edificacao,situacaofisica,1,Abandonada,situacaofisica
+loc_edificacao,situacaofisica,2,Destruída,situacaofisica
+loc_edificacao,situacaofisica,3,Em Construção,situacaofisica
+loc_edificacao,situacaofisica,5,Construída,situacaofisica
+pto_edif_constr_est_med_fen,matconstr,0,Desconhecido,matconstr
+pto_edif_constr_est_med_fen,matconstr,1,Alvenaria,matconstr
+pto_edif_constr_est_med_fen,matconstr,2,Concreto,matconstr
+pto_edif_constr_est_med_fen,matconstr,3,Metal,matconstr
+pto_edif_constr_est_med_fen,matconstr,4,Rocha,matconstr
+pto_edif_constr_est_med_fen,matconstr,5,Madeira,matconstr
+pto_edif_constr_est_med_fen,matconstr,97,Não Aplicável,matconstr
+pto_edif_constr_est_med_fen,matconstr,99,Outros,matconstr
+pto_edif_constr_est_med_fen,situacaofisica,0,Desconhecida,situacaofisica
+pto_edif_constr_est_med_fen,situacaofisica,1,Abandonada,situacaofisica
+pto_edif_constr_est_med_fen,situacaofisica,2,Destruída,situacaofisica
+pto_edif_constr_est_med_fen,situacaofisica,3,Em Construção,situacaofisica
+pto_edif_constr_est_med_fen,situacaofisica,5,Construída,situacaofisica
+pto_pto_controle,tiporef,1,Altimétrico,tiporef
+pto_pto_controle,tiporef,2,Planimétrico,tiporef
+pto_pto_controle,tiporef,3,Planialtimétrico,tiporef
+rel_dolina,tipoelemnat,99,Outros,tipoelemnat
+rel_duna,tipoelemnat,99,Outros,tipoelemnat
+rel_gruta_caverna,tipoelemnat,99,Outros,tipoelemnat
+rel_pico,tipoelemnat,99,Outros,tipoelemnat
+rel_rocha,tipoelemnat,99,Outros,tipoelemnat
+sau_edif_servico_social,matconstr,0,Desconhecido,matconstr
+sau_edif_servico_social,matconstr,1,Alvenaria,matconstr
+sau_edif_servico_social,matconstr,2,Concreto,matconstr
+sau_edif_servico_social,matconstr,3,Metal,matconstr
+sau_edif_servico_social,matconstr,4,Rocha,matconstr
+sau_edif_servico_social,matconstr,5,Madeira,matconstr
+sau_edif_servico_social,matconstr,97,Não Aplicável,matconstr
+sau_edif_servico_social,matconstr,99,Outros,matconstr
+sau_edif_saude,matconstr,0,Desconhecido,matconstr
+sau_edif_saude,matconstr,1,Alvenaria,matconstr
+sau_edif_saude,matconstr,2,Concreto,matconstr
+sau_edif_saude,matconstr,3,Metal,matconstr
+sau_edif_saude,matconstr,4,Rocha,matconstr
+sau_edif_saude,matconstr,5,Madeira,matconstr
+sau_edif_saude,matconstr,97,Não Aplicável,matconstr
+sau_edif_saude,matconstr,99,Outros,matconstr
+sau_edif_saude,situacaofisica,0,Desconhecida,situacaofisica
+sau_edif_saude,situacaofisica,1,Abandonada,situacaofisica
+sau_edif_saude,situacaofisica,2,Destruída,situacaofisica
+sau_edif_saude,situacaofisica,3,Em Construção,situacaofisica
+sau_edif_saude,situacaofisica,5,Construída,situacaofisica
+sau_edif_saude,tipoclassecnae,0,Desconhecido,tipoclassecnae
+sau_edif_saude,tipoclassecnae,26,85.11-1 Atendimento Hospitalar (Hospital),tipoclassecnae
+sau_edif_saude,tipoclassecnae,27,85.12-0 Atendimento a Urgência e Emergências (Pronto Socorro),tipoclassecnae
+sau_edif_saude,tipoclassecnae,28,85.13-8 Atenção Ambulatorial (Posto e Centro de Saúde),tipoclassecnae
+sau_edif_saude,tipoclassecnae,29,85.14-6 Serviços de Complementação Diagnóstica ou Terapêutica,tipoclassecnae
+sau_edif_saude,tipoclassecnae,30,85.16-2 Outras Atividades Relacionadas com a Atenção à Saúde (Instituto de Pesquisa),tipoclassecnae
+sau_edif_saude,tipoclassecnae,31,85.20-0 Serviços Veterinários,tipoclassecnae
+sau_edif_saude,tipoclassecnae,98,Misto,tipoclassecnae
+sau_edif_saude,tipoclassecnae,99,Outros,tipoclassecnae
+sau_edif_servico_social,situacaofisica,0,Desconhecida,situacaofisica
+sau_edif_servico_social,situacaofisica,1,Abandonada,situacaofisica
+sau_edif_servico_social,situacaofisica,2,Destruída,situacaofisica
+sau_edif_servico_social,situacaofisica,3,Em Construção,situacaofisica
+sau_edif_servico_social,situacaofisica,5,Construída,situacaofisica
+sau_edif_servico_social,tipoclassecnae,0,Desconhecido,tipoclassecnae
+sau_edif_servico_social,tipoclassecnae,32,85.31-6 - Serviços Sociais com alojamento,tipoclassecnae
+sau_edif_servico_social,tipoclassecnae,33,85.32-4 - Serviços Sociais sem alojamento,tipoclassecnae
+sau_edif_servico_social,tipoclassecnae,98,Misto,tipoclassecnae
+sau_edif_servico_social,tipoclassecnae,99,Outros,tipoclassecnae
+tra_atracadouro,administracao,0,Desconhecida,administracao
+tra_atracadouro,administracao,1,Federal,administracao
+tra_atracadouro,administracao,2,Estadual,administracao
+tra_atracadouro,administracao,3,Municipal,administracao
+tra_atracadouro,administracao,6,Particular,administracao
+tra_atracadouro,administracao,7,Concessionada,administracao
+tra_atracadouro,matconstr,0,Desconhecido,matconstr
+tra_atracadouro,matconstr,1,Alvenaria,matconstr
+tra_atracadouro,matconstr,2,Concreto,matconstr
+tra_atracadouro,matconstr,3,Metal,matconstr
+tra_atracadouro,matconstr,4,Rocha,matconstr
+tra_atracadouro,matconstr,5,Madeira,matconstr
+tra_atracadouro,matconstr,99,Outros,matconstr
+tra_caminho_aereo,situacaofisica,0,Desconhecida,situacaofisica
+tra_caminho_aereo,situacaofisica,1,Abandonada,situacaofisica
+tra_caminho_aereo,situacaofisica,2,Destruída,situacaofisica
+tra_caminho_aereo,situacaofisica,3,Em Construção,situacaofisica
+tra_caminho_aereo,situacaofisica,5,Construída,situacaofisica
+tra_ciclovia,administracao,0,Desconhecida,administracao
+tra_ciclovia,administracao,2,Estadual,administracao
+tra_ciclovia,administracao,3,Municipal,administracao
+tra_ciclovia,administracao,4,Estadual/Municipal,administracao
+tra_ciclovia,administracao,6,Particular,administracao
+tra_condutor_hidrico,matconstr,0,Desconhecido,matconstr
+tra_condutor_hidrico,matconstr,1,Alvenaria,matconstr
+tra_condutor_hidrico,matconstr,2,Concreto,matconstr
+tra_condutor_hidrico,matconstr,3,Metal,matconstr
+tra_condutor_hidrico,matconstr,4,Rocha,matconstr
+tra_condutor_hidrico,matconstr,99,Outros,matconstr
+tra_condutor_hidrico,mattransp,1,Água,mattransp
+tra_condutor_hidrico,setor,1,Energético,setor
+tra_condutor_hidrico,situacaofisica,0,Desconhecida,situacaofisica
+tra_condutor_hidrico,situacaofisica,1,Abandonada,situacaofisica
+tra_condutor_hidrico,situacaofisica,2,Destruída,situacaofisica
+tra_condutor_hidrico,situacaofisica,3,Em Construção,situacaofisica
+tra_condutor_hidrico,situacaofisica,5,Construída,situacaofisica
+tra_eclusa,matconstr,0,Desconhecido,matconstr
+tra_eclusa,matconstr,1,Alvenaria,matconstr
+tra_eclusa,matconstr,2,Concreto,matconstr
+tra_eclusa,matconstr,3,Metal,matconstr
+tra_eclusa,matconstr,5,Madeira,matconstr
+tra_eclusa,matconstr,99,Outros,matconstr
+tra_eclusa,situacaofisica,0,Desconhecida,situacaofisica
+tra_eclusa,situacaofisica,1,Abandonada,situacaofisica
+tra_eclusa,situacaofisica,2,Destruída,situacaofisica
+tra_eclusa,situacaofisica,3,Em Construção,situacaofisica
+tra_eclusa,situacaofisica,5,Construída,situacaofisica
+tra_edif_constr_aeroportuaria,administracao,0,Desconhecida,administracao
+tra_edif_constr_aeroportuaria,administracao,1,Federal,administracao
+tra_edif_constr_aeroportuaria,administracao,2,Estadual,administracao
+tra_edif_constr_aeroportuaria,administracao,3,Municipal,administracao
+tra_edif_constr_aeroportuaria,administracao,6,Particular,administracao
+tra_edif_constr_aeroportuaria,matconstr,0,Desconhecido,matconstr
+tra_edif_constr_aeroportuaria,matconstr,1,Alvenaria,matconstr
+tra_edif_constr_aeroportuaria,matconstr,2,Concreto,matconstr
+tra_edif_constr_aeroportuaria,matconstr,3,Metal,matconstr
+tra_edif_constr_aeroportuaria,matconstr,5,Madeira,matconstr
+tra_edif_constr_aeroportuaria,matconstr,99,Outros,matconstr
+tra_edif_constr_portuaria,administracao,0,Desconhecida,administracao
+tra_edif_constr_portuaria,administracao,1,Federal,administracao
+tra_edif_constr_portuaria,administracao,2,Estadual,administracao
+tra_edif_constr_portuaria,administracao,3,Municipal,administracao
+tra_edif_constr_portuaria,administracao,6,Particular,administracao
+tra_edif_constr_portuaria,administracao,7,Concessionada,administracao
+tra_edif_constr_portuaria,matconstr,0,Desconhecido,matconstr
+tra_edif_constr_portuaria,matconstr,1,Alvenaria,matconstr
+tra_edif_constr_portuaria,matconstr,2,Concreto,matconstr
+tra_edif_constr_portuaria,matconstr,3,Metal,matconstr
+tra_edif_constr_portuaria,matconstr,5,Madeira,matconstr
+tra_edif_constr_portuaria,matconstr,99,Outros,matconstr
+tra_edif_metro_ferroviaria,administracao,0,Desconhecida,administracao
+tra_edif_metro_ferroviaria,administracao,1,Federal,administracao
+tra_edif_metro_ferroviaria,administracao,2,Estadual,administracao
+tra_edif_metro_ferroviaria,administracao,3,Municipal,administracao
+tra_edif_metro_ferroviaria,administracao,6,Particular,administracao
+tra_edif_metro_ferroviaria,administracao,7,Concessionada,administracao
+tra_edif_metro_ferroviaria,matconstr,0,Desconhecido,matconstr
+tra_edif_metro_ferroviaria,matconstr,1,Alvenaria,matconstr
+tra_edif_metro_ferroviaria,matconstr,2,Concreto,matconstr
+tra_edif_metro_ferroviaria,matconstr,3,Metal,matconstr
+tra_edif_metro_ferroviaria,matconstr,5,Madeira,matconstr
+tra_edif_metro_ferroviaria,matconstr,99,Outros,matconstr
+tra_edif_rodoviaria,administracao,0,Desconhecida,administracao
+tra_edif_rodoviaria,administracao,1,Federal,administracao
+tra_edif_rodoviaria,administracao,2,Estadual,administracao
+tra_edif_rodoviaria,administracao,3,Municipal,administracao
+tra_edif_rodoviaria,administracao,6,Particular,administracao
+tra_edif_rodoviaria,administracao,7,Concessionada,administracao
+tra_edif_rodoviaria,matconstr,0,Desconhecido,matconstr
+tra_edif_rodoviaria,matconstr,1,Alvenaria,matconstr
+tra_edif_rodoviaria,matconstr,2,Concreto,matconstr
+tra_edif_rodoviaria,matconstr,3,Metal,matconstr
+tra_edif_rodoviaria,matconstr,5,Madeira,matconstr
+tra_edif_rodoviaria,matconstr,99,Outros,matconstr
+tra_galeria_bueiro,situacaofisica,0,Desconhecida,situacaofisica
+tra_galeria_bueiro,situacaofisica,1,Abandonada,situacaofisica
+tra_galeria_bueiro,situacaofisica,2,Destruída,situacaofisica
+tra_galeria_bueiro,situacaofisica,3,Em Construção,situacaofisica
+tra_galeria_bueiro,situacaofisica,5,Construída,situacaofisica
+tra_edif_rodoviaria,situacaofisica,0,Desconhecida,situacaofisica
+tra_edif_rodoviaria,situacaofisica,1,Abandonada,situacaofisica
+tra_edif_rodoviaria,situacaofisica,2,Destruída,situacaofisica
+tra_edif_rodoviaria,situacaofisica,3,Em Construção,situacaofisica
+tra_edif_rodoviaria,situacaofisica,5,Construída,situacaofisica
+tra_fundeadouro,administracao,0,Desconhecida,administracao
+tra_fundeadouro,administracao,1,Federal,administracao
+tra_fundeadouro,administracao,2,Estadual,administracao
+tra_fundeadouro,administracao,3,Municipal,administracao
+tra_fundeadouro,administracao,6,Particular,administracao
+tra_fundeadouro,administracao,7,Concessionada,administracao
+tra_galeria_bueiro,matconstr,0,Desconhecido,matconstr
+tra_galeria_bueiro,matconstr,1,Alvenaria,matconstr
+tra_galeria_bueiro,matconstr,2,Concreto,matconstr
+tra_galeria_bueiro,matconstr,3,Metal,matconstr
+tra_galeria_bueiro,matconstr,4,Rocha,matconstr
+tra_galeria_bueiro,matconstr,99,Outros,matconstr
+tra_girador_ferroviario,administracao,0,Desconhecida,administracao
+tra_girador_ferroviario,administracao,1,Federal,administracao
+tra_girador_ferroviario,administracao,2,Estadual,administracao
+tra_girador_ferroviario,administracao,3,Municipal,administracao
+tra_girador_ferroviario,administracao,6,Particular,administracao
+tra_girador_ferroviario,administracao,7,Concessionada,administracao
+tra_passag_elevada_viaduto,matconstr,0,Desconhecido,matconstr
+tra_passag_elevada_viaduto,matconstr,1,Alvenaria,matconstr
+tra_passag_elevada_viaduto,matconstr,2,Concreto,matconstr
+tra_passag_elevada_viaduto,matconstr,3,Metal,matconstr
+tra_passag_elevada_viaduto,matconstr,5,Madeira,matconstr
+tra_passag_elevada_viaduto,matconstr,99,Outros,matconstr
+tra_passag_elevada_viaduto,modaluso,4,Rodoviário,modaluso
+tra_passag_elevada_viaduto,modaluso,5,Ferroviário,modaluso
+tra_passag_elevada_viaduto,modaluso,8,Rodoferroviário,modaluso
+tra_passag_elevada_viaduto,modaluso,9,Aeroportuário,modaluso
+tra_patio,administracao,0,Desconhecida,administracao
+tra_patio,administracao,1,Federal,administracao
+tra_patio,administracao,2,Estadual,administracao
+tra_patio,administracao,3,Municipal,administracao
+tra_patio,administracao,6,Particular,administracao
+tra_patio,administracao,7,Concessionada,administracao
+tra_patio,modaluso,4,Rodoviário,modaluso
+tra_patio,modaluso,5,Ferroviário,modaluso
+tra_patio,modaluso,6,Metroviário,modaluso
+tra_patio,modaluso,9,Aeroportuário,modaluso
+tra_patio,modaluso,14,Portuário,modaluso
+tra_patio,modaluso,98,Misto,modaluso
+tra_pista_ponto_pouso,tipopista,9,Pista de pouso,tipopista
+tra_pista_ponto_pouso,tipopista,10,Pista de táxi,tipopista
+tra_pista_ponto_pouso,tipopista,11,Heliporto,tipopista
+tra_ponte,matconstr,0,Desconhecido,matconstr
+tra_ponte,matconstr,1,Alvenaria,matconstr
+tra_ponte,matconstr,2,Concreto,matconstr
+tra_ponte,matconstr,3,Metal,matconstr
+tra_ponte,matconstr,5,Madeira,matconstr
+tra_ponte,matconstr,99,Outros,matconstr
+tra_ponte,modaluso,4,Rodoviário,modaluso
+tra_ponte,modaluso,5,Ferroviário,modaluso
+tra_ponte,modaluso,8,Rodoferroviário,modaluso
+tra_ponte,modaluso,9,Aeroportuário,modaluso
+tra_trecho_duto,situacaofisica,0,Desconhecida,situacaofisica
+tra_trecho_duto,situacaofisica,1,Abandonada,situacaofisica
+tra_trecho_duto,situacaofisica,2,Destruída,situacaofisica
+tra_trecho_duto,situacaofisica,3,Em Construção,situacaofisica
+tra_trecho_duto,situacaofisica,5,Construída,situacaofisica
+tra_posto_combustivel,administracao,0,Desconhecida,administracao
+tra_posto_combustivel,administracao,1,Federal,administracao
+tra_posto_combustivel,administracao,2,Estadual,administracao
+tra_posto_combustivel,administracao,3,Municipal,administracao
+tra_posto_combustivel,administracao,6,Particular,administracao
+tra_posto_combustivel,administracao,7,Concessionada,administracao
+tra_posto_combustivel,matconstr,0,Desconhecido,matconstr
+tra_posto_combustivel,matconstr,1,Alvenaria,matconstr
+tra_posto_combustivel,matconstr,2,Concreto,matconstr
+tra_posto_combustivel,matconstr,3,Metal,matconstr
+tra_posto_combustivel,matconstr,5,Madeira,matconstr
+tra_posto_combustivel,matconstr,99,Outros,matconstr
+tra_posto_combustivel,situacaofisica,0,Desconhecida,situacaofisica
+tra_posto_combustivel,situacaofisica,1,Abandonada,situacaofisica
+tra_posto_combustivel,situacaofisica,2,Destruída,situacaofisica
+tra_posto_combustivel,situacaofisica,3,Em Construção,situacaofisica
+tra_posto_combustivel,situacaofisica,5,Construída,situacaofisica
+tra_travessia_pedestre,matconstr,0,Desconhecido,matconstr
+tra_travessia_pedestre,matconstr,1,Alvenaria,matconstr
+tra_travessia_pedestre,matconstr,2,Concreto,matconstr
+tra_travessia_pedestre,matconstr,3,Metal,matconstr
+tra_travessia_pedestre,matconstr,5,Madeira,matconstr
+tra_travessia_pedestre,matconstr,99,Outros,matconstr
+tra_travessia_pedestre,situacaofisica,0,Desconhecida,situacaofisica
+tra_travessia_pedestre,situacaofisica,1,Abandonada,situacaofisica
+tra_travessia_pedestre,situacaofisica,2,Destruída,situacaofisica
+tra_travessia_pedestre,situacaofisica,3,Em Construção,situacaofisica
+tra_travessia_pedestre,situacaofisica,5,Construída,situacaofisica
+tra_trecho_duto,matconstr,0,Desconhecido,matconstr
+tra_trecho_duto,matconstr,1,Alvenaria,matconstr
+tra_trecho_duto,matconstr,2,Concreto,matconstr
+tra_trecho_duto,matconstr,3,Metal,matconstr
+tra_trecho_duto,matconstr,4,Rocha,matconstr
+tra_trecho_duto,matconstr,99,Outros,matconstr
+tra_trecho_ferroviario,administracao,0,Desconhecida,administracao
+tra_trecho_ferroviario,administracao,1,Federal,administracao
+tra_trecho_ferroviario,administracao,2,Estadual,administracao
+tra_trecho_ferroviario,administracao,3,Municipal,administracao
+tra_trecho_ferroviario,administracao,6,Particular,administracao
+tra_trecho_ferroviario,administracao,7,Concessionada,administracao
+tra_trecho_ferroviario,administracao,97,Não aplicável,administracao
+tra_trecho_ferroviario,jurisdicao,0,Desconhecida,jurisdicao
+tra_trecho_ferroviario,jurisdicao,1,Federal,jurisdicao
+tra_trecho_ferroviario,jurisdicao,2,Estadual,jurisdicao
+tra_trecho_ferroviario,jurisdicao,3,Municipal,jurisdicao
+tra_trecho_ferroviario,jurisdicao,6,Particular,jurisdicao
+tra_trecho_ferroviario,posicaorelativa,0,Desconhecida,posicaorelativa
+tra_trecho_ferroviario,posicaorelativa,2,Superfície,posicaorelativa
+tra_trecho_ferroviario,posicaorelativa,3,Elevado,posicaorelativa
+tra_trecho_ferroviario,posicaorelativa,6,Subterrâneo,posicaorelativa
+tra_trecho_hidroviario,regime,0,Desconhecido,regime
+tra_trecho_hidroviario,regime,1,Permanente,regime
+tra_trecho_hidroviario,regime,6,Sazonal,regime
+tra_trecho_rodoviario,administracao,0,Desconhecida,administracao
+tra_trecho_rodoviario,administracao,1,Federal,administracao
+tra_trecho_rodoviario,administracao,2,Estadual,administracao
+tra_trecho_rodoviario,administracao,3,Municipal,administracao
+tra_trecho_rodoviario,administracao,6,Particular,administracao
+tra_trecho_rodoviario,administracao,7,Concessionada,administracao
+tra_trecho_rodoviario,jurisdicao,0,Desconhecida,jurisdicao
+tra_trecho_rodoviario,jurisdicao,1,Federal,jurisdicao
+tra_trecho_rodoviario,jurisdicao,2,Estadual,jurisdicao
+tra_trecho_rodoviario,jurisdicao,3,Municipal,jurisdicao
+tra_trecho_rodoviario,jurisdicao,8,Propriedade particular,jurisdicao
+tra_tunel,matconstr,0,Desconhecido,matconstr
+tra_tunel,matconstr,1,Alvenaria,matconstr
+tra_tunel,matconstr,2,Concreto,matconstr
+tra_tunel,matconstr,3,Metal,matconstr
+tra_tunel,matconstr,5,Madeira,matconstr
+tra_tunel,matconstr,99,Outros,matconstr
+tra_tunel,modaluso,4,Rodoviário,modaluso
+tra_tunel,modaluso,5,Ferroviário,modaluso
+tra_tunel,modaluso,6,Metroviário,modaluso
+tra_tunel,modaluso,7,Dutos,modaluso
+tra_tunel,modaluso,8,Rodoferroviário,modaluso
+veg_brejo_pantano,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_brejo_pantano,classificacaoporte,1,Arbórea,classificacaoporte
+veg_brejo_pantano,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_brejo_pantano,classificacaoporte,98,Misto,classificacaoporte
+veg_caatinga,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_caatinga,classificacaoporte,1,Arbórea,classificacaoporte
+veg_caatinga,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_caatinga,classificacaoporte,98,Misto,classificacaoporte
+veg_campinarana,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_campinarana,classificacaoporte,1,Arbórea,classificacaoporte
+veg_campinarana,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_campinarana,classificacaoporte,98,Misto,classificacaoporte
+veg_cerrado_cerradao,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_cerrado_cerradao,classificacaoporte,1,Arbórea,classificacaoporte
+veg_cerrado_cerradao,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_cerrado_cerradao,classificacaoporte,98,Misto,classificacaoporte
+veg_floresta,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_floresta,classificacaoporte,1,Arbórea,classificacaoporte
+veg_floresta,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_floresta,classificacaoporte,98,Misto,classificacaoporte
+veg_macega_chavascal,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_macega_chavascal,classificacaoporte,1,Arbórea,classificacaoporte
+veg_macega_chavascal,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_macega_chavascal,classificacaoporte,98,Misto,classificacaoporte
+veg_mangue,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_mangue,classificacaoporte,1,Arbórea,classificacaoporte
+veg_mangue,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_mangue,classificacaoporte,98,Misto,classificacaoporte
+veg_veg_area_contato,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_veg_area_contato,classificacaoporte,1,Arbórea,classificacaoporte
+veg_veg_area_contato,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_veg_area_contato,classificacaoporte,98,Misto,classificacaoporte
+veg_veg_restinga,classificacaoporte,0,Desconhecido,classificacaoporte
+veg_veg_restinga,classificacaoporte,1,Arbórea,classificacaoporte
+veg_veg_restinga,classificacaoporte,2,Arbustiva,classificacaoporte
+veg_veg_restinga,classificacaoporte,98,Misto,classificacaoporte
