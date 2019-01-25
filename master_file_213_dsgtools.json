@@ -3592,7 +3592,12 @@
               },
               {
                 "code": 7,
-                "value": "Lago/Lagoa",
+                "value": "Lago",
+                "descricao": "-"
+              },
+              {
+                "code": 8,
+                "value": "Lagoa",
                 "descricao": "-"
               },
               {
@@ -4988,26 +4993,6 @@
               {
                 "code": 8,
                 "value": "Propriedade particular",
-                "descricao": "-"
-              },
-              {
-                "code": 9,
-                "value": "Federal/Estadual",
-                "descricao": "-"
-              },
-              {
-                "code": 10,
-                "value": "Federal/Municipal",
-                "descricao": "-"
-              },
-              {
-                "code": 11,
-                "value": "Estadual/Municipal",
-                "descricao": "-"
-              },
-              {
-                "code": 12,
-                "value": "Federal/Estadual/Municipal",
                 "descricao": "-"
               }
             ]
@@ -14472,6 +14457,9 @@
                   },
                   {
                     "code": 7
+                  },
+                  {
+                    "code": 8
                   },
                   {
                     "code": 10
@@ -25000,18 +24988,6 @@
                   },
                   {
                     "code": 8
-                  },
-                  {
-                    "code": 9
-                  },
-                  {
-                    "code": 10
-                  },
-                  {
-                    "code": 11
-                  },
-                  {
-                    "code": 12
                   }
                 ]
               },
