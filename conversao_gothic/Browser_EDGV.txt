@@ -1,0 +1,4493 @@
+Class Bacia_Hidrografica
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Massa_Dagua
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoMassaDagua,0,Desconhecido
+attr tipoMassaDagua,3,Oceano
+attr tipoMassaDagua,4,Baía
+attr tipoMassaDagua,5,Enseada
+attr tipoMassaDagua,6,Meandro abandonado
+attr tipoMassaDagua,7,Lago
+attr tipoMassaDagua,8,Lagoa
+attr tipoMassaDagua,10,Represa/Açude
+attr tipoMassaDagua,99,Outros
+attr regime,1,Permanente
+attr regime,2,Permanente com grande variação
+attr regime,3,Temporário
+attr regime,4,Temporário com leito permanente
+attr regime,5,Seco
+attr salinidade,0,Desconhecida
+attr salinidade,1,Doce
+attr salinidade,2,Salgada
+
+Class Trecho_Massa_Dagua
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoMassaDagua,1,Rio
+attr tipoMassaDagua,2,Canal
+attr tipoMassaDagua,9,Laguna
+attr tipoMassaDagua,10,Represa/Açude
+attr tipoMassaDagua,99,Outros
+attr regime,1,Permanente
+attr regime,2,Permanente com grande variação
+attr regime,3,Temporário
+attr regime,4,Temporário com leito permanente
+attr regime,5,Seco
+attr salinidade,0,Desconhecida
+attr salinidade,1,Doce
+attr salinidade,2,Salgada
+
+Class Limite_Massa_Dagua
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoLimMassa,1,Costa visível da carta
+attr tipoLimMassa,2,Margem de massa d`água
+attr tipoLimMassa,3,Margem esquerda de trechos de massa d`água
+attr tipoLimMassa,4,Margem direita de trechos de massa d`água
+attr tipoLimMassa,5,Limite interno entre massas e/ou trechos
+attr tipoLimMassa,6,Limite com elemento artificial
+attr tipoLimMassa,7,Limite interno com foz marítima
+attr materialPredominante,0,Desconhecido
+attr materialPredominante,4,Rocha
+attr materialPredominante,12,Areia
+attr materialPredominante,13,Areia fina
+attr materialPredominante,14,Lama
+attr materialPredominante,15,Argila
+attr materialPredominante,16,Lodo
+attr materialPredominante,18,Cascalho
+attr materialPredominante,19,Seixo
+attr materialPredominante,20,Coral
+attr materialPredominante,21,Concha
+attr materialPredominante,50,Pedra
+attr materialPredominante,97,Não aplicável
+attr materialPredominante,98,Misto
+
+Class Pico
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoElemNat,99,Outros
+
+Class Terra_Publica
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Trecho_Drenagem
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr coincideComDentroDe,1,Rio
+attr coincideComDentroDe,2,Canal
+attr coincideComDentroDe,9,Laguna
+attr coincideComDentroDe,10,Represa/Açude
+attr coincideComDentroDe,11,Vala
+attr coincideComDentroDe,12,Queda d`água
+attr coincideComDentroDe,13,Corredeira
+attr coincideComDentroDe,14,Eclusa
+attr coincideComDentroDe,16,Foz marítima
+attr coincideComDentroDe,19,Barragem
+attr coincideComDentroDe,24,Linha de drenagem
+attr coincideComDentroDe,97,Não aplicável
+attr navegabilidade,0,Desconhecida
+attr navegabilidade,1,Navegável
+attr navegabilidade,2,Não navegável
+attr regime,1,Permanente
+attr regime,2,Permanente com grande variação
+attr regime,3,Temporário
+attr regime,4,Temporário com leito permanente
+attr regime,5,Seco
+attr eixoPrincipal,1,Sim
+attr eixoPrincipal,2,Não
+attr dentroDePoligono,1,Sim
+attr dentroDePoligono,2,Não
+attr compartilhado,1,Sim
+attr compartilhado,2,Não
+
+Class Ponto_Drenagem
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr relacionado,1,Eclusa
+attr relacionado,2,Barragem
+attr relacionado,3,Comporta
+attr relacionado,4,Queda d'água
+attr relacionado,5,Corredeira
+attr relacionado,6,Foz marítima
+attr relacionado,7,Sumidouro
+attr relacionado,8,Meandro abandonado
+attr relacionado,80,Meandro Abandonado (Jusante)
+attr relacionado,9,Lago
+attr relacionado,90,Lago (Jusante)
+attr relacionado,10,Lagoa
+attr relacionado,100,Lagoa (Jusante)
+attr relacionado,11,Laguna
+attr relacionado,110,Laguna (Jusante)
+attr relacionado,12,Represa/Açude
+attr relacionado,120,Represa/Açude (Jusante)
+attr relacionado,13,Entre trechos de drenagem
+attr relacionado,16,Vertedouro
+attr relacionado,17,Interrupção à Jusante
+attr relacionado,18,Interrupção à Montante
+
+Class Confluencia
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr relacionado,15,Confluência
+attr relacionado,19,Ramificação
+attr relacionado,20,Cruzamento de Vala
+
+Class Corredeira
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Barragem
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,4,Rocha
+attr matConstr,23,Terra
+attr matConstr,99,Outros
+attr usoPrincipal,0,Desconhecido
+attr usoPrincipal,1,Irrigação
+attr usoPrincipal,2,Abastecimento
+attr usoPrincipal,3,Energia
+attr usoPrincipal,97,Não aplicável
+attr usoPrincipal,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Comporta
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Terreno_Suj_Inundacao
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Sumidouro_Vertedouro
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoSumVert,1,Sumidouro
+attr tipoSumVert,2,Vertedouro
+attr causa,0,Desconhecida
+attr causa,1,Canalização
+attr causa,2,Gruta ou Fenda
+attr causa,3,Absorção
+
+Class Queda_Dagua
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoQueda,0,Desconhecido
+attr tipoQueda,1,Cachoeira
+attr tipoQueda,2,Salto
+attr tipoQueda,3,Catarata
+
+Class Foz_Maritima
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Fonte_Dagua
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoFonteDagua,0,Desconhecido
+attr tipoFonteDagua,1,Poço
+attr tipoFonteDagua,2,Poço artesiano
+attr tipoFonteDagua,3,Olho d`água
+attr qualidAgua,0,Desconhecida
+attr qualidAgua,1,Potável
+attr qualidAgua,2,Não potável
+attr qualidAgua,3,Mineral
+attr qualidAgua,4,Salobra
+attr regime,0,Desconhecido
+attr regime,1,Permanente
+attr regime,3,Temporário
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Ponto_Inicio_Drenagem
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr nascente,0,Desconhecido
+attr nascente,1,Sim
+attr nascente,2,Não
+
+Class Natureza_Fundo
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr materialPredominante,0,Desconhecido
+attr materialPredominante,4,Rocha
+attr materialPredominante,12,Areia
+attr materialPredominante,13,Areia fina
+attr materialPredominante,14,Lama
+attr materialPredominante,15,Argila
+attr materialPredominante,16,Lodo
+attr materialPredominante,18,Cascalho
+attr materialPredominante,19,Seixo
+attr materialPredominante,20,Coral
+attr materialPredominante,21,Concha
+attr materialPredominante,22,Ervas marinhas
+attr materialPredominante,50,Pedra
+attr materialPredominante,98,Misto
+attr espessAlgas,1,Finas
+attr espessAlgas,2,Médias
+attr espessAlgas,3,Grossas
+
+Class Ilha
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoElemNat,1,Fluvial
+attr tipoElemNat,2,Marítima
+attr tipoElemNat,3,Lacustre
+attr tipoElemNat,98,Mista
+
+Class Rocha_Em_Agua
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr situacaoEmAgua,0,Desconhecido
+attr situacaoEmAgua,4,Emerso
+attr situacaoEmAgua,5,Submerso
+attr situacaoEmAgua,7,Cobre e Descobre
+
+Class Recife
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoRecife,0,Desconhecido
+attr tipoRecife,1,Arenito
+attr tipoRecife,2,Rochoso
+attr tipoRecife,20,Coral
+attr situaMare,0,Desconhecido
+attr situaMare,7,Cobre e Descobre
+attr situaMare,8,Sempre fora d'água
+attr situaMare,9,Sempre submerso
+attr situacaoCosta,10,Contíguo
+attr situacaoCosta,11,Afastado
+
+Class Banco_Areia
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoBanco,1,Fluvial
+attr tipoBanco,2,Marítimo
+attr tipoBanco,3,Lacustre
+attr tipoBanco,4,Cordão Arenoso
+attr situacaoEmAgua,0,Desconhecido
+attr situacaoEmAgua,4,Emerso
+attr situacaoEmAgua,5,Submerso
+attr situacaoEmAgua,7,Cobre e Descobre
+attr materialPredominante,0,Desconhecido
+attr materialPredominante,12,Areia
+attr materialPredominante,18,Cascalho
+attr materialPredominante,19,Seixo
+attr materialPredominante,24,Saibro
+attr materialPredominante,98,Misto
+
+Class Quebramar_Molhe
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoQuebramarMolhe,0,Desconhecido
+attr tipoQuebramarMolhe,1,Quebramar
+attr tipoQuebramarMolhe,2,Molhe
+attr situaMare,7,Cobre e Descobre
+attr situaMare,8,Sempre fora d'água
+attr situaMare,9,Sempre submerso
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,4,Rocha
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Area_Umida
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoAreaUmida,0,Desconhecido
+attr tipoAreaUmida,3,Lamacento
+attr tipoAreaUmida,4,Arenoso
+
+Class Reservatorio_Hidrico
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr usoPrincipal,0,Desconhecido
+attr usoPrincipal,1,Irrigação
+attr usoPrincipal,2,Abastecimento
+attr usoPrincipal,3,Energia
+attr usoPrincipal,97,Não aplicável
+attr usoPrincipal,99,Outros
+
+Class Curva_Nivel
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr indice,1,Mestra
+attr indice,2,Normal
+attr indice,3,Auxiliar
+attr depressao,1,Sim
+attr depressao,2,Não
+attr emMassaDagua,1,Sim
+attr emMassaDagua,2,Não
+attr ordemTickDepressao,1,1º nível de dentro para fora (0,8mm)
+attr ordemTickDepressao,2,2º nível de dentro para fora (1,6mm)
+attr ordemTickDepressao,3,3º nível de dentro para fora (3,0mm)
+attr ordemTickDepressao,4,4º ou mais niveis de dentro para fora (4,4mm)
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Ponto_Cotado_Altimetrico
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr cotaComprovada,1,Sim
+attr cotaComprovada,2,Não
+attr visivel,0,Não
+attr visivel,1,Sim
+attr justTxt,1,1- Esquerda e Inferior
+attr justTxt,2,2- Esquerda e Centro
+attr justTxt,3,3- Esquerda e Superior
+attr justTxt,4,4- Centro e Inferior
+attr justTxt,5,5- Centro e Centro
+attr justTxt,6,6- Centro e Superior
+attr justTxt,7,7- Direita e Inferior
+attr justTxt,8,8- Direita e Centro
+attr justTxt,9,9- Direita e Superior
+
+Class Elemento_Fisiog_Natural
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoElemNat,0,Desconhecido
+attr tipoElemNat,1,Serra
+attr tipoElemNat,2,Morro
+attr tipoElemNat,3,Montanha
+attr tipoElemNat,4,Chapada
+attr tipoElemNat,5,Maciço
+attr tipoElemNat,6,Planalto
+attr tipoElemNat,7,Planície
+attr tipoElemNat,9,Península
+attr tipoElemNat,10,Ponta
+attr tipoElemNat,11,Cabo
+attr tipoElemNat,12,Praia
+attr tipoElemNat,16,Escarpa
+attr tipoElemNat,17,Talude
+attr tipoElemNat,18,Falésia
+attr tipoElemNat,99,Outros
+
+Class Dolina
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoElemNat,0,Desconhecido
+
+Class Duna
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr fixa,1,Sim
+attr fixa,2,Não
+attr tipoElemNat,99,Outros
+
+Class Gruta_Caverna
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoElemNat,19,Gruta
+attr tipoElemNat,20,Caverna
+
+Class Rocha
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoElemNat,21,Matacão - pedra
+attr tipoElemNat,22,Penedo - isolado
+attr tipoElemNat,23,Área rochosa - lajedo
+
+Class Terreno_Exposto
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoTerrExp,0,Desconhecido
+attr tipoTerrExp,4,Pedregoso
+attr tipoTerrExp,12,Areia
+attr tipoTerrExp,18,Cascalho
+attr tipoTerrExp,23,Terra
+attr tipoTerrExp,24,Saibro
+attr causaExposicao,4,Natural
+attr causaExposicao,5,Artificial
+
+Class Alter_Fisiog_Antropica
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoAlterAntrop,0,Desconhecido
+attr tipoAlterAntrop,24,Caixa de empréstimo
+attr tipoAlterAntrop,25,Área aterrada
+attr tipoAlterAntrop,26,Corte
+attr tipoAlterAntrop,27,Aterro
+attr tipoAlterAntrop,28,Resíduo de bota-fora
+attr tipoAlterAntrop,29,Resíduo sólido em geral
+
+Class Veg_Area_Contato
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Veg_Desconhecida
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Veg_Cultivada
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoLavoura,0,Desconhecido
+attr tipoLavoura,1,Perene
+attr tipoLavoura,2,Semi-perene
+attr tipoLavoura,3,Anual
+attr finalidade,0,Desconhecida
+attr finalidade,1,Exploração econômica
+attr finalidade,2,Subsistência
+attr finalidade,3,Conservação ambiental
+attr finalidade,99,Outras
+attr terreno,1,Seco
+attr terreno,2,Irrigado
+attr terreno,3,Inundado
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,3,Herbácea
+attr classificacaoPorte,4,Rasteira
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr cultivoPredominante,1,Milho
+attr cultivoPredominante,2,Banana
+attr cultivoPredominante,3,Laranja
+attr cultivoPredominante,4,Trigo
+attr cultivoPredominante,42,Videira
+attr cultivoPredominante,6,Algodão herbáceo
+attr cultivoPredominante,7,Cana-de-açúcar
+attr cultivoPredominante,8,Fumo
+attr cultivoPredominante,9,Soja
+attr cultivoPredominante,10,Batata inglesa
+attr cultivoPredominante,11,Mandioca
+attr cultivoPredominante,12,Feijão
+attr cultivoPredominante,13,Arroz
+attr cultivoPredominante,14,Café
+attr cultivoPredominante,15,Cacau
+attr cultivoPredominante,16,Erva-mate
+attr cultivoPredominante,17,Palmeira
+attr cultivoPredominante,18,Açaí
+attr cultivoPredominante,19,Seringueira
+attr cultivoPredominante,20,Eucalipto
+attr cultivoPredominante,21,Acácia
+attr cultivoPredominante,22,Algaroba
+attr cultivoPredominante,23,Pinus
+attr cultivoPredominante,24,Pastagem cultivada
+attr cultivoPredominante,25,Hortaliças
+attr cultivoPredominante,26,Bracatinga
+attr cultivoPredominante,27,Araucária
+attr cultivoPredominante,28,Carnaúba
+attr cultivoPredominante,29,Pera
+attr cultivoPredominante,30,Maçã
+attr cultivoPredominante,31,Pêssego
+attr cultivoPredominante,32,Juta
+attr cultivoPredominante,33,Cebola
+attr cultivoPredominante,34,Mamão
+attr cultivoPredominante,35,Manga
+attr cultivoPredominante,36,Coco
+attr cultivoPredominante,37,Goiaba
+attr cultivoPredominante,38,Limão
+attr cultivoPredominante,96,Não identificado
+attr cultivoPredominante,98,Misto
+attr cultivoPredominante,99,Outras
+
+
+
+Class Mangue
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Brejo_Pantano
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+attr tipoBrejoPantano,0,Desconhecido
+attr tipoBrejoPantano,1,Brejo
+attr tipoBrejoPantano,2,Pântano
+
+Class Veg_Restinga
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Campinarana
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Floresta
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr caracteristicaFloresta,0,Desconhecida
+attr caracteristicaFloresta,1,Floresta
+attr caracteristicaFloresta,2,Mata
+attr caracteristicaFloresta,3,Bosque
+attr especiePredominante,10,Cipó
+attr especiePredominante,11,Bambu
+attr especiePredominante,12,Sororoca
+attr especiePredominante,17,Palmeira
+attr especiePredominante,27,Araucária
+attr especiePredominante,41,Babaçu
+attr especiePredominante,96,Não identificado
+attr especiePredominante,98,Mista
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Macega_Chavascal
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoMacChav,0,Desconhecido
+attr tipoMacChav,1,Macega
+attr tipoMacChav,2,Chavascal
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Cerrado_Cerradao
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoCerr,0,Desconhecido
+attr tipoCerr,1,Cerrado
+attr tipoCerr,2,Cerradão
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Caatinga
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,1,Arbórea
+attr classificacaoPorte,2,Arbustiva
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Estepe
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr classificacaoPorte,0,Desconhecida
+attr classificacaoPorte,3,Herbácea
+attr classificacaoPorte,98,Misto
+attr denso,0,Desconhecido
+attr denso,1,Sim
+attr denso,2,Não
+attr antropizada,0,Desconhecido
+attr antropizada,1,Sim
+attr antropizada,2,Não
+
+Class Campo
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoCampo,0,Desconhecido
+attr tipoCampo,1,Sujo
+attr tipoCampo,2,Limpo
+attr ocorrenciaEm,5,Brejo ou pântano
+attr ocorrenciaEm,6,Caatinga
+attr ocorrenciaEm,7,Estepe
+attr ocorrenciaEm,8,Pastagem
+attr ocorrenciaEm,13,Cerrado ou cerradão
+attr ocorrenciaEm,14,Macega ou chavascal
+attr ocorrenciaEm,19,Campinarana
+attr ocorrenciaEm,15,Floresta
+attr ocorrenciaEm,96,Não identificado
+
+Class Trecho_Rodoviario
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoTrechoRod,1,Acesso
+attr tipoTrechoRod,2,Rodovia
+attr tipoTrechoRod,3,Caminho carroçável
+attr tipoTrechoRod,4,Auto-estrada
+attr jurisdicao,0,Desconhecida
+attr jurisdicao,1,Federal
+attr jurisdicao,2,Estadual
+attr jurisdicao,3,Municipal
+attr jurisdicao,8,Propriedade particular
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+attr revestimento,0,Desconhecido
+attr revestimento,1,Leito natural
+attr revestimento,2,Revestimento primário (solto)
+attr revestimento,3,Pavimentado
+attr revestimento,4,Calçado
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr trafego,0,Desconhecido
+attr trafego,1,Permanente
+attr trafego,2,Periódico
+attr canteiroDivisorio,1,Sim
+attr canteiroDivisorio,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Identific_Trecho_Rod
+attr repTipoTxt,1,Nome
+attr repTipoTxt,5,Símbolo
+
+Class Ponto_Rodoviario_Ferrov
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr relacionado,0,Desconhecido
+attr relacionado,1,Tunel
+attr relacionado,2,Passagem elevada ou viaduto
+attr relacionado,3,Ponte
+attr relacionado,4,Travessia
+attr relacionado,5,Edificação rodoviária
+attr relacionado,6,Galeria ou bueiro
+attr relacionado,7,Mudança de atributo
+attr relacionado,8,Entroncamento
+attr relacionado,9,Início ou fim de trecho
+attr relacionado,10,Edificação Metro Ferroviária
+attr relacionado,11,Localidade
+attr relacionado,12,Pátio
+attr relacionado,13,Passagem de nível
+attr relacionado,17,Interrupção com a moldura
+attr relacionado,19,Barragem
+
+Class Travessia
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoTravessia,0,Desconhecido
+attr tipoTravessia,1,Vau natural
+attr tipoTravessia,2,Vau construída
+attr tipoTravessia,3,Bote transportador
+attr tipoTravessia,4,Balsa
+
+Class Tunel
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr modalUso,4,Rodoviário
+attr modalUso,5,Ferroviário
+attr modalUso,6,Metroviário
+attr modalUso,7,Dutos
+attr modalUso,8,Rodoferroviário
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr posicaoPista,0,Desconhecida
+attr posicaoPista,12,Adjacentes
+attr posicaoPista,13,Superpostas
+attr posicaoPista,16,Coincidente
+attr posicaoPista,97,Não aplicável
+attr tipoTunel,1,Túnel
+attr tipoTunel,2,Passagem subterrânea sob via
+
+Class Galeria_Bueiro
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+
+Class Entroncamento
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEntroncamento,1,Entroncamento rodoviário
+attr tipoEntroncamento,2,Círculo rodoviario
+attr tipoEntroncamento,3,Trevo rodoviário
+attr tipoEntroncamento,4,Rótula
+attr tipoEntroncamento,5,Entroncamento ferroviário
+attr tipoEntroncamento,99,Outros
+
+Class Ponte
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoPonte,0,Desconhecido
+attr tipoPonte,1,Móvel
+attr tipoPonte,2,Pênsil
+attr tipoPonte,3,Fixa
+attr modalUso,4,Rodoviário
+attr modalUso,5,Ferroviário
+attr modalUso,8,Rodoferroviário
+attr modalUso,9,Aeroportuário
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr posicaoPista,0,Desconhecida
+attr posicaoPista,12,Adjacentes
+attr posicaoPista,13,Superpostas
+attr posicaoPista,97,Não aplicável
+attr necessidadeManutencao,0,Desconhecido
+attr necessidadeManutencao,1,Sim
+attr necessidadeManutencao,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Passag_Elevada_Viaduto
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoPassagViad,5,Passagem elevada
+attr tipoPassagViad,6,Viaduto
+attr modalUso,4,Rodoviário
+attr modalUso,5,Ferroviário
+attr modalUso,8,Rodoferroviário
+attr modalUso,9,Aeroportuário
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr posicaoPista,0,Desconhecida
+attr posicaoPista,12,Adjacentes
+attr posicaoPista,13,Superpostas
+attr posicaoPista,97,Não aplicável
+attr necessidadeManutencao,0,Desconhecido
+attr necessidadeManutencao,1,Sim
+attr necessidadeManutencao,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Estrut_Apoio
+attr modalUso,4,Rodoviário
+attr modalUso,5,Ferroviário
+attr modalUso,6,Metroviário
+attr modalUso,98,Misto
+attr tipoEstrut,0,Desconhecido
+attr tipoEstrut,1,Estação
+attr tipoEstrut,2,Comércio e serviços
+attr tipoEstrut,3,Fiscalização
+attr tipoEstrut,4,Porto seco
+attr tipoEstrut,5,Terminal rodoviário
+attr tipoEstrut,6,Terminal urbano
+attr tipoEstrut,7,Terminal multimodal
+
+Class Patio
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr modalUso,4,Rodoviário
+attr modalUso,5,Ferroviário
+attr modalUso,6,Metroviário
+attr modalUso,9,Aeroportuário
+attr modalUso,14,Portuário
+attr modalUso,98,Misto
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Edif_Rodoviaria
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdifRod,0,Desconhecido
+attr tipoEdifRod,8,Terminal interestadual
+attr tipoEdifRod,9,Terminal urbano
+attr tipoEdifRod,10,Parada interestadual
+attr tipoEdifRod,12,Posto de pesagem
+attr tipoEdifRod,13,Posto de pedágio
+attr tipoEdifRod,14,Posto de fiscalização
+attr tipoEdifRod,15,Administrativa
+attr tipoEdifRod,99,Outros
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Posto_Combustivel
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Trilha_Picada
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Ciclovia
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr administracao,0,Desconhecida
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,4,Estadual/Municipal
+attr administracao,6,Particular
+attr revestimento,0,Desconhecido
+attr revestimento,1,Leito natural
+attr revestimento,2,Revestimento primário (solto)
+attr revestimento,3,Pavimentado
+attr revestimento,4,Calçado
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr trafego,0,Desconhecido
+attr trafego,1,Permanente
+attr trafego,2,Periódico
+
+Class Arruamento
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr revestimento,0,Desconhecido
+attr revestimento,1,Leito natural
+attr revestimento,2,Revestimento primário (solto)
+attr revestimento,3,Pavimentado
+attr revestimento,4,Calçado
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr trafego,0,Desconhecido
+attr trafego,1,Permanente
+attr trafego,2,Periódico
+attr canteiroDivisorio,1,Sim
+attr canteiroDivisorio,2,Não
+
+Class Travessia_Pedestre
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoTravessiaPed,0,Desconhecido
+attr tipoTravessiaPed,7,Passagem subterrânea
+attr tipoTravessiaPed,8,Passarela
+attr tipoTravessiaPed,9,Pinguela
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+
+Class Trecho_Ferroviario
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr posicaoRelativa,2,Na superfície
+attr posicaoRelativa,3,Elevado
+attr posicaoRelativa,6,Subterrâneo
+attr tipoTrechoFerrov,0,Desconhecido
+attr tipoTrechoFerrov,5,Bonde
+attr tipoTrechoFerrov,6,Aeromóvel
+attr tipoTrechoFerrov,7,Ferrovia (Trem)
+attr tipoTrechoFerrov,8,Metrovia (Metrô)
+attr bitola,0,Desconhecido
+attr bitola,1,Métrica
+attr bitola,2,Internacional
+attr bitola,3,Larga
+attr bitola,4,Mista métrica internacional
+attr bitola,5,Mista métrica larga
+attr bitola,6,Mista internacional larga
+attr eletrificada,0,Desconhecido
+attr eletrificada,1,Sim
+attr eletrificada,2,Não
+attr nrLinhas,0,Desconhecido
+attr nrLinhas,1,Simples
+attr nrLinhas,2,Dupla
+attr nrLinhas,3,Múltipla
+attr emArruamento,0,Desconhecido
+attr emArruamento,1,Sim
+attr emArruamento,2,Não
+attr jurisdicao,0,Desconhecida
+attr jurisdicao,1,Federal
+attr jurisdicao,2,Estadual
+attr jurisdicao,3,Municipal
+attr jurisdicao,6,Particular
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Privada
+attr administracao,7,Concessionada
+attr administracao,97,Não aplicável
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Girador_Ferroviario
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Edif_Metro_Ferroviaria
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr funcaoEdifMetroFerrov,0,Desconhecido
+attr funcaoEdifMetroFerrov,15,Administrativa
+attr funcaoEdifMetroFerrov,16,Estação ferroviária de passageiros
+attr funcaoEdifMetroFerrov,17,Estação metroviária
+attr funcaoEdifMetroFerrov,18,Terminal ferroviário de cargas
+attr funcaoEdifMetroFerrov,19,Terminal ferroviário de pasageiros e cargas
+attr funcaoEdifMetroFerrov,20,Oficina de manutenção
+attr funcaoEdifMetroFerrov,99,Outros
+attr multimodal,0,Desconhecido
+attr multimodal,1,Sim
+attr multimodal,2,Não
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Caminho_Aereo
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoCaminhoAereo,12,Teleférico
+attr tipoCaminhoAereo,99,Outros
+attr tipoUsoCaminhoAer,0,Desconhecido
+attr tipoUsoCaminhoAer,21,Passageiros
+attr tipoUsoCaminhoAer,22,Cargas
+attr tipoUsoCaminhoAer,98,Misto
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Funicular
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+
+Class Cremalheira
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Trecho_Duto
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoTrechoDuto,0,Desconhecido
+attr tipoTrechoDuto,1,Duto
+attr tipoTrechoDuto,2,Calha
+attr tipoTrechoDuto,3,Correia transportadora
+attr matTransp,0,Desconhecido
+attr matTransp,1,Água
+attr matTransp,2,Óleo
+attr matTransp,3,Petróleo
+attr matTransp,4,Nafta
+attr matTransp,5,Gás
+attr matTransp,6,Grãos
+attr matTransp,7,Minério
+attr matTransp,8,Efluentes
+attr matTransp,9,Esgoto
+attr matTransp,29,Gasolina
+attr matTransp,30,Álcool
+attr matTransp,31,Querosene
+attr matTransp,99,Outros
+attr setor,0,Desconhecido
+attr setor,1,Energético
+attr setor,2,Econômico
+attr setor,3,Abastecimento de água
+attr setor,4,Saneamento básico
+attr posicaoRelativa,0,Desconhecido
+attr posicaoRelativa,2,Na superfície
+attr posicaoRelativa,3,Elevado
+attr posicaoRelativa,4,Emerso
+attr posicaoRelativa,5,Submerso
+attr posicaoRelativa,6,Subterrâneo
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,99,Outros
+attr situacaoEspacial,12,Adjacentes
+attr situacaoEspacial,13,Sobrepostos
+attr situacaoEspacial,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+
+Class Ponto_Duto
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr relacionado,1,Ponto inicial
+attr relacionado,2,Ponto final
+attr relacionado,3,Local crítico
+attr relacionado,4,Depósito geral
+attr relacionado,5,Ponto de ramificação
+attr relacionado,17,Interrupção com a moldura
+
+Class Local_Critico
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoLocalCrit,1,Subestação de válvulas e/ou bombas
+attr tipoLocalCrit,2,Risco geotécnico
+attr tipoLocalCrit,3,Interferência com localidades
+attr tipoLocalCrit,4,Interferência com hidrografia
+attr tipoLocalCrit,5,Interferência com áreas especiais
+attr tipoLocalCrit,6,Interferência com vias
+attr tipoLocalCrit,7,Outras interferências
+
+Class Condutor_Hidrico
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoTrechoDuto,0,Desconhecido
+attr tipoTrechoDuto,2,Calha
+attr tipoTrechoDuto,4,Tubulação
+attr matTransp,1,Água
+attr setor,1,Energético
+attr posicaoRelativa,0,Desconhecido
+attr posicaoRelativa,2,Na superfície
+attr posicaoRelativa,3,Elevado
+attr posicaoRelativa,6,Subterrâneo
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,99,Outros
+attr situacaoEspacial,12,Adjacentes
+attr situacaoEspacial,13,Sobrepostos
+attr situacaoEspacial,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+
+Class Complexo_Aeroportuario
+attr tipoComplAero,23,Aeródromo
+attr tipoComplAero,24,Aeroporto
+attr tipoComplAero,25,Heliporto
+attr classificacao,0,Desconhecido
+attr classificacao,9,Internacional
+attr classificacao,10,Doméstico
+
+Class Pista_Ponto_Pouso
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoPista,9,Pista de pouso
+attr tipoPista,10,Pista de táxi
+attr tipoPista,11,Heliponto
+attr revestimento,0,Desconhecido
+attr revestimento,1,Leito natural
+attr revestimento,2,Revestimento primário (solto)
+attr revestimento,3,Pavimentado
+attr revestimento,4,Calçado
+attr usoPista,0,Desconhecido
+attr usoPista,6,Particular
+attr usoPista,11,Público
+attr usoPista,12,Militar
+attr usoPista,13,Público/Militar
+attr homologacao,0,Desconhecido
+attr homologacao,1,Sim
+attr homologacao,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Edif_Const_Aeroportuaria
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdifAero,0,Desconhecido
+attr tipoEdifAero,15,Administrativa
+attr tipoEdifAero,26,Terminal de passageiros
+attr tipoEdifAero,27,Terminal de cargas
+attr tipoEdifAero,28,Torre de controle
+attr tipoEdifAero,29,Hangar
+attr tipoEdifAero,99,Outros
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Hidrovia
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+
+Class Trecho_Hidroviario
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr regime,0,Desconhecido
+attr regime,1,Permanente
+attr regime,6,Sazonal
+
+Class Ponto_Hidroviario
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr relacionado,12,Queda d`água
+attr relacionado,13,Corredeira
+attr relacionado,14,Eclusa
+attr relacionado,16,Foz marítima
+attr relacionado,17,Interrupção com a moldura
+attr relacionado,24,Atracadouro
+attr relacionado,19,Barragem
+attr relacionado,21,Confluência
+attr relacionado,22,Complexo portuário
+attr relacionado,23,Entre trechos hidroviários
+
+Class Eclusa
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Complexo_Portuario
+attr tipoTransporte,0,Desconhecido
+attr tipoTransporte,21,Passageiros
+attr tipoTransporte,22,Cargas
+attr tipoTransporte,98,Misto
+attr tipoComplexoPortuario,0,Desconhecido
+attr tipoComplexoPortuario,30,Porto organizado
+attr tipoComplexoPortuario,31,Instalação portuária
+
+Class Edif_Constr_Portuaria
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdifPort,0,Desconhecido
+attr tipoEdifPort,15,Administrativa
+attr tipoEdifPort,26,Terminal de passageiros
+attr tipoEdifPort,27,Terminal de cargas
+attr tipoEdifPort,32,Armazém
+attr tipoEdifPort,33,Estaleiro
+attr tipoEdifPort,34,Dique de estaleiro
+attr tipoEdifPort,35,Rampa
+attr tipoEdifPort,36,Carreira
+attr tipoEdifPort,37,Terminal privativo
+attr tipoEdifPort,99,Outros
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Atracadouro
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoAtracad,0,Desconhecido
+attr tipoAtracad,38,Cais
+attr tipoAtracad,39,Cais flutuante
+attr tipoAtracad,40,Trapiche
+attr tipoAtracad,41,Molhe de atracação
+attr tipoAtracad,42,Píer
+attr tipoAtracad,43,Dolfim
+attr tipoAtracad,44,Desembarcadouro
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Fundeadouro
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr destinacaoFundeadouro,0,Desconhecido
+attr destinacaoFundeadouro,10,Fundeadouro recomendado sem limite definido
+attr destinacaoFundeadouro,11,Fundeadouro com designação alfanumérica
+attr destinacaoFundeadouro,12,Áreas de fundeio com limite definido
+attr destinacaoFundeadouro,13,Áreas de fundeio proibido
+attr destinacaoFundeadouro,99,Outros
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+
+Class Obstaculo_Navegacao
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoObst,4,Naturais
+attr tipoObst,5,Artificiais
+attr situacaoEmAgua,0,Desconhecido
+attr situacaoEmAgua,4,Emerso
+attr situacaoEmAgua,5,Submerso
+attr situacaoEmAgua,7,Cobre e Descobre
+
+Class Sinalizacao
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoSinal,0,Desconhecido
+attr tipoSinal,1,Bóia luminosa
+attr tipoSinal,2,Bóia cega
+attr tipoSinal,3,Bóia de amarração
+attr tipoSinal,4,Farol ou farolete
+attr tipoSinal,5,Barca farol
+attr tipoSinal,6,Sinalização de margem
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,4,Planejada
+attr situacaoFisica,5,Construída
+
+Class Faixa_Seguranca
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Passagem_Nivel
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Complexo_Gerad_Energ_Eletr
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,1,40.11-8 - Produção de Energia Elétrica
+attr tipoClasseCnae,99,Outros
+
+Class Edif_Energia
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdifEnergia,0,Desconhecido
+attr tipoEdifEnergia,1,Administração
+attr tipoEdifEnergia,2,Oficinas
+attr tipoEdifEnergia,3,Segurança
+attr tipoEdifEnergia,4,Depósito
+attr tipoEdifEnergia,5,Chaminé
+attr tipoEdifEnergia,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Est_Gerad_Energia_Eletr
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEstGerad,0,Desconhecido
+attr tipoEstGerad,5,Eólica
+attr tipoEstGerad,6,Solar
+attr tipoEstGerad,7,Maré-motriz
+attr tipoEstGerad,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,5,Construída
+attr destEnergElet,0,Desconhecido
+attr destEnergElet,1,Auto-Produção de Energia (APE)
+attr destEnergElet,2,Auto-Produção com Comercialização de Excedente (APE-COM)
+attr destEnergElet,3,Comercialização de Energia (COM)
+attr destEnergElet,4,Produção Independente de Energia (PIE)
+attr destEnergElet,5,Serviço Público (SP)
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Hidreletrica
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEstGerad,1,Hidrelétrica
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr destEnergElet,0,Desconhecido
+attr destEnergElet,1,Auto-Produção de Energia (APE)
+attr destEnergElet,2,Auto-Produção com Comercialização de Excedente (APE-COM)
+attr destEnergElet,3,Comercialização de Energia (COM)
+attr destEnergElet,4,Produção Independente de Energia (PIE)
+attr destEnergElet,5,Serviço Público (SP)
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Ponto_Trecho_Energia
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoPtoEnergia,0,Desconhecido
+attr tipoPtoEnergia,1,Estação geradora de energia
+attr tipoPtoEnergia,2,Subestação de transmissão
+attr tipoPtoEnergia,3,Subestação de distribuição
+attr tipoPtoEnergia,4,Ponto de ramificação
+attr tipoPtoEnergia,7,Mudança de atributo
+attr tipoPtoEnergia,9,Início ou fim de trecho
+
+Class Termeletrica
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEstGerad,2,Termelétrica
+attr tipoEstGerad,3,Nuclear
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoCombustivel,0,Desconhecido
+attr tipoCombustivel,1,Nuclear
+attr tipoCombustivel,3,Diesel
+attr tipoCombustivel,5,Gás
+attr tipoCombustivel,33,Carvão
+attr tipoCombustivel,98,Misto
+attr tipoCombustivel,99,Outros
+attr combRenovavel,0,Desconhecido
+attr combRenovavel,1,Sim
+attr combRenovavel,2,Não
+attr tipoMaqTermica,0,Desconhecido
+attr tipoMaqTermica,1,Turbina à gás (TBGS)
+attr tipoMaqTermica,2,Turbina à vapor (TBVP)
+attr tipoMaqTermica,3,Ciclo Combinado (CLCB)
+attr tipoMaqTermica,4,Motor de Combustão Interna (NCIA)
+attr geracao,0,Desconhecida
+attr geracao,1,Eletricidade - GER 0
+attr geracao,2,CoGeração
+attr destEnergElet,0,Desconhecido
+attr destEnergElet,1,Auto-Produção de Energia (APE)
+attr destEnergElet,2,Auto-Produção com Comercialização de Excedente (APE-COM)
+attr destEnergElet,3,Comercialização de Energia (COM)
+attr destEnergElet,4,Produção Independente de Energia (PIE)
+attr destEnergElet,5,Serviço Público (SP)
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Subest_Transm_Energ_Eletr
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,2,40.12-6 - Transmissão de Energia Elétrica
+attr tipoClasseCnae,3,40.14-2 - Distribuição de Energia Elétrica
+attr tipoClasseCnae,99,Outros
+attr tipoOperativo,0,Desconhecido
+attr tipoOperativo,1,Elevadora
+attr tipoOperativo,2,Abaixadora
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+
+Class Grupo_Transform_Energ
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Trecho_Energia
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr especie,0,Desconhecido
+attr especie,2,Transmissão
+attr especie,3,Distribuição
+attr posicaoRelativa,2,Na superfície
+attr posicaoRelativa,3,Elevado
+attr posicaoRelativa,4,Emerso
+attr posicaoRelativa,5,Submerso
+attr posicaoRelativa,6,Subterrâneo
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr emDuto,1,Sim
+attr emDuto,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Zona_Linhas_Energia_Com
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Torre_Energia
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr ovgd,0,Desconhecido
+attr ovgd,1,Sim
+attr ovgd,2,Não
+attr tipoTorre,0,Desconhecido
+attr tipoTorre,1,Autoportante
+attr tipoTorre,2,Estaiada
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Complexo_Comunicacao
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,5,64.20-3 - Telecomunicações
+attr tipoClasseCnae,99,Outros
+
+Class Edif_Comunic
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr modalidade,0,Desconhecido
+attr modalidade,1,Radiocomunicação
+attr modalidade,2,Radiodifusão/som e imagem
+attr modalidade,3,Telefonia
+attr modalidade,4,Dados
+attr modalidade,5,Radiodifusão/som
+attr modalidade,99,Outras
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoEdifComunic,0,Desconhecido
+attr tipoEdifComunic,1,Centro de operações
+attr tipoEdifComunic,2,Central comutação e transmissão
+attr tipoEdifComunic,3,Estação radio-base
+attr tipoEdifComunic,4,Estação repetidora
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Torre_Comunic
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr posicaoRelEdific,14,Isolado
+attr posicaoRelEdific,17,Adjacente a edificação
+attr posicaoRelEdific,18,Sobre edificação
+attr ovgd,0,Desconhecido
+attr ovgd,1,Sim
+attr ovgd,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Antena_Comunic
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr posicaoRelEdific,14,Isolado
+attr posicaoRelEdific,17,Adjacente a edificação
+attr posicaoRelEdific,18,Sobre edificação
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Trecho_Comunic
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoTrechoComunic,0,Desconhecido
+attr tipoTrechoComunic,4,Dados
+attr tipoTrechoComunic,6,Telegráfica
+attr tipoTrechoComunic,7,Telefônica
+attr tipoTrechoComunic,99,Outros
+attr posicaoRelativa,2,Na superfície
+attr posicaoRelativa,3,Elevado
+attr posicaoRelativa,4,Emerso
+attr posicaoRelativa,5,Submerso
+attr posicaoRelativa,6,Subterrâneo
+attr matConstr,0,Desconhecido
+attr matConstr,25,Fibra Ótica
+attr matConstr,26,Fio Metálico
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr emDuto,1,Sim
+attr emDuto,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Complexo_Abast_Agua
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,4,41.00-9 - Captação, Tratamento e Distribuição de Água
+attr tipoClasseCnae,99,Outros
+
+Class Edif_Abast_Agua
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdifAbast,0,Desconhecido
+attr tipoEdifAbast,1,Captação
+attr tipoEdifAbast,2,Tratamento
+attr tipoEdifAbast,3,Recalque
+attr tipoEdifAbast,98,Misto
+attr tipoEdifAbast,99,Outros
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+
+Class Dep_Abast_Agua
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoDepAbast,0,Desconhecido
+attr tipoDepAbast,1,Tanque
+attr tipoDepAbast,2,Caixa d`água
+attr tipoDepAbast,3,Cisterna
+attr tipoDepAbast,99,Outros
+attr situacaoAgua,0,Desconhecida
+attr situacaoAgua,6,Tratada
+attr situacaoAgua,7,Não tratada
+attr construcao,1,Fechada
+attr construcao,2,Aberta
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr finalidade,2,Tratamento
+attr finalidade,3,Recalque
+attr finalidade,4,Distribuição
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Complexo_Saneamento
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,34,90.00-0 - Limpeza Urbana e Esgoto e Atividades Relacionadas
+attr tipoClasseCnae,99,Outros
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,6,Particular
+attr administracao,7,Concessionada
+
+Class Edif_Saneamento
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdifSaneam,0,Desconhecido
+attr tipoEdifSaneam,3,Recalque
+attr tipoEdifSaneam,5,Tratamento de esgoto
+attr tipoEdifSaneam,6,Usina de reciclagem
+attr tipoEdifSaneam,7,Incinerador
+attr tipoEdifSaneam,99,Outros
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Dep_Saneamento
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoDepSaneam,0,Desconhecido
+attr tipoDepSaneam,1,Tanque
+attr tipoDepSaneam,4,Depósito de lixo
+attr tipoDepSaneam,5,Aterro sanitário
+attr tipoDepSaneam,6,Aterro controlado
+attr tipoDepSaneam,99,Outros
+attr construcao,1,Fechada
+attr construcao,2,Aberta
+attr construcao,97,Não aplicável
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr finalidade,0,Desconhecido
+attr finalidade,2,Tratamento
+attr finalidade,8,Armazenamento
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr residuo,0,Desconhecido
+attr residuo,1,Líquido
+attr residuo,2,Sólido
+attr tipoResiduo,0,Desconhecido
+attr tipoResiduo,9,Esgoto
+attr tipoResiduo,12,Lixo domiciliar e comercial
+attr tipoResiduo,13,Lixo tóxico
+attr tipoResiduo,14,Lixo séptico
+attr tipoResiduo,15,Chorume
+attr tipoResiduo,16,Vinhoto
+attr tipoResiduo,98,Misto
+attr tipoResiduo,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Cemiterio
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoCemiterio,0,Desconhecido
+attr tipoCemiterio,1,Crematório
+attr tipoCemiterio,2,Parque
+attr tipoCemiterio,3,Vertical
+attr tipoCemiterio,4,Comum
+attr tipoCemiterio,5,Túmulo isolado
+attr tipoCemiterio,98,Misto
+attr tipoCemiterio,99,Outros
+attr denominacaoAssociada,5,Cristã
+attr denominacaoAssociada,6,Israelita
+attr denominacaoAssociada,7,Muçulmana
+attr denominacaoAssociada,99,Outras
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Org_Ensino
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,15,Privada
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,1,80.1 - Educação Infantil e Ensino Fundamental
+attr tipoGrupoCnae,19,80.2 - Ensino Médio
+attr tipoGrupoCnae,3,80.3 - Ensino Superior
+attr tipoGrupoCnae,4,80.9 - Educação Profissional e Outras Atividades de Ensino
+attr tipoGrupoCnae,98,Misto
+attr tipoGrupoCnae,99,Outros
+
+Class Org_Pub_Ensino
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,15,Privada
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,1,80.1 - Educação Infantil e Ensino Fundamental
+attr tipoGrupoCnae,19,80.2 - Ensino Médio
+attr tipoGrupoCnae,3,80.3 - Ensino Superior
+attr tipoGrupoCnae,4,80.9 - Educação Profissional e Outras Atividades de Ensino
+attr tipoGrupoCnae,98,Misto
+attr tipoGrupoCnae,99,Outros
+attr tipoClasseCnae,0,Desconhecida
+attr tipoClasseCnae,7,75.12-4 - Regulação das Atividades Sociais e Culturais
+attr tipoClasseCnae,99,Outros
+attr poderPublico,1,Executivo
+
+Class Org_Militar_Ensino
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,1,80.1 - Educação Infantil e Ensino Fundamental
+attr tipoGrupoCnae,19,80.2 - Ensino Médio
+attr tipoGrupoCnae,3,80.3 - Ensino Superior
+attr tipoGrupoCnae,4,80.9 - Educação Profissional e Outras Atividades de Ensino
+attr tipoGrupoCnae,98,Misto
+attr tipoGrupoCnae,99,Outros
+attr tipoClasseCnae,0,Desconhecida
+attr tipoClasseCnae,11,75.22-1 - Defesa
+attr tipoClasseCnae,13,75.24-8 - Segurança e Ordem Pública
+attr tipoClasseCnae,99,Outros
+attr instituicao,0,Desconhecida
+attr instituicao,4,Marinha
+attr instituicao,5,Exército
+attr instituicao,6,Aeronáutica
+attr instituicao,7,Polícia militar
+attr instituicao,8,Corpo de bombeiros
+attr instituicao,99,Outros
+attr classificSigiloso,0,Desconhecido
+attr classificSigiloso,1,Sigiloso
+attr classificSigiloso,2,Ostensivo
+attr saude,0,Desconhecido
+attr saude,1,Sim
+attr saude,2,Não
+
+Class Org_Religiosa_Ensino
+attr administracao,15,Privada
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,1,80.1 - Educação Infantil e Ensino Fundamental
+attr tipoGrupoCnae,19,80.2 - Ensino Médio
+attr tipoGrupoCnae,3,80.3 - Ensino Superior
+attr tipoGrupoCnae,4,80.9 - Educação Profissional e Outras Atividades de Ensino
+attr tipoGrupoCnae,98,Misto
+attr tipoGrupoCnae,99,Outros
+attr tipoClasseCnae,0,Desconhecida
+attr tipoClasseCnae,35,91.91-0 - Atividades de Organizações Religiosas
+attr tipoClasseCnae,99,Outros
+
+Class Edif_Ensino
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,16,80.13-6 - Educação Infantil - Creche
+attr tipoClasseCnae,17,80.14-4 - Educação Infantil - Pré-Escola
+attr tipoClasseCnae,18,80.15-2 - Ensino Fundamental
+attr tipoClasseCnae,19,80.20-9 - Ensino Médio
+attr tipoClasseCnae,20,80.31-4 - Educação Superior - Graduação
+attr tipoClasseCnae,21,80.32-2 - Educação Superior - Graduação e Pós-Graduação
+attr tipoClasseCnae,22,80.33-0 - Educação Superior - Pós-Graduação e Extensão
+attr tipoClasseCnae,23,80.96-9 - Educação Profissional de Nível Técnico
+attr tipoClasseCnae,24,80.97-7 - Educação Profissional de Nível Tecnológico
+attr tipoClasseCnae,25,80.99-3 - Outras Atividades de Ensino
+attr tipoClasseCnae,98,Misto
+attr tipoClasseCnae,99,Outros
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Org_Religiosa
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,35,91.91-0 - Atividades de Organizações Religiosas
+attr tipoClasseCnae,99,Outros
+
+Class Edif_Religiosa
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdifRelig,0,Desconhecido
+attr tipoEdifRelig,1,Igreja
+attr tipoEdifRelig,2,Templo
+attr tipoEdifRelig,3,Centro
+attr tipoEdifRelig,4,Mosteiro
+attr tipoEdifRelig,5,Convento
+attr tipoEdifRelig,6,Mesquita
+attr tipoEdifRelig,7,Sinagoga
+attr tipoEdifRelig,99,Outros
+attr ensino,0,Desconhecido
+attr ensino,1,Sim
+attr ensino,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Complexo_Lazer
+attr tipoComplexoLazer,0,Desconhecido
+attr tipoComplexoLazer,1,Complexo recreativo
+attr tipoComplexoLazer,2,Clube
+attr tipoComplexoLazer,3,Autódromo
+attr tipoComplexoLazer,4,Parque de diversões
+attr tipoComplexoLazer,5,Parque urbano
+attr tipoComplexoLazer,6,Parque aquático
+attr tipoComplexoLazer,7,Parque temático
+attr tipoComplexoLazer,8,Hipódromo
+attr tipoComplexoLazer,9,Hípica
+attr tipoComplexoLazer,10,Estande de tiro
+attr tipoComplexoLazer,11,Campo de golfe
+attr tipoComplexoLazer,12,Parque de eventos culturais
+attr tipoComplexoLazer,13,Camping
+attr tipoComplexoLazer,14,Complexo desportivo
+attr tipoComplexoLazer,15,Zoológico
+attr tipoComplexoLazer,16,Jardim botânico
+attr administracao,0,Desconhecido
+attr administracao,1,Mista
+attr administracao,2,Federal
+attr administracao,3,Estadual
+attr administracao,4,Municipal
+attr administracao,15,Privada
+attr tipoDivisaoCnae,0,Desconhecido
+attr tipoDivisaoCnae,92,Atividades Recreativas, Culturais e Desportivas
+attr tipoDivisaoCnae,99,Outros
+
+Class Edif_Const_Lazer
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoEdifLazer,0,Desconhecido
+attr tipoEdifLazer,1,Estádio
+attr tipoEdifLazer,2,Ginásio
+attr tipoEdifLazer,3,Museu
+attr tipoEdifLazer,4,Teatro
+attr tipoEdifLazer,5,Anfiteatro
+attr tipoEdifLazer,6,Cinema
+attr tipoEdifLazer,7,Centro cultural
+attr tipoEdifLazer,8,Plataforma de pesca
+attr tipoEdifLazer,9,Chaminé
+attr tipoEdifLazer,99,Outros
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Piscina
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Campo_Quadra
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoCampoQuadra,0,Desconhecido
+attr tipoCampoQuadra,1,Futebol
+attr tipoCampoQuadra,2,Basquete
+attr tipoCampoQuadra,3,Vôlei
+attr tipoCampoQuadra,4,Pólo
+attr tipoCampoQuadra,5,Hipismo
+attr tipoCampoQuadra,6,Poliesportiva
+attr tipoCampoQuadra,7,Tênis
+attr tipoCampoQuadra,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Edif_Const_Turistica
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdifTurist,0,Desconhecido
+attr tipoEdifTurist,9,Cruzeiro
+attr tipoEdifTurist,10,Estátua
+attr tipoEdifTurist,11,Mirante
+attr tipoEdifTurist,12,Monumento
+attr tipoEdifTurist,13,Panteão
+attr tipoEdifTurist,99,Outros
+attr ovgd,0,Desconhecido
+attr ovgd,1,Sim
+attr ovgd,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Ponto_Turistico
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoPontoTuristico,0,Desconhecido
+attr tipoPontoTuristico,1,Elemento da Natureza
+attr tipoPontoTuristico,2,Artístico
+attr tipoPontoTuristico,3,Histórico
+attr tipoPontoTuristico,4,Cultural
+attr tipoPontoTuristico,99,Outros
+
+Class Ruina
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Pista_Competicao
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoPista,0,Desconhecido
+attr tipoPista,1,Atletismo
+attr tipoPista,2,Ciclismo
+attr tipoPista,3,Motociclismo
+attr tipoPista,4,Automobilismo
+attr tipoPista,5,Corrida de cavalos
+attr tipoPista,98,Misto
+attr tipoPista,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Arquibancada
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Coreto_Tribuna
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Org_Comerc_Serv
+attr tipoDivisaoCnae,0,Desconhecido
+attr tipoDivisaoCnae,50,Comércio e reparação de veículos automotores e motocicletas; e comércio a varejo de combustíveis
+attr tipoDivisaoCnae,51,Comércio por atacado e representantes comerciais e agentes do comércio
+attr tipoDivisaoCnae,52,Comércio varejista e reparação de objetos pessoais e domésticos
+attr tipoDivisaoCnae,55,Alojamento e Alimentação
+attr tipoDivisaoCnae,74,Serviços Prestados principalmente às empresas (organizações)
+attr tipoDivisaoCnae,99,Outros
+attr finalidade,0,Desconhecida
+attr finalidade,1,Comercial
+attr finalidade,2,Serviço
+attr finalidade,98,Mista
+
+Class Edif_Comerc_Serv
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr tipoEdifComercServ,0,Desconhecido
+attr tipoEdifComercServ,3,Centro Comercial
+attr tipoEdifComercServ,4,Mercado
+attr tipoEdifComercServ,5,Centro de convenções
+attr tipoEdifComercServ,6,Feira
+attr tipoEdifComercServ,7,Hotel/motel/pousada
+attr tipoEdifComercServ,8,Restaurante
+attr tipoEdifComercServ,99,Outros
+attr finalidade,0,Desconhecida
+attr finalidade,1,Comercial
+attr finalidade,2,Serviço
+attr finalidade,98,Mista
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Deposito_Geral
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoDepGeral,0,Desconhecido
+attr tipoDepGeral,8,Galpão
+attr tipoDepGeral,9,Silo
+attr tipoDepGeral,10,Composteira
+attr tipoDepGeral,11,Depósito frigorífico
+attr tipoDepGeral,32,Armazém
+attr tipoDepGeral,99,Outros
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr tipoExposicao,0,Desconhecido
+attr tipoExposicao,3,Fechado
+attr tipoExposicao,4,Coberto
+attr tipoExposicao,5,Céu aberto
+attr tipoExposicao,99,Outros
+attr tipoProdutoResiduo,0,Desconhecido
+attr tipoProdutoResiduo,3,Petróleo
+attr tipoProdutoResiduo,5,Gás
+attr tipoProdutoResiduo,6,Grãos
+attr tipoProdutoResiduo,16,Vinhoto
+attr tipoProdutoResiduo,17,Estrume
+attr tipoProdutoResiduo,18,Cascalho
+attr tipoProdutoResiduo,19,Semente
+attr tipoProdutoResiduo,20,Inseticida
+attr tipoProdutoResiduo,21,Folhagens
+attr tipoProdutoResiduo,22,Pedra
+attr tipoProdutoResiduo,23,Granito
+attr tipoProdutoResiduo,24,Mármore
+attr tipoProdutoResiduo,25,Bauxita
+attr tipoProdutoResiduo,26,Manganês
+attr tipoProdutoResiduo,27,Talco
+attr tipoProdutoResiduo,28,Óleo diesel
+attr tipoProdutoResiduo,29,Gasolina
+attr tipoProdutoResiduo,30,Álcool
+attr tipoProdutoResiduo,31,Querosene
+attr tipoProdutoResiduo,32,Cobre
+attr tipoProdutoResiduo,33,Carvão
+attr tipoProdutoResiduo,34,Sal
+attr tipoProdutoResiduo,35,Ferro
+attr tipoProdutoResiduo,36,Escória
+attr tipoProdutoResiduo,41,Forragem
+attr tipoProdutoResiduo,98,Misto
+attr tipoProdutoResiduo,99,Outros
+attr tipoConteudo,0,Desconhecido
+attr tipoConteudo,1,Insumo
+attr tipoConteudo,2,Produto
+attr tipoConteudo,3,Resíduo
+attr unidadeVolume,0,Desconhecido
+attr unidadeVolume,1,L
+attr unidadeVolume,2,M3
+attr tratamento,0,Desconhecido
+attr tratamento,1,Sim
+attr tratamento,2,Não
+attr tratamento,97,Não aplicável
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Org_Industrial
+attr tipoSecaoCnae,0,Desconhecido
+attr tipoSecaoCnae,2,D - Indústrias de Transformação
+attr tipoSecaoCnae,3,F - Construção
+attr tipoSecaoCnae,99,Outros
+
+Class Madeireira
+attr tipoSecaoCnae,0,Desconhecido
+attr tipoSecaoCnae,2,D - Indústrias de Transformação
+attr tipoSecaoCnae,99,Outros
+
+Class Frigorifico_Matadouro
+attr tipoSecaoCnae,0,Desconhecido
+attr tipoSecaoCnae,2,D - Indústrias de Transformação
+attr tipoSecaoCnae,99,Outros
+attr frigorifico,0,Desconhecido
+attr frigorifico,1,Sim
+attr frigorifico,2,Não
+
+Class Area_Industrial
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Edif_Industrial
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr chamine,1,Sim
+attr chamine,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,4,Rocha
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr tipoDivisaoCnae,0,Desconhecido
+attr tipoDivisaoCnae,15,Fabricação Alimentícia e Bebidas
+attr tipoDivisaoCnae,16,Fabricação de Produtos do Fumo
+attr tipoDivisaoCnae,17,Fabricação de Produtos Têxteis
+attr tipoDivisaoCnae,18,Confecção de artigos do Vestuário e Acessórios
+attr tipoDivisaoCnae,19,Preparação de Couros e Fabricação de Artefatos de couro, Artigos de Viagem e Calçados
+attr tipoDivisaoCnae,20,Fabricação de produtos de Madeira e Celulose
+attr tipoDivisaoCnae,21,Fabricação de Celulose, papel e Produtos de Papel
+attr tipoDivisaoCnae,22,Edição Impressão e Reprodução de Gravações
+attr tipoDivisaoCnae,23,Fabricação de Coque, Refino de Petróleo, Elaboração de Combustíveis Nucleares e Produção de Álcool
+attr tipoDivisaoCnae,24,Fabricação de Produtos Químicos
+attr tipoDivisaoCnae,25,Fabricação de Artigos de Borracha e Material Plástico
+attr tipoDivisaoCnae,26,Fabricação de Produtos de Minerais Não-Metálicos
+attr tipoDivisaoCnae,27,Metalurgia Básica
+attr tipoDivisaoCnae,28,Fabricação de Produtos de Metal, exclusive Máquinas e Equipamentos
+attr tipoDivisaoCnae,29,Fabricação de Máquinas e Equipamentos
+attr tipoDivisaoCnae,30,Fabricação de Máquinas de Escritório e Equipamentos de Informática
+attr tipoDivisaoCnae,31,Fabricação de Máquinas, Aparelhos e Materiais Elétricos
+attr tipoDivisaoCnae,32,Fabricação de Material Eletrônico, de Aparelhos e Equipamentos de Comunicações
+attr tipoDivisaoCnae,33,Fabricação de Equipamentos de Instrumentação Médico-Hospitalares, Instrumentos de Precisão e Ópticos, Equipamentos para Automação Industrial, Cronômetros e Relógios
+attr tipoDivisaoCnae,34,Fabricação e Montagem de Veículos Automotores, Reboques e Carrocerias
+attr tipoDivisaoCnae,35,Fabricação de Outros Equipamentos de Transporte
+attr tipoDivisaoCnae,36,Fabricação de Móveis e Industrias Diversas
+attr tipoDivisaoCnae,37,Reciclagem
+attr tipoDivisaoCnae,45,Construção
+attr tipoDivisaoCnae,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Org_Ext_Mineral
+attr tipoSecaoCnae,0,Desconhecido
+attr tipoSecaoCnae,1,C - Indústrias Extrativas
+attr tipoSecaoCnae,99,Outros
+attr tipoProdutoResiduo,0,Desconhecido
+attr tipoProdutoResiduo,3,Petróleo
+attr tipoProdutoResiduo,5,Gás
+attr tipoProdutoResiduo,18,Cascalho
+attr tipoProdutoResiduo,22,Pedra (brita)
+attr tipoProdutoResiduo,23,Granito
+attr tipoProdutoResiduo,24,Mármore
+attr tipoProdutoResiduo,25,Bauxita
+attr tipoProdutoResiduo,26,Manganês
+attr tipoProdutoResiduo,27,Talco
+attr tipoProdutoResiduo,32,Cobre
+attr tipoProdutoResiduo,33,Carvão mineral
+attr tipoProdutoResiduo,34,Sal
+attr tipoProdutoResiduo,35,Ferro
+attr tipoProdutoResiduo,37,Ouro
+attr tipoProdutoResiduo,38,Diamante
+attr tipoProdutoResiduo,39,Prata
+attr tipoProdutoResiduo,40,Pedras preciosas
+attr tipoProdutoResiduo,42,Areia
+attr tipoProdutoResiduo,43,Saibro / Piçarra
+attr tipoProdutoResiduo,99,Outros
+attr tipoOrgExtMin,0,Desconhecido
+attr tipoOrgExtMin,1,Poço
+attr tipoOrgExtMin,4,Mina
+attr tipoOrgExtMin,5,Garimpo
+attr tipoOrgExtMin,6,Salina
+attr tipoOrgExtMin,7,Pedreira
+attr tipoOrgExtMin,8,Ponto de prospecção
+attr tipoOrgExtMin,99,Outros
+
+Class Ext_Mineral
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoSecaoCnae,0,Desconhecido
+attr tipoSecaoCnae,1,C - Indústrias Extrativas
+attr tipoSecaoCnae,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoExtMin,0,Desconhecido
+attr tipoExtMin,1,Poço
+attr tipoExtMin,4,Mina
+attr tipoExtMin,5,Garimpo
+attr tipoExtMin,6,Salina
+attr tipoExtMin,7,Pedreira
+attr tipoExtMin,8,Ponto de prospecção
+attr tipoExtMin,99,Outros
+attr tipoProdutoResiduo,0,Desconhecido
+attr tipoProdutoResiduo,3,Petróleo
+attr tipoProdutoResiduo,5,Gás
+attr tipoProdutoResiduo,18,Cascalho
+attr tipoProdutoResiduo,22,Pedra (brita)
+attr tipoProdutoResiduo,23,Granito
+attr tipoProdutoResiduo,24,Mármore
+attr tipoProdutoResiduo,25,Bauxita
+attr tipoProdutoResiduo,26,Manganês
+attr tipoProdutoResiduo,27,Talco
+attr tipoProdutoResiduo,32,Cobre
+attr tipoProdutoResiduo,33,Carvão mineral
+attr tipoProdutoResiduo,34,Sal
+attr tipoProdutoResiduo,35,Ferro
+attr tipoProdutoResiduo,37,Ouro
+attr tipoProdutoResiduo,38,Diamante
+attr tipoProdutoResiduo,39,Prata
+attr tipoProdutoResiduo,40,Pedras preciosas
+attr tipoProdutoResiduo,42,Areia
+attr tipoProdutoResiduo,43,Saibro / Piçarra
+attr tipoProdutoResiduo,99,Outros
+attr tipoPocoMina,0,Desconhecido
+attr tipoPocoMina,2,Horizontal
+attr tipoPocoMina,3,Vertical
+attr tipoPocoMina,97,Não aplicável
+attr procExtracao,0,Desconhecido
+attr procExtracao,1,Mecanizado
+attr procExtracao,2,Manual
+attr formaExtracao,0,Desconhecido
+attr formaExtracao,5,A céu aberto
+attr formaExtracao,6,Subterrânea
+attr atividade,0,Desconhecido
+attr atividade,9,Prospecção
+attr atividade,10,Produção
+
+Class Edif_Ext_Mineral
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr tipoDivisaoCnae,0,Desconhecido
+attr tipoDivisaoCnae,10,Extração de Carvão Mineral
+attr tipoDivisaoCnae,11,Extração de Petróleo e Serviços Relacionados
+attr tipoDivisaoCnae,13,Extração de Minerais Metálicos
+attr tipoDivisaoCnae,14,Extração de Minerais Não-Metálicos
+attr tipoDivisaoCnae,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Plataforma
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoPlataforma,0,Desconhecido
+attr tipoPlataforma,3,Petróleo
+attr tipoPlataforma,5,Gás
+attr tipoPlataforma,98,Misto
+
+Class Org_Agrop_Ext_Veg_Pesca
+attr tipoDivisaoCnae,0,Desconhecido
+attr tipoDivisaoCnae,1,Agricultura, Pecuária e serviços Relacionados
+attr tipoDivisaoCnae,2,Silvicultura, Exploração Florestal e Serviços Relacionados
+attr tipoDivisaoCnae,5,Pesca, Aqüicultura e Serviços Relacionados
+
+Class Area_Agrop_Ext_Veg_Pesca
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr destinadoA,0,Desconhecido
+attr destinadoA,5,Madeira
+attr destinadoA,18,Açaí
+attr destinadoA,34,Turfa
+attr destinadoA,35,Látex
+attr destinadoA,36,Castanha
+attr destinadoA,37,Carnaúba
+attr destinadoA,38,Coco
+attr destinadoA,39,Jaborandi
+attr destinadoA,40,Palmito
+attr destinadoA,41,Babaçu
+attr destinadoA,43,Pecuária
+attr destinadoA,44,Pesca
+attr destinadoA,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Edif_Agrop_Ext_Veg_Pesca
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoEdifAgropec,0,Desconhecido
+attr tipoEdifAgropec,12,Sede operacional de fazenda
+attr tipoEdifAgropec,13,Aviário
+attr tipoEdifAgropec,14,Apiário
+attr tipoEdifAgropec,15,Viveiro de plantas
+attr tipoEdifAgropec,16,Viveiro para acquicultura
+attr tipoEdifAgropec,17,Pocilga
+attr tipoEdifAgropec,18,Curral
+attr tipoEdifAgropec,99,Outros
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Equip_Agropec
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr tipoEquipAgropec,0,Desconhecido
+attr tipoEquipAgropec,1,Pivô central
+attr tipoEquipAgropec,99,Outros
+attr matConstr,0,Desconhecido
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Edificada
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Area_Urbana_Cidade
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Area_Urbana_Isolada_Vila
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Cidade
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoCidade,1,Cidade
+attr tipoCidade,2,Capital estadual
+attr tipoCidade,3,Capital federal
+
+Class Aglomerado_Rural
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoAglomerado,1,De extensão urbana
+attr tipoAglomerado,2,Povoado
+attr tipoAglomerado,3,Núcleo
+attr tipoAglomerado,4,Outros aglomerados isolados
+
+Class Vila
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Nome_Local
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Hab_Indigena
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr coletiva,0,Desconhecido
+attr coletiva,1,Sim
+attr coletiva,2,Não
+attr isolada,0,Desconhecido
+attr isolada,1,Sim
+attr isolada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Edif_Habitacional
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Edificacao
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Pto_Ref_Geod_Topo
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr proximidade,0,Desconhecida
+attr proximidade,14,Isolado
+attr proximidade,15,Adjacente
+attr proximidade,16,Coincidente
+attr tipoRef,1,Altimétrico
+attr tipoRef,2,Planimétrico
+attr tipoRef,3,Planialtimétrico
+attr tipoRef,4,Gravimétrico
+attr tipoPtoRefGeodTopo,0,Desconhecido
+attr tipoPtoRefGeodTopo,1,Vértice de Triangulação - VT
+attr tipoPtoRefGeodTopo,2,Referência de Nível - RN
+attr tipoPtoRefGeodTopo,3,Estação Gravimétrica - EG
+attr tipoPtoRefGeodTopo,4,Estação de Poligonal - EP
+attr tipoPtoRefGeodTopo,5,Ponto Astronômico - PA
+attr tipoPtoRefGeodTopo,6,Ponto Barométrico - B
+attr tipoPtoRefGeodTopo,7,Ponto Trigonométrico - RV
+attr tipoPtoRefGeodTopo,8,Ponto de Satélite-SAT
+attr tipoPtoRefGeodTopo,99,Outros
+attr rede,0,Desconhecida
+attr rede,2,Estadual
+attr rede,3,Municipal
+attr rede,14,Nacional
+attr rede,15,Privada
+attr sistemaGeodesico,1,SAD-69
+attr sistemaGeodesico,2,SIRGAS2000
+attr sistemaGeodesico,3,WGS-84
+attr sistemaGeodesico,4,Córrego Alegre
+attr sistemaGeodesico,5,Astro Chuá
+attr sistemaGeodesico,6,Outra referência
+attr referencialAltim,1,Torres
+attr referencialAltim,2,Imbituba
+attr referencialAltim,3,Santana
+attr referencialAltim,4,Local
+attr referencialAltim,6,Outra referência
+attr referencialGrav,0,Desconhecido
+attr referencialGrav,1,Postdam 1930
+attr referencialGrav,2,IGSN71
+attr referencialGrav,3,Absoluto
+attr referencialGrav,4,Local
+attr referencialGrav,97,Não aplicável
+attr situacaoMarco,0,Desconhecido
+attr situacaoMarco,1,Bom
+attr situacaoMarco,2,Destruído
+attr situacaoMarco,3,Destruído sem chapa
+attr situacaoMarco,4,Destruído com chapa danificada
+attr situacaoMarco,5,Não encontrado
+attr situacaoMarco,6,Não visitado
+attr situacaoMarco,7,Não construído
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Pto_Controle
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoRef,1,Altimétrico
+attr tipoRef,2,Planimétrico
+attr tipoRef,3,Planialtimétrico
+attr tipoPtoControle,9,Ponto de Controle
+attr tipoPtoControle,12,Centro Perspectivo
+attr tipoPtoControle,13,Ponto Fotogramétrico
+attr tipoPtoControle,99,Outros
+attr materializado,0,Desconhecido
+attr materializado,1,Sim
+attr materializado,2,Não
+attr sistemaGeodesico,1,SAD-69
+attr sistemaGeodesico,2,SIRGAS2000
+attr sistemaGeodesico,3,WGS-84
+attr sistemaGeodesico,4,Córrego Alegre
+attr sistemaGeodesico,5,Astro Chuá
+attr sistemaGeodesico,6,Outra referência
+attr referencialAltim,1,Torres
+attr referencialAltim,2,Imbituba
+attr referencialAltim,3,Santana
+attr referencialAltim,4,Local
+attr referencialAltim,5,Outra referência
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Pto_Est_Med_Fenomenos
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoPtoEstMed,0,Desconhecido
+attr tipoPtoEstMed,1,Pto_Estação Climatológica Principal - CP
+attr tipoPtoEstMed,2,Pto_Estação Climatológica Auxiliar - CA
+attr tipoPtoEstMed,3,Pto_Estação Agroclimatológica - AC
+attr tipoPtoEstMed,4,Pto_Estação Pluviométrica - PL
+attr tipoPtoEstMed,5,Pto_Estação Eólica - EO
+attr tipoPtoEstMed,6,Pto_Estação Evaporimétrica - EV
+attr tipoPtoEstMed,7,Pto_Estação Solarimétrica - SL
+attr tipoPtoEstMed,8,Pto_Estação de Radar Meteorológico - RD
+attr tipoPtoEstMed,9,Pto_Estação de Radiossonda - RS
+attr tipoPtoEstMed,10,Pto_Estação Fluviométrica - FL
+attr tipoPtoEstMed,11,Pto_Estação Maregráfica - MA
+attr tipoPtoEstMed,12,Pto_Estação de Marés Terrestres - Crosta
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Est_Med_Fenomenos
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEstMed,0,Desconhecido
+attr tipoEstMed,1,Estação Climatológica Principal - CP
+attr tipoEstMed,2,Estação Climatológica Auxiliar - CA
+attr tipoEstMed,3,Estação Agroclimatológica - AC
+attr tipoEstMed,4,Estação Pluviométrica - PL
+attr tipoEstMed,5,Estação Eólica - EO
+attr tipoEstMed,6,Estação Evaporimétrica - EV
+attr tipoEstMed,7,Estação Solarimétrica - SL
+attr tipoEstMed,8,Estação de Radar Meteorológico - RD
+attr tipoEstMed,9,Estação de Radiossonda - RS
+attr tipoEstMed,10,Estação Fluviométrica - FL
+attr tipoEstMed,11,Estação Maregráfica - MA
+attr tipoEstMed,12,Estação de Marés Terrestres - Crosta
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Edif_Constr_Est_Med
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Marco_De_Limite
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoMarcoLim,1,Internacional
+attr tipoMarcoLim,2,Estadual
+attr tipoMarcoLim,3,Municipal
+attr tipoMarcoLim,99,Outros
+attr sistemaGeodesico,1,SAD-69
+attr sistemaGeodesico,2,SIRGAS2000
+attr sistemaGeodesico,3,WGS-84
+attr sistemaGeodesico,4,Córrego Alegre
+attr sistemaGeodesico,5,Astro Chuá
+attr sistemaGeodesico,6,Outra referência
+attr referencialAltim,1,Torres
+attr referencialAltim,2,Imbituba
+attr referencialAltim,3,Santana
+attr referencialAltim,4,Local
+attr referencialAltim,5,Outra referência
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Linha_De_Limite
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr coincideComDentroDe,2,Contorno massa d'água (Margem)
+attr coincideComDentroDe,3,Cumeada
+attr coincideComDentroDe,4,Linha seca
+attr coincideComDentroDe,5,Costa visível da carta
+attr coincideComDentroDe,6,Rodovia
+attr coincideComDentroDe,7,Ferrovia
+attr coincideComDentroDe,8,Trecho curso d'água (Centro)
+attr coincideComDentroDe,96,Não identificado
+attr tipoRepresentacao,0,Não representar
+attr tipoRepresentacao,1,Contínua
+attr tipoRepresentacao,2,A cada terceira parte
+attr tipoRepresentacao,3,A cada terceira parte e alternada
+
+Class Limite_Politico_Adm
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoLimPol,1,Internacional
+attr tipoLimPol,2,Estadual
+attr tipoLimPol,3,Municipal
+attr coincideComDentroDe,2,Contorno massa d'água (Margem)
+attr coincideComDentroDe,3,Cumeada
+attr coincideComDentroDe,4,Linha seca
+attr coincideComDentroDe,5,Costa visível da carta
+attr coincideComDentroDe,6,Rodovia
+attr coincideComDentroDe,7,Ferrovia
+attr coincideComDentroDe,8,Trecho curso d'água (Centro)
+attr coincideComDentroDe,96,Não identificado
+attr tipoRepresentacao,0,Não representar
+attr tipoRepresentacao,1,Contínua
+attr tipoRepresentacao,2,A cada terceira parte
+attr tipoRepresentacao,3,A cada terceira parte e alternada
+
+Class Limite_Intra_Munic_Adm
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoLimIntraMun,1,Distrital
+attr tipoLimIntraMun,2,Sub-distrital
+attr tipoLimIntraMun,3,Perímetro urbano legal
+attr tipoLimIntraMun,4,Região administrativa
+attr tipoLimIntraMun,5,Bairro
+attr coincideComDentroDe,2,Contorno massa d'água (Margem)
+attr coincideComDentroDe,3,Cumeada
+attr coincideComDentroDe,4,Linha seca
+attr coincideComDentroDe,5,Costa visível da carta
+attr coincideComDentroDe,6,Rodovia
+attr coincideComDentroDe,7,Ferrovia
+attr coincideComDentroDe,8,Trecho curso d'água (Centro)
+attr coincideComDentroDe,96,Não identificado
+attr tipoRepresentacao,0,Não representar
+attr tipoRepresentacao,1,Contínua
+attr tipoRepresentacao,2,A cada terceira parte
+attr tipoRepresentacao,3,A cada terceira parte e alternada
+
+Class Limite_Operacional
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoLimOper,0,Desconhecido
+attr tipoLimOper,1,Setor censitário
+attr tipoLimOper,2,Linha de base normal
+attr tipoLimOper,3,Linha de base reta
+attr tipoLimOper,4,Costa visível da carta
+attr tipoLimOper,5,Linha preamar média - 1831
+attr tipoLimOper,6,Linha média de enchente - ORD
+attr coincideComDentroDe,2,Contorno massa d'água (Margem)
+attr coincideComDentroDe,3,Cumeada
+attr coincideComDentroDe,4,Linha seca
+attr coincideComDentroDe,5,Costa visível da carta
+attr coincideComDentroDe,6,Rodovia
+attr coincideComDentroDe,7,Ferrovia
+attr coincideComDentroDe,8,Trecho curso d'água (Centro)
+attr coincideComDentroDe,96,Não identificado
+attr tipoRepresentacao,0,Não representar
+attr tipoRepresentacao,1,Contínua
+attr tipoRepresentacao,2,A cada terceira parte
+attr tipoRepresentacao,3,A cada terceira parte e alternada
+
+Class Outros_Limites_Oficiais
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoOutLimOfic,0,Desconhecido
+attr tipoOutLimOfic,1,Mar territorial
+attr tipoOutLimOfic,2,Zona contígua
+attr tipoOutLimOfic,3,Zona econômica exclusiva
+attr tipoOutLimOfic,4,Lateral marítima
+attr tipoOutLimOfic,5,Faixa de fronteira
+attr tipoOutLimOfic,6,Plataforma continental jurídica
+attr tipoOutLimOfic,99,Outros
+attr coincideComDentroDe,2,Contorno massa d'água (Margem)
+attr coincideComDentroDe,3,Cumeada
+attr coincideComDentroDe,4,Linha seca
+attr coincideComDentroDe,5,Costa visível da carta
+attr coincideComDentroDe,6,Rodovia
+attr coincideComDentroDe,7,Ferrovia
+attr coincideComDentroDe,8,Trecho curso d'água (Centro)
+attr coincideComDentroDe,96,Não identificado
+attr tipoRepresentacao,0,Não representar
+attr tipoRepresentacao,1,Contínua
+attr tipoRepresentacao,2,A cada terceira parte
+attr tipoRepresentacao,3,A cada terceira parte e alternada
+
+Class Limite_Particular
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr coincideComDentroDe,2,Contorno massa d'água (Margem)
+attr coincideComDentroDe,3,Cumeada
+attr coincideComDentroDe,4,Linha seca
+attr coincideComDentroDe,5,Costa visível da carta
+attr coincideComDentroDe,6,Rodovia
+attr coincideComDentroDe,7,Ferrovia
+attr coincideComDentroDe,8,Trecho curso d'água (Centro)
+attr coincideComDentroDe,96,Não identificado
+attr tipoRepresentacao,0,Não representar
+attr tipoRepresentacao,1,Contínua
+attr tipoRepresentacao,2,A cada terceira parte
+attr tipoRepresentacao,3,A cada terceira parte e alternada
+
+Class Limite_Area_Especial
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoLimAreaEsp,1,Terra pública
+attr tipoLimAreaEsp,2,Terra indígena
+attr tipoLimAreaEsp,3,Quilombo
+attr tipoLimAreaEsp,4,Assentamento Rural
+attr tipoLimAreaEsp,5,Amazônia legal
+attr tipoLimAreaEsp,6,Faixa de fronteira
+attr tipoLimAreaEsp,7,Polígono das secas
+attr tipoLimAreaEsp,8,Área de preservação permanente
+attr tipoLimAreaEsp,9,Reserva legal
+attr tipoLimAreaEsp,10,Mosaico
+attr tipoLimAreaEsp,11,Distrito florestal
+attr tipoLimAreaEsp,12,Corredor ecológico
+attr tipoLimAreaEsp,13,Floresta pública
+attr tipoLimAreaEsp,14,Sítios RAMSAR
+attr tipoLimAreaEsp,15,Sítios do patrimônio
+attr tipoLimAreaEsp,16,Reserva da Biosfera
+attr tipoLimAreaEsp,17,Reserva Florestal
+attr tipoLimAreaEsp,18,Reserva ecológica
+attr tipoLimAreaEsp,19,Estação biológica
+attr tipoLimAreaEsp,20,Horto florestal
+attr tipoLimAreaEsp,21,Estrada parque
+attr tipoLimAreaEsp,22,Floresta de rendimento sustentável
+attr tipoLimAreaEsp,23,Floresta extrativista
+attr tipoLimAreaEsp,24,Área de proteção ambiental - APA
+attr tipoLimAreaEsp,25,Área de relevante interesse ecológico - ARIE
+attr tipoLimAreaEsp,26,Floresta - FLO
+attr tipoLimAreaEsp,27,Reserva de desenvolvimento sustentável - RDS
+attr tipoLimAreaEsp,28,Reserva extrativista - RESEX
+attr tipoLimAreaEsp,29,Reserva de fauna - REFAU
+attr tipoLimAreaEsp,30,Reserva particular do patrimônio natural - RPPN
+attr tipoLimAreaEsp,31,Estação ecológica - ESEC
+attr tipoLimAreaEsp,32,Parque - PAR
+attr tipoLimAreaEsp,33,Monumento natural - MONA
+attr tipoLimAreaEsp,34,Reserva biológica - REBIO
+attr tipoLimAreaEsp,35,Refúgio de vida silvestre - RVS
+attr tipoLimAreaEsp,36,Área Militar
+attr tipoLimAreaEsp,99,Outros
+attr coincideComDentroDe,2,Contorno massa d'água (Margem)
+attr coincideComDentroDe,3,Cumeada
+attr coincideComDentroDe,4,Linha seca
+attr coincideComDentroDe,5,Costa visível da carta
+attr coincideComDentroDe,6,Rodovia
+attr coincideComDentroDe,7,Ferrovia
+attr coincideComDentroDe,8,Trecho curso d'água (Centro)
+attr coincideComDentroDe,96,Não identificado
+attr tipoRepresentacao,0,Não representar
+attr tipoRepresentacao,1,Contínua
+attr tipoRepresentacao,2,A cada terceira parte
+attr tipoRepresentacao,3,A cada terceira parte e alternada
+
+Class Delimitacao_Fisica
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoDelimFis,0,Desconhecido
+attr tipoDelimFis,1,Cerca
+attr tipoDelimFis,2,Muro
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,6,Arame
+attr matConstr,7,Tela ou Alambrado
+attr matConstr,8,Cerca viva
+attr matConstr,99,Outros
+attr eletrificada,0,Desconecido
+attr eletrificada,1,Sim
+attr eletrificada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Unidade_Uso_Sustentavel
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,5,Distrital
+attr tipoUnidUsoSust,1,Área de proteção ambiental - APA
+attr tipoUnidUsoSust,2,Área de relevante interesse ecológico - ARIE
+attr tipoUnidUsoSust,3,Floresta - FLO
+attr tipoUnidUsoSust,4,Reserva de desenvolvimento sustentável - RDS
+attr tipoUnidUsoSust,5,Reserva extrativista - RESEX
+attr tipoUnidUsoSust,6,Reserva de fauna - REFAU
+attr tipoUnidUsoSust,7,Reserva particular do patrimônio natural - RPPN
+
+Class Unid_Protecao_Integral
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,5,Distrital
+attr tipoUnidProtInteg,1,Estação ecológica - ESEC
+attr tipoUnidProtInteg,2,Parque - PAR
+attr tipoUnidProtInteg,3,Monumento natural - MONA
+attr tipoUnidProtInteg,4,Reserva biológica - REBIO
+attr tipoUnidProtInteg,5,Refúgio de vida silvestre - RVS
+
+Class Unidade_Conserv_Nao_SNUC
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,5,Distrital
+
+Class Outras_Unid_Protegidas
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoOutUnidProt,1,Área de preservação permanente
+attr tipoOutUnidProt,2,Reserva legal
+attr tipoOutUnidProt,3,Mosaico
+attr tipoOutUnidProt,4,Distrito florestal
+attr tipoOutUnidProt,5,Corredor ecológico
+attr tipoOutUnidProt,6,Floresta pública
+attr tipoOutUnidProt,7,Sítios RAMSAR
+attr tipoOutUnidProt,8,Sítios do patrimônio
+attr tipoOutUnidProt,9,Reserva da Biosfera
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,5,Distrital
+
+Class Area_Uso_Comunitario
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoAreaUsoComun,1,Quilombo
+attr tipoAreaUsoComun,2,Assentamento rural
+
+Class Area_Desenv_Controle
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Terra_Indigena
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoAreaUsoComun,1,Quilombo
+attr tipoAreaUsoComun,2,Assentamento rural
+attr situacaoJuridica,1,Delimitada
+attr situacaoJuridica,2,Declarada
+attr situacaoJuridica,3,Homologada ou demarcada
+attr situacaoJuridica,4,Regularizada
+
+Class Instituicao_Publica
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,5,75-1 - Administração do Estado e da Política Econômica e Social
+attr tipoGrupoCnae,6,75-2 - Serviços Coletivos Prestados pela Administração Pública
+attr tipoGrupoCnae,7,75-3 - Seguridade Social
+attr tipoGrupoCnae,99,Outros
+
+Class Org_Pub_Civil
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,6,75.11-6 - Administração Pública em geral
+attr tipoClasseCnae,7,75.12-4 - Regulação das Atividades Sociais e Culturais
+attr tipoClasseCnae,8,75.13-2 - Regulação das Atividades Econômicas
+attr tipoClasseCnae,9,75.14-0 - Atividades de Apoio à Administração Pública
+attr tipoClasseCnae,10,75.21-3 - Relações Exteriores
+attr tipoClasseCnae,12,75.23-0 - Justiça
+attr tipoClasseCnae,13,75.24-8 - Segurança e Ordem Pública
+attr tipoClasseCnae,14,75.25-6 - Defesa Civil
+attr tipoClasseCnae,15,75.30-2 - Seguridade Social
+attr tipoClasseCnae,99,Outros
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr poderPublico,0,Desconhecido
+attr poderPublico,1,Executivo
+attr poderPublico,2,Legislativo
+attr poderPublico,3,Judiciário
+
+Class Edif_Pub_Civil
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdif,0,Desconhecido
+attr tipoEdif,1,Policial
+attr tipoEdif,2,Prisional
+attr tipoEdif,3,Cartorial
+attr tipoEdif,4,Gestão
+attr tipoEdif,5,Eleitoral
+attr tipoEdif,6,Produção e/ou pesquisa
+attr tipoEdif,7,Seguridade social
+attr tipoEdif,8,Câmara municipal
+attr tipoEdif,9,Assembléia legislativa
+attr tipoEdif,22,Prefeitura
+attr tipoEdif,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não Aplicável
+attr matConstr,99,Outros
+attr tipoUsoEdif,0,Desconhecido
+attr tipoUsoEdif,1,Próprio nacional
+attr tipoUsoEdif,2,Uso especial da União
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Posto_Fiscal
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdif,0,Desconhecido
+attr tipoEdif,10,Tributação
+attr tipoEdif,11,Fiscalização
+attr tipoEdif,98,Misto
+attr tipoEdif,99,Outros
+attr tipoUsoEdif,2,Uso especial da União
+attr tipoUsoEdif,0,Desconhecido
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Org_Pub_Militar
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,11,75.22-1 - Defesa
+attr tipoClasseCnae,13,75.24-8 - Segurança e Ordem Pública
+attr tipoClasseCnae,99,Outros
+attr instituicao,0,Desconhecida
+attr instituicao,4,Marinha
+attr instituicao,5,Exército
+attr instituicao,6,Aeronáutica
+attr instituicao,7,Polícia militar
+attr instituicao,8,Corpo de bombeiros
+attr instituicao,99,Outros
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr classificSigiloso,0,Desconhecido
+attr classificSigiloso,1,Sigiloso
+attr classificSigiloso,2,Ostensivo
+
+Class Edif_Pub_Militar
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdif,0,Desconhecido
+attr tipoEdif,12,Aquartelamento
+attr tipoEdif,13,Campo de instrução
+attr tipoEdif,14,Campo de tiro
+attr tipoEdif,15,Base aérea
+attr tipoEdif,16,Distrito naval
+attr tipoEdif,17,Hotel de trânsito
+attr tipoEdif,18,Delegacia serviço militar
+attr tipoEdif,19,Posto
+attr tipoEdif,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,4,Rocha
+attr matConstr,97,Não Aplicável
+attr matConstr,99,Outros
+attr tipoUsoEdif,0,Desconhecido
+attr tipoUsoEdif,1,Próprio nacional
+attr tipoUsoEdif,2,Uso especial da União
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Posto_Pol_Rod
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoEdif,0,Desconhecido
+attr tipoEdif,20,Posto PM
+attr tipoEdif,21,Posto PRF
+attr tipoUsoEdif,0,Desconhecido
+attr tipoUsoEdif,1,Policial
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Org_Saude
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,15,Privada
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,8,85.1 - Atividades de Atenção à Saúde
+attr tipoGrupoCnae,9,85.2 - Serviços Veterinários
+attr tipoGrupoCnae,99,Outros
+
+Class Org_Pub_Saude
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr poderPublico,1,Executivo
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,8,85.1 - Atividades de Atenção à Saúde
+attr tipoGrupoCnae,9,85.2 - Serviços Veterinários
+attr tipoGrupoCnae,99,Outros
+attr tipoClasseCnae,0,Desconhecida
+attr tipoClasseCnae,7,75.12-4 - Regulação das Atividades Sociais e Culturais
+attr tipoClasseCnae,99,Outros
+
+Class Org_Militar_Saude
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,8,85.1 - Atividades de Atenção à Saúde
+attr tipoGrupoCnae,9,85.2 - Serviços Veterinários
+attr tipoGrupoCnae,99,Outros
+attr tipoClasseCnae,0,Desconhecida
+attr tipoClasseCnae,11,75.22-1 - Defesa
+attr tipoClasseCnae,13,75.24-8 - Segurança e Ordem Pública
+attr tipoClasseCnae,99,Outros
+attr instituicao,0,Desconhecida
+attr instituicao,4,Marinha
+attr instituicao,5,Exército
+attr instituicao,6,Aeronáutica
+attr instituicao,7,Polícia militar
+attr instituicao,8,Corpo de bombeiros
+attr instituicao,99,Outros
+attr classificSigiloso,0,Desconhecido
+attr classificSigiloso,1,Sigiloso
+attr classificSigiloso,2,Ostensivo
+attr ensino,0,Desconhecido
+attr ensino,1,Sim
+attr ensino,2,Não
+attr saude,1,Sim
+
+Class Edif_Saude
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,26,85.11-1 Atendimento hospitalar (Hospital)
+attr tipoClasseCnae,27,85.12-0 Atendimento a urgência e emergências (Pronto Socorro)
+attr tipoClasseCnae,28,85.13-8 Atenção ambulatorial (Posto e Centro de Saúde)
+attr tipoClasseCnae,29,85.14-6 Serviços de complementação diagnóstica ou terapêutica
+attr tipoClasseCnae,30,85.16-2 Outras atividades relacionadas com a atenção à saúde (Instituto de Pesquisa)
+attr tipoClasseCnae,31,85.20-0 Serviços veterinários
+attr tipoClasseCnae,98,Misto
+attr tipoClasseCnae,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,5,Madeira
+attr matConstr,4,Rocha
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr nivelAtencao,5,Primário
+attr nivelAtencao,6,Secundário
+attr nivelAtencao,7,Terciário
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Org_Servico_Social
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,15,Privada
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,10,85.3 - Serviço Social
+attr tipoGrupoCnae,99,Outros
+
+Class Org_Pub_Servico_Social
+attr administracao,0,Desconhecida
+attr administracao,1,Federal
+attr administracao,2,Estadual
+attr administracao,3,Municipal
+attr administracao,15,Privada
+attr tipoGrupoCnae,0,Desconhecido
+attr tipoGrupoCnae,10,85.3 - Serviço Social
+attr tipoGrupoCnae,99,Outros
+attr tipoClasseCnae,0,Desconhecida
+attr tipoClasseCnae,7,75.12-4 - Regulação das Atividades Sociais e Culturais
+attr tipoClasseCnae,99,Outros
+
+Class Edif_Servico_Social
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr tipoClasseCnae,0,Desconhecido
+attr tipoClasseCnae,32,85.31-6 Serviços sociais com alojamento
+attr tipoClasseCnae,33,85.32-4 Serviços Sociais sem alojamento
+attr tipoClasseCnae,98,Misto
+attr tipoClasseCnae,99,Outros
+attr operacional,0,Desconhecido
+attr operacional,1,Sim
+attr operacional,2,Não
+attr situacaoFisica,0,Desconhecida
+attr situacaoFisica,1,Abandonada
+attr situacaoFisica,2,Destruída
+attr situacaoFisica,3,Em construção
+attr situacaoFisica,5,Construída
+attr matConstr,0,Desconhecido
+attr matConstr,1,Alvenaria
+attr matConstr,2,Concreto
+attr matConstr,3,Metal
+attr matConstr,4,Rocha
+attr matConstr,5,Madeira
+attr matConstr,97,Não aplicável
+attr matConstr,99,Outros
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Descontinuidade_Geom_HID
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_TRA
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_VEG
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_REL
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_ECO
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_EDU
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_ASB
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_ADM
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_ENC
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_LIM
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_LOC
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_PTO
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Descontinuidade_Geom_SAU
+attr motivoDescontinuidade,1,Descontinuidade Temporal
+attr motivoDescontinuidade,2,Descontinuidade devido a transformação
+attr motivoDescontinuidade,3,Descontinuidade por escala de insumo
+attr motivoDescontinuidade,4,Descontinuidade por falta de acurácia
+attr motivoDescontinuidade,5,Descontinuidade por diferente interpretação das classes
+attr motivoDescontinuidade,6,Descontinuidade por omissão
+attr motivoDescontinuidade,7,Descontinuidade por excesso
+
+Class Area_Nao_Mapeada
+attr motivo,0,Desconhecido
+attr motivo,1,Nuvem
+attr motivo,2,Area internacional
+
+Class Pais
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Unidade_Federacao
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Municipio
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Distrito
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Sub_Distrito
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Regiao_Administrativa
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Bairro
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Area_De_Litigio
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+
+Class Simb_Curva_Mestra
+attr repTipoTxt,10,Cota da curva
+attr repTipoTxt,11,Ocultar traçado
+
+Class Simb_Trecho_Ferroviario
+attr repTipoTxt,1,Nome
+attr repTipoTxt,2,Traçado
+attr repTipoTxt,3,Bitola
+attr repTipoTxt,4,Situacao física
+
+Class Simb_Trecho_Rodoviario
+attr repTipoTxt,2,Traçado
+attr repTipoTxt,4,Situacao física
+attr repTipoTxt,5,Traçado abreviado
+attr repTipoTxt,6,Número de faixas
+attr repTipoTxt,7,Revestimento
+
+Class Simb_Trecho_Hidroviario
+attr repTipoTxt,1,Nome
+attr repTipoTxt,2,Traçado
+attr repTipoTxt,4,Situacao física
+attr repTipoTxt,5,Traçado abreviado
+
+Class Simb_Trecho_Duto
+attr repTipoTxt,1,Nome
+attr repTipoTxt,2,Traçado
+attr repTipoTxt,4,Situacao física
+attr repTipoTxt,5,Traçado abreviado
+attr repTipoTxt,9,Número de dutos
+
+Class Simb_Limite_Politico_Adm
+attr repTipoTxt,1,Nome
+attr repTipoTxt,2,Traçado
+attr repTipoTxt,5,Traçado abreviado
+
+Class Simb_Limite_Area_Especial
+attr repTipoTxt,2,Traçado
+attr repTipoTxt,5,Traçado abreviado
+
+Class Simb_Ext_Mineral
+attr repTipoTxt,1,Nome
+attr repTipoTxt,5,Símbolo
+
+Class Texto_Generico_Edicao
+attr fonteTxt,12,12- Times Medium Italic (SWI)
+attr fonteTxt,13,13- Times Medium Roman
+attr fonteTxt,14,14- Arial Medium
+attr fonteTxt,15,15- Arial Narrow (SSNR)
+attr corTxt,1,Azul
+attr corTxt,3,Vermelho
+attr corTxt,6,Sépia
+attr corTxt,7,Preto
+attr categoriaEDGV,1,Hidrografia
+attr categoriaEDGV,2,Relevo
+attr categoriaEDGV,3,Vegetação
+attr categoriaEDGV,4,Sistema de Transporte
+attr categoriaEDGV,5,Energia e comunicações
+attr categoriaEDGV,6,Abastecimento de Água e Saneamento Básico
+attr categoriaEDGV,7,Educação e Cultura
+attr categoriaEDGV,8,Estrutura Econômica
+attr categoriaEDGV,9,Localidades
+attr categoriaEDGV,10,Pontos de Referência
+attr categoriaEDGV,11,Limites
+attr categoriaEDGV,12,Administração Pública
+attr categoriaEDGV,13,Saúde e Serviço Social
+attr justTxt,1,1- Esquerda e Inferior
+attr justTxt,2,2- Esquerda e Centro
+attr justTxt,3,3- Esquerda e Superior
+attr justTxt,4,4- Centro e Inferior
+attr justTxt,5,5- Centro e Centro
+attr justTxt,6,6- Centro e Superior
+attr justTxt,7,7- Direita e Inferior
+attr justTxt,8,8- Direita e Centro
+attr justTxt,9,9- Direita e Superior
+
+Class Texto_Generico_Edicao_Mini
+attr fonteTxt,12,12- Times Medium Italic (SWI)
+attr fonteTxt,13,13- Times Medium Roman
+attr fonteTxt,14,14- Arial Medium
+attr fonteTxt,15,15- Arial Narrow (SSNR)
+attr corTxt,1,Azul
+attr corTxt,3,Vermelho
+attr corTxt,6,Sépia
+attr corTxt,7,Preto
+attr categoriaEDGV,1,Hidrografia
+attr categoriaEDGV,2,Relevo
+attr categoriaEDGV,3,Vegetação
+attr categoriaEDGV,4,Sistema de Transporte
+attr categoriaEDGV,5,Energia e comunicações
+attr categoriaEDGV,6,Abastecimento de Água e Saneamento Básico
+attr categoriaEDGV,7,Educação e Cultura
+attr categoriaEDGV,8,Estrutura Econômica
+attr categoriaEDGV,9,Localidades
+attr categoriaEDGV,10,Pontos de Referência
+attr categoriaEDGV,11,Limites
+attr categoriaEDGV,12,Administração Pública
+attr categoriaEDGV,13,Saúde e Serviço Social
+attr justTxt,1,1- Esquerda e Inferior
+attr justTxt,2,2- Esquerda e Centro
+attr justTxt,3,3- Esquerda e Superior
+attr justTxt,4,4- Centro e Inferior
+attr justTxt,5,5- Centro e Centro
+attr justTxt,6,6- Centro e Superior
+attr justTxt,7,7- Direita e Inferior
+attr justTxt,8,8- Direita e Centro
+attr justTxt,9,9- Direita e Superior
+
+Class Simb_Hidrografia
+attr repTipoTxt,1,Nome
+attr repTipoTxt,8,Navegabilidade
+attr repTipoTxt,12,Nomeabrev
+
+Class Classificador_Orig_Prec_Acur
+attr tipoInsumo,0,Desconhecido
+attr tipoInsumo,1,Imagem sensor aerotransportado-Fotografia aérea
+attr tipoInsumo,2,Imagem sensor aerotransportado-Radar
+attr tipoInsumo,3,Imagem sensor orbital
+attr tipoInsumo,4,Dados de campo
+attr tipoInsumo,5,Original de restituição
+attr tipoInsumo,6,Original cartográfico(fotolito)
+attr tipoInsumo,7,Produto impresso
+attr metodoAquisicGeom,1,Captura em campo
+attr metodoAquisicGeom,2,Restituição fotogramétrica
+attr metodoAquisicGeom,3,Digitalização manual(tela)
+attr metodoAquisicGeom,4,Digitalização manual(mesa digitalizadora)
+attr metodoAquisicGeom,5,Digitalização semi-automática
+attr metodoAquisicGeom,6,Digitalização automática
+attr metodoAquisicGeom,7,Extração automática de feições de imagem
+attr finalidadeGeometria,1,Mapeamento sistemático
+attr finalidadeGeometria,2,Mapeamento cadastral
+attr finalidadeGeometria,3,Mapeamento temático
+attr comprovacaoCampo,1,Sim
+attr comprovacaoCampo,2,Não
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr versaoETEDGV,2.02,2.02
+attr versaoETADGV,1.0,1.0
+attr fdatumHoriz,1,SAD-69
+attr fdatumHoriz,2,SIRGAS2000
+attr fdatumHoriz,3,WGS-84
+attr fdatumHoriz,4,Córrego Alegre
+attr fdatumHoriz,5,Astro Chuá
+attr fdatumHoriz,6,Outra referência
+attr fdatumVert,1,Torres
+attr fdatumVert,2,Imbituba
+attr fdatumVert,3,Santana
+attr fdatumVert,4,Local
+attr fdatumVert,6,Outra referência
+
+Class Area_Abast_Agua
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Comerc_Serv
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Comunicacao
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Duto
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Energia_Eletrica
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Ensino
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Est_Med_Fenomenos
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Estrut_Transporte
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Ext_Mineral
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Habitacional
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Lazer
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Pub_Civil
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Pub_Militar
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Religiosa
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Ruinas
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Saneamento
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Saude
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Area_Servico_Social
+attr geometriaAproximada,1,Sim
+attr geometriaAproximada,2,Não
+attr escalaMaxSimbolizar,-1,Representar em qualquer escala
+attr escalaMaxSimbolizar,0,Não representar em qualquer escala
+attr escalaMaxSimbolizar,10000,Representar até a escala 1/10.000
+attr escalaMaxSimbolizar,25000,Representar até a escala 1/25.000
+attr escalaMaxSimbolizar,50000,Representar até a escala 1/50.000
+attr escalaMaxSimbolizar,100000,Representar até a escala 1/100.000
+attr escalaMaxSimbolizar,250000,Representar até a escala 1/250.000
+
+Class Linha_Generica_Edicao
+attr estilo,1,Continuo
+attr estilo,2,Tracejado
+attr cor,-1,Sem cor
+attr cor,1,Azul
+attr cor,3,Vermelho
+attr cor,6,Sépia
+attr cor,7,Preto
+
+Class Area_Generica_Edicao
+attr estilo,1,Continuo
+attr estilo,2,Tracejado
+attr cor,-1,Sem cor
+attr cor,1,Azul
+attr cor,3,Vermelho
+attr cor,6,Sépia
+attr cor,7,Preto
+attr corContorno,-1,Sem cor
+attr corContorno,1,Azul
+attr corContorno,3,Vermelho
+attr corContorno,6,Sépia
+attr corContorno,7,Preto

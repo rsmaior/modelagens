@@ -24,12 +24,12 @@ class MasterGen():
     def buildSQL(self, dest, atributos_padrao=False, extension_classes=False):
         master = self.master
         sql = []
-        sql.append(u"CREATE SCHEMA {0};".format(master["schema_edgv"]))
+        sql.append(u"CREATE SCHEMA {0};".format(master["schema_dados"]))
         sql.append(u"CREATE SCHEMA {0};".format(master["schema_dominios"]))
         sql.append(u"")
         sql.append(u"CREATE EXTENSION postgis;")
         sql.append(u"SET search_path TO pg_catalog,public,{0},{1};".format(
-            master["schema_edgv"], master["schema_dominios"]))
+            master["schema_dados"], master["schema_dominios"]))
         sql.append(u"")
         sql.append(u"CREATE TABLE public.db_metadata(")
         sql.append(u"\t edgvversion varchar(50) NOT NULL DEFAULT '{0}',".format(
@@ -89,7 +89,7 @@ class MasterGen():
                     class_name = "{0}_{1}".format(classe["categoria"], class_name)
 
                 sql.append(u"CREATE TABLE {0}.{1}(".format(
-                    master["schema_edgv"], class_name))
+                    master["schema_dados"], class_name))
                 sql.append(u"\t {0} serial NOT NULL,".format(
                     master["nome_id"]))
 
@@ -113,7 +113,7 @@ class MasterGen():
                 sql.append(u"\t WITH (FILLFACTOR = {0})".format(
                     master["fill_factor"]))
                 sql.append(u");")
-                sql.append(u"CREATE INDEX {0}_geom ON {1}.{0} USING gist ({2});".format(class_name,master["schema_edgv"], master["nome_geom"]))
+                sql.append(u"CREATE INDEX {0}_geom ON {1}.{0} USING gist ({2});".format(class_name,master["schema_dados"], master["nome_geom"]))
 
                 sql.append(u"")
 
@@ -124,7 +124,7 @@ class MasterGen():
                                        if ("primitivas" in valor and primitiva in valor["primitivas"]) or "primitivas" not in valor]
 
                         if atributo["cardinalidade"] == "0..1" or atributo["cardinalidade"] == "1..1":
-                            sql.append(u"ALTER TABLE {1}.{0}".format(class_name, master["schema_edgv"], master["schema_edgv"]))
+                            sql.append(u"ALTER TABLE {1}.{0}".format(class_name, master["schema_dados"]))
                             sql.append(u"\t ADD CONSTRAINT {0}_{1}_fk FOREIGN KEY ({1})".format(class_name, atributo["nome"]))
                             sql.append(u"\t REFERENCES {1}.{0} (code) MATCH FULL".format(
                                 atributo["mapa_valor"], master["schema_dominios"]))
@@ -138,7 +138,7 @@ class MasterGen():
                                            for valor in dominio["valores"]]
 
                             if len(set(dominio_att).difference(valores_att)) > 0:
-                                sql.append(u"ALTER TABLE {0}.{1}".format(master["schema_edgv"], class_name))
+                                sql.append(u"ALTER TABLE {0}.{1}".format(master["schema_dados"], class_name))
                                 sql.append(u"\t ADD CONSTRAINT {0}_{1}_check ".format(class_name, atributo["nome"]))
 
                                 if 'a_ser_preenchido' in master:
@@ -154,13 +154,13 @@ class MasterGen():
 
                             if master['a_ser_preenchido']:
                                 sql.append(u"ALTER TABLE {1}.{0} ALTER COLUMN {2} SET DEFAULT {3};".format(class_name,
-                                                                                                                   master["schema_edgv"], atributo["nome"],
+                                                                                                                   master["schema_dados"], atributo["nome"],
                                                                                                                    master["a_ser_preenchido"]["code"]))
                                 sql.append(u"")
 
                         elif atributo["cardinalidade"] == "0..*" or atributo["cardinalidade"] == "1..*":
 
-                            sql.append(u"ALTER TABLE {0}.{1}".format(master["schema_edgv"], class_name))
+                            sql.append(u"ALTER TABLE {0}.{1}".format(master["schema_dados"], class_name))
                             sql.append(u"\t ADD CONSTRAINT {0}_{1}_check ".format(class_name, atributo["nome"]))
 
                             if 'a_ser_preenchido' in master:
@@ -176,7 +176,7 @@ class MasterGen():
 
                             if master['a_ser_preenchido']:
                                 sql.append(u"ALTER TABLE {1}.{0} ALTER COLUMN {2} SET DEFAULT ARRAY[{3} :: SMALLINT];".format(class_name,
-                                                                                                                                      master["schema_edgv"], atributo["nome"],
+                                                                                                                                      master["schema_dados"], atributo["nome"],
                                                                                                                                        master["a_ser_preenchido"]["code"]))
                                 sql.append(u"")
 

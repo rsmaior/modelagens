@@ -1,0 +1,172 @@
+gothic_classe_original,gothic_atributo,gothic_code,gothic_value,dsgtools_classe_original,dsgtools_atributo,dsgtools_code,dsgtools_value,direcao
+Barragem,situacaoFisica,4,Planejada,hid_barragem,situacaofisica,0,Desconhecida,SÓ IDA
+Comporta,situacaoFisica,4,Planejada,hid_comporta,situacaofisica,0,Desconhecida,SÓ IDA
+Confluencia,relacionado,19,Ramificação,hid_confluencia,relacionado,15,Confluência,SÓ IDA
+Confluencia,relacionado,20,Cruzamento de Vala,hid_confluencia,relacionado,15,Confluência,SÓ IDA
+Dolina,tipoElemNat,0,Desconhecido,rel_dolina,tipoelemnat,99,Outros,SÓ IDA
+Eclusa,situacaoFisica,4,Planejada,tra_eclusa,situacaofisica,0,Desconhecida,SÓ IDA
+Edif_Const_Aeroportuaria,administracao,7,Concessionada,tra_edif_constr_aeroportuaria,administracao,0,Desconhecida,SÓ IDA
+Edif_Const_Lazer,tipoEdifLazer,9,Chaminé,edu_edif_const_lazer,tipoediflazer,99,Outros,SÓ IDA
+Edif_Ensino,tipoClasseCnae,99,Outros,edu_edif_ensino,tipoclassecnae,0,Desconhecida,SÓ IDA
+Edif_Saude,tipoClasseCnae,99,Outros,sau_edif_saude,tipoclassecnae,0,Desconhecida,SÓ IDA
+Massa_Dagua,tipoMassaDagua,8,Lagoa,hid_massa_dagua,tipomassadagua,7,Lago/Lagoa,SÓ IDA
+Massa_Dagua,tipoMassaDagua,99,Outros,hid_massa_dagua,tipomassadagua,0,Desconhecida,SÓ IDA
+Natureza_Fundo,materialPredominante,22,Ervas marinhas,hid_natureza_fundo,materialpredominante,0,Desconhecida,SÓ IDA
+Ponto_Drenagem,relacionado,80,Meandro Abandonado (Jusante),hid_ponto_drenagem,relacionado,8,Meandro,SÓ IDA
+Ponto_Drenagem,relacionado,90,Lago (Jusante),hid_ponto_drenagem,relacionado,9,Lago,SÓ IDA
+Ponto_Drenagem,relacionado,10,Lagoa,hid_ponto_drenagem,relacionado,9,Lagoa,SÓ IDA
+Ponto_Drenagem,relacionado,100,Lagoa (Jusante),hid_ponto_drenagem,relacionado,9,Lagoa,SÓ IDA
+Ponto_Drenagem,relacionado,110,Laguna (Jusante),hid_ponto_drenagem,relacionado,11,Laguna,SÓ IDA
+Ponto_Drenagem,relacionado,120,Represa/Açude (Jusante),hid_ponto_drenagem,relacionado,12,Represa açude,SÓ IDA
+Ponto_Inicio_Drenagem,nascente,0,Desconhecido,hid_ponto_inicio_drenagem,nascente,2,Não,SÓ IDA
+Ponto_Trecho_Energia,tipoPtoEnergia,7,Mudança de atributo,enc_ponto_trecho_energia,tipoptoenergia,4,Ponto de ramificação,SÓ IDA
+Ponto_Trecho_Energia,tipoPtoEnergia,9,Início ou fim de trecho,enc_ponto_trecho_energia,tipoptoenergia,4,Ponto de ramificação,SÓ IDA
+Quebramar_Molhe,situacaoFisica,4,Planejada,hid_quebramar_molhe,situacaofisica,0,Desconhecida,SÓ IDA
+Termeletrica,tipoEstGerad,3,Nuclear,enc_termeletrica,tipoestgerad,99,Outros,SÓ IDA
+Termeletrica,combRenovavel,0,Desconhecido,enc_termeletrica,combrenovavel,2,Não,SÓ IDA
+Trecho_Drenagem,coincideComDentroDe,24,Linha de drenagem,hid_trecho_drenagem,coincidecomdentrode,97,Não Aplicável,SÓ IDA
+Tunel,posicaoPista,16,Coincidente,tra_tunel,posicaopista,97,Não Aplicável,SÓ IDA
+Veg_Cultivada,classificacaoPorte,1,Arbórea,veg_veg_cultivada,classificacaoporte,0,Desconhecida,SÓ IDA
+Veg_Cultivada,classificacaoPorte,4,Rasteira,veg_veg_cultivada,classificacaoporte,0,Desconhecida,SÓ IDA
+Veg_Cultivada,cultivoPredominante,34,Mamão,veg_veg_cultivada,cultivopredominante,96,Não identificado,SÓ IDA
+Veg_Cultivada,cultivoPredominante,35,Manga,veg_veg_cultivada,cultivopredominante,96,Não identificado,SÓ IDA
+Veg_Cultivada,cultivoPredominante,36,Coco,veg_veg_cultivada,cultivopredominante,96,Não identificado,SÓ IDA
+Veg_Cultivada,cultivoPredominante,37,Goiaba,veg_veg_cultivada,cultivopredominante,96,Não identificado,SÓ IDA
+Veg_Cultivada,cultivoPredominante,38,Limão,veg_veg_cultivada,cultivopredominante,96,Não identificado,SÓ IDA
+Edif_Abast_Agua,matConstr,99,Outros,asb_edif_abast_agua,matconstr,5,Madeira,SÓ VOLTA
+Edif_Abast_Agua,situacaoFisica,0,Desconhecido,asb_edif_abast_agua,situacaofisica,4,Planejada,SÓ VOLTA
+Edif_Saneamento,situacaoFisica,0,Desconhecido,asb_edif_saneamento,situacaofisica,4,Planejada,SÓ VOLTA
+Deposito_Geral,tipoDepGeral,99,Outros,eco_deposito_geral,tipodepgeral,19,Reservatório de Combustível,SÓ VOLTA
+Ext_Mineral,tipoProdutoResiduo,99,Outros,eco_ext_mineral,tipoprodutoresiduo,98,Misto,SÓ VOLTA
+Ext_Mineral,tipoProdutoResiduo,43,Saibro/Piçarra,eco_ext_mineral,tipoprodutoresiduo,44,Piçarra,SÓ VOLTA
+Edif_Energia,matConstr,0,Desconhecido,enc_edif_energia,matconstr,97,Não Aplicável,SÓ VOLTA
+Est_Gerad_Energia_Eletr,situacaoFisica,0,Desconhecido,enc_est_gerad_energia_eletr,situacaofisica,3,Em Construção,SÓ VOLTA
+Hidreletrica,tipoEstGerad,1,Hidrelétrica,enc_hidreletrica,tipoestgerad,0,Desconhecido,SÓ VOLTA
+Hidreletrica,tipoEstGerad,1,Hidrelétrica,enc_hidreletrica,tipoestgerad,5,Eólica,SÓ VOLTA
+Hidreletrica,tipoEstGerad,1,Hidrelétrica,enc_hidreletrica,tipoestgerad,7,Maré-motriz,SÓ VOLTA
+Hidreletrica,tipoEstGerad,1,Hidrelétrica,enc_hidreletrica,tipoestgerad,99,Outros,
+Hidreletrica,tipoEstGerad,1,Hidrelétrica,enc_hidreletrica,tipoestgerad,6,Solar,SÓ VOLTA
+Termeletrica,tipoEstGerad,2,Termelétrica,enc_termeletrica,tipoestgerad,0,Desconhecido,SÓ VOLTA
+Termeletrica,tipoEstGerad,2,Termelétrica,enc_termeletrica,tipoestgerad,5,Eólica,SÓ VOLTA
+Termeletrica,tipoEstGerad,2,Termelétrica,enc_termeletrica,tipoestgerad,7,Maré-motriz,SÓ VOLTA
+Termeletrica,tipoEstGerad,2,Termelétrica,enc_termeletrica,tipoestgerad,99,Outros,
+Termeletrica,tipoEstGerad,2,Termelétrica,enc_termeletrica,tipoestgerad,6,Solar,SÓ VOLTA
+Natureza_Fundo,materialPredominante,0,Desconhecido,hid_natureza_fundo,materialpredominante,97,Não Aplicável,SÓ VOLTA
+Ponto_Drenagem,relacionado,13,Entre trechos de drenagem,hid_ponto_drenagem,relacionado,15,Confluência,SÓ VOLTA
+Ponto_Drenagem,relacionado,16,Vertedouro,hid_ponto_drenagem,relacionado,14,Ponto início de drenagem,SÓ VOLTA
+Ponto_Drenagem,relacionado,13,Entre trechos de drenagem,hid_ponto_drenagem,relacionado,19,Ramificação,SÓ VOLTA
+Trecho_Drenagem,coincideComDentroDe,97,Não aplicável,hid_trecho_drenagem,coincidecomdentrode,15,Terreno sujeito a inundação,SÓ VOLTA
+Limite_Area_Especial,coincideComDentroDe,96,Não identificado,lim_limite_area_especial,coincidecomdentrode,9,Massa D`Água,SÓ VOLTA
+Limite_Intra_Munic_Adm,coincideComDentroDe,96,Não identificado,lim_limite_intra_munic_adm,coincidecomdentrode,9,Massa D`Água,SÓ VOLTA
+Limite_Operacional,coincideComDentroDe,96,Não identificado,lim_limite_operacional,coincidecomdentrode,9,Massa D`Água,SÓ VOLTA
+Limite_Particular,coincideComDentroDe,96,Não identificado,lim_limite_particular,coincidecomdentrode,9,Massa D`Água,SÓ VOLTA
+Limite_Politico_Adm,coincideComDentroDe,96,Não identificado,lim_limite_politico_adm,coincidecomdentrode,9,Massa D`Água,SÓ VOLTA
+Linha_De_Limite,coincideComDentroDe,96,Não identificado,lim_linha_de_limite,coincidecomdentrode,9,Massa D`Água,SÓ VOLTA
+Outros_Limites_Oficiais,coincideComDentroDe,96,Não identificado,lim_outros_limites_oficiais,coincidecomdentrode,9,Massa D`Água,SÓ VOLTA
+Terra_Indigena,situacaoJuridica,,Nulo,lim_terra_indigena,situacaojuridica,0,Desconhecida,
+Unidade_Federacao,sigla,AC,AC,lim_unidade_federacao,sigla,1,AC,
+Unidade_Federacao,sigla,AL,AL,lim_unidade_federacao,sigla,2,AL,
+Unidade_Federacao,sigla,AM,AM,lim_unidade_federacao,sigla,4,AM,
+Unidade_Federacao,sigla,AP,AP,lim_unidade_federacao,sigla,3,AP,
+Unidade_Federacao,sigla,BA,BA,lim_unidade_federacao,sigla,5,BA,
+Unidade_Federacao,sigla,CE,CE,lim_unidade_federacao,sigla,6,CE,
+Unidade_Federacao,sigla,Desconhecido,Desconhecido,lim_unidade_federacao,sigla,0,Desconhecido,
+Unidade_Federacao,sigla,DF,DF,lim_unidade_federacao,sigla,7,DF,
+Unidade_Federacao,sigla,ES,ES,lim_unidade_federacao,sigla,8,ES,
+Unidade_Federacao,sigla,GO,GO,lim_unidade_federacao,sigla,9,GO,
+Unidade_Federacao,sigla,MA,MA,lim_unidade_federacao,sigla,10,MA,
+Unidade_Federacao,sigla,MG,MG,lim_unidade_federacao,sigla,13,MG,
+Unidade_Federacao,sigla,MS,MS,lim_unidade_federacao,sigla,12,MS,
+Unidade_Federacao,sigla,MT,MT,lim_unidade_federacao,sigla,11,MT,
+Unidade_Federacao,sigla,PA,PA,lim_unidade_federacao,sigla,14,PA,
+Unidade_Federacao,sigla,PB,PB,lim_unidade_federacao,sigla,15,PB,
+Unidade_Federacao,sigla,PE,PE,lim_unidade_federacao,sigla,17,PE,
+Unidade_Federacao,sigla,PI,PI,lim_unidade_federacao,sigla,18,PI,
+Unidade_Federacao,sigla,PR,PR,lim_unidade_federacao,sigla,16,PR,
+Unidade_Federacao,sigla,RJ,RJ,lim_unidade_federacao,sigla,19,RJ,
+Unidade_Federacao,sigla,RN,RN,lim_unidade_federacao,sigla,20,RN,
+Unidade_Federacao,sigla,RO,RO,lim_unidade_federacao,sigla,22,RO,
+Unidade_Federacao,sigla,RR,RR,lim_unidade_federacao,sigla,23,RR,
+Unidade_Federacao,sigla,RS,RS,lim_unidade_federacao,sigla,21,RS,
+Unidade_Federacao,sigla,SC,SC,lim_unidade_federacao,sigla,24,SC,
+Unidade_Federacao,sigla,SE,SE,lim_unidade_federacao,sigla,26,SE,
+Unidade_Federacao,sigla,SP,SP,lim_unidade_federacao,sigla,25,SP,
+Unidade_Federacao,sigla,TO,TO,lim_unidade_federacao,sigla,27,TO,
+Edif_Habitacional,matConstr,0,Desconhecido,loc_edif_habitacional,matconstr,8,Cerca viva,SÓ VOLTA
+Edif_Habitacional,matConstr,0,Desconhecido,loc_edif_habitacional,matconstr,4,Rocha,SÓ VOLTA
+Edif_Habitacional,matConstr,0,Desconhecido,loc_edif_habitacional,matconstr,7,Tela ou Alambrado,SÓ VOLTA
+Edificacao,matConstr,0,Desconhecido,loc_edificacao,matconstr,8,Cerca viva,SÓ VOLTA
+Edificacao,matConstr,0,Desconhecido,loc_edificacao,matconstr,7,Tela ou Alambrado,SÓ VOLTA
+Edificacao,situacaoFisica,0,Desconhecido,loc_edificacao,situacaofisica,4,Planejada,SÓ VOLTA
+Pto_Ref_Geod_Topo,referencialAltim,6,Outra referência,pto_pto_ref_geod_topo,referencialaltim,5,Outra referência,
+Duna,fixa,2,Não,rel_duna,fixa,0,Desconhecido,SÓ VOLTA
+Elemento_Fisiog_Natural,tipoElemNat,16,Escarpa,rel_elemento_fisiog_natural,tipoelemnat,8,Escarpa,
+Elemento_Fisiog_Natural,tipoElemNat,18,Falésia,rel_elemento_fisiog_natural,tipoelemnat,13,Falésia,
+Elemento_Fisiog_Natural,tipoElemNat,17,Talude,rel_elemento_fisiog_natural,tipoelemnat,14,Talude,
+Terreno_Exposto,causaExposicao,4,Natural,rel_terreno_exposto,causaexposicao,0,Desconhecido,SÓ VOLTA
+Atracadouro,administracao,2,Estadual,tra_atracadouro,administracao,11,Estadual/Municipal,SÓ VOLTA
+Atracadouro,administracao,1,Federal,tra_atracadouro,administracao,9,Federal/Estadual,SÓ VOLTA
+Atracadouro,administracao,1,Federal,tra_atracadouro,administracao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Atracadouro,administracao,1,Federal,tra_atracadouro,administracao,10,Federal/Municipal,SÓ VOLTA
+Atracadouro,matConstr,0,Rocha,tra_atracadouro,matconstr,4,Rocha,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,30,Álcool,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,0,Desconhecido,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,8,Efluentes,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,9,Esgoto,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,5,Gás,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,29,Gasolina,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,6,Grãos,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,7,Minério,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,4,Nafta,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,2,Óleo,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,99,Outros,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,3,Petróleo,SÓ VOLTA
+Condutor_Hidrico,matTransp,1,Agua,tra_condutor_hidrico,mattransp,31,Querosene,SÓ VOLTA
+Condutor_Hidrico,posicaoRelativa,0,Desconhecido,tra_condutor_hidrico,posicaorelativa,4,Emerso,SÓ VOLTA
+Condutor_Hidrico,posicaoRelativa,0,Desconhecido,tra_condutor_hidrico,posicaorelativa,5,Submerso,SÓ VOLTA
+Condutor_Hidrico,setor,1,Energético,tra_condutor_hidrico,setor,3,Abastecimento de água,SÓ VOLTA
+Condutor_Hidrico,setor,1,Energético,tra_condutor_hidrico,setor,0,Desconhecido,SÓ VOLTA
+Condutor_Hidrico,setor,1,Energético,tra_condutor_hidrico,setor,2,Econômico,SÓ VOLTA
+Condutor_Hidrico,setor,1,Energético,tra_condutor_hidrico,setor,4,Saneamento básico,SÓ VOLTA
+Condutor_Hidrico,situacaoFisica,0,Desconhecido,tra_condutor_hidrico,situacaofisica,4,Planejada,SÓ VOLTA
+Edif_Constr_Portuaria,administracao,2,Estadual,tra_edif_constr_portuaria,administracao,11,Estadual/Municipal,SÓ VOLTA
+Edif_Constr_Portuaria,administracao,1,Federal,tra_edif_constr_portuaria,administracao,9,Federal/Estadual,SÓ VOLTA
+Edif_Constr_Portuaria,administracao,1,Federal,tra_edif_constr_portuaria,administracao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Edif_Constr_Portuaria,administracao,1,Federal,tra_edif_constr_portuaria,administracao,10,Federal/Municipal,SÓ VOLTA
+Edif_Metro_Ferroviaria,administracao,2,Estadual,tra_edif_metro_ferroviaria,administracao,11,Estadual/Municipal,SÓ VOLTA
+Edif_Metro_Ferroviaria,administracao,1,Federal,tra_edif_metro_ferroviaria,administracao,9,Federal/Estadual,SÓ VOLTA
+Edif_Metro_Ferroviaria,administracao,1,Federal,tra_edif_metro_ferroviaria,administracao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Edif_Metro_Ferroviaria,administracao,1,Federal,tra_edif_metro_ferroviaria,administracao,10,Federal/Municipal,SÓ VOLTA
+Edif_Rodoviaria,administracao,2,Estadual,tra_edif_rodoviaria,administracao,11,Estadual/Municipal,SÓ VOLTA
+Edif_Rodoviaria,administracao,1,Federal,tra_edif_rodoviaria,administracao,9,Federal/Estadual,SÓ VOLTA
+Edif_Rodoviaria,administracao,1,Federal,tra_edif_rodoviaria,administracao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Edif_Rodoviaria,administracao,1,Federal,tra_edif_rodoviaria,administracao,10,Federal/Municipal,SÓ VOLTA
+Fundeadouro,administracao,2,Estadual,tra_fundeadouro,administracao,11,Estadual/Municipal,SÓ VOLTA
+Fundeadouro,administracao,1,Federal,tra_fundeadouro,administracao,9,Federal/Estadual,SÓ VOLTA
+Fundeadouro,administracao,1,Federal,tra_fundeadouro,administracao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Fundeadouro,administracao,1,Federal,tra_fundeadouro,administracao,10,Federal/Municipal,SÓ VOLTA
+Funicular,situacaoFisica,0,Desconhecido,tra_funicular,situacaofisica,4,Planejada,SÓ VOLTA
+Galeria_Bueiro,situacaoFisica,0,Desconhecido,tra_galeria_bueiro,situacaofisica,4,Planejada,SÓ VOLTA
+Girador_Ferroviario,administracao,2,Estadual,tra_girador_ferroviario,administracao,11,Estadual/Municipal,SÓ VOLTA
+Girador_Ferroviario,administracao,1,Federal,tra_girador_ferroviario,administracao,9,Federal/Estadual,SÓ VOLTA
+Girador_Ferroviario,administracao,1,Federal,tra_girador_ferroviario,administracao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Girador_Ferroviario,administracao,1,Federal,tra_girador_ferroviario,administracao,10,Federal/Municipal,SÓ VOLTA
+Local_Critico,tipoLocalCrit,7,Outras,tra_local_critico,tipolocalcrit,0,Desconhecido,SÓ VOLTA
+Patio,administracao,2,Estadual,tra_patio,administracao,11,Estadual/Municipal,SÓ VOLTA
+Patio,administracao,1,Federal,tra_patio,administracao,9,Federal/Estadual,SÓ VOLTA
+Patio,administracao,1,Federal,tra_patio,administracao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Patio,administracao,1,Federal,tra_patio,administracao,10,Federal/Municipal,SÓ VOLTA
+Posto_Combustivel,administracao,2,Estadual,tra_posto_combustivel,administracao,11,Estadual/Municipal,SÓ VOLTA
+Posto_Combustivel,administracao,1,Federal,tra_posto_combustivel,administracao,9,Federal/Estadual,SÓ VOLTA
+Posto_Combustivel,administracao,1,Federal,tra_posto_combustivel,administracao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Posto_Combustivel,administracao,1,Federal,tra_posto_combustivel,administracao,10,Federal/Municipal,SÓ VOLTA
+Trecho_Duto,situacaoFisica,0,Desconhecido,tra_trecho_duto,situacaofisica,4,Planejada,SÓ VOLTA
+Trecho_Ferroviario,posicaoRelativa,2,Na superficie,tra_trecho_ferroviario,posicaorelativa,0,Desconhecida,SÓ VOLTA
+Trecho_Rodoviario,administracao,2,Estadual,tra_trecho_rodoviario,administracao,11,Estadual/Municipal,SÓ VOLTA
+Trecho_Rodoviario,administracao,1,Federal,tra_trecho_rodoviario,administracao,9,Federal/Estadual,SÓ VOLTA
+Trecho_Rodoviario,administracao,1,Federal,tra_trecho_rodoviario,administracao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Trecho_Rodoviario,administracao,1,Federal,tra_trecho_rodoviario,administracao,10,Federal/Municipal,SÓ VOLTA
+Trecho_Rodoviario,jurisdicao,2,Estadual,tra_trecho_rodoviario,jurisdicao,11,Estadual/Municipal,SÓ VOLTA
+Trecho_Rodoviario,jurisdicao,1,Federal,tra_trecho_rodoviario,jurisdicao,9,Federal/Estadual,SÓ VOLTA
+Trecho_Rodoviario,jurisdicao,1,Federal,tra_trecho_rodoviario,jurisdicao,12,Federal/Estadual/Municipal,SÓ VOLTA
+Trecho_Rodoviario,jurisdicao,1,Federal,tra_trecho_rodoviario,jurisdicao,10,Federal/Municipal,SÓ VOLTA
