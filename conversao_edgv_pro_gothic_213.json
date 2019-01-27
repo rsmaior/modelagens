@@ -1,0 +1,363 @@
+{"__comment":"UTF-8",
+  "mapeamento_classes": [
+    {"__comment":"cobter_area_edificada <-> Area_Edificada",
+      "classe_ida": "edgv.cobter_area_edificada",
+      "classe_volta": "Area_Edificada",
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaAproximada",
+          "valor": 1
+        }    
+      ]
+    },
+    {"__comment":"cobter_corpo_dagua <-> Massa_Dagua",
+      "classe_ida": "edgv.cobter_corpo_dagua",
+      "classe_volta": "Massa_Dagua",
+      "filtro_ida": 
+        {
+          "$or": [
+            {
+              "nome_atributo": "tipo",
+              "valor": 3
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 4
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 5
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 6
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 7
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 11
+            }
+          ]
+        },
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoMassaDagua",
+          "traducao": [
+            {
+              "valor_ida": 11,
+              "valor_volta": 10
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 7,
+              "valor_volta": 9,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaAproximada",
+          "valor": 1
+        },
+        {
+          "nome_atributo":"salinidade",
+          "valor":"0"
+      }
+      ]
+    },
+    {"__comment":"cobter_corpo_dagua <-> Trecho_Massa_Dagua",
+      "classe_ida": "edgv.cobter_corpo_dagua",
+      "classe_volta": "Trecho_Massa_Dagua",
+      "filtro_ida": 
+        {
+          "$or": [
+            {
+              "nome_atributo": "tipo",
+              "valor": 1
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 2
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 9
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 10
+            }
+          ]
+        },
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoMassaDagua",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaAproximada",
+          "valor": 1
+        },
+        {
+          "nome_atributo":"salinidade",
+          "valor":"0"
+      }
+      ]
+    }
+  ],
+  "mapeamento_atributos":[
+      {
+        "attr_ida": "jurisdicao",
+        "attr_volta": "jurisdicao",
+        "traducao": [
+          {
+            "valor_ida": 6,
+            "valor_volta": 8
+          }
+        ]
+    },
+    {
+        "attr_ida": "regime",
+        "attr_volta": "regime",
+        "traducao": [
+          {
+            "valor_ida": 1,
+            "valor_volta": 2,
+            "sentido": "volta"
+          },
+          {
+            "valor_ida": 3,
+            "valor_volta": 4,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "situacao_fisica",
+        "attr_volta": "situacaoFisica",
+        "traducao": [
+          {
+            "valor_ida": 3,
+            "valor_volta": 5
+          },
+          {
+            "valor_ida": 4,
+            "valor_volta": 3
+          }
+        ]
+    },
+    {
+        "attr_ida": "material_construcao",
+        "attr_volta": "matConstr"
+    },
+    {
+        "attr_ida": "tipo_exposicao",
+        "attr_volta": "tipoExposicao",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          },
+          {
+            "valor_ida": 999,
+            "valor_volta": 99,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "tipo_produto_residuo",
+        "attr_volta": "tipoProdutoResiduo"
+    },
+    {
+        "attr_ida": "tipo_esposicao",
+        "attr_volta": "construcao",
+        "traducao": [
+          {
+            "valor_ida": 3,
+            "valor_volta": 1
+          },
+          {
+            "valor_ida": 5,
+            "valor_volta": 2
+          }
+        ]
+    },
+    {
+        "attr_ida": "tipo_produto_residuo",
+        "attr_volta": "tipoResiduo"
+    },
+    {
+        "attr_ida": "forma_extracao",
+        "attr_volta": "formaExtracao",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "cota_comprovada",
+        "attr_volta": "cotaComprovada"
+    },
+    {
+        "attr_ida": "posicao_relativa",
+        "attr_volta": "posicaoRelativa",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "posicao_relativa",
+        "attr_volta": "posicaoRelEdific"
+    },
+    {
+        "attr_ida": "modal_uso",
+        "attr_volta": "modalUso",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 7,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "posicao_pista",
+        "attr_volta": "posicaoPista",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          },
+          {
+            "valor_ida": 999,
+            "valor_volta": 16,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "nr_faixas",
+        "attr_volta": "nrFaixas"
+    },
+    {
+        "attr_ida": "nr_pistas",
+        "attr_volta": "nrPistas"
+    },
+    {
+        "attr_ida": "nr_linhas",
+        "attr_volta": "nrLinhas"
+    },
+    {
+        "attr_ida": "em_arruamento",
+        "attr_volta": "emArruamento"
+    },
+    {
+        "attr_ida": "uso_pista",
+        "attr_volta": "usoPista"
+    },
+    {
+        "attr_ida": "canteiro_divisorio",
+        "attr_volta": "canteiroDivisorio"
+    },
+    {
+        "attr_ida": "geometria_aproximada",
+        "attr_volta": "geometriaAproximada"
+    },
+    {
+        "attr_ida": "tipo_ref",
+        "attr_volta": "tipoRef"
+    },
+    {
+        "attr_ida": "sistema_geodesico",
+        "attr_volta": "sistemaGeodesico",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 6,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "referencial_altim",
+        "attr_volta": "referencialAltim"
+    },
+    {
+        "attr_ida": "referencial_grav",
+        "attr_volta": "referencialGrav",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "situacao_marco",
+        "attr_volta": "situacaoMarco",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          },
+          {
+            "valor_ida": 999,
+            "valor_volta": 7,
+            "sentido": "volta"
+          }          
+        ]
+    },
+    {
+        "attr_ida": "orgao_responsavel",
+        "attr_volta": "orgResp"
+    },
+    {
+        "attr_ida": "tipo_delimitacao",
+        "attr_volta": "coincideComDentroDe"
+    },
+    {
+        "attr_ida": "controle_id",
+        "attr_volta": "controleId"
+    },
+    {
+        "attr_ida": "observacao",
+        "attr_volta": "obsAquisicao"
+    }
+  ]
+}

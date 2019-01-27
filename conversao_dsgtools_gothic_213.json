@@ -1,5 +1,9 @@
 {"__comment":"UTF-8",
   "mapeamento_classes": [
+    {"__comment":"tra_ponto_rodoviario_ferrov <-> Ponto_Rodoviario_Ferrov",
+      "classe_ida": "cb.ponto_rodoviario_ferrov",
+      "classe_volta": "Ponto_Rodoviario_Ferrov"
+    },
     {"__comment":"asb_edif_abast_agua <-> Edif_Abast_Agua",
       "classe_ida": "cb.asb_edif_abast_agua",
       "classe_volta": "Edif_Abast_Agua",
@@ -126,6 +130,21 @@
           "attr_ida": "relacionado",
           "attr_volta": "relacionado",
           "traducao": [
+            {
+              "valor_ida": 8,
+              "valor_volta": 80,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 9,
+              "valor_volta": 90,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 10,
+              "valor_volta": 100,
+              "sentido": "volta"
+            },
             {
               "valor_ida": 11,
               "valor_volta": 110,
@@ -408,6 +427,10 @@
               "sentido": "ida"
             }
           ]
+        },
+        {
+          "attr_ida": "tipocondutor",
+          "attr_volta": "tipoTrechoDuto"
         }
       ]
     },
@@ -493,6 +516,10 @@
               "sentido": "ida"
             }
           ]
+        },
+        {
+          "attr_ida": "cargasuportmaxima",
+          "attr_volta": "pesoMaxSuportTon"
         }
       ]
     },
@@ -544,6 +571,11 @@
             {
               "valor_ida": 96,
               "valor_volta": 38,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 96,
+              "valor_volta": 39,
               "sentido": "volta"
             }
           ]
@@ -693,19 +725,43 @@
     },
     {"__comment":"adm_edif_pub_civil <-> Edif_Pub_Civil",
       "classe_ida": "cb.adm_edif_pub_civil",
-      "classe_volta": "Edif_Pub_Civil"
+      "classe_volta": "Edif_Pub_Civil",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipoedifcivil",
+          "attr_volta": "tipoEdif"
+        }
+      ]
     },
     {"__comment":"adm_edif_pub_militar <-> Edif_Pub_Militar",
       "classe_ida": "cb.adm_edif_pub_militar",
-      "classe_volta": "Edif_Pub_Militar"
+      "classe_volta": "Edif_Pub_Militar",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipoedifmil",
+          "attr_volta": "tipoEdif"
+        }
+      ]
     },
     {"__comment":"adm_posto_fiscal <-> Posto_Fiscal",
       "classe_ida": "cb.adm_posto_fiscal",
-      "classe_volta": "Posto_Fiscal"
+      "classe_volta": "Posto_Fiscal",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipopostofisc",
+          "attr_volta": "tipoEdif"
+        }
+      ]
     },
     {"__comment":"adm_posto_pol_rod <-> Posto_Pol_Rod",
       "classe_ida": "cb.adm_posto_pol_rod",
-      "classe_volta": "Posto_Pol_Rod"
+      "classe_volta": "Posto_Pol_Rod",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipopostopol",
+          "attr_volta": "tipoEdif"
+        }
+      ]
     },
     {"__comment":"asb_area_abast_agua <-> Area_Abast_Agua",
       "classe_ida": "cb.asb_area_abast_agua",
@@ -945,7 +1001,13 @@
     },
     {"__comment":"hid_ilha <-> Ilha",
       "classe_ida": "cb.hid_ilha",
-      "classe_volta": "Ilha"
+      "classe_volta": "Ilha",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipoilha",
+          "attr_volta": "tipoElemNat"
+        }
+      ]
     },
     {"__comment":"hid_limite_massa_dagua <-> Limite_Massa_Dagua",
       "classe_ida": "cb.hid_limite_massa_dagua",
@@ -989,7 +1051,13 @@
     },
     {"__comment":"hid_trecho_massa_dagua <-> Trecho_Massa_Dagua",
       "classe_ida": "cb.hid_trecho_massa_dagua",
-      "classe_volta": "Trecho_Massa_Dagua"
+      "classe_volta": "Trecho_Massa_Dagua",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipotrechomassa",
+          "attr_volta": "tipoMassaDagua"
+        }
+      ]
     },
     {"__comment":"lim_area_de_litigio <-> Area_De_Litigio",
       "classe_ida": "cb.lim_area_de_litigio",
@@ -1133,19 +1201,43 @@
     },
     {"__comment":"rel_dolina <-> Dolina",
       "classe_ida": "cb.rel_dolina",
-      "classe_volta": "Dolina"
+      "classe_volta": "Dolina",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipoelemnat",
+          "attr_volta": "tipoElemNat"
+        }
+      ]
     },
     {"__comment":"rel_duna <-> Duna",
       "classe_ida": "cb.rel_duna",
-      "classe_volta": "Duna"
+      "classe_volta": "Duna",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipoelemnat",
+          "attr_volta": "tipoElemNat"
+        }
+      ]
     },
     {"__comment":"rel_gruta_caverna <-> Gruta_Caverna",
       "classe_ida": "cb.rel_gruta_caverna",
-      "classe_volta": "Gruta_Caverna"
+      "classe_volta": "Gruta_Caverna",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipogrutacaverna",
+          "attr_volta": "tipoElemNat"
+        }
+      ]
     },
     {"__comment":"rel_pico <-> Pico",
       "classe_ida": "cb.rel_pico",
-      "classe_volta": "Pico"
+      "classe_volta": "Pico",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipogrutacaverna",
+          "attr_volta": "tipoElemNat"
+        }
+      ]
     },
     {"__comment":"rel_ponto_cotado_altimetrico <-> Ponto_Cotado_Altimetrico",
       "classe_ida": "cb.rel_ponto_cotado_altimetrico",
@@ -1157,7 +1249,13 @@
     },
     {"__comment":"rel_rocha <-> Rocha",
       "classe_ida": "cb.rel_rocha",
-      "classe_volta": "Rocha"
+      "classe_volta": "Rocha",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tiporocha",
+          "attr_volta": "tipoElemNat"
+        }
+      ]
     },
     {"__comment":"sau_area_saude <-> Area_Saude",
       "classe_ida": "cb.sau_area_saude",
@@ -1233,7 +1331,13 @@
     },
     {"__comment":"tra_galeria_bueiro <-> Galeria_Bueiro",
       "classe_ida": "cb.tra_galeria_bueiro",
-      "classe_volta": "Galeria_Bueiro"
+      "classe_volta": "Galeria_Bueiro",
+      "traducao_atributos": [
+        {
+          "attr_ida": "pesosuportmaximo",
+          "attr_volta": "pesoMaxSuportTon"
+        }
+      ]
     },
     {"__comment":"tra_girador_ferroviario <-> Girador_Ferroviario",
       "classe_ida": "cb.tra_girador_ferroviario",
@@ -1249,7 +1353,13 @@
     },
     {"__comment":"tra_passag_elevada_viaduto <-> Passag_Elevada_Viaduto",
       "classe_ida": "cb.tra_passag_elevada_viaduto",
-      "classe_volta": "Passag_Elevada_Viaduto"
+      "classe_volta": "Passag_Elevada_Viaduto",
+      "traducao_atributos": [
+        {
+          "attr_ida": "cargasuportmaxima",
+          "attr_volta": "pesoMaxSuportTon"
+        }
+      ]
     },
     {"__comment":"tra_passagem_nivel <-> Passagem_Nivel",
       "classe_ida": "cb.tra_passagem_nivel",
@@ -1265,7 +1375,13 @@
     },
     {"__comment":"tra_ponte <-> Ponte",
       "classe_ida": "cb.tra_ponte",
-      "classe_volta": "Ponte"
+      "classe_volta": "Ponte",
+      "traducao_atributos": [
+        {
+          "attr_ida": "cargasuportmaxima",
+          "attr_volta": "pesoMaxSuportTon"
+        }
+      ]
     },
     {"__comment":"tra_ponto_duto <-> Ponto_Duto",
       "classe_ida": "cb.tra_ponto_duto",
@@ -1293,7 +1409,13 @@
     },
     {"__comment":"tra_trecho_duto <-> Trecho_Duto",
       "classe_ida": "cb.tra_trecho_duto",
-      "classe_volta": "Trecho_Duto"
+      "classe_volta": "Trecho_Duto",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipotrechoduto",
+          "attr_volta": "tipoTrechoDuto"
+        }
+      ]
     },
     {"__comment":"tra_trecho_hidroviario <-> Trecho_Hidroviario",
       "classe_ida": "cb.tra_trecho_hidroviario",
@@ -1301,7 +1423,13 @@
     },
     {"__comment":"tra_trecho_rodoviario <-> Trecho_Rodoviario",
       "classe_ida": "cb.tra_trecho_rodoviario",
-      "classe_volta": "Trecho_Rodoviario"
+      "classe_volta": "Trecho_Rodoviario",
+      "traducao_atributos": [
+        {
+          "attr_ida": "capaccarga",
+          "attr_volta": "pesoMaxSuportTon"
+        }
+      ]
     },
     {"__comment":"tra_trilha_picada <-> Trilha_Picada",
       "classe_ida": "cb.tra_trilha_picada",
@@ -1414,16 +1542,8 @@
       "attr_volta": "canteiroDivisorio"
     },
     {
-      "attr_ida": "capaccarga",
-      "attr_volta": "pesoMaxSuportTon"
-    },
-    {
       "attr_ida": "caracteristicafloresta",
       "attr_volta": "caracteristicaFloresta"
-    },
-    {
-      "attr_ida": "cargasuportmaxima",
-      "attr_volta": "pesoMaxSuportTon"
     },
     {
       "attr_ida": "causaexposicao",
@@ -1495,7 +1615,14 @@
     },
     {
       "attr_ida": "denominacaoassociada",
-      "attr_volta": "denominacaoAssociada"
+      "attr_volta": "denominacaoAssociada",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": null,
+          "sentido": "volta"
+        }
+      ]
     },
     {
       "attr_ida": "dentrodepoligono",
@@ -1611,7 +1738,14 @@
     },
     {
       "attr_ida": "nivelatencao",
-      "attr_volta": "nivelAtencao"
+      "attr_volta": "nivelAtencao",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": null,
+          "sentido": "volta"
+        }
+      ]
     },
     {
       "attr_ida": "nivelotto",
@@ -1678,10 +1812,6 @@
       "attr_volta": "periodicidadeInunda"
     },
     {
-      "attr_ida": "pesosuportmaximo",
-      "attr_volta": "pesoMaxSuportTon"
-    },
-    {
       "attr_ida": "posicaopista",
       "attr_volta": "posicaoPista"
     },
@@ -1739,7 +1869,14 @@
     },
     {
       "attr_ida": "situacaoespacial",
-      "attr_volta": "situacaoEspacial"
+      "attr_volta": "situacaoEspacial",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": null,
+          "sentido": "volta"
+        }
+      ]
     },
     {
       "attr_ida": "situacaofisica",
@@ -1814,10 +1951,6 @@
       "attr_volta": "tipoCombustivel"
     },
     {
-      "attr_ida": "tipocondutor",
-      "attr_volta": "tipoTrechoDuto"
-    },
-    {
       "attr_ida": "tipoconteudo",
       "attr_volta": "tipoConteudo"
     },
@@ -1854,10 +1987,6 @@
       "attr_volta": "tipoEdifAgropec"
     },
     {
-      "attr_ida": "tipoedifcivil",
-      "attr_volta": "tipoEdif"
-    },
-    {
       "attr_ida": "tipoedifcomercserv",
       "attr_volta": "tipoEdifComercServ"
     },
@@ -1872,10 +2001,6 @@
     {
       "attr_ida": "tipoediflazer",
       "attr_volta": "tipoEdifLazer"
-    },
-    {
-      "attr_ida": "tipoedifmil",
-      "attr_volta": "tipoEdif"
     },
     {
       "attr_ida": "tipoedifport",
@@ -1896,10 +2021,6 @@
     {
       "attr_ida": "tipoedifturist",
       "attr_volta": "tipoEdifTurist"
-    },
-    {
-      "attr_ida": "tipoelemnat",
-      "attr_volta": "tipoElemNat"
     },
     {
       "attr_ida": "tipoentroncamento",
@@ -1924,14 +2045,6 @@
     {
       "attr_ida": "tipofontedagua",
       "attr_volta": "tipoFonteDagua"
-    },
-    {
-      "attr_ida": "tipogrutacaverna",
-      "attr_volta": "tipoElemNat"
-    },
-    {
-      "attr_ida": "tipoilha",
-      "attr_volta": "tipoElemNat"
     },
     {
       "attr_ida": "tipolavoura",
@@ -1974,10 +2087,6 @@
       "attr_volta": "tipoMarcoLim"
     },
     {
-      "attr_ida": "tipomassadagua",
-      "attr_volta": "tipoMassaDagua"
-    },
-    {
       "attr_ida": "tipoobst",
       "attr_volta": "tipoObst"
     },
@@ -2008,14 +2117,6 @@
     {
       "attr_ida": "tipoponte",
       "attr_volta": "tipoPonte"
-    },
-    {
-      "attr_ida": "tipopostofisc",
-      "attr_volta": "tipoEdif"
-    },
-    {
-      "attr_ida": "tipopostopol",
-      "attr_volta": "tipoEdif"
     },
     {
       "attr_ida": "tipoprodutoresiduo",
@@ -2058,10 +2159,6 @@
       "attr_volta": "tipoResiduo"
     },
     {
-      "attr_ida": "tiporocha",
-      "attr_volta": "tipoElemNat"
-    },
-    {
       "attr_ida": "tiposecaocnae",
       "attr_volta": "tipoSecaoCnae"
     },
@@ -2094,17 +2191,10 @@
       "attr_volta": "tipoTrechoComunic"
     },
     {
-      "attr_ida": "tipotrechoduto",
-      "attr_volta": "tipoTrechoDuto"
-    },
-    {
       "attr_ida": "tipotrechoferrov",
       "attr_volta": "tipoTrechoFerrov"
     },
-    {
-      "attr_ida": "tipotrechomassa",
-      "attr_volta": "tipoMassaDagua"
-    },
+
     {
       "attr_ida": "tipotrechorod",
       "attr_volta": "tipoTrechoRod"
