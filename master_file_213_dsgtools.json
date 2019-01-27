@@ -12,9 +12,9 @@
     "nome_geom": "geom",
     "nome_id": "id",
     "geom_suffix": {
-      "MultiPoint": "p",
-      "MultiLinestring": "l",
-      "MultiPolygon": "a"
+      "MultiPoint": "_p",
+      "MultiLinestring": "_l",
+      "MultiPolygon": "_a"
     },
     "dominios": [
         {
@@ -1961,33 +1961,8 @@
                 "descricao": "-"
               },
               {
-                "code": 14,
-                "value": "Ponto início de drenagem",
-                "descricao": "-"
-              },
-              {
-                "code": 15,
-                "value": "Confluência",
-                "descricao": "-"
-              },
-              {
                 "code": 16,
                 "value": "Vertedouro",
-                "descricao": "-"
-              },
-              {
-                "code": 17,
-                "value": "Interrupção à Jusante",
-                "descricao": "-"
-              },
-              {
-                "code": 18,
-                "value": "Interrupção à Montante",
-                "descricao": "-"
-              },
-              {
-                "code": 19,
-                "value": "Ramificação",
                 "descricao": "-"
               }
             ]
@@ -12631,18 +12606,6 @@
                     "code": 5
                   }
                 ]
-              },
-              {
-                "nome": "tipoestgerad",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "tipoestgerad",
-                "valores": [
-                  {
-                    "code": 99
-                  }
-                ]
               }
             ]
           },
@@ -12874,18 +12837,6 @@
                   {
                     "code": 98
                   },
-                  {
-                    "code": 99
-                  }
-                ]
-              },
-              {
-                "nome": "tipoestgerad",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "tipoestgerad",
-                "valores": [
                   {
                     "code": 99
                   }
@@ -13953,18 +13904,6 @@
                 "tipo": "varchar(255)",
                 "descricao": "-",
                 "cardinalidade": "0..1"
-              },
-              {
-                "nome": "relacionado",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "relacionado_hid",
-                "valores": [
-                  {
-                    "code": 15
-                  }
-                ]
               }
             ]
           },
@@ -14206,18 +14145,6 @@
                 "tipo": "varchar(255)",
                 "descricao": "-",
                 "cardinalidade": "0..1"
-              },
-              {
-                "nome": "tipoelemnat",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "tipoelemnat",
-                "valores": [
-                  {
-                    "code": 99
-                  }
-                ]
               },
               {
                 "nome": "tipoilha",
@@ -14640,22 +14567,7 @@
                     "code": 13
                   },
                   {
-                    "code": 14
-                  },
-                  {
-                    "code": 15
-                  },
-                  {
                     "code": 16
-                  },
-                  {
-                    "code": 17
-                  },
-                  {
-                    "code": 18
-                  },
-                  {
-                    "code": 19
                   }
                 ]
               }
@@ -14711,18 +14623,6 @@
                 "tipo": "varchar(255)",
                 "descricao": "-",
                 "cardinalidade": "0..1"
-              },
-              {
-                "nome": "relacionado",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "relacionado_hid",
-                "valores": [
-                  {
-                    "code": 14
-                  }
-                ]
               }
             ]
           },
@@ -15649,7 +15549,7 @@
             ]
           },
           {
-            "nome": "area_particular",
+            "nome": "area_de_propriedade_particular",
             "categoria": "lim",
             "descricao": "-",
             "primitivas": ["MultiPolygon"],
@@ -16681,20 +16581,8 @@
                 "cardinalidade": "0..1"
               },
               {
-                "nome": "latitude_gms",
-                "tipo": "real",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
                 "nome": "longitude",
                 "tipo": "varchar(255)",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
-                "nome": "longitude_gms",
-                "tipo": "real",
                 "descricao": "-",
                 "cardinalidade": "0..1"
               },
@@ -17739,20 +17627,8 @@
                 "cardinalidade": "0..1"
               },
               {
-                "nome": "latitude_gms",
-                "tipo": "real",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
                 "nome": "longitude",
                 "tipo": "varchar(255)",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
-                "nome": "longitude_gms",
-                "tipo": "real",
                 "descricao": "-",
                 "cardinalidade": "0..1"
               },
@@ -17804,20 +17680,8 @@
                 "cardinalidade": "0..1"
               },
               {
-                "nome": "latitude_gms",
-                "tipo": "real",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
                 "nome": "longitude",
                 "tipo": "varchar(255)",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
-                "nome": "longitude_gms",
-                "tipo": "real",
                 "descricao": "-",
                 "cardinalidade": "0..1"
               },
@@ -18007,20 +17871,8 @@
                 "cardinalidade": "0..1"
               },
               {
-                "nome": "latitude_gms",
-                "tipo": "real",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
                 "nome": "longitude",
                 "tipo": "varchar(255)",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
-                "nome": "longitude_gms",
-                "tipo": "real",
                 "descricao": "-",
                 "cardinalidade": "0..1"
               },
@@ -18087,20 +17939,8 @@
                 "cardinalidade": "0..1"
               },
               {
-                "nome": "latitude_gms",
-                "tipo": "real",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
                 "nome": "longitude",
                 "tipo": "varchar(255)",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
-                "nome": "longitude_gms",
-                "tipo": "real",
                 "descricao": "-",
                 "cardinalidade": "0..1"
               },
@@ -18516,20 +18356,8 @@
                 "cardinalidade": "0..1"
               },
               {
-                "nome": "latitude_gms",
-                "tipo": "real",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
                 "nome": "longitude",
                 "tipo": "varchar(255)",
-                "descricao": "-",
-                "cardinalidade": "0..1"
-              },
-              {
-                "nome": "longitude_gms",
-                "tipo": "real",
                 "descricao": "-",
                 "cardinalidade": "0..1"
               },
@@ -19514,18 +19342,6 @@
                 "tipo": "varchar(255)",
                 "descricao": "-",
                 "cardinalidade": "0..1"
-              },
-              {
-                "nome": "tipoelemnat",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "tipoelemnat",
-                "valores": [
-                  {
-                    "code": 99
-                  }
-                ]
               }
             ]
           },
@@ -19576,18 +19392,6 @@
                 "tipo": "varchar(255)",
                 "descricao": "-",
                 "cardinalidade": "0..1"
-              },
-              {
-                "nome": "tipoelemnat",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "tipoelemnat",
-                "valores": [
-                  {
-                    "code": 99
-                  }
-                ]
               }
             ]
           },
@@ -19717,18 +19521,6 @@
                 "cardinalidade": "0..1"
               },
               {
-                "nome": "tipoelemnat",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "tipoelemnat",
-                "valores": [
-                  {
-                    "code": 99
-                  }
-                ]
-              },
-              {
                 "nome": "tipogrutacaverna",
                 "tipo": "smallint",
                 "descricao": "-",
@@ -19777,18 +19569,6 @@
                 "tipo": "varchar(255)",
                 "descricao": "-",
                 "cardinalidade": "0..1"
-              },
-              {
-                "nome": "tipoelemnat",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "tipoelemnat",
-                "valores": [
-                  {
-                    "code": 99
-                  }
-                ]
               }
             ]
           },
@@ -19882,18 +19662,6 @@
                 "tipo": "varchar(255)",
                 "descricao": "-",
                 "cardinalidade": "0..1"
-              },
-              {
-                "nome": "tipoelemnat",
-                "tipo": "smallint",
-                "descricao": "-",
-                "cardinalidade": "1..1",
-                "mapa_valor": "tipoelemnat",
-                "valores": [
-                  {
-                    "code": 99
-                  }
-                ]
               },
               {
                 "nome": "tiporocha",
