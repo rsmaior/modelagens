@@ -20,7 +20,7 @@ class FeatureProcessor(object):
         featDict = dict()
         for attr in feature.getAllAttributeNames():
             if attr == 'fme_feature_type' or ('multi_writer' not in attr and 'multi_reader_' not in attr and 'fme_' not in attr and 'postgis_' not in attr):
-                if feature.getAttribute(attr):
+                if feature.getAttribute(attr) or feature.getAttribute(attr) == 0:
                     featDict[attr] = feature.getAttribute(attr)
                 else:
                     featDict[attr] = None
@@ -69,7 +69,7 @@ class FeatureProcessor(object):
                 mappedFeat[attmap[key_attr_destiny]] = featDict[attmap[key_attr_origin]]
                 if "traducao" in attmap:
                     for valuemap in attmap["traducao"]:
-                        if valuemap[key_value_origin] == value and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
+                        if valuemap[key_value_origin] == featDict[attmap[key_attr_origin]] and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
                             mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
 
         for classmap in self.mappingDict['mapeamento_classes']:
@@ -91,13 +91,13 @@ class FeatureProcessor(object):
                                 mappedFeat[attmap[key_attr_destiny]] = featDict[attmap[key_attr_origin]]
                                 if "traducao" in attmap:
                                     for valuemap in attmap["traducao"]:
-                                        if valuemap[key_value_origin] == value and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
+                                        if valuemap[key_value_origin] == featDict[attmap[key_attr_origin]] and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
                                             mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
                     
                     if "mapeamento_atributos" in classmap:
                         for attmap in classmap['mapeamento_atributos']:
                             if "sentido" not in attmap or ("sentido" in attmap and attmap["sentido"] == self.mappingType):
-                                if all([self.evaluateFilter(featDict, condition) for condition in attmap[key_group_origin]]):
+                                if all([self.evaluateExpression(featDict, condition) for condition in attmap[key_group_origin]]):
                                     for valuemap in attmap[key_group_destiny]:
                                         mappedFeat[valuemap["nome_atributo"]] = valuemap["valor"]
                     break
