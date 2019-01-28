@@ -50,6 +50,8 @@ class FeatureProcessor(object):
             filter_key = "filtro_ida"
             key_class_origin = "classe_ida"
             key_class_destiny = "classe_volta"
+            key_group_origin = "tupla_ida"
+            key_group_destiny = "tupla_volta"
         else:
             key_attr_origin = "attr_volta"
             key_attr_destiny = "attr_ida"
@@ -59,15 +61,16 @@ class FeatureProcessor(object):
             filter_key = "filtro_volta"
             key_class_origin = "classe_volta"
             key_class_destiny = "classe_ida"
+            key_group_origin = "tupla_volta"
+            key_group_destiny = "tupla_ida"
 
-        for attr, value in featDict.iteritems():
-            for attmap in self.mappingDict['mapeamento_atributos']:
-                if attmap[key_attr_origin] == attr:
-                    mappedFeat[attmap[key_attr_destiny]] = featDict[attmap[key_attr_origin]]
-                    if "traducao" in attmap:
-                        for valuemap in attmap["traducao"]:
-                            if valuemap[key_value_origin] == value and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
-                                mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
+        for attmap in self.mappingDict['mapeamento_atributos']:
+            if attmap[key_attr_origin] in featDict:
+                mappedFeat[attmap[key_attr_destiny]] = featDict[attmap[key_attr_origin]]
+                if "traducao" in attmap:
+                    for valuemap in attmap["traducao"]:
+                        if valuemap[key_value_origin] == value and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
+                            mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
 
         for classmap in self.mappingDict['mapeamento_classes']:
             if "sentido" not in classmap or ("sentido" in classmap and classmap["sentido"] == self.mappingType):
@@ -83,15 +86,20 @@ class FeatureProcessor(object):
                             mappedFeat[default["nome_atributo"]] = default["valor"]
                 
                     if "traducao_atributos" in classmap:
-                        for attr, value in featDict.iteritems():
-                            for attmap in classmap['traducao_atributos']:
-                                if attmap[key_attr_origin] == attr:
-                                    mappedFeat[attmap[key_attr_destiny]] = featDict[attmap[key_attr_origin]]
-                                    if "traducao" in attmap:
-                                        for valuemap in attmap["traducao"]:
-                                            if valuemap[key_value_origin] == value and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
-                                                mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
+                        for attmap in classmap['traducao_atributos']:
+                            if attmap[key_attr_origin] in featDict:
+                                mappedFeat[attmap[key_attr_destiny]] = featDict[attmap[key_attr_origin]]
+                                if "traducao" in attmap:
+                                    for valuemap in attmap["traducao"]:
+                                        if valuemap[key_value_origin] == value and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
+                                            mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
                     
+                    if "mapeamento_atributos" in classmap:
+                        for attmap in classmap['mapeamento_atributos']:
+                            if "sentido" not in attmap or ("sentido" in attmap and attmap["sentido"] == self.mappingType):
+                                if all([self.evaluateFilter(featDict, condition) for condition in attmap[key_group_origin]]):
+                                    for valuemap in attmap[key_group_destiny]:
+                                        mappedFeat[valuemap["nome_atributo"]] = valuemap["valor"]
                     break
                                     
         return mappedFeat

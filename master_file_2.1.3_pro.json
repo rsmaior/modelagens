@@ -1,6 +1,6 @@
 {
   "modelo": "EDGV 2.1.3 Pro",
-  "versao": "5.00",
+  "versao": "5.1",
   "schema_dados": "edgv",
   "schema_dominios": "dominios",
   "a_ser_preenchido": {
@@ -80,9 +80,9 @@
   "nome_geom": "geom",
   "nome_id": "id",
   "geom_suffix": {
-    "MultiPoint": "p",
-    "MultiLinestring": "l",
-    "MultiPolygon": "a"
+    "MultiPoint": "_p",
+    "MultiLinestring": "_l",
+    "MultiPolygon": "_a"
   },
   "categoria_regra": [
     {
