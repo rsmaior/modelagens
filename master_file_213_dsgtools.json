@@ -7155,7 +7155,12 @@
           {
             "nome": "relacionado_fer_rod",
             "valores": [
-                    {
+              {
+                "code": 0,
+                "value": "Desconhecido",
+                "descricao": "-"
+              },
+              {
                 "code": 1,
                 "value": "Túnel",
                 "descricao": "-"
@@ -23264,6 +23269,9 @@
                 "cardinalidade": "1..1",
                 "mapa_valor": "relacionado_fer_rod",
                 "valores": [
+                  {
+                    "code": 0
+                  },
                   {
                     "code": 1
                   },

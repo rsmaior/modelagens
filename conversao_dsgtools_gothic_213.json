@@ -1,7 +1,7 @@
 {"__comment":"UTF-8",
   "mapeamento_classes": [
     {"__comment":"tra_ponto_rodoviario_ferrov <-> Ponto_Rodoviario_Ferrov",
-      "classe_ida": "cb.ponto_rodoviario_ferrov",
+      "classe_ida": "cb.tra_ponto_rodoviario_ferrov",
       "classe_volta": "Ponto_Rodoviario_Ferrov"
     },
     {"__comment":"asb_edif_abast_agua <-> Edif_Abast_Agua",
@@ -1630,7 +1630,14 @@
     },
     {
       "attr_ida": "destenergelet",
-      "attr_volta": "destEnergElet"
+      "attr_volta": "destEnergElet",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": null,
+          "sentido": "volta"
+        }
+      ]
     },
     {
       "attr_ida": "destinacaofundeadouro",
@@ -1904,7 +1911,14 @@
     },
     {
       "attr_ida": "tipoareaumida",
-      "attr_volta": "tipoAreaUmida"
+      "attr_volta": "tipoAreaUmida",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": null,
+          "sentido": "volta"
+        }
+      ]
     },
     {
       "attr_ida": "tipoareausocomun",

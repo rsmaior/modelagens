@@ -40,7 +40,6 @@ class FeatureProcessor(object):
             return self.evaluateExpression(featDict, filter_condition)
 
     def convertFeature(self, featDict):
-        mappedFeat = copy.deepcopy(featDict)
         if self.mappingType == "ida":
             key_attr_origin = "attr_ida"
             key_attr_destiny = "attr_volta"
@@ -63,6 +62,17 @@ class FeatureProcessor(object):
             key_class_destiny = "classe_ida"
             key_group_origin = "tupla_volta"
             key_group_destiny = "tupla_ida"
+
+        should_map = False
+        for classmap in self.mappingDict['mapeamento_classes']:
+            if "sentido" not in classmap or ("sentido" in classmap and classmap["sentido"] == self.mappingType):
+                if classmap[key_class_origin] == featDict["fme_feature_type"]:
+                    should_map = True
+        if not should_map:
+            featDict["CLASS_NOT_FOUND"] = True
+            return featDict
+
+        mappedFeat = copy.deepcopy(featDict)
 
         for attmap in self.mappingDict['mapeamento_atributos']:
             if attmap[key_attr_origin] in featDict:
@@ -115,8 +125,12 @@ class FeatureProcessor(object):
     def input(self,feature):
         feat = self.buildFeatureDict(feature)
         outputFeatDict = self.convertFeature(feat)
-        outputFeature = self.mapDictToFeature(feature, outputFeatDict)
-        self.pyoutput(outputFeature)
+        if "CLASS_NOT_FOUND" in outputFeatDict and not outputFeatDict["CLASS_NOT_FOUND"]:
+            feature.setAttribute("CLASS_NOT_FOUND", u'True')
+            self.pyoutput(feature)
+        else:
+            outputFeature = self.mapDictToFeature(feature, outputFeatDict)
+            self.pyoutput(outputFeature)
 
     def close(self):
         pass
