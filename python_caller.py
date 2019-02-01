@@ -24,6 +24,12 @@ class FeatureProcessor(object):
                     featDict[attr] = feature.getAttribute(attr)
                 else:
                     featDict[attr] = None
+        if feature.performFunction('@GeometryType()') == 'fme_polygon':
+            featDict["$GEOM_TYPE"] = 'POLYGON'
+        elif feature.performFunction('@GeometryType()') == 'fme_line':
+            featDict["$GEOM_TYPE"] = 'LINESTRING'
+        elif feature.performFunction('@GeometryType()') == 'fme_point':
+            featDict["$GEOM_TYPE"] = 'POINT'
         return featDict
 
     def evaluateExpression(self, featDict, expression):
@@ -98,7 +104,8 @@ class FeatureProcessor(object):
                     if "traducao_atributos" in classmap:
                         for attmap in classmap['traducao_atributos']:
                             if attmap[key_attr_origin] in featDict:
-                                mappedFeat[attmap[key_attr_destiny]] = featDict[attmap[key_attr_origin]]
+                                if attmap[key_attr_destiny] not in mappedFeat:
+                                    mappedFeat[attmap[key_attr_destiny]] = featDict[attmap[key_attr_origin]]
                                 if "traducao" in attmap:
                                     for valuemap in attmap["traducao"]:
                                         if valuemap[key_value_origin] == featDict[attmap[key_attr_origin]] and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
