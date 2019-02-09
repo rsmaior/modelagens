@@ -550,6 +550,11 @@
           "traducao": [
             {
               "valor_ida": 96,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 96,
               "valor_volta": 34,
               "sentido": "volta"
             },
@@ -2220,7 +2225,14 @@
     },
     {
       "attr_ida": "tiposecaocnae",
-      "attr_volta": "tipoSecaoCnae"
+      "attr_volta": "tipoSecaoCnae",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": null,
+          "sentido": "volta"
+        }
+      ]
     },
     {
       "attr_ida": "tiposinal",
