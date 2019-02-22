@@ -81,10 +81,15 @@ class MasterGen():
                 classe["atributos"].extend(master["atributos_padrao"])
                 
             for primitiva in classe["primitivas"]:
-                if "geom_suffix" in master:
+                if "geom_suffix" in classe:
+                    class_name = "{0}{1}".format(classe["nome"], classe["geom_suffix"][primitiva])
+                elif "geom_prefix" in classe:
+                    class_name = "{1}{0}".format(classe["nome"], classe["geom_prefix"][primitiva])
+                elif "geom_suffix" in master:
                     class_name = "{0}{1}".format(classe["nome"], master["geom_suffix"][primitiva])
-                if "geom_prefix" in master:
+                elif "geom_prefix" in master:
                     class_name = "{1}{0}".format(classe["nome"], master["geom_prefix"][primitiva])
+                
                 if classe["categoria"]:
                     class_name = "{0}_{1}".format(classe["categoria"], class_name)
 
@@ -131,7 +136,6 @@ class MasterGen():
                             sql.append(
                                 u"\t ON UPDATE NO ACTION ON DELETE NO ACTION;")
                             sql.append(u"")
-
                             dominio = [dominio for dominio in master["dominios"]
                                        if "nome" in dominio and dominio["nome"] == atributo["mapa_valor"]][0]
                             dominio_att = [valor["code"]
