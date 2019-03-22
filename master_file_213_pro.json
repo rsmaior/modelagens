@@ -7615,6 +7615,12 @@
           "tipo": "varchar(255)",
           "descricao": "-",
           "cardinalidade": "1..1"
+        },
+        {
+          "nome": "mi",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
         }
       ]
     },
