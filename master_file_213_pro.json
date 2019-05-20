@@ -1,6 +1,6 @@
 {
   "modelo": "EDGV 2.1.3 Pro",
-  "versao": "5.1",
+  "versao": "5.2",
   "schema_dados": "edgv",
   "schema_dominios": "dominios",
   "a_ser_preenchido": {
@@ -3631,6 +3631,66 @@
         {
           "code": 11,
           "value": "Vala",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_hid",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Rio",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Canal",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Oceano",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Baía",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Enseada",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Meando Abandonado",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Lago ou Lagoa",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Laguna",
+          "descricao": "-"
+        },
+        {
+          "code": 10,
+          "value": "Represa",
+          "descricao": "-"
+        },
+        {
+          "code": 11,
+          "value": "Açude",
+          "descricao": "-"
+        },
+        {
+          "code": 12,
+          "value": "Terreno Sujeito a Inundação",
           "descricao": "-"
         }
       ]
@@ -7430,6 +7490,20 @@
       ]
     },
     {
+      "nome": "hidrografia",
+      "categoria": "val",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
       "nome": "vegetacao",
       "categoria": "rev",
       "descricao": "-",
@@ -7501,6 +7575,41 @@
     },
     {
       "nome": "transportes",
+      "categoria": "rev",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "categoria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "corrigido",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "hidrografia",
       "categoria": "rev",
       "descricao": "-",
       "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
@@ -7625,7 +7734,7 @@
       ]
     },
     {
-      "nome": "limite_area_continua",
+      "nome": "moldura_area_continua",
       "categoria": "aux",
       "descricao": "-",
       "primitivas": ["MultiPolygon"],
@@ -7639,7 +7748,22 @@
       ]
     },
     {
+      "nome": "rascunho",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring", "MultiPolygon"],
+      "atributos": [
+      ]
+    },
+    {
       "nome": "limite_vegetacao",
+      "categoria": "aquisicao",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": []
+    },
+    {
+      "nome": "limite_hidrografia",
       "categoria": "aquisicao",
       "descricao": "-",
       "primitivas": ["MultiLinestring"],
@@ -7789,11 +7913,66 @@
       ]
     },
     {
-      "nome": "centroide_area_construida",
+      "nome": "centroide_hidrografia",
       "categoria": "aquisicao",
       "descricao": "-",
       "primitivas": ["MultiPoint"],
-      "atributos": []
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "Nome completo da instância",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "Indica o tipo de centroide de hidrografia",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_hid",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 3,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 4,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 5,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 6,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 9,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 10
+            },
+            {
+              "code": 11
+            },
+            {
+              "code": 12
+            }
+          ]
+        }        
+      ]
     }
   ]
 }
