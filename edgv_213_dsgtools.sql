@@ -681,7 +681,7 @@ INSERT INTO dominios.tipoedifagropec (code,code_name) VALUES (12,'Sede operacion
 INSERT INTO dominios.tipoedifagropec (code,code_name) VALUES (13,'Aviário');
 INSERT INTO dominios.tipoedifagropec (code,code_name) VALUES (14,'Apiário');
 INSERT INTO dominios.tipoedifagropec (code,code_name) VALUES (15,'Viveiro de plantas');
-INSERT INTO dominios.tipoedifagropec (code,code_name) VALUES (16,'Viveiro para acquicultura');
+INSERT INTO dominios.tipoedifagropec (code,code_name) VALUES (16,'Viveiro para aquicultura');
 INSERT INTO dominios.tipoedifagropec (code,code_name) VALUES (17,'Pocilga');
 INSERT INTO dominios.tipoedifagropec (code,code_name) VALUES (18,'Curral');
 INSERT INTO dominios.tipoedifagropec (code,code_name) VALUES (99,'Outros');
