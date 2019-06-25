@@ -82,8 +82,7 @@ CREATE TABLE public.layer_styles
 WITH (
   OIDS=FALSE
 );
-ALTER TABLE public.layer_styles
-  OWNER TO postgres;
+ALTER TABLE public.layer_styles OWNER TO postgres;
 GRANT ALL ON TABLE public.layer_styles TO postgres;
 GRANT ALL ON TABLE public.layer_styles TO public;
 

@@ -1,6 +1,6 @@
 {
   "modelo": "EDGV 2.1.3 Pro",
-  "versao": "5.2",
+  "versao": "5.3",
   "schema_dados": "edgv",
   "schema_dominios": "dominios",
   "a_ser_preenchido": {
@@ -84,35 +84,6 @@
     "MultiLinestring": "_l",
     "MultiPolygon": "_a"
   },
-  "categoria_regra": [
-    {
-      "categoryName": "Atributo não preenchido",
-      "color": "255,127,0",
-      "rank": 1
-    },
-    {
-      "categoryName": "Atributo incorreto",
-      "color": "255,0,0",
-      "rank": 1
-    },
-    {
-      "categoryName": "Atributo incomum",
-      "color": "255,255,0",
-      "rank": 3
-    }
-  ],
-  "regras_gerais": [],
-  "regras_especificas": [
-    {
-      "layerName": "area_edificada",
-      "categoria": "cobter",
-      "primitivas": ["MultiPolygon"],
-      "attributeName": "nome",
-      "attributeRule": "\"nome\" NOT NULL",
-      "description": "Area edificada deve ter nome",
-      "category": "Atributo incorreto"
-    }
-  ],
   "dominios": [
     {
       "nome": "tipo_comprovacao",
@@ -935,6 +906,12 @@
         {
           "code": 1,
           "value": "Edificação destruída",
+          "descricao": "-",
+          "valor_filtro": "Edificação genérica"
+        },
+        {
+          "code": 2,
+          "value": "Edificação abandonada",
           "descricao": "-",
           "valor_filtro": "Edificação genérica"
         },
@@ -4523,6 +4500,9 @@
               "code": 1
             },
             {
+              "code": 2
+            },
+            {
               "code": 101
             },
             {
@@ -5208,6 +5188,9 @@
             },
             {
               "code": 43
+            },
+            {
+              "code": 98
             }
           ]
         }
@@ -5979,6 +5962,9 @@
             },
             {
               "code": 97
+            },
+            {
+              "code": 98
             }
           ]
         },
@@ -7675,6 +7661,26 @@
               "code": 2
             }
           ]
+        }
+      ]
+    },
+    {
+      "nome": "insumo_externo",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
         }
       ]
     },
