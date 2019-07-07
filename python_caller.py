@@ -24,7 +24,7 @@ class FeatureProcessor(object):
                     featDict[attr] = feature.getAttribute(attr)
                 else:
                     featDict[attr] = None
-        if feature.performFunction('@GeometryType()') == 'fme_polygon':
+        if feature.performFunction('@GeometryType()') == 'fme_polygon' or feature.performFunction('@GeometryType()') == 'fme_donut':
             featDict["$GEOM_TYPE"] = 'POLYGON'
         elif feature.performFunction('@GeometryType()') == 'fme_line':
             featDict["$GEOM_TYPE"] = 'LINESTRING'
@@ -33,7 +33,7 @@ class FeatureProcessor(object):
         return featDict
 
     def evaluateExpression(self, featDict, expression):
-        return expression["nome_atributo"] in featDict and featDict[expression["nome_atributo"]] == expression["valor"]
+        return expression["nome_atributo"] in featDict and str(featDict[expression["nome_atributo"]]) == str(expression["valor"])
 
     def evaluateFilter(self, featDict, filter_condition):
         if "$and" in filter_condition:
