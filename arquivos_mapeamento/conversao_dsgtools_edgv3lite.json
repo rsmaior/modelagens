@@ -10,5 +10,7 @@
       "attr_ida": "altitudeortometrica",
       "attr_volta": "altitudeOrtometrica"
     }
-  ]
+  ],
+  "atributos_default_ida": [],
+  "atributos_default_volta": []
 }

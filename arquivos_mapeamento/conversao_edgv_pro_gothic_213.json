@@ -1446,5 +1446,7 @@
         "attr_ida": "observacao",
         "attr_volta": "obsAquisicao"
     }
-  ]
+  ],
+  "atributos_default_ida": [],
+  "atributos_default_volta": []
 }

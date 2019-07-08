@@ -7826,5 +7826,7 @@
           "attr_ida":"NOME",
           "attr_volta":"nome"
       }
-  ]
+  ],
+  "atributos_default_ida": [],
+  "atributos_default_volta": []
 }

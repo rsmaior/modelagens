@@ -166,14 +166,24 @@
       "items": { "$ref": "#/definitions/mapeamento_classe" }
     },
     "mapeamento_atributos": {
-      "description": "Mapeamento de atributos aplicado as feições de todas as classes. Primeiro mapeamento a ser realizado.",
+      "description": "Mapeamento de atributos aplicado as feições de todas as classes. Segundo mapeamento a ser realizado.",
       "type": "array",
       "items": { "$ref": "#/definitions/mapeamento_atributo" }
+    },
+    "atributos_default_ida": {
+      "description": "Valores default aplicado a todas as classes no mapeamento de ida. Primeiro mapeamento a ser realizado.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/valores" }
+    },
+    "atributos_default_volta": {
+      "description": "Valores default aplicado a todas as classes no mapeamento de volta. Primeiro mapeamento a ser realizado.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/valores" }
     },
     "__comment": {
       "type": "string"
     }
   },
   "additionalProperties": false,
-  "required": ["mapeamento_classes", "mapeamento_atributos"]
+  "required": ["mapeamento_classes", "mapeamento_atributos", "atributos_default_ida", "atributos_default_volta"]
 }
