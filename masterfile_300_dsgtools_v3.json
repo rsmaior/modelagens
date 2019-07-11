@@ -7477,7 +7477,7 @@
             "atributos": [
                 {
                     "nome": "nome",
-                    "tipo": "varchar(255)",
+                    "tipo": "varchar(80)",
                     "descricao": "-",
                     "cardinalidade": "0..1"
                 },
