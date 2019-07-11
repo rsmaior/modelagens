@@ -14673,6 +14673,165 @@
             ]
         },
         {
+            "nome": "edif_habitacional",
+            "categoria": "edf",
+            "descricao": "-",
+            "primitivas": [
+                "MultiPoint",
+                "MultiPolygon"
+            ],
+            "atributos": [
+                {
+                    "nome": "nome",
+                    "tipo": "varchar(255)",
+                    "descricao": "-",
+                    "cardinalidade": "0..1"
+                },
+                {
+                    "nome": "geometriaaproximada",
+                    "tipo": "boolean",
+                    "descricao": "-",
+                    "cardinalidade": "1..1",
+                    "mapa_valor": "boolean"
+                },
+                {
+                    "nome": "operacional",
+                    "tipo": "smallint",
+                    "descricao": "-",
+                    "cardinalidade": "1..1",
+                    "mapa_valor": "auxiliar",
+                    "valores": [
+                        {
+                            "code": 0
+                        },
+                        {
+                            "code": 1
+                        },
+                        {
+                            "code": 95
+                        }
+                    ]
+                },
+                {
+                    "nome": "situacaofisica",
+                    "tipo": "smallint",
+                    "descricao": "-",
+                    "cardinalidade": "1..1",
+                    "mapa_valor": "situacao_fisica",
+                    "valores": [
+                        {
+                            "code": 1
+                        },
+                        {
+                            "code": 2
+                        },
+                        {
+                            "code": 3
+                        },
+                        {
+                            "code": 4
+                        },
+                        {
+                            "code": 5
+                        },
+                        {
+                            "code": 6
+                        },
+                        {
+                            "code": 7
+                        },
+                        {
+                            "code": 95
+                        },
+                        {
+                            "code": 97
+                        }
+                    ]
+                },
+                {
+                    "nome": "matconstr",
+                    "tipo": "smallint",
+                    "descricao": "-",
+                    "cardinalidade": "1..1",
+                    "mapa_valor": "mat_constr",
+                    "valores": [
+                        {
+                            "code": 1
+                        },
+                        {
+                            "code": 2
+                        },
+                        {
+                            "code": 3
+                        },
+                        {
+                            "code": 4
+                        },
+                        {
+                            "code": 5
+                        },
+                        {
+                            "code": 8
+                        },
+                        {
+                            "code": 23
+                        },
+                        {
+                            "code": 95
+                        },
+                        {
+                            "code": 97
+                        },
+                        {
+                            "code": 99
+                        }
+                    ]
+                },
+                {
+                    "nome": "alturaaproximada",
+                    "tipo": "real",
+                    "descricao": "-",
+                    "cardinalidade": "0..1"
+                },
+                {
+                    "nome": "turistica",
+                    "tipo": "smallint",
+                    "descricao": "-",
+                    "cardinalidade": "1..1",
+                    "mapa_valor": "auxiliar",
+                    "valores": [
+                        {
+                            "code": 0
+                        },
+                        {
+                            "code": 1
+                        },
+                        {
+                            "code": 95
+                        }
+                    ]
+                },
+                {
+                    "nome": "cultura",
+                    "tipo": "smallint",
+                    "descricao": "-",
+                    "cardinalidade": "1..1",
+                    "mapa_valor": "auxiliar",
+                    "valores": [
+                        {
+                            "code": 0
+                        },
+                        {
+                            "code": 1
+                        },
+                        {
+                            "code": 95
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "nome": "edif_constr_est_med_fen",
             "categoria": "edf",
             "descricao": "-",
