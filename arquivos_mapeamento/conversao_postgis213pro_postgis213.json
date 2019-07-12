@@ -42,7 +42,7 @@
             }
           ]
         },
-      "traducao_atributos": [
+      "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
           "attr_volta": "tipoMassaDagua",
@@ -104,7 +104,7 @@
             }
           ]
         },
-      "traducao_atributos": [
+      "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
           "attr_volta": "tipoMassaDagua",
@@ -225,7 +225,7 @@
           ]
         },
       "classe_volta": "Cerrado_Cerradao",
-      "traducao_atributos": [
+      "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
           "attr_volta": "classificacaoPorte",
@@ -365,7 +365,7 @@
           ]
         },
       "classe_volta": "Brejo_Pantano",
-      "traducao_atributos": [
+      "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
           "attr_volta": "classificacaoPorte",
@@ -424,7 +424,7 @@
           ]
         },
       "classe_volta": "Mangue",
-      "traducao_atributos": [
+      "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
           "attr_volta": "classificacaoPorte",
@@ -566,7 +566,7 @@
           ]
         },
       "classe_volta": "Veg_Cultivada",
-      "traducao_atributos": [
+      "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
           "attr_volta": "cultivoPredominante",
@@ -734,7 +734,7 @@
           ]
         }
       ],
-      "mapeamento_atributos": [
+      "mapeamento_multiplo": [
           {
               "sentido": "ida",
               "tupla_ida": [

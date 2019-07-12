@@ -4,6 +4,20 @@
   "description": "Arquivo que descreve o mapeamento entre especificações",
   "type": "object",
   "definitions": {
+    "afixo": {
+      "type": "object",
+      "properties": {
+        "tipo": {
+          "type": "string",
+          "enum": ["sufixo", "prefixo"]
+        },
+        "POINT": { "type": "string" },
+        "LINESTRING": { "type": "string" },
+        "POLYGON": { "type": "string" }
+      },
+      "required": ["nome_atributo", "valor"],
+      "additionalProperties": false
+    },
     "valores": {
       "type": "object",
       "properties": {
@@ -120,7 +134,7 @@
           "type": "array",
           "items": { "$ref": "#/definitions/valores" }
         },
-        "traducao_atributos": {
+        "mapeamento_atributos": {
           "type": "array",
           "items": { "$ref": "#/definitions/mapeamento_atributo" }
         },
@@ -130,7 +144,7 @@
         "filtro_volta": {
           "$ref": "#/definitions/filtro"
         },
-        "mapeamento_atributos": {
+        "mapeamento_multiplo": {
           "type": "array",
           "items": {
             "type": "object",
@@ -180,10 +194,22 @@
       "type": "array",
       "items": { "$ref": "#/definitions/valores" }
     },
+    "schema_ida": { "type": "string" },
+    "schema_volta": { "type": "string" },
+    "agregar_geom_ida": { "type": "boolean" },
+    "agregar_geom_volta": { "type": "boolean" },
+    "afixo_geom_ida": {
+      "$ref": "#/definitions/afixo"
+    },
+    "afixo_geom_volta": {
+      "$ref": "#/definitions/afixo"
+    },
     "__comment": {
       "type": "string"
     }
   },
   "additionalProperties": false,
-  "required": ["mapeamento_classes", "mapeamento_atributos", "atributos_default_ida", "atributos_default_volta"]
+  "required": ["mapeamento_classes"]
 }
+
+

@@ -1,53 +1,69 @@
 {"__comment":"UTF-8",
+  "schema_ida": "",
+  "schema_volta": "cb",
+  "afixo_geom_ida": {
+        "tipo": "sufixo",
+        "POINT": "_P",
+        "LINESTRING": "_L",
+        "POLYGON": "_A"
+  },
+  "afixo_geom_volta": {
+    "tipo": "sufixo",
+    "POINT": "_p",
+    "LINESTRING": "_l",
+    "POLYGON": "_a"
+  },
+  "agregar_geom_ida": true,
+  "agregar_geom_volta": false,
   "mapeamento_classes":[
       {
-          "classe_ida":"TRA_Condutor_Hidrico_L",
-          "classe_volta":"cb.tra_condutor_hidrico_l"
+          "classe_ida": "TRA_Condutor_Hidrico",
+          "classe_volta": "tra_condutor_hidrico"
       },
       {
-          "classe_ida":"EDU_Edif_Ensino_P",
-          "classe_volta":"cb.edu_edif_ensino_p"
+          "classe_ida": "EDU_Edif_Ensino",
+          "classe_volta": "edu_edif_ensino"
       },
       {
-          "classe_ida":"HID_Barragem_A",
-          "classe_volta":"cb.hid_barragem_a"
+          "classe_ida": "HID_Barragem",
+          "classe_volta": "hid_barragem"
       },
       {
-          "classe_ida":"HID_Queda_Dagua_P",
-          "classe_volta":"cb.hid_queda_dagua_p"
+          "classe_ida": "HID_Queda_Dagua",
+          "classe_volta": "hid_queda_dagua"
       },
       {
-          "classe_ida":"TRA_Trecho_Duto_L",
-          "classe_volta":"cb.tra_trecho_duto_l"
+          "classe_ida": "TRA_Trecho_Duto",
+          "classe_volta": "tra_trecho_duto"
       },
       {
-          "classe_ida":"TRA_Identificador_Trecho_Rodoviario_P",
-          "classe_volta":"cb.tra_identific_trecho_rod_p"
+          "classe_ida": "TRA_Identificador_Trecho_Rodoviario",
+          "classe_volta": "tra_identific_trecho_rod"
       },
       {
-          "classe_ida":"HID_Corredeira_A",
-          "classe_volta":"cb.hid_corredeira_a"
+          "classe_ida": "HID_Corredeira",
+          "classe_volta": "hid_corredeira"
       },
       {
-          "classe_ida":"TRA_Posto_Combustivel_A",
-          "classe_volta":"cb.tra_posto_combustivel_a"
+          "classe_ida": "TRA_Posto_Combustivel",
+          "classe_volta": "tra_posto_combustivel"
       },
       {
-          "classe_ida":"PTO_Area_Est_Med_Fenomenos_A",
-          "classe_volta":"cb.pto_area_est_med_fenom_a"
+          "classe_ida": "PTO_Area_Est_Med_Fenomenos",
+          "classe_volta": "pto_area_est_med_fenom"
       },
       {
-          "classe_ida":"TRA_Edif_Constr_Portuaria_A",
-          "classe_volta":"cb.tra_edif_constr_portuaria_a"
+          "classe_ida": "TRA_Edif_Constr_Portuaria",
+          "classe_volta": "tra_edif_constr_portuaria"
       },
       {
-          "classe_ida":"LIM_Delimitacao_Fisica_L",
-          "classe_volta":"cb.lim_delimitacao_fisica_l"
+          "classe_ida": "LIM_Delimitacao_Fisica",
+          "classe_volta": "lim_delimitacao_fisica"
       },
       {
-          "classe_ida":"LIM_Limite_Politico_Administrativo_L",
-          "classe_volta":"cb.lim_limite_politico_adm_l",
-          "traducao_atributos": [
+          "classe_ida": "LIM_Limite_Politico_Administrativo",
+          "classe_volta": "lim_limite_politico_adm",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"COINCIDECO",
                   "attr_volta":"coincidecomdentrode",
@@ -93,9 +109,9 @@
           ]
       },
       {
-          "classe_ida":"LIM_Limite_Intra_Municipal_Administrativo_L",
-          "classe_volta":"cb.lim_limite_intra_munic_adm_l",
-          "traducao_atributos": [
+          "classe_ida": "LIM_Limite_Intra_Municipal_Administrativo",
+          "classe_volta": "lim_limite_intra_munic_adm",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"COINCIDECO",
                   "attr_volta":"coincidecomdentrode",
@@ -141,21 +157,21 @@
           ]
       },
       {
-          "classe_ida":"EDU_Edif_Const_Lazer_P",
-          "classe_volta":"cb.edu_edif_const_lazer_p"
+          "classe_ida": "EDU_Edif_Const_Lazer",
+          "classe_volta": "edu_edif_const_lazer"
       },
       {
-          "classe_ida":"LIM_Unidade_Federacao_A",
-          "classe_volta":"cb.lim_unidade_federacao_a"
+          "classe_ida": "LIM_Unidade_Federacao",
+          "classe_volta": "lim_unidade_federacao"
       },
       {
-          "classe_ida":"ADM_Area_Pub_Civil_A",
-          "classe_volta":"cb.adm_area_pub_civil_a"
+          "classe_ida": "ADM_Area_Pub_Civil",
+          "classe_volta": "adm_area_pub_civil"
       },
       {
-          "classe_ida":"TRA_Ponto_Duto_P",
-          "classe_volta":"cb.tra_ponto_duto_p",
-          "traducao_atributos": [
+          "classe_ida": "TRA_Ponto_Duto",
+          "classe_volta": "tra_ponto_duto",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"RELACIONAD",
                   "attr_volta":"relacionado",
@@ -189,9 +205,9 @@
           ]
       },
       {
-        "classe_ida":"TRA_Ponto_Rodoviario_Ferrov_P",
-        "classe_volta":"cb.tra_ponto_rodoviario_ferrov_p",
-        "traducao_atributos": [
+        "classe_ida": "TRA_Ponto_Rodoviario_Ferrov",
+        "classe_volta": "tra_ponto_rodoviario_ferrov",
+        "mapeamento_atributos": [
             {
                 "attr_ida":"RELACIONAD",
                 "attr_volta":"relacionado",
@@ -265,37 +281,33 @@
         ]
     },
       {
-          "classe_ida":"TRA_Cremalheira_P",
-          "classe_volta":"cb.tra_cremalheira_p"
+          "classe_ida": "TRA_Cremalheira",
+          "classe_volta": "tra_cremalheira"
       },
       {
-          "classe_ida":"LOC_Cidade_P",
-          "classe_volta":"cb.loc_cidade_p"
+          "classe_ida": "LOC_Cidade",
+          "classe_volta": "loc_cidade"
       },
       {
-          "classe_ida":"EDU_Edif_Religiosa_A",
-          "classe_volta":"cb.edu_edif_religiosa_a"
+          "classe_ida": "EDU_Edif_Religiosa",
+          "classe_volta": "edu_edif_religiosa"
       },
       {
-          "classe_ida":"HID_Barragem_P",
-          "classe_volta":"cb.hid_barragem_p"
+          "classe_ida": "TRA_Faixa_Seguranca",
+          "classe_volta": "tra_faixa_seguranca"
       },
       {
-          "classe_ida":"TRA_Faixa_Seguranca_A",
-          "classe_volta":"cb.tra_faixa_seguranca_a"
+          "classe_ida": "LIM_Area_Uso_Comunitario",
+          "classe_volta": "lim_area_uso_comunitario"
       },
       {
-          "classe_ida":"LIM_Area_Uso_Comunitario_A",
-          "classe_volta":"cb.lim_area_uso_comunitario_a"
+          "classe_ida": "HID_Trecho_Massa_Dagua",
+          "classe_volta": "hid_trecho_massa_dagua"
       },
       {
-          "classe_ida":"HID_Trecho_Massa_Dagua_A",
-          "classe_volta":"cb.hid_trecho_massa_dagua_a"
-      },
-      {
-          "classe_ida":"VEG_Campinarana_A",
-          "classe_volta":"cb.veg_campinarana_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Campinarana",
+          "classe_volta": "veg_campinarana",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -329,68 +341,64 @@
           ]
       },
       {
-          "classe_ida":"ENC_Torre_Comunic_P",
-          "classe_volta":"cb.enc_torre_comunic_p"
+          "classe_ida": "ENC_Torre_Comunic",
+          "classe_volta": "enc_torre_comunic"
       },
       {
-          "classe_ida":"TRA_Ponte_L",
-          "classe_volta":"cb.tra_ponte_l"
+          "classe_ida": "TRA_Ponte",
+          "classe_volta": "tra_ponte"
       },
       {
-          "classe_ida":"LIM_Regiao_Administrativa_A",
-          "classe_volta":"cb.lim_regiao_administrativa_a"
+          "classe_ida": "LIM_Regiao_Administrativa",
+          "classe_volta": "lim_regiao_administrativa"
       },
       {
-          "classe_ida":"LIM_Unidade_Conservacao_Nao_SNUC_P",
-          "classe_volta":"cb.lim_unidade_conserv_nao_snuc_p"
+          "classe_ida": "LIM_Unidade_Conservacao_Nao_SNUC",
+          "classe_volta": "lim_unidade_conserv_nao_snuc"
       },
       {
-          "classe_ida":"LIM_Unidade_Conservacao_Nao_SNUC_A",
-          "classe_volta":"cb.lim_unidade_conserv_nao_snuc_a"
+          "classe_ida": "LIM_Unidade_Conservacao_Nao_SNUC",
+          "classe_volta": "lim_unidade_conserv_nao_snuc"
       },
       {
-          "classe_ida":"TRA_Travessia_P",
-          "classe_volta":"cb.tra_travessia_p"
+          "classe_ida": "TRA_Travessia",
+          "classe_volta": "tra_travessia"
       },
       {
-          "classe_ida":"TRA_Local_Critico_A",
-          "classe_volta":"cb.tra_local_critico_a"
+          "classe_ida": "TRA_Local_Critico",
+          "classe_volta": "tra_local_critico"
       },
       {
-          "classe_ida":"ADM_Edif_Pub_Militar_A",
-          "classe_volta":"cb.adm_edif_pub_militar_a"
+          "classe_ida": "ADM_Edif_Pub_Militar",
+          "classe_volta": "adm_edif_pub_militar"
       },
       {
-          "classe_ida":"ECO_Equip_Agropec_A",
-          "classe_volta":"cb.eco_equip_agropec_a"
+          "classe_ida": "ECO_Equip_Agropec",
+          "classe_volta": "eco_equip_agropec"
       },
       {
-          "classe_ida":"HID_Natureza_Fundo_L",
-          "classe_volta":"cb.hid_natureza_fundo_l"
+          "classe_ida": "HID_Natureza_Fundo",
+          "classe_volta": "hid_natureza_fundo"
       },
       {
-          "classe_ida":"LIM_Sub_Distrito_A",
-          "classe_volta":"cb.lim_sub_distrito_a"
+          "classe_ida": "LIM_Sub_Distrito",
+          "classe_volta": "lim_sub_distrito"
       },
       {
-          "classe_ida":"REL_Alteracao_Fisiografica_Antropica_A",
-          "classe_volta":"cb.rel_alter_fisiog_antropica_a"
+          "classe_ida": "REL_Alteracao_Fisiografica_Antropica",
+          "classe_volta": "rel_alter_fisiog_antropica"
       },
       {
-          "classe_ida":"REL_Alteracao_Fisiografica_Antropica_L",
-          "classe_volta":"cb.rel_alter_fisiog_antropica_l"
+          "classe_ida": "SAU_Edif_Servico_Social",
+          "classe_volta": "sau_edif_servico_social"
       },
       {
-          "classe_ida":"SAU_Edif_Servico_Social_A",
-          "classe_volta":"cb.sau_edif_servico_social_a"
+          "classe_ida": "TRA_Ciclovia",
+          "classe_volta": "tra_ciclovia"
       },
       {
-          "classe_ida":"TRA_Ciclovia_L",
-          "classe_volta":"cb.tra_ciclovia_l"
-      },
-      {
-          "classe_ida":"HID_Confluencia_P",
-          "classe_volta":"cb.hid_confluencia_p",
+          "classe_ida": "HID_Confluencia",
+          "classe_volta": "hid_confluencia",
           "atributos_default_volta":[
               {
                   "nome_atributo":"RELACIONAD",
@@ -399,25 +407,21 @@
           ]
       },
       {
-          "classe_ida":"TRA_Sinalizacao_P",
-          "classe_volta":"cb.tra_sinalizacao_p"
+          "classe_ida": "TRA_Sinalizacao",
+          "classe_volta": "tra_sinalizacao"
       },
       {
-          "classe_ida":"TRA_Patio_P",
-          "classe_volta":"cb.tra_patio_p"
+          "classe_ida": "TRA_Patio",
+          "classe_volta": "tra_patio"
       },
       {
-          "classe_ida":"TRA_Galeria_Bueiro_P",
-          "classe_volta":"cb.tra_galeria_bueiro_p"
+          "classe_ida": "TRA_Galeria_Bueiro",
+          "classe_volta": "tra_galeria_bueiro"
       },
       {
-          "classe_ida":"HID_Natureza_Fundo_P",
-          "classe_volta":"cb.hid_natureza_fundo_p"
-      },
-      {
-          "classe_ida":"LIM_Limite_Area_Especial_L",
-          "classe_volta":"cb.lim_limite_area_especial_l",
-          "traducao_atributos": [
+          "classe_ida": "LIM_Limite_Area_Especial",
+          "classe_volta": "lim_limite_area_especial",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"COINCIDECO",
                   "attr_volta":"coincidecomdentrode",
@@ -463,17 +467,17 @@
           ]
       },
       {
-          "classe_ida":"TRA_Edif_Metro_Ferroviaria_A",
-          "classe_volta":"cb.tra_edif_metro_ferroviaria_a"
+          "classe_ida": "TRA_Edif_Metro_Ferroviaria",
+          "classe_volta": "tra_edif_metro_ferroviaria"
       },
       {
-          "classe_ida":"HID_Recife_L",
-          "classe_volta":"cb.hid_recife_l"
+          "classe_ida": "HID_Recife",
+          "classe_volta": "hid_recife"
       },
       {
-          "classe_ida":"VEG_Veg_Restinga_A",
-          "classe_volta":"cb.veg_veg_restinga_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Veg_Restinga",
+          "classe_volta": "veg_veg_restinga",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -507,9 +511,9 @@
           ]
       },
       {
-          "classe_ida":"LIM_Limite_Particular_L",
-          "classe_volta":"cb.lim_limite_particular_l",
-          "traducao_atributos": [
+          "classe_ida": "LIM_Limite_Particular",
+          "classe_volta": "lim_limite_particular",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"COINCIDECO",
                   "attr_volta":"coincidecomdentrode",
@@ -555,57 +559,45 @@
           ]
       },
       {
-          "classe_ida":"TRA_Girador_Ferroviario_P",
-          "classe_volta":"cb.tra_girador_ferroviario_p"
+          "classe_ida": "TRA_Girador_Ferroviario",
+          "classe_volta": "tra_girador_ferroviario"
       },
       {
-          "classe_ida":"LIM_Outras_Unid_Protegidas_A",
-          "classe_volta":"cb.lim_outras_unid_protegidas_a"
+          "classe_ida": "LIM_Outras_Unid_Protegidas",
+          "classe_volta": "lim_outras_unid_protegidas"
       },
       {
-          "classe_ida":"TRA_Area_Duto_A",
-          "classe_volta":"cb.tra_area_duto_a"
+          "classe_ida": "TRA_Area_Duto",
+          "classe_volta": "tra_area_duto"
       },
       {
-          "classe_ida":"ADM_Posto_Pol_Rod_A",
-          "classe_volta":"cb.adm_posto_pol_rod_a"
+          "classe_ida": "ADM_Posto_Pol_Rod",
+          "classe_volta": "adm_posto_pol_rod"
       },
       {
-          "classe_ida":"REL_Rocha_A",
-          "classe_volta":"cb.rel_rocha_a"
+          "classe_ida": "REL_Rocha",
+          "classe_volta": "rel_rocha"
       },
       {
-          "classe_ida":"REL_Elemento_Fisiografico_Natural_P",
-          "classe_volta":"cb.cb.rel_elemento_fisiog_natural_p"
+          "classe_ida": "REL_Elemento_Fisiografico_Natural",
+          "classe_volta": "rel_elemento_fisiog_natural"
       },
       {
-          "classe_ida":"REL_Elemento_Fisiografico_Natural_L",
-          "classe_volta":"cb.cb.rel_elemento_fisiog_natural_l"
+          "classe_ida": "HID_Banco_Areia",
+          "classe_volta": "hid_banco_areia"
       },
       {
-          "classe_ida":"REL_Elemento_Fisiografico_Natural_A",
-          "classe_volta":"cb.cb.rel_elemento_fisiog_natural_a"
+          "classe_ida": "HID_Terreno_Sujeito_Inundacao",
+          "classe_volta": "hid_terreno_suj_inundacao"
       },
       {
-          "classe_ida":"HID_Banco_Areia_L",
-          "classe_volta":"cb.hid_banco_areia_l"
+          "classe_ida": "TRA_Caminho_Aereo",
+          "classe_volta": "tra_caminho_aereo"
       },
       {
-          "classe_ida":"HID_Terreno_Sujeito_Inundacao_A",
-          "classe_volta":"cb.hid_terreno_suj_inundacao_a"
-      },
-      {
-          "classe_ida":"TRA_Eclusa_P",
-          "classe_volta":"cb.tra_eclusa_p"
-      },
-      {
-          "classe_ida":"TRA_Caminho_Aereo_L",
-          "classe_volta":"cb.tra_caminho_aereo_l"
-      },
-      {
-          "classe_ida":"HID_Trecho_Drenagem_L",
-          "classe_volta":"cb.hid_trecho_drenagem_l",
-          "traducao_atributos": [
+          "classe_ida": "HID_Trecho_Drenagem",
+          "classe_volta": "hid_trecho_drenagem",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"COINCIDECO",
                   "attr_volta":"coincidecomdentrode",
@@ -663,45 +655,41 @@
           ]
       },
       {
-          "classe_ida":"LIM_Distrito_A",
-          "classe_volta":"cb.lim_distrito_a"
+          "classe_ida": "LIM_Distrito",
+          "classe_volta": "lim_distrito"
       },
       {
-          "classe_ida":"ADM_Posto_Fiscal_P",
-          "classe_volta":"cb.adm_posto_fiscal_p"
+          "classe_ida": "ADM_Posto_Fiscal",
+          "classe_volta": "adm_posto_fiscal"
       },
       {
-          "classe_ida":"EDU_Ruina_A",
-          "classe_volta":"cb.edu_ruina_a"
+          "classe_ida": "EDU_Ruina",
+          "classe_volta": "edu_ruina"
       },
       {
-          "classe_ida":"LIM_Terra_Publica_A",
-          "classe_volta":"cb.lim_terra_publica_a"
+          "classe_ida": "LIM_Terra_Publica",
+          "classe_volta": "lim_terra_publica"
       },
       {
-          "classe_ida":"LOC_Capital_P",
-          "classe_volta":"cb.loc_capital_p"
+          "classe_ida": "LOC_Capital",
+          "classe_volta": "loc_capital"
       },
       {
-          "classe_ida":"EDU_Edif_Const_Lazer_A",
-          "classe_volta":"cb.edu_edif_const_lazer_a"
+          "classe_ida": "LOC_Edificacao",
+          "classe_volta": "loc_edificacao"
       },
       {
-          "classe_ida":"LOC_Edificacao_A",
-          "classe_volta":"cb.loc_edificacao_a"
+          "classe_ida": "TRA_Fundeadouro",
+          "classe_volta": "tra_fundeadouro"
       },
       {
-          "classe_ida":"TRA_Fundeadouro_P",
-          "classe_volta":"cb.tra_fundeadouro_p"
+          "classe_ida": "ASB_Cemiterio",
+          "classe_volta": "asb_cemiterio"
       },
       {
-          "classe_ida":"ASB_Cemiterio_P",
-          "classe_volta":"cb.asb_cemiterio_p"
-      },
-      {
-          "classe_ida":"VEG_Caatinga_A",
-          "classe_volta":"cb.veg_caatinga_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Caatinga",
+          "classe_volta": "veg_caatinga",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -735,33 +723,33 @@
           ]
       },
       {
-          "classe_ida":"ENC_Ponto_Trecho_Energia_P",
-          "classe_volta":"cb.enc_ponto_trecho_energia_p"
+          "classe_ida": "ENC_Ponto_Trecho_Energia",
+          "classe_volta": "enc_ponto_trecho_energia"
       },
       {
-          "classe_ida":"TRA_Edif_Rodoviaria_P",
-          "classe_volta":"cb.tra_edif_rodoviaria_p"
+          "classe_ida": "TRA_Edif_Rodoviaria",
+          "classe_volta": "tra_edif_rodoviaria"
       },
       {
-          "classe_ida":"TRA_Passagem_Nivel_P",
-          "classe_volta":"cb.tra_passagem_nivel_p"
+          "classe_ida": "TRA_Passagem_Nivel",
+          "classe_volta": "tra_passagem_nivel"
       },
       {
-          "classe_ida":"TRA_Obstaculo_Navegacao_P",
-          "classe_volta":"cb.tra_obstaculo_navegacao_p"
+          "classe_ida": "TRA_Obstaculo_Navegacao",
+          "classe_volta": "tra_obstaculo_navegacao"
       },
       {
-          "classe_ida":"REL_Ponto_Cotado_Altimetrico_P",
-          "classe_volta":"cb.rel_ponto_cotado_altimetrico_p"
+          "classe_ida": "REL_Ponto_Cotado_Altimetrico",
+          "classe_volta": "rel_ponto_cotado_altimetrico"
       },
       {
-          "classe_ida":"ECO_Plataforma_P",
-          "classe_volta":"cb.eco_plataforma_p"
+          "classe_ida": "ECO_Plataforma",
+          "classe_volta": "eco_plataforma"
       },
       {
-          "classe_ida":"LIM_Terra_Indigena_P",
-          "classe_volta":"cb.lim_terra_indigena_p",
-          "traducao_atributos":[
+          "classe_ida": "LIM_Terra_Indigena",
+          "classe_volta": "lim_terra_indigena",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"AREAOFICIA",
                   "attr_volta":"areaoficialha"
@@ -769,185 +757,129 @@
           ]
       },
       {
-          "classe_ida":"HID_Banco_Areia_A",
-          "classe_volta":"cb.hid_banco_areia_a"
+          "classe_ida": "ASB_Dep_Saneamento",
+          "classe_volta": "asb_dep_saneamento"
       },
       {
-          "classe_ida":"ASB_Dep_Saneamento_P",
-          "classe_volta":"cb.asb_dep_saneamento_p"
+          "classe_ida": "ENC_Grupo_Transformadores",
+          "classe_volta": "enc_grupo_transformadores"
       },
       {
-          "classe_ida":"ENC_Grupo_Transformadores_A",
-          "classe_volta":"cb.enc_grupo_transformadores_a"
+          "classe_ida": "ENC_Est_Gerad_Energia_Eletrica",
+          "classe_volta": "enc_est_gerad_energia_eletr"
       },
       {
-          "classe_ida":"ENC_Est_Gerad_Energia_Eletrica_P",
-          "classe_volta":"cb.enc_est_gerad_energia_eletr_p"
+          "classe_ida": "LIM_Area_De_Propriedade_Particular",
+          "classe_volta": "lim_area_de_propriedade_particular"
       },
       {
-          "classe_ida":"ENC_Est_Gerad_Energia_Eletrica_L",
-          "classe_volta":"cb.enc_est_gerad_energia_eletr_l"
+          "classe_ida": "HID_Comporta",
+          "classe_volta": "hid_comporta"
       },
       {
-          "classe_ida":"ENC_Est_Gerad_Energia_Eletrica_A",
-          "classe_volta":"cb.enc_est_gerad_energia_eletr_a"
+          "classe_ida": "ASB_Dep_Abast_Agua",
+          "classe_volta": "asb_dep_abast_agua"
       },
       {
-          "classe_ida":"LIM_Area_De_Propriedade_Particular_A",
-          "classe_volta":"cb.lim_area_de_propriedade_particular_a"
+          "classe_ida": "LOC_Area_Habitacional",
+          "classe_volta": "loc_area_habitacional"
       },
       {
-          "classe_ida":"EDU_Edif_Ensino_A",
-          "classe_volta":"cb.edu_edif_ensino_a"
+          "classe_ida": "REL_Ponto_Cotado_Batimetrico",
+          "classe_volta": "rel_ponto_cotado_batimetrico"
       },
       {
-          "classe_ida":"ECO_Equip_Agropec_P",
-          "classe_volta":"cb.eco_equip_agropec_p"
+          "classe_ida": "HID_Foz_Maritima",
+          "classe_volta": "hid_foz_maritima"
       },
       {
-          "classe_ida":"HID_Comporta_P",
-          "classe_volta":"cb.hid_comporta_p"
+          "classe_ida": "ECO_Deposito_Geral",
+          "classe_volta": "eco_deposito_geral"
       },
       {
-          "classe_ida":"ASB_Dep_Abast_Agua_A",
-          "classe_volta":"cb.asb_dep_abast_agua_a"
+          "classe_ida": "SAU_Area_Servico_Social",
+          "classe_volta": "sau_area_servico_social"
       },
       {
-          "classe_ida":"LOC_Area_Habitacional_A",
-          "classe_volta":"cb.loc_area_habitacional_a"
+          "classe_ida": "TRA_Passag_Elevada_Viaduto",
+          "classe_volta": "tra_passag_elevada_viaduto"
       },
       {
-          "classe_ida":"ECO_Plataforma_A",
-          "classe_volta":"cb.eco_plataforma_a"
+          "classe_ida": "ADM_Edif_Pub_Civil",
+          "classe_volta": "adm_edif_pub_civil"
       },
       {
-          "classe_ida":"REL_Ponto_Cotado_Batimetrico_P",
-          "classe_volta":"cb.rel_ponto_cotado_batimetrico_p"
+          "classe_ida": "VEG_Estepe",
+          "classe_volta": "veg_estepe"
       },
       {
-          "classe_ida":"HID_Foz_Maritima_A",
-          "classe_volta":"cb.hid_foz_maritima_a"
+          "classe_ida": "LIM_Bairro",
+          "classe_volta": "lim_bairro"
       },
       {
-          "classe_ida":"ECO_Deposito_Geral_A",
-          "classe_volta":"cb.eco_deposito_geral_a"
+          "classe_ida": "LIM_Unidade_Uso_Sustentavel",
+          "classe_volta": "lim_unidade_uso_sustentavel"
       },
       {
-          "classe_ida":"SAU_Area_Servico_Social_A",
-          "classe_volta":"cb.sau_area_servico_social_a"
+          "classe_ida": "ENC_Termeletrica",
+          "classe_volta": "enc_termeletrica"
       },
       {
-          "classe_ida":"TRA_Passag_Elevada_Viaduto_L",
-          "classe_volta":"cb.tra_passag_elevada_viaduto_l"
+          "classe_ida": "REL_Curva_Batimetrica",
+          "classe_volta": "rel_curva_batimetrica"
       },
       {
-          "classe_ida":"ADM_Edif_Pub_Civil_P",
-          "classe_volta":"cb.adm_edif_pub_civil_p"
+          "classe_ida": "ASB_Edif_Saneamento",
+          "classe_volta": "asb_edif_saneamento"
       },
       {
-          "classe_ida":"VEG_Estepe_A",
-          "classe_volta":"cb.veg_estepe_a"
+          "classe_ida": "ENC_Edif_Energia",
+          "classe_volta": "enc_edif_energia"
       },
       {
-          "classe_ida":"LIM_Bairro_A",
-          "classe_volta":"cb.lim_bairro_a"
+          "classe_ida": "EDU_Area_Ruinas",
+          "classe_volta": "edu_area_ruinas"
       },
       {
-          "classe_ida":"LIM_Unidade_Uso_Sustentavel_P",
-          "classe_volta":"cb.lim_unidade_uso_sustentavel_p"
+          "classe_ida": "REL_Terreno_Exposto",
+          "classe_volta": "rel_terreno_exposto"
       },
       {
-          "classe_ida":"ENC_Termeletrica_P",
-          "classe_volta":"cb.enc_termeletrica_p"
+          "classe_ida": "EDU_Campo_Quadra",
+          "classe_volta": "edu_campo_quadra"
       },
       {
-          "classe_ida":"REL_Curva_Batimetrica_L",
-          "classe_volta":"cb.rel_curva_batimetrica_l"
+          "classe_ida": "HID_Area_Umida",
+          "classe_volta": "hid_area_umida"
       },
       {
-          "classe_ida":"ASB_Edif_Saneamento_A",
-          "classe_volta":"cb.asb_edif_saneamento_a"
+          "classe_ida": "HID_Bacia_Hidrografica",
+          "classe_volta": "hid_bacia_hidrografica"
       },
       {
-          "classe_ida":"TRA_Ponte_P",
-          "classe_volta":"cb.tra_ponte_p"
+          "classe_ida": "ECO_Edif_Industrial",
+          "classe_volta": "eco_edif_industrial"
       },
       {
-          "classe_ida":"ENC_Edif_Energia_P",
-          "classe_volta":"cb.enc_edif_energia_p"
+          "classe_ida": "ECO_Edif_Agropec_Ext_Vegetal_Pesca",
+          "classe_volta": "eco_edif_agrop_ext_veg_pesca"
       },
       {
-          "classe_ida":"EDU_Area_Ruinas_A",
-          "classe_volta":"cb.edu_area_ruinas_a"
+          "classe_ida": "HID_Reservatorio_Hidrico",
+          "classe_volta": "hid_reservatorio_hidrico"
       },
       {
-          "classe_ida":"REL_Terreno_Exposto_A",
-          "classe_volta":"cb.rel_terreno_exposto_a"
+          "classe_ida": "LOC_Hab_Indigena",
+          "classe_volta": "loc_hab_indigena"
       },
       {
-          "classe_ida":"TRA_Fundeadouro_A",
-          "classe_volta":"cb.tra_fundeadouro_a"
+          "classe_ida": "LOC_Nome_Local",
+          "classe_volta": "loc_nome_local"
       },
       {
-          "classe_ida":"EDU_Campo_Quadra_P",
-          "classe_volta":"cb.edu_campo_quadra_p"
-      },
-      {
-          "classe_ida":"ASB_Dep_Abast_Agua_P",
-          "classe_volta":"cb.asb_dep_abast_agua_p"
-      },
-      {
-          "classe_ida":"SAU_Edif_Servico_Social_P",
-          "classe_volta":"cb.sau_edif_servico_social_p"
-      },
-      {
-          "classe_ida":"HID_Area_Umida_A",
-          "classe_volta":"cb.hid_area_umida_a"
-      },
-      {
-          "classe_ida":"HID_Bacia_Hidrografica_A",
-          "classe_volta":"cb.hid_bacia_hidrografica_a"
-      },
-      {
-          "classe_ida":"ECO_Edif_Industrial_P",
-          "classe_volta":"cb.eco_edif_industrial_p"
-      },
-      {
-          "classe_ida":"ECO_Edif_Agropec_Ext_Vegetal_Pesca_A",
-          "classe_volta":"cb.eco_edif_agrop_ext_veg_pesca_a"
-      },
-      {
-          "classe_ida":"ECO_Edif_Agropec_Ext_Vegetal_Pesca_P",
-          "classe_volta":"cb.eco_edif_agrop_ext_veg_pesca_p"
-      },
-      {
-          "classe_ida":"HID_Reservatorio_Hidrico_A",
-          "classe_volta":"cb.hid_reservatorio_hidrico_a"
-      },
-      {
-          "classe_ida":"LIM_Area_Uso_Comunitario_P",
-          "classe_volta":"cb.lim_area_uso_comunitario_p"
-      },
-      {
-          "classe_ida":"HID_Natureza_Fundo_A",
-          "classe_volta":"cb.hid_natureza_fundo_a"
-      },
-      {
-          "classe_ida":"LOC_Hab_Indigena_P",
-          "classe_volta":"cb.loc_hab_indigena_p"
-      },
-      {
-          "classe_ida":"LOC_Edificacao_P",
-          "classe_volta":"cb.loc_edificacao_p"
-      },
-      {
-          "classe_ida":"LOC_Nome_Local_P",
-          "classe_volta":"cb.loc_nome_local_p"
-      },
-      {
-          "classe_ida":"VEG_Veg_Area_Contato_A",
-          "classe_volta":"cb.veg_veg_area_contato_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Veg_Area_Contato",
+          "classe_volta": "veg_veg_area_contato",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -981,77 +913,57 @@
           ]
       },
       {
-          "classe_ida":"HID_Ilha_L",
-          "classe_volta":"cb.hid_ilha_l"
+          "classe_ida": "HID_Ilha",
+          "classe_volta": "hid_ilha"
       },
       {
-          "classe_ida":"LIM_Unidade_Protecao_Integral_A",
-          "classe_volta":"cb.lim_unidade_protecao_integral_a"
+          "classe_ida": "LIM_Unidade_Protecao_Integral",
+          "classe_volta": "lim_unidade_protecao_integral"
       },
       {
-          "classe_ida":"PTO_Pto_Ref_Geod_Topo_P",
-          "classe_volta":"cb.pto_pto_ref_geod_topo_p"
+          "classe_ida": "PTO_Pto_Ref_Geod_Topo",
+          "classe_volta": "pto_pto_ref_geod_topo"
       },
       {
-          "classe_ida":"TRA_Edif_Constr_Portuaria_P",
-          "classe_volta":"cb.tra_edif_constr_portuaria_p"
+          "classe_ida": "HID_Rocha_Em_Agua",
+          "classe_volta": "hid_rocha_em_agua"
       },
       {
-          "classe_ida":"HID_Rocha_Em_Agua_A",
-          "classe_volta":"cb.hid_rocha_em_agua_a"
+          "classe_ida": "HID_Quebramar_Molhe",
+          "classe_volta": "hid_quebramar_molhe"
       },
       {
-          "classe_ida":"HID_Quebramar_Molhe_L",
-          "classe_volta":"cb.hid_quebramar_molhe_l"
+          "classe_ida": "EDU_Arquibancada",
+          "classe_volta": "edu_arquibancada"
       },
       {
-          "classe_ida":"EDU_Arquibancada_A",
-          "classe_volta":"cb.edu_arquibancada_a"
+          "classe_ida": "TRA_Trecho_Rodoviario",
+          "classe_volta": "tra_trecho_rodoviario"
       },
       {
-          "classe_ida":"TRA_Trecho_Rodoviario_L",
-          "classe_volta":"cb.tra_trecho_rodoviario_l"
+          "classe_ida": "REL_Dolina",
+          "classe_volta": "rel_dolina"
       },
       {
-          "classe_ida":"HID_Foz_Maritima_P",
-          "classe_volta":"cb.hid_foz_maritima_p"
+          "classe_ida": "ENC_Trecho_Comunic",
+          "classe_volta": "enc_trecho_comunic"
       },
       {
-          "classe_ida":"HID_Corredeira_P",
-          "classe_volta":"cb.hid_corredeira_p"
+          "classe_ida": "ECO_Area_Ext_Mineral",
+          "classe_volta": "eco_area_ext_mineral"
       },
       {
-          "classe_ida":"REL_Dolina_P",
-          "classe_volta":"cb.rel_dolina_p"
+          "classe_ida": "ADM_Area_Pub_Militar",
+          "classe_volta": "adm_area_pub_militar"
       },
       {
-          "classe_ida":"TRA_Posto_Combustivel_P",
-          "classe_volta":"cb.tra_posto_combustivel_p"
+          "classe_ida": "ECO_Area_Industrial",
+          "classe_volta": "eco_area_industrial"
       },
       {
-          "classe_ida":"ENC_Trecho_Comunic_L",
-          "classe_volta":"cb.enc_trecho_comunic_l"
-      },
-      {
-          "classe_ida":"ECO_Area_Ext_Mineral_A",
-          "classe_volta":"cb.eco_area_ext_mineral_a"
-      },
-      {
-          "classe_ida":"ADM_Area_Pub_Militar_A",
-          "classe_volta":"cb.adm_area_pub_militar_a"
-      },
-      {
-          "classe_ida":"HID_Ilha_P",
-          "classe_volta":"cb.hid_ilha_p"
-      },
-      {
-          "classe_ida":"ECO_Area_Industrial_A",
-          "classe_volta":"cb.eco_area_industrial_a"
-      },
-      {
-          "classe_ida":"LIM_Limite_Operacional_L",
-          "classe_volta":"cb.lim_limite_operacional_l",
-          "traducao_atributos": [
+          "classe_ida": "LIM_Limite_Operacional",
+          "classe_volta": "lim_limite_operacional",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"COINCIDECO",
                   "attr_volta":"coincidecomdentrode",
@@ -1097,84 +1009,68 @@
           ]
       },
       {
-          "classe_ida":"HID_Quebramar_Molhe_A",
-          "classe_volta":"cb.hid_quebramar_molhe_a"
+          "classe_ida": "ECO_Area_Agropec_Ext_Vegetal_Pesca",
+          "classe_volta": "eco_area_agrop_ext_veg_pesca"
       },
       {
-          "classe_ida":"ECO_Area_Agropec_Ext_Vegetal_Pesca_A",
-          "classe_volta":"cb.eco_area_agrop_ext_veg_pesca_a"
+          "classe_ida": "LOC_Aglomerado_Rural_Isolado",
+          "classe_volta": "loc_aglomerado_rural_isolado"
       },
       {
-          "classe_ida":"LOC_Aglomerado_Rural_Isolado_P",
-          "classe_volta":"cb.loc_aglomerado_rural_isolado_p"
+          "classe_ida": "LOC_Aglomerado_Rural_De_Extensao_Urbana",
+          "classe_volta": "loc_aglom_rural_de_ext_urbana"
       },
       {
-          "classe_ida":"LOC_Aglomerado_Rural_De_Extensao_Urbana_P",
-          "classe_volta":"cb.loc_aglom_rural_de_ext_urbana_p"
+          "classe_ida": "TRA_Tunel",
+          "classe_volta": "tra_tunel"
       },
       {
-          "classe_ida":"ENC_Termeletrica_A",
-          "classe_volta":"cb.enc_termeletrica_a"
+          "classe_ida": "EDU_Pista_Competicao",
+          "classe_volta": "edu_pista_competicao"
       },
       {
-          "classe_ida":"TRA_Tunel_P",
-          "classe_volta":"cb.tra_tunel_p"
+          "classe_ida": "ECO_Edif_Ext_Mineral",
+          "classe_volta": "eco_edif_ext_mineral"
       },
       {
-          "classe_ida":"EDU_Pista_Competicao_L",
-          "classe_volta":"cb.edu_pista_competicao_l"
+          "classe_ida": "TRA_Pista_Ponto_Pouso",
+          "classe_volta": "tra_pista_ponto_pouso"
       },
       {
-          "classe_ida":"ECO_Edif_Ext_Mineral_A",
-          "classe_volta":"cb.eco_edif_ext_mineral_a"
+          "classe_ida": "REL_Duna",
+          "classe_volta": "rel_duna"
       },
       {
-          "classe_ida":"TRA_Pista_Ponto_Pouso_P",
-          "classe_volta":"cb.tra_pista_ponto_pouso_p"
+          "classe_ida": "ENC_Torre_Energia",
+          "classe_volta": "enc_torre_energia"
       },
       {
-          "classe_ida":"ASB_Edif_Abast_Agua_P",
-          "classe_volta":"cb.asb_edif_abast_agua_p"
+          "classe_ida": "ENC_Area_Comunicacao",
+          "classe_volta": "enc_area_comunicacao"
       },
       {
-          "classe_ida":"REL_Duna_A",
-          "classe_volta":"cb.rel_duna_a"
+          "classe_ida": "HID_Limite_Massa_Dagua",
+          "classe_volta": "hid_limite_massa_dagua"
       },
       {
-          "classe_ida":"ENC_Torre_Energia_P",
-          "classe_volta":"cb.enc_torre_energia_p"
+          "classe_ida": "TRA_Edif_Constr_Aeroportuaria",
+          "classe_volta": "tra_edif_constr_aeroportuaria"
       },
       {
-          "classe_ida":"ENC_Area_Comunicacao_A",
-          "classe_volta":"cb.enc_area_comunicacao_a"
+          "classe_ida": "LOC_Edif_Habitacional",
+          "classe_volta": "loc_edif_habitacional"
       },
       {
-          "classe_ida":"HID_Limite_Massa_Dagua_L",
-          "classe_volta":"cb.hid_limite_massa_dagua_l"
+          "classe_ida": "SAU_Edif_Saude",
+          "classe_volta": "sau_edif_saude"
       },
       {
-          "classe_ida":"TRA_Edif_Constr_Aeroportuaria_A",
-          "classe_volta":"cb.tra_edif_constr_aeroportuaria_a"
+          "classe_ida": "ECO_Edif_Comerc_Serv",
+          "classe_volta": "eco_edif_comerc_serv"
       },
       {
-          "classe_ida":"LOC_Edif_Habitacional_P",
-          "classe_volta":"cb.loc_edif_habitacional_p"
-      },
-      {
-          "classe_ida":"SAU_Edif_Saude_A",
-          "classe_volta":"cb.sau_edif_saude_a"
-      },
-      {
-          "classe_ida":"ADM_Edif_Pub_Militar_P",
-          "classe_volta":"cb.adm_edif_pub_militar_p"
-      },
-      {
-          "classe_ida":"ECO_Edif_Comerc_Serv_P",
-          "classe_volta":"cb.eco_edif_comerc_serv_p"
-      },
-      {
-          "classe_ida":"HID_Ponto_Inicio_Drenagem_P",
-          "classe_volta":"cb.hid_ponto_inicio_drenagem_p",
+          "classe_ida": "HID_Ponto_Inicio_Drenagem",
+          "classe_volta": "hid_ponto_inicio_drenagem",
           "atributos_default_volta":[
               {
                   "nome_atributo":"RELACIONAD",
@@ -1183,9 +1079,9 @@
           ]
       },
       {
-          "classe_ida":"TRA_Ponto_Hidroviario_P",
-          "classe_volta":"cb.tra_ponto_hidroviario_p",
-          "traducao_atributos": [
+          "classe_ida": "TRA_Ponto_Hidroviario",
+          "classe_volta": "tra_ponto_hidroviario",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"RELACIONAD",
                   "attr_volta":"relacionado",
@@ -1235,25 +1131,21 @@
           ]
       },
       {
-          "classe_ida":"ENC_Edif_Energia_A",
-          "classe_volta":"cb.enc_edif_energia_a"
+          "classe_ida": "ENC_Zona_Linhas_Energia_Comunicacao",
+          "classe_volta": "enc_zona_linhas_energia_com"
       },
       {
-          "classe_ida":"ENC_Zona_Linhas_Energia_Comunicacao_A",
-          "classe_volta":"cb.enc_zona_linhas_energia_com_a"
+          "classe_ida": "EDU_Edif_Const_Turistica",
+          "classe_volta": "edu_edif_const_turistica"
       },
       {
-          "classe_ida":"EDU_Edif_Const_Turistica_A",
-          "classe_volta":"cb.edu_edif_const_turistica_a"
+          "classe_ida": "EDU_Piscina",
+          "classe_volta": "edu_piscina"
       },
       {
-          "classe_ida":"EDU_Piscina_A",
-          "classe_volta":"cb.edu_piscina_a"
-      },
-      {
-          "classe_ida":"HID_Ponto_Drenagem_P",
-          "classe_volta":"cb.hid_ponto_drenagem_p",
-          "traducao_atributos": [
+          "classe_ida": "HID_Ponto_Drenagem",
+          "classe_volta": "hid_ponto_drenagem",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"RELACIONAD",
                   "attr_volta":"relacionado",
@@ -1323,29 +1215,25 @@
           ]
       },
       {
-          "classe_ida":"TRA_Arruamento_L",
-          "classe_volta":"cb.tra_arruamento_l"
+          "classe_ida": "TRA_Arruamento",
+          "classe_volta": "tra_arruamento"
       },
       {
-          "classe_ida":"TRA_Tunel_L",
-          "classe_volta":"cb.tra_tunel_l"
+          "classe_ida": "ASB_Area_Abast_Agua",
+          "classe_volta": "asb_area_abast_agua"
       },
       {
-          "classe_ida":"ASB_Area_Abast_Agua_A",
-          "classe_volta":"cb.asb_area_abast_agua_a"
+          "classe_ida": "ENC_Antena_Comunic",
+          "classe_volta": "enc_antena_comunic"
       },
       {
-          "classe_ida":"ENC_Antena_Comunic_P",
-          "classe_volta":"cb.enc_antena_comunic_p"
+          "classe_ida": "TRA_Atracadouro",
+          "classe_volta": "tra_atracadouro"
       },
       {
-          "classe_ida":"TRA_Atracadouro_L",
-          "classe_volta":"cb.tra_atracadouro_l"
-      },
-      {
-          "classe_ida":"VEG_Floresta_A",
-          "classe_volta":"cb.veg_floresta_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Floresta",
+          "classe_volta": "veg_floresta",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -1379,45 +1267,25 @@
           ]
       },
       {
-          "classe_ida":"REL_Pico_P",
-          "classe_volta":"cb.rel_pico_p"
+          "classe_ida": "REL_Pico",
+          "classe_volta": "rel_pico"
       },
       {
-          "classe_ida":"TRA_Galeria_Bueiro_L",
-          "classe_volta":"cb.tra_galeria_bueiro_l"
+          "classe_ida": "ENC_Edif_Comunic",
+          "classe_volta": "enc_edif_comunic"
       },
       {
-          "classe_ida":"HID_Recife_A",
-          "classe_volta":"cb.hid_recife_a"
+          "classe_ida": "ENC_Trecho_Energia",
+          "classe_volta": "enc_trecho_energia"
       },
       {
-          "classe_ida":"ENC_Edif_Comunic_P",
-          "classe_volta":"cb.enc_edif_comunic_p"
+          "classe_ida": "EDU_Area_Lazer",
+          "classe_volta": "edu_area_lazer"
       },
       {
-          "classe_ida":"ENC_Trecho_Energia_L",
-          "classe_volta":"cb.enc_trecho_energia_l"
-      },
-      {
-          "classe_ida":"ASB_Dep_Saneamento_A",
-          "classe_volta":"cb.asb_dep_saneamento_a"
-      },
-      {
-          "classe_ida":"ADM_Edif_Pub_Civil_A",
-          "classe_volta":"cb.adm_edif_pub_civil_a"
-      },
-      {
-          "classe_ida":"TRA_Edif_Constr_Aeroportuaria_P",
-          "classe_volta":"cb.tra_edif_constr_aeroportuaria_p"
-      },
-      {
-          "classe_ida":"EDU_Area_Lazer_A",
-          "classe_volta":"cb.edu_area_lazer_a"
-      },
-      {
-          "classe_ida":"VEG_Brejo_Pantano_A",
-          "classe_volta":"cb.veg_brejo_pantano_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Brejo_Pantano",
+          "classe_volta": "veg_brejo_pantano",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -1451,119 +1319,61 @@
           ]
       },
       {
-          "classe_ida":"TRA_Eclusa_L",
-          "classe_volta":"cb.tra_eclusa_l"
+          "classe_ida": "LIM_Area_Desenvolvimento_Controle",
+          "classe_volta": "lim_area_desenv_controle"
       },
       {
-          "classe_ida":"LIM_Terra_Indigena_A",
-          "classe_volta":"cb.lim_terra_indigena_a",
-          "traducao_atributos":[
-              {
-                  "attr_ida":"AREAOFICIA",
-                  "attr_volta":"areaoficialha"
-              }
-          ]
+          "classe_ida": "SAU_Area_Saude",
+          "classe_volta": "sau_area_saude"
       },
       {
-          "classe_ida":"LIM_Area_Desenvolvimento_Controle_P",
-          "classe_volta":"cb.lim_area_desenv_controle_p"
+          "classe_ida": "TRA_Travessia_Pedestre",
+          "classe_volta": "tra_travessia_pedestre"
       },
       {
-          "classe_ida":"LIM_Area_Desenvolvimento_Controle_A",
-          "classe_volta":"cb.lim_area_desenv_controle_a"
+          "classe_ida": "TRA_Trecho_Ferroviario",
+          "classe_volta": "tra_trecho_ferroviario"
       },
       {
-          "classe_ida":"SAU_Area_Saude_A",
-          "classe_volta":"cb.sau_area_saude_a"
+          "classe_ida": "EDU_Area_Ensino",
+          "classe_volta": "edu_area_ensino"
       },
       {
-          "classe_ida":"TRA_Travessia_Pedestre_L",
-          "classe_volta":"cb.tra_travessia_pedestre_l"
+          "classe_ida": "ENC_Area_Energia_Eletrica",
+          "classe_volta": "enc_area_energia_eletrica"
       },
       {
-          "classe_ida":"TRA_Trecho_Ferroviario_L",
-          "classe_volta":"cb.tra_trecho_ferroviario_l"
+          "classe_ida": "TRA_Eclusa",
+          "classe_volta": "tra_eclusa"
       },
       {
-          "classe_ida":"LOC_Hab_Indigena_A",
-          "classe_volta":"cb.loc_hab_indigena_a"
+          "classe_ida": "TRA_Area_Estrut_Transportes",
+          "classe_volta": "tra_area_estrut_transporte"
       },
       {
-          "classe_ida":"SAU_Edif_Saude_P",
-          "classe_volta":"cb.sau_edif_saude_p"
+          "classe_ida": "LOC_Area_Urbana_Isolada",
+          "classe_volta": "loc_area_urbana_isolada"
       },
       {
-          "classe_ida":"EDU_Area_Ensino_A",
-          "classe_volta":"cb.edu_area_ensino_a"
+          "classe_ida": "ASB_Edif_Abast_Agua",
+          "classe_volta": "asb_edif_abast_agua"
       },
       {
-          "classe_ida":"ENC_Area_Energia_Eletrica_A",
-          "classe_volta":"cb.enc_area_energia_eletrica_a"
+          "classe_ida": "LIM_Area_De_Litigio",
+          "classe_volta": "lim_area_de_litigio"
       },
       {
-          "classe_ida":"TRA_Eclusa_A",
-          "classe_volta":"cb.tra_eclusa_a"
+          "classe_ida": "PTO_Edif_Constr_Est_Med",
+          "classe_volta": "pto_edif_constr_est_med_fen"
       },
       {
-          "classe_ida":"TRA_Area_Estrut_Transportes_A",
-          "classe_volta":"cb.tra_area_estrut_transporte_a"
+          "classe_ida": "EDU_Area_Religiosa",
+          "classe_volta": "edu_area_religiosa"
       },
       {
-          "classe_ida":"LOC_Area_Urbana_Isolada_A",
-          "classe_volta":"cb.loc_area_urbana_isolada_a"
-      },
-      {
-          "classe_ida":"HID_Queda_Dagua_A",
-          "classe_volta":"cb.hid_queda_dagua_a"
-      },
-      {
-          "classe_ida":"ASB_Edif_Abast_Agua_A",
-          "classe_volta":"cb.asb_edif_abast_agua_a"
-      },
-      {
-          "classe_ida":"LIM_Area_De_Litigio_A",
-          "classe_volta":"cb.lim_area_de_litigio_a"
-      },
-      {
-          "classe_ida":"TRA_Atracadouro_P",
-          "classe_volta":"cb.tra_atracadouro_p"
-      },
-      {
-          "classe_ida":"TRA_Local_Critico_L",
-          "classe_volta":"cb.tra_local_critico_l"
-      },
-      {
-          "classe_ida":"PTO_Edif_Constr_Est_Med_P",
-          "classe_volta":"cb.pto_edif_constr_est_med_fen_p"
-      },
-      {
-          "classe_ida":"PTO_Edif_Constr_Est_Med_A",
-          "classe_volta":"cb.pto_edif_constr_est_med_fen_a"
-      },
-      {
-          "classe_ida":"TRA_Atracadouro_A",
-          "classe_volta":"cb.tra_atracadouro_a"
-      },
-      {
-          "classe_ida":"TRA_Local_Critico_P",
-          "classe_volta":"cb.tra_local_critico_p"
-      },
-      {
-          "classe_ida":"EDU_Area_Religiosa_A",
-          "classe_volta":"cb.edu_area_religiosa_a"
-      },
-      {
-          "classe_ida":"EDU_Edif_Const_Turistica_P",
-          "classe_volta":"cb.edu_edif_const_turistica_p"
-      },
-      {
-          "classe_ida":"HID_Corredeira_L",
-          "classe_volta":"cb.hid_corredeira_l"
-      },
-      {
-          "classe_ida":"VEG_Cerrado_Cerradao_A",
-          "classe_volta":"cb.veg_cerrado_cerradao_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Cerrado_Cerradao",
+          "classe_volta": "veg_cerrado_cerradao",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -1597,165 +1407,65 @@
           ]
       },
       {
-          "classe_ida":"ENC_Edif_Comunic_A",
-          "classe_volta":"cb.enc_edif_comunic_a"
+          "classe_ida": "ENC_Hidreletrica",
+          "classe_volta": "enc_hidreletrica"
       },
       {
-          "classe_ida":"TRA_Fundeadouro_L",
-          "classe_volta":"cb.tra_fundeadouro_l"
+          "classe_ida": "HID_Fonte_Dagua",
+          "classe_volta": "hid_fonte_dagua"
       },
       {
-          "classe_ida":"ENC_Hidreletrica_A",
-          "classe_volta":"cb.enc_hidreletrica_a"
+          "classe_ida": "TRA_Entroncamento",
+          "classe_volta": "tra_entroncamento"
       },
       {
-          "classe_ida":"TRA_Travessia_L",
-          "classe_volta":"cb.tra_travessia_l"
+          "classe_ida": "TRA_Funicular",
+          "classe_volta": "tra_funicular"
       },
       {
-          "classe_ida":"HID_Fonte_Dagua_P",
-          "classe_volta":"cb.hid_fonte_dagua_p"
+          "classe_ida": "TRA_Trilha_Picada",
+          "classe_volta": "tra_trilha_picada"
       },
       {
-          "classe_ida":"ASB_Cemiterio_A",
-          "classe_volta":"cb.asb_cemiterio_a"
+          "classe_ida": "LIM_Municipio",
+          "classe_volta": "lim_municipio"
       },
       {
-          "classe_ida":"TRA_Entroncamento_P",
-          "classe_volta":"cb.tra_entroncamento_p"
+          "classe_ida": "HID_Massa_Dagua",
+          "classe_volta": "hid_massa_dagua"
       },
       {
-          "classe_ida":"ECO_Edif_Industrial_A",
-          "classe_volta":"cb.eco_edif_industrial_a"
+          "classe_ida": "LOC_Area_Edificada",
+          "classe_volta": "loc_area_edificada"
       },
       {
-          "classe_ida":"TRA_Funicular_P",
-          "classe_volta":"cb.tra_funicular_p"
+          "classe_ida": "TRA_Trecho_Hidroviario",
+          "classe_volta": "tra_trecho_hidroviario"
       },
       {
-          "classe_ida":"TRA_Trilha_Picada_L",
-          "classe_volta":"cb.tra_trilha_picada_l"
+          "classe_ida": "EDU_Coreto_Tribuna",
+          "classe_volta": "edu_coreto_tribuna"
       },
       {
-          "classe_ida":"LIM_Unidade_Uso_Sustentavel_A",
-          "classe_volta":"cb.lim_unidade_uso_sustentavel_a"
+          "classe_ida": "ASB_Area_Saneamento",
+          "classe_volta": "asb_area_saneamento"
       },
       {
-          "classe_ida":"TRA_Patio_A",
-          "classe_volta":"cb.tra_patio_a"
+          "classe_ida": "VEG_Campo",
+          "classe_volta": "veg_campo"
       },
       {
-          "classe_ida":"LIM_Municipio_A",
-          "classe_volta":"cb.lim_municipio_a"
+          "classe_ida": "PTO_Pto_Controle",
+          "classe_volta": "pto_pto_controle"
       },
       {
-          "classe_ida":"HID_Massa_Dagua_A",
-          "classe_volta":"cb.hid_massa_dagua_a"
+          "classe_ida": "PTO_Pto_Est_Med_Fenomenos",
+          "classe_volta": "pto_pto_est_med_fenomenos"
       },
       {
-          "classe_ida":"LOC_Area_Edificada_A",
-          "classe_volta":"cb.loc_area_edificada_a"
-      },
-      {
-          "classe_ida":"ECO_Edif_Comerc_Serv_A",
-          "classe_volta":"cb.eco_edif_comerc_serv_a"
-      },
-      {
-          "classe_ida":"TRA_Trecho_Hidroviario_L",
-          "classe_volta":"cb.tra_trecho_hidroviario_l"
-      },
-      {
-          "classe_ida":"LIM_Unidade_Protecao_Integral_P",
-          "classe_volta":"cb.lim_unidade_protecao_integral_p"
-      },
-      {
-          "classe_ida":"ENC_Hidreletrica_P",
-          "classe_volta":"cb.enc_hidreletrica_p"
-      },
-      {
-          "classe_ida":"EDU_Coreto_Tribuna_A",
-          "classe_volta":"cb.edu_coreto_tribuna_a"
-      },
-      {
-          "classe_ida":"ASB_Area_Saneamento_A",
-          "classe_volta":"cb.asb_area_saneamento_a"
-      },
-      {
-          "classe_ida":"EDU_Arquibancada_P",
-          "classe_volta":"cb.edu_arquibancada_p"
-      },
-      {
-          "classe_ida":"ENC_Hidreletrica_L",
-          "classe_volta":"cb.enc_hidreletrica_l"
-      },
-      {
-          "classe_ida":"ECO_Deposito_Geral_P",
-          "classe_volta":"cb.eco_deposito_geral_p"
-      },
-      {
-          "classe_ida":"REL_Dolina_A",
-          "classe_volta":"cb.rel_dolina_a"
-      },
-      {
-          "classe_ida":"LOC_Edif_Habitacional_A",
-          "classe_volta":"cb.loc_edif_habitacional_a"
-      },
-      {
-          "classe_ida":"TRA_Passag_Elevada_Viaduto_P",
-          "classe_volta":"cb.tra_passag_elevada_viaduto_p"
-      },
-      {
-          "classe_ida":"HID_Rocha_Em_Agua_P",
-          "classe_volta":"cb.hid_rocha_em_agua_p"
-      },
-      {
-          "classe_ida":"VEG_Campo_A",
-          "classe_volta":"cb.veg_campo_a"
-      },
-      {
-          "classe_ida":"PTO_Pto_Controle_P",
-          "classe_volta":"cb.pto_pto_controle_p"
-      },
-      {
-          "classe_ida":"EDU_Ruina_P",
-          "classe_volta":"cb.edu_ruina_p"
-      },
-      {
-          "classe_ida":"EDU_Coreto_Tribuna_P",
-          "classe_volta":"cb.edu_coreto_tribuna_p"
-      },
-      {
-          "classe_ida":"TRA_Pista_Ponto_Pouso_L",
-          "classe_volta":"cb.tra_pista_ponto_pouso_l"
-      },
-      {
-          "classe_ida":"HID_Queda_Dagua_L",
-          "classe_volta":"cb.hid_queda_dagua_l"
-      },
-      {
-          "classe_ida":"HID_Barragem_L",
-          "classe_volta":"cb.hid_barragem_l"
-      },
-      {
-          "classe_ida":"HID_Recife_P",
-          "classe_volta":"cb.hid_recife_p"
-      },
-      {
-          "classe_ida":"LIM_Terra_Publica_P",
-          "classe_volta":"cb.lim_terra_publica_p"
-      },
-      {
-          "classe_ida":"TRA_Cremalheira_L",
-          "classe_volta":"cb.tra_cremalheira_l"
-      },
-      {
-          "classe_ida":"PTO_Pto_Est_Med_Fenomenos_P",
-          "classe_volta":"cb.pto_pto_est_med_fenomenos_p"
-      },
-      {
-          "classe_ida":"VEG_Macega_Chavascal_A",
-          "classe_volta":"cb.veg_macega_chavascal_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Macega_Chavascal",
+          "classe_volta": "veg_macega_chavascal",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -1789,17 +1499,13 @@
           ]
       },
       {
-          "classe_ida":"EDU_Campo_Quadra_A",
-          "classe_volta":"cb.edu_campo_quadra_a"
+          "classe_ida": "LIM_Pais",
+          "classe_volta": "lim_pais"
       },
       {
-          "classe_ida":"LIM_Pais_A",
-          "classe_volta":"cb.lim_pais_a"
-      },
-      {
-          "classe_ida":"VEG_Veg_Cultivada_A",
-          "classe_volta":"cb.veg_veg_cultivada_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Veg_Cultivada",
+          "classe_volta": "veg_veg_cultivada",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -1833,49 +1539,21 @@
           ]
       },
       {
-          "classe_ida":"ECO_Equip_Agropec_L",
-          "classe_volta":"cb.eco_equip_agropec_l"
+          "classe_ida": "ECO_Area_Comerc_Serv",
+          "classe_volta": "eco_area_comerc_serv"
       },
       {
-          "classe_ida":"ADM_Posto_Fiscal_A",
-          "classe_volta":"cb.adm_posto_fiscal_a"
+          "classe_ida": "LIM_Marco_De_Limite",
+          "classe_volta": "lim_marco_de_limite"
       },
       {
-          "classe_ida":"ECO_Area_Comerc_Serv_A",
-          "classe_volta":"cb.eco_area_comerc_serv_a"
+          "classe_ida": "ECO_Ext_Mineral",
+          "classe_volta": "eco_ext_mineral"
       },
       {
-          "classe_ida":"LIM_Marco_De_Limite_P",
-          "classe_volta":"cb.lim_marco_de_limite_p"
-      },
-      {
-          "classe_ida":"TRA_Pista_Ponto_Pouso_A",
-          "classe_volta":"cb.tra_pista_ponto_pouso_a"
-      },
-      {
-          "classe_ida":"ECO_Edif_Ext_Mineral_P",
-          "classe_volta":"cb.eco_edif_ext_mineral_p"
-      },
-      {
-          "classe_ida":"TRA_Edif_Metro_Ferroviaria_P",
-          "classe_volta":"cb.tra_edif_metro_ferroviaria_p"
-      },
-      {
-          "classe_ida":"HID_Ilha_A",
-          "classe_volta":"cb.hid_ilha_a"
-      },
-      {
-          "classe_ida":"ECO_Ext_Mineral_A",
-          "classe_volta":"cb.eco_ext_mineral_a"
-      },
-      {
-          "classe_ida":"LIM_Outras_Unid_Protegidas_P",
-          "classe_volta":"cb.lim_outras_unid_protegidas_p"
-      },
-      {
-          "classe_ida":"LIM_Linha_De_Limite_L",
-          "classe_volta":"cb.lim_linha_de_limite_l",
-          "traducao_atributos": [
+          "classe_ida": "LIM_Linha_De_Limite",
+          "classe_volta": "lim_linha_de_limite",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"COINCIDECO",
                   "attr_volta":"coincidecomdentrode",
@@ -1921,41 +1599,21 @@
           ]
       },
       {
-          "classe_ida":"LOC_Vila_P",
-          "classe_volta":"cb.loc_vila_p"
+          "classe_ida": "LOC_Vila",
+          "classe_volta": "loc_vila"
       },
       {
-          "classe_ida":"REL_Gruta_Caverna_P",
-          "classe_volta":"cb.rel_gruta_caverna_p"
+          "classe_ida": "REL_Gruta_Caverna",
+          "classe_volta": "rel_gruta_caverna"
       },
       {
-          "classe_ida":"HID_Sumidouro_Vertedouro_P",
-          "classe_volta":"cb.hid_sumidouro_vertedouro_p"
+          "classe_ida": "HID_Sumidouro_Vertedouro",
+          "classe_volta": "hid_sumidouro_vertedouro"
       },
       {
-          "classe_ida":"TRA_Obstaculo_Navegacao_L",
-          "classe_volta":"cb.tra_obstaculo_navegacao_l"
-      },
-      {
-          "classe_ida":"HID_Comporta_L",
-          "classe_volta":"cb.hid_comporta_l"
-      },
-      {
-          "classe_ida":"ASB_Edif_Saneamento_P",
-          "classe_volta":"cb.asb_edif_saneamento_p"
-      },
-      {
-          "classe_ida":"TRA_Edif_Rodoviaria_A",
-          "classe_volta":"cb.tra_edif_rodoviaria_a"
-      },
-      {
-          "classe_ida":"ECO_Ext_Mineral_P",
-          "classe_volta":"cb.eco_ext_mineral_p"
-      },
-      {
-          "classe_ida":"VEG_Mangue_A",
-          "classe_volta":"cb.veg_mangue_a",
-          "traducao_atributos":[
+          "classe_ida": "VEG_Mangue",
+          "classe_volta": "veg_mangue",
+          "mapeamento_atributos":[
               {
                   "attr_ida":"CLASSIFICA",
                   "attr_volta":"classificacaoporte",
@@ -1989,37 +1647,13 @@
           ]
       },
       {
-          "classe_ida":"TRA_Obstaculo_Navegacao_A",
-          "classe_volta":"cb.tra_obstaculo_navegacao_a"
+          "classe_ida": "REL_Curva_Nivel",
+          "classe_volta": "rel_curva_nivel"
       },
       {
-          "classe_ida":"TRA_Funicular_L",
-          "classe_volta":"cb.tra_funicular_l"
-      },
-      {
-          "classe_ida":"REL_Curva_Nivel_L",
-          "classe_volta":"cb.rel_curva_nivel_l"
-      },
-      {
-          "classe_ida":"TRA_Travessia_Pedestre_P",
-          "classe_volta":"cb.tra_travessia_pedestre_p"
-      },
-      {
-          "classe_ida":"ADM_Posto_Pol_Rod_P",
-          "classe_volta":"cb.adm_posto_pol_rod_p"
-      },
-      {
-          "classe_ida":"REL_Rocha_P",
-          "classe_volta":"cb.rel_rocha_p"
-      },
-      {
-          "classe_ida":"REL_Duna_P",
-          "classe_volta":"cb.rel_duna_p"
-      },
-      {
-          "classe_ida":"LIM_Outros_Limites_Oficiais_L",
-          "classe_volta":"cb.lim_outros_limites_oficiais_l",
-          "traducao_atributos": [
+          "classe_ida": "LIM_Outros_Limites_Oficiais",
+          "classe_volta": "lim_outros_limites_oficiais",
+          "mapeamento_atributos": [
               {
                   "attr_ida":"COINCIDECO",
                   "attr_volta":"coincidecomdentrode",
@@ -2063,18 +1697,6 @@
                   ]
               }
           ]
-      },
-      {
-          "classe_ida":"ENC_Grupo_Transformadores_P",
-          "classe_volta":"cb.enc_grupo_transformadores_p"
-      },
-      {
-          "classe_ida":"EDU_Edif_Religiosa_P",
-          "classe_volta":"cb.edu_edif_religiosa_p"
-      },
-      {
-          "classe_ida":"HID_Foz_Maritima_L",
-          "classe_volta":"cb.hid_foz_maritima_l"
       }
   ],
   "mapeamento_atributos":[
