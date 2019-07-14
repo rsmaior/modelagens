@@ -61,10 +61,10 @@ class FeatureProcessor(object):
             key_affix_destiny = "afixo_geom_volta"
             key_schema_origin = "schema_volta"
             key_schema_destiny = "schema_ida"
-            key_class_affix_origin = "afixo_ida"
-            key_class_affix_destiny = "afixo_volta"
-            key_class_schema_origin = "schema_ida"
-            key_class_schema_destiny = "schema_volta"
+            key_class_affix_origin = "com_afixo_geom_ida"
+            key_class_affix_destiny = "com_afixo_geom_volta"
+            key_class_schema_origin = "com_schema_ida"
+            key_class_schema_destiny = "com_schema_volta"
             key_agregar = "agregar_geom_ida"
         else:
             key_attr_origin = "attr_volta"
@@ -81,10 +81,10 @@ class FeatureProcessor(object):
             key_affix_destiny = "afixo_geom_ida"
             key_schema_origin = "schema_volta"
             key_schema_destiny = "schema_ida"
-            key_class_affix_origin = "afixo_volta"
-            key_class_affix_destiny = "afixo_ida"
-            key_class_schema_origin = "schema_volta"
-            key_class_schema_destiny = "schema_ida"
+            key_class_affix_origin = "com_afixo_geom_volta"
+            key_class_affix_destiny = "com_afixo_geom_ida"
+            key_class_schema_origin = "com_schema_volta"
+            key_class_schema_destiny = "com_schema_ida"
             key_agregar = "agregar_geom_volta"
 
         featDict["fme_feature_type_original"] = featDict["fme_feature_type"]
@@ -136,10 +136,7 @@ class FeatureProcessor(object):
                     if "traducao" in attmap:
                         for valuemap in attmap["traducao"]:
                             if u"{0}".format(valuemap[key_value_origin]) == u"{0}".format(featDict[attmap[key_attr_origin]]) and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
-                                if "concatenar" in valuemap and attmap[key_attr_destiny] in mappedFeat and mappedFeat[attmap[key_attr_destiny]]:
-                                    mappedFeat[attmap[key_attr_destiny]] = mappedFeat[attmap[key_attr_destiny]] + ' | ' + valuemap[key_value_destiny]
-                                else:
-                                    mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
+                                mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
 
         if 'mapeamento_classes' in self.mappingDict:
             for classmap in self.mappingDict['mapeamento_classes']:
@@ -187,17 +184,14 @@ class FeatureProcessor(object):
                                     if "traducao" in attmap:
                                         for valuemap in attmap["traducao"]:
                                             if u"{0}".format(valuemap[key_value_origin]) == u"{0}".format(featDict[attmap[key_attr_origin]]) and ("sentido" not in valuemap or ("sentido" in valuemap and valuemap["sentido"] == self.mappingType)):
-                                                if "concatenar" in valuemap and attmap[key_attr_destiny] in mappedFeat and mappedFeat[attmap[key_attr_destiny]]:
-                                                    mappedFeat[attmap[key_attr_destiny]] = mappedFeat[attmap[key_attr_destiny]] + ' | ' + valuemap[key_value_destiny]
-                                                else:
-                                                    mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
+                                                mappedFeat[attmap[key_attr_destiny]] = valuemap[key_value_destiny]
                         
                         if "mapeamento_multiplo" in classmap:
                             for attmap in classmap['mapeamento_multiplo']:
                                 if "sentido" not in attmap or ("sentido" in attmap and attmap["sentido"] == self.mappingType):
                                     if all([self.evaluateExpression(featDict, condition) for condition in attmap[key_group_origin]]):
                                         for valuemap in attmap[key_group_destiny]:
-                                            if "concatenar" in valuemap and valuemap["nome_atributo"] in mappedFeat and mappedFeat[valuemap["nome_atributo"]]:
+                                            if "concatenar" in valuemap and valuemap["concatenar"] and valuemap["nome_atributo"] in mappedFeat and mappedFeat[valuemap["nome_atributo"]]:
                                                 mappedFeat[valuemap["nome_atributo"]] = mappedFeat[valuemap["nome_atributo"]] + ' | ' + valuemap["valor"]
                                             else:
                                                 mappedFeat[valuemap["nome_atributo"]] = valuemap["valor"]

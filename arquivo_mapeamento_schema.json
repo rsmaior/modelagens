@@ -15,13 +15,30 @@
         "LINESTRING": { "type": "string" },
         "POLYGON": { "type": "string" }
       },
-      "required": ["nome_atributo", "valor"],
+      "required": ["tipo", "POINT", "LINESTRING", "POLYGON"],
       "additionalProperties": false
     },
     "valores": {
       "type": "object",
       "properties": {
         "nome_atributo": { "type": "string" },
+        "valor": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "required": ["nome_atributo", "valor"],
+      "additionalProperties": false
+    },
+    "valores_concatenar": {
+      "type": "object",
+      "properties": {
+        "nome_atributo": { "type": "string" },
+        "concatenar": { "type": "boolean" },
         "valor": {
           "type": [
             "string",
@@ -122,21 +139,30 @@
         "__comment": { "type": "string" },
         "classe_ida": { "type": "string" },
         "classe_volta": { "type": "string" },
+        "com_afixo_geom_ida": { "type": "boolean" },
+        "com_afixo_geom_volta": { "type": "boolean" },
+        "agregar_geom_ida": { "type": "boolean" },
+        "agregar_geom_volta": { "type": "boolean" },
+        "com_schema_ida": { "type": "boolean" },
+        "com_schema_volta": { "type": "boolean" },
         "sentido": {
           "type": "string",
           "enum": ["ida", "volta"]
         },
         "atributos_default_ida": {
           "type": "array",
-          "items": { "$ref": "#/definitions/valores" }
+          "items": { "$ref": "#/definitions/valores" },
+          "minItems": 1
         },
         "atributos_default_volta": {
           "type": "array",
-          "items": { "$ref": "#/definitions/valores" }
+          "items": { "$ref": "#/definitions/valores" },
+          "minItems": 1
         },
         "mapeamento_atributos": {
           "type": "array",
-          "items": { "$ref": "#/definitions/mapeamento_atributo" }
+          "items": { "$ref": "#/definitions/mapeamento_atributo" },
+          "minItems": 1
         },
         "filtro_ida": {
           "$ref": "#/definitions/filtro"
@@ -149,14 +175,17 @@
           "items": {
             "type": "object",
             "properties": {
+              "__comment": {
+                "type": "string"
+              },
               "tupla_ida": {
                 "type": "array",
-                "items": { "$ref": "#/definitions/valores" },
+                "items": { "$ref": "#/definitions/valores_concatenar" },
                 "minItems": 1
               },
               "tupla_volta": {
                 "type": "array",
-                "items": { "$ref": "#/definitions/valores" },
+                "items": { "$ref": "#/definitions/valores_concatenar" },
                 "minItems": 1
               },
               "sentido": {
@@ -211,5 +240,3 @@
   "additionalProperties": false,
   "required": ["mapeamento_classes"]
 }
-
-
