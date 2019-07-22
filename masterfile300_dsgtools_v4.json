@@ -5184,21 +5184,6 @@
             ]
         },
         {
-            "nome": "booleano",
-            "valores": [
-                {
-                    "code": 0,
-                    "value": "Não",
-                    "descricao": "-"
-                },
-                {
-                    "code": 1,
-                    "value": "Sim",
-                    "descricao": "-"
-                }
-            ]
-        },
-        {
             "nome": "tipo_pavimentacao",
             "valores": [
                 {
@@ -9337,20 +9322,11 @@
                         }
                     ]
                 },
-                {---parei aqui
+                {
                     "nome": "publico",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -9366,7 +9342,7 @@
                     "nome": "nome",
                     "tipo": "varchar(80)",
                     "descricao": "-",
-                    "cardinalidade": "0..1"
+                    "cardinalidade": "1..1"
                 },
                 {
                     "nome": "geometriaaproximada",
@@ -9376,18 +9352,9 @@
                 },
                 {
                     "nome": "turistica",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "0..1"
                 }
             ]
         },
@@ -9425,33 +9392,15 @@
                 },
                 {
                     "nome": "areavalvulas",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "0..1"
                 },
                 {
                     "nome": "bombeamento",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "0..1"
                 }
             ]
         },
@@ -11425,18 +11374,9 @@
                 },
                 {
                     "nome": "tombada",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -13966,18 +13906,9 @@
                 },
                 {
                     "nome": "ensino",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 },
                 {
                     "nome": "religiao",
@@ -13987,18 +13918,9 @@
                 },
                 {
                     "nome": "crista",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -16276,18 +16198,9 @@
                 },
                 {
                     "nome": "chamine",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -19946,18 +19859,9 @@
                 },
                 {
                     "nome": "emduto",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -21995,18 +21899,9 @@
                 },
                 {
                     "nome": "possuitrechodrenagem",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -22098,18 +21993,9 @@
                 },
                 {
                     "nome": "encoberto",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -23522,15 +23408,9 @@
                 },
                 {
                     "nome": "cultura",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -25431,18 +25311,9 @@
                 },
                 {
                     "nome": "depressao",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 },
                 {
                     "nome": "tipocurvanivel",
@@ -25821,18 +25692,9 @@
                 },
                 {
                     "nome": "cotacomprovada",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 },
                 {
                     "nome": "cota",
@@ -26017,18 +25879,9 @@
                 },
                 {
                     "nome": "fixa",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -26438,33 +26291,15 @@
                 },
                 {
                     "nome": "acostamento",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 },
                 {
                     "nome": "trechoemperimetrourbano",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
@@ -28483,18 +28318,9 @@
                 },
                 {
                     "nome": "necessitamanutencao",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 },
                 {
                     "nome": "largura",
@@ -30150,18 +29976,9 @@
                 },
                 {
                     "nome": "vereda",
-                    "tipo": "smallint",
+                    "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "booleano",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "cardinalidade": "1..1"
                 }
             ]
         },
