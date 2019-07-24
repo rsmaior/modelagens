@@ -9488,18 +9488,6 @@
                     "mapa_valor": "tipo_area",
                     "valores": [
                         {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
                             "code": 5
                         },
                         {
@@ -9693,7 +9681,7 @@
                     "nome": "mattransp",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_transp",
                     "valores": [
                         {
@@ -9748,15 +9736,6 @@
                     "mapa_valor": "setor",
                     "valores": [
                         {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
                             "code": 4
                         },
                         {
@@ -9768,7 +9747,7 @@
                     "nome": "posicaorelativa",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "posicao_relativa",
                     "valores": [
                         {
@@ -9795,7 +9774,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -9840,7 +9819,7 @@
                     "nome": "situacaoespacial",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_espacial",
                     "valores": [
                         {
@@ -9930,7 +9909,7 @@
                     "nome": "finalidade",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "finalidade_galeria_bueiro",
                     "valores": [
                         {
@@ -10027,7 +10006,7 @@
                     "nome": "mattransp",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_transp",
                     "valores": [
                         {
@@ -10102,7 +10081,7 @@
                     "nome": "posicaorelativa",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "posicao_relativa",
                     "valores": [
                         {
@@ -10129,7 +10108,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -10174,7 +10153,7 @@
                     "nome": "situacaoespacial",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_espacial",
                     "valores": [
                         {
@@ -10228,7 +10207,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -10375,7 +10354,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -10454,18 +10433,6 @@
                     "valores": [
                         {
                             "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 99
                         }
                     ]
                 },
@@ -10491,7 +10458,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -10836,7 +10803,7 @@
                     "nome": "procextracao",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "proc_extracao",
                     "valores": [
                         {
@@ -10975,7 +10942,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -11011,7 +10978,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -11125,7 +11092,7 @@
                     "nome": "jurisdicao",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "jurisdicao",
                     "valores": [
                         {
@@ -11199,7 +11166,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -11235,7 +11202,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -11376,7 +11343,7 @@
                     "nome": "tombada",
                     "tipo": "boolean",
                     "descricao": "-",
-                    "cardinalidade": "1..1"
+                    "cardinalidade": "0..1"
                 }
             ]
         },
@@ -11423,7 +11390,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -11459,7 +11426,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -11554,7 +11521,7 @@
             ]
         },
         {
-            "nome": "edif_agropec_ext_veg_pesca",
+            "nome": "edif_agropec_ext_vegetal_pesca",
             "categoria": "edf",
             "descricao": "-",
             "primitivas": [
@@ -11596,7 +11563,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -11632,7 +11599,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -11793,7 +11760,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -11829,7 +11796,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -11940,7 +11907,7 @@
                     "nome": "jurisdicao",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "jurisdicao",
                     "valores": [
                         {
@@ -12014,7 +11981,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -12050,7 +12017,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -12172,7 +12139,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -12208,7 +12175,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -12322,7 +12289,7 @@
                     "nome": "jurisdicao",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "jurisdicao",
                     "valores": [
                         {
@@ -12396,7 +12363,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -12432,7 +12399,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -12665,7 +12632,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -12701,7 +12668,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -12823,7 +12790,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -12859,7 +12826,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -12999,7 +12966,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -13035,7 +13002,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -13145,60 +13112,6 @@
                     "valores": [
                         {
                             "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
-                            "code": 11
-                        },
-                        {
-                            "code": 12
-                        },
-                        {
-                            "code": 13
-                        },
-                        {
-                            "code": 14
-                        },
-                        {
-                            "code": 15
-                        },
-                        {
-                            "code": 16
-                        },
-                        {
-                            "code": 22
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 99
                         }
                     ]
                 }
@@ -13247,7 +13160,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -13283,7 +13196,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -13435,7 +13348,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -13471,7 +13384,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -13610,60 +13523,6 @@
                     "mapa_valor": "tipo_org_civil",
                     "valores": [
                         {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
-                            "code": 11
-                        },
-                        {
-                            "code": 12
-                        },
-                        {
-                            "code": 13
-                        },
-                        {
-                            "code": 14
-                        },
-                        {
-                            "code": 15
-                        },
-                        {
-                            "code": 16
-                        },
-                        {
-                            "code": 22
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
                             "code": 99
                         }
                     ]
@@ -13746,7 +13605,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -13782,7 +13641,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -13967,7 +13826,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -14003,165 +13862,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "mat_constr",
-                    "valores": [
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 23
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 97
-                        },
-                        {
-                            "code": 99
-                        }
-                    ]
-                },
-                {
-                    "nome": "alturaaproximada",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "turistica",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "auxiliar",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
-                },
-                {
-                    "nome": "cultura",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "auxiliar",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "nome": "edif_habitacional",
-            "categoria": "edf",
-            "descricao": "-",
-            "primitivas": [
-                "MultiPoint",
-                "MultiPolygon"
-            ],
-            "atributos": [
-                {
-                    "nome": "nome",
-                    "tipo": "varchar(80)",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "geometriaaproximada",
-                    "tipo": "boolean",
-                    "descricao": "-",
-                    "cardinalidade": "1..1"
-                },
-                {
-                    "nome": "operacional",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "auxiliar",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
-                },
-                {
-                    "nome": "situacaofisica",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "situacao_fisica",
-                    "valores": [
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 97
-                        }
-                    ]
-                },
-                {
-                    "nome": "matconstr",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -14283,7 +13984,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -14319,7 +14020,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -14441,7 +14142,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -14477,165 +14178,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "mat_constr",
-                    "valores": [
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 23
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 97
-                        },
-                        {
-                            "code": 99
-                        }
-                    ]
-                },
-                {
-                    "nome": "alturaaproximada",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "turistica",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "auxiliar",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
-                },
-                {
-                    "nome": "cultura",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "auxiliar",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "nome": "edif_servico_social",
-            "categoria": "edf",
-            "descricao": "-",
-            "primitivas": [
-                "MultiPoint",
-                "MultiPolygon"
-            ],
-            "atributos": [
-                {
-                    "nome": "nome",
-                    "tipo": "varchar(80)",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "geometriaaproximada",
-                    "tipo": "boolean",
-                    "descricao": "-",
-                    "cardinalidade": "1..1"
-                },
-                {
-                    "nome": "operacional",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "auxiliar",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
-                },
-                {
-                    "nome": "situacaofisica",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "situacao_fisica",
-                    "valores": [
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 97
-                        }
-                    ]
-                },
-                {
-                    "nome": "matconstr",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -14757,7 +14300,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -14793,7 +14336,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -14951,7 +14494,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -14987,7 +14530,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -15096,49 +14639,7 @@
                     "mapa_valor": "tipo_instal_militar",
                     "valores": [
                         {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
-                            "code": 11
-                        },
-                        {
-                            "code": 12
-                        },
-                        {
-                            "code": 13
-                        },
-                        {
                             "code": 14
-                        },
-                        {
-                            "code": 15
-                        },
-                        {
-                            "code": 16
-                        },
-                        {
-                            "code": 17
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 99
                         }
                     ]
                 }
@@ -15187,7 +14688,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -15223,7 +14724,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -15381,7 +14882,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -15417,7 +14918,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -15496,21 +14997,54 @@
                 },
                 {
                     "nome": "sigla",
-                    "tipo": "varchar(255)",
+                    "tipo": "varchar(80)",
                     "descricao": "-",
                     "cardinalidade": "0..1"
                 },
                 {
                     "nome": "codequipdesenvsocial",
-                    "tipo": "varchar(255)",
+                    "tipo": "varchar(80)",
                     "descricao": "-",
                     "cardinalidade": "0..1"
+                },
+                {
+                    "nome": "localizacaoequipdesenvsocial",
+                    "tipo": "smallint",
+                    "descricao": "-",
+                    "cardinalidade": "0..1",
+                    "mapa_valor": "local_equip_desenv_social",
+                    "valores": [
+                        {
+                            "code": 1
+                        },
+                        {
+                            "code": 2
+                        },
+                        {
+                            "code": 3
+                        },
+                        {
+                            "code": 4
+                        },
+                        {
+                            "code": 5
+                        },
+                        {
+                            "code": 6
+                        },
+                        {
+                            "code": 7
+                        },
+                        {
+                            "code": 95
+                        }
+                    ]
                 },
                 {
                     "nome": "tipoequipdesenvsocial",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "tipo_equip_desenv_social",
                     "valores": [
                         {
@@ -15583,39 +15117,6 @@
                             "code": 99
                         }
                     ]
-                },
-                {
-                    "nome": "localizacaoequipdesenvsocial",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "local_equip_desenv_social",
-                    "valores": [
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
                 }
             ]
         },
@@ -15662,7 +15163,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -15698,7 +15199,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -15895,7 +15396,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -15931,7 +15432,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -16083,7 +15584,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -16119,7 +15620,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -16247,7 +15748,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -16283,7 +15784,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -16406,7 +15907,7 @@
                     "nome": "jurisdicao",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "jurisdicao",
                     "valores": [
                         {
@@ -16480,7 +15981,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -16516,7 +16017,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -16695,7 +16196,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -16731,7 +16232,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -16841,60 +16342,6 @@
                     "valores": [
                         {
                             "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
-                            "code": 11
-                        },
-                        {
-                            "code": 12
-                        },
-                        {
-                            "code": 13
-                        },
-                        {
-                            "code": 14
-                        },
-                        {
-                            "code": 15
-                        },
-                        {
-                            "code": 16
-                        },
-                        {
-                            "code": 22
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 99
                         }
                     ]
                 }
@@ -16943,7 +16390,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -16979,7 +16426,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -17118,12 +16565,6 @@
                     "mapa_valor": "tipo_org_civil",
                     "valores": [
                         {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
                             "code": 3
                         },
                         {
@@ -17146,9 +16587,6 @@
                         },
                         {
                             "code": 10
-                        },
-                        {
-                            "code": 11
                         },
                         {
                             "code": 12
@@ -17221,7 +16659,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -17257,7 +16695,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -17409,7 +16847,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -17445,7 +16883,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -17566,12 +17004,6 @@
                             "code": 3
                         },
                         {
-                            "code": 4
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
                             "code": 95
                         }
                     ]
@@ -17590,55 +17022,7 @@
                             "code": 2
                         },
                         {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
                             "code": 11
-                        },
-                        {
-                            "code": 12
-                        },
-                        {
-                            "code": 13
-                        },
-                        {
-                            "code": 14
-                        },
-                        {
-                            "code": 15
-                        },
-                        {
-                            "code": 16
-                        },
-                        {
-                            "code": 22
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 99
                         }
                     ]
                 }
@@ -17687,7 +17071,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -17723,7 +17107,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
@@ -17841,13 +17225,7 @@
                             "code": 2
                         },
                         {
-                            "code": 3
-                        },
-                        {
                             "code": 4
-                        },
-                        {
-                            "code": 8
                         },
                         {
                             "code": 95
@@ -17953,7 +17331,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -17989,7 +17367,7 @@
                     "nome": "matconstr",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "mat_constr",
                     "valores": [
                         {
