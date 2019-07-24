@@ -758,7 +758,27 @@
       },
       {
           "classe_ida": "asb_dep_saneamento",
-          "classe_volta": "ASB_Dep_Saneamento"
+          "classe_volta": "ASB_Dep_Saneamento",
+          "mapeamento_atributos":[
+            {
+                "attr_ida":"finalidade",
+                "attr_volta":"FINALIDADE",
+                "traducao":[
+                  {
+                      "valor_ida":0,
+                      "valor_volta":"Desconhecido"
+                  },
+                  {
+                      "valor_ida":8,
+                      "valor_volta":"Armazenamento"
+                  },
+                  {
+                      "valor_ida":2,
+                      "valor_volta":"Tratamento"
+                  }
+              ]
+            }
+        ]
       },
       {
           "classe_ida": "enc_grupo_transformadores",
@@ -778,7 +798,35 @@
       },
       {
           "classe_ida": "asb_dep_abast_agua",
-          "classe_volta": "ASB_Dep_Abast_Agua"
+          "classe_volta": "ASB_Dep_Abast_Agua",
+          "mapeamento_atributos":[
+            {
+                "attr_ida":"finalidade",
+                "attr_volta":"FINALIDADE",
+                "traducao":[
+                  {
+                      "valor_ida":0,
+                      "valor_volta":"Desconhecido"
+                  },
+                  {
+                      "valor_ida":2,
+                      "valor_volta":"Tratamento"
+                  },
+                  {
+                      "valor_ida":3,
+                      "valor_volta":"Recalque"
+                  },
+                  {
+                      "valor_ida":4,
+                      "valor_volta":"Distribuição"
+                  },
+                  {
+                      "valor_ida":8,
+                      "valor_volta":"Armazenamento"
+                  }
+              ]
+            }
+        ]
       },
       {
           "classe_ida": "loc_area_habitacional",
@@ -1066,7 +1114,31 @@
       },
       {
           "classe_ida": "eco_edif_comerc_serv",
-          "classe_volta": "ECO_Edif_Comerc_Serv"
+          "classe_volta": "ECO_Edif_Comerc_Serv",
+          "mapeamento_atributos":[
+            {
+                "attr_ida":"finalidade",
+                "attr_volta":"FINALIDADE",
+                "traducao":[
+                  {
+                      "valor_ida":0,
+                      "valor_volta":"Desconhecido"
+                  },
+                  {
+                      "valor_ida":1,
+                      "valor_volta":"Comercial"
+                  },
+                  {
+                      "valor_ida":2,
+                      "valor_volta":"Serviço"
+                  },
+                  {
+                      "valor_ida":98,
+                      "valor_volta":"Mista"
+                  }
+              ]
+            }
+        ]
       },
       {
           "classe_ida": "hid_ponto_inicio_drenagem",
@@ -1535,7 +1607,33 @@
                           "valor_volta":"Misto"
                       }
                   ]
-              }
+              },
+              {
+                "attr_ida":"finalidade",
+                "attr_volta":"FINALIDADE",
+                "traducao":[
+                  {
+                      "valor_ida":0,
+                      "valor_volta":"Desconhecido"
+                  },
+                  {
+                      "valor_ida":1,
+                      "valor_volta":"Exploração econômica"
+                  },
+                  {
+                      "valor_ida":2,
+                      "valor_volta":"Subistência"
+                  },
+                  {
+                      "valor_ida":3,
+                      "valor_volta":"Conservação ambiental"
+                  },
+                  {
+                      "valor_ida":99,
+                      "valor_volta":"Outros"
+                  }
+              ]
+            }
           ]
       },
       {
@@ -1728,7 +1826,7 @@
           "traducao":[
               {
                   "valor_ida":0,
-                  "valor_volta":"Desconhecido"
+                  "valor_volta":null
               },
               {
                   "valor_ida":12,
@@ -2132,11 +2230,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
@@ -2168,11 +2266,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
@@ -2182,11 +2280,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
@@ -2298,11 +2396,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
@@ -3034,7 +3132,7 @@
           "traducao":[
               {
                   "valor_ida":0,
-                  "valor_volta":"Desconhecido"
+                  "valor_volta":null
               },
               {
                   "valor_ida":1,
@@ -3372,11 +3470,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
@@ -3482,11 +3580,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
@@ -3758,7 +3856,7 @@
           "traducao":[
               {
                   "valor_ida":0,
-                  "valor_volta":"Desconhecida"
+                  "valor_volta":null
               },
               {
                   "valor_ida":1,
@@ -3918,7 +4016,7 @@
           "traducao":[
               {
                   "valor_ida":0,
-                  "valor_volta":"Desconhecida"
+                  "valor_volta":"Desconhecido"
               },
               {
                   "valor_ida":2,
@@ -4022,7 +4120,7 @@
           "traducao":[
               {
                   "valor_ida":0,
-                  "valor_volta":"Desconhecido"
+                  "valor_volta":null
               },
               {
                   "valor_ida":5,
@@ -4606,7 +4704,7 @@
           "traducao":[
               {
                   "valor_ida":0,
-                  "valor_volta":"Desconhecida"
+                  "valor_volta":null
               },
               {
                   "valor_ida":5,
@@ -4700,11 +4798,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
@@ -5498,7 +5596,7 @@
           "traducao":[
               {
                   "valor_ida":0,
-                  "valor_volta":"Desconhecido"
+                  "valor_volta":null
               },
               {
                   "valor_ida":7,
@@ -5837,10 +5935,6 @@
       {
           "attr_ida":"espessuradap",
           "attr_volta":"ESPESSURAD"
-      },
-      {
-          "attr_ida":"finalidade",
-          "attr_volta":"FINALIDADE"
       },
       {
           "attr_ida":"terreno",
@@ -7100,11 +7194,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
@@ -7198,11 +7292,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
@@ -7436,11 +7530,11 @@
           "traducao":[
               {
                   "valor_ida":1,
-                  "valor_volta":"Sim"
+                  "valor_volta":true
               },
               {
                   "valor_ida":2,
-                  "valor_volta":"Não"
+                  "valor_volta":false
               }
           ]
       },
