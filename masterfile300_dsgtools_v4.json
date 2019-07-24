@@ -25897,13 +25897,13 @@
                 },
                 {
                     "nome": "sigla",
-                    "tipo": "varchar(255)",
+                    "tipo": "varchar(80)",
                     "descricao": "-",
                     "cardinalidade": "0..1"
                 },
                 {
                     "nome": "codequipdesenvsocial",
-                    "tipo": "varchar(255)",
+                    "tipo": "varchar(80)",
                     "descricao": "-",
                     "cardinalidade": "0..1"
                 },
@@ -25911,7 +25911,7 @@
                     "nome": "localizacaoequipdesenvsocial",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "local_equip_desenv_social",
                     "valores": [
                         {
@@ -26106,16 +26106,7 @@
                             "code": 6
                         },
                         {
-                            "code": 7
-                        },
-                        {
                             "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
-                            "code": 14
                         }
                     ]
                 },
@@ -26145,13 +26136,7 @@
                             "code": 8
                         },
                         {
-                            "code": 23
-                        },
-                        {
                             "code": 95
-                        },
-                        {
-                            "code": 97
                         },
                         {
                             "code": 99
@@ -26231,25 +26216,13 @@
                     ]
                 },
                 {
-                    "nome": "largura",
-                    "tipo": "real",
+                    "nome": "nrpistas",
+                    "tipo": "integer",
                     "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "extensao",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
+                    "cardinalidade": "1..1"
                 },
                 {
                     "nome": "nrfaixas",
-                    "tipo": "integer",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "nrpistas",
                     "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
@@ -26289,6 +26262,18 @@
                             "code": 99
                         }
                     ]
+                },
+                {
+                    "nome": "largura",
+                    "tipo": "real",
+                    "descricao": "-",
+                    "cardinalidade": "0..1"
+                },
+                {
+                    "nome": "extensao",
+                    "tipo": "real",
+                    "descricao": "-",
+                    "cardinalidade": "0..1"
                 },
                 {
                     "nome": "tipopavimentacao",
@@ -26513,6 +26498,12 @@
             ],
             "atributos": [
                 {
+                    "nome": "nome",
+                    "tipo": "varchar(80)",
+                    "descricao": "-",
+                    "cardinalidade": "0..1"
+                },
+                {
                     "nome": "geometriaaproximada",
                     "tipo": "boolean",
                     "descricao": "-",
@@ -26521,10 +26512,12 @@
             ]
         },
         {
-            "nome": "travessia_pedrestre",
+            "nome": "travessia_pedestre",
             "categoria": "tra",
             "descricao": "-",
             "primitivas": [
+                "MultiLinestring",
+                "MultiPoint",
                 "MultiPolygon"
             ],
             "atributos": [
@@ -26616,24 +26609,6 @@
                     ]
                 },
                 {
-                    "nome": "operacional",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "auxiliar",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
-                },
-                {
                     "nome": "situacaoespacial",
                     "tipo": "smallint",
                     "descricao": "-",
@@ -26670,6 +26645,24 @@
                     ]
                 },
                 {
+                    "nome": "operacional",
+                    "tipo": "smallint",
+                    "descricao": "-",
+                    "cardinalidade": "1..1",
+                    "mapa_valor": "auxiliar",
+                    "valores": [
+                        {
+                            "code": 0
+                        },
+                        {
+                            "code": 1
+                        },
+                        {
+                            "code": 95
+                        }
+                    ]
+                },
+                {
                     "nome": "tipotravessiaped",
                     "tipo": "smallint",
                     "descricao": "-",
@@ -26694,13 +26687,13 @@
                     ]
                 },
                 {
-                    "nome": "largura",
+                    "nome": "extensao",
                     "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
                 },
                 {
-                    "nome": "extensao",
+                    "nome": "largura",
                     "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
@@ -26867,12 +26860,6 @@
                         },
                         {
                             "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
-                            "code": 14
                         }
                     ]
                 },
@@ -26976,25 +26963,13 @@
                     "cardinalidade": "1..1"
                 },
                 {
-                    "nome": "largura",
-                    "tipo": "real",
+                    "nome": "nrpistas",
+                    "tipo": "integer",
                     "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "extensao",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
+                    "cardinalidade": "1..1"
                 },
                 {
                     "nome": "nrfaixas",
-                    "tipo": "integer",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "nrpistas",
                     "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
@@ -27034,6 +27009,18 @@
                             "code": 99
                         }
                     ]
+                },
+                {
+                    "nome": "largura",
+                    "tipo": "real",
+                    "descricao": "-",
+                    "cardinalidade": "0..1"
+                },
+                {
+                    "nome": "extensao",
+                    "tipo": "real",
+                    "descricao": "-",
+                    "cardinalidade": "0..1"
                 },
                 {
                     "nome": "tipopavimentacao",
@@ -27081,7 +27068,7 @@
                     "nome": "tipotunel",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "tipo_tunel",
                     "valores": [
                         {
@@ -27133,16 +27120,7 @@
                             "code": 6
                         },
                         {
-                            "code": 7
-                        },
-                        {
                             "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
-                            "code": 14
                         }
                     ]
                 },
@@ -27258,25 +27236,13 @@
                     ]
                 },
                 {
-                    "nome": "largura",
-                    "tipo": "real",
+                    "nome": "nrpistas",
+                    "tipo": "integer",
                     "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "extensao",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
+                    "cardinalidade": "1..1"
                 },
                 {
                     "nome": "nrfaixas",
-                    "tipo": "integer",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "nrpistas",
                     "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
@@ -27316,6 +27282,18 @@
                             "code": 99
                         }
                     ]
+                },
+                {
+                    "nome": "largura",
+                    "tipo": "real",
+                    "descricao": "-",
+                    "cardinalidade": "0..1"
+                },
+                {
+                    "nome": "extensao",
+                    "tipo": "real",
+                    "descricao": "-",
+                    "cardinalidade": "0..1"
                 },
                 {
                     "nome": "tipopavimentacao",
@@ -27424,7 +27402,7 @@
                     "nome": "modaluso",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "modal_uso",
                     "valores": [
                         {
@@ -27454,7 +27432,7 @@
                     "nome": "administracao",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "administracao",
                     "valores": [
                         {
@@ -27502,7 +27480,7 @@
                     "nome": "situacaofisica",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "situacao_fisica",
                     "valores": [
                         {
@@ -27569,194 +27547,6 @@
                             "code": 99
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "nome": "travessia_pedestre",
-            "categoria": "tra",
-            "descricao": "-",
-            "primitivas": [
-                "MultiLinestring",
-                "MultiPoint"
-            ],
-            "atributos": [
-                {
-                    "nome": "nome",
-                    "tipo": "varchar(80)",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "geometriaaproximada",
-                    "tipo": "boolean",
-                    "descricao": "-",
-                    "cardinalidade": "1..1"
-                },
-                {
-                    "nome": "matconstr",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "mat_constr",
-                    "valores": [
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 23
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 97
-                        },
-                        {
-                            "code": 99
-                        }
-                    ]
-                },
-                {
-                    "nome": "situacaofisica",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "situacao_fisica",
-                    "valores": [
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 97
-                        }
-                    ]
-                },
-                {
-                    "nome": "operacional",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "auxiliar",
-                    "valores": [
-                        {
-                            "code": 0
-                        },
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
-                },
-                {
-                    "nome": "situacaoespacial",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "situacao_espacial",
-                    "valores": [
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 12
-                        },
-                        {
-                            "code": 13
-                        },
-                        {
-                            "code": 95
-                        },
-                        {
-                            "code": 97
-                        },
-                        {
-                            "code": 99
-                        }
-                    ]
-                },
-                {
-                    "nome": "tipotravessiaped",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "tipo_travessia_ped",
-                    "valores": [
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
-                            "code": 95
-                        }
-                    ]
-                },
-                {
-                    "nome": "largura",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "extensao",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
                 }
             ]
         },
@@ -27829,7 +27619,7 @@
                     "nome": "secundaria",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "auxiliar",
                     "valores": [
                         {
@@ -27865,7 +27655,7 @@
                     "nome": "especiepredominante",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "especie",
                     "valores": [
                         {
@@ -27959,7 +27749,7 @@
                     "nome": "secundaria",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "auxiliar",
                     "valores": [
                         {
@@ -28065,7 +27855,7 @@
                     "nome": "finalidade",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "finalidade_cultura",
                     "valores": [
                         {
@@ -28092,7 +27882,7 @@
                     "nome": "terreno",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "condicao_terreno",
                     "valores": [
                         {
@@ -28492,7 +28282,7 @@
                     "nome": "secundaria",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "auxiliar",
                     "valores": [
                         {
@@ -28595,7 +28385,7 @@
                     "nome": "secundaria",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "auxiliar",
                     "valores": [
                         {
@@ -28629,9 +28419,21 @@
                 },
                 {
                     "nome": "vereda",
-                    "tipo": "boolean",
+                    "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1"
+                    "cardinalidade": "1..1",
+                    "mapa_valor": "auxiliar",
+                    "valores": [
+                        {
+                            "code": 0
+                        },
+                        {
+                            "code": 1
+                        },
+                        {
+                            "code": 95
+                        }
+                    ]
                 }
             ]
         },
@@ -28704,7 +28506,7 @@
                     "nome": "secundaria",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "auxiliar",
                     "valores": [
                         {
@@ -28807,7 +28609,7 @@
                     "nome": "secundaria",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "auxiliar",
                     "valores": [
                         {
@@ -28934,7 +28736,7 @@
                     "nome": "finalidade",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "finalidade_cultura",
                     "valores": [
                         {
@@ -28961,7 +28763,7 @@
                     "nome": "terreno",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "condicao_terreno",
                     "valores": [
                         {
@@ -29289,24 +29091,6 @@
                             "code": 119
                         }
                     ]
-                },
-                {
-                    "nome": "espacamentoindividuos",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "espessura",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "alturamediaindividuos",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
                 }
             ]
         },
@@ -29379,7 +29163,7 @@
                     "nome": "secundaria",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "auxiliar",
                     "valores": [
                         {
@@ -29497,7 +29281,7 @@
                     "nome": "secundaria",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "auxiliar",
                     "valores": [
                         {
@@ -29600,7 +29384,7 @@
                     "nome": "secundaria",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "auxiliar",
                     "valores": [
                         {
@@ -29636,7 +29420,7 @@
                     "nome": "tipoveg",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "tipo_vegetacao",
                     "valores": [
                         {
@@ -29776,7 +29560,7 @@
                     "nome": "terreno",
                     "tipo": "smallint",
                     "descricao": "-",
-                    "cardinalidade": "1..1",
+                    "cardinalidade": "0..1",
                     "mapa_valor": "condicao_terreno",
                     "valores": [
                         {
@@ -30102,284 +29886,6 @@
                         },
                         {
                             "code": 119
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "nome": "limite_politico_adm",
-            "categoria": "lim",
-            "descricao": "-",
-            "primitivas": [
-                "MultiLinestring"
-            ],
-            "atributos": [
-                {
-                    "nome": "coincidecomdentrode",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "coincidecomdentrode_lim",
-                    "valores": [
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 9
-                        },
-                        {
-                            "code": 96
-                        }
-                    ]
-                },
-                {
-                    "nome": "extensao",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "geometriaaproximada",
-                    "tipo": "boolean",
-                    "descricao": "-",
-                    "cardinalidade": "1..1"
-                },
-                {
-                    "nome": "nome",
-                    "tipo": "varchar(80)",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "obssituacao",
-                    "tipo": "varchar(255)",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "tipolimpol",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "tipolimpol",
-                    "valores": [
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "nome": "limite_area_especial",
-            "categoria": "lim",
-            "descricao": "-",
-            "primitivas": [
-                "MultiLinestring"
-            ],
-            "atributos": [
-                {
-                    "nome": "coincidecomdentrode",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "coincidecomdentrode_lim",
-                    "valores": [
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 9
-                        },
-                        {
-                            "code": 96
-                        }
-                    ]
-                },
-                {
-                    "nome": "extensao",
-                    "tipo": "real",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "geometriaaproximada",
-                    "tipo": "boolean",
-                    "descricao": "-",
-                    "cardinalidade": "1..1"
-                },
-                {
-                    "nome": "nome",
-                    "tipo": "varchar(80)",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "obssituacao",
-                    "tipo": "varchar(255)",
-                    "descricao": "-",
-                    "cardinalidade": "0..1"
-                },
-                {
-                    "nome": "tipolimareaesp",
-                    "tipo": "smallint",
-                    "descricao": "-",
-                    "cardinalidade": "1..1",
-                    "mapa_valor": "tipolimareaesp",
-                    "valores": [
-                        {
-                            "code": 1
-                        },
-                        {
-                            "code": 2
-                        },
-                        {
-                            "code": 3
-                        },
-                        {
-                            "code": 4
-                        },
-                        {
-                            "code": 5
-                        },
-                        {
-                            "code": 6
-                        },
-                        {
-                            "code": 7
-                        },
-                        {
-                            "code": 8
-                        },
-                        {
-                            "code": 9
-                        },
-                        {
-                            "code": 10
-                        },
-                        {
-                            "code": 11
-                        },
-                        {
-                            "code": 12
-                        },
-                        {
-                            "code": 13
-                        },
-                        {
-                            "code": 14
-                        },
-                        {
-                            "code": 15
-                        },
-                        {
-                            "code": 16
-                        },
-                        {
-                            "code": 17
-                        },
-                        {
-                            "code": 18
-                        },
-                        {
-                            "code": 19
-                        },
-                        {
-                            "code": 20
-                        },
-                        {
-                            "code": 21
-                        },
-                        {
-                            "code": 22
-                        },
-                        {
-                            "code": 23
-                        },
-                        {
-                            "code": 24
-                        },
-                        {
-                            "code": 25
-                        },
-                        {
-                            "code": 26
-                        },
-                        {
-                            "code": 27
-                        },
-                        {
-                            "code": 28
-                        },
-                        {
-                            "code": 29
-                        },
-                        {
-                            "code": 30
-                        },
-                        {
-                            "code": 31
-                        },
-                        {
-                            "code": 32
-                        },
-                        {
-                            "code": 33
-                        },
-                        {
-                            "code": 34
-                        },
-                        {
-                            "code": 35
-                        },
-                        {
-                            "code": 36
-                        },
-                        {
-                            "code": 99
                         }
                     ]
                 }
