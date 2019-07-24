@@ -59,8 +59,8 @@ class FeatureProcessor(object):
             key_group_destiny = "tupla_volta"
             key_affix_origin = "afixo_geom_ida"
             key_affix_destiny = "afixo_geom_volta"
-            key_schema_origin = "schema_volta"
-            key_schema_destiny = "schema_ida"
+            key_schema_origin = "schema_ida"
+            key_schema_destiny = "schema_volta"
             key_class_affix_origin = "com_afixo_geom_ida"
             key_class_affix_destiny = "com_afixo_geom_volta"
             key_class_schema_origin = "com_schema_ida"
@@ -95,12 +95,12 @@ class FeatureProcessor(object):
         featDict["fme_feature_type_sem_schema"] = featDict["fme_feature_type"]
 
         if key_affix_origin in self.mappingDict and 'tipo' in self.mappingDict[key_affix_origin] and self.mappingDict[key_affix_origin]['tipo'] == 'sufixo':
-            featDict["fme_feature_type"] = featDict["fme_feature_type"][:-len(self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]])] + self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]]
-            featDict["fme_feature_type_sem_afixo"] = featDict["fme_feature_type_original"][:-len(self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]])] + self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]]
+            featDict["fme_feature_type"] = featDict["fme_feature_type"][:-len(self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]])]
+            featDict["fme_feature_type_sem_afixo"] = featDict["fme_feature_type_original"][:-len(self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]])]
 
         if key_affix_origin in self.mappingDict and 'tipo' in self.mappingDict[key_affix_origin] and self.mappingDict[key_affix_origin]['tipo'] == 'prefixo':
-            featDict["fme_feature_type"] = self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]] + featDict["fme_feature_type"][len(self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]]):]
-            featDict["fme_feature_type_sem_afixo"] = self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]] + featDict["fme_feature_type_original"][len(self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]]):]
+            featDict["fme_feature_type"] = featDict["fme_feature_type"][len(self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]]):]
+            featDict["fme_feature_type_sem_afixo"] = featDict["fme_feature_type_original"][len(self.mappingDict[key_affix_origin][featDict["$GEOM_TYPE"]]):]
 
         should_map = False
         for classmap in self.mappingDict['mapeamento_classes']:
@@ -216,7 +216,7 @@ class FeatureProcessor(object):
         return feat
 
     def input(self,feature):
-        if feature.numParts(True, False) > 1:
+        if feature.performFunction('@GeometryType()') == 'fme_aggregate':
             features = feature.splitAggregate(True)
         else:
             features = [feature]
