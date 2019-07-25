@@ -20,8 +20,13 @@ change_dict = {
     }
 }
 
-with open(os.path.join(os.path.dirname(__file__),'masterfile_300_dsgtools_v3.json'), 'r', encoding='utf-8') as f:
+with open(os.path.join(os.path.dirname(__file__),'masterfile300_dsgtools_v4.json'), 'r', encoding='utf-8') as f:
     master_dict = json.load(f)
+
+for domain_item in master_dict['dominios']:
+    for value_item in domain_item['valores']:
+        if value_item['value'] in ['Desconhecido', 'Desconhecida']:
+            value_item['code'] = 0
 
 for class_item in master_dict['classes']:
     for attr_item in class_item['atributos']:
