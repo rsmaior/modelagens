@@ -4128,7 +4128,7 @@
                 },
                 {
                     "code": 50,
-                    "value": "Comércio e reparação de veiculos automotores e motocicletas e comércio a varejo de combustíveis",
+                    "value": "Comércio e reparação de veículos automotores e motocicletas e comércio a varejo de combustíveis",
                     "descricao": "-"
                 },
                 {
@@ -4153,7 +4153,7 @@
                 },
                 {
                     "code": 92,
-                    "value": "Atividades recreativas",
+                    "value": "Atividades recreativas, culturais e desportivas",
                     "descricao": "-"
                 },
                 {
@@ -4182,6 +4182,11 @@
                     "descricao": "-"
                 },
                 {
+                    "code": 27,
+                    "value": "Araucária",
+                    "descricao": "-"
+                },
+                {
                     "code": 37,
                     "value": "Sem predominância",
                     "descricao": "-"
@@ -4203,22 +4208,22 @@
             "valores": [
                 {
                     "code": 1,
-                    "value": "Banco de Alimentos",
+                    "value": "Banco de alimentos",
                     "descricao": "-"
                 },
                 {
                     "code": 2,
-                    "value": "Barragem Calçadão",
+                    "value": "Barragem calçadão",
                     "descricao": "-"
                 },
                 {
                     "code": 3,
-                    "value": "Bolsa Verde",
+                    "value": "Bolsa verde",
                     "descricao": "-"
                 },
                 {
                     "code": 4,
-                    "value": "Centro de Convivência",
+                    "value": "Centro de convivência",
                     "descricao": "-"
                 },
                 {
@@ -4233,22 +4238,22 @@
                 },
                 {
                     "code": 7,
-                    "value": "Cisterna Subterrânea",
+                    "value": "Cisterna subterrânea",
                     "descricao": "-"
                 },
                 {
                     "code": 8,
-                    "value": "Cisterna de Polietileno",
+                    "value": "Cisterna de polietileno",
                     "descricao": "-"
                 },
                 {
                     "code": 9,
-                    "value": "Cisterna de Placa",
+                    "value": "Cisterna de placa",
                     "descricao": "-"
                 },
                 {
                     "code": 10,
-                    "value": "Cozinha Comunitária",
+                    "value": "Cozinha comunitária",
                     "descricao": "-"
                 },
                 {
@@ -4278,7 +4283,7 @@
                 },
                 {
                     "code": 16,
-                    "value": "Restaurante Popular",
+                    "value": "Restaurante popular",
                     "descricao": "-"
                 },
                 {
@@ -4843,7 +4848,7 @@
                 },
                 {
                     "code": 7,
-                    "value": "Lago/Lagoa",
+                    "value": "Lago ou Lagoa",
                     "descricao": "-"
                 },
                 {
@@ -4953,7 +4958,7 @@
                 },
                 {
                     "code": 18,
-                    "value": "Educação infantil-pré-escola",
+                    "value": "Educação infantil - pré-escola",
                     "descricao": "-"
                 },
                 {
@@ -4968,17 +4973,17 @@
                 },
                 {
                     "code": 21,
-                    "value": "Educação superior-graduação",
+                    "value": "Educação superior - graduação",
                     "descricao": "-"
                 },
                 {
                     "code": 22,
-                    "value": "Educação superior-graduação e pós-graduação",
+                    "value": "Educação superior - graduação e pós-graduação",
                     "descricao": "-"
                 },
                 {
                     "code": 23,
-                    "value": "Educação superior-pós-graduação e extensão",
+                    "value": "Educação superior - pós-graduação e extensão",
                     "descricao": "-"
                 },
                 {
@@ -5078,7 +5083,7 @@
                 },
                 {
                     "code": 0,
-                    "value": "Desconhecido",
+                    "value": "Desconhecida",
                     "descricao": "-"
                 }
             ]
@@ -5379,26 +5384,6 @@
             ]
         },
         {
-            "nome": "classificacao",
-            "valores": [
-                {
-                    "code": 2,
-                    "value": "Doméstico",
-                    "descricao": "-"
-                },
-                {
-                    "code": 3,
-                    "value": "Internacional",
-                    "descricao": "-"
-                },
-                {
-                    "code": 0,
-                    "value": "Desconhecido",
-                    "descricao": "-"
-                }
-            ]
-        },
-        {
             "nome": "tipo_campo",
             "valores": [
                 {
@@ -5491,6 +5476,11 @@
         {
             "nome": "tipo_localidade",
             "valores": [
+                {
+                    "code": 0,
+                    "value": "Desconhecido",
+                    "descricao": "-"
+                },
                 {
                     "code": 1,
                     "value": "Aglomerado rural",
@@ -5918,7 +5908,7 @@
                 },
                 {
                     "code": 31,
-                    "value": "Serviços veterinários ",
+                    "value": "Serviços veterinários",
                     "descricao": "-"
                 },
                 {
@@ -6038,7 +6028,7 @@
                 },
                 {
                     "code": 14,
-                    "value": "Higrológica",
+                    "value": "Higrologica",
                     "descricao": "-"
                 },
                 {
@@ -6069,131 +6059,6 @@
                 {
                     "code": 0,
                     "value": "Desconhecido",
-                    "descricao": "-"
-                }
-            ]
-        },
-        {
-            "nome": "categoria",
-            "valores": [
-                {
-                    "code": 1,
-                    "value": "AER",
-                    "descricao": "-"
-                },
-                {
-                    "code": 2,
-                    "value": "CBGE",
-                    "descricao": "-"
-                },
-                {
-                    "code": 3,
-                    "value": "DUT",
-                    "descricao": "-"
-                },
-                {
-                    "code": 4,
-                    "value": "EMU",
-                    "descricao": "-"
-                },
-                {
-                    "code": 5,
-                    "value": "ECO",
-                    "descricao": "-"
-                },
-                {
-                    "code": 6,
-                    "value": "EDF",
-                    "descricao": "-"
-                },
-                {
-                    "code": 7,
-                    "value": "EMU",
-                    "descricao": "-"
-                },
-                {
-                    "code": 8,
-                    "value": "ENC",
-                    "descricao": "-"
-                },
-                {
-                    "code": 9,
-                    "value": "FER",
-                    "descricao": "-"
-                },
-                {
-                    "code": 10,
-                    "value": "HDV",
-                    "descricao": "-"
-                },
-                {
-                    "code": 11,
-                    "value": "HID",
-                    "descricao": "-"
-                },
-                {
-                    "code": 12,
-                    "value": "LAZ",
-                    "descricao": "-"
-                },
-                {
-                    "code": 13,
-                    "value": "LML",
-                    "descricao": "-"
-                },
-                {
-                    "code": 14,
-                    "value": "PTO",
-                    "descricao": "-"
-                },
-                {
-                    "code": 15,
-                    "value": "REL",
-                    "descricao": "-"
-                },
-                {
-                    "code": 16,
-                    "value": "ROD",
-                    "descricao": "-"
-                },
-                {
-                    "code": 17,
-                    "value": "SNB",
-                    "descricao": "-"
-                },
-                {
-                    "code": 18,
-                    "value": "TRA",
-                    "descricao": "-"
-                },
-                {
-                    "code": 19,
-                    "value": "VEG",
-                    "descricao": "-"
-                },
-                {
-                    "code": 20,
-                    "value": "VER",
-                    "descricao": "-"
-                }
-            ]
-        },
-        {
-            "nome": "tipolimpol",
-            "valores": [
-                {
-                    "code": 1,
-                    "value": "Internacional",
-                    "descricao": "-"
-                },
-                {
-                    "code": 2,
-                    "value": "Estadual",
-                    "descricao": "-"
-                },
-                {
-                    "code": 3,
-                    "value": "Municipal",
                     "descricao": "-"
                 }
             ]
@@ -6258,7 +6123,7 @@
             "valores": [
                 {
                     "code": 4,
-                    "value": "Curso dágua",
+                    "value": "Curso d'água",
                     "descricao": "-"
                 },
                 {
@@ -6323,12 +6188,12 @@
             "valores": [
                 {
                     "code": 1,
-                    "value": "Área de Proteção Ambiental - APA",
+                    "value": "Área de proteção ambiental - APA",
                     "descricao": "-"
                 },
                 {
                     "code": 2,
-                    "value": "Área de Relevante Interesse Ecológico – ARIE",
+                    "value": "Área de relevante interesse ecológico – ARIE",
                     "descricao": "-"
                 },
                 {
@@ -6338,22 +6203,22 @@
                 },
                 {
                     "code": 4,
-                    "value": "Reserva de Desenvolvimento sustentável – RDS",
+                    "value": "Reserva de desenvolvimento sustentável – RDS",
                     "descricao": "-"
                 },
                 {
                     "code": 5,
-                    "value": "Reserva Extrativista – RESEX",
+                    "value": "Reserva extrativista",
                     "descricao": "-"
                 },
                 {
                     "code": 6,
-                    "value": "Reserva de Fauna – REFAU",
+                    "value": "Reserva de fauna – REFAU",
                     "descricao": "-"
                 },
                 {
                     "code": 7,
-                    "value": "Reserva Particular de Patrimônio Natural – RPPN",
+                    "value": "Reserva particular de patrimônio natural – RPPN",
                     "descricao": "-"
                 }
             ]
@@ -6528,7 +6393,7 @@
                 },
                 {
                     "code": 4,
-                    "value": "Administrativa",
+                    "value": "Administração",
                     "descricao": "-"
                 },
                 {
@@ -6693,7 +6558,7 @@
             "valores": [
                 {
                     "code": 15,
-                    "value": "Administrativa",
+                    "value": "Administração",
                     "descricao": "-"
                 },
                 {
@@ -7163,17 +7028,17 @@
                 },
                 {
                     "code": 4,
-                    "value": "Superposta nivel 2",
+                    "value": "Superposta nível 2",
                     "descricao": "-"
                 },
                 {
                     "code": 5,
-                    "value": "Nivel do solo",
+                    "value": "Nível do solo",
                     "descricao": "-"
                 },
                 {
                     "code": 7,
-                    "value": "Superposta nivel 3",
+                    "value": "Superposta nível 3",
                     "descricao": "-"
                 },
                 {
@@ -7183,7 +7048,7 @@
                 },
                 {
                     "code": 13,
-                    "value": "Superposta nivel 1",
+                    "value": "Superposta nível 1",
                     "descricao": "-"
                 },
                 {
@@ -7223,12 +7088,12 @@
             "valores": [
                 {
                     "code": 2,
-                    "value": "Deposito temporário de cargas e contêineres",
+                    "value": "Depósito temporário de cargas e contêineres",
                     "descricao": "-"
                 },
                 {
                     "code": 3,
-                    "value": "Estacionamento de veículos ",
+                    "value": "Estacionamento de veículos",
                     "descricao": "-"
                 },
                 {
@@ -7299,46 +7164,6 @@
                 {
                     "code": 0,
                     "value": "Desconhecida",
-                    "descricao": "-"
-                }
-            ]
-        },
-        {
-            "nome": "motivo_descontinuidade",
-            "valores": [
-                {
-                    "code": 1,
-                    "value": "Descontinuidade Temporal",
-                    "descricao": "-"
-                },
-                {
-                    "code": 2,
-                    "value": "Descontinuidade devido a transformação",
-                    "descricao": "-"
-                },
-                {
-                    "code": 3,
-                    "value": "Descontinuidade por escala de insumo",
-                    "descricao": "-"
-                },
-                {
-                    "code": 4,
-                    "value": "Descontinuidade por falta de acurácia",
-                    "descricao": "-"
-                },
-                {
-                    "code": 5,
-                    "value": "Descontinuidade por diferente interpretação das classes",
-                    "descricao": "-"
-                },
-                {
-                    "code": 6,
-                    "value": "Descontinuidade por omissão",
-                    "descricao": "-"
-                },
-                {
-                    "code": 7,
-                    "value": "Descontinuidade por excesso",
                     "descricao": "-"
                 }
             ]
@@ -7423,7 +7248,7 @@
             "valores": [
                 {
                     "code": 0,
-                    "value": "Desconhecido",
+                    "value": "Desconhecida",
                     "descricao": "-"
                 },
                 {
