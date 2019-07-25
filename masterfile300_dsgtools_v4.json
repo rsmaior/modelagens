@@ -228,17 +228,17 @@
             "valores": [
                 {
                     "code": 1,
-                    "value": "Bóia luminosa",
+                    "value": "Boia luminosa",
                     "descricao": "-"
                 },
                 {
                     "code": 2,
-                    "value": "Bóia cega",
+                    "value": "Boia cega",
                     "descricao": "-"
                 },
                 {
                     "code": 3,
-                    "value": "Bóia de amarração",
+                    "value": "Boia de amarração",
                     "descricao": "-"
                 },
                 {
@@ -338,7 +338,7 @@
                 },
                 {
                     "code": 10,
-                    "value": "Passarela em Área Úmida",
+                    "value": "Passarela em área úmida",
                     "descricao": "-"
                 },
                 {
@@ -398,7 +398,7 @@
                 },
                 {
                     "code": 6,
-                    "value": "Mista métrica  larga",
+                    "value": "Mista métrica larga",
                     "descricao": "-"
                 },
                 {
@@ -568,7 +568,7 @@
                 },
                 {
                     "code": 2,
-                    "value": "Parque PAR",
+                    "value": "Parque - PAR",
                     "descricao": "-"
                 },
                 {
@@ -578,7 +578,7 @@
                 },
                 {
                     "code": 4,
-                    "value": "Reserva Biológica – REBIO",
+                    "value": "Reserva biológica – REBIO",
                     "descricao": "-"
                 },
                 {
@@ -918,7 +918,7 @@
                 },
                 {
                     "code": 7,
-                    "value": "Cana de açúcar",
+                    "value": "Cana-de-açúcar",
                     "descricao": "-"
                 },
                 {
@@ -1173,7 +1173,7 @@
                 },
                 {
                     "code": 66,
-                    "value": "Cravo da índia",
+                    "value": "Cravo-da-índia",
                     "descricao": "-"
                 },
                 {
@@ -1333,7 +1333,7 @@
                 },
                 {
                     "code": 105,
-                    "value": "Pimenta do reino",
+                    "value": "Pimenta-do-reino",
                     "descricao": "-"
                 },
                 {
@@ -1394,6 +1394,31 @@
                 {
                     "code": 119,
                     "value": "Lima",
+                    "descricao": "-"
+                },
+                {
+                    "code": 120,
+                    "value": "Araçá",
+                    "descricao": "-"
+                },
+                {
+                    "code": 121,
+                    "value": "Cultura rotativa",
+                    "descricao": "-"
+                },
+                {
+                    "code": 122,
+                    "value": "Mandacarú",
+                    "descricao": "-"
+                },
+                {
+                    "code": 123,
+                    "value": "Milho pipoca",
+                    "descricao": "-"
+                },
+                {
+                    "code": 124,
+                    "value": "Morango",
                     "descricao": "-"
                 }
             ]
@@ -2089,56 +2114,6 @@
             ]
         },
         {
-            "nome": "coincidecomdentrode_lim",
-            "valores": [
-                {
-                    "code": 2,
-                    "value": "Contorno Massa D`Água",
-                    "descricao": "-"
-                },
-                {
-                    "code": 3,
-                    "value": "Cumeada",
-                    "descricao": "-"
-                },
-                {
-                    "code": 4,
-                    "value": "Linha Seca",
-                    "descricao": "-"
-                },
-                {
-                    "code": 5,
-                    "value": "Costa Visível da Carta",
-                    "descricao": "-"
-                },
-                {
-                    "code": 6,
-                    "value": "Rodovia",
-                    "descricao": "-"
-                },
-                {
-                    "code": 7,
-                    "value": "Ferrovia",
-                    "descricao": "-"
-                },
-                {
-                    "code": 8,
-                    "value": "Trecho de Drenagem",
-                    "descricao": "-"
-                },
-                {
-                    "code": 9,
-                    "value": "Massa D`Água",
-                    "descricao": "-"
-                },
-                {
-                    "code": 96,
-                    "value": "Não Identificado",
-                    "descricao": "-"
-                }
-            ]
-        },
-        {
             "nome": "tipo_instal_militar",
             "valores": [
                 {
@@ -2173,7 +2148,7 @@
                 },
                 {
                     "code": 11,
-                    "value": "Delegacia de  serviço militar",
+                    "value": "Delegacia de serviço militar",
                     "descricao": "-"
                 },
                 {
@@ -2198,7 +2173,7 @@
                 },
                 {
                     "code": 16,
-                    "value": "Capitânia dos portos",
+                    "value": "Capitania dos portos",
                     "descricao": "-"
                 },
                 {
@@ -2264,6 +2239,11 @@
                 {
                     "code": 5,
                     "value": "Gás",
+                    "descricao": "-"
+                },
+                {
+                    "code": 7,
+                    "value": "Biomassa",
                     "descricao": "-"
                 },
                 {
@@ -2388,7 +2368,7 @@
                 },
                 {
                     "code": 11,
-                    "value": "Delegacia de policia civil",
+                    "value": "Delegacia de polícia civil",
                     "descricao": "-"
                 },
                 {
@@ -2813,7 +2793,7 @@
                 },
                 {
                     "code": 3,
-                    "value": "Estação radio-base",
+                    "value": "Estação rádio-base",
                     "descricao": "-"
                 },
                 {
@@ -2982,12 +2962,17 @@
                     "descricao": "-"
                 },
                 {
-                    "code": 18,
+                    "code": 15,
                     "value": "Argila",
                     "descricao": "-"
                 },
                 {
-                    "code": 19,
+                  "code": 18,
+                  "value": "Cascalho",
+                  "descricao": "-"
+                },
+                {
+                    "code": 16,
                     "value": "Lodo",
                     "descricao": "-"
                 },
@@ -2997,7 +2982,7 @@
                     "descricao": "-"
                 },
                 {
-                    "code": 21,
+                    "code": 19,
                     "value": "Seixo",
                     "descricao": "-"
                 },
@@ -3293,7 +3278,7 @@
                 },
                 {
                     "code": 3,
-                    "value": "Olho dágua",
+                    "value": "Olho d'água",
                     "descricao": "-"
                 },
                 {
@@ -3308,7 +3293,7 @@
             "valores": [
                 {
                     "code": 15,
-                    "value": "Administrativa",
+                    "value": "Administração",
                     "descricao": "-"
                 },
                 {
@@ -3329,6 +3314,11 @@
                 {
                     "code": 29,
                     "value": "Hangar",
+                    "descricao": "-"
+                },
+                {
+                    "code": 30,
+                    "value": "Serviço de combate à incêndios (SCI)",
                     "descricao": "-"
                 },
                 {
@@ -3373,7 +3363,7 @@
                 },
                 {
                     "code": 99,
-                    "value": "Outros tipos de entroncamento em nivel",
+                    "value": "Outros tipos de entroncamento em nível",
                     "descricao": "-"
                 }
             ]
@@ -3543,7 +3533,7 @@
                 },
                 {
                     "code": 6,
-                    "value": "Judaica",
+                    "value": "Israelita",
                     "descricao": "-"
                 },
                 {
@@ -3773,7 +3763,7 @@
                 },
                 {
                     "code": 18,
-                    "value": "Espaço de eventos e/ ou cultural",
+                    "value": "Espaço de eventos e/ou cultural",
                     "descricao": "-"
                 },
                 {
@@ -3828,7 +3818,7 @@
                 },
                 {
                     "code": 5,
-                    "value": "Canalização de curva dágua",
+                    "value": "Canalização de curva d'água",
                     "descricao": "-"
                 },
                 {
@@ -3977,18 +3967,23 @@
             "nome": "divisao_ativ_econ",
             "valores": [
                 {
+                    "code": 0,
+                    "value": "Desconhecido",
+                    "descricao": "-"
+                },
+                {
                     "code": 1,
                     "value": "Agricultura, pecuário e serviços relacionados",
                     "descricao": "-"
                 },
                 {
                     "code": 2,
-                    "value": "Silvicultura, exploração e serviços relacionados",
+                    "value": "Silvicultura, exploração florestal e serviços relacionados",
                     "descricao": "-"
                 },
                 {
                     "code": 5,
-                    "value": "Pesca, agricultura e serviços relacionados",
+                    "value": "Pesca, aquicultura e serviços relacionados",
                     "descricao": "-"
                 },
                 {
@@ -4008,7 +4003,7 @@
                 },
                 {
                     "code": 14,
-                    "value": "Fabricação de produtos de minerais não metálicos",
+                    "value": "Extração de produtos de minerais não metálicos",
                     "descricao": "-"
                 },
                 {
@@ -4067,6 +4062,12 @@
                     "descricao": "-"
                 },
                 {
+                
+                  "code": 26,
+                  "value": "Fabricação de produtos de minerais não metálicos",
+                  "descricao": "-"
+                },
+                {
                     "code": 27,
                     "value": "Metalurgia básica",
                     "descricao": "-"
@@ -4098,7 +4099,7 @@
                 },
                 {
                     "code": 33,
-                    "value": "Fabricação de equipamentos de instrumentação médico-hospitalares, instrumentos de precisão e ópticos, equipamentos para automação industrial, cronômetro e relógios",
+                    "value": "Fabricação de equipamentos de instrumentação médico-hospitalares, instrumentos de precisão e ópticos, equipamentos para automação industrial, cronômetros e relógios",
                     "descricao": "-"
                 },
                 {
@@ -4154,11 +4155,6 @@
                 {
                     "code": 92,
                     "value": "Atividades recreativas",
-                    "descricao": "-"
-                },
-                {
-                    "code": 95,
-                    "value": "Desconhecido",
                     "descricao": "-"
                 },
                 {
