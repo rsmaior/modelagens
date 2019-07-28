@@ -1,4 +1,20 @@
 {"__comment":"UTF-8",
+  "schema_ida": "edgv",
+  "schema_volta": "cb",
+  "afixo_geom_ida": {
+    "tipo": "sufixo",
+    "POINT": "_p",
+    "LINESTRING": "_l",
+    "POLYGON": "_a"
+  },
+  "afixo_geom_volta": {
+    "tipo": "sufixo",
+    "POINT": "_p",
+    "LINESTRING": "_l",
+    "POLYGON": "_a"
+  },
+  "agregar_geom_ida": true,
+  "agregar_geom_volta": true,
   "mapeamento_classes": [
     {"__comment":"cobter_area_edificada <-> Area_Edificada",
       "classe_ida": "edgv.cobter_area_edificada",
@@ -1214,237 +1230,1055 @@
               "valor": 1
           }     
       ]
+    },
+
+
+
+    {"__comment":"llp_delimitacao_fisica <-> lim_delimitacao_fisica_l",
+      "classe_ida": "llp_delimitacao_fisica",
+      "classe_volta": "lim_delimitacao_fisica_l",
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "material_construcao",
+          "attr_volta": "matconstr",
+          "traducao": [
+            {
+              "valor_ida": 0,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipodelimfis",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "eletrificada",
+          "valor": 0
+        }    
+      ]
+    },
+    {"__comment":"llp_localidade <-> loc_cidade",
+      "classe_ida": "llp_localidade",
+      "classe_volta": "loc_cidade",
+      "filtro_ida": {
+        "nome_atributo": "tipo",
+        "valor": 1
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1
+        }    
+      ]
+    },
+    {"__comment":"llp_localidade <-> loc_capital",
+      "classe_ida": "llp_localidade",
+      "classe_volta": "loc_capital",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 2
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 3
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipocapital"
+        }
+      ]
+    },
+    {"__comment":"llp_localidade <-> loc_vila",
+      "classe_ida": "llp_localidade",
+      "classe_volta": "loc_vila",
+      "filtro_ida": {
+        "nome_atributo": "tipo",
+        "valor": 4
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 4
+        }    
+      ]
+    },
+    {"__comment":"llp_localidade <-> loc_nome_local",
+      "classe_ida": "llp_localidade",
+      "classe_volta": "loc_nome_local",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 8
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 9
+          }
+        ]
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 8
+        }    
+      ]
+    },
+    {"__comment":"llp_localidade <-> loc_aglomerado_rural_isolado",
+      "classe_ida": "llp_localidade",
+      "classe_volta": "loc_aglomerado_rural_isolado",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 5
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 6
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 7
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoaglomrurisol",
+          "traducao": [
+            {
+              "valor_ida": 5,
+              "valor_volta": 6
+            },
+            {
+              "valor_ida": 6,
+              "valor_volta": 5
+            }
+          ]
+        }
+      ]
+    },
+    {"__comment":"llp_ponto_controle <-> pto_pto_controle",
+      "classe_ida": "llp_ponto_controle",
+      "classe_volta": "pto_pto_controle",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 9
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 12
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 13
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoptocontrole",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "materializado",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "referencial_grav",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"llp_ponto_controle <-> lim_marco_de_limite",
+      "classe_ida": "llp_ponto_controle",
+      "classe_volta": "lim_marco_de_limite",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 14
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 15
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 16
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipomarcolim",
+          "traducao": [
+            {
+              "valor_ida": 14,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 15,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 16,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "orgao_responsavel",
+          "attr_volta": "orgresp"
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "referencial_grav",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"llp_ponto_controle <-> pto_pto_ref_geod_topo",
+      "classe_ida": "llp_ponto_controle",
+      "classe_volta": "pto_pto_ref_geod_topo",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 1
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 2
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 3
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 4
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 5
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 6
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 7
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 8
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoptorefgeodtopo",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "proximidade",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "rede",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"llp_limite_legal <-> lim_limite_politico_adm",
+      "classe_ida": "llp_limite_legal",
+      "classe_volta": "lim_limite_politico_adm",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 1
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 2
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 3
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipolimpol"
+        },
+        {
+          "attr_ida": "geometria_aproximada",
+          "attr_volta": "geometriaaproximada"
+        },
+        {
+          "attr_ida": "tipo_delimitacao",
+          "attr_volta": "coincidecomdentrode"
+        }
+      ]
+    },
+    {"__comment":"llp_limite_legal <-> lim_bairro",
+      "classe_ida": "llp_limite_legal",
+      "classe_volta": "lim_bairro",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 10
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "geometria_aproximada",
+          "attr_volta": "geometriaaproximada"
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo_delimitacao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "tipo",
+          "valor": 10
+        }
+      ]
+    },
+    {"__comment":"llp_limite_legal <-> lim_distrito",
+      "classe_ida": "llp_limite_legal",
+      "classe_volta": "lim_distrito",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 7
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "geometria_aproximada",
+          "attr_volta": "geometriaaproximada"
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo_delimitacao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "tipo",
+          "valor": 7
+        }
+      ]
+    },
+    {"__comment":"llp_limite_legal <-> lim_municipio",
+      "classe_ida": "llp_limite_legal",
+      "classe_volta": "lim_municipio",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 6
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "geometria_aproximada",
+          "attr_volta": "geometriaaproximada"
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo_delimitacao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "tipo",
+          "valor": 6
+        }
+      ]
+    },
+    {"__comment":"llp_limite_legal <-> lim_pais",
+      "classe_ida": "llp_limite_legal",
+      "classe_volta": "lim_pais",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 4
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "geometria_aproximada",
+          "attr_volta": "geometriaaproximada"
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo_delimitacao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "tipo",
+          "valor": 4
+        }
+      ]
+    },
+    {"__comment":"llp_limite_legal <-> lim_regiao_administrativa",
+      "classe_ida": "llp_limite_legal",
+      "classe_volta": "lim_regiao_administrativa",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 9
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "geometria_aproximada",
+          "attr_volta": "geometriaaproximada"
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo_delimitacao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "tipo",
+          "valor": 9
+        }
+      ]
+    },
+    {"__comment":"llp_limite_legal <-> lim_sub_distrito",
+      "classe_ida": "llp_limite_legal",
+      "classe_volta": "lim_sub_distrito",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 8
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "geometria_aproximada",
+          "attr_volta": "geometriaaproximada"
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo_delimitacao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "tipo",
+          "valor": 8
+        }
+      ]
+    },
+    {"__comment":"llp_limite_legal <-> lim_unidade_federacao",
+      "classe_ida": "llp_limite_legal",
+      "classe_volta": "lim_unidade_federacao",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 5
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "geometria_aproximada",
+          "attr_volta": "geometriaaproximada"
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo_delimitacao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "tipo",
+          "valor": 5
+        }
+      ]
+    },
+    {"__comment":"llp_limite_especial <-> lim_outras_unid_protegidas",
+      "classe_ida": "llp_limite_especial",
+      "classe_volta": "lim_outras_unid_protegidas",
+      "filtro_ida": {
+        "$and": [
+          {
+            "$or": [
+              {
+                "nome_atributo": "tipo",
+                "valor": 8
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 9
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 10
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 11
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 12
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 13
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 14
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 15
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 16
+              }
+            ]
+          },
+          {
+            "nome_atributo": "$GEOM_TYPE",
+            "valor": "POLYGON"
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipooutunidprot",
+          "traducao": [
+            {
+              "valor_ida": 8,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 9,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 10,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 11,
+              "valor_volta": 4
+            },
+            {
+              "valor_ida": 12,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 13,
+              "valor_volta": 6
+            },
+            {
+              "valor_ida": 14,
+              "valor_volta": 7
+            },
+            {
+              "valor_ida": 15,
+              "valor_volta": 8
+            },
+            {
+              "valor_ida": 16,
+              "valor_volta": 9
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaaproximada",
+          "valor": 1
+        },
+        {
+          "nome_atributo": "administracao",
+          "valor": 0       
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo_delimitacao",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"llp_limite_especial <-> lim_limite_area_especial",
+      "classe_ida": "llp_limite_especial",
+      "classe_volta": "lim_limite_area_especial",
+      "filtro_ida": {
+            "nome_atributo": "$GEOM_TYPE",
+            "valor": "LINESTRING"
+      },
+      "filtro_volta": {
+        "$not": {
+          "$and": [
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 5
+            },
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 6
+            },
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 17
+            },
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 18
+            },
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 19
+            },
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 20
+            },
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 21
+            },
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 22
+            },
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 23
+            },
+            {
+              "nome_atributo": "tipolimareaesp",
+              "valor": 99
+            }
+          ]
+        }
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipolimareaesp"
+        },
+        {
+          "attr_ida": "tipo_delimitacao",
+          "attr_volta": "coincidecomdentrode"
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaaproximada",
+          "valor": 1
+        }
+      ]
+    },
+    {"__comment":"elemnat_ponto_cotado <-> rel_ponto_cotado_altimetrico",
+      "classe_ida": "elemnat_ponto_cotado",
+      "classe_volta": "rel_ponto_cotado_altimetrico",
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "cota_comprovada",
+          "attr_volta": "cotacomprovada"
+        }
+      ]
+    },
+    {"__comment":"elemnat_curva_nivel <-> rel_curva_nivel",
+      "classe_ida": "elemnat_curva_nivel",
+      "classe_volta": "rel_curva_nivel"
+    },
+    {"__comment":"elemnat_trecho_drenagem <-> hid_trecho_drenagem",
+      "classe_ida": "elemnat_trecho_drenagem",
+      "classe_volta": "hid_trecho_drenagem",
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "coincidecomdentrode",
+          "traducao": [
+            {
+              "valor_ida": 3,
+              "valor_volta": 97
+            },
+            {
+              "valor_ida": 1,
+              "valor_volta": 9,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1,
+              "valor_volta": 10,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1,
+              "valor_volta": 12,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1,
+              "valor_volta": 13,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1,
+              "valor_volta": 14,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1,
+              "valor_volta": 15,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1,
+              "valor_volta": 16,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1,
+              "valor_volta": 19,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "regime",
+          "attr_volta": "regime",
+          "traducao": [
+            {
+              "valor_ida": 1,
+              "valor_volta": 2,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 3,
+              "valor_volta": 4,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "compartilhado",
+          "valor": 2
+        },
+        {
+          "nome_atributo": "dentrodepoligono",
+          "valor": 2
+        },
+        {
+          "nome_atributo": "eixoprincipal",
+          "valor": 1
+        },
+        {
+          "nome_atributo": "navegabilidade",
+          "valor": 0
+        } 
+      ]
+    },
+    {"__comment":"constr_extracao_mineral <-> eco_ext_mineral",
+      "classe_ida": "constr_extracao_mineral",
+      "classe_volta": "eco_ext_mineral",
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoextmin",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "forma_extracao",
+          "attr_volta": "formaextracao",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo_produto_residuo",
+          "attr_volta": "tipoprodutoresiduo",
+          "traducao": [
+            {
+              "valor_ida": 98,
+              "valor_volta": 99
+            },
+            {
+              "valor_ida": 0,
+              "valor_volta": 98,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 3,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 4,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 5,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "atividade",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "procextracao",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tipopocomina",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tiposecaocnae",
+          "valor": 1
+        } 
+      ]
+    },
+    {"__comment":"infra_via_deslocamento <-> eco_ext_mineral",
+      "classe_ida": "infra_via_deslocamento",
+      "classe_volta": "eco_ext_mineral",
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoextmin",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "forma_extracao",
+          "attr_volta": "formaextracao",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo_produto_residuo",
+          "attr_volta": "tipoprodutoresiduo",
+          "traducao": [
+            {
+              "valor_ida": 98,
+              "valor_volta": 99
+            },
+            {
+              "valor_ida": 0,
+              "valor_volta": 98,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 3,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 4,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 5,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "atividade",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "procextracao",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tipopocomina",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tiposecaocnae",
+          "valor": 1
+        } 
+      ]
     }
   ],
   "mapeamento_atributos":[
-      {
-        "attr_ida": "jurisdicao",
-        "attr_volta": "jurisdicao",
-        "traducao": [
-          {
-            "valor_ida": 6,
-            "valor_volta": 8
-          }
-        ]
+    {
+      "attr_ida": "cod_ponto",
+      "attr_volta": "codponto"
     },
     {
-        "attr_ida": "regime",
-        "attr_volta": "regime",
-        "traducao": [
-          {
-            "valor_ida": 1,
-            "valor_volta": 2,
-            "sentido": "volta"
-          },
-          {
-            "valor_ida": 3,
-            "valor_volta": 4,
-            "sentido": "volta"
-          }
-        ]
+      "attr_ida": "tipo_ref",
+      "attr_volta": "tiporef"
     },
     {
-        "attr_ida": "situacao_fisica",
-        "attr_volta": "situacaoFisica",
-        "traducao": [
-          {
-            "valor_ida": 3,
-            "valor_volta": 5
-          },
-          {
-            "valor_ida": 4,
-            "valor_volta": 3
-          }
-        ]
+      "attr_ida": "altitude_ortometrica",
+      "attr_volta": "altitudeortometrica"
     },
     {
-        "attr_ida": "material_construcao",
-        "attr_volta": "matConstr"
+      "attr_ida": "sistema_geodesico",
+      "attr_volta": "sistemageodesico"
     },
     {
-        "attr_ida": "tipo_exposicao",
-        "attr_volta": "tipoExposicao",
-        "traducao": [
-          {
-            "valor_ida": 999,
-            "valor_volta": 0,
-            "sentido": "volta"
-          },
-          {
-            "valor_ida": 999,
-            "valor_volta": 99,
-            "sentido": "volta"
-          }
-        ]
+      "attr_ida": "referencial_altim",
+      "attr_volta": "referencialaltim"
     },
     {
-        "attr_ida": "tipo_produto_residuo",
-        "attr_volta": "tipoProdutoResiduo"
+      "attr_ida": "referencial_grav",
+      "attr_volta": "referencialgrav"
     },
     {
-        "attr_ida": "tipo_esposicao",
-        "attr_volta": "construcao",
-        "traducao": [
-          {
-            "valor_ida": 3,
-            "valor_volta": 1
-          },
-          {
-            "valor_ida": 5,
-            "valor_volta": 2
-          }
-        ]
+      "attr_ida": "situacao_marco",
+      "attr_volta": "situacaomarco",
+      "traducao": [
+        {
+          "valor_ida": 97,
+          "valor_volta": 7
+        }
+      ]
     },
     {
-        "attr_ida": "tipo_produto_residuo",
-        "attr_volta": "tipoResiduo"
-    },
-    {
-        "attr_ida": "forma_extracao",
-        "attr_volta": "formaExtracao",
-        "traducao": [
-          {
-            "valor_ida": 999,
-            "valor_volta": 0,
-            "sentido": "volta"
-          }
-        ]
-    },
-    {
-        "attr_ida": "cota_comprovada",
-        "attr_volta": "cotaComprovada"
-    },
-    {
-        "attr_ida": "posicao_relativa",
-        "attr_volta": "posicaoRelativa",
-        "traducao": [
-          {
-            "valor_ida": 999,
-            "valor_volta": 0,
-            "sentido": "volta"
-          }
-        ]
-    },
-    {
-        "attr_ida": "posicao_relativa",
-        "attr_volta": "posicaoRelEdific"
-    },
-    {
-        "attr_ida": "modal_uso",
-        "attr_volta": "modalUso",
-        "traducao": [
-          {
-            "valor_ida": 999,
-            "valor_volta": 7,
-            "sentido": "volta"
-          }
-        ]
-    },
-    {
-        "attr_ida": "posicao_pista",
-        "attr_volta": "posicaoPista",
-        "traducao": [
-          {
-            "valor_ida": 999,
-            "valor_volta": 0,
-            "sentido": "volta"
-          },
-          {
-            "valor_ida": 999,
-            "valor_volta": 16,
-            "sentido": "volta"
-          }
-        ]
-    },
-    {
-        "attr_ida": "nr_faixas",
-        "attr_volta": "nrFaixas"
-    },
-    {
-        "attr_ida": "nr_pistas",
-        "attr_volta": "nrPistas"
-    },
-    {
-        "attr_ida": "nr_linhas",
-        "attr_volta": "nrLinhas"
-    },
-    {
-        "attr_ida": "em_arruamento",
-        "attr_volta": "emArruamento"
-    },
-    {
-        "attr_ida": "uso_pista",
-        "attr_volta": "usoPista"
-    },
-    {
-        "attr_ida": "canteiro_divisorio",
-        "attr_volta": "canteiroDivisorio"
-    },
-    {
-        "attr_ida": "geometria_aproximada",
-        "attr_volta": "geometriaAproximada"
-    },
-    {
-        "attr_ida": "tipo_ref",
-        "attr_volta": "tipoRef"
-    },
-    {
-        "attr_ida": "sistema_geodesico",
-        "attr_volta": "sistemaGeodesico",
-        "traducao": [
-          {
-            "valor_ida": 999,
-            "valor_volta": 6,
-            "sentido": "volta"
-          }
-        ]
-    },
-    {
-        "attr_ida": "referencial_altim",
-        "attr_volta": "referencialAltim"
-    },
-    {
-        "attr_ida": "referencial_grav",
-        "attr_volta": "referencialGrav",
-        "traducao": [
-          {
-            "valor_ida": 999,
-            "valor_volta": 0,
-            "sentido": "volta"
-          }
-        ]
-    },
-    {
-        "attr_ida": "situacao_marco",
-        "attr_volta": "situacaoMarco",
-        "traducao": [
-          {
-            "valor_ida": 999,
-            "valor_volta": 0,
-            "sentido": "volta"
-          },
-          {
-            "valor_ida": 999,
-            "valor_volta": 7,
-            "sentido": "volta"
-          }          
-        ]
-    },
-    {
-        "attr_ida": "orgao_responsavel",
-        "attr_volta": "orgResp"
-    },
-    {
-        "attr_ida": "tipo_delimitacao",
-        "attr_volta": "coincideComDentroDe"
-    },
-    {
-        "attr_ida": "controle_id",
-        "attr_volta": "controleId"
-    },
-    {
-        "attr_ida": "observacao",
-        "attr_volta": "obsAquisicao"
+      "attr_ida": "orgao_responsavel",
+      "attr_volta": "orgaoenteresp"
     }
   ],
   "atributos_default_ida": [],
