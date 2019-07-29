@@ -16,19 +16,19 @@
   "agregar_geom_ida": true,
   "agregar_geom_volta": true,
   "mapeamento_classes": [
-    {"__comment":"cobter_area_edificada <-> Area_Edificada",
-      "classe_ida": "edgv.cobter_area_edificada",
-      "classe_volta": "Area_Edificada",
+    {"__comment":"cobter_area_edificada <-> loc_area_edificada",
+      "classe_ida": "cobter_area_edificada",
+      "classe_volta": "loc_area_edificada",
       "atributos_default_ida": [
         {
-          "nome_atributo": "geometriaAproximada",
+          "nome_atributo": "geometriaaproximada",
           "valor": 1
         }    
       ]
     },
-    {"__comment":"cobter_corpo_dagua <-> Massa_Dagua",
-      "classe_ida": "edgv.cobter_corpo_dagua",
-      "classe_volta": "Massa_Dagua",
+    {"__comment":"cobter_corpo_dagua <-> hid_massa_dagua",
+      "classe_ida": "cobter_corpo_dagua",
+      "classe_volta": "hid_massa_dagua",
       "filtro_ida": 
         {
           "$or": [
@@ -61,7 +61,7 @@
       "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
-          "attr_volta": "tipoMassaDagua",
+          "attr_volta": "tipomassadagua",
           "traducao": [
             {
               "valor_ida": 11,
@@ -74,12 +74,7 @@
             },
             {
               "valor_ida": 7,
-              "valor_volta": 9,
-              "sentido": "volta"
-            },
-            {
-              "valor_ida": 999,
-              "valor_volta": 99,
+              "valor_volta": 8,
               "sentido": "volta"
             }
           ]
@@ -87,18 +82,14 @@
       ],
       "atributos_default_ida": [
         {
-          "nome_atributo": "geometriaAproximada",
-          "valor": 1
-        },
-        {
           "nome_atributo":"salinidade",
           "valor": 0
-      }
+        }
       ]
     },
-    {"__comment":"cobter_corpo_dagua <-> Trecho_Massa_Dagua",
-      "classe_ida": "edgv.cobter_corpo_dagua",
-      "classe_volta": "Trecho_Massa_Dagua",
+    {"__comment":"cobter_corpo_dagua <-> hid_trecho_massa_dagua",
+      "classe_ida": "cobter_corpo_dagua",
+      "classe_volta": "hid_trecho_massa_dagua",
       "filtro_ida": 
         {
           "$or": [
@@ -123,7 +114,7 @@
       "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
-          "attr_volta": "tipoMassaDagua",
+          "attr_volta": "tipotrechomassa",
           "traducao": [
             {
               "valor_ida": 999,
@@ -135,30 +126,22 @@
       ],
       "atributos_default_ida": [
         {
-          "nome_atributo": "geometriaAproximada",
-          "valor": 1
-        },
-        {
           "nome_atributo":"salinidade",
           "valor": 0
       }
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 1101  <-> Veg_Area_Contato",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 1101  <-> veg_veg_area_contato",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_veg_area_contato",
       "filtro_ida":
         {
           "nome_atributo": "tipo",
           "valor": 1101
         },
-      "classe_volta": "Veg_Area_Contato",
       "atributos_default_ida": [
           {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 1
-          },
-          {
-              "nome_atributo":"classificacaoPorte",
+              "nome_atributo":"classificacaoporte",
               "valor": 0
           },
           {
@@ -169,50 +152,50 @@
               "nome_atributo":"antropizada",
               "valor": 0
           }   
+      ],
+      "atributos_default_volta":[
+        {
+          "nome_atributo":"tipo",
+          "valor":1101
+        }
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 901  <-> Campo",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 901  <-> veg_campo",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_campo",
       "filtro_ida":
         {
           "nome_atributo": "tipo",
-          "valor": 1101
+          "valor": 901
         },
-      "classe_volta": "Campo",
       "atributos_default_ida": [
           {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 1
-          },
-          {
-              "nome_atributo":"classificacaoPorte",
-              "valor": 4
-          },
-          {
-              "nome_atributo":"denso",
+              "nome_atributo":"tipocampo",
               "valor": 0
           },
           {
-              "nome_atributo":"antropizada",
-              "valor": 0
+              "nome_atributo":"ocorrenciaem",
+              "valor": 96
           }   
+      ],
+      "atributos_default_volta": [
+        {
+            "nome_atributo":"tipo",
+            "valor": 901
+        }   
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 801  <-> Caatinga",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 801  <-> veg_caatinga",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_caatinga",
       "filtro_ida":
         {
           "nome_atributo": "tipo",
           "valor": 801
         },
-      "classe_volta": "Campo",
       "atributos_default_ida": [
           {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 2
-          },
-          {
-              "nome_atributo":"classificacaoPorte",
+              "nome_atributo":"classificacaoporte",
               "valor": 0
           },
           {
@@ -223,10 +206,17 @@
               "nome_atributo":"antropizada",
               "valor": 0
           }   
+      ],
+      "atributos_default_volta": [
+        {
+            "nome_atributo":"tipo",
+            "valor": 801
+        }   
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 701 702  <-> Cerrado_Cerradao",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 701 702  <-> veg_cerrado_cerradao",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_cerrado_cerradao",
       "filtro_ida":
         {
           "$or": [
@@ -240,11 +230,10 @@
               }
           ]
         },
-      "classe_volta": "Cerrado_Cerradao",
       "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
-          "attr_volta": "classificacaoPorte",
+          "attr_volta": "classificacaoporte",
           "traducao": [
             {
               "valor_ida": 701,
@@ -256,26 +245,24 @@
             },
             {
               "valor_ida": 701,
-              "valor_volta": 0
+              "valor_volta": 0,
+              "sentido": "volta"
             },
             {
               "valor_ida": 701,
-              "valor_volta": 98
+              "valor_volta": 98,
+              "sentido": "volta"
             }
           ]
         }
       ],
       "atributos_default_ida": [
           {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 2
-          },
-          {
               "nome_atributo":"denso",
               "valor": 0
           },
 				  {
-              "nome_atributo":"tipoCerr",
+              "nome_atributo":"tipocerr",
               "valor": 0
           },
           {
@@ -284,21 +271,17 @@
           }   
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 601  <-> Floresta",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 601  <-> veg_floresta",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_floresta",
       "filtro_ida":
         {
           "nome_atributo": "tipo",
           "valor": 601
         },
-      "classe_volta": "Floresta",
       "atributos_default_ida": [
           {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 2
-          },
-          {
-              "nome_atributo":"caracteristicaFloresta",
+              "nome_atributo":"caracteristicafloresta",
               "valor": 1
           },
           {
@@ -308,24 +291,34 @@
           {
               "nome_atributo":"antropizada",
               "valor": 0
-          }   
+          },
+          {
+            "nome_atributo":"classificacaoporte",
+            "valor": 1
+          },
+          {
+            "nome_atributo":"especiepredominante",
+            "valor": 96
+          }  
+      ],
+      "atributos_default_volta":[
+        {
+          "nome_atributo":"tipo",
+          "valor":601
+        }
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 501  <-> Campinarana",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 501  <-> veg_campinarana",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_campinarana",
       "filtro_ida":
         {
           "nome_atributo": "tipo",
           "valor": 501
         },
-      "classe_volta": "Campinarana",
       "atributos_default_ida": [
           {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 2
-          },
-          {
-              "nome_atributo":"classificacaoPorte",
+              "nome_atributo":"classificacaoporte",
               "valor": 0
           },
           {
@@ -336,23 +329,25 @@
               "nome_atributo":"antropizada",
               "valor": 0
           }   
+      ],
+      "atributos_default_volta": [
+        {
+            "nome_atributo":"tipo",
+            "valor": 501
+        }   
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 401  <-> Veg_Restinga",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 401  <-> veg_restinga",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_restinga",
       "filtro_ida":
         {
           "nome_atributo": "tipo",
           "valor": 401
         },
-      "classe_volta": "Veg_Restinga",
       "atributos_default_ida": [
           {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 2
-          },
-          {
-              "nome_atributo":"classificacaoPorte",
+              "nome_atributo":"classificacaoporte",
               "valor": 0
           },
           {
@@ -363,10 +358,17 @@
               "nome_atributo":"antropizada",
               "valor": 0
           }   
+      ],
+      "atributos_default_volta":[
+        {
+          "nome_atributo":"tipo",
+          "valor":401
+        }
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 301 302  <-> Brejo_Pantano",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 301 302  <-> veg_brejo_pantano",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_brejo_pantano",
       "filtro_ida":
         {
           "$or": [
@@ -380,11 +382,10 @@
               }
           ]
         },
-      "classe_volta": "Brejo_Pantano",
       "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
-          "attr_volta": "classificacaoPorte",
+          "attr_volta": "classificacaoporte",
           "traducao": [
             {
               "valor_ida": 301,
@@ -396,22 +397,20 @@
             },
             {
               "valor_ida": 301,
-              "valor_volta": 0
+              "valor_volta": 0,
+              "sentido": "volta"
             },
             {
               "valor_ida": 301,
-              "valor_volta": 98
+              "valor_volta": 98,
+              "sentido": "volta"
             }
           ]
         }
       ],
       "atributos_default_ida": [
           {
-              "nome_atributo":"geometriaAproximada",
-              "valor":2
-          },
-          {
-              "nome_atributo":"tipoBrejoPantano",
+              "nome_atributo":"tipobrejopantano",
               "valor":0
           },
           {
@@ -424,8 +423,9 @@
           }   
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 201 202  <-> Mangue",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 201 202  <-> veg_mangue",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_mangue",
       "filtro_ida":
         {
           "$or": [
@@ -439,11 +439,10 @@
               }
           ]
         },
-      "classe_volta": "Mangue",
       "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
-          "attr_volta": "classificacaoPorte",
+          "attr_volta": "classificacaoporte",
           "traducao": [
             {
               "valor_ida": 201,
@@ -455,20 +454,18 @@
             },
             {
               "valor_ida": 201,
-              "valor_volta": 0
+              "valor_volta": 0,
+              "sentido": "volta"
             },
             {
               "valor_ida": 201,
-              "valor_volta": 98
+              "valor_volta": 98,
+              "sentido": "volta"
             }
           ]
         }
       ],
       "atributos_default_ida": [
-          {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 2
-          },
           {
               "nome_atributo":"denso",
               "valor": 0
@@ -479,27 +476,34 @@
           }   
       ]
     },
-    {"__comment":"cobter_vegetacao | tipo 1000 <-> Terreno_Exposto",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | tipo 1000 <-> rel_terreno_exposto",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "rel_terreno_exposto",
       "filtro_ida":
         {
           "nome_atributo": "tipo",
           "valor": 1000
         },
-      "classe_volta": "Terreno_Exposto",
       "atributos_default_ida": [
           {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 2
+              "nome_atributo":"tipoterrexp",
+              "valor": 0
           },
           {
-              "nome_atributo":"tipoTerrExp",
-              "valor": 0
-          } 
+            "nome_atributo":"causaexposicao",
+            "valor":0
+          }
+      ],
+      "atributos_default_volta":[
+        {
+          "nome_atributo":"tipo",
+          "valor":1000
+        }
       ]
     },
-    {"__comment":"cobter_vegetacao | cultivada  <-> Veg_Cultivada",
-      "classe_ida": "edgv.cobter_vegetacao",
+    {"__comment":"cobter_vegetacao | cultivada  <-> veg_veg_cultivada",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "veg_veg_cultivada",
       "filtro_ida":
         {
           "$or": [
@@ -581,11 +585,10 @@
               }
           ]
         },
-      "classe_volta": "Veg_Cultivada",
       "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
-          "attr_volta": "cultivoPredominante",
+          "attr_volta": "cultivopredominante",
           "traducao": [
             {
               "valor_ida": 102,
@@ -649,6 +652,11 @@
               "valor_volta": 29
             },
             {
+              "valor_ida": 194,
+              "valor_volta": 96,
+              "sentido": "ida"
+            },
+            {
               "valor_ida": 195,
               "valor_volta": 98,
               "sentido": "ida"
@@ -662,31 +670,6 @@
               "valor_ida": 196,
               "valor_volta": 96,
               "sentido": "ida"
-            },
-            {
-              "valor_ida": 198,
-              "valor_volta": 34,
-              "sentido": "volta"
-            },
-            {
-              "valor_ida": 198,
-              "valor_volta": 35,
-              "sentido": "volta"
-            },
-            {
-              "valor_ida": 198,
-              "valor_volta": 36,
-              "sentido": "volta"
-            },
-            {
-              "valor_ida": 198,
-              "valor_volta": 37,
-              "sentido": "volta"
-            },
-            {
-              "valor_ida": 198,
-              "valor_volta": 39,
-              "sentido": "volta"
             },
             {
               "valor_ida": 196,
@@ -745,7 +728,23 @@
             },
             {
               "valor_ida": 1296,
-              "valor_volta": 39
+              "valor_volta": 20,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1296,
+              "valor_volta": 21,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1296,
+              "valor_volta": 22,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1296,
+              "valor_volta": 23,
+              "sentido": "volta"
             }
           ]
         }
@@ -761,11 +760,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -780,11 +779,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -799,11 +798,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 2
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -818,11 +817,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -837,11 +836,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -856,11 +855,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -875,11 +874,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -894,11 +893,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -913,11 +912,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -932,11 +931,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 4
                   }
               ]
@@ -951,11 +950,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -970,11 +969,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   },
                   {
@@ -993,11 +992,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -1012,11 +1011,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
@@ -1031,15 +1030,34 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
           },
+          {
+            "sentido": "ida",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 194
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 1
+                },
+                {
+                    "nome_atributo":"classificacaoporte",
+                    "valor": 0
+                }
+            ]
+        },
           {
               "sentido": "ida",
               "tupla_ida": [
@@ -1050,11 +1068,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 0
                   }
               ]
@@ -1069,11 +1087,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 0
                   }
               ]
@@ -1088,11 +1106,11 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 3
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 0
                   }
               ]
@@ -1107,14 +1125,71 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"cultivoPredominante",
+                      "nome_atributo":"cultivopredominante",
                       "valor": 98
                   },
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   }
               ]
+          },
+          {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 196
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 98
+                },
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 0
+                }
+            ]
+          },
+          {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 196
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 98
+                },
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 2
+                }
+            ]
+          },
+          {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 196
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 98
+                },
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 3
+                }
+            ]
           },
           {
               "sentido": "volta",
@@ -1126,33 +1201,71 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"cultivoPredominante",
+                      "nome_atributo":"cultivopredominante",
                       "valor": 99
                   },
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   }
               ]
           },
           {
-              "sentido": "volta",
-              "tupla_ida": [
-                  {
-                      "nome_atributo": "tipo",
-                      "valor": 196
-                  }
-              ],
-              "tupla_volta": [
-                  {
-                      "nome_atributo":"cultivoPredominante",
-                      "valor": 96
-                  },
-                  {
-                      "nome_atributo":"tipoLavoura",
-                      "valor": 3
-                  }
-              ]
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 196
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 99
+                },
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 0
+                }
+            ]
+          },
+          {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 196
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 99
+                },
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 2
+                }
+            ]
+          },
+          {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 196
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 99
+                },
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 3
+                }
+            ]
           },
           {
               "sentido": "volta",
@@ -1164,7 +1277,83 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"cultivoPredominante",
+                      "nome_atributo":"cultivopredominante",
+                      "valor": 96
+                  },
+                  {
+                      "nome_atributo":"tipolavoura",
+                      "valor": 3
+                  }
+              ]
+          },
+          {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 196
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 96
+                },
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 0
+                }
+            ]
+          },
+          {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 196
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 96
+                },
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 2
+                }
+            ]
+          },
+          {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 194
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 96
+                },
+                {
+                    "nome_atributo":"tipolavoura",
+                    "valor": 1
+                }
+            ]
+          },
+          {
+              "sentido": "volta",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 196
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"cultivopredominante",
                       "valor": 13
                   },
                   {
@@ -1183,7 +1372,7 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"cultivoPredominante",
+                      "nome_atributo":"cultivopredominante",
                       "valor": 13
                   },
                   {
@@ -1192,6 +1381,25 @@
                   }
               ]
           },
+          {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "tipo",
+                    "valor": 150
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 13
+                },
+                {
+                    "nome_atributo":"terreno",
+                    "valor": 3
+                }
+            ]
+        },
           {
               "sentido": "ida",
               "tupla_ida": [
@@ -1202,21 +1410,17 @@
               ],
               "tupla_volta": [
                   {
-                      "nome_atributo":"tipoLavoura",
+                      "nome_atributo":"tipolavoura",
                       "valor": 1
                   },
                   {
-                      "nome_atributo":"classificacaoPorte",
+                      "nome_atributo":"classificacaoporte",
                       "valor": 1
                   }
               ]
           }
       ],
       "atributos_default_ida": [
-          {
-              "nome_atributo":"geometriaAproximada",
-              "valor": 2
-          },
           {
               "nome_atributo":"denso",
               "valor": 0
@@ -1228,12 +1432,9 @@
           {
               "nome_atributo":"terreno",
               "valor": 1
-          }     
+          }
       ]
     },
-
-
-
     {"__comment":"llp_delimitacao_fisica <-> lim_delimitacao_fisica_l",
       "classe_ida": "llp_delimitacao_fisica",
       "classe_volta": "lim_delimitacao_fisica_l",
@@ -2023,22 +2224,6 @@
               "sentido": "volta"
             }
           ]
-        },
-        {
-          "attr_ida": "regime",
-          "attr_volta": "regime",
-          "traducao": [
-            {
-              "valor_ida": 1,
-              "valor_volta": 2,
-              "sentido": "volta"
-            },
-            {
-              "valor_ida": 3,
-              "valor_volta": 4,
-              "sentido": "volta"
-            }
-          ]
         }
       ],
       "atributos_default_ida": [
@@ -2243,6 +2428,22 @@
   ],
   "mapeamento_atributos":[
     {
+      "attr_ida": "regime",
+      "attr_volta": "regime",
+      "traducao": [
+        {
+          "valor_ida": 1,
+          "valor_volta": 2,
+          "sentido": "volta"
+        },
+        {
+          "valor_ida": 3,
+          "valor_volta": 4,
+          "sentido": "volta"
+        }
+      ]
+    },
+    {
       "attr_ida": "cod_ponto",
       "attr_volta": "codponto"
     },
@@ -2281,6 +2482,20 @@
       "attr_volta": "orgaoenteresp"
     }
   ],
-  "atributos_default_ida": [],
-  "atributos_default_volta": []
+  "atributos_default_ida": [
+    {
+      "nome_atributo":"geometriaaproximada",
+      "valor":2
+    }
+  ],
+  "atributos_default_volta": [
+    {
+      "nome_atributo":"tipo_comprovacao",
+      "valor":999
+    },
+    {
+      "nome_atributo":"tipo_insumo",
+      "valor":999
+    }
+  ]
 }
