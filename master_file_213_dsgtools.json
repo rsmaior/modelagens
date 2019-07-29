@@ -24478,6 +24478,18 @@
             "primitivas": ["MultiLinestring"],
             "atributos": [
               {
+                "nome": "nome",
+                "tipo": "varchar(255)",
+                "descricao": "-",
+                "cardinalidade": "0..1"
+              },
+              {
+                "nome": "sigla",
+                "tipo": "varchar(255)",
+                "descricao": "-",
+                "cardinalidade": "0..1"
+              },
+              {
                 "nome": "administracao",
                 "tipo": "smallint",
                 "descricao": "-",

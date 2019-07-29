@@ -14796,6 +14796,8 @@ ALTER TABLE cb.tra_trecho_hidroviario_l ALTER COLUMN situacaofisica SET DEFAULT 
 
 CREATE TABLE cb.tra_trecho_rodoviario_l(
 	 id serial NOT NULL,
+	 nome varchar(255),
+	 sigla varchar(255),
 	 administracao smallint NOT NULL,
 	 canteirodivisorio smallint NOT NULL,
 	 capaccarga real,
