@@ -1,6 +1,6 @@
 {
   "modelo": "EDGV 2.1.3 Pro",
-  "versao": "5.3",
+  "versao": "5.4",
   "schema_dados": "edgv",
   "schema_dominios": "dominios",
   "a_ser_preenchido": {
@@ -3761,7 +3761,13 @@
         },
         {
           "code": 153,
-          "value": "Cult - Pêra",
+          "value": "Cult - Pera",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 194,
+          "value": "Cult - Perene não identificado",
           "descricao": "-",
           "valor_filtro": "Vegetação Cultivada"
         },
@@ -4122,6 +4128,9 @@
             },
             {
               "code": 601
+            },
+            {
+              "code": 194
             },
             {
               "code": 196
@@ -7838,6 +7847,9 @@
             },
             {
               "code": 601
+            },
+            {
+              "code": 194
             },
             {
               "code": 196

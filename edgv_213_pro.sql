@@ -6,7 +6,7 @@ SET search_path TO pg_catalog,public,edgv,dominios;
 
 CREATE TABLE public.db_metadata(
 	 edgvversion varchar(50) NOT NULL DEFAULT 'EDGV 2.1.3 Pro',
-	 dbimplversion varchar(50) NOT NULL DEFAULT '5.3',
+	 dbimplversion varchar(50) NOT NULL DEFAULT '5.4',
 	 CONSTRAINT edgvversioncheck CHECK (edgvversion = 'EDGV 2.1.3 Pro')
 );
 INSERT INTO public.db_metadata (edgvversion, dbimplversion) VALUES ('EDGV 2.1.3 Pro','5.3');
