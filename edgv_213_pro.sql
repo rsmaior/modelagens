@@ -1007,7 +1007,7 @@ INSERT INTO dominios.tipo_veg (code,code_name, filter) VALUES (142,'Cult - Videi
 INSERT INTO dominios.tipo_veg (code,code_name, filter) VALUES (150,'Cult - Arroz de inundação','Vegetação Cultivada');
 INSERT INTO dominios.tipo_veg (code,code_name, filter) VALUES (151,'Cult - Maçã','Vegetação Cultivada');
 INSERT INTO dominios.tipo_veg (code,code_name, filter) VALUES (152,'Cult - Pêssego','Vegetação Cultivada');
-INSERT INTO dominios.tipo_veg (code,code_name, filter) VALUES (153,'Cult - Pêra','Vegetação Cultivada');
+INSERT INTO dominios.tipo_veg (code,code_name, filter) VALUES (153,'Cult - Pera','Vegetação Cultivada');
 INSERT INTO dominios.tipo_veg (code,code_name, filter) VALUES (194,'Cult - Perene não identificado','Vegetação Cultivada');
 INSERT INTO dominios.tipo_veg (code,code_name, filter) VALUES (195,'Cult - Perene misto','Vegetação Cultivada');
 INSERT INTO dominios.tipo_veg (code,code_name, filter) VALUES (196,'Cult - Anual não identificado','Vegetação Cultivada');
