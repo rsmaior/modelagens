@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 import os
-from jinja2 import Environment, FileSystemLoader
+# from jinja2 import Environment, FileSystemLoader
 import json
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
-
-
 class MasterGen():
     def __init__(self, master_path):
         try:
@@ -254,3 +252,136 @@ class MasterGen():
                 return "Arquivo da RCO gerado com sucesso em {0}".format(dest)
         except Exception as e:
             return "Erro: {0}".format(e)
+
+    def build_gpkg_SQL(self, dest, atributos_padrao=False, extension_classes=False):
+        master = self.master
+        sql = []
+        sql.append(u"CREATE TABLE db_metadata(")
+        sql.append(u"\t edgvversion varchar(50) NOT NULL DEFAULT '{0}',".format(
+            master["modelo"]))
+        sql.append(u"\t dbimplversion varchar(50) NOT NULL DEFAULT '{0}',".format(
+            master["versao"]))
+        sql.append(u"\t CONSTRAINT edgvversioncheck CHECK (edgvversion = '{0}')".format(
+            master["modelo"]))
+        sql.append(u");")
+        sql.append(u"INSERT INTO db_metadata (edgvversion, dbimplversion) VALUES ('{0}','{1}');".format(
+            master["modelo"], master["versao"]))
+        sql.append(u"")
+
+        for dominio in master["dominios"]:
+            sql.append(u"CREATE TABLE {0}_{1} (".format(
+                master["schema_dominios"], dominio["nome"]))
+            sql.append(u"\t code smallint NOT NULL,")
+            sql.append(u"\t code_name text NOT NULL,")
+            sql.append(
+                u"\t filter text NOT NULL,") if "filtro" in dominio and dominio["filtro"] else None
+            sql.append(
+                u"\t CONSTRAINT {0}_pk PRIMARY KEY (code)".format(dominio["nome"]))
+            sql.append(u");")
+            sql.append(u"")
+
+            for valor in dominio["valores"]:
+                if "filtro" in dominio and dominio["filtro"]:
+                    sql.append(u"INSERT INTO {0}_{1} (code,code_name, filter) VALUES ({2},'{3}','{4}');".format(master["schema_dominios"],
+                                                                                                                dominio["nome"], valor["code"], valor["value"].replace("'", "''"), valor["valor_filtro"]))
+                else:
+                    sql.append(u"INSERT INTO {0}_{1} (code,code_name) VALUES ({2},'{3}');".format(master["schema_dominios"],
+                                                                                                  dominio["nome"], valor["code"], valor["value"].replace("'", "''")
+                                                                                                  ))
+
+            sql.append(u"")
+
+        for classe in master["classes"]:
+            if atributos_padrao and "atributos_padrao" in master:
+                classe["atributos"].extend(master["atributos_padrao"])
+                
+            for primitiva in classe["primitivas"]:
+                if "geom_suffix" in classe:
+                    class_name = "{0}{1}".format(classe["nome"], classe["geom_suffix"][primitiva])
+                elif "geom_prefix" in classe:
+                    class_name = "{1}{0}".format(classe["nome"], classe["geom_prefix"][primitiva])
+                elif "geom_suffix" in master:
+                    class_name = "{0}{1}".format(classe["nome"], master["geom_suffix"][primitiva])
+                elif "geom_prefix" in master:
+                    class_name = "{1}{0}".format(classe["nome"], master["geom_prefix"][primitiva])
+                
+                if classe["categoria"]:
+                    class_name = "{0}_{1}".format(classe["categoria"], class_name)
+
+                sql.append(u"CREATE TABLE {0}_{1}(".format(
+                    master["schema_dados"], class_name))
+                sql.append(u"\t {0} INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,".format(
+                    master["nome_id"]))
+
+                for atributo in classe["atributos"]:
+                    if atributo["cardinalidade"] == "0..1":
+                        sql.append(u"\t {0} {1},".format(
+                            atributo["nome"], atributo["tipo"]))
+                    elif atributo["cardinalidade"] == "1..1":
+                        sql.append(u"\t {0} {1} NOT NULL,".format(
+                            atributo["nome"], atributo["tipo"]))
+                    elif atributo["cardinalidade"] == "0..*":
+                        sql.append(u"\t {0} TEXT,".format(
+                            atributo["nome"]))
+                    elif atributo["cardinalidade"] == "1..*":
+                        sql.append(u"\t {0} {1} text NOT NULL,".format(
+                            atributo["nome"]))
+
+                sql.append(u"\t {0} {1}".format(
+                    master["nome_geom"], primitiva, master["coord_sys"]))
+
+                for atributo in classe["atributos"]:
+
+                    if "mapa_valor" in atributo:
+                        sql[-1] = sql[-1]+u","
+                        valores_att = [valor["code"] for valor in atributo["valores"]
+                                       if ("primitivas" in valor and primitiva in valor["primitivas"]) or "primitivas" not in valor]
+
+                        if atributo["cardinalidade"] == "0..1" or atributo["cardinalidade"] == "1..1":
+                            # sql.append(u"\t CONSTRAINT {0}_{1}_fk FOREIGN KEY ({1}) REFERENCES {3}_{2} (code)".format(
+                            #     class_name, atributo["nome"], atributo["mapa_valor"], master["schema_dominios"]))
+                            dominio = [dominio for dominio in master["dominios"]
+                                       if "nome" in dominio and dominio["nome"] == atributo["mapa_valor"]][0]
+                            dominio_att = [valor["code"]
+                                           for valor in dominio["valores"]]
+                            if len(dominio_att) > 0:
+                                constraint_string = '('+' OR '.join(
+                                        ['({0} = {1})'.format(atributo["nome"], i) for i in dominio_att]
+                                    ) + ')'
+                                sql.append(u"\t CONSTRAINT {0}_{1}_check CHECK {2}".format(
+                                        class_name, atributo["nome"], constraint_string
+                                    )
+                                )
+                sql.append(u");")
+            
+                sql.append(u"SELECT CreateSpatialIndex('{1}_{0}', '{2}');".format(class_name,master["schema_dados"], master["nome_geom"]))
+                sql.append(u"INSERT into gpkg_contents (table_name, data_type, identifier, description, min_x, min_y, max_x, max_y, srs_id) VALUES ('{0}_{1}', 'features','{0}_{1}', 'Camada {1} da EDGV', NULL, NULL, NULL, NULL, {2});".format(
+                    master["schema_dados"], class_name, master["coord_sys"]
+                ))
+                sql.append(u"INSERT into gpkg_geometry_columns VALUES ('{0}_{1}', '{2}', '{3}', {4}, 0, 0 );".format(
+                    master["schema_dados"], class_name, master["nome_geom"], primitiva.upper(), master["coord_sys"]
+                ))
+                sql.append(u"""CREATE TRIGGER "trigger_insert_feature_count_{0}_{1}" AFTER INSERT ON "{0}_{1}" BEGIN UPDATE gpkg_ogr_contents SET feature_count = feature_count + 1 WHERE lower(table_name) = lower('{0}_{1}'); END ;""".format(
+                        master["schema_dados"], class_name
+                    )
+                )
+                sql.append(u"""CREATE TRIGGER "trigger_delete_feature_count_{0}_{1}" AFTER DELETE ON "{0}_{1}" BEGIN UPDATE gpkg_ogr_contents SET feature_count = feature_count - 1 WHERE lower(table_name) = lower('{0}_{1}'); END ;""".format(
+                        master["schema_dados"], class_name
+                    )
+                )
+                sql.append(u"")
+
+        try:
+            with open(dest, 'w') as sql_file:
+                sql_text = "\r".join(sql).encode('utf-8')
+                sql_file.write(sql_text)
+                return "Arquivo de modelagem SQL gerado com sucesso em {0}".format(dest)
+        except Exception as e:
+            return "Erro: {0}".format(e)
+
+if __name__ == '__main__':
+    outputPath = '/Users/philipeborba/github_repos/edgv_2.1.3_pro'
+    masterFile = os.path.join(outputPath, 'master_file_213_dsgtools.json')
+    outputFile = os.path.join(outputPath, 'output.sql')
+    mg = MasterGen(masterFile)
+    mg.build_gpkg_SQL(outputFile)

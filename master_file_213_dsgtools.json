@@ -7,7 +7,7 @@
       "code": 999,
       "value": "A SER PREENCHIDO"
     },
-    "coord_sys": 31982,
+    "coord_sys": 4326,
     "fill_factor": 80,
     "nome_geom": "geom",
     "nome_id": "id",
