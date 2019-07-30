@@ -1435,9 +1435,9 @@
           }
       ]
     },
-    {"__comment":"llp_delimitacao_fisica <-> lim_delimitacao_fisica_l",
+    {"__comment":"llp_delimitacao_fisica <-> lim_delimitacao_fisica",
       "classe_ida": "llp_delimitacao_fisica",
-      "classe_volta": "lim_delimitacao_fisica_l",
+      "classe_volta": "lim_delimitacao_fisica",
       "mapeamento_atributos": [
         {
           "attr_ida": "material_construcao",
@@ -2491,6 +2491,256 @@
           ]
         }
       ]
+    },
+    {"__comment":"tra_pista_ponto_pouso <-> infra_pista_pouso",
+      "classe_ida": "tra_pista_ponto_pouso",
+      "classe_volta": "infra_pista_pouso",
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipopista"
+        },
+        {
+          "attr_ida": "uso_pista",
+          "attr_volta": "usopista"
+        }
+      ]
+    },
+    {"__comment":"infra_ferrovia <-> tra_trecho_ferroviario",
+      "classe_ida": "infra_ferrovia",
+      "classe_volta": "tra_trecho_ferroviario",
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "em_arruamento",
+          "attr_volta": "emarruamento",
+          "traducao": [
+            {
+              "valor_ida": 2,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "nr_linhas",
+          "attr_volta": "nrlinhas"
+        },
+        {
+          "attr_ida": "posicao_relativa",
+          "attr_volta": "posicaorelativa",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipotrechoferrov",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "bitola",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "eletrificada",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_viario <-> tra_travessia",
+      "classe_ida": "infra_elemento_viario",
+      "classe_volta": "tra_travessia",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 401
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 402
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 403
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 404
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipotravessia",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 401,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 402,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 403,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 404,
+              "valor_volta": 4
+            }
+          ]
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "modal_uso",
+          "valor": 4
+        },
+        {
+          "nome_atributo": "posicao_pista",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "situacao_fisica",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "nr_faixas",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "nr_pistas",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_viario <-> tra_tunel",
+      "classe_ida": "infra_elemento_viario",
+      "classe_volta": "tra_tunel",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 101
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 102
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipotunel",
+          "traducao": [
+            {
+              "valor_ida": 101,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 102,
+              "valor_volta": 2
+            }
+          ]
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_viario <-> tra_ponte",
+      "classe_ida": "infra_elemento_viario",
+      "classe_volta": "tra_ponte",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 201
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 202
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 203
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoponte",
+          "traducao": [
+            {
+              "valor_ida": 201,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 202,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 203,
+              "valor_volta": 3
+            }
+          ]
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_viario <-> tra_passag_elevada_viaduto",
+      "classe_ida": "infra_elemento_viario",
+      "classe_volta": "tra_passag_elevada_viaduto",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 301
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 302
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipopassagviad",
+          "traducao": [
+            {
+              "valor_ida": 301,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 302,
+              "valor_volta": 6
+            }
+          ]
+        }
+      ]
     }
   ],
   "mapeamento_atributos":[
@@ -2617,6 +2867,27 @@
       ]
     },
     {
+      "attr_ida": "material_construcao",
+      "attr_volta": "matconstr",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": 25,
+          "sentido": "volta"
+        },
+        {
+          "valor_ida": 0,
+          "valor_volta": 26,
+          "sentido": "volta"
+        },
+        {
+          "valor_ida": 98,
+          "valor_volta": 99,
+          "sentido": "volta"
+        }
+      ]
+    },
+    {
       "attr_ida": "situacao_fisica",
       "attr_volta": "operacional",
       "traducao": [
@@ -2644,6 +2915,38 @@
           "valor_ida": 4,
           "valor_volta": 2,
           "sentido": "ida"
+        }
+      ]
+    },
+    {
+      "attr_ida": "modal_uso",
+      "attr_volta": "modaluso",
+      "traducao": [
+        {
+          "valor_ida": 999,
+          "valor_volta": 7,
+          "sentido": "volta"
+        },
+        {
+          "valor_ida": 999,
+          "valor_volta": 14,
+          "sentido": "volta"
+        },
+        {
+          "valor_ida": 999,
+          "valor_volta": 98,
+          "sentido": "volta"
+        }
+      ]
+    },
+    {
+      "attr_ida": "posicao_pista",
+      "attr_volta": "posicaopista",
+      "traducao": [
+        {
+          "valor_ida": 999,
+          "valor_volta": 0,
+          "sentido": "volta"
         }
       ]
     }
