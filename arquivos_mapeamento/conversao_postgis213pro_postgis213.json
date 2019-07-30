@@ -2305,7 +2305,7 @@
             },
             {
               "valor_ida": 999,
-              "valor_volta": 5,
+              "valor_volta": 4,
               "sentido": "volta"
             },
             {
@@ -2335,69 +2335,64 @@
         } 
       ]
     },
-    {"__comment":"infra_via_deslocamento <-> eco_ext_mineral",
+    {"__comment":"infra_via_deslocamento <-> tra_trilha_picada",
       "classe_ida": "infra_via_deslocamento",
-      "classe_volta": "eco_ext_mineral",
+      "classe_volta": "tra_trilha_picada",
+      "filtro_ida": {
+        "nome_atributo": "tipo",
+        "valor": 6
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 6
+        },
+        {
+          "nome_atributo": "revestimento",
+          "valor": 1
+        },
+        {
+          "nome_atributo": "trafego",
+          "valor": 2
+        },
+        {
+          "nome_atributo": "canteiro_divisorio",
+          "valor": 2
+        },
+        {
+          "nome_atributo": "situacao_fisica",
+          "valor": 3
+        },
+        {
+          "nome_atributo": "jurisdicao",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "administracao",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "nr_faixas",
+          "valor": 1
+        },
+        {
+          "nome_atributo": "nr_pistas",
+          "valor": 1
+        }
+      ]
+    },
+    {"__comment":"infra_via_deslocamento <-> tra_arruamento",
+      "classe_ida": "infra_via_deslocamento",
+      "classe_volta": "tra_arruamento",
+      "filtro_ida": {
+        "nome_atributo": "tipo",
+        "valor": 5
+      },
       "mapeamento_atributos": [
-        {
-          "attr_ida": "tipo",
-          "attr_volta": "tipoextmin",
-          "traducao": [
-            {
-              "valor_ida": 999,
-              "valor_volta": 0,
-              "sentido": "volta"
-            },
-            {
-              "valor_ida": 999,
-              "valor_volta": 99,
-              "sentido": "volta"
-            }
-          ]
-        },
-        {
-          "attr_ida": "forma_extracao",
-          "attr_volta": "formaextracao",
-          "traducao": [
-            {
-              "valor_ida": 999,
-              "valor_volta": 0,
-              "sentido": "volta"
-            }
-          ]
-        },
-        {
-          "attr_ida": "tipo_produto_residuo",
-          "attr_volta": "tipoprodutoresiduo",
-          "traducao": [
-            {
-              "valor_ida": 98,
-              "valor_volta": 99
-            },
-            {
-              "valor_ida": 0,
-              "valor_volta": 98,
-              "sentido": "volta"
-            }
-          ]
-        },
         {
           "attr_ida": "situacao_fisica",
           "attr_volta": "situacaofisica",
           "traducao": [
-            {
-              "valor_ida": 3,
-              "valor_volta": 5
-            },
-            {
-              "valor_ida": 4,
-              "valor_volta": 3
-            },
-            {
-              "valor_ida": 999,
-              "valor_volta": 5,
-              "sentido": "volta"
-            },
             {
               "valor_ida": 999,
               "valor_volta": 0,
@@ -2406,23 +2401,95 @@
           ]
         }
       ],
-      "atributos_default_ida": [
+      "atributos_default_volta": [
         {
-          "nome_atributo": "atividade",
+          "nome_atributo": "tipo",
+          "valor": 5
+        },
+        {
+          "nome_atributo": "jurisdicao",
           "valor": 0
         },
         {
-          "nome_atributo": "procextracao",
+          "nome_atributo": "administracao",
           "valor": 0
+        }
+      ],
+      "mapeamento_multiplo": [
+        {
+            "sentido": "volta",
+            "tupla_ida": [
+                {
+                    "nome_atributo": "nr_pistas",
+                    "valor": 2
+                }
+            ],
+            "tupla_volta": [
+                {
+                    "nome_atributo":"canteirodivisorio",
+                    "valor": 1
+                }
+            ]
         },
         {
-          "nome_atributo": "tipopocomina",
-          "valor": 0
+          "sentido": "volta",
+          "tupla_ida": [
+              {
+                  "nome_atributo": "nr_pistas",
+                  "valor": 1
+              }
+          ],
+          "tupla_volta": [
+              {
+                  "nome_atributo":"canteirodivisorio",
+                  "valor": 2
+              }
+          ]
+        }
+      ]
+    },
+    {"__comment":"infra_via_deslocamento <-> tra_trecho_rodoviario",
+      "classe_ida": "infra_via_deslocamento",
+      "classe_volta": "tra_trecho_rodoviario",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 2
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 3
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 4
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
         },
         {
-          "nome_atributo": "tiposecaocnae",
-          "valor": 1
-        } 
+          "attr_ida": "tipo",
+          "attr_volta": "tipotrechorod",
+          "traducao": [
+            {
+              "valor_ida": 2,
+              "valor_volta": 1,
+              "sentido": "volta"
+            }
+          ]
+        }
       ]
     }
   ],
@@ -2480,6 +2547,105 @@
     {
       "attr_ida": "orgao_responsavel",
       "attr_volta": "orgaoenteresp"
+    },
+    {
+      "attr_ida": "nr_pistas",
+      "attr_volta": "nrpistas"
+    },
+    {
+      "attr_ida": "nr_faixas",
+      "attr_volta": "nrfaixas"
+    },
+    {
+      "attr_ida": "canteiro_divisorio",
+      "attr_volta": "canteirodivisorio"
+    },
+    {
+      "attr_ida": "jurisdicao",
+      "attr_volta": "jurisdicao",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": 8,
+          "sentido": "volta"
+        }
+      ]
+    },
+    {
+      "attr_ida": "administracao",
+      "attr_volta": "administracao",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": 4,
+          "sentido": "volta"
+        },
+        {
+          "valor_ida": 0,
+          "valor_volta": 5,
+          "sentido": "volta"
+        },
+        {
+          "valor_ida": 6,
+          "valor_volta": 15,
+          "sentido": "volta"
+        },
+        {
+          "valor_ida": 0,
+          "valor_volta": 98,
+          "sentido": "volta"
+        }
+      ]
+    },
+    {
+      "attr_ida": "situacao_fisica",
+      "attr_volta": "situacaofisica",
+      "traducao": [
+        {
+          "valor_ida": 3,
+          "valor_volta": 5
+        },
+        {
+          "valor_ida": 4,
+          "valor_volta": 3
+        },
+        {
+          "valor_ida": 999,
+          "valor_volta": 4,
+          "sentido": "volta"
+        }
+      ]
+    },
+    {
+      "attr_ida": "situacao_fisica",
+      "attr_volta": "operacional",
+      "traducao": [
+        {
+          "valor_ida": 0,
+          "valor_volta": 0,
+          "sentido": "ida"
+        },
+        {
+          "valor_ida": 1,
+          "valor_volta": 2,
+          "sentido": "ida"
+        },
+        {
+          "valor_ida": 2,
+          "valor_volta": 2,
+          "sentido": "ida"
+        },
+        {
+          "valor_ida": 3,
+          "valor_volta": 1,
+          "sentido": "ida"
+        },
+        {
+          "valor_ida": 4,
+          "valor_volta": 2,
+          "sentido": "ida"
+        }
+      ]
     }
   ],
   "atributos_default_ida": [
