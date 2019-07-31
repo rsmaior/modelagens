@@ -2296,19 +2296,6 @@
           "attr_volta": "situacaofisica",
           "traducao": [
             {
-              "valor_ida": 3,
-              "valor_volta": 5
-            },
-            {
-              "valor_ida": 4,
-              "valor_volta": 3
-            },
-            {
-              "valor_ida": 999,
-              "valor_volta": 4,
-              "sentido": "volta"
-            },
-            {
               "valor_ida": 999,
               "valor_volta": 0,
               "sentido": "volta"
@@ -2739,6 +2726,424 @@
               "valor_volta": 6
             }
           ]
+        }
+      ]
+    },
+    {"__comment":"constr_ocupacao_solo <-> edu_campo_quadra",
+      "classe_ida": "constr_ocupacao_solo",
+      "classe_volta": "edu_campo_quadra",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 201
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 202
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 203
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 204
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 205
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 206
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 207
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 298
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipocampoquadra",
+          "traducao": [
+            {
+              "valor_ida": 201,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 202,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 203,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 204,
+              "valor_volta": 4
+            },
+            {
+              "valor_ida": 205,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 206,
+              "valor_volta": 6
+            },
+            {
+              "valor_ida": 207,
+              "valor_volta": 7
+            },
+            {
+              "valor_ida": 298,
+              "valor_volta": 99
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }    
+      ]
+    },
+    {"__comment":"constr_ocupacao_solo <-> asb_cemiterio",
+      "classe_ida": "constr_ocupacao_solo",
+      "classe_volta": "asb_cemiterio",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 101
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 102
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 103
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 104
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 105
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipocemiterio",
+          "traducao": [
+            {
+              "valor_ida": 101,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 102,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 103,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 104,
+              "valor_volta": 4
+            },
+            {
+              "valor_ida": 105,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 98,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        }  
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "denominacaoassociada",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "situacao_fisica",
+          "valor": 3
+        }
+      ]
+    },
+    {"__comment":"constr_ocupacao_solo <-> tra_patio",
+      "classe_ida": "constr_ocupacao_solo",
+      "classe_volta": "tra_patio",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 404
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 405
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 406
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 409
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 414
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 495
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "modaluso",
+          "traducao": [
+            {
+              "valor_ida": 404,
+              "valor_volta": 4
+            },
+            {
+              "valor_ida": 405,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 406,
+              "valor_volta": 6
+            },
+            {
+              "valor_ida": 409,
+              "valor_volta": 9
+            },
+            {
+              "valor_ida": 414,
+              "valor_volta": 14
+            },
+            {
+              "valor_ida": 495,
+              "valor_volta": 98
+            }
+          ]
+        },
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ]
+    },
+    {"__comment":"constr_ocupacao_solo <-> edu_piscina",
+      "classe_ida": "constr_ocupacao_solo",
+      "classe_volta": "edu_piscina",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 501
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 501
+        }
+      ]
+    },
+    {"__comment":"constr_ocupacao_solo <-> edu_pista_competicao",
+      "classe_ida": "constr_ocupacao_solo",
+      "classe_volta": "edu_pista_competicao",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 301
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 302
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 303
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 304
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 305
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 398
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipopista",
+          "traducao": [
+            {
+              "valor_ida": 301,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 302,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 303,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 304,
+              "valor_volta": 4
+            },
+            {
+              "valor_ida": 305,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 398,
+              "valor_volta": 99
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 98,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ]
+    },
+    {"__comment":"constr_ocupacao_solo <-> edu_area_ruinas",
+      "classe_ida": "constr_ocupacao_solo",
+      "classe_volta": "edu_area_ruinas",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 601
+          }
+        ]
+      },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "situacaofisica",
+          "valor": 2
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 601
+        }
+      ]
+    },
+    {"__comment":"constr_ocupacao_solo <-> edu_ruina",
+      "classe_ida": "constr_ocupacao_solo",
+      "classe_volta": "edu_ruina",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 701
+          }
+        ]
+      },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "situacaofisica",
+          "valor": 2
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 701
         }
       ]
     }
