@@ -59,7 +59,7 @@
             "$or": { 
               "type": "array",
               "items": { "$ref": "#/definitions/filtro" },
-              "minItems": 1
+              "minItems": 2
             }
           },
           "required": ["$or"],
@@ -71,7 +71,7 @@
             "$and": { 
               "type": "array",
               "items": { "$ref": "#/definitions/filtro" },
-              "minItems": 1
+              "minItems": 2
             }
           },
           "required": ["$and"],

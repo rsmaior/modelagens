@@ -1783,12 +1783,8 @@
       "classe_ida": "llp_limite_legal",
       "classe_volta": "lim_bairro",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 10
-          }
-        ]
       },
       "mapeamento_atributos": [
         {
@@ -1811,12 +1807,8 @@
       "classe_ida": "llp_limite_legal",
       "classe_volta": "lim_distrito",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 7
-          }
-        ]
       },
       "mapeamento_atributos": [
         {
@@ -1839,12 +1831,8 @@
       "classe_ida": "llp_limite_legal",
       "classe_volta": "lim_municipio",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 6
-          }
-        ]
       },
       "mapeamento_atributos": [
         {
@@ -1867,12 +1855,8 @@
       "classe_ida": "llp_limite_legal",
       "classe_volta": "lim_pais",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 4
-          }
-        ]
       },
       "mapeamento_atributos": [
         {
@@ -1895,12 +1879,8 @@
       "classe_ida": "llp_limite_legal",
       "classe_volta": "lim_regiao_administrativa",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 9
-          }
-        ]
       },
       "mapeamento_atributos": [
         {
@@ -1923,12 +1903,8 @@
       "classe_ida": "llp_limite_legal",
       "classe_volta": "lim_sub_distrito",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 8
-          }
-        ]
       },
       "mapeamento_atributos": [
         {
@@ -1951,12 +1927,8 @@
       "classe_ida": "llp_limite_legal",
       "classe_volta": "lim_unidade_federacao",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 5
-          }
-        ]
       },
       "mapeamento_atributos": [
         {
@@ -2987,12 +2959,8 @@
       "classe_ida": "constr_ocupacao_solo",
       "classe_volta": "edu_piscina",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 501
-          }
-        ]
       },
       "mapeamento_atributos": [
         {
@@ -3103,12 +3071,8 @@
       "classe_ida": "constr_ocupacao_solo",
       "classe_volta": "edu_area_ruinas",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 601
-          }
-        ]
       },
       "atributos_default_ida": [
         {
@@ -3127,12 +3091,8 @@
       "classe_ida": "constr_ocupacao_solo",
       "classe_volta": "edu_ruina",
       "filtro_ida": {
-        "$or": [
-          {
             "nome_atributo": "tipo",
             "valor": 701
-          }
-        ]
       },
       "atributos_default_ida": [
         {
@@ -3144,6 +3104,2180 @@
         {
           "nome_atributo": "tipo",
           "valor": 701
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_fisiografico <-> hid_ilha",
+      "classe_ida": "elemnat_elemento_fisiografico",
+      "classe_volta": "hid_ilha",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 30
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 31
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 32
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 33
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoilha",
+          "traducao": [
+            {
+              "valor_ida": 30,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 31,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 32,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 33,
+              "valor_volta": 98
+            }
+          ]
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_fisiografico <-> rel_pico",
+      "classe_ida": "elemnat_elemento_fisiografico",
+      "classe_volta": "rel_pico",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 17
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 17
+        }        
+      ]
+    },
+    {"__comment":"elemnat_elemento_fisiografico <-> rel_duna",
+      "classe_ida": "elemnat_elemento_fisiografico",
+      "classe_volta": "rel_duna",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 16
+      },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "fixa",
+          "valor": 2
+        }        
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 16
+        }        
+      ]
+    },
+    {"__comment":"elemnat_elemento_fisiografico <-> rel_dolina",
+      "classe_ida": "elemnat_elemento_fisiografico",
+      "classe_volta": "rel_dolina",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 15
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 15
+        }        
+      ]
+    },
+    {"__comment":"elemnat_elemento_fisiografico <-> rel_rocha",
+      "classe_ida": "elemnat_elemento_fisiografico",
+      "classe_volta": "rel_rocha",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 21
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 22
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 23
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tiporocha"
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_fisiografico <-> rel_gruta_caverna",
+      "classe_ida": "elemnat_elemento_fisiografico",
+      "classe_volta": "rel_gruta_caverna",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 19
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 20
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipogrutacaverna"
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_fisiografico <-> rel_elemento_fisiog_natural",
+      "classe_ida": "elemnat_elemento_fisiografico",
+      "classe_volta": "rel_elemento_fisiog_natural",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 1
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 2
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 3
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 4
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 5
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 6
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 7
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 8
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 9
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 10
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 11
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 12
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 13
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 14
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoelemnat",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_fisiografico <-> rel_alter_fisiog_antropica",
+      "classe_ida": "elemnat_elemento_fisiografico",
+      "classe_volta": "rel_alter_fisiog_antropica",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 24
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 25
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 26
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 27
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 28
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 29
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoalterantrop",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_foz_maritima",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_foz_maritima",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 6
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 6
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_corredeira",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_corredeira",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 12
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 12
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_terreno_suj_inundacao",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_terreno_suj_inundacao",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 13
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 13
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_fonte_dagua",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_fonte_dagua",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 1
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 2
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 3
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipofontedagua",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "qualidagua",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "regime",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_sumidouro_vertedouro",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_sumidouro_vertedouro",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 4
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 5
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tiposumvert",
+          "traducao": [
+            {
+              "valor_ida": 4,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 5,
+              "valor_volta": 2
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "causa",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_recife",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_recife",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 18
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 19
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "situacaocosta",
+          "traducao": [
+            {
+              "valor_ida": 18,
+              "valor_volta": 10
+            },
+            {
+              "valor_ida": 19,
+              "valor_volta": 11
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "tiporecife",
+          "valor": 11
+        },
+        {
+          "nome_atributo": "situamare",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_queda_dagua",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_queda_dagua",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 9
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 10
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 11
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoqueda",
+          "traducao": [
+            {
+              "valor_ida": 9,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 10,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 11,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_banco_areia",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_banco_areia",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 14
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 15
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 16
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 17
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipobanco",
+          "traducao": [
+            {
+              "valor_ida": 14,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 15,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 16,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 17,
+              "valor_volta": 4
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "materialpredominante",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "situacaoemagua",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_ponto_inicio_drenagem",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_ponto_inicio_drenagem",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 7
+      },
+      "filtro_volta": {
+        "nome_atributo": "nascente",
+        "valor": 1
+      },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "nascente",
+          "valor": 1
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 7
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_atracadouro",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_atracadouro",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 238
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 239
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 240
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 241
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 242
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 243
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 244
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoatracad",
+          "traducao": [
+            {
+              "valor_ida": 238,
+              "valor_volta": 38
+            },
+            {
+              "valor_ida": 239,
+              "valor_volta": 39
+            },
+            {
+              "valor_ida": 240,
+              "valor_volta": 40
+            },
+            {
+              "valor_ida": 241,
+              "valor_volta": 41
+            },
+            {
+              "valor_ida": 242,
+              "valor_volta": 42
+            },
+            {
+              "valor_ida": 243,
+              "valor_volta": 43
+            },
+            {
+              "valor_ida": 244,
+              "valor_volta": 44
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "administracao",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "matconstr",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_ciclovia",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_ciclovia",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 501
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "revestimento",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "trafego",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 501
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_entroncamento",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_entroncamento",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 302
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 303
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 304
+          }
+        ]
+      },
+      "filtro_volta": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 2
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 3
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 4
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoentroncamento",
+          "traducao": [
+            {
+              "valor_ida": 302,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 303,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 304,
+              "valor_volta": 4
+            }
+          ]
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "situacao_fisica",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_passagem_nivel",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_passagem_nivel",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 101
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 101
+        },
+        {
+          "nome_atributo": "situacao_fisica",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_cremalheira",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_cremalheira",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1001
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1001
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_funicular",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_funicular",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 901
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 901
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_girador_ferroviario",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_girador_ferroviario",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 701
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "administracao",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 701
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_fundeadouro",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_fundeadouro",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1101
+      },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "administracao",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "destinacaofundeadouro",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1101
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_trecho_hidroviario",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_trecho_hidroviario",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1401
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "regime",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1401
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> eco_plataforma",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "eco_plataforma",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 1300
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1301
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1302
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1395
+          }          
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoplataforma",
+          "traducao": [
+            {
+              "valor_ida": 1300,
+              "valor_volta": 0
+            },
+            {
+              "valor_ida": 1301,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 1302,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 1395,
+              "valor_volta": 98
+            }
+          ]
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "situacao_fisica",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_obstaculo_navegacao",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_obstaculo_navegacao",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1201
+      },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "situacaoemagua",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tipoobst",
+          "valor": 5
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1201
+        },
+        {
+          "nome_atributo": "situacao_fisica",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_caminho_aereo",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_caminho_aereo",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 801
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 898
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipocaminhoaereo",
+          "traducao": [
+            {
+              "valor_ida": 801,
+              "valor_volta": 12
+            },
+            {
+              "valor_ida": 898,
+              "valor_volta": 99
+            }
+          ]
+        },
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "tipousocaminhoaer",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_travessia_pedestre",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_travessia_pedestre",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 607
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 608
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 609
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipotravessiaped",
+          "traducao": [
+            {
+              "valor_ida": 607,
+              "valor_volta": 7
+            },
+            {
+              "valor_ida": 608,
+              "valor_volta": 8
+            },
+            {
+              "valor_ida": 609,
+              "valor_volta": 9
+            }
+          ]
+        },
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "matconstr",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_transportes <-> tra_sinalizacao",
+      "classe_ida": "infra_elemento_transportes",
+      "classe_volta": "tra_sinalizacao",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 404
+      },
+      "filtro_volta": {
+            "nome_atributo": "tiposinal",
+            "valor": 4
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "tiposinal",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 404
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> enc_antena_comunic",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "enc_antena_comunic",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1301
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "posicao_relativa",
+          "attr_volta": "posicaoreledific"
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1301
+        },
+        {
+          "nome_atributo": "situacao_fisica",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> hid_barragem",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "hid_barragem",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1101
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "posicao_relativa",
+          "attr_volta": "posicaoreledific"
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "usoprincipal",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1101
+        },
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> hid_comporta",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "hid_comporta",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 901
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 901
+        },
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> enc_grupo_transformadores",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "enc_grupo_transformadores",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 601
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 601
+        },
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "situacao_fisica",
+          "valor": 0
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> tra_galeria_bueiro",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "tra_galeria_bueiro",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1501
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1501
+        },
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> tra_eclusa",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "tra_eclusa",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1001
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1001
+        },
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> eco_equip_agropec",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "eco_equip_agropec",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 1601
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1698
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoequipagropec",
+          "traducao": [
+            {
+              "valor_ida": 1601,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 1698,
+              "valor_volta": 99
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> enc_est_gerad_energia_eletr",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "enc_est_gerad_energia_eletr",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 405
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 406
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 407
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 498
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoestgerad",
+          "traducao": [
+            {
+              "valor_ida": 405,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 406,
+              "valor_volta": 6
+            },
+            {
+              "valor_ida": 407,
+              "valor_volta": 7
+            },
+            {
+              "valor_ida": 498,
+              "valor_volta": 99
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "destenergelet",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> enc_termeletrica",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "enc_termeletrica",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 409
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 410
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 411
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 412
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipocombustivel",
+          "traducao": [
+            {
+              "valor_ida": 409,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 410,
+              "valor_volta": 33
+            },
+            {
+              "valor_ida": 411,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 412,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 495,
+              "valor_volta": 98,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 498,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "destenergelet",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "combrenovavel",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "geracao",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tipomaqtermica",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> enc_hidreletrica",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "enc_hidreletrica",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 408
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "destenergelet",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 408
+        },
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> enc_trecho_energia",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "enc_trecho_energia",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 302
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 303
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "posicao_relativa",
+          "attr_volta": "posicaorelativa"
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "especie",
+          "traducao": [
+            {
+              "valor_ida": 302,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 303,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "emduto",
+          "valor": 2
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> hid_quebramar_molhe",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "hid_quebramar_molhe",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 701
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 801
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoquebramolhe",
+          "traducao": [
+            {
+              "valor_ida": 701,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 801,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "situamare",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> enc_torre_comunic",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "enc_torre_comunic",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1201
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "posicao_relativa",
+          "attr_volta": "posicaoreledific"
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "ovgd",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1201
+        },
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> enc_torre_energia",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "enc_torre_energia",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1401
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "ovgd",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tipotorre",
+          "valor": 0
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 1401
+        },
+        {
+          "nome_atributo": "material_construcao",
+          "valor": 97
+        },
+        {
+          "nome_atributo": "posicao_relativa",
+          "valor": 97
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura duto <-> tra_trecho_duto",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "tra_trecho_duto",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 1700
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1701
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1702
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1703
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1704
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1705
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1706
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1707
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1708
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1709
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1710
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1711
+          }
+        ]
+      },
+      "filtro_volta": [
+        {
+          "nome_atributo": "tipotrechoduto",
+          "valor": 1
+        }
+      ],
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "posicao_relativa",
+          "attr_volta": "posicaorelativa",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "mattransp",
+          "traducao": [
+            {
+              "valor_ida": 1700,
+              "valor_volta": 0
+            },
+            {
+              "valor_ida": 1701,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 1702,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 1706,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 1707,
+              "valor_volta": 4
+            },
+            {
+              "valor_ida": 1708,
+              "valor_volta": 5
+            },
+            {
+              "valor_ida": 1709,
+              "valor_volta": 8
+            },
+            {
+              "valor_ida": 1710,
+              "valor_volta": 9
+            },
+            {
+              "valor_ida": 1703,
+              "valor_volta": 29
+            },
+            {
+              "valor_ida": 1704,
+              "valor_volta": 30
+            },
+            {
+              "valor_ida": 1705,
+              "valor_volta": 31
+            },
+            {
+              "valor_ida": 1798,
+              "valor_volta": 99
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "setor",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "situacaoespacial",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tipotrechoduto",
+          "valor": 1
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura calha <-> tra_trecho_duto",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "tra_trecho_duto",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 1801
+      },
+      "filtro_volta": [
+        {
+          "nome_atributo": "tipotrechoduto",
+          "valor": 2
+        }
+      ],
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "posicao_relativa",
+          "attr_volta": "posicaorelativa",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "setor",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "situacaoespacial",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tipotrechoduto",
+          "valor": 2
+        },
+        {
+          "nome_atributo": "mattransp",
+          "valor": 1
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura correia transportadoras <-> tra_trecho_duto",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "tra_trecho_duto",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 1901
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1902
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 1998
+          }
+        ]
+      },
+      "filtro_volta": [
+        {
+          "nome_atributo": "tipotrechoduto",
+          "valor": 3
+        }
+      ],
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "posicao_relativa",
+          "attr_volta": "posicaorelativa",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "mattransp",
+          "traducao": [
+            {
+              "valor_ida": 1700,
+              "valor_volta": 0
+            },
+            {
+              "valor_ida": 1901,
+              "valor_volta": 6
+            },
+            {
+              "valor_ida": 1902,
+              "valor_volta": 7
+            },
+            {
+              "valor_ida": 1998,
+              "valor_volta": 99
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "setor",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "situacaoespacial",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "tipotrechoduto",
+          "valor": 3
+        }
+      ]
+    },
+    {"__comment":"infra_elemento_infraestrutura <-> tra_condutor_hidrico",
+      "classe_ida": "infra_elemento_infraestrutura",
+      "classe_volta": "tra_condutor_hidrico",
+      "filtro_ida": {
+        "$or": [
+          {
+            "nome_atributo": "tipo",
+            "valor": 201
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 202
+          }
+        ]
+      },
+      "mapeamento_atributos": [
+        {
+          "attr_ida": "situacao_fisica",
+          "attr_volta": "situacaofisica",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "posicao_relativa",
+          "attr_volta": "posicaorelativa",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            }
+          ]
+        },
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipocondutor",
+          "traducao": [
+            {
+              "valor_ida": 1700,
+              "valor_volta": 0
+            },
+            {
+              "valor_ida": 201,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 202,
+              "valor_volta": 4
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "setor",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "situacaoespacial",
+          "valor": 0
+        },
+        {
+          "nome_atributo": "mattransp",
+          "valor": 1
         }
       ]
     }
