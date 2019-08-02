@@ -34,27 +34,27 @@
           "$or": [
             {
               "nome_atributo": "tipo",
-              "valor": 3
+              "valor":3
             },
             {
               "nome_atributo": "tipo",
-              "valor": 4
+              "valor":4
             },
             {
               "nome_atributo": "tipo",
-              "valor": 5
+              "valor":5
             },
             {
               "nome_atributo": "tipo",
-              "valor": 6
+              "valor":6
             },
             {
               "nome_atributo": "tipo",
-              "valor": 7
+              "valor":7
             },
             {
               "nome_atributo": "tipo",
-              "valor": 11
+              "valor":11
             }
           ]
         },
@@ -5705,6 +5705,14 @@
         {
           "nome_atributo":"tipousoedif",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "filtro_volta":{
@@ -5794,6 +5802,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -5857,6 +5875,14 @@
         {
           "nome_atributo":"administracao",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -5935,6 +5961,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -6006,6 +6042,14 @@
         {
           "nome_atributo":"modalidade",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -6047,6 +6091,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -6123,6 +6177,14 @@
         {
           "nome_atributo":"finalidade",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -6193,6 +6255,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -6272,6 +6344,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -6338,7 +6420,17 @@
             "valor":2701
           }
         ]
-      }
+      },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ]
     },
     {"__comment":"constr_edificacao tipo 2316 2317 2318 2319 2320 2398 <-> tra_edif_metro_ferroviaria",
       "filtro_ida":{
@@ -6377,6 +6469,14 @@
         {
           "nome_atributo":"modaluso",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -6483,6 +6583,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -6642,6 +6752,14 @@
         {
           "nome_atributo":"chamine",
           "valor":2
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -6766,7 +6884,17 @@
             "valor":1501
           }
         ]
-      }
+      },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ]
     },
     {"__comment":"constr_edificacao tipo 1601-1612 <-> pot_pto_est_med_fenomenos",
       "filtro_ida":{
@@ -6920,6 +7048,14 @@
         {
           "nome_atributo":"administracao",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -6982,6 +7118,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -7017,6 +7163,14 @@
         {
           "nome_atributo":"administracao",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "atributos_default_volta":[
@@ -7043,6 +7197,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -7107,6 +7271,14 @@
         {
           "nome_atributo":"ovgd",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -7188,6 +7360,14 @@
         {
           "nome_atributo":"ensino",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -7277,6 +7457,14 @@
         {
           "nome_atributo":"administracao",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -7330,7 +7518,7 @@
         }
       ]
     },
-    {"__comment":"constr_edificacao tipo 403 404 405 406 407 498 <-> edu_edif_const_turistica",
+    {"__comment":"constr_edificacao tipo 403 404 405 406 407 498 <-> asb_edif_saneamento",
       "filtro_ida":{
         "$or":[
           {
@@ -7359,6 +7547,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -7434,6 +7632,14 @@
         {
           "nome_atributo":"nivelatencao",
           "valor":0
+        },
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
         }
       ],
       "mapeamento_atributos":[
@@ -7549,6 +7755,16 @@
           }
         ]
       },
+      "atributos_default_ida":[
+        {
+          "nome_atributo":"situacaofisica",
+          "valor": 5
+        },
+        {
+          "nome_atributo":"operacional",
+          "valor": 1
+        }
+      ],
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
@@ -7690,11 +7906,25 @@
     },
     {
       "attr_ida": "sistema_geodesico",
-      "attr_volta": "sistemageodesico"
+      "attr_volta": "sistemageodesico",
+      "traducao":[
+        {
+          "valor_ida":999,
+          "valor_volta":6,
+          "sentido":"volta"
+        }
+      ]
     },
     {
       "attr_ida": "referencial_altim",
-      "attr_volta": "referencialaltim"
+      "attr_volta": "referencialaltim",
+      "traducao":[
+        {
+          "valor_ida":999,
+          "valor_volta":5,
+          "sentido":"volta"
+        }
+      ]
     },
     {
       "attr_ida": "referencial_grav",
@@ -7707,6 +7937,11 @@
         {
           "valor_ida": 97,
           "valor_volta": 7
+        },
+        {
+          "valor_ida":999,
+          "valor_volta":0,
+          "sentido":"volta"
         }
       ]
     },
