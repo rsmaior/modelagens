@@ -7,7 +7,6 @@
     "LINESTRING": "_l",
     "POLYGON": "_a"
   },
-  "afixo_geom_volta": {},
   "agregar_geom_ida": false,
   "agregar_geom_volta": true,
   "mapeamento_classes": [

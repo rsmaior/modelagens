@@ -1143,7 +1143,7 @@
       {
           "classe_ida": "hid_ponto_inicio_drenagem",
           "classe_volta": "HID_Ponto_Inicio_Drenagem",
-          "atributos_default_":[
+          "atributos_default_ida":[
               {
                   "nome_atributo":"RELACIONAD",
                   "valor":"Ponto início drenagem"

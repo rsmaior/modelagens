@@ -1602,10 +1602,6 @@
           "valor": 9999
         },
         {
-          "nome_atributo": "$GEOM_TYPE",
-          "valor": "POLYGON"
-        },
-        {
           "nome_atributo": "atividade",
           "valor": 9
         },
@@ -1621,7 +1617,10 @@
           "nome_atributo": "procextracao",
           "valor": 95
         },
-        { "nome_atributo": "valor": 1 },
+        { 
+          "nome_atributo": "secaoativecon",
+          "valor": 1
+        },
         {
           "nome_atributo": "situacaofisica",
           "valor": 95
