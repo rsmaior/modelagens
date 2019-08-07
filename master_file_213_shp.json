@@ -23,7 +23,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -55,7 +55,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -81,7 +81,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -137,7 +137,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -193,7 +193,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -237,7 +237,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -281,7 +281,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -295,7 +295,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -315,7 +315,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -359,7 +359,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -427,7 +427,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -489,7 +489,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -539,7 +539,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -595,7 +595,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -609,7 +609,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -623,7 +623,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -637,7 +637,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -651,7 +651,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -723,7 +723,7 @@
               },
               {
                     "nome": "VALORVOLUM",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -737,7 +737,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -793,7 +793,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -843,7 +843,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -893,13 +893,13 @@
             "atributos": [
               {
                     "nome": "CHAMINE",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -949,7 +949,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1011,7 +1011,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1079,7 +1079,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1111,7 +1111,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -1125,7 +1125,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -1139,7 +1139,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -1153,7 +1153,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -1167,7 +1167,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1205,7 +1205,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1249,7 +1249,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1287,7 +1287,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1337,7 +1337,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1393,7 +1393,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1449,7 +1449,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1505,7 +1505,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1543,7 +1543,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1587,7 +1587,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1613,7 +1613,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1645,7 +1645,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -1659,7 +1659,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -1673,7 +1673,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1729,7 +1729,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1791,7 +1791,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1815,13 +1815,13 @@
               },
               {
                     "nome": "POTENCIAFI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "POTENCIAOU",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1847,7 +1847,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1891,7 +1891,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1915,13 +1915,13 @@
               },
               {
                     "nome": "POTENCIAFI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "POTENCIAOU",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1947,7 +1947,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -1985,7 +1985,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2015,13 +2015,13 @@
               },
               {
                     "nome": "POTENCIAFI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "POTENCIAOU",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2059,13 +2059,13 @@
             "atributos": [
               {
                     "nome": "ALTURAESTI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2115,7 +2115,7 @@
             "atributos": [
               {
                     "nome": "ALTURAESTI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2127,7 +2127,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2177,13 +2177,13 @@
             "atributos": [
               {
                     "nome": "EMDUTO",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2251,7 +2251,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2269,7 +2269,7 @@
               },
               {
                     "nome": "NUMCIRCUIT",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2293,7 +2293,7 @@
               },
               {
                     "nome": "TENSAOELET",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -2307,7 +2307,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2333,7 +2333,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2365,19 +2365,19 @@
             "atributos": [
               {
                     "nome": "CODIGOOTTO",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "NIVELOTTO",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2403,7 +2403,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2447,7 +2447,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2497,7 +2497,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2535,7 +2535,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2567,7 +2567,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2593,7 +2593,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2637,7 +2637,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2663,7 +2663,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2701,13 +2701,13 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2739,7 +2739,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2789,7 +2789,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2821,7 +2821,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2841,7 +2841,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2879,7 +2879,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2935,13 +2935,13 @@
             "atributos": [
               {
                     "nome": "ALTURA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -2973,7 +2973,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3017,19 +3017,19 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "NAMAXIMOMA",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "NAMAXIMOOP",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3053,7 +3053,7 @@
               },
               {
                     "nome": "VOLUMEUTIL",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -3067,13 +3067,13 @@
             "atributos": [
               {
                     "nome": "ALTURALAMI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3111,7 +3111,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3143,7 +3143,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3175,7 +3175,7 @@
             "atributos": [
               {
                     "nome": "CALADOMAX",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3187,7 +3187,7 @@
               },
               {
                     "nome": "COMPARTILH",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3205,13 +3205,13 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "LARGURAMED",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3235,7 +3235,7 @@
               },
               {
                     "nome": "PROFUNDIDA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3247,7 +3247,7 @@
               },
               {
                     "nome": "VELOCIDADE",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -3261,7 +3261,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3317,7 +3317,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3343,7 +3343,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3375,7 +3375,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3401,7 +3401,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3433,13 +3433,13 @@
             "atributos": [
               {
                     "nome": "ANODEREFER",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3471,7 +3471,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3509,7 +3509,7 @@
             "atributos": [
               {
                     "nome": "ANODEREFER",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3521,7 +3521,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3553,13 +3553,13 @@
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3603,13 +3603,13 @@
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3653,13 +3653,13 @@
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3703,13 +3703,13 @@
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3747,13 +3747,13 @@
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3797,13 +3797,13 @@
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3829,13 +3829,13 @@
             "atributos": [
               {
                     "nome": "ALTITUDEOR",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3909,7 +3909,7 @@
             "atributos": [
               {
                     "nome": "ANODEREFER",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3921,7 +3921,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -3953,19 +3953,19 @@
               },
               {
                     "nome": "ANOCRIACAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "AREAOFICIA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4015,13 +4015,13 @@
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4065,7 +4065,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4097,13 +4097,13 @@
             "atributos": [
               {
                     "nome": "ANODEREFER",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4129,7 +4129,7 @@
             "atributos": [
               {
                     "nome": "ANODEREFER",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4141,7 +4141,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4167,7 +4167,7 @@
             "atributos": [
               {
                     "nome": "AREAOFICIA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4179,7 +4179,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4209,7 +4209,7 @@
               },
               {
                     "nome": "PERIMETROO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4241,7 +4241,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4273,13 +4273,13 @@
               },
               {
                     "nome": "ANOCRIACAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "AREAOFICIA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4297,7 +4297,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4335,7 +4335,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4373,13 +4373,13 @@
               },
               {
                     "nome": "ANOCRIACAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "AREAOFICIA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4391,7 +4391,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4435,13 +4435,13 @@
               },
               {
                     "nome": "ANOCRIACAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "AREAOFICIA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4453,7 +4453,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4491,7 +4491,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4517,7 +4517,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4549,7 +4549,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4575,7 +4575,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4601,7 +4601,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4633,7 +4633,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4665,7 +4665,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4691,7 +4691,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4735,7 +4735,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4785,7 +4785,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4835,7 +4835,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4861,7 +4861,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4893,7 +4893,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4919,7 +4919,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -4933,7 +4933,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4977,7 +4977,7 @@
             "atributos": [
               {
                     "nome": "ALTITUDEOR",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -4995,7 +4995,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5087,7 +5087,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5119,7 +5119,7 @@
             "atributos": [
               {
                     "nome": "ALTITUDEOR",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5137,7 +5137,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5247,7 +5247,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5279,7 +5279,7 @@
             "atributos": [
               {
                     "nome": "PROFUNDIDA",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -5293,19 +5293,19 @@
             "atributos": [
               {
                     "nome": "COTA",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "DEPRESSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5325,7 +5325,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5357,13 +5357,13 @@
             "atributos": [
               {
                     "nome": "FIXA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5395,7 +5395,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5427,7 +5427,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5465,7 +5465,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5497,19 +5497,19 @@
             "atributos": [
               {
                     "nome": "COTA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "COTACOMPRO",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -5523,7 +5523,7 @@
             "atributos": [
               {
                     "nome": "PROFUNDIDA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -5537,7 +5537,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5581,7 +5581,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5601,7 +5601,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -5615,7 +5615,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -5629,7 +5629,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5685,7 +5685,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5735,7 +5735,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -5749,7 +5749,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -5763,13 +5763,13 @@
             "atributos": [
               {
                     "nome": "CANTEIRODI",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5787,7 +5787,7 @@
               },
               {
                     "nome": "NRFAIXAS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5831,7 +5831,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5881,7 +5881,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5937,7 +5937,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -5987,7 +5987,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6017,7 +6017,7 @@
               },
               {
                     "nome": "NRDUTOS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6073,7 +6073,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6131,31 +6131,31 @@
             "atributos": [
               {
                     "nome": "CALADO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "DESNIVEL",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "LARGURA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6205,7 +6205,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6261,7 +6261,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6323,7 +6323,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6379,7 +6379,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6429,7 +6429,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6461,19 +6461,19 @@
             "atributos": [
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "LARGURA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -6499,7 +6499,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6525,7 +6525,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6563,7 +6563,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6593,7 +6593,7 @@
               },
               {
                     "nome": "PESOSUPORT",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6619,7 +6619,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6683,7 +6683,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6715,7 +6715,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6753,37 +6753,37 @@
             "atributos": [
               {
                     "nome": "CARGASUPOR",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GABHORIZSU",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GABVERTSUP",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "LARGURA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6869,7 +6869,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6901,7 +6901,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6945,13 +6945,13 @@
             "atributos": [
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6963,7 +6963,7 @@
               },
               {
                     "nome": "LARGURA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7013,25 +7013,25 @@
             "atributos": [
               {
                     "nome": "CARGASUPOR",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "LARGURA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7061,13 +7061,13 @@
               },
               {
                     "nome": "NRFAIXAS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "NRPISTAS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7097,13 +7097,13 @@
               },
               {
                     "nome": "VAOLIVREHO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "VAOVERTICA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
@@ -7117,7 +7117,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7137,7 +7137,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7157,7 +7157,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7177,7 +7177,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7203,7 +7203,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7247,7 +7247,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7291,7 +7291,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7323,19 +7323,19 @@
             "atributos": [
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "LARGURA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7385,7 +7385,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7415,7 +7415,7 @@
               },
               {
                     "nome": "NRDUTOS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7477,7 +7477,7 @@
               },
               {
                     "nome": "CARGASUPOR",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7507,7 +7507,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7569,19 +7569,19 @@
             "atributos": [
               {
                     "nome": "CALADOMAXS",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "EXTENSAOTR",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7637,7 +7637,7 @@
               },
               {
                     "nome": "CAPACCARGA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7655,7 +7655,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7667,13 +7667,13 @@
               },
               {
                     "nome": "NRFAIXAS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "NRPISTAS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7717,7 +7717,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7743,25 +7743,25 @@
             "atributos": [
               {
                     "nome": "ALTURA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "EXTENSAO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "LARGURA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7791,13 +7791,13 @@
               },
               {
                     "nome": "NRFAIXAS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "NRPISTAS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7855,7 +7855,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7879,7 +7879,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7911,7 +7911,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7935,7 +7935,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7961,7 +7961,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -7985,7 +7985,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8011,7 +8011,7 @@
             "atributos": [
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8049,7 +8049,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8073,7 +8073,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8105,7 +8105,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8123,7 +8123,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8149,7 +8149,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8185,7 +8185,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8211,7 +8211,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8235,7 +8235,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8267,7 +8267,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8291,7 +8291,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8317,7 +8317,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8341,7 +8341,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8367,7 +8367,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8391,13 +8391,13 @@
               },
               {
                     "nome": "ESPACAMENT",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "ESPESSURAD",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8409,7 +8409,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8447,7 +8447,7 @@
             "atributos": [
               {
                     "nome": "ALTURAMEDI",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -8471,7 +8471,7 @@
               },
               {
                     "nome": "GEOMETRIAA",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
