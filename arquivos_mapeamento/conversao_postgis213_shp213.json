@@ -18,7 +18,31 @@
   "mapeamento_classes":[
       {
           "classe_ida": "tra_condutor_hidrico",
-          "classe_volta": "TRA_Condutor_Hidrico"
+          "classe_volta": "TRA_Condutor_Hidrico",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"tipotrechoduto",
+                "attr_volta":"TIPOTRECHO",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":"Desconhecido"
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":"Duto"
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":"Calha"
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":"Correia transportadora"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "edu_edif_ensino",
@@ -34,7 +58,31 @@
       },
       {
           "classe_ida": "tra_trecho_duto",
-          "classe_volta": "TRA_Trecho_Duto"
+          "classe_volta": "TRA_Trecho_Duto",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"tipotrechoduto",
+                "attr_volta":"TIPOTRECHO",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":"Desconhecido"
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":"Duto"
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":"Calha"
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":"Correia transportadora"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "tra_identific_trecho_rod",
@@ -302,7 +350,35 @@
       },
       {
           "classe_ida": "hid_trecho_massa_dagua",
-          "classe_volta": "HID_Trecho_Massa_Dagua"
+          "classe_volta": "HID_Trecho_Massa_Dagua",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"tipotrechomassa",
+                "attr_volta":"TIPOTRECHO",
+                "traducao":[
+                    {
+                        "valor_ida":1,
+                        "valor_volta":"Rio"
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":"Canal"
+                    },
+                    {
+                        "valor_ida":9,
+                        "valor_volta":"Laguna"
+                    },
+                    {
+                        "valor_ida":10,
+                        "valor_volta":"Represa/açude"
+                    },
+                    {
+                        "valor_ida":99,
+                        "valor_volta":"Outros"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "veg_campinarana",
@@ -342,7 +418,27 @@
       },
       {
           "classe_ida": "enc_torre_comunic",
-          "classe_volta": "ENC_Torre_Comunic"
+          "classe_volta": "ENC_Torre_Comunic",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"posicaoreledific",
+                "attr_volta":"POSICAOREL",
+                "traducao":[
+                    {
+                        "valor_ida":14,
+                        "valor_volta":"Isolado"
+                    },
+                    {
+                        "valor_ida":17,
+                        "valor_volta":"Adjacente a edificação"
+                    },
+                    {
+                        "valor_ida":18,
+                        "valor_volta":"Sobre edificação"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "tra_ponte",
@@ -357,12 +453,36 @@
           "classe_volta": "LIM_Unidade_Conservacao_Nao_SNUC"
       },
       {
-          "classe_ida": "lim_unidade_conserv_nao_snuc",
-          "classe_volta": "LIM_Unidade_Conservacao_Nao_SNUC"
-      },
-      {
           "classe_ida": "tra_travessia",
-          "classe_volta": "TRA_Travessia"
+          "classe_volta": "TRA_Travessia",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"tipotravessia",
+                "attr_volta":"TIPOTRAVES",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":"Desconhecida"
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":"Vau natural"
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":"Vau construída"
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":"Bote transportador"
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":"Balsa"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "tra_local_critico",
@@ -834,7 +954,13 @@
       },
       {
           "classe_ida": "rel_ponto_cotado_batimetrico",
-          "classe_volta": "REL_Ponto_Cotado_Batimetrico"
+          "classe_volta": "REL_Ponto_Cotado_Batimetrico",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"profundidade",
+                "attr_volta":"PROFUNDIDA"
+            }
+          ]
       },
       {
           "classe_ida": "hid_foz_maritima",
@@ -874,7 +1000,13 @@
       },
       {
           "classe_ida": "rel_curva_batimetrica",
-          "classe_volta": "REL_Curva_Batimetrica"
+          "classe_volta": "REL_Curva_Batimetrica",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"profundidade",
+                "attr_volta":"PROFUNDIDA"
+            }
+          ]
       },
       {
           "classe_ida": "asb_edif_saneamento",
@@ -986,7 +1118,31 @@
       },
       {
           "classe_ida": "tra_trecho_rodoviario",
-          "classe_volta": "TRA_Trecho_Rodoviario"
+          "classe_volta": "TRA_Trecho_Rodoviario",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"tipotrechorod",
+                "attr_volta":"TIPOTRECHO",
+                "traducao":[
+                    {
+                        "valor_ida":1,
+                        "valor_volta":"Acesso"
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":"Rodovia"
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":"Caminho carroçável"
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":"Auto-estrada"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "rel_dolina",
@@ -994,7 +1150,35 @@
       },
       {
           "classe_ida": "enc_trecho_comunic",
-          "classe_volta": "ENC_Trecho_Comunic"
+          "classe_volta": "ENC_Trecho_Comunic",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"tipotrechocomunic",
+                "attr_volta":"TIPOTRECHO",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":"Desconhecido"
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":"Dados"
+                    },
+                    {
+                        "valor_ida":6,
+                        "valor_volta":"Telegráfica"
+                    },
+                    {
+                        "valor_ida":7,
+                        "valor_volta":"Telefônica"
+                    },
+                    {
+                        "valor_ida":99,
+                        "valor_volta":"Outros"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "eco_area_ext_mineral",
@@ -1098,7 +1282,13 @@
       },
       {
           "classe_ida": "hid_limite_massa_dagua",
-          "classe_volta": "HID_Limite_Massa_Dagua"
+          "classe_volta": "HID_Limite_Massa_Dagua",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"alturamediamargem",
+                "attr_volta":"ALTURAMEDI"
+            }
+          ]
       },
       {
           "classe_ida": "tra_edif_constr_aeroportuaria",
@@ -1143,7 +1333,7 @@
       {
           "classe_ida": "hid_ponto_inicio_drenagem",
           "classe_volta": "HID_Ponto_Inicio_Drenagem",
-          "atributos_default_":[
+          "atributos_default_ida":[
               {
                   "nome_atributo":"RELACIONAD",
                   "valor":"Ponto início drenagem"
@@ -1296,7 +1486,27 @@
       },
       {
           "classe_ida": "enc_antena_comunic",
-          "classe_volta": "ENC_Antena_Comunic"
+          "classe_volta": "ENC_Antena_Comunic",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"posicaoreledific",
+                "attr_volta":"POSICAOREL",
+                "traducao":[
+                    {
+                        "valor_ida":14,
+                        "valor_volta":"Isolado"
+                    },
+                    {
+                        "valor_ida":17,
+                        "valor_volta":"Adjacente a edificação"
+                    },
+                    {
+                        "valor_ida":18,
+                        "valor_volta":"Sobre edificação"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "tra_atracadouro",
@@ -1344,7 +1554,35 @@
       },
       {
           "classe_ida": "enc_edif_comunic",
-          "classe_volta": "ENC_Edif_Comunic"
+          "classe_volta": "ENC_Edif_Comunic",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"tipoedifcomunic",
+                "attr_volta":"TIPOEDIFCO",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":"Desconhecido"
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":"Centro de operações"
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":"Central comutação e transmissão"
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":"Estação radio-base"
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":"Estação repetidora"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "enc_trecho_energia",
@@ -1404,7 +1642,35 @@
       },
       {
           "classe_ida": "tra_trecho_ferroviario",
-          "classe_volta": "TRA_Trecho_Ferroviario"
+          "classe_volta": "TRA_Trecho_Ferroviario",
+          "mapeamento_atributos": [
+            {
+                "attr_ida":"tipotrechoferrov",
+                "attr_volta":"TIPOTRECHO",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":"Desconhecido"
+                    },
+                    {
+                        "valor_ida":5,
+                        "valor_volta":"Bonde"
+                    },
+                    {
+                        "valor_ida":6,
+                        "valor_volta":"Aeromóvel"
+                    },
+                    {
+                        "valor_ida":7,
+                        "valor_volta":"Ferrovia"
+                    },
+                    {
+                        "valor_ida":8,
+                        "valor_volta":"Metrovia"
+                    }
+                ]
+            }
+          ]
       },
       {
           "classe_ida": "edu_area_ensino",
@@ -1843,28 +2109,6 @@
           ]
       },
       {
-          "attr_ida":"tipotrechoduto",
-          "attr_volta":"TIPOTRECHO",
-          "traducao":[
-              {
-                  "valor_ida":0,
-                  "valor_volta":"Desconhecido"
-              },
-              {
-                  "valor_ida":1,
-                  "valor_volta":"Duto"
-              },
-              {
-                  "valor_ida":2,
-                  "valor_volta":"Calha"
-              },
-              {
-                  "valor_ida":3,
-                  "valor_volta":"Correia transportadora"
-              }
-          ]
-      },
-      {
           "attr_ida":"setor",
           "attr_volta":"SETOR",
           "traducao":[
@@ -1967,32 +2211,6 @@
               {
                   "valor_ida":2,
                   "valor_volta":"Muro"
-              }
-          ]
-      },
-      {
-          "attr_ida":"tipotrechomassa",
-          "attr_volta":"TIPOTRECHO",
-          "traducao":[
-              {
-                  "valor_ida":1,
-                  "valor_volta":"Rio"
-              },
-              {
-                  "valor_ida":2,
-                  "valor_volta":"Canal"
-              },
-              {
-                  "valor_ida":9,
-                  "valor_volta":"Laguna"
-              },
-              {
-                  "valor_ida":10,
-                  "valor_volta":"Represa/açude"
-              },
-              {
-                  "valor_ida":99,
-                  "valor_volta":"Outros"
               }
           ]
       },
@@ -2449,10 +2667,6 @@
           ]
       },
       {
-          "attr_ida":"profundidade",
-          "attr_volta":"PROFUNDIDA"
-      },
-      {
           "attr_ida":"tipoponte",
           "attr_volta":"TIPOPONTE",
           "traducao":[
@@ -2706,7 +2920,7 @@
       },
       {
           "attr_ida":"referencialgrav",
-          "attr_volta":"REFERENCIA",
+          "attr_volta":"REFERENCI0",
           "traducao":[
               {
                   "valor_ida":0,
@@ -2923,60 +3137,12 @@
           ]
       },
       {
-          "attr_ida":"tipotrechorod",
-          "attr_volta":"TIPOTRECHO",
-          "traducao":[
-              {
-                  "valor_ida":1,
-                  "valor_volta":"Acesso"
-              },
-              {
-                  "valor_ida":2,
-                  "valor_volta":"Rodovia"
-              },
-              {
-                  "valor_ida":3,
-                  "valor_volta":"Caminho carroçável"
-              },
-              {
-                  "valor_ida":4,
-                  "valor_volta":"Auto-estrada"
-              }
-          ]
-      },
-      {
           "attr_ida":"capaccarga",
           "attr_volta":"CAPACCARGA"
       },
       {
           "attr_ida":"codtrechorodov",
           "attr_volta":"CODTRECHOR"
-      },
-      {
-          "attr_ida":"tipotrechocomunic",
-          "attr_volta":"TIPOTRECHO",
-          "traducao":[
-              {
-                  "valor_ida":0,
-                  "valor_volta":"Desconhecido"
-              },
-              {
-                  "valor_ida":4,
-                  "valor_volta":"Dados"
-              },
-              {
-                  "valor_ida":6,
-                  "valor_volta":"Telegráfica"
-              },
-              {
-                  "valor_ida":7,
-                  "valor_volta":"Telefônica"
-              },
-              {
-                  "valor_ida":99,
-                  "valor_volta":"Outros"
-              }
-          ]
       },
       {
           "attr_ida":"tipolimoper",
@@ -3319,10 +3485,6 @@
           ]
       },
       {
-          "attr_ida":"alturamediamargem",
-          "attr_volta":"ALTURAMEDI"
-      },
-      {
           "attr_ida":"tipoedifmil",
           "attr_volta":"TIPOEDIFMI",
           "traducao":[
@@ -3489,24 +3651,6 @@
               {
                   "valor_ida":2,
                   "valor_volta":"Passagem subterrânea sob via"
-              }
-          ]
-      },
-      {
-          "attr_ida":"posicaoreledific",
-          "attr_volta":"POSICAOREL",
-          "traducao":[
-              {
-                  "valor_ida":14,
-                  "valor_volta":"Isolado"
-              },
-              {
-                  "valor_ida":17,
-                  "valor_volta":"Adjacente a edificação"
-              },
-              {
-                  "valor_ida":18,
-                  "valor_volta":"Sobre edificação"
               }
           ]
       },
@@ -3889,10 +4033,6 @@
           "attr_volta":"DATASITUAC"
       },
       {
-          "attr_ida":"areaoficial",
-          "attr_volta":"AREAOFICIA"
-      },
-      {
           "attr_ida":"nrlinhas",
           "attr_volta":"NRLINHAS",
           "traducao":[
@@ -3911,32 +4051,6 @@
               {
                   "valor_ida":3,
                   "valor_volta":"Múltipla"
-              }
-          ]
-      },
-      {
-          "attr_ida":"tipotrechoferrov",
-          "attr_volta":"TIPOTRECHO",
-          "traducao":[
-              {
-                  "valor_ida":0,
-                  "valor_volta":"Desconhecido"
-              },
-              {
-                  "valor_ida":5,
-                  "valor_volta":"Bonde"
-              },
-              {
-                  "valor_ida":6,
-                  "valor_volta":"Aeromóvel"
-              },
-              {
-                  "valor_ida":7,
-                  "valor_volta":"Ferrovia"
-              },
-              {
-                  "valor_ida":8,
-                  "valor_volta":"Metrovia"
               }
           ]
       },
@@ -4569,32 +4683,6 @@
           ]
       },
       {
-          "attr_ida":"tipoedifcomunic",
-          "attr_volta":"TIPOEDIFCO",
-          "traducao":[
-              {
-                  "valor_ida":0,
-                  "valor_volta":"Desconhecido"
-              },
-              {
-                  "valor_ida":1,
-                  "valor_volta":"Centro de operações"
-              },
-              {
-                  "valor_ida":2,
-                  "valor_volta":"Central comutação e transmissão"
-              },
-              {
-                  "valor_ida":3,
-                  "valor_volta":"Estação radio-base"
-              },
-              {
-                  "valor_ida":4,
-                  "valor_volta":"Estação repetidora"
-              }
-          ]
-      },
-      {
           "attr_ida":"destinacaofundeadouro",
           "attr_volta":"DESTINACAO",
           "traducao":[
@@ -4621,32 +4709,6 @@
               {
                   "valor_ida":99,
                   "valor_volta":"Outros"
-              }
-          ]
-      },
-      {
-          "attr_ida":"tipotravessia",
-          "attr_volta":"TIPOTRAVES",
-          "traducao":[
-              {
-                  "valor_ida":0,
-                  "valor_volta":"Desconhecida"
-              },
-              {
-                  "valor_ida":1,
-                  "valor_volta":"Vau natural"
-              },
-              {
-                  "valor_ida":2,
-                  "valor_volta":"Vau construída"
-              },
-              {
-                  "valor_ida":3,
-                  "valor_volta":"Bote transportador"
-              },
-              {
-                  "valor_ida":4,
-                  "valor_volta":"Balsa"
               }
           ]
       },
@@ -7201,10 +7263,6 @@
                   "valor_volta":false
               }
           ]
-      },
-      {
-          "attr_ida":"cota",
-          "attr_volta":"COTA"
       },
       {
           "attr_ida":"indice",
