@@ -2,7 +2,7 @@
     "modelo": "EDGV 2.1.3 SHP",
     "versao": "1.00",
     "coord_sys": 4326,
-    "nome_id": "id",
+    "nome_id": "ID",
     "geom_suffix": {
       "MultiPoint": "_P",
       "MultiLinestring": "_L",
@@ -3193,13 +3193,13 @@
               },
               {
                     "nome": "DENTRODEPO",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "EIXOPRINCI",
-                    "tipo": "varchar(255)",
+                    "tipo": "boolean",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6813,13 +6813,13 @@
               },
               {
                     "nome": "NRFAIXAS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "NRPISTAS",
-                    "tipo": "varchar(255)",
+                    "tipo": "integer",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
@@ -6849,13 +6849,13 @@
               },
               {
                     "nome": "VAOLIVREHO",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               },
               {
                     "nome": "VAOVERTICA",
-                    "tipo": "varchar(255)",
+                    "tipo": "real",
                     "descricao": "-",
                     "cardinalidade": "0..1"
               }
