@@ -379,6 +379,9 @@ class MasterGen():
         except Exception as e:
             return "Erro: {0}".format(e)
 
+    def build_SHP(self, dest):
+        pass
+
 if __name__ == '__main__':
     outputPath = '/Users/philipeborba/github_repos/edgv_2.1.3_pro'
     masterFile = os.path.join(outputPath, 'master_file_213_dsgtools.json')
