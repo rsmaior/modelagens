@@ -4968,12 +4968,10 @@
           }
         ]
       },
-      "filtro_volta": [
-        {
+      "filtro_volta": {
           "nome_atributo": "tipotrechoduto",
           "valor": 1
-        }
-      ],
+      },
       "mapeamento_atributos": [
         {
           "attr_ida": "situacao_fisica",
@@ -5074,12 +5072,10 @@
             "nome_atributo": "tipo",
             "valor": 1801
       },
-      "filtro_volta": [
-        {
+      "filtro_volta": {
           "nome_atributo": "tipotrechoduto",
           "valor": 2
-        }
-      ],
+      },
       "mapeamento_atributos": [
         {
           "attr_ida": "situacao_fisica",
@@ -5142,12 +5138,10 @@
           }
         ]
       },
-      "filtro_volta": [
-        {
+      "filtro_volta": {
           "nome_atributo": "tipotrechoduto",
           "valor": 3
-        }
-      ],
+      },
       "mapeamento_atributos": [
         {
           "attr_ida": "situacao_fisica",
@@ -5556,6 +5550,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1301-1309 1322 1398 <-> adm_edif_pub_civil",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"adm_edif_pub_civil",
       "filtro_ida":{
         "$or":[
           {
@@ -5677,6 +5673,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1712 1717 1718 1719 1798 <-> adm_edif_pub_militar",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"adm_edif_pub_militar",
       "filtro_ida":{
         "$or":[
           {
@@ -5778,6 +5776,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 301 302 303 395 398 <-> asb_edif_abast_agua",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"asb_edif_abast_agua",
       "filtro_ida":{
         "$or":[
           {
@@ -5847,6 +5847,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 2426 2427 2428 2429 2498 <-> tra_edif_constr_aeroportuaria",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"tra_edif_constr_aeroportuaria",
       "filtro_ida":{
         "$or":[
           {
@@ -5925,6 +5927,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1212 1213 1214 1215 1216 1217 1218 1298 <-> eco_edif_agrop_ext_veg_pesca",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"eco_edif_agrop_ext_veg_pesca",
       "filtro_ida":{
         "$or":[
           {
@@ -6018,6 +6022,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 101 102 103 104 <-> enc_edif_comunic",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"enc_edif_comunic",
       "filtro_ida":{
         "$or":[
           {
@@ -6083,13 +6089,11 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 201 <-> enc_edif_energia",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"enc_edif_energia",
       "filtro_ida":{
-        "$or":[
-          {
             "nome_atributo":"tipo",
             "valor":201
-          }
-        ]
       },
       "atributos_default_ida":[
         {
@@ -6145,6 +6149,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 903 904 905 906 907 998 <-> eco_edif_comerc_serv",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"eco_edif_comerc_serv",
       "filtro_ida":{
         "$or":[
           {
@@ -6231,6 +6237,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1110 1111 1113 1114 1198 <-> eco_edif_ext_mineral",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"eco_edif_ext_mineral",
       "filtro_ida":{
         "$or":[
           {
@@ -6300,6 +6308,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 516-525 595 <-> edu_edif_ensino",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"edu_edif_ensino",
       "filtro_ida":{
         "$or":[
           {
@@ -6413,13 +6423,11 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 2701 <-> loc_edif_habitacional",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"loc_edif_habitacional",
       "filtro_ida":{
-        "$or":[
-          {
             "nome_atributo":"tipo",
             "valor":2701
-          }
-        ]
       },
       "atributos_default_ida":[
         {
@@ -6433,6 +6441,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 2316 2317 2318 2319 2320 2398 <-> tra_edif_metro_ferroviaria",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"tra_edif_metro_ferroviaria",
       "filtro_ida":{
         "$or":[
           {
@@ -6523,13 +6533,11 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1401 <-> loc_hab_indigena",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"loc_hab_indigena",
       "filtro_ida":{
-        "$or":[
-          {
             "nome_atributo":"tipo",
             "valor":1401
-          }
-        ]
       },
       "atributos_default_ida":[
         {
@@ -6543,6 +6551,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 801-808 898 <-> edu_edif_const_lazer",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"edu_edif_const_lazer",
       "filtro_ida":{
         "$or":[
           {
@@ -6644,6 +6654,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1015-1037 1045 1098 <-> eco_edif_industrial",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"eco_edif_industrial",
       "filtro_ida":{
         "$or":[
           {
@@ -6877,13 +6889,11 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1501 <-> pto_edif_constr_est_med_fen",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"pto_edif_constr_est_med_fen",
       "filtro_ida":{
-        "$or":[
-          {
             "nome_atributo":"tipo",
             "valor":1501
-          }
-        ]
       },
       "atributos_default_ida":[
         {
@@ -6896,7 +6906,9 @@
         }
       ]
     },
-    {"__comment":"constr_edificacao tipo 1601-1612 <-> pot_pto_est_med_fenomenos",
+    {"__comment":"constr_edificacao tipo 1601-1612 <-> pto_pto_est_med_fenomenos",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"pto_pto_est_med_fenomenos",
       "filtro_ida":{
         "$or":[
           {
@@ -7012,6 +7024,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 2526 2527 2533 2534 2535 2536 2598 <-> tra_edif_constr_portuaria",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"tra_edif_constr_portuaria",
       "filtro_ida":{
         "$or":[
           {
@@ -7106,6 +7120,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1820 1821 <-> adm_posto_pol_rod",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"adm_posto_pol_rod",
       "filtro_ida":{
         "$or":[
           {
@@ -7151,13 +7167,11 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 2601 <-> tra_posto_combustivel",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"tra_posto_combustivel",
       "filtro_ida":{
-        "$or":[
-          {
             "nome_atributo":"tipo",
             "valor":2601
-          }
-        ]
       },
       "atributos_default_ida":[
         {
@@ -7181,6 +7195,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 2132 2133 2195 <-> sau_edif_servico_social",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"sau_edif_servico_social",
       "filtro_ida":{
         "$or":[
           {
@@ -7239,6 +7255,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 709 710 711 712 713 798 <-> edu_edif_const_turistica",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"edu_edif_const_turistica",
       "filtro_ida":{
         "$or":[
           {
@@ -7320,6 +7338,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 601 602 603 604 605 606 607 698 <-> edu_edif_religiosa",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"edu_edif_religiosa",
       "filtro_ida":{
         "$or":[
           {
@@ -7417,6 +7437,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 2208 2209 2210 2211 2212 2213 2214 2298 <-> tra_edif_rodoviaria",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"tra_edif_rodoviaria",
       "filtro_ida":{
         "$or":[
           {
@@ -7519,6 +7541,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 403 404 405 406 407 498 <-> asb_edif_saneamento",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"asb_edif_saneamento",
       "filtro_ida":{
         "$or":[
           {
@@ -7596,6 +7620,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 2025 2026 2027 2028 2029 2030 2031 <-> sau_edif_saude",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"sau_edif_saude",
       "filtro_ida":{
         "$or":[
           {
@@ -7739,6 +7765,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1910 1911 1995 <-> adm_posto_fiscal",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"adm_posto_fiscal",
       "filtro_ida":{
         "$or":[
           {
@@ -7797,13 +7825,11 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 0 <-> loc_edificacao",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"loc_edificacao",
       "filtro_ida":{
-        "$or":[
-          {
             "nome_atributo":"tipo",
             "valor":0
-          }
-        ]
       },
       "atributos_default_ida":[
         {
@@ -7823,6 +7849,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1 <-> loc_edificacao",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"loc_edificacao",
       "filtro_ida":{
             "nome_atributo":"tipo",
             "valor":1
@@ -7849,6 +7877,8 @@
       ]
     },
     {"__comment":"constr_edificacao tipo 1 <-> loc_edificacao",
+      "classe_ida":"constr_edificacao",
+      "classe_volta":"loc_edificacao",
       "filtro_ida":{
             "nome_atributo":"tipo",
             "valor":2
