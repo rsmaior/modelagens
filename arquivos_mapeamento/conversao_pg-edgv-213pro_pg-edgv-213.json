@@ -484,6 +484,13 @@
           "nome_atributo": "tipo",
           "valor": 1000
         },
+        "filtro_volta":
+        {
+          "$not": {
+            "nome_atributo": "tipoterrexp",
+            "valor": 12
+          }
+        },
       "atributos_default_ida": [
           {
               "nome_atributo":"tipoterrexp",
@@ -498,6 +505,36 @@
         {
           "nome_atributo":"tipo",
           "valor":1000
+        }
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 1001 <-> rel_terreno_exposto",
+      "classe_ida": "cobter_vegetacao",
+      "classe_volta": "rel_terreno_exposto",
+      "filtro_ida":
+        {
+          "nome_atributo": "tipo",
+          "valor": 1001
+        },
+      "filtro_volta":
+      {
+        "nome_atributo": "tipoterrexp",
+        "valor": 12
+      },
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"tipoterrexp",
+              "valor": 12
+          },
+          {
+            "nome_atributo":"causaexposicao",
+            "valor": 4
+          }
+      ],
+      "atributos_default_volta":[
+        {
+          "nome_atributo":"tipo",
+          "valor":1001
         }
       ]
     },
@@ -970,7 +1007,7 @@
               "tupla_volta": [
                   {
                       "nome_atributo":"tipolavoura",
-                      "valor": 1
+                      "valor": 3
                   },
                   {
                       "nome_atributo":"classificacaoporte",
@@ -1416,7 +1453,11 @@
                   {
                       "nome_atributo":"classificacaoporte",
                       "valor": 1
-                  }
+                  },
+                  {
+                    "nome_atributo":"cultivopredominante",
+                    "valor": 39
+                },
               ]
           }
       ],
