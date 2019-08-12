@@ -210,7 +210,7 @@ class FeatureProcessor(object):
             if value or value == 0:
                 feat.setAttribute(attr, u'{0}'.format(value))
             else:
-                feat.setAttribute(attr, None)
+                feat.setAttributeNullWithType(attr,0)
         if "AGGREGATE_GEOM" in featDict and featDict["AGGREGATE_GEOM"]:
             feat.buildAggregateFeat([feat])
         return feat
