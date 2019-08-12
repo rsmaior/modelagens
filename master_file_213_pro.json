@@ -3862,6 +3862,12 @@
           "valor_filtro": "Terreno Exposto"
         },
         {
+          "code": 1001,
+          "value": "Terreno exposto areia",
+          "descricao": "-",
+          "valor_filtro": "Terreno Exposto"
+        },
+        {
           "code": 1101,
           "value": "Vegetação de área de contato",
           "descricao": "-",
