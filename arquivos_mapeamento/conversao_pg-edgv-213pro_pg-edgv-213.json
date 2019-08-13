@@ -765,6 +765,10 @@
             },
             {
               "valor_ida": 1296,
+              "valor_volta": 39
+            },
+            {
+              "valor_ida": 1296,
               "valor_volta": 20,
               "sentido": "volta"
             },
@@ -1453,11 +1457,7 @@
                   {
                       "nome_atributo":"classificacaoporte",
                       "valor": 1
-                  },
-                  {
-                    "nome_atributo":"cultivopredominante",
-                    "valor": 39
-                },
+                  }
               ]
           }
       ],
