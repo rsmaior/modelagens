@@ -3454,6 +3454,12 @@
             "nome_atributo": "tipo",
             "valor": 13
       },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaaproximada",
+          "valor": 1
+        }    
+      ],
       "atributos_default_volta": [
         {
           "nome_atributo": "tipo",
