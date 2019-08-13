@@ -1015,7 +1015,7 @@
                   },
                   {
                       "nome_atributo":"classificacaoporte",
-                      "valor": 1
+                      "valor": 3
                   },
                   {
                       "nome_atributo":"terreno",
@@ -1457,6 +1457,10 @@
                   {
                       "nome_atributo":"classificacaoporte",
                       "valor": 1
+                  },
+                  {
+                      "nome_atributo":"finalidade",
+                      "valor": 1
                   }
               ]
           }
@@ -1575,6 +1579,12 @@
           }
         ]
       },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaaproximada",
+          "valor": 1
+        }    
+      ],
       "atributos_default_volta": [
         {
           "nome_atributo": "tipo",
@@ -2492,9 +2502,9 @@
         }
       ]
     },
-    {"__comment":"tra_pista_ponto_pouso <-> infra_pista_pouso",
-      "classe_ida": "tra_pista_ponto_pouso",
-      "classe_volta": "infra_pista_pouso",
+    {"__comment":" infra_pista_pouso<-> tra_pista_ponto_pouso",
+      "classe_ida": "infra_pista_pouso",
+      "classe_volta": "tra_pista_ponto_pouso",
       "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
@@ -3203,6 +3213,12 @@
             "nome_atributo": "tipo",
             "valor": 17
       },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaaproximada",
+          "valor": 1
+        }    
+      ],
       "atributos_default_volta": [
         {
           "nome_atributo": "tipo",
@@ -3221,7 +3237,11 @@
         {
           "nome_atributo": "fixa",
           "valor": 2
-        }        
+        },
+        {
+          "nome_atributo": "geometriaaproximada",
+          "valor": 1
+        }    
       ],
       "atributos_default_volta": [
         {
@@ -3355,6 +3375,12 @@
           }
         ]
       },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaaproximada",
+          "valor": 1
+        }        
+      ],
       "mapeamento_atributos": [
         {
           "attr_ida": "tipo",
@@ -3685,7 +3711,7 @@
       "atributos_default_ida": [
         {
           "nome_atributo": "materialpredominante",
-          "valor": 0
+          "valor": 12
         },
         {
           "nome_atributo": "situacaoemagua",
@@ -8110,8 +8136,7 @@
         },
         {
           "valor_ida": 98,
-          "valor_volta": 99,
-          "sentido": "volta"
+          "valor_volta": 99
         }
       ]
     },
