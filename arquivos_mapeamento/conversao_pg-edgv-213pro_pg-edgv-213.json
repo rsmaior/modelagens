@@ -1576,6 +1576,10 @@
           {
             "nome_atributo": "tipo",
             "valor": 9
+          },
+          {
+            "nome_atributo": "tipo",
+            "valor": 10
           }
         ]
       },
@@ -3716,6 +3720,10 @@
         {
           "nome_atributo": "situacaoemagua",
           "valor": 0
+        },
+        {
+          "nome_atributo": "geometriaaproximada",
+          "valor": 1
         }
       ]
     },
