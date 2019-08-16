@@ -2270,6 +2270,27 @@
           "nome_atributo": "navegabilidade",
           "valor": 0
         } 
+      ],
+      "mapeamento_multiplo":[
+        {
+          "sentido": "ida",
+          "tupla_ida": [
+            {
+              "nome_atributo": "tipo",
+              "valor": 3
+            }
+          ],
+          "tupla_volta": [
+            {
+              "nome_atributo":"navegabilidade",
+              "valor": 2
+            },
+            {
+              "nome_atributo":"geometriaaproximada",
+              "valor": 1
+            }
+          ]
+        }
       ]
     },
     {"__comment":"constr_extracao_mineral <-> eco_ext_mineral",
@@ -2921,12 +2942,6 @@
             }
           ]
         }  
-      ],
-      "atributos_default_ida": [
-        {
-          "nome_atributo": "denominacaoassociada",
-          "valor": 0
-        }
       ],
       "atributos_default_volta": [
         {
