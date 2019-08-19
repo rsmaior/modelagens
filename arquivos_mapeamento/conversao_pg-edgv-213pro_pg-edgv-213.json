@@ -5446,7 +5446,7 @@
         },
         {
           "attr_ida":"tipo",
-          "attr_volta":"tipodeposito",
+          "attr_volta":"tipodepgeral",
           "traducao":[
             {
               "valor_ida":108,
@@ -5470,7 +5470,7 @@
             },
             {
               "valor_ida":198,
-              "valor_volta":98
+              "valor_volta":99
             },
             {
               "valor_ida":999,
@@ -5523,7 +5523,7 @@
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
-          "attr_volta":"tipodeposito",
+          "attr_volta":"tipodepabast",
           "traducao":[
             {
               "valor_ida":201,
@@ -5586,7 +5586,7 @@
       "mapeamento_atributos":[
         {
           "attr_ida":"tipo",
-          "attr_volta":"tipodeposito",
+          "attr_volta":"tipodepsaneam",
           "traducao":[
             {
               "valor_ida":301,
