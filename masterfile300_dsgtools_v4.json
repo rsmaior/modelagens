@@ -213,7 +213,7 @@
                 },
                 {
                     "code": 36,
-                    "value": "Area Militar",
+                    "value": "Área Militar",
                     "descricao": "-"
                 },
                 {
@@ -1420,6 +1420,11 @@
                     "code": 124,
                     "value": "Morango",
                     "descricao": "-"
+                },
+                {
+                    "code": 125,
+                    "value": "Graviola",
+                    "descricao": "-"
                 }
             ]
         },
@@ -1653,7 +1658,7 @@
             "valores": [
                 {
                     "code": 1,
-                    "value": "Potsdam1930",
+                    "value": "Potsdam 1930",
                     "descricao": "-"
                 },
                 {
@@ -2123,7 +2128,7 @@
                 },
                 {
                     "code": 6,
-                    "value": "Campo de instruçao",
+                    "value": "Campo de instrução",
                     "descricao": "-"
                 },
                 {
@@ -2648,7 +2653,7 @@
                 },
                 {
                     "code": 8,
-                    "value": "Área relacionada a edificação industrual",
+                    "value": "Área relacionada a edificação industrial",
                     "descricao": "-"
                 },
                 {
@@ -2703,7 +2708,7 @@
                 },
                 {
                     "code": 19,
-                    "value": "Área relacionada a ruinas de valor histórico",
+                    "value": "Área relacionada a ruínas de valor histórico",
                     "descricao": "-"
                 },
                 {
@@ -2793,7 +2798,7 @@
                 },
                 {
                     "code": 3,
-                    "value": "Estação rádio-base",
+                    "value": "Estação rádio base",
                     "descricao": "-"
                 },
                 {
@@ -3233,7 +3238,7 @@
             "valores": [
                 {
                     "code": 9,
-                    "value": "Pista de Pouso",
+                    "value": "Pista de pouso",
                     "descricao": "-"
                 },
                 {
@@ -3318,7 +3323,7 @@
                 },
                 {
                     "code": 30,
-                    "value": "Serviço de combate à incêndios (SCI)",
+                    "value": "Serviço de combate a incêndios (SCI)",
                     "descricao": "-"
                 },
                 {
@@ -3818,7 +3823,7 @@
                 },
                 {
                     "code": 5,
-                    "value": "Canalização de curva d'água",
+                    "value": "Canalização de curso d'água",
                     "descricao": "-"
                 },
                 {
@@ -4303,7 +4308,7 @@
                 },
                 {
                     "code": 20,
-                    "value": "Unidade de acolhimento para mulheres vitmas de violência",
+                    "value": "Unidade de acolhimento para mulheres vitimas de violência",
                     "descricao": "-"
                 },
                 {
@@ -5167,11 +5172,6 @@
                     "descricao": "-"
                 },
                 {
-                    "code": 7,
-                    "value": "Construída",
-                    "descricao": "-"
-                },
-                {
                     "code": 0,
                     "value": "Desconhecida",
                     "descricao": "-"
@@ -5868,7 +5868,7 @@
             "valores": [
                 {
                     "code": 6,
-                    "value": "Administração do estado e da política econômica e social",
+                    "value": "Administração do Estado e da política econômica e social",
                     "descricao": "-"
                 },
                 {
@@ -5968,7 +5968,7 @@
                 },
                 {
                     "code": 2,
-                    "value": "Climatológica auxiliar- CA",
+                    "value": "Climatológica auxiliar - CA",
                     "descricao": "-"
                 },
                 {
@@ -6028,7 +6028,7 @@
                 },
                 {
                     "code": 14,
-                    "value": "Higrologica",
+                    "value": "Higrológica",
                     "descricao": "-"
                 },
                 {
