@@ -6447,6 +6447,10 @@
           {
             "nome_atributo":"tipo",
             "valor":525
+          },
+          {
+            "nome_atributo":"tipo",
+            "valor":595
           }
         ]
       },
