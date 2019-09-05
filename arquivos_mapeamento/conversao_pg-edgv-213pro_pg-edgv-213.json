@@ -5512,10 +5512,6 @@
       ],
       "atributos_default_volta":[
         {
-          "nome_atributo":"tipo_exposicao",
-          "valor":97
-        },
-        {
           "nome_atributo":"tipo_produto_residuo",
           "valor":1
         }
@@ -5545,6 +5541,20 @@
               "valor_ida":999,
               "valor_volta":0,
               "sentido":"volta"
+            }
+          ]
+        },
+        {
+          "attr_ida":"tipo_exposicao",
+          "attr_volta":"construcao",
+          "traducao":[
+            {
+              "valor_ida":5,
+              "valor_volta":2
+            },
+            {
+              "valor_ida":3,
+              "valor_volta":1
             }
           ]
         }
