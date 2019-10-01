@@ -123,8 +123,10 @@ class MasterGen():
                 for atributo in classe["atributos"]:
 
                     if "mapa_valor" in atributo:
-                        valores_att = [valor["code"] for valor in atributo["valores"]
-                                       if ("primitivas" in valor and primitiva in valor["primitivas"]) or "primitivas" not in valor]
+                        valores_att = None
+                        if "valores" in atributo:
+                            valores_att = [valor["code"] for valor in atributo["valores"]
+                                        if ("primitivas" in valor and primitiva in valor["primitivas"]) or "primitivas" not in valor]
 
                         if atributo["cardinalidade"] == "0..1" or atributo["cardinalidade"] == "1..1":
                             sql.append(u"ALTER TABLE {1}.{0}".format(class_name, master["schema_dados"]))
@@ -139,7 +141,7 @@ class MasterGen():
                             dominio_att = [valor["code"]
                                            for valor in dominio["valores"]]
 
-                            if len(set(dominio_att).difference(valores_att)) > 0:
+                            if valores_att and len(set(dominio_att).difference(valores_att)) > 0:
                                 sql.append(u"ALTER TABLE {0}.{1}".format(master["schema_dados"], class_name))
                                 sql.append(u"\t ADD CONSTRAINT {0}_{1}_check ".format(class_name, atributo["nome"]))
 
