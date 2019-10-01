@@ -1,0 +1,242 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Arquivo Mapeamento",
+  "description": "Arquivo que descreve o mapeamento entre especificações",
+  "type": "object",
+  "definitions": {
+    "afixo": {
+      "type": "object",
+      "properties": {
+        "tipo": {
+          "type": "string",
+          "enum": ["sufixo", "prefixo"]
+        },
+        "POINT": { "type": "string" },
+        "LINESTRING": { "type": "string" },
+        "POLYGON": { "type": "string" }
+      },
+      "required": ["tipo", "POINT", "LINESTRING", "POLYGON"],
+      "additionalProperties": false
+    },
+    "valores": {
+      "type": "object",
+      "properties": {
+        "nome_atributo": { "type": "string" },
+        "valor": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "required": ["nome_atributo", "valor"],
+      "additionalProperties": false
+    },
+    "valores_concatenar": {
+      "type": "object",
+      "properties": {
+        "nome_atributo": { "type": "string" },
+        "concatenar": { "type": "boolean" },
+        "valor": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "required": ["nome_atributo", "valor"],
+      "additionalProperties": false
+    },
+    "filtro": {
+      "oneOf": [
+        { 
+          "type": "object",
+          "properties": {
+            "$or": { 
+              "type": "array",
+              "items": { "$ref": "#/definitions/filtro" },
+              "minItems": 2
+            }
+          },
+          "required": ["$or"],
+          "additionalProperties": false
+        },
+        { 
+          "type": "object",
+          "properties": {
+            "$and": { 
+              "type": "array",
+              "items": { "$ref": "#/definitions/filtro" },
+              "minItems": 2
+            }
+          },
+          "required": ["$and"],
+          "additionalProperties": false
+        },
+        { 
+          "type": "object",
+          "properties": {
+            "$not": { 
+              "$ref": "#/definitions/filtro"
+            }
+          },
+          "required": ["$not"],
+          "additionalProperties": false
+        },
+        { 
+          "$ref": "#/definitions/valores"
+        }
+      ]
+    },
+    "mapeamento_atributo": {
+      "type": "object",
+      "properties": {
+        "__comment": { "type": "string" },
+        "attr_ida": { "type": "string" },
+        "attr_volta": { "type": "string" },
+        "traducao": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "valor_ida": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean",
+                  "null"
+                ]
+              },
+              "valor_volta": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean",
+                  "null"
+                ]
+              },
+              "sentido": {
+                "type": "string",
+                "enum": ["ida", "volta"]
+              }
+            },
+            "required": ["valor_ida", "valor_volta"],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        }
+      },
+      "required": ["attr_ida", "attr_volta"],
+      "additionalProperties": false
+    },
+    "mapeamento_classe": {
+      "type": "object",
+      "properties": {
+        "__comment": { "type": "string" },
+        "classe_ida": { "type": "string" },
+        "classe_volta": { "type": "string" },
+        "com_afixo_geom_ida": { "type": "boolean" },
+        "com_afixo_geom_volta": { "type": "boolean" },
+        "agregar_geom_ida": { "type": "boolean" },
+        "agregar_geom_volta": { "type": "boolean" },
+        "com_schema_ida": { "type": "boolean" },
+        "com_schema_volta": { "type": "boolean" },
+        "sentido": {
+          "type": "string",
+          "enum": ["ida", "volta"]
+        },
+        "atributos_default_ida": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/valores" },
+          "minItems": 1
+        },
+        "atributos_default_volta": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/valores" },
+          "minItems": 1
+        },
+        "mapeamento_atributos": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/mapeamento_atributo" },
+          "minItems": 1
+        },
+        "filtro_ida": {
+          "$ref": "#/definitions/filtro"
+        },
+        "filtro_volta": {
+          "$ref": "#/definitions/filtro"
+        },
+        "mapeamento_multiplo": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "__comment": {
+                "type": "string"
+              },
+              "tupla_ida": {
+                "type": "array",
+                "items": { "$ref": "#/definitions/valores_concatenar" },
+                "minItems": 1
+              },
+              "tupla_volta": {
+                "type": "array",
+                "items": { "$ref": "#/definitions/valores_concatenar" },
+                "minItems": 1
+              },
+              "sentido": {
+                "type": "string",
+                "enum": ["ida", "volta"]
+              }
+            },
+            "required": ["tupla_ida", "tupla_volta"],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        }
+      },
+      "required": ["classe_ida", "classe_volta"],
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "mapeamento_classes": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/mapeamento_classe" }
+    },
+    "mapeamento_atributos": {
+      "description": "Mapeamento de atributos aplicado as feições de todas as classes. Segundo mapeamento a ser realizado.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/mapeamento_atributo" }
+    },
+    "atributos_default_ida": {
+      "description": "Valores default aplicado a todas as classes no mapeamento de ida. Primeiro mapeamento a ser realizado.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/valores" }
+    },
+    "atributos_default_volta": {
+      "description": "Valores default aplicado a todas as classes no mapeamento de volta. Primeiro mapeamento a ser realizado.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/valores" }
+    },
+    "schema_ida": { "type": "string" },
+    "schema_volta": { "type": "string" },
+    "agregar_geom_ida": { "type": "boolean" },
+    "agregar_geom_volta": { "type": "boolean" },
+    "afixo_geom_ida": {
+      "$ref": "#/definitions/afixo"
+    },
+    "afixo_geom_volta": {
+      "$ref": "#/definitions/afixo"
+    },
+    "__comment": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["mapeamento_classes"]
+}
