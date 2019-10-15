@@ -396,7 +396,8 @@ class MasterGen():
             self.addTablesToMetadataDict(
                 metadataDict,
                 item,
-                attributeDomainDict
+                attributeDomainDict,
+                outputDbType
             )
         with open(dest, 'w', encoding='utf-8') as output_json:
             output_json.write(
@@ -413,10 +414,9 @@ class MasterGen():
             )
             domainSpecsDict["refPk"] = "code"
             domainSpecsDict["otherKey"] = "value"
-            domainSpecsDict["values"] = [
-                {valor["code"]:valor["value"]} \
-                    for valor in dominio["valores"]
-            ]
+            domainSpecsDict["values"] = {valor["code"]:valor["value"] \
+                    for valor in dominio["valores"] }
+            
             domainSpecsDict["filterAttr"] = "filtro" \
                 if "valor_filtro" in self.master["dominios"] else None
         return domainTableDict
@@ -432,18 +432,22 @@ class MasterGen():
             auxDict["isMulti"] = True \
                 if "*" in item["cardinalidade"] else False
             if "mapa_valor" in item:
-                auxDict.update(domainTableDict[item["nome"]])
+                auxDict.update(domainTableDict[item["mapa_valor"]])
+            if "valores" in item:
+                auxDict["constraintList"] = [] if "valores" not in item \
+                    else [i["code"] for i in item["valores"]]
             attrDomainDict[item["nome"]] = auxDict
         return attrDomainDict
 
-    def addTablesToMetadataDict(self, metadataDict, item, attributeDomainDict):
+    def addTablesToMetadataDict(self, metadataDict, item, attributeDomainDict, outputDbType):
         for primitiva in item["primitivas"]:
-            table_name = "{category}_{class_name}{geom_suffix}".format(
+            table_name = "{schema}{category}_{class_name}{geom_suffix}".format(
+                schema = '' if outputDbType == self.PostGIS else self.master["schema_dados"]+'_',
                 category=item["categoria"],
                 class_name=item["nome"],
                 geom_suffix=self.master["geom_suffix"][primitiva]
             )
-            metadataDict[table_name]["table_schema"] = self.master["schema_dominios"]
+            metadataDict[table_name]["table_schema"] = self.master["schema_dados"]
             metadataDict[table_name]["table_name"] = table_name
             metadataDict[table_name]["primary_key"] = "id"
             metadataDict[table_name]["geometry_column"] = self.master["nome_geom"]
