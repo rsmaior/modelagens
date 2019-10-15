@@ -360,6 +360,11 @@ class MasterGen():
                 sql.append(u"INSERT into gpkg_contents (table_name, data_type, identifier, description, min_x, min_y, max_x, max_y, srs_id) VALUES ('{0}_{1}', 'features','{0}_{1}', 'Camada {1} da EDGV', NULL, NULL, NULL, NULL, {2});".format(
                     master["schema_dados"], class_name, master["coord_sys"]
                 ))
+                sql.append(u"INSERT into gpkg_ogr_contents (table_name, feature_count) VALUES ('{table_schema}_{table_name}', 0);".format(
+                    table_schema=master["schema_dados"],
+                    table_name=class_name
+                    )
+                )
                 sql.append(u"INSERT into gpkg_geometry_columns VALUES ('{0}_{1}', '{2}', '{3}', {4}, 0, 0 );".format(
                     master["schema_dados"], class_name, master["nome_geom"], primitiva.upper(), master["coord_sys"]
                 ))
@@ -458,11 +463,11 @@ class MasterGen():
 if __name__ == '__main__':
     import os
     outputFolder = 'edgv_3.0'
-    masterFileName = 'masterfile300_dsgtools_v4.json'
+    masterFileName = 'masterfile300_dsgtools.json'
     outputPath = os.path.join(os.path.dirname(__file__), '..', outputFolder)
     masterFile = os.path.join(outputPath, masterFileName)
-    outputFile = os.path.join(outputPath, 'edgv_3_metadataDict.json')
+    outputFile = os.path.join(outputPath, 'edgv3_gpkg.sql')
     mg = MasterGen(masterFile)
-    # x=mg.build_gpkg_SQL(outputFile)
-    x = mg.buildTableMetadataDict(outputFile, outputDbType=MasterGen.GPKG)
+    x=mg.build_gpkg_SQL(outputFile)
+    # x = mg.buildTableMetadataDict(outputFile, outputDbType=MasterGen.GPKG)
     print(x)
