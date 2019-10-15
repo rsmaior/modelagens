@@ -6,6 +6,7 @@ from collections import defaultdict
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 class MasterGen():
+    PostGIS, GPKG, Spatialite = range(3)
     def __init__(self, master_path):
         try:
             with open(master_path) as master_file:
@@ -383,15 +384,81 @@ class MasterGen():
     def build_SHP(self, dest):
         pass
 
-    def buildTableMetadataDict(self, dest):
-        master = self.master
-        domainDict = defaultdict(list)
+    def buildTableMetadataDict(self, dest, outputDbType=PostGIS):
+        schemaSep = "." if outputDbType == self.PostGIS else "_"
+        domainTableDict = self.buildDomainTableDict(schemaSep)
+        metadataDict = defaultdict(dict)
+        for item in self.master["classes"]:
+            attributeDomainDict = self.buildAttributeDomainDict(
+                item["atributos"],
+                domainTableDict
+            )
+            self.addTablesToMetadataDict(
+                metadataDict,
+                item,
+                attributeDomainDict
+            )
+        with open(dest, 'w', encoding='utf-8') as output_json:
+            output_json.write(
+                json.dumps(metadataDict, indent=4, ensure_ascii=False)
+            )
         
 
+    def buildDomainTableDict(self, schemaSep):
+        domainTableDict = defaultdict(dict)
+        for dominio in self.master["dominios"]:
+            domainSpecsDict = domainTableDict[dominio["nome"]]
+            domainSpecsDict["references"] = schemaSep.join(
+                [self.master["schema_dominios"], dominio["nome"]]
+            )
+            domainSpecsDict["refPk"] = "code"
+            domainSpecsDict["otherKey"] = "value"
+            domainSpecsDict["values"] = [
+                {valor["code"]:valor["value"]} \
+                    for valor in dominio["valores"]
+            ]
+            domainSpecsDict["filterAttr"] = "filtro" \
+                if "valor_filtro" in self.master["dominios"] else None
+        return domainTableDict
+    
+    def buildAttributeDomainDict(self, attrList, domainTableDict):
+        attrDomainDict = dict()
+        for item in attrList:
+            auxDict = dict()
+            auxDict["name"] = item["nome"]
+            auxDict["nullable"] = True \
+                if item["cardinalidade"] in ["0..1", "0..*"] else False
+            auxDict["column_type"] = item["tipo"]
+            auxDict["isMulti"] = True \
+                if "*" in item["cardinalidade"] else False
+            if "mapa_valor" in item:
+                auxDict.update(domainTableDict[item["nome"]])
+            attrDomainDict[item["nome"]] = auxDict
+        return attrDomainDict
+
+    def addTablesToMetadataDict(self, metadataDict, item, attributeDomainDict):
+        for primitiva in item["primitivas"]:
+            table_name = "{category}_{class_name}{geom_suffix}".format(
+                category=item["categoria"],
+                class_name=item["nome"],
+                geom_suffix=self.master["geom_suffix"][primitiva]
+            )
+            metadataDict[table_name]["table_schema"] = self.master["schema_dominios"]
+            metadataDict[table_name]["table_name"] = table_name
+            metadataDict[table_name]["primary_key"] = "id"
+            metadataDict[table_name]["geometry_column"] = self.master["nome_geom"]
+            metadataDict[table_name]["gemetry_type"] = primitiva
+            metadataDict[table_name]["columns"] = attributeDomainDict
+            metadataDict[table_name]["sqlFilter"] = None
+
 if __name__ == '__main__':
-    outputPath = '/Users/philipeborba/github_repos/modelagens/edgv_3.0'
-    masterFile = os.path.join(outputPath, 'masterfile300_dsgtools_v4.json')
-    outputFile = os.path.join(outputPath, 'edgv_3_gpkg.sql')
+    import os
+    outputFolder = 'edgv_3.0'
+    masterFileName = 'masterfile300_dsgtools_v4.json'
+    outputPath = os.path.join(os.path.dirname(__file__), '..', outputFolder)
+    masterFile = os.path.join(outputPath, masterFileName)
+    outputFile = os.path.join(outputPath, 'edgv_3_metadataDict.json')
     mg = MasterGen(masterFile)
-    x=mg.build_gpkg_SQL(outputFile)
+    # x=mg.build_gpkg_SQL(outputFile)
+    x = mg.buildTableMetadataDict(outputFile, outputDbType=MasterGen.GPKG)
     print(x)
