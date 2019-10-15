@@ -120,3 +120,7 @@ venv.bak/
 
 *.recover
 
+.DS_Store
+
+.gpkg-shm
+.gpkg-wal
