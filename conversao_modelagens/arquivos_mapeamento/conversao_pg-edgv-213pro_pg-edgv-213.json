@@ -3177,6 +3177,26 @@
         }
       ]
     },
+    {"__comment":"constr_ocupacao_solo <-> area_energia_eletrica",
+      "classe_ida": "constr_ocupacao_solo",
+      "classe_volta": "area_energia_eletrica",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 801
+      },
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaaproximada",
+          "valor": 1
+        }
+      ],
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 801
+        }
+      ]
+    },
     {"__comment":"elemnat_elemento_fisiografico <-> hid_ilha",
       "classe_ida": "elemnat_elemento_fisiografico",
       "classe_volta": "hid_ilha",
