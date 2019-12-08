@@ -1,0 +1,7924 @@
+{
+  "modelo": "EDGV 3.0 Pro",
+  "versao": "0.1",
+  "schema_dados": "edgv",
+  "schema_dominios": "dominios",
+  "a_ser_preenchido": {
+    "code": 9999,
+    "value": "A SER PREENCHIDO"
+  },
+  "atributos_padrao": [
+    {
+      "nome": "observacao",
+      "tipo": "VARCHAR(255)",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    },
+    {
+      "nome": "data_modificacao",
+      "tipo": "timestamp with time zone",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    },
+    {
+      "nome": "controle_id",
+      "tipo": "uuid",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    },
+    {
+      "nome": "usuario_criacao",
+      "tipo": "VARCHAR(255)",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    },
+    {
+      "nome": "usuario_atualizacao",
+      "tipo": "VARCHAR(255)",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    }
+  ],
+  "coord_sys": 31982,
+  "fill_factor": 80,
+  "nome_geom": "geom",
+  "nome_id": "id",
+  "geom_suffix": {
+    "MultiPoint": "_p",
+    "MultiLinestring": "_l",
+    "MultiPolygon": "_a"
+  },
+  "dominios": [
+    {
+      "nome": "administracao",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecida",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Federal",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Estadual",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Municipal",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Particular",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Concessionada",
+          "descricao": "-"
+        },
+        {
+          "code": 97,
+          "value": "Não aplicável",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "booleano",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Sim",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Não",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "booleano_estendido",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Sim",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Não",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "canteiro_divisorio",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Sim",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Não",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "finalidade",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecida",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Tratamento",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Recalque",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Distribuição",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Armazenamento",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "forma_extracao",
+      "valores": [
+        {
+          "code": 5,
+          "value": "A céu aberto",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Subterrânea",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "indice",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Mestra",
+          "descricao":
+            "Curva múltipla do quíntuplo da equidistância empregada, sendo a primeira, a relativa ao nível de referência, de altitude igual a zero."
+        },
+        {
+          "code": 2,
+          "value": "Normal",
+          "descricao":
+            "Curva traçada no intervalo das curvas de nível mestras, sendo múltipla da equidistância empregada."
+        },
+        {
+          "code": 3,
+          "value": "Auxiliar",
+          "descricao":
+            "Curva traçada com o valor adicional de meia equidistância, com o intuito de melhor representar o relevo."
+        }
+      ]
+    },
+    {
+      "nome": "jurisdicao",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecida",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Federal",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Estadual",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Municipal",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Particular",
+          "descricao": "-"
+        },
+        {
+          "code": 97,
+          "value": "Não aplicável",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "material_construcao",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Alvenaria",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Concreto",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Metal",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Rocha",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Madeira",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Arame",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Tela ou alambrado",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Cerca viva",
+          "descricao": "-"
+        },
+        {
+          "code": 23,
+          "value": "Terra",
+          "descricao": "-"
+        },
+        {
+          "code": 97,
+          "value": "Não aplicável",
+          "descricao": "-"
+        },
+        {
+          "code": 98,
+          "value": "Outros",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "modal_uso",
+      "valores": [
+        {
+          "code": 4,
+          "value": "Rodoviário",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Ferroviário",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Metroviário",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Rodoferroviário",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Aeroportuário",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "nr_linhas",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Simples",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Dupla",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Múltipla",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "posicao_pista",
+      "valores": [
+        {
+          "code": 12,
+          "value": "Adjacentes",
+          "descricao": "-"
+        },
+        {
+          "code": 13,
+          "value": "Superpostas",
+          "descricao": "-"
+        },
+        {
+          "code": 97,
+          "value": "Não aplicável",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "posicao_relativa",
+      "valores": [
+        {
+          "code": 2,
+          "value": "Superfície",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Elevado",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Emerso",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Submerso",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Subterrâneo",
+          "descricao": "-"
+        },
+        {
+          "code": 14,
+          "value": "Isolada",
+          "descricao": "-"
+        },
+        {
+          "code": 17,
+          "value": "Adjacente a edificação",
+          "descricao": "-"
+        },
+        {
+          "code": 18,
+          "value": "Sobre edificação",
+          "descricao": "-"
+        },
+        {
+          "code": 97,
+          "value": "Não aplicável",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "referencial_altim",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Torres",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Imbituba",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Santana",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Local",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "referencial_grav",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Postdam 1930",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "IGSN71",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Absoluto",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Local",
+          "descricao": "-"
+        },
+        {
+          "code": 97,
+          "value": "Não aplicável",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "regime",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Permanente",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Temporário",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Seco",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "revestimento",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Leito natural",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Revestimento primário (solto)",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Pavimentado",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Calçado",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "sistema_geodesico",
+      "valores": [
+        {
+          "code": 1,
+          "value": "SAD 69",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "SIRGAS 2000",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "WGS-84",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Córrego Alegre",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Astro Chuá",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "situacao_fisica",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecida",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Abandonada",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Destruída",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Construída",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Em construção",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "situacao_marco",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Bom",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Destruído",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Destruído sem chapa",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Destruído com chapa danificada",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Não encontrado",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Não visitado",
+          "descricao": "-"
+        },
+        {
+          "code": 97,
+          "value": "Não aplicável",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_massa_dagua",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Rio",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Canal",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Oceano",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Baía",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Enseada",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Meando Abandonado",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Lago ou Lagoa",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Laguna",
+          "descricao": "-"
+        },
+        {
+          "code": 10,
+          "value": "Represa/açude com fluxo",
+          "descricao": "-"
+        },
+        {
+          "code": 11,
+          "value": "Represa/açude sem fluxo",
+          "descricao": "-"
+        },
+        {
+          "code": 12,
+          "value": "Vala",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_delimitacao_fisica",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Cerca",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Muro",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_deposito",
+      "valores": [
+        {
+          "code": 108,
+          "value": "Geral - Galpão",
+          "descricao": "-",
+          "valor_filtro": "Depósito geral"
+        },
+        {
+          "code": 109,
+          "value": "Geral - Silo",
+          "descricao": "-",
+          "valor_filtro": "Depósito geral"
+        },
+        {
+          "code": 110,
+          "value": "Geral - Composteira",
+          "descricao": "-",
+          "valor_filtro": "Depósito geral"
+        },
+        {
+          "code": 111,
+          "value": "Geral - Depósito frigorífico",
+          "descricao": "-",
+          "valor_filtro": "Depósito geral"
+        },
+        {
+          "code": 132,
+          "value": "Geral - Armazém",
+          "descricao": "-",
+          "valor_filtro": "Depósito geral"
+        },
+        {
+          "code": 198,
+          "value": "Geral - Outros",
+          "descricao": "-",
+          "valor_filtro": "Depósito geral"
+        },
+        {
+          "code": 201,
+          "value": "Abast água - Tanque de água",
+          "descricao": "-",
+          "valor_filtro": "Depósito de abastecimento de água"
+        },
+        {
+          "code": 202,
+          "value": "Abast água - Caixa de água",
+          "descricao": "-",
+          "valor_filtro": "Depósito de abastecimento de água"
+        },
+        {
+          "code": 203,
+          "value": "Abast água - Cisterna",
+          "descricao": "-",
+          "valor_filtro": "Depósito de abastecimento de água"
+        },
+        {
+          "code": 298,
+          "value": "Abast água - Outros",
+          "descricao": "-",
+          "valor_filtro": "Depósito de abastecimento de água"
+        },
+        {
+          "code": 301,
+          "value": "San - Tanque de saneamento",
+          "descricao": "-",
+          "valor_filtro": "Depósito de saneamento"
+        },
+        {
+          "code": 304,
+          "value": "San - Depósito de lixo",
+          "descricao": "-",
+          "valor_filtro": "Depósito de saneamento"
+        },
+        {
+          "code": 305,
+          "value": "San - Aterro sanitário",
+          "descricao": "-",
+          "valor_filtro": "Depósito de saneamento"
+        },
+        {
+          "code": 306,
+          "value": "San - Aterro controlado",
+          "descricao": "-",
+          "valor_filtro": "Depósito de saneamento"
+        },
+        {
+          "code": 398,
+          "value": "San - Outros",
+          "descricao": "-",
+          "valor_filtro": "Depósito de saneamento"
+        }
+      ],
+      "filtro": true
+    },
+    {
+      "nome": "tipo_edificacao",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Edificação genérica",
+          "descricao": "-",
+          "valor_filtro": "Edificação genérica"
+        },
+        {
+          "code": 1,
+          "value": "Edificação destruída",
+          "descricao": "-",
+          "valor_filtro": "Edificação genérica"
+        },
+        {
+          "code": 2,
+          "value": "Edificação abandonada",
+          "descricao": "-",
+          "valor_filtro": "Edificação genérica"
+        },
+        {
+          "code": 101,
+          "value": "Com - Centro de operações de comunicação",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comunicação"
+        },
+        {
+          "code": 102,
+          "value": "Com - Central de comutação e transmissão",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comunicação"
+        },
+        {
+          "code": 103,
+          "value": "Com - Estação rádio-base",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comunicação"
+        },
+        {
+          "code": 104,
+          "value": "Com - Estação repetidora",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comunicação"
+        },
+        {
+          "code": 201,
+          "value": "Edificação de energia",
+          "descricao": "-",
+          "valor_filtro": "Edificação de energia"
+        },
+        {
+          "code": 301,
+          "value": "Abast - Edificação de captação de água",
+          "descricao": "-",
+          "valor_filtro": "Edificação de abastecimento de água"
+        },
+        {
+          "code": 302,
+          "value": "Abast - Edificação de tratamento de água",
+          "descricao": "-",
+          "valor_filtro": "Edificação de abastecimento de água"
+        },
+        {
+          "code": 303,
+          "value": "Abast - Edificação de recalque de água",
+          "descricao": "-",
+          "valor_filtro": "Edificação de abastecimento de água"
+        },
+        {
+          "code": 395,
+          "value": "Abast - Mista",
+          "descricao": "-",
+          "valor_filtro": "Edificação de abastecimento de água"
+        },
+        {
+          "code": 398,
+          "value": "Abast - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação de abastecimento de água"
+        },
+        {
+          "code": 403,
+          "value": "Saneam - Edificação de recalque de resíduos",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saneamento"
+        },
+        {
+          "code": 405,
+          "value": "Saneam - Edificação de tratamento de esgoto",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saneamento"
+        },
+        {
+          "code": 406,
+          "value": "Saneam - Usina de reciclagem",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saneamento"
+        },
+        {
+          "code": 407,
+          "value": "Saneam - Incinerador de resíduos",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saneamento"
+        },
+        {
+          "code": 498,
+          "value": "Saneam - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saneamento"
+        },
+        {
+          "code": 516,
+          "value": "Ens - Edificação de educação infantil – creche",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 517,
+          "value": "Ens - Edificação de educação infantil - pré-escola",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 518,
+          "value": "Ens - Edificação de ensino fundamental",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 519,
+          "value": "Ens - Edificação de ensino médio",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 520,
+          "value": "Ens - Edificação de educação superior – Graduação",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 521,
+          "value":
+            "Ens - Edificação de educação superior – graduação e pós-graduação",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 522,
+          "value":
+            "Ens - Edificação de educação superior – pós-graduação e extensão",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 523,
+          "value": "Ens - Edificação de educação professional de nível técnico",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 524,
+          "value":
+            "Ens - Edificação de educação profissional de nível tecnológico",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 525,
+          "value": "Ens - Outras atividades de ensino",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 595,
+          "value": "Ens - Misto",
+          "descricao": "-",
+          "valor_filtro": "Edificação de ensino"
+        },
+        {
+          "code": 601,
+          "value": "Rel - Igreja",
+          "descricao": "-",
+          "valor_filtro": "Edificação religiosa"
+        },
+        {
+          "code": 602,
+          "value": "Rel - Templo",
+          "descricao": "-",
+          "valor_filtro": "Edificação religiosa"
+        },
+        {
+          "code": 603,
+          "value": "Rel - Centro religioso",
+          "descricao": "-",
+          "valor_filtro": "Edificação religiosa"
+        },
+        {
+          "code": 604,
+          "value": "Rel - Mosteiro",
+          "descricao": "-",
+          "valor_filtro": "Edificação religiosa"
+        },
+        {
+          "code": 605,
+          "value": "Rel - Convento",
+          "descricao": "-",
+          "valor_filtro": "Edificação religiosa"
+        },
+        {
+          "code": 606,
+          "value": "Rel - Mesquita",
+          "descricao": "-",
+          "valor_filtro": "Edificação religiosa"
+        },
+        {
+          "code": 607,
+          "value": "Rel - Sinagoga",
+          "descricao": "-",
+          "valor_filtro": "Edificação religiosa"
+        },
+        {
+          "code": 698,
+          "value": "Rel - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação religiosa"
+        },
+        {
+          "code": 709,
+          "value": "Tur - Cruzeiro",
+          "descricao": "-",
+          "valor_filtro": "Edificação ou construção turística"
+        },
+        {
+          "code": 710,
+          "value": "Tur - Estátua",
+          "descricao": "-",
+          "valor_filtro": "Edificação ou construção turística"
+        },
+        {
+          "code": 711,
+          "value": "Tur - Mirante",
+          "descricao": "-",
+          "valor_filtro": "Edificação ou construção turística"
+        },
+        {
+          "code": 712,
+          "value": "Tur - Monumento",
+          "descricao": "-",
+          "valor_filtro": "Edificação ou construção turística"
+        },
+        {
+          "code": 713,
+          "value": "Tur - Panteão",
+          "descricao": "-",
+          "valor_filtro": "Edificação ou construção turística"
+        },
+        {
+          "code": 798,
+          "value": "Tur - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação ou construção turística"
+        },
+        {
+          "code": 801,
+          "value": "Laz - Estádio",
+          "descricao": "-",
+          "valor_filtro": "Edificação de lazer"
+        },
+        {
+          "code": 802,
+          "value": "Laz - Ginásio",
+          "descricao": "-",
+          "valor_filtro": "Edificação de lazer"
+        },
+        {
+          "code": 803,
+          "value": "Laz - Museu",
+          "descricao": "-",
+          "valor_filtro": "Edificação de lazer"
+        },
+        {
+          "code": 804,
+          "value": "Laz - Teatro",
+          "descricao": "-",
+          "valor_filtro": "Edificação de lazer"
+        },
+        {
+          "code": 805,
+          "value": "Laz - Anfiteatro",
+          "descricao": "-",
+          "valor_filtro": "Edificação de lazer"
+        },
+        {
+          "code": 806,
+          "value": "Laz - Cinema",
+          "descricao": "-",
+          "valor_filtro": "Edificação de lazer"
+        },
+        {
+          "code": 807,
+          "value": "Laz - Centro cultural",
+          "descricao": "-",
+          "valor_filtro": "Edificação de lazer"
+        },
+        {
+          "code": 808,
+          "value": "Laz - Plataforma de pesca",
+          "descricao": "-",
+          "valor_filtro": "Edificação de lazer"
+        },
+        {
+          "code": 898,
+          "value": "Laz - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação de lazer"
+        },
+        {
+          "code": 903,
+          "value": "Comerc - Centro comercial",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comércio e serviço"
+        },
+        {
+          "code": 904,
+          "value": "Comerc - Mercado",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comércio e serviço"
+        },
+        {
+          "code": 905,
+          "value": "Comerc - Centro de convenções",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comércio e serviço"
+        },
+        {
+          "code": 906,
+          "value": "Comerc - Feira",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comércio e serviço"
+        },
+        {
+          "code": 907,
+          "value": "Comerc - Hotel / motel / pousada",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comércio e serviço"
+        },
+        {
+          "code": 998,
+          "value": "Comerc - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação de comércio e serviço"
+        },
+        {
+          "code": 1015,
+          "value": "Ind - Fabricação alimentícia e bebidas",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1016,
+          "value": "Ind - Fabricação de produtos do fumo",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1017,
+          "value": "Ind - Fabricação de produtos têxteis",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1018,
+          "value": "Ind - Confecção de artigos de vestuário e acessórios",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1019,
+          "value":
+            "Ind - Preparação de couros, artefatos de couro, artigos de viagem e calçados",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1020,
+          "value": "Ind - Fabricação de produtos de madeira e celulose",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1021,
+          "value": "Ind - Fabricação de celulose, papel e produtos de papel",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1022,
+          "value":
+            "Ind - Industria de edição, impressão e reprodução de gravações",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1023,
+          "value":
+            "Ind - Fabricação de coque, refino de petróleo, elaboração de combustíveis nucleares e produção de álcool",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1024,
+          "value": "Ind - Fabricação de produtos químicos",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1025,
+          "value":
+            "Ind - Fabricação de artigos de borracha e material plástico",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1026,
+          "value": "Ind - Fabricação de produtos de minerais não-metálicos",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1027,
+          "value": "Ind - Indústria de metalurgia básica",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1028,
+          "value": "Ind - Fabricação de produtos de metal",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1029,
+          "value": "Ind - Fabricação de máquinas e equipamentos",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1030,
+          "value":
+            "Ind - Fabriação de máquinas de escritório e equipamentos de informática",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1031,
+          "value":
+            "Ind - Fabricação de máquinas, aparelhos e materiais elétricos",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1032,
+          "value":
+            "Ind - Fabricação de material eletrônico, de aparelhos e equipamentos de comunicações",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1033,
+          "value":
+            "Ind - Fabricação de equipamentos de instrumentação médico-hospitalares, instrumentos de precisão e ópticos, automação industrial, cronômetros e relógios",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1034,
+          "value":
+            "Ind - Fabricação e montagem de veículos automotores, reboques e carrocerias",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1035,
+          "value": "Ind - Fabricação de outros equipamentos de transporte",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1036,
+          "value": "Ind - Fabricação de móveis e indústrias diversas",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1037,
+          "value": "Ind - Indústria reciclagem",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1045,
+          "value": "Ind - Indústria de construção",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1098,
+          "value": "Ind - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação industrial"
+        },
+        {
+          "code": 1110,
+          "value": "Ext Min - Extração de carvão mineral",
+          "descricao": "-",
+          "valor_filtro": "Edificação de extração mineral"
+        },
+        {
+          "code": 1111,
+          "value": "Ext Min - Extração de petróleo e serviços relacionados",
+          "descricao": "-",
+          "valor_filtro": "Edificação de extração mineral"
+        },
+        {
+          "code": 1113,
+          "value": "Ext Min - Extração de minerais metálicos",
+          "descricao": "-",
+          "valor_filtro": "Edificação de extração mineral"
+        },
+        {
+          "code": 1114,
+          "value": "Ext Min - Extração de minerais não-metálicos",
+          "descricao": "-",
+          "valor_filtro": "Edificação de extração mineral"
+        },
+        {
+          "code": 1198,
+          "value": "Ext Min - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação de extração mineral"
+        },
+        {
+          "code": 1212,
+          "value": "Agro - Sede operacional de fazenda",
+          "descricao": "-",
+          "valor_filtro": "Edificação agropecuária"
+        },
+        {
+          "code": 1213,
+          "value": "Agro - Aviário",
+          "descricao": "-",
+          "valor_filtro": "Edificação agropecuária"
+        },
+        {
+          "code": 1214,
+          "value": "Agro - Apiário",
+          "descricao": "-",
+          "valor_filtro": "Edificação agropecuária"
+        },
+        {
+          "code": 1215,
+          "value": "Agro - Viveiro de plantas",
+          "descricao": "-",
+          "valor_filtro": "Edificação agropecuária"
+        },
+        {
+          "code": 1216,
+          "value": "Agro - Viveiro para aquicultura",
+          "descricao": "-",
+          "valor_filtro": "Edificação agropecuária"
+        },
+        {
+          "code": 1217,
+          "value": "Agro - Pocilga",
+          "descricao": "-",
+          "valor_filtro": "Edificação agropecuária"
+        },
+        {
+          "code": 1218,
+          "value": "Agro - Curral",
+          "descricao": "-",
+          "valor_filtro": "Edificação agropecuária"
+        },
+        {
+          "code": 1298,
+          "value": "Agro - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação agropecuária"
+        },
+        {
+          "code": 1301,
+          "value": "Pub Civ - Policial",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1302,
+          "value": "Pub Civ - Prisional",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1303,
+          "value": "Pub Civ - Cartorial",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1304,
+          "value": "Pub Civ - Gestão pública",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1305,
+          "value": "Pub Civ - Eleitoral",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1306,
+          "value": "Pub Civ - Produção ou pequisa pública",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1307,
+          "value": "Pub Civ - Seguridade social",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1308,
+          "value": "Pub Civ - Câmara municipal",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1309,
+          "value": "Pub Civ - Assembléia legislativa",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1322,
+          "value": "Pub Civ - Prefeitura",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1398,
+          "value": "Pub Civ - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação pública civil"
+        },
+        {
+          "code": 1401,
+          "value": "Habitacão indigena",
+          "descricao": "-",
+          "valor_filtro": "Habitacão indigena"
+        },
+        {
+          "code": 1501,
+          "value": "Edificação de medição de fenômenos",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1601,
+          "value": "Estação Climatológica Principal",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1602,
+          "value": "Estação Climatológica Auxiliar",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1603,
+          "value": "Estação Agroclimatológica",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1604,
+          "value": "Estação Pluviométrica",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1605,
+          "value": "Estação Eólica",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1606,
+          "value": "Estação Evaporimétrica",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1607,
+          "value": "Estação Solarimétrica",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1608,
+          "value": "Estação de Radar Metereológico",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1609,
+          "value": "Estação de Radiossonda",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1610,
+          "value": "Estação Fluviométrica",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1611,
+          "value": "Estação Maregráfica",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1612,
+          "value": "Estação de Marés Terrestre - Crosta",
+          "descricao": "-",
+          "valor_filtro": "Medição de fenômenos"
+        },
+        {
+          "code": 1712,
+          "value": "Pub Mil - Aquartelamento",
+          "descricao": "-",
+          "valor_filtro": "Edificação militar"
+        },
+        {
+          "code": 1717,
+          "value": "Pub Mil - Hotel de trânsito",
+          "descricao": "-",
+          "valor_filtro": "Edificação militar"
+        },
+        {
+          "code": 1718,
+          "value": "Pub Mil - Delegacia de serviço militar",
+          "descricao": "-",
+          "valor_filtro": "Edificação militar"
+        },
+        {
+          "code": 1719,
+          "value": "Pub Mil - Posto policial militar",
+          "descricao": "-",
+          "valor_filtro": "Edificação militar"
+        },
+        {
+          "code": 1798,
+          "value": "Pub Mil - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação militar"
+        },
+        {
+          "code": 1820,
+          "value": "Pol Rod - Posto polícia rodoviária militar",
+          "descricao": "-",
+          "valor_filtro": "Posto de polícia rodoviária"
+        },
+        {
+          "code": 1821,
+          "value": "Pol Rod - Posto polícia rodoviária federal",
+          "descricao": "-",
+          "valor_filtro": "Posto de polícia rodoviária"
+        },
+        {
+          "code": 1910,
+          "value": "Posto Fisc - Tributação",
+          "descricao": "-",
+          "valor_filtro": "Posto fiscal"
+        },
+        {
+          "code": 1911,
+          "value": "Posto Fisc - Fiscalização",
+          "descricao": "-",
+          "valor_filtro": "Posto fiscal"
+        },
+        {
+          "code": 1995,
+          "value": "Posto Fisc - Misto",
+          "descricao": "-",
+          "valor_filtro": "Posto fiscal"
+        },
+        {
+          "code": 2025,
+          "value": "Sau - Atendimento hospitalar",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saúde"
+        },
+        {
+          "code": 2026,
+          "value": "Sau - Atendimento hospitalar especializado",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saúde"
+        },
+        {
+          "code": 2027,
+          "value":
+            "Sau - Atendimento a urgência e emergências (pronto socorro)",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saúde"
+        },
+        {
+          "code": 2028,
+          "value": "Sau - Atenção ambulatorial (posto e centro de saúde)",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saúde"
+        },
+        {
+          "code": 2029,
+          "value":
+            "Sau - Serviços de complementação diagnóstica ou terapêutica",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saúde"
+        },
+        {
+          "code": 2030,
+          "value":
+            "Sau - Outras atividades relacionadas com a atenção à saúde (instituto de pesquisa)",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saúde"
+        },
+        {
+          "code": 2031,
+          "value": "Sau - Serviços veterinários",
+          "descricao": "-",
+          "valor_filtro": "Edificação de saúde"
+        },
+        {
+          "code": 2132,
+          "value": "SSoc - Alojamento",
+          "descricao": "-",
+          "valor_filtro": "Edificação de serviço social"
+        },
+        {
+          "code": 2133,
+          "value": "SSoc - Serviços sociais",
+          "descricao": "-",
+          "valor_filtro": "Edificação de serviço social"
+        },
+        {
+          "code": 2195,
+          "value": "SSoc - Misto",
+          "descricao": "-",
+          "valor_filtro": "Edificação de serviço social"
+        },
+        {
+          "code": 2208,
+          "value": "Rod - Terminal interestadual",
+          "descricao": "-",
+          "valor_filtro": "Edificação rodoviária"
+        },
+        {
+          "code": 2209,
+          "value": "Rod - Terminal urbano",
+          "descricao": "-",
+          "valor_filtro": "Edificação rodoviária"
+        },
+        {
+          "code": 2210,
+          "value": "Rod - Parada interestadual",
+          "descricao": "-",
+          "valor_filtro": "Edificação rodoviária"
+        },
+        {
+          "code": 2212,
+          "value": "Rod - Posto de pesagem",
+          "descricao": "-",
+          "valor_filtro": "Edificação rodoviária"
+        },
+        {
+          "code": 2213,
+          "value": "Rod - Posto de pedágio",
+          "descricao": "-",
+          "valor_filtro": "Edificação rodoviária"
+        },
+        {
+          "code": 2214,
+          "value": "Rod - Posto de fiscalização rodoviária",
+          "descricao": "-",
+          "valor_filtro": "Edificação rodoviária"
+        },
+        {
+          "code": 2298,
+          "value": "Rod - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação rodoviária"
+        },
+        {
+          "code": 2316,
+          "value": "Ferrov - Estação ferroviária de passageiros",
+          "descricao": "-",
+          "valor_filtro": "Edificação ferroviária ou metroviária"
+        },
+        {
+          "code": 2317,
+          "value": "Ferrov - Estação metroviária",
+          "descricao": "-",
+          "valor_filtro": "Edificação ferroviária ou metroviária"
+        },
+        {
+          "code": 2318,
+          "value": "Ferrov - Terminal ferroviário de cargas",
+          "descricao": "-",
+          "valor_filtro": "Edificação ferroviária ou metroviária"
+        },
+        {
+          "code": 2319,
+          "value": "Ferrov - Terminal ferroviário de passageiros e cargas",
+          "descricao": "-",
+          "valor_filtro": "Edificação ferroviária ou metroviária"
+        },
+        {
+          "code": 2320,
+          "value": "Ferrov - Oficina de manutenção",
+          "descricao": "-",
+          "valor_filtro": "Edificação ferroviária ou metroviária"
+        },
+        {
+          "code": 2398,
+          "value": "Ferrov - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação ferroviária ou metroviária"
+        },
+        {
+          "code": 2426,
+          "value": "Aero - Terminal de passageiros",
+          "descricao": "-",
+          "valor_filtro": "Edificação aeroportuária"
+        },
+        {
+          "code": 2427,
+          "value": "Aero - Terminal de cargas",
+          "descricao": "-",
+          "valor_filtro": "Edificação aeroportuária"
+        },
+        {
+          "code": 2428,
+          "value": "Aero - Torre de controle",
+          "descricao": "-",
+          "valor_filtro": "Edificação aeroportuária"
+        },
+        {
+          "code": 2429,
+          "value": "Aero - Hangar",
+          "descricao": "-",
+          "valor_filtro": "Edificação aeroportuária"
+        },
+        {
+          "code": 2498,
+          "value": "Aero - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação aeroportuária"
+        },
+        {
+          "code": 2526,
+          "value": "Port - Terminal de passageiros",
+          "descricao": "-",
+          "valor_filtro": "Edificação portuária"
+        },
+        {
+          "code": 2527,
+          "value": "Port - Terminal de cargas",
+          "descricao": "-",
+          "valor_filtro": "Edificação portuária"
+        },
+        {
+          "code": 2533,
+          "value": "Port - Estaleiro",
+          "descricao": "-",
+          "valor_filtro": "Edificação portuária"
+        },
+        {
+          "code": 2534,
+          "value": "Port - Dique de estaleiro",
+          "descricao": "-",
+          "valor_filtro": "Edificação portuária"
+        },
+        {
+          "code": 2535,
+          "value": "Port - Rampa portuária",
+          "descricao": "-",
+          "valor_filtro": "Edificação portuária"
+        },
+        {
+          "code": 2536,
+          "value": "Port - Carreira portuária",
+          "descricao": "-",
+          "valor_filtro": "Edificação portuária"
+        },
+        {
+          "code": 2598,
+          "value": "Port - Outros",
+          "descricao": "-",
+          "valor_filtro": "Edificação portuária"
+        },
+        {
+          "code": 2601,
+          "value": "Posto de combustivel",
+          "descricao": "-",
+          "valor_filtro": "Posto de combustivel"
+        },
+        {
+          "code": 2701,
+          "value": "Edificação habitacional",
+          "descricao": "-",
+          "valor_filtro": "Edificação habitacional"
+        }
+      ],
+      "filtro": true
+    },
+    {
+      "nome": "tipo_elemento_fisiografico",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Serra",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Morro",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Montanha",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Chapada",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Maciço",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Planalto",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Planície",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Escarpa",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Península",
+          "descricao": "-"
+        },
+        {
+          "code": 10,
+          "value": "Ponta",
+          "descricao": "-"
+        },
+        {
+          "code": 11,
+          "value": "Cabo",
+          "descricao": "-"
+        },
+        {
+          "code": 12,
+          "value": "Praia",
+          "descricao": "-"
+        },
+        {
+          "code": 13,
+          "value": "Falésia",
+          "descricao": "-"
+        },
+        {
+          "code": 14,
+          "value": "Talude",
+          "descricao": "-"
+        },
+        {
+          "code": 15,
+          "value": "Dolina",
+          "descricao": "-"
+        },
+        {
+          "code": 16,
+          "value": "Duna",
+          "descricao": "-"
+        },
+        {
+          "code": 17,
+          "value": "Pico",
+          "descricao": "-"
+        },
+        {
+          "code": 19,
+          "value": "Gruta",
+          "descricao": "-"
+        },
+        {
+          "code": 20,
+          "value": "Caverna",
+          "descricao": "-"
+        },
+        {
+          "code": 21,
+          "value": "Rocha - Matacão/pedra",
+          "descricao": "-"
+        },
+        {
+          "code": 22,
+          "value": "Rocha - Penedo isolado",
+          "descricao": "-"
+        },
+        {
+          "code": 23,
+          "value": "Rocha - Area rochosa/lajedo",
+          "descricao": "-"
+        },
+        {
+          "code": 24,
+          "value": "Caixa de empréstimo",
+          "descricao": "-"
+        },
+        {
+          "code": 25,
+          "value": "Área aterrada",
+          "descricao": "-"
+        },
+        {
+          "code": 26,
+          "value": "Corte",
+          "descricao": "-"
+        },
+        {
+          "code": 27,
+          "value": "Aterro",
+          "descricao": "-"
+        },
+        {
+          "code": 28,
+          "value": "Resíduo de bota-fora",
+          "descricao": "-"
+        },
+        {
+          "code": 29,
+          "value": "Resíduo sólido em geral",
+          "descricao": "-"
+        },
+        {
+          "code": 30,
+          "value": "Ilha Fluvial",
+          "descricao": "-"
+        },
+        {
+          "code": 31,
+          "value": "Ilha Marítima",
+          "descricao": "-"
+        },
+        {
+          "code": 32,
+          "value": "Ilha Lacustre",
+          "descricao": "-"
+        },
+        {
+          "code": 33,
+          "value": "Ilha Mista",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_elemento_hidrografico",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Poço dágua",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Poço artesiano",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Olho dágua",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Sumidouro",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Vertedouro",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Foz marítima",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Nascente",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Rocha em água",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Cachoeira",
+          "descricao": "-"
+        },
+        {
+          "code": 10,
+          "value": "Salto",
+          "descricao": "-"
+        },
+        {
+          "code": 11,
+          "value": "Catarata",
+          "descricao": "-"
+        },
+        {
+          "code": 12,
+          "value": "Corredeira",
+          "descricao": "-"
+        },
+        {
+          "code": 13,
+          "value": "Terreno sujeito a inundação",
+          "descricao": "-"
+        },
+        {
+          "code": 14,
+          "value": "Banco de areia fluvial",
+          "descricao": "-"
+        },
+        {
+          "code": 15,
+          "value": "Banco de areia marítimo",
+          "descricao": "-"
+        },
+        {
+          "code": 16,
+          "value": "Banco de areia lacustre",
+          "descricao": "-"
+        },
+        {
+          "code": 17,
+          "value": "Banco de areia cordão arenoso",
+          "descricao": "-"
+        },
+        {
+          "code": 18,
+          "value": "Recife contiguo",
+          "descricao": "-"
+        },
+        {
+          "code": 19,
+          "value": "Recife afastado",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_elemento_infraestrutura",
+      "valores": [
+        {
+          "code": 201,
+          "value": "Condutor hídrico – calha",
+          "descricao": "-",
+          "valor_filtro": "Condutor Hídrico"
+        },
+        {
+          "code": 202,
+          "value": "Condutor hídrico – tubulação",
+          "descricao": "-",
+          "valor_filtro": "Condutor Hídrico"
+        },
+        {
+          "code": 302,
+          "value": "Linha de distribuição de energia",
+          "descricao": "-",
+          "valor_filtro": "Linha de energia"
+        },
+        {
+          "code": 303,
+          "value": "Linha de transmissão de energia",
+          "descricao": "-",
+          "valor_filtro": "Linha de energia"
+        },
+        {
+          "code": 405,
+          "value": "Estação geradora - Eólica",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 406,
+          "value": "Estação geradora - Solar",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 407,
+          "value": "Estação geradora - Maré-motriz",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 408,
+          "value": "Estação geradora - Hidrelétrica",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 409,
+          "value": "Estação geradora - Termelétrica nuclear",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 410,
+          "value": "Estação geradora - Termelétrica a carvão",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 411,
+          "value": "Estação geradora - Termelétrica a diesel",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 412,
+          "value": "Estação geradora - Termelétrica a gás",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 495,
+          "value": "Estação geradora - Mista",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 498,
+          "value": "Estação geradora - Outras",
+          "descricao": "-",
+          "valor_filtro": "Estação geradora de energia"
+        },
+        {
+          "code": 601,
+          "value": "Grupo de transformadores",
+          "descricao": "-",
+          "valor_filtro": "Grupo de transformadores"
+        },
+        {
+          "code": 701,
+          "value": "Quebramar",
+          "descricao": "-",
+          "valor_filtro": "Quebramar"
+        },
+        {
+          "code": 801,
+          "value": "Molhe",
+          "descricao": "-",
+          "valor_filtro": "Molhe"
+        },
+        {
+          "code": 901,
+          "value": "Comporta",
+          "descricao": "-",
+          "valor_filtro": "Comporta"
+        },
+        {
+          "code": 1001,
+          "value": "Eclusa",
+          "descricao": "-",
+          "valor_filtro": "Eclusa"
+        },
+        {
+          "code": 1101,
+          "value": "Barragem",
+          "descricao": "-",
+          "valor_filtro": "Barragem"
+        },
+        {
+          "code": 1201,
+          "value": "Torre de comunicação",
+          "descricao": "-",
+          "valor_filtro": "Torre de comunicação"
+        },
+        {
+          "code": 1301,
+          "value": "Antena de comunicação",
+          "descricao": "-",
+          "valor_filtro": "Antena de comunicação"
+        },
+        {
+          "code": 1401,
+          "value": "Torre de energia",
+          "descricao": "-",
+          "valor_filtro": "Torre de energia"
+        },
+        {
+          "code": 1501,
+          "value": "Galeria ou bueiro",
+          "descricao": "-",
+          "valor_filtro": "Galeria ou bueiro"
+        },
+        {
+          "code": 1601,
+          "value": "Equip agro - Pivô central",
+          "descricao": "-",
+          "valor_filtro": "Equipamento agropecuário"
+        },
+        {
+          "code": 1698,
+          "value": "Equip agro - Outros",
+          "descricao": "-",
+          "valor_filtro": "Equipamento agropecuário"
+        },
+        {
+          "code": 1700,
+          "value": "Duto - Desconhecido",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1701,
+          "value": "Duto - Água",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1702,
+          "value": "Duto - Óleo",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1703,
+          "value": "Duto - Gasolina",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1704,
+          "value": "Duto - Álcool",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1705,
+          "value": "Duto - Querosene",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1706,
+          "value": "Duto - Petróleo",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1707,
+          "value": "Duto - Nafta",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1708,
+          "value": "Duto - Gás",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1709,
+          "value": "Duto - Efluentes",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1710,
+          "value": "Duto - Esgoto",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1798,
+          "value": "Duto - Outros",
+          "descricao": "-",
+          "valor_filtro": "Duto"
+        },
+        {
+          "code": 1801,
+          "value": "Calha - Água pluvial",
+          "descricao": "-",
+          "valor_filtro": "Calha"
+        },
+        {
+          "code": 1901,
+          "value": "Correia transp - Minério",
+          "descricao": "-",
+          "valor_filtro": "Correia transportadora"
+        },
+        {
+          "code": 1902,
+          "value": "Correia transp - Grãos",
+          "descricao": "-",
+          "valor_filtro": "Correia transportadora"
+        },
+        {
+          "code": 1998,
+          "value": "Correia transp - Outros",
+          "descricao": "-",
+          "valor_filtro": "Correia transportadora"
+        }
+      ],
+      "filtro": true
+    },
+    {
+      "nome": "tipo_elemento_transportes",
+      "valores": [
+        {
+          "code": 101,
+          "value": "Passagem de nível",
+          "descricao": "-",
+          "valor_filtro": "Passagem de nível"
+        },
+        {
+          "code": 238,
+          "value": "Atrac - Cais",
+          "descricao": "-",
+          "valor_filtro": "Atracadouro"
+        },
+        {
+          "code": 239,
+          "value": "Atrac - Cais flutuante",
+          "descricao": "-",
+          "valor_filtro": "Atracadouro"
+        },
+        {
+          "code": 240,
+          "value": "Atrac - Trapiche",
+          "descricao": "-",
+          "valor_filtro": "Atracadouro"
+        },
+        {
+          "code": 241,
+          "value": "Atrac - Molhe de atracação",
+          "descricao": "-",
+          "valor_filtro": "Atracadouro"
+        },
+        {
+          "code": 242,
+          "value": "Atrac - Pier",
+          "descricao": "-",
+          "valor_filtro": "Atracadouro"
+        },
+        {
+          "code": 243,
+          "value": "Atrac - Dolfim",
+          "descricao": "-",
+          "valor_filtro": "Atracadouro"
+        },
+        {
+          "code": 244,
+          "value": "Atrac - Desembarcadouro",
+          "descricao": "-",
+          "valor_filtro": "Atracadouro"
+        },
+        {
+          "code": 302,
+          "value": "Entroncamento - Círculo rodoviário",
+          "descricao": "-",
+          "valor_filtro": "Entroncamento"
+        },
+        {
+          "code": 303,
+          "value": "Entroncamento - Trevo rodoviário",
+          "descricao": "-",
+          "valor_filtro": "Entroncamento"
+        },
+        {
+          "code": 304,
+          "value": "Entroncamento - Rótula",
+          "descricao": "-",
+          "valor_filtro": "Entroncamento"
+        },
+        {
+          "code": 404,
+          "value": "Sinalização - Farol ou farolete",
+          "descricao": "-",
+          "valor_filtro": "Sinalização"
+        },
+        {
+          "code": 501,
+          "value": "Ciclovia",
+          "descricao": "-",
+          "valor_filtro": "Ciclovia"
+        },
+        {
+          "code": 607,
+          "value": "Pedestre - Passagem subterrânea",
+          "descricao": "-",
+          "valor_filtro": "Travessia de pedestre"
+        },
+        {
+          "code": 608,
+          "value": "Pedestre - Passarela",
+          "descricao": "-",
+          "valor_filtro": "Travessia de pedestre"
+        },
+        {
+          "code": 609,
+          "value": "Pedestre - Pinguela",
+          "descricao": "-",
+          "valor_filtro": "Travessia de pedestre"
+        },
+        {
+          "code": 701,
+          "value": "Girador ferroviário",
+          "descricao": "-",
+          "valor_filtro": "Girador ferroviário"
+        },
+        {
+          "code": 801,
+          "value": "Caminho aéreo - Teleférico",
+          "descricao": "-",
+          "valor_filtro": "Caminho aéreo"
+        },
+        {
+          "code": 898,
+          "value": "Caminho aéreo - Outros",
+          "descricao": "-",
+          "valor_filtro": "Caminho aéreo"
+        },
+        {
+          "code": 901,
+          "value": "Funicular",
+          "descricao": "-",
+          "valor_filtro": "Funicular"
+        },
+        {
+          "code": 1001,
+          "value": "Cremalheira",
+          "descricao": "-",
+          "valor_filtro": "Cremalheira"
+        },
+        {
+          "code": 1101,
+          "value": "Fundeadouro",
+          "descricao": "-",
+          "valor_filtro": "Fundeadouro"
+        },
+        {
+          "code": 1201,
+          "value": "Obstáculo de navegação",
+          "descricao": "-",
+          "valor_filtro": "Obstáculo de navegação"
+        },
+        {
+          "code": 1300,
+          "value": "Plataforma desconhecida",
+          "descricao": "-",
+          "valor_filtro": "Plataforma"
+        },
+        {
+          "code": 1301,
+          "value": "Plataforma Petróleo",
+          "descricao": "-",
+          "valor_filtro": "Plataforma"
+        },
+        {
+          "code": 1302,
+          "value": "Plataforma gás",
+          "descricao": "-",
+          "valor_filtro": "Plataforma"
+        },
+        {
+          "code": 1395,
+          "value": "Plataforma mista",
+          "descricao": "-",
+          "valor_filtro": "Plataforma"
+        },
+        {
+          "code": 1401,
+          "value": "Trecho hidroviário",
+          "descricao": "-",
+          "valor_filtro": "Trecho hidroviário"
+        }
+      ],
+      "filtro": true
+    },
+    {
+      "nome": "tipo_elemento_viario",
+      "valores": [
+        {
+          "code": 101,
+          "value": "Túnel",
+          "descricao": "-",
+          "valor_filtro": "Túnel"
+        },
+        {
+          "code": 102,
+          "value": "Túnel - Passagem subterrânea sob via",
+          "descricao": "-",
+          "valor_filtro": "Túnel"
+        },
+        {
+          "code": 201,
+          "value": "Ponte móvel",
+          "descricao": "-",
+          "valor_filtro": "Ponte"
+        },
+        {
+          "code": 202,
+          "value": "Ponte pênsil",
+          "descricao": "-",
+          "valor_filtro": "Ponte"
+        },
+        {
+          "code": 203,
+          "value": "Ponte fixa",
+          "descricao": "-",
+          "valor_filtro": "Ponte"
+        },
+        {
+          "code": 301,
+          "value": "Passagem elevada",
+          "descricao": "-",
+          "valor_filtro": "Passagem elevada / Viaduto"
+        },
+        {
+          "code": 302,
+          "value": "Viaduto",
+          "descricao": "-",
+          "valor_filtro": "Passagem elevada / Viaduto"
+        },
+        {
+          "code": 401,
+          "value": "Travessia - Vau natural",
+          "descricao": "-",
+          "valor_filtro": "Travessia"
+        },
+        {
+          "code": 402,
+          "value": "Travessia - Vau construído",
+          "descricao": "-",
+          "valor_filtro": "Travessia"
+        },
+        {
+          "code": 403,
+          "value": "Travessia - Bote transportador",
+          "descricao": "-",
+          "valor_filtro": "Travessia"
+        },
+        {
+          "code": 404,
+          "value": "Travessia - Balsa",
+          "descricao": "-",
+          "valor_filtro": "Travessia"
+        }
+      ],
+      "filtro": true
+    },
+    {
+      "nome": "tipo_exposicao",
+      "valores": [
+        {
+          "code": 3,
+          "value": "Fechado",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Coberto",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Céu aberto",
+          "descricao": "-"
+        },
+        {
+          "code": 97,
+          "value": "Não aplicável",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_extracao_mineral",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Poço",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Mina",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Garimpo",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Salina",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Pedreira",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Ponto de prospecção",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_ferrovia",
+      "valores": [
+        {
+          "code": 5,
+          "value": "Bonde",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Aeromóvel",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Trem",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Metrô",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_limite_especial",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Terra pública",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Terra indígena",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Quilombo",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Assentamento rural",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Área de preservação permanente",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Reserva legal",
+          "descricao": "-"
+        },
+        {
+          "code": 10,
+          "value": "Mosaico",
+          "descricao": "-"
+        },
+        {
+          "code": 11,
+          "value": "Distrito florestal",
+          "descricao": "-"
+        },
+        {
+          "code": 12,
+          "value": "Corredor ecológico",
+          "descricao": "-"
+        },
+        {
+          "code": 13,
+          "value": "Floresta pública",
+          "descricao": "-"
+        },
+        {
+          "code": 14,
+          "value": "Sítios RAMSAR",
+          "descricao": "-"
+        },
+        {
+          "code": 15,
+          "value": "Sítios do patrimônio",
+          "descricao": "-"
+        },
+        {
+          "code": 16,
+          "value": "Reserva da biosfera",
+          "descricao": "-"
+        },
+        {
+          "code": 24,
+          "value": "Área de Proteção Ambiental – APA",
+          "descricao": "-"
+        },
+        {
+          "code": 25,
+          "value": "Área de Relevante Interesse Ecológico – ARIE",
+          "descricao": "-"
+        },
+        {
+          "code": 26,
+          "value": "Floresta – FLO",
+          "descricao": "-"
+        },
+        {
+          "code": 27,
+          "value": "Reserva de Desenvolvimento Sustentável – RDS",
+          "descricao": "-"
+        },
+        {
+          "code": 28,
+          "value": "Reserva Extrativista – RESEX",
+          "descricao": "-"
+        },
+        {
+          "code": 29,
+          "value": "Reserva de Fauna – REFAU",
+          "descricao": "-"
+        },
+        {
+          "code": 30,
+          "value": "Reserva Particular do Patrimônio Natural – RPPN",
+          "descricao": "-"
+        },
+        {
+          "code": 31,
+          "value": "Estação Ecológica – ESEC",
+          "descricao": "-"
+        },
+        {
+          "code": 32,
+          "value": "Parque – PAR",
+          "descricao": "-"
+        },
+        {
+          "code": 33,
+          "value": "Monumento Natural – MONA",
+          "descricao": "-"
+        },
+        {
+          "code": 34,
+          "value": "Reserva Biológica – REBIO",
+          "descricao": "-"
+        },
+        {
+          "code": 35,
+          "value": "Refúgio de Vida Silvestre – RVS",
+          "descricao": "-"
+        },
+        {
+          "code": 36,
+          "value": "Área militar",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_limite_legal",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Limite Internacional",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Limite Estadual",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Limite Municipal",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "País",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Unidade federacao",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Municipio",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Distrito",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Sub distrito",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Região administrativa",
+          "descricao": "-"
+        },
+        {
+          "code": 10,
+          "value": "Bairro",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_linha_limites",
+      "valores": [
+        {
+          "code": 2,
+          "value": "Contorno massa dágua",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Cumeada",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Linha seca",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Costa visível da carta",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Rodovia",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Ferrovia",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Trecho de drenagem",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Massa dágua",
+          "descricao": "-"
+        },
+        {
+          "code": 96,
+          "value": "Não identificado",
+          "descricao": "-"
+        },
+        {
+          "code": 97,
+          "value": "Não aplicável",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_localidade",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Cidade",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Capital estadual",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Capital federal",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Vila",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Aglomerado rural isolado – Núcleo",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Aglomerado rural isolado – Povoado",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Outros aglomerados rurais – Lugarejo",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Nome local",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Bairro",
+          "descricao": "-"
+        },
+        {
+          "code": 10,
+          "value": "Praça",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_ocupacao_solo",
+      "valores": [
+        {
+          "code": 101,
+          "value": "Cemitério - Crematório",
+          "descricao": "-",
+          "valor_filtro": "Cemitério"
+        },
+        {
+          "code": 102,
+          "value": "Cemitério Parque",
+          "descricao": "-",
+          "valor_filtro": "Cemitério"
+        },
+        {
+          "code": 103,
+          "value": "Cemitério Vertical",
+          "descricao": "-",
+          "valor_filtro": "Cemitério"
+        },
+        {
+          "code": 104,
+          "value": "Cemitério Comum",
+          "descricao": "-",
+          "valor_filtro": "Cemitério"
+        },
+        {
+          "code": 105,
+          "value": "Cemitério - Túmulo isolado",
+          "descricao": "-",
+          "valor_filtro": "Cemitério"
+        },
+        {
+          "code": 201,
+          "value": "Campo/Quadra de futebol",
+          "descricao": "-",
+          "valor_filtro": "Campo ou quadra"
+        },
+        {
+          "code": 202,
+          "value": "Campo/Quadra de basquete",
+          "descricao": "-",
+          "valor_filtro": "Campo ou quadra"
+        },
+        {
+          "code": 203,
+          "value": "Campo/Quadra de vôlei",
+          "descricao": "-",
+          "valor_filtro": "Campo ou quadra"
+        },
+        {
+          "code": 204,
+          "value": "Campo/Quadra de pólo",
+          "descricao": "-",
+          "valor_filtro": "Campo ou quadra"
+        },
+        {
+          "code": 205,
+          "value": "Campo/Quadra de hipismo",
+          "descricao": "-",
+          "valor_filtro": "Campo ou quadra"
+        },
+        {
+          "code": 206,
+          "value": "Campo/Quadra poliesportiva",
+          "descricao": "-",
+          "valor_filtro": "Campo ou quadra"
+        },
+        {
+          "code": 207,
+          "value": "Campo/Quadra de tênis",
+          "descricao": "-",
+          "valor_filtro": "Campo ou quadra"
+        },
+        {
+          "code": 298,
+          "value": "Campo/Quadra - Outras quadras esportivas",
+          "descricao": "-",
+          "valor_filtro": "Campo ou quadra"
+        },
+        {
+          "code": 301,
+          "value": "Pista de atletismo",
+          "descricao": "-",
+          "valor_filtro": "Pista competição"
+        },
+        {
+          "code": 302,
+          "value": "Pista de ciclismo",
+          "descricao": "-",
+          "valor_filtro": "Pista competição"
+        },
+        {
+          "code": 303,
+          "value": "Pista de motociclismo",
+          "descricao": "-",
+          "valor_filtro": "Pista competição"
+        },
+        {
+          "code": 304,
+          "value": "Pista de automobilismo",
+          "descricao": "-",
+          "valor_filtro": "Pista competição"
+        },
+        {
+          "code": 305,
+          "value": "Pista de corrida de cavalos",
+          "descricao": "-",
+          "valor_filtro": "Pista competição"
+        },
+        {
+          "code": 398,
+          "value": "Pista - Outras pistas de competição",
+          "descricao": "-",
+          "valor_filtro": "Pista competição"
+        },
+        {
+          "code": 404,
+          "value": "Pátio rodoviário",
+          "descricao": "-",
+          "valor_filtro": "Pátio"
+        },
+        {
+          "code": 405,
+          "value": "Pátio ferroviário",
+          "descricao": "-",
+          "valor_filtro": "Pátio"
+        },
+        {
+          "code": 406,
+          "value": "Pátio metroviário",
+          "descricao": "-",
+          "valor_filtro": "Pátio"
+        },
+        {
+          "code": 409,
+          "value": "Pátio aeroportuário",
+          "descricao": "-",
+          "valor_filtro": "Pátio"
+        },
+        {
+          "code": 414,
+          "value": "Pátio portuário",
+          "descricao": "-",
+          "valor_filtro": "Pátio"
+        },
+        {
+          "code": 495,
+          "value": "Pátio misto",
+          "descricao": "-",
+          "valor_filtro": "Pátio"
+        },
+        {
+          "code": 501,
+          "value": "Piscina",
+          "descricao": "-",
+          "valor_filtro": "Piscina"
+        },
+        {
+          "code": 601,
+          "value": "Area de ruinas",
+          "descricao": "-",
+          "valor_filtro": "Area de ruinas"
+        },
+        {
+          "code": 701,
+          "value": "Ruina",
+          "descricao": "-",
+          "valor_filtro": "Ruina"
+        },
+        {
+          "code": 801,
+          "value": "Area de energia",
+          "descricao": "-",
+          "valor_filtro": "Area de energia"
+        }
+      ],
+      "filtro": true
+    },
+    {
+      "nome": "tipo_pista_pouso",
+      "valores": [
+        {
+          "code": 9,
+          "value": "Pista de pouso",
+          "descricao": "-"
+        },
+        {
+          "code": 10,
+          "value": "Pista de táxi",
+          "descricao": "-"
+        },
+        {
+          "code": 11,
+          "value": "Heliponto",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_produto_residuo",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Água",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Petróleo",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Gás",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Grãos",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Esgoto",
+          "descricao": "-"
+        },
+        {
+          "code": 12,
+          "value": "Lixo domiciliar e comercial",
+          "descricao": "-"
+        },
+        {
+          "code": 13,
+          "value": "Lixo tóxico",
+          "descricao": "-"
+        },
+        {
+          "code": 14,
+          "value": "Lixo séptico",
+          "descricao": "-"
+        },
+        {
+          "code": 15,
+          "value": "Chorume",
+          "descricao": "-"
+        },
+        {
+          "code": 16,
+          "value": "Vinhoto",
+          "descricao": "-"
+        },
+        {
+          "code": 17,
+          "value": "Estrume",
+          "descricao": "-"
+        },
+        {
+          "code": 18,
+          "value": "Cascalho",
+          "descricao": "-"
+        },
+        {
+          "code": 19,
+          "value": "Semente",
+          "descricao": "-"
+        },
+        {
+          "code": 20,
+          "value": "Inseticida",
+          "descricao": "-"
+        },
+        {
+          "code": 21,
+          "value": "Folhagens",
+          "descricao": "-"
+        },
+        {
+          "code": 22,
+          "value": "Pedra (brita)",
+          "descricao": "-"
+        },
+        {
+          "code": 23,
+          "value": "Granito",
+          "descricao": "-"
+        },
+        {
+          "code": 24,
+          "value": "Mármore",
+          "descricao": "-"
+        },
+        {
+          "code": 25,
+          "value": "Bauxita",
+          "descricao": "-"
+        },
+        {
+          "code": 26,
+          "value": "Manganês",
+          "descricao": "-"
+        },
+        {
+          "code": 27,
+          "value": "Talco",
+          "descricao": "-"
+        },
+        {
+          "code": 28,
+          "value": "Óleo diesel",
+          "descricao": "-"
+        },
+        {
+          "code": 29,
+          "value": "Gasolina",
+          "descricao": "-"
+        },
+        {
+          "code": 30,
+          "value": "Álcool",
+          "descricao": "-"
+        },
+        {
+          "code": 31,
+          "value": "Querosene",
+          "descricao": "-"
+        },
+        {
+          "code": 32,
+          "value": "Cobre",
+          "descricao": "-"
+        },
+        {
+          "code": 33,
+          "value": "Carvão mineral",
+          "descricao": "-"
+        },
+        {
+          "code": 34,
+          "value": "Sal",
+          "descricao": "-"
+        },
+        {
+          "code": 35,
+          "value": "Ferro",
+          "descricao": "-"
+        },
+        {
+          "code": 36,
+          "value": "Escória",
+          "descricao": "-"
+        },
+        {
+          "code": 37,
+          "value": "Ouro",
+          "descricao": "-"
+        },
+        {
+          "code": 38,
+          "value": "Diamante",
+          "descricao": "-"
+        },
+        {
+          "code": 39,
+          "value": "Prata",
+          "descricao": "-"
+        },
+        {
+          "code": 40,
+          "value": "Pedras preciosas",
+          "descricao": "-"
+        },
+        {
+          "code": 41,
+          "value": "Forragem",
+          "descricao": "-"
+        },
+        {
+          "code": 42,
+          "value": "Areia",
+          "descricao": "-"
+        },
+        {
+          "code": 43,
+          "value": "Saibro ou piçarra",
+          "descricao": "-"
+        },
+        {
+          "code": 95,
+          "value": "Misto",
+          "descricao": "-"
+        },
+        {
+          "code": 98,
+          "value": "Outros",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_pto",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Vértice de Triangulação – VT",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Referëncia de Nível – RN",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Estação Gravimétrica – EG",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Estação de Poligonal – EP",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Ponto Astronômico – PA",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Ponto Barométrico – B",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Ponto Trigonométrico – RV",
+          "descricao": "-"
+        },
+        {
+          "code": 8,
+          "value": "Ponto de Satélite – SAT",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Ponto de controle",
+          "descricao": "-"
+        },
+        {
+          "code": 12,
+          "value": "Centro perspectivo",
+          "descricao": "-"
+        },
+        {
+          "code": 13,
+          "value": "Ponto fotogramétrico",
+          "descricao": "-"
+        },
+        {
+          "code": 14,
+          "value": "Marco internacional",
+          "descricao": "-"
+        },
+        {
+          "code": 15,
+          "value": "Marco estadual",
+          "descricao": "-"
+        },
+        {
+          "code": 16,
+          "value": "Marco municipal",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_ref",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Altimétrico",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Planimétrico",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Planialtimétrico",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Gravimétrico",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_trecho_drenagem",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Rio",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Canal",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Fundo de vale",
+          "descricao": "-"
+        },
+        {
+          "code": 11,
+          "value": "Vala",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_hid",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Rio",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Canal",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Oceano",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Baía",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Enseada",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Meando Abandonado",
+          "descricao": "-"
+        },
+        {
+          "code": 7,
+          "value": "Lago ou Lagoa",
+          "descricao": "-"
+        },
+        {
+          "code": 9,
+          "value": "Laguna",
+          "descricao": "-"
+        },
+        {
+          "code": 10,
+          "value": "Represa",
+          "descricao": "-"
+        },
+        {
+          "code": 11,
+          "value": "Açude",
+          "descricao": "-"
+        },
+        {
+          "code": 12,
+          "value": "Terreno Sujeito a Inundação",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "tipo_veg",
+      "valores": [
+        {
+          "code": 102,
+          "value": "Cult - Banana",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 103,
+          "value": "Cult - Laranja",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 107,
+          "value": "Cult - Cana de açúcar",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 114,
+          "value": "Cult - Café",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 115,
+          "value": "Cult - Cacau",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 116,
+          "value": "Cult - Erva-mate",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 117,
+          "value": "Cult - Palmeira",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 118,
+          "value": "Cult - Açaí cultivado",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 119,
+          "value": "Cult - Seringueira",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 124,
+          "value": "Cult - Pastagem cultivada",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 142,
+          "value": "Cult - Videira",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 150,
+          "value": "Cult - Arroz de inundação",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 151,
+          "value": "Cult - Maçã",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 152,
+          "value": "Cult - Pêssego",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 153,
+          "value": "Cult - Pera",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 194,
+          "value": "Cult - Perene não identificado",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 195,
+          "value": "Cult - Perene misto",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 196,
+          "value": "Cult - Anual não identificado",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 198,
+          "value": "Cult - Perene outros",
+          "descricao": "-",
+          "valor_filtro": "Vegetação Cultivada"
+        },
+        {
+          "code": 201,
+          "value": "Mangue arbóreo",
+          "descricao": "-",
+          "valor_filtro": "Mangue"
+        },
+        {
+          "code": 202,
+          "value": "Mangue arbustivo",
+          "descricao": "-",
+          "valor_filtro": "Mangue"
+        },
+        {
+          "code": 301,
+          "value": "Brejo/pântano arbóreo",
+          "descricao": "-",
+          "valor_filtro": "Brejo ou pântano"
+        },
+        {
+          "code": 302,
+          "value": "Brejo/pântano arbustivo",
+          "descricao": "-",
+          "valor_filtro": "Brejo ou pântano"
+        },
+        {
+          "code": 401,
+          "value": "Restinga",
+          "descricao": "-",
+          "valor_filtro": "Restinga"
+        },
+        {
+          "code": 501,
+          "value": "Campinarana",
+          "descricao": "-",
+          "valor_filtro": "Campinarana"
+        },
+        {
+          "code": 601,
+          "value": "Floresta",
+          "descricao": "-",
+          "valor_filtro": "Floresta"
+        },
+        {
+          "code": 701,
+          "value": "Cerrado/Cerradão arbóreo",
+          "descricao": "-",
+          "valor_filtro": "Cerrado/Cerradão"
+        },
+        {
+          "code": 702,
+          "value": "Cerrado/Cerradão arbustivo",
+          "descricao": "-",
+          "valor_filtro": "Cerrado/Cerradão"
+        },
+        {
+          "code": 801,
+          "value": "Caatinga",
+          "descricao": "-",
+          "valor_filtro": "Caatinga"
+        },
+        {
+          "code": 901,
+          "value": "Campo",
+          "descricao": "-",
+          "valor_filtro": "Campo"
+        },
+        {
+          "code": 1000,
+          "value": "Terreno exposto desconhecido",
+          "descricao": "-",
+          "valor_filtro": "Terreno Exposto"
+        },
+        {
+          "code": 1001,
+          "value": "Terreno exposto areia",
+          "descricao": "-",
+          "valor_filtro": "Terreno Exposto"
+        },
+        {
+          "code": 1101,
+          "value": "Vegetação de área de contato",
+          "descricao": "-",
+          "valor_filtro": "Vegetação de área de contato"
+        },
+        {
+          "code": 1296,
+          "value": "Ref - Não identificado",
+          "descricao": "-",
+          "valor_filtro": "Reflorestamento"
+        }
+      ],
+      "filtro": true
+    },
+    {
+      "nome": "tipo_via_deslocamento",
+      "valores": [
+        {
+          "code": 2,
+          "value": "Estrada/Rodovia",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Caminho carroçável",
+          "descricao": "-"
+        },
+        {
+          "code": 4,
+          "value": "Auto-estrada",
+          "descricao": "-"
+        },
+        {
+          "code": 5,
+          "value": "Arruamento",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Trilha ou Picada",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "trafego",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Permanente",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Periódico",
+          "descricao": "-"
+        }
+      ]
+    },
+    {
+      "nome": "uso_pista",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Particular",
+          "descricao": "-"
+        },
+        {
+          "code": 11,
+          "value": "Público",
+          "descricao": "-"
+        },
+        {
+          "code": 12,
+          "value": "Militar",
+          "descricao": "-"
+        },
+        {
+          "code": 13,
+          "value": "Público/Militar",
+          "descricao": "-"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "nome": "area_densamente_edificada",
+      "categoria": "cobter",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "massa_dagua",
+      "categoria": "cobter",
+      "descricao":
+        "Massa d’água representada por polígono, que possuem ou não fluxo d'água",
+      "primitivas": ["MultiPolygon"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "Nome completo da instância",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "Indica o tipo de massa dágua",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_massa_dagua",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 3,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 4,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 5,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 6,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 9,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 10
+            },
+            {
+              "code": 11
+            },
+            {
+              "code": 12
+            }
+          ]
+        },
+        {
+          "nome": "regime",
+          "tipo": "smallint",
+          "descricao":
+            "Indica o regime da ocorrência da água, para a massa dágua",
+          "cardinalidade": "1..1",
+          "mapa_valor": "regime",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 3,
+              "restricao_atributo_incomum": [],
+              "restricao": [
+                {
+                  "atributo": "tipo",
+                  "valores": [1, 2, 6, 7, 10, 11]
+                }
+              ]
+            },
+            {
+              "code": 5,
+              "restricao_atributo_incomum": [],
+              "restricao": [
+                {
+                  "atributo": "tipo",
+                  "valores": [1, 2, 6, 7, 10, 11]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "vegetacao",
+      "categoria": "cobter",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "Nome completo da instância",
+          "cardinalidade": "0..1",
+          "restricao_atributo_incomum": []
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "Indica o tipo de vegetação",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_veg",
+          "valores": [
+            {
+              "code": 301
+            },
+            {
+              "code": 302
+            },
+            {
+              "code": 201,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 202,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 801,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 501,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 701,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 702,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 401,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 1101,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 901
+            },
+            {
+              "code": 601
+            },
+            {
+              "code": 194
+            },
+            {
+              "code": 196
+            },
+            {
+              "code": 150
+            },
+            {
+              "code": 118,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 102,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 115,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 114,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 116,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 103,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 151,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 117,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 153,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 152,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 119,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 142,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 107,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 124
+            },
+            {
+              "code": 198,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 195,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 1296
+            },
+            {
+              "code": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "deposito",
+      "categoria": "constr",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_deposito",
+          "valores": [
+            {
+              "code": 108
+            },
+            {
+              "code": 109
+            },
+            {
+              "code": 110
+            },
+            {
+              "code": 111
+            },
+            {
+              "code": 132
+            },
+            {
+              "code": 198
+            },
+            {
+              "code": 201
+            },
+            {
+              "code": 202
+            },
+            {
+              "code": 203
+            },
+            {
+              "code": 298
+            },
+            {
+              "code": 301
+            },
+            {
+              "code": 304
+            },
+            {
+              "code": 305
+            },
+            {
+              "code": 306
+            },
+            {
+              "code": 398
+            }
+          ]
+        },
+        {
+          "nome": "tipo_exposicao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_exposicao",
+          "valores": [
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 97
+            }
+          ]
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "material_construcao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "material_construcao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 97
+            },
+            {
+              "code": 98
+            }
+          ]
+        },
+        {
+          "nome": "finalidade",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "finalidade",
+          "valores": [
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 8
+            }
+          ]
+        },
+        {
+          "nome": "tipo_produto_residuo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_produto_residuo",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 9
+            },
+            {
+              "code": 12
+            },
+            {
+              "code": 13
+            },
+            {
+              "code": 14
+            },
+            {
+              "code": 15
+            },
+            {
+              "code": 16
+            },
+            {
+              "code": 17
+            },
+            {
+              "code": 18
+            },
+            {
+              "code": 19
+            },
+            {
+              "code": 20
+            },
+            {
+              "code": 21
+            },
+            {
+              "code": 22
+            },
+            {
+              "code": 23
+            },
+            {
+              "code": 24
+            },
+            {
+              "code": 25
+            },
+            {
+              "code": 26
+            },
+            {
+              "code": 27
+            },
+            {
+              "code": 28
+            },
+            {
+              "code": 29
+            },
+            {
+              "code": 30
+            },
+            {
+              "code": 31
+            },
+            {
+              "code": 32
+            },
+            {
+              "code": 33
+            },
+            {
+              "code": 34
+            },
+            {
+              "code": 35
+            },
+            {
+              "code": 36
+            },
+            {
+              "code": 41
+            },
+            {
+              "code": 95
+            },
+            {
+              "code": 98
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "edificacao",
+      "categoria": "constr",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_edificacao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 101
+            },
+            {
+              "code": 102
+            },
+            {
+              "code": 103
+            },
+            {
+              "code": 104
+            },
+            {
+              "code": 201
+            },
+            {
+              "code": 301
+            },
+            {
+              "code": 302
+            },
+            {
+              "code": 303
+            },
+            {
+              "code": 395
+            },
+            {
+              "code": 398
+            },
+            {
+              "code": 403
+            },
+            {
+              "code": 405
+            },
+            {
+              "code": 406
+            },
+            {
+              "code": 407
+            },
+            {
+              "code": 498
+            },
+            {
+              "code": 516
+            },
+            {
+              "code": 517
+            },
+            {
+              "code": 518
+            },
+            {
+              "code": 519
+            },
+            {
+              "code": 520
+            },
+            {
+              "code": 521
+            },
+            {
+              "code": 522
+            },
+            {
+              "code": 523
+            },
+            {
+              "code": 524
+            },
+            {
+              "code": 525
+            },
+            {
+              "code": 595
+            },
+            {
+              "code": 601
+            },
+            {
+              "code": 602
+            },
+            {
+              "code": 603
+            },
+            {
+              "code": 604
+            },
+            {
+              "code": 605
+            },
+            {
+              "code": 606
+            },
+            {
+              "code": 607
+            },
+            {
+              "code": 698
+            },
+            {
+              "code": 709
+            },
+            {
+              "code": 710
+            },
+            {
+              "code": 711
+            },
+            {
+              "code": 712
+            },
+            {
+              "code": 713
+            },
+            {
+              "code": 798
+            },
+            {
+              "code": 801
+            },
+            {
+              "code": 802
+            },
+            {
+              "code": 803
+            },
+            {
+              "code": 804
+            },
+            {
+              "code": 805
+            },
+            {
+              "code": 806
+            },
+            {
+              "code": 807
+            },
+            {
+              "code": 808
+            },
+            {
+              "code": 898
+            },
+            {
+              "code": 903
+            },
+            {
+              "code": 904
+            },
+            {
+              "code": 905
+            },
+            {
+              "code": 906
+            },
+            {
+              "code": 907
+            },
+            {
+              "code": 998
+            },
+            {
+              "code": 1015
+            },
+            {
+              "code": 1016
+            },
+            {
+              "code": 1017
+            },
+            {
+              "code": 1018
+            },
+            {
+              "code": 1019
+            },
+            {
+              "code": 1020
+            },
+            {
+              "code": 1021
+            },
+            {
+              "code": 1022
+            },
+            {
+              "code": 1023
+            },
+            {
+              "code": 1024
+            },
+            {
+              "code": 1025
+            },
+            {
+              "code": 1026
+            },
+            {
+              "code": 1027
+            },
+            {
+              "code": 1028
+            },
+            {
+              "code": 1029
+            },
+            {
+              "code": 1030
+            },
+            {
+              "code": 1031
+            },
+            {
+              "code": 1032
+            },
+            {
+              "code": 1033
+            },
+            {
+              "code": 1034
+            },
+            {
+              "code": 1035
+            },
+            {
+              "code": 1036
+            },
+            {
+              "code": 1037
+            },
+            {
+              "code": 1045
+            },
+            {
+              "code": 1098
+            },
+            {
+              "code": 1110
+            },
+            {
+              "code": 1111
+            },
+            {
+              "code": 1113
+            },
+            {
+              "code": 1114
+            },
+            {
+              "code": 1198
+            },
+            {
+              "code": 1212
+            },
+            {
+              "code": 1213
+            },
+            {
+              "code": 1214
+            },
+            {
+              "code": 1215
+            },
+            {
+              "code": 1216
+            },
+            {
+              "code": 1217
+            },
+            {
+              "code": 1218
+            },
+            {
+              "code": 1298
+            },
+            {
+              "code": 1301
+            },
+            {
+              "code": 1302
+            },
+            {
+              "code": 1303
+            },
+            {
+              "code": 1304
+            },
+            {
+              "code": 1305
+            },
+            {
+              "code": 1306
+            },
+            {
+              "code": 1307
+            },
+            {
+              "code": 1308
+            },
+            {
+              "code": 1309
+            },
+            {
+              "code": 1322
+            },
+            {
+              "code": 1398
+            },
+            {
+              "code": 1401
+            },
+            {
+              "code": 1501
+            },
+            {
+              "code": 1601,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1602,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1603,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1604,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1605,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1606,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1607,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1608,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1609,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1610,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1611,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1612,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1712
+            },
+            {
+              "code": 1717
+            },
+            {
+              "code": 1718
+            },
+            {
+              "code": 1719
+            },
+            {
+              "code": 1798
+            },
+            {
+              "code": 1820
+            },
+            {
+              "code": 1821
+            },
+            {
+              "code": 1910
+            },
+            {
+              "code": 1911
+            },
+            {
+              "code": 1995
+            },
+            {
+              "code": 2025
+            },
+            {
+              "code": 2026
+            },
+            {
+              "code": 2027
+            },
+            {
+              "code": 2028
+            },
+            {
+              "code": 2029
+            },
+            {
+              "code": 2030
+            },
+            {
+              "code": 2031
+            },
+            {
+              "code": 2132
+            },
+            {
+              "code": 2133
+            },
+            {
+              "code": 2195
+            },
+            {
+              "code": 2208
+            },
+            {
+              "code": 2209
+            },
+            {
+              "code": 2210
+            },
+            {
+              "code": 2212
+            },
+            {
+              "code": 2213
+            },
+            {
+              "code": 2214
+            },
+            {
+              "code": 2298
+            },
+            {
+              "code": 2316
+            },
+            {
+              "code": 2317
+            },
+            {
+              "code": 2318
+            },
+            {
+              "code": 2319
+            },
+            {
+              "code": 2320
+            },
+            {
+              "code": 2398
+            },
+            {
+              "code": 2426
+            },
+            {
+              "code": 2427
+            },
+            {
+              "code": 2428
+            },
+            {
+              "code": 2429
+            },
+            {
+              "code": 2498
+            },
+            {
+              "code": 2526
+            },
+            {
+              "code": 2527
+            },
+            {
+              "code": 2533
+            },
+            {
+              "code": 2534
+            },
+            {
+              "code": 2535
+            },
+            {
+              "code": 2536
+            },
+            {
+              "code": 2598
+            },
+            {
+              "code": 2601
+            },
+            {
+              "code": 2701
+            }
+          ]
+        },
+        {
+          "nome": "material_construcao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "material_construcao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 97
+            },
+            {
+              "code": 98
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "extracao_mineral",
+      "categoria": "constr",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_extracao_mineral",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 8,
+              "primitivas": ["MultiPoint"]
+            }
+          ]
+        },
+        {
+          "nome": "forma_extracao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "forma_extracao",
+          "valores": [
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            }
+          ]
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "tipo_produto_residuo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_produto_residuo",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 18
+            },
+            {
+              "code": 22
+            },
+            {
+              "code": 23
+            },
+            {
+              "code": 24
+            },
+            {
+              "code": 25
+            },
+            {
+              "code": 26
+            },
+            {
+              "code": 27
+            },
+            {
+              "code": 32
+            },
+            {
+              "code": 33
+            },
+            {
+              "code": 34
+            },
+            {
+              "code": 35
+            },
+            {
+              "code": 37
+            },
+            {
+              "code": 38
+            },
+            {
+              "code": 39
+            },
+            {
+              "code": 40
+            },
+            {
+              "code": 42
+            },
+            {
+              "code": 43
+            },
+            {
+              "code": 98
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "ocupacao_solo",
+      "categoria": "constr",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_ocupacao_solo",
+          "valores": [
+            {
+              "code": 101,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 102,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 103,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 104,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 105,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 201,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 202,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 203,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 204,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 205,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 206,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 207,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 298,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 301,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 302,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 303,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 304,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 305,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 398,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 404,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 405,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 406,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 409,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 414,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 495,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 501,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 601,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 701,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 801,
+              "primitivas": ["MultiPolygon"]
+            }
+          ]
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "curva_nivel",
+      "categoria": "elemnat",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": [
+        {
+          "nome": "cota",
+          "tipo": "integer",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        },
+        {
+          "nome": "indice",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "indice",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            }
+          ]
+        },
+        {
+          "nome": "depressao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "elemento_fisiografico",
+      "categoria": "elemnat",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_elemento_fisiografico",
+          "valores": [
+            {
+              "code": 1,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 2,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 3,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 4,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 5,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 6,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 7,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 8,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 9,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 10,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 11,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 12
+            },
+            {
+              "code": 13,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 14,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 15,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 16,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 17,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 19,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 20,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 21,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 22,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 23,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 24,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 25,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 26,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 27,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 28,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 29,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 30,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 31,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 32,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 33,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "elemento_hidrografico",
+      "categoria": "elemnat",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_elemento_hidrografico",
+          "valores": [
+            {
+              "code": 1,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 2,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 3,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 4,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 5,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 6,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 7,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 8
+            },
+            {
+              "code": 9,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 10,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 11,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 12
+            },
+            {
+              "code": 13,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 14,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 15,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 16,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 17,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 18
+            },
+            {
+              "code": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "ponto_cotado",
+      "categoria": "elemnat",
+      "descricao": "-",
+      "primitivas": ["MultiPoint"],
+      "atributos": [
+        {
+          "nome": "cota",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        },
+        {
+          "nome": "cota_comprovada",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "trecho_drenagem",
+      "categoria": "elemnat",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_trecho_drenagem",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 11
+            }
+          ]
+        },
+        {
+          "nome": "regime",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "regime",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "elemento_infraestrutura",
+      "categoria": "infra",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_elemento_infraestrutura",
+          "valores": [
+            {
+              "code": 201,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 202,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 302,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 303,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 405
+            },
+            {
+              "code": 406
+            },
+            {
+              "code": 407
+            },
+            {
+              "code": 408
+            },
+            {
+              "code": 409
+            },
+            {
+              "code": 410
+            },
+            {
+              "code": 411
+            },
+            {
+              "code": 412
+            },
+            {
+              "code": 495
+            },
+            {
+              "code": 498
+            },
+            {
+              "code": 601,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 701,
+              "primitivas": ["MultiPolygon", "MultiLinestring"]
+            },
+            {
+              "code": 801,
+              "primitivas": ["MultiPolygon", "MultiLinestring"]
+            },
+            {
+              "code": 901,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 1001
+            },
+            {
+              "code": 1101,
+              "primitivas": ["MultiPolygon", "MultiLinestring"]
+            },
+            {
+              "code": 1201,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1301,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1401,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1501,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 1601,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1698,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 1700,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1701,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1702,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1703,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1704,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1705,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1706,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1707,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1708,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1709,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1710,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1798,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1801,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1901,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1902,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 1998,
+              "primitivas": ["MultiLinestring"]
+            }
+          ]
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "material_construcao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "material_construcao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 23
+            },
+            {
+              "code": 97
+            },
+            {
+              "code": 98
+            }
+          ]
+        },
+        {
+          "nome": "posicao_relativa",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "posicao_relativa",
+          "valores": [
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 14
+            },
+            {
+              "code": 17
+            },
+            {
+              "code": 18
+            },
+            {
+              "code": 97
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "elemento_transportes",
+      "categoria": "infra",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_elemento_transportes",
+          "valores": [
+            {
+              "code": 101,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 238
+            },
+            {
+              "code": 239
+            },
+            {
+              "code": 240
+            },
+            {
+              "code": 241
+            },
+            {
+              "code": 242
+            },
+            {
+              "code": 243
+            },
+            {
+              "code": 244
+            },
+            {
+              "code": 302,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 303,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 304,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 404,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 501,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 607,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 608,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 609,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 701,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 801,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 898,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 901,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 1001,
+              "primitivas": ["MultiLinestring", "MultiPoint"]
+            },
+            {
+              "code": 1101
+            },
+            {
+              "code": 1201
+            },
+            {
+              "code": 1300,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 1301,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 1302,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 1395,
+              "primitivas": ["MultiPolygon", "MultiPoint"]
+            },
+            {
+              "code": 1401,
+              "primitivas": ["MultiLinestring"]
+            }
+          ]
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "elemento_viario",
+      "categoria": "infra",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_elemento_viario",
+          "valores": [
+            {
+              "code": 101
+            },
+            {
+              "code": 102
+            },
+            {
+              "code": 201
+            },
+            {
+              "code": 202
+            },
+            {
+              "code": 203
+            },
+            {
+              "code": 301
+            },
+            {
+              "code": 302
+            },
+            {
+              "code": 401
+            },
+            {
+              "code": 402
+            },
+            {
+              "code": 403
+            },
+            {
+              "code": 404
+            }
+          ]
+        },
+        {
+          "nome": "material_construcao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "material_construcao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 8
+            },
+            {
+              "code": 23
+            },
+            {
+              "code": 97
+            },
+            {
+              "code": 98
+            }
+          ]
+        },
+        {
+          "nome": "modal_uso",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "modal_uso",
+          "valores": [
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 8
+            },
+            {
+              "code": 9
+            }
+          ]
+        },
+        {
+          "nome": "nr_faixas",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "nr_pistas",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "posicao_pista",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "posicao_pista",
+          "valores": [
+            {
+              "code": 12
+            },
+            {
+              "code": 13
+            },
+            {
+              "code": 97
+            }
+          ]
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "ferrovia",
+      "categoria": "infra",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_ferrovia",
+          "valores": [
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 8
+            }
+          ]
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "posicao_relativa",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "posicao_relativa",
+          "valores": [
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 6
+            }
+          ]
+        },
+        {
+          "nome": "nr_linhas",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "nr_linhas",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            }
+          ]
+        },
+        {
+          "nome": "em_arruamento",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        },
+        {
+          "nome": "jurisdicao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "jurisdicao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 6
+            }
+          ]
+        },
+        {
+          "nome": "administracao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "administracao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 7
+            }
+          ]
+        },
+        {
+          "nome": "concessionaria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "pista_pouso",
+      "categoria": "infra",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_pista_pouso",
+          "valores": [
+            {
+              "code": 9
+            },
+            {
+              "code": 10
+            },
+            {
+              "code": 11
+            }
+          ]
+        },
+        {
+          "nome": "revestimento",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "revestimento",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "uso_pista",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "uso_pista",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 11
+            },
+            {
+              "code": 12
+            },
+            {
+              "code": 13
+            }
+          ]
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "homologacao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano_estendido",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        },
+        {
+          "nome": "largura",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "extensao",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "via_deslocamento",
+      "categoria": "infra",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_via_deslocamento",
+          "valores": [
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            }
+          ]
+        },
+        {
+          "nome": "revestimento",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "revestimento",
+          "valores": [
+            {
+              "code": 1,
+              "restricao": [
+                {
+                  "atributo": "tipo",
+                  "valores": [2, 3, 6]
+                }
+              ]
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "trafego",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "trafego",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        },
+        {
+          "nome": "nr_faixas",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "nr_pistas",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "canteiro_divisorio",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "canteiro_divisorio",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "jurisdicao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "jurisdicao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        },
+        {
+          "nome": "sigla",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "administracao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "administracao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 7
+            }
+          ]
+        },
+        {
+          "nome": "concessionaria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "delimitacao_fisica",
+      "categoria": "llp",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": [
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_delimitacao_fisica",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        },
+        {
+          "nome": "material_construcao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "material_construcao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "limite_especial",
+      "categoria": "llp",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_limite_especial",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 8
+            },
+            {
+              "code": 9
+            },
+            {
+              "code": 10
+            },
+            {
+              "code": 11
+            },
+            {
+              "code": 12
+            },
+            {
+              "code": 13
+            },
+            {
+              "code": 14
+            },
+            {
+              "code": 15
+            },
+            {
+              "code": 16
+            },
+            {
+              "code": 24
+            },
+            {
+              "code": 25
+            },
+            {
+              "code": 26
+            },
+            {
+              "code": 27
+            },
+            {
+              "code": 28
+            },
+            {
+              "code": 29
+            },
+            {
+              "code": 30
+            },
+            {
+              "code": 31
+            },
+            {
+              "code": 32
+            },
+            {
+              "code": 33
+            },
+            {
+              "code": 34
+            },
+            {
+              "code": 35
+            },
+            {
+              "code": 36
+            }
+          ]
+        },
+        {
+          "nome": "tipo_delimitacao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_linha_limites",
+          "valores": [
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 8
+            },
+            {
+              "code": 9
+            },
+            {
+              "code": 96
+            },
+            {
+              "code": 97
+            }
+          ]
+        },
+        {
+          "nome": "geometria_aproximada",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "limite_legal",
+      "categoria": "llp",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_limite_legal",
+          "valores": [
+            {
+              "code": 1,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 2,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 3,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 4,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 5,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 6,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 7,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 8,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 9,
+              "primitivas": ["MultiPolygon"]
+            },
+            {
+              "code": 10,
+              "primitivas": ["MultiPolygon"]
+            }
+          ]
+        },
+        {
+          "nome": "tipo_delimitacao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_linha_limites",
+          "valores": [
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 8
+            },
+            {
+              "code": 9
+            },
+            {
+              "code": 96
+            },
+            {
+              "code": 97
+            }
+          ]
+        },
+        {
+          "nome": "geometria_aproximada",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "localidade",
+      "categoria": "llp",
+      "descricao": "-",
+      "primitivas": ["MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_localidade",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 8
+            },
+            {
+              "code": 9
+            },
+            {
+              "code": 10
+            }
+          ]
+        },
+        {
+          "nome": "latitude",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "longitude",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "ponto_controle",
+      "categoria": "llp",
+      "descricao": "-",
+      "primitivas": ["MultiPoint"],
+      "atributos": [
+        {
+          "nome": "cod_ponto",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_pto",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 8
+            },
+            {
+              "code": 9
+            },
+            {
+              "code": 12
+            },
+            {
+              "code": 13
+            },
+            {
+              "code": 14
+            },
+            {
+              "code": 15
+            },
+            {
+              "code": 16
+            }
+          ]
+        },
+        {
+          "nome": "tipo_ref",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_ref",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "altitude_ortometrica",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        },
+        {
+          "nome": "sistema_geodesico",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "sistema_geodesico",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            }
+          ]
+        },
+        {
+          "nome": "referencial_altim",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "referencial_altim",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            }
+          ]
+        },
+        {
+          "nome": "referencial_grav",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "referencial_grav",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 97
+            }
+          ]
+        },
+        {
+          "nome": "situacao_marco",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_marco",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 6
+            },
+            {
+              "code": 97
+            }
+          ]
+        },
+        {
+          "nome": "orgao_responsavel",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        },
+        {
+          "nome": "latitude",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        },
+        {
+          "nome": "longitude",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        }
+      ]
+    }
+  ],
+  "extension_classes": [
+    {
+      "nome": "objeto_desconhecido",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "transportes",
+      "categoria": "val",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "edificacao",
+      "categoria": "val",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "vegetacao",
+      "categoria": "val",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "hidrografia",
+      "categoria": "val",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "vegetacao",
+      "categoria": "rev",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "categoria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "corrigido",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "edificacao",
+      "categoria": "rev",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "categoria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "corrigido",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "transportes",
+      "categoria": "rev",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "categoria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "corrigido",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "hidrografia",
+      "categoria": "rev",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "categoria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "corrigido",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "reambulacao",
+      "categoria": "rev",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "categoria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "corrigido",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "insumo_externo",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }
+      ]
+    },
+    {
+      "nome": "revisao",
+      "categoria": "rev",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "obs",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "categoria",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "corrigido",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "moldura",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        },
+        {
+          "nome": "mi",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        }
+      ]
+    },
+    {
+      "nome": "moldura_area_continua",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "1..1"
+        }
+      ]
+    },
+    {
+      "nome": "rascunho",
+      "categoria": "aux",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring", "MultiPolygon"],
+      "atributos": [
+      ]
+    },
+    {
+      "nome": "limite_vegetacao",
+      "categoria": "aquisicao",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": []
+    },
+    {
+      "nome": "limite_hidrografia",
+      "categoria": "aquisicao",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": []
+    },
+    {
+      "nome": "centroide_vegetacao",
+      "categoria": "aquisicao",
+      "descricao": "-",
+      "primitivas": ["MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "Nome completo da instância",
+          "cardinalidade": "0..1",
+          "restricao_atributo_incomum": []
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "Indica o tipo de vegetação",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_veg",
+          "valores": [
+            {
+              "code": 301
+            },
+            {
+              "code": 302
+            },
+            {
+              "code": 201,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 202,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 801,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 501,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 701,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 702,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 401,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 1101,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 901
+            },
+            {
+              "code": 601
+            },
+            {
+              "code": 194
+            },
+            {
+              "code": 196
+            },
+            {
+              "code": 150
+            },
+            {
+              "code": 118,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 102,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 115,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 114,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 116,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 103,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 151,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 117,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 153,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 152,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 119,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 142,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 107,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 124
+            },
+            {
+              "code": 198,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 195,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 1296
+            },
+            {
+              "code": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nome": "centroide_hidrografia",
+      "categoria": "aquisicao",
+      "descricao": "-",
+      "primitivas": ["MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "Nome completo da instância",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "Indica o tipo de centroide de hidrografia",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_hid",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 3,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 4,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 5,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 6,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 7
+            },
+            {
+              "code": 9,
+              "restricao_atributo_incomum": []
+            },
+            {
+              "code": 10
+            },
+            {
+              "code": 11
+            },
+            {
+              "code": 12
+            }
+          ]
+        }        
+      ]
+    }
+  ]
+}
