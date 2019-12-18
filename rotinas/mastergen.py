@@ -56,20 +56,22 @@ class MasterGen():
             sql.append(u"")
 
             for valor in dominio["valores"]:
+                domain_value = u"{0} ({1})".format(valor["value"].replace("'", "''"), valor["code"])
                 if "filtro" in dominio and dominio["filtro"]:
                     sql.append(u"INSERT INTO {0}.{1} (code,code_name, filter) VALUES ({2},'{3}','{4}');".format(master["schema_dominios"],
-                                                                                                                dominio["nome"], valor["code"], valor["value"].replace("'", "''"), valor["valor_filtro"]))
+                                                                                                                dominio["nome"], valor["code"], domain_value, valor["valor_filtro"]))
                 else:
                     sql.append(u"INSERT INTO {0}.{1} (code,code_name) VALUES ({2},'{3}');".format(master["schema_dominios"],
-                                                                                                  dominio["nome"], valor["code"], valor["value"].replace("'", "''")))
+                                                                                                  dominio["nome"], valor["code"], domain_value))
 
             if 'a_ser_preenchido' in master:
+                domain_value = u"{0} ({1})".format(master["a_ser_preenchido"]["value"], master["a_ser_preenchido"]["code"])
                 if "filtro" in dominio and dominio["filtro"]:
                     sql.append(u"INSERT INTO {0}.{1} (code,code_name, filter) VALUES ({2},'{3}','{3}');".format(master["schema_dominios"],
-                                                                                                                dominio["nome"], master["a_ser_preenchido"]["code"], master["a_ser_preenchido"]["value"]))
+                                                                                                                dominio["nome"], master["a_ser_preenchido"]["code"], domain_value))
                 else:
                     sql.append(u"INSERT INTO {0}.{1} (code,code_name) VALUES ({2},'{3}');".format(master["schema_dominios"],
-                                                                                                  dominio["nome"], master["a_ser_preenchido"]["code"], master["a_ser_preenchido"]["value"]))
+                                                                                                  dominio["nome"], master["a_ser_preenchido"]["code"], domain_value))
 
             sql.append(u"")
 

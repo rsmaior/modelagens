@@ -121,6 +121,44 @@
         }
       ]
     },
+    {"nome": "tipo_sumidouro_vertedouro",
+      "valores": [
+        {
+          "code": 1,
+          "value": "Sumidouro",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Vertedouro",
+          "descricao": "-"
+        }
+      ]
+    },
+    {"nome": "causa_sumidouro_vertedouro",
+      "valores": [
+        {
+          "code": 0,
+          "value": "Desconhecido",
+          "descricao": "-"
+        },
+        {
+          "code": 1,
+          "value": "Canalização",
+          "descricao": "-"
+        },
+        {
+          "code": 2,
+          "value": "Gruta ou fenda",
+          "descricao": "-"
+        },
+        {
+          "code": 3,
+          "value": "Absorção",
+          "descricao": "-"
+        }
+      ]
+    },
     {"nome": "canteiro_divisorio",
       "valores": [
         {
@@ -267,18 +305,8 @@
           "descricao": "-"
         },
         {
-          "code": 6,
-          "value": "Arame",
-          "descricao": "-"
-        },
-        {
-          "code": 7,
-          "value": "Tela ou alambrado",
-          "descricao": "-"
-        },
-        {
-          "code": 8,
-          "value": "Cerca viva",
+          "code": 9,
+          "value": "Fibra",
           "descricao": "-"
         },
         {
@@ -574,6 +602,11 @@
         {
           "code": 4,
           "value": "Em construção",
+          "descricao": "-"
+        },
+        {
+          "code": 6,
+          "value": "Construída mas em obras",
           "descricao": "-"
         }
       ]
@@ -1961,22 +1994,17 @@
       "valores": [
         {
           "code": 1,
-          "value": "Ilha Fluvial",
+          "value": "Fluvial",
           "descricao": "-"
         },
         {
           "code": 2,
-          "value": "Ilha Marítima",
+          "value": "Marítima",
           "descricao": "-"
         },
         {
           "code": 3,
-          "value": "Ilha Lacustre",
-          "descricao": "-"
-        },
-        {
-          "code": 4,
-          "value": "Ilha Mista",
+          "value": "Lacustre",
           "descricao": "-"
         }
       ]
@@ -1996,16 +2024,6 @@
         {
           "code": 3,
           "value": "Olho dágua",
-          "descricao": "-"
-        },
-        {
-          "code": 4,
-          "value": "Sumidouro",
-          "descricao": "-"
-        },
-        {
-          "code": 5,
-          "value": "Vertedouro",
           "descricao": "-"
         },
         {
@@ -2195,12 +2213,6 @@
           "value": "Eclusa",
           "descricao": "-",
           "valor_filtro": "Eclusa"
-        },
-        {
-          "code": 1101,
-          "value": "Barragem",
-          "descricao": "-",
-          "valor_filtro": "Barragem"
         },
         {
           "code": 1201,
@@ -3478,7 +3490,7 @@
         },
         {
           "code": 3,
-          "value": "Fundo de vale",
+          "value": "Trecho pluvial",
           "descricao": "-"
         },
         {
@@ -3835,7 +3847,7 @@
     }
   ],
   "classes": [
-    {"nome": "area_densamente_edificada",
+    {"nome": "area_construida",
       "categoria": "cobter",
       "descricao": "-",
       "primitivas": ["MultiPolygon"],
@@ -3845,6 +3857,21 @@
           "tipo": "varchar(255)",
           "descricao": "-",
           "cardinalidade": "0..1"
+        },
+        {
+          "nome": "densamente_edificada",
+          "tipo": "smallint",
+          "descricao": "Indica se a área construída é densamente edificada",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
         }
       ]
     },
@@ -3989,9 +4016,153 @@
               "code": 5
             }
           ]
+        },
+        {
+          "nome": "encoberto",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
         }
       ]
     },
+    {"nome": "barragem",
+      "categoria": "infra",
+      "descricao": "-",
+      "primitivas": ["MultiPolygon", "MultiLinestring"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "situacao_fisica",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "situacao_fisica",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 6
+            }
+          ]
+        },
+        {
+          "nome": "material_construcao",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "material_construcao",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            },
+            {
+              "code": 4
+            },
+            {
+              "code": 5
+            },
+            {
+              "code": 9
+            },
+            {
+              "code": 23
+            },
+            {
+              "code": 97
+            },
+            {
+              "code": 98
+            }
+          ]
+        }
+      ]
+    },
+    {"nome": "sumidouro_vertedouro",
+      "categoria": "elemnat",
+      "descricao": "-",
+      "primitivas": ["MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_sumidouro_vertedouro",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        },
+        {
+          "nome": "causa",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "causa_sumidouro_vertedouro",
+          "valores": [
+            {
+              "code": 0
+            },
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            },
+            {
+              "code": 3
+            }
+          ]
+        }
+      ]
+    },
+
     {"nome": "elemento_hidrografico",
       "categoria": "elemnat",
       "descricao": "-",
@@ -4020,14 +4191,6 @@
             },
             {
               "code": 3,
-              "primitivas": ["MultiPoint"]
-            },
-            {
-              "code": 4,
-              "primitivas": ["MultiPoint"]
-            },
-            {
-              "code": 5,
               "primitivas": ["MultiPoint"]
             },
             {
@@ -4586,13 +4749,7 @@
               "code": 5
             },
             {
-              "code": 6
-            },
-            {
-              "code": 7
-            },
-            {
-              "code": 8
+              "code": 9
             },
             {
               "code": 23
@@ -4995,13 +5152,10 @@
               "code": 5
             },
             {
-              "code": 6
+              "code": 9
             },
             {
-              "code": 7
-            },
-            {
-              "code": 8
+              "code": 98
             }
           ]
         }
@@ -6729,10 +6883,6 @@
               "code": 1001
             },
             {
-              "code": 1101,
-              "primitivas": ["MultiPolygon", "MultiLinestring"]
-            },
-            {
               "code": 1201,
               "primitivas": ["MultiPoint"]
             },
@@ -7368,7 +7518,13 @@
           "tipo": "varchar(255)",
           "descricao": "-",
           "cardinalidade": "0..1"
-        }
+        },
+        {
+          "nome": "fonte",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        }        
       ]
     },
     {"nome": "moldura",
@@ -7401,13 +7557,6 @@
           "descricao": "-",
           "cardinalidade": "1..1"
         }
-      ]
-    },
-    {"nome": "rascunho",
-      "categoria": "aux",
-      "descricao": "-",
-      "primitivas": ["MultiPoint", "MultiLinestring", "MultiPolygon"],
-      "atributos": [
       ]
     },
     {"nome": "limite_vegetacao",
@@ -7660,11 +7809,33 @@
         }      
       ]
     },
-    {"nome": "centroide_area_edificada",
+    {"nome": "centroide_area_construida",
       "categoria": "aquisicao",
       "descricao": "-",
       "primitivas": ["MultiPoint"],
-      "atributos": []
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "densamente_edificada",
+          "tipo": "smallint",
+          "descricao": "Indica se a área construída é densamente edificada",
+          "cardinalidade": "1..1",
+          "mapa_valor": "booleano",
+          "valores": [
+            {
+              "code": 1
+            },
+            {
+              "code": 2
+            }
+          ]
+        }
+      ]
     },
     {"nome": "identificacao_antropizacao",
       "categoria": "aquisicao",
@@ -7705,9 +7876,6 @@
             },
             {
               "code": 3
-            },
-            {
-              "code": 4
             }
           ]
         }
