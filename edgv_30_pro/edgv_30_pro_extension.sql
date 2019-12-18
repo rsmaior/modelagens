@@ -45,7 +45,7 @@ $BODY$
 ALTER FUNCTION public.explode_geom()
   OWNER TO postgres;
 
-GRANT EXECUTE ON TABLE public.explode_geom TO PUBLIC;
+GRANT EXECUTE ON FUNCTION public.explode_geom() TO PUBLIC;
 
 --########################################################
 -- Cria trigger de explodir multi geometrias
@@ -102,7 +102,7 @@ $BODY$
 ALTER FUNCTION public.estilo()
   OWNER TO postgres;
 
-GRANT EXECUTE ON TABLE public.estilo TO PUBLIC;
+GRANT EXECUTE ON FUNCTION public.estilo() TO PUBLIC;
 
 
 --########################################################
