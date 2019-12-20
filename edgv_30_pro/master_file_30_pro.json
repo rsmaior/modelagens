@@ -37,6 +37,12 @@
       "tipo": "VARCHAR(255)",
       "descricao": "-",
       "cardinalidade": "0..1"
+    },
+    {
+      "nome": "data_insumo",
+      "tipo": "timestamp with time zone",
+      "descricao": "-",
+      "cardinalidade": "0..1"
     }
   ],
   "coord_sys": 31982,
