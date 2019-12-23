@@ -76,7 +76,7 @@ class MasterGen():
             sql.append(u"")
 
             if owner:
-                sql.append(u"ALTER TABLE {0}.{1} OWNER TO {2}};".format(master["schema_dominios"], dominio["nome"], owner))
+                sql.append(u"ALTER TABLE {0}.{1} OWNER TO {2};".format(master["schema_dominios"], dominio["nome"], owner))
 
             sql.append(u"")
 
@@ -130,7 +130,7 @@ class MasterGen():
                 sql.append(u"")
 
                 if owner:
-                    sql.append(u"ALTER TABLE {0}.{1} OWNER TO {2}};".format(master["schema_dados"], class_name, owner))
+                    sql.append(u"ALTER TABLE {0}.{1} OWNER TO {2};".format(master["schema_dados"], class_name, owner))
                 
                 sql.append(u"")
 
