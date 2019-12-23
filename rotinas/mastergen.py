@@ -21,7 +21,7 @@ class MasterGen():
             # TODO Validate JSON file against JsonSchema
             pass
 
-    def buildSQL(self, dest, atributos_padrao=False, extension_classes=False):
+    def buildSQL(self, dest, atributos_padrao=False, extension_classes=False, owner='postgres'):
         master = self.master
         sql = []
         sql.append(u"CREATE SCHEMA {0};".format(master["schema_dados"]))
@@ -75,6 +75,11 @@ class MasterGen():
 
             sql.append(u"")
 
+            if owner:
+                sql.append(u"ALTER TABLE {0}.{1} OWNER TO {2}};".format(master["schema_dominios"], dominio["nome"], owner))
+
+            sql.append(u"")
+
         if extension_classes and "extension_classes" in master:
             master["classes"].extend(master["extension_classes"])
 
@@ -122,6 +127,11 @@ class MasterGen():
                 sql.append(u");")
                 sql.append(u"CREATE INDEX {0}_geom ON {1}.{0} USING gist ({2});".format(class_name,master["schema_dados"], master["nome_geom"]))
 
+                sql.append(u"")
+
+                if owner:
+                    sql.append(u"ALTER TABLE {0}.{1} OWNER TO {2}};".format(master["schema_dados"], class_name, owner))
+                
                 sql.append(u"")
 
                 for atributo in classe["atributos"]:
