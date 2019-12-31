@@ -62,7 +62,7 @@ class MasterGen():
                                                                                                                 dominio["nome"], valor["code"], domain_value, valor["valor_filtro"]))
                 else:
                     sql.append(u"INSERT INTO {0}.{1} (code,code_name) VALUES ({2},'{3}');".format(master["schema_dominios"],
-                                                                                                  dominio["nome"], valor["code"], domain_value))
+                                                                                                dominio["nome"], valor["code"], domain_value))
 
             if 'a_ser_preenchido' in master:
                 domain_value = u"{0} ({1})".format(master["a_ser_preenchido"]["value"], master["a_ser_preenchido"]["code"])
@@ -71,7 +71,7 @@ class MasterGen():
                                                                                                                 dominio["nome"], master["a_ser_preenchido"]["code"], domain_value))
                 else:
                     sql.append(u"INSERT INTO {0}.{1} (code,code_name) VALUES ({2},'{3}');".format(master["schema_dominios"],
-                                                                                                  dominio["nome"], master["a_ser_preenchido"]["code"], domain_value))
+                                                                                                dominio["nome"], master["a_ser_preenchido"]["code"], domain_value))
 
             sql.append(u"")
 
@@ -150,10 +150,8 @@ class MasterGen():
                             sql.append(
                                 u"\t ON UPDATE NO ACTION ON DELETE NO ACTION;")
                             sql.append(u"")
-                            dominio = [dominio for dominio in master["dominios"]
-                                       if "nome" in dominio and dominio["nome"] == atributo["mapa_valor"]][0]
-                            dominio_att = [valor["code"]
-                                           for valor in dominio["valores"]]
+                            dominio = [dominio for dominio in master["dominios"] if "nome" in dominio and dominio["nome"] == atributo["mapa_valor"]][0]
+                            dominio_att = [valor["code"] for valor in dominio["valores"]]
 
                             if valores_att and len(set(dominio_att).difference(valores_att)) > 0:
                                 sql.append(u"ALTER TABLE {0}.{1}".format(master["schema_dados"], class_name))
@@ -172,8 +170,8 @@ class MasterGen():
 
                             if master['a_ser_preenchido']:
                                 sql.append(u"ALTER TABLE {1}.{0} ALTER COLUMN {2} SET DEFAULT {3};".format(class_name,
-                                                                                                                   master["schema_dados"], atributo["nome"],
-                                                                                                                   master["a_ser_preenchido"]["code"]))
+                                                                                                                master["schema_dados"], atributo["nome"],
+                                                                                                                master["a_ser_preenchido"]["code"]))
                                 sql.append(u"")
 
                         elif atributo["cardinalidade"] == "0..*" or atributo["cardinalidade"] == "1..*":
@@ -185,17 +183,17 @@ class MasterGen():
                                 valores_att.append(
                                     master["a_ser_preenchido"]["code"])
                                 sql.append(u"\t CHECK ({0} <@ ANY(ARRAY[{1}])); ".format(atributo["nome"],
-                                                                                         ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
+                                                                                        ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
                             else:
                                 sql.append(u"\t CHECK ({0} <@ ANY(ARRAY[{1}])); ".format(atributo["nome"],
-                                                                                         ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
+                                                                                        ", ".join(["{0} :: SMALLINT".format(valor) for valor in valores_att])))
 
                             sql.append(u"")
 
                             if master['a_ser_preenchido']:
                                 sql.append(u"ALTER TABLE {1}.{0} ALTER COLUMN {2} SET DEFAULT ARRAY[{3} :: SMALLINT];".format(class_name,
-                                                                                                                                      master["schema_dados"], atributo["nome"],
-                                                                                                                                       master["a_ser_preenchido"]["code"]))
+                                                                                                                                    master["schema_dados"], atributo["nome"],
+                                                                                                                                    master["a_ser_preenchido"]["code"]))
                                 sql.append(u"")
 
         try:
@@ -219,24 +217,20 @@ class MasterGen():
             dominio_by_code[dominio["nome"]] = {}
             for valor in dominio["valores"]:
                 dominio_by_code[dominio["nome"]][valor["code"]] = {}
-                dominio_by_code[dominio["nome"]
-                                ][valor["code"]]["value"] = valor["value"]
-                dominio_by_code[dominio["nome"]][valor["code"]
-                                                 ]["descricao"] = valor["descricao"]
+                dominio_by_code[dominio["nome"]][valor["code"]]["value"] = valor["value"]
+                dominio_by_code[dominio["nome"]][valor["code"]]["descricao"] = valor["descricao"]
 
         dominio_by_class_attribute = {}
         for classe in master["classes"]:
             dominio_by_class_attribute[classe["nome"]] = {}
             for atributo in classe["atributos"]:
                 if "valores" in atributo:
-                    dominio_by_class_attribute[classe["nome"]][atributo["nome"]
-                                                               ] = dominio_by_code[atributo["mapa_valor"]]
+                    dominio_by_class_attribute[classe["nome"]][atributo["nome"]] = dominio_by_code[atributo["mapa_valor"]]
 
         for classe in master["classes"]:
             classe["print_nome"] = "_".join(
                 [parte.title() for parte in classe["nome"].split("_")])
-            geoms = [master["geom_suffix"][geom].upper()
-                     for geom in classe["primitivas"]]
+            geoms = [master["geom_suffix"][geom].upper() for geom in classe["primitivas"]]
             geoms = sorted(geoms, reverse=True)
             classe["print_geometrias"] = " ".join(geoms)
 
@@ -259,8 +253,7 @@ class MasterGen():
 
         try:
             with open(dest, 'w') as f:
-                j2_env = Environment(loader=FileSystemLoader(THIS_DIR),
-                                     trim_blocks=True)
+                j2_env = Environment(loader=FileSystemLoader(THIS_DIR), trim_blocks=True)
                 html = j2_env.get_template(template).render(
                     master=master
                 )
@@ -304,8 +297,7 @@ class MasterGen():
                                                                                                                 dominio["nome"], valor["code"], valor["value"].replace("'", "''"), valor["valor_filtro"]))
                 else:
                     sql.append(u"INSERT INTO {0}_{1} (code,code_name) VALUES ({2},'{3}');".format(master["schema_dominios"],
-                                                                                                  dominio["nome"], valor["code"], valor["value"].replace("'", "''")
-                                                                                                  ))
+                                                                                                dominio["nome"], valor["code"], valor["value"].replace("'", "''")))
 
             sql.append(u"")
 
