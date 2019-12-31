@@ -110,17 +110,10 @@ GRANT EXECUTE ON FUNCTION public.estilo() TO PUBLIC;
 
 CREATE TABLE public.menu_profile
 (
-    id serial NOT NULL,
-    nome_do_perfil text NOT NULL,
-    descricao text,
-    perfil json NOT NULL,
-    ordem_menu json NOT NULL,
-    CONSTRAINT menu_profile_pkey PRIMARY KEY (id)
-)
-WITH (
-    OIDS = FALSE
-)
-TABLESPACE pg_default;
+    id SERIAL NOT NULL PRIMARY KEY,
+    nome_menu VARCHAR(255) NOT NULL,
+    definicao_menu TEXT NOT NULL,
+);
 
 ALTER TABLE public.menu_profile
     OWNER to postgres;
@@ -131,22 +124,16 @@ GRANT ALL ON TABLE public.menu_profile TO PUBLIC;
 --Cria tabela de regras
 CREATE TABLE public.layer_rules
 (
-    id serial NOT NULL,
-    camada text NOT NULL,
-    tipo_regra text NOT NULL,
-    nome text NOT NULL,
-    cor_rgb text NOT NULL,
-    regra text NOT NULL,
-    tipo_estilo text NOT NULL,
-    atributo text NOT NULL,
-    descricao text NOT NULL,
-    ordem integer NOT NULL,
-    CONSTRAINT layer_rules_pkey PRIMARY KEY (id)
-)
-WITH (
-    OIDS = FALSE
-)
-TABLESPACE pg_default;
+    id SERIAL NOT NULL PRIMARY KEY,
+    grupo_regra VARCHAR(255) NOT NULL,
+    schema VARCHAR(255) NOT NULL,
+    camada VARCHAR(255) NOT NULL,
+    atributo VARCHAR(255) NOT NULL,
+    regra TEXT NOT NULL,
+    cor_rgb VARCHAR(255) NOT NULL,
+    descricao TEXT NOT NULL,
+    ordem INTEGER NOT NULL,
+);
 
 ALTER TABLE public.layer_rules
     OWNER to postgres;
