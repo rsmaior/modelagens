@@ -3177,9 +3177,9 @@
         }
       ]
     },
-    {"__comment":"constr_ocupacao_solo <-> area_energia_eletrica",
+    {"__comment":"constr_ocupacao_solo <-> enc_area_energia_eletrica",
       "classe_ida": "constr_ocupacao_solo",
-      "classe_volta": "area_energia_eletrica",
+      "classe_volta": "enc_area_energia_eletrica",
       "filtro_ida": {
             "nome_atributo": "tipo",
             "valor": 801

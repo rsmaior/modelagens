@@ -76,6 +76,10 @@
         }
       ]
     },
+    {"__comment":"enc_area_energia_eletrica <-> Area_Energia_Eletrica",
+      "classe_ida": "enc_area_energia_eletrica",
+      "classe_volta": "Area_Energia_Eletrica"
+    },
     {"__comment":"enc_est_gerad_energia_eletr <-> Est_Gerad_Energia_Eletr",
       "classe_ida": "enc_est_gerad_energia_eletr",
       "classe_volta": "Est_Gerad_Energia_Eletr",
