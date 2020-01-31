@@ -39,6 +39,12 @@
       "cardinalidade": "0..1"
     },
     {
+      "nome": "insumo",
+      "tipo": "VARCHAR(255)",
+      "descricao": "-",
+      "cardinalidade": "0..1"
+    },
+    {
       "nome": "data_insumo",
       "tipo": "timestamp with time zone",
       "descricao": "-",
@@ -7577,7 +7583,7 @@
       "primitivas": ["MultiLinestring"],
       "atributos": []
     },
-    {"nome": "limite_area_edificada",
+    {"nome": "limite_area_construida",
       "categoria": "aquisicao",
       "descricao": "-",
       "primitivas": ["MultiLinestring"],
