@@ -1802,44 +1802,8 @@
           "valor_filtro": "Edificação aeroportuária"
         },
         {
-          "code": 2526,
-          "value": "Port - Terminal de passageiros",
-          "descricao": "-",
-          "valor_filtro": "Edificação portuária"
-        },
-        {
-          "code": 2527,
-          "value": "Port - Terminal de cargas",
-          "descricao": "-",
-          "valor_filtro": "Edificação portuária"
-        },
-        {
-          "code": 2533,
-          "value": "Port - Estaleiro",
-          "descricao": "-",
-          "valor_filtro": "Edificação portuária"
-        },
-        {
-          "code": 2534,
-          "value": "Port - Dique de estaleiro",
-          "descricao": "-",
-          "valor_filtro": "Edificação portuária"
-        },
-        {
-          "code": 2535,
-          "value": "Port - Rampa portuária",
-          "descricao": "-",
-          "valor_filtro": "Edificação portuária"
-        },
-        {
-          "code": 2536,
-          "value": "Port - Carreira portuária",
-          "descricao": "-",
-          "valor_filtro": "Edificação portuária"
-        },
-        {
-          "code": 2598,
-          "value": "Port - Outros",
+          "code": 2501,
+          "value": "Port - Edificação portuária",
           "descricao": "-",
           "valor_filtro": "Edificação portuária"
         },
@@ -2872,11 +2836,6 @@
           "code": 9,
           "value": "Região administrativa",
           "descricao": "-"
-        },
-        {
-          "code": 10,
-          "value": "Bairro",
-          "descricao": "-"
         }
       ]
     },
@@ -3506,6 +3465,11 @@
           "descricao": "-"
         },
         {
+          "code": 4,
+          "value": "Canal encoberto",
+          "descricao": "-"
+        },
+        {
           "code": 11,
           "value": "Vala",
           "descricao": "-"
@@ -4007,7 +3971,8 @@
               "code": 3
             },
             {
-              "code": 11
+              "code": 4,
+              "restricao_atributo_incomum": []
             }
           ]
         },
@@ -4019,32 +3984,37 @@
           "mapa_valor": "regime",
           "valores": [
             {
-              "code": 1
+              "code": 1,
+              "restricao": [
+                {
+                  "atributo": "tipo",
+                  "valores": [1, 2, 4]
+                }
+              ]
             },
             {
-              "code": 3
+              "code": 3,
+              "restricao_atributo_incomum": [],
+              "restricao": [
+                {
+                  "atributo": "tipo",
+                  "valores": [1, 2, 4]
+                }
+              ]
             },
             {
-              "code": 5
-            }
-          ]
-        },
-        {
-          "nome": "encoberto",
-          "tipo": "smallint",
-          "descricao": "-",
-          "cardinalidade": "1..1",
-          "mapa_valor": "booleano",
-          "valores": [
-            {
-              "code": 1
-            },
-            {
-              "code": 2
+              "code": 5,
+              "restricao_atributo_incomum": []
             }
           ]
         }
       ]
+    },
+    {"nome": "vala",
+      "categoria": "infra",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring"],
+      "atributos": []
     },
     {"nome": "barragem",
       "categoria": "infra",
@@ -4547,13 +4517,7 @@
           "mapa_valor": "revestimento",
           "valores": [
             {
-              "code": 1,
-              "restricao": [
-                {
-                  "atributo": "tipo",
-                  "valores": [2, 3, 6]
-                }
-              ]
+              "code": 1
             },
             {
               "code": 2
@@ -4879,39 +4843,6 @@
               "code": 2
             },
             {
-              "code": 3
-            },
-            {
-              "code": 4
-            },
-            {
-              "code": 8
-            },
-            {
-              "code": 9
-            },
-            {
-              "code": 10
-            },
-            {
-              "code": 11
-            },
-            {
-              "code": 12
-            },
-            {
-              "code": 13
-            },
-            {
-              "code": 14
-            },
-            {
-              "code": 15
-            },
-            {
-              "code": 16
-            },
-            {
               "code": 24
             },
             {
@@ -5060,10 +4991,6 @@
             },
             {
               "code": 9,
-              "primitivas": ["MultiPolygon"]
-            },
-            {
-              "code": 10,
               "primitivas": ["MultiPolygon"]
             }
           ]
@@ -6097,25 +6024,7 @@
               "code": 2498
             },
             {
-              "code": 2526
-            },
-            {
-              "code": 2527
-            },
-            {
-              "code": 2533
-            },
-            {
-              "code": 2534
-            },
-            {
-              "code": 2535
-            },
-            {
-              "code": 2536
-            },
-            {
-              "code": 2598
+              "code": 2501
             },
             {
               "code": 2601
@@ -6204,9 +6113,6 @@
             },
             {
               "code": 3
-            },
-            {
-              "code": 4
             }
           ]
         },
@@ -6278,13 +6184,13 @@
         },
         {
           "nome": "largura",
-          "tipo": "varchar(255)",
+          "tipo": "real",
           "descricao": "-",
           "cardinalidade": "0..1"
         },
         {
-          "nome": "extensao",
-          "tipo": "varchar(255)",
+          "nome": "altitude",
+          "tipo": "real",
           "descricao": "-",
           "cardinalidade": "0..1"
         }
@@ -6339,18 +6245,6 @@
               "code": 10
             }
           ]
-        },
-        {
-          "nome": "latitude",
-          "tipo": "varchar(255)",
-          "descricao": "-",
-          "cardinalidade": "0..1"
-        },
-        {
-          "nome": "longitude",
-          "tipo": "varchar(255)",
-          "descricao": "-",
-          "cardinalidade": "0..1"
         }
       ]
     },
@@ -6806,6 +6700,72 @@
             {
               "code": 33,
               "primitivas": ["MultiPolygon", "MultiPoint"]
+            }
+          ]
+        }
+      ]
+    },
+    {"nome": "toponimo_fisiografico_natural",
+      "categoria": "elemnat",
+      "descricao": "-",
+      "primitivas": ["MultiLinestring", "MultiPoint"],
+      "atributos": [
+        {
+          "nome": "nome",
+          "tipo": "varchar(255)",
+          "descricao": "-",
+          "cardinalidade": "0..1"
+        },
+        {
+          "nome": "tipo",
+          "tipo": "smallint",
+          "descricao": "-",
+          "cardinalidade": "1..1",
+          "mapa_valor": "tipo_elemento_fisiografico",
+          "valores": [
+            {
+              "code": 1,
+              "primitivas": ["MultiLinestring"]
+            },
+            {
+              "code": 2,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 3,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 4,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 5,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 6,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 7,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 9,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 10,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 11,
+              "primitivas": ["MultiPoint"]
+            },
+            {
+              "code": 17,
+              "primitivas": ["MultiPoint"]
             }
           ]
         }
