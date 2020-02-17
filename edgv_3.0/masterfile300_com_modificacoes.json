@@ -14073,7 +14073,7 @@
             "descricao": "-",
             "primitivas": [
                 "MultiPoint",
-                "MultiPolygon"
+                "MultiLinestring"
             ],
             "atributos": [
                 {
