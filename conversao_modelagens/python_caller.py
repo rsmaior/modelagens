@@ -30,6 +30,8 @@ class FeatureProcessor(object):
             featDict["$GEOM_TYPE"] = 'LINESTRING'
         elif feature.performFunction('@GeometryType()') == 'fme_point':
             featDict["$GEOM_TYPE"] = 'POINT'
+        else:
+             featDict["INVALID_GEOM"] = True
         return featDict
 
     def evaluateExpression(self, featDict, expression):
@@ -222,6 +224,11 @@ class FeatureProcessor(object):
             features = [feature]
         for simple_feature in features:
             feat = self.buildFeatureDict(simple_feature)
+            if "INVALID_GEOM" in feat and not feat["INVALID_GEOM"]:
+                simple_feature.setAttribute("INVALID_GEOM", u'True')
+                self.pyoutput(simple_feature)
+                continue
+            
             outputFeatDict = self.convertFeature(feat)
             if "CLASS_NOT_FOUND" in outputFeatDict and not outputFeatDict["CLASS_NOT_FOUND"]:
                 simple_feature.setAttribute("CLASS_NOT_FOUND", u'True')
