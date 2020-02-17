@@ -3498,6 +3498,20 @@
         }
       ]
     },
+    {"__comment":"elemnat_elemento_hidrografico <-> hid_rocha_em_agua",
+      "classe_ida": "elemnat_elemento_hidrografico",
+      "classe_volta": "hid_rocha_em_agua",
+      "filtro_ida": {
+            "nome_atributo": "tipo",
+            "valor": 8
+      },
+      "atributos_default_volta": [
+        {
+          "nome_atributo": "tipo",
+          "valor": 8
+        }
+      ]
+    },
     {"__comment":"elemnat_elemento_hidrografico <-> hid_corredeira",
       "classe_ida": "elemnat_elemento_hidrografico",
       "classe_volta": "hid_corredeira",
