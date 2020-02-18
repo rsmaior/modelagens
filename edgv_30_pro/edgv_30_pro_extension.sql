@@ -112,7 +112,7 @@ CREATE TABLE public.menu_profile
 (
     id SERIAL NOT NULL PRIMARY KEY,
     nome_menu VARCHAR(255) NOT NULL,
-    definicao_menu TEXT NOT NULL,
+    definicao_menu TEXT NOT NULL
 );
 
 ALTER TABLE public.menu_profile
@@ -132,7 +132,7 @@ CREATE TABLE public.layer_rules
     regra TEXT NOT NULL,
     cor_rgb VARCHAR(255) NOT NULL,
     descricao TEXT NOT NULL,
-    ordem INTEGER NOT NULL,
+    ordem INTEGER NOT NULL
 );
 
 ALTER TABLE public.layer_rules
