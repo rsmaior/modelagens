@@ -7173,12 +7173,7 @@
                     "tipo": "smallint",
                     "descricao": "-",
                     "cardinalidade": "1..1",
-                    "mapa_valor": "estado_fisico",
-                    "valores": [
-                        {
-                            "code": 1
-                        }
-                    ]
+                    "mapa_valor": "estado_fisico"
                 },
                 {
                     "nome": "finalidadedep",
@@ -16712,7 +16707,12 @@
                     "tipo": "smallint",
                     "descricao": "-",
                     "cardinalidade": "1..1",
-                    "mapa_valor": "estado_fisico"
+                    "mapa_valor": "estado_fisico",
+                    "valores": [
+                        {
+                            "code": 1
+                        }
+                    ]
                 },
                 {
                     "nome": "finalidadedep",
